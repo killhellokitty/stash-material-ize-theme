@@ -2061,50 +2061,14 @@ button.tag-list-button.btn.btn-secondary:not(:has(>.tag-list-anchor)):disabled {
     outline: none;
 }
 
-.navbar-brand button.minimal.brand-link.d-none.d-md-inline-block.btn.btn-primary, 
-.navbar-brand button.minimal.brand-link.d-inline-block.btn.btn-primary,
-.navbar-brand button.minimal.brand-link.d-none.d-md-inline-block.btn.btn-primary:hover:not(:disabled):not(.disabled), 
-.navbar-brand button.minimal.brand-link.d-inline-block.btn.btn-primary:hover:not(:disabled):not(.disabled),
-.navbar-brand button.minimal.brand-link.d-none.d-md-inline-block.btn.btn-primary:hover:not(:disabled):not(.disabled):focus, 
-.navbar-brand button.minimal.brand-link.d-inline-block.btn.btn-primary:hover:not(:disabled):not(.disabled):focus,
-.navbar-brand button.minimal.brand-link.d-none.d-md-inline-block.btn.btn-primary:not(:disabled):not(.disabled):active,
-.navbar-brand button.minimal.brand-link.d-none.d-md-inline-block.btn.btn-primary.active:not(:disabled):not(.disabled),
-.navbar-brand button.minimal.brand-link.d-none.d-md-inline-block.btn.btn-primary:not(:disabled):not(.disabled):active:hover,
-.navbar-brand button.minimal.brand-link.d-none.d-md-inline-block.btn.btn-primary:not(:disabled):not(.disabled):active:focus,
-.navbar-brand button.minimal.brand-link.d-inline-block.btn.btn-primary:not(:disabled):not(.disabled):active,
-.navbar-brand button.minimal.brand-link.d-inline-block.btn.btn-primary.active:not(:disabled):not(.disabled),
-.navbar-brand button.minimal.brand-link.d-inline-block.btn.btn-primary:not(:disabled):not(.disabled):active:hover,
-.navbar-brand button.minimal.brand-link.d-inline-block.btn.btn-primary:not(:disabled):not(.disabled):active:focus,
-.navbar-brand button.minimal.brand-link.d-none.d-md-inline-block.btn.btn-primary:not(:disabled):not(.disabled):focus-visible, 
-.navbar-brand button.minimal.brand-link.d-inline-block.btn.btn-primary:not(:disabled):not(.disabled):focus-visible,
-.navbar-brand button.minimal.brand-link.d-none.d-md-inline-block.btn.btn-primary:not(:disabled):not(.disabled):focus, 
-.navbar-brand button.minimal.brand-link.d-inline-block.btn.btn-primary:not(:disabled):not(.disabled):focus {
-    /*font-weight: 400;
-    color: rgb(var(--white-color)) !important;
-    font-size: 32px;
-    font-family: "San Francisco","DejaVu Sans";
-    line-height: 40px;
-    letter-spacing: 0;
-    text-indent: 8px;
-    background-color: transparent !important;
-    background-image: var(--stash-logo);
-    background-repeat: no-repeat;
-    background-position: calc( 38% - 34px ) 165%;
-    background-size: 36px 36px;
-    padding: 0 12px 0 44px;
-    box-shadow: none !important;
-    text-shadow: none;
-    text-decoration: none;
-    overflow: visible;
-    will-change: auto;
-    transition: outline 0.2s ease-in;*/
+.navbar-brand button.minimal.brand-link.btn.btn-primary, 
+.navbar-brand button.minimal.brand-link.btn.btn-primary:is(:hover, :focus, :active, :active:focus, :focus-visible) {
     font-weight: 400;
     color: rgb(var(--white-color)) !important;
     font-size: 32px;
     font-family: var(--LogoFont);
     line-height: 40px;
     letter-spacing: 0;
-    text-indent: 0px;
     height: 64px;
     position: absolute;
     background-color: transparent !important;
@@ -2114,125 +2078,55 @@ button.tag-list-button.btn.btn-secondary:not(:has(>.tag-list-anchor)):disabled {
     background-size: 36px 36px;
     padding: 11px 12px 11px 44px;
     box-shadow: none !important;
-    text-shadow: none;
     text-decoration: none;
     overflow: visible;
     will-change: auto;
     top: -28px;
     margin-left: 20px;
     left: 0px;
-    z-index: 12000;
-    transition: outline 0.2s ease-in;
+    z-index: 1200;
+    transition: outline 0.2s ease-in-out, color 0.5s ease-in-out 0.2s, text-decoration 0.4s ease-in 0.15s;
 }
 @media (max-width: 575.98px) {
-    .navbar-brand button.minimal.brand-link.d-none.d-md-inline-block.btn.btn-primary, 
-    .navbar-brand button.minimal.brand-link.d-inline-block.btn.btn-primary,
-    .navbar-brand button.minimal.brand-link.d-none.d-md-inline-block.btn.btn-primary:hover:not(:disabled):not(.disabled), 
-    .navbar-brand button.minimal.brand-link.d-inline-block.btn.btn-primary:hover:not(:disabled):not(.disabled),
-    .navbar-brand button.minimal.brand-link.d-none.d-md-inline-block.btn.btn-primary:hover:not(:disabled):not(.disabled):focus, 
-    .navbar-brand button.minimal.brand-link.d-inline-block.btn.btn-primary:hover:not(:disabled):not(.disabled):focus,
-    .navbar-brand button.minimal.brand-link.d-none.d-md-inline-block.btn.btn-primary:not(:disabled):not(.disabled):active,
-    .navbar-brand button.minimal.brand-link.d-none.d-md-inline-block.btn.btn-primary.active:not(:disabled):not(.disabled),
-    .navbar-brand button.minimal.brand-link.d-none.d-md-inline-block.btn.btn-primary:not(:disabled):not(.disabled):active:hover,
-    .navbar-brand button.minimal.brand-link.d-none.d-md-inline-block.btn.btn-primary:not(:disabled):not(.disabled):active:focus,
-    .navbar-brand button.minimal.brand-link.d-inline-block.btn.btn-primary:not(:disabled):not(.disabled):active,
-    .navbar-brand button.minimal.brand-link.d-inline-block.btn.btn-primary.active:not(:disabled):not(.disabled),
-    .navbar-brand button.minimal.brand-link.d-inline-block.btn.btn-primary:not(:disabled):not(.disabled):active:hover,
-    .navbar-brand button.minimal.brand-link.d-inline-block.btn.btn-primary:not(:disabled):not(.disabled):active:focus,
-    .navbar-brand button.minimal.brand-link.d-none.d-md-inline-block.btn.btn-primary:not(:disabled):not(.disabled):focus-visible, 
-    .navbar-brand button.minimal.brand-link.d-inline-block.btn.btn-primary:not(:disabled):not(.disabled):focus-visible,
-    .navbar-brand button.minimal.brand-link.d-none.d-md-inline-block.btn.btn-primary:not(:disabled):not(.disabled):focus, 
-    .navbar-brand button.minimal.brand-link.d-inline-block.btn.btn-primary:not(:disabled):not(.disabled):focus {
+    .navbar-brand button.minimal.brand-link.btn.btn-primary, 
+    .navbar-brand button.minimal.brand-link.btn.btn-primary:is(:hover, :focus, :active, :active:focus, :focus-visible) {
         left: 34px;
         margin-left: 12px;
     }
 }
-.navbar-brand button.minimal.brand-link.d-none.d-md-inline-block.btn.btn-primary:hover:not(:disabled):not(.disabled), 
-.navbar-brand button.minimal.brand-link.d-inline-block.btn.btn-primary:hover:not(:disabled):not(.disabled),
-.navbar-brand button.minimal.brand-link.d-none.d-md-inline-block.btn.btn-primary:hover:not(:disabled):not(.disabled):focus, 
-.navbar-brand button.minimal.brand-link.d-inline-block.btn.btn-primary:hover:not(:disabled):not(.disabled):focus {
-    /*color: rgb(var(--white-color)) !important;
-    outline: none !important;
-    background-color: rgba(var(--pry-color),var(--btn-hover)) !important;
-    background-image: var(--stash-logo);
-    background-repeat: no-repeat;
-    background-position: calc( 38% - 30px ) center;
-    background-size: 36px 36px;
-    box-shadow: var(--elevation-1) !important;*/
-    z-index: 1200;
+.navbar-brand button.minimal.brand-link.btn.btn-primary:is(:hover, :focus-visible) {
+    color: rgb(var(--btn-min-primary))!important;
 }
-.navbar-brand button.minimal.brand-link.d-none.d-md-inline-block.btn.btn-primary:not(:disabled):not(.disabled):focus-visible, 
-.navbar-brand button.minimal.brand-link.d-inline-block.btn.btn-primary:not(:disabled):not(.disabled):focus-visible {
-    outline-color: var(--focus-ring);
-    outline-style: solid;
-    outline-width: 3px;
-    outline-offset: -1px;
-    z-index: 1200;
-    /*background-color: rgba(var(--pry-color),var(--btn-hover)) !important;
-    background-image: var(--stash-logo);
-    background-repeat: no-repeat;
-    background-position: calc( 38% - 30px ) center;
-    background-size: 36px 36px;
-    box-shadow: none !important;*/
-}
-.navbar-brand button.minimal.brand-link.d-none.d-md-inline-block.btn.btn-primary:not(:disabled):not(.disabled):active,
-.navbar-brand button.minimal.brand-link.d-none.d-md-inline-block.btn.btn-primary.active:not(:disabled):not(.disabled),
-.navbar-brand button.minimal.brand-link.d-none.d-md-inline-block.btn.btn-primary:not(:disabled):not(.disabled):active:hover,
-.navbar-brand button.minimal.brand-link.d-none.d-md-inline-block.btn.btn-primary:not(:disabled):not(.disabled):active:focus,
-.navbar-brand button.minimal.brand-link.d-inline-block.btn.btn-primary:not(:disabled):not(.disabled):active,
-.navbar-brand button.minimal.brand-link.d-inline-block.btn.btn-primary.active:not(:disabled):not(.disabled),
-.navbar-brand button.minimal.brand-link.d-inline-block.btn.btn-primary:not(:disabled):not(.disabled):active:hover,
-.navbar-brand button.minimal.brand-link.d-inline-block.btn.btn-primary:not(:disabled):not(.disabled):active:focus {
-    /*color: rgb(var(--white-color)) !important;
+.navbar-brand button.minimal.brand-link.btn.btn-primary:focus-visible {
     outline: none;
-    background-color: rgba(var(--pry-color),var(--btn-active)) !important;
-    background-image: var(--stash-logo);
-    background-repeat: no-repeat;
-    background-position: calc( 38% - 30px ) center;
-    background-size: 36px 36px;
-    text-shadow: none; 
-    box-shadow: var(--elevation-0) !important;*/
-    z-index: 1200;
+    text-decoration: underline;
+    text-decoration-color: rgb(var(--btn-min-primary));
+    text-decoration-thickness: from-font;
+}
+.navbar-brand button.minimal.brand-link.btn.btn-primary:is(:active, :focus, :active:focus) {
+    color: rgb(var(--pry-color))!important;
 }
 
 .navbar-dark .navbar-brand,
 .navbar-dark:not(:has(>.show)) .navbar-brand {
-    /*color: transparent;
-    border-style: none;
-    text-align: center;
-    position: absolute;
-    height: 64px;
-    min-height: 64px;
-    width: 100%;
-    padding: 11px 0;
-    margin-right: 0;
-    top: 0px;
-    display: grid;
-    place-items: center;
-    transform: translate(0px);
-    transition: transform 0s, place-items 0s, top 0s;
-    will-change: transition, top;*/
     color: transparent;
     border-style: none;
     text-align: center;
     position: relative;
     margin-right: 0;
     top: 0px;
-    transition: transform 0s, place-items 0s, top 0s;
-    will-change: transition, top;
     z-index: 1199;
 }
 .navbar-dark:has(.navbar-buttons a[href*="/new"]):not(:has(>.show)) .navbar-brand {
     top: unset;
-    transition: place-items 0s top 0s;
 }
 .navbar-dark:has(>.collapse.show) .navbar-brand {
     top: 1px;
     justify-content: center;
     align-content: space-between;
     transform: translate(1px);
-    transition: transform 0s, place-items 0s top 0s;
-    will-change: transition, top;
+    transition: transform 0s, top 0s;
+    will-change: transition;
     z-index: 1199;
 }
 /*@media (min-width: 1200px) {
@@ -2265,23 +2159,19 @@ button.tag-list-button.btn.btn-secondary:not(:has(>.tag-list-anchor)):disabled {
     }
 }
 .navbar-expand-xl .navbar-collapse.collapse:not(.show) {
-    /*display: none!important;*/
     display: flex;
     will-change: transform;
     display: flex;
     overflow-y: auto;
     max-height: unset;
-    /* min-height: 100%; */
     max-width: 88px;
     position: fixed;
     z-index: 10;
     padding: 0 2px 0 2px;
-    /*margin-left: -2px;*/
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    /* transform: translate(0%,0%); */
     flex-wrap: nowrap;
 }
 @media (max-width: 575.98px) {
