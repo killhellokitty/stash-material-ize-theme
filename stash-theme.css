@@ -7482,7 +7482,7 @@ div.mb-2.btn-group:not(.mr-2):not(.mx-2):not(.ml-2) > button.btn.btn-secondary:n
     box-shadow: none;
 }
 div.mb-2.btn-group:not(.mr-2):not(.mx-2):not(.ml-2) > button.btn.btn-secondary:not(.form-control):not(:disabled):not(.disabled):focus-visible,
-.btn-toolbar select.btn-secondary.form-control:focus-visible:not(:focus),
+.btn-toolbar select.btn-secondary.form-control:focus-visible,
 .btn-toolbar .show.dropdown .dropdown-toggle.btn.btn-secondary:focus-visible {
     box-shadow: none;
     outline-color: rgb(var(--focus-ring));
