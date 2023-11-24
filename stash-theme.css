@@ -4898,10 +4898,8 @@ div[draggable="true"] .recommendation-row:not(.scene-recommendations):not(.studi
     outline-offset: -1px;
     z-index: 2;
 }
-.pagination button.btn.btn-secondary:not(:disabled):not(.disabled):active,
 .pagination button.btn.btn-secondary:not(:disabled):not(.disabled).active,
-.pagination button.btn.btn-secondary:not(:disabled):not(.disabled):active:focus:not(:focus-visible),
-.pagination button.btn.btn-secondary:not(:disabled):not(.disabled).active:focus:not(:focus-visible) {
+.pagination button.btn.btn-secondary:not(:disabled):not(.disabled).active:focus {
     color: rgb(var(--on-pry));
     background-color: rgb(var(--pry-color));
     border-color: transparent;
@@ -4910,6 +4908,13 @@ div[draggable="true"] .recommendation-row:not(.scene-recommendations):not(.studi
     outline: none;
     padding-left: 24px;
     padding-right: 24px;
+}
+.pagination button.btn.btn-secondary:not(:disabled):not(.disabled).active:focus-visible {
+    outline-color: rgb(var(--focus-ring));
+    outline-offset: -1px;
+    outline-style: solid;
+    outline-width: 0.25rem;
+    box-shadow: none;
 }
 /*.pagination button.btn.btn-secondary:not(:disabled):not(.disabled):active:hover,
 .pagination button.btn.btn-secondary:not(:disabled):not(.disabled).active:hover,
