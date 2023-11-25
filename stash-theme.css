@@ -7107,7 +7107,7 @@ svg.svg-inline--fa.fa-caret-up.fa-icon {
 }
 
 /* date dropdown-button */
-.input-group-prepend button.dropdown-toggle.btn.btn-secondary {
+.dropdown > .input-group-prepend > button.dropdown-toggle.btn.btn-secondary {
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
     padding-left: 24px;
