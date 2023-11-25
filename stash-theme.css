@@ -7284,7 +7284,7 @@ button#scene-scrape:is(:hover, :focus-visible),
     text-shadow: none;
 }
 
-.btn-toolbar select.btn-secondary.form-control:is(:hover, :focus-visible:not(:focus)) {
+.btn-toolbar select.btn-secondary.form-control:is(:hover, :focus-visible) {
     background-image: url("data:image/svg+xml;utf8,<svg fill='%23e2e2e5' height='30' viewBox='0 0 24 22' width='28' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>"), linear-gradient(to right, rgba(var( --on-surface),var(--btn-hover)), rgba(var(--on-surface),var(--btn-hover)));
     background-repeat: no-repeat repeat;
     background-position: calc( 100% - 16px ) calc(50% - 2px), center left;
