@@ -1764,8 +1764,7 @@ div.react-datepicker div.react-datepicker__time-container div.react-datepicker__
 
 /* --- Dropdown Menu's --- */
 .show > .dropdown-menu.show,
-.show.dropdown.btn-group .dropdown-menu.show,
-.btn-toolbar .show > .dropdown-menu.show > .bg-secondary {
+.show.dropdown.btn-group .dropdown-menu.show {
     background: rgb(var(--menu-color)) !important;
     color: rgb(var(--on-surface)) !important;
     padding: 8px 0;
@@ -1779,6 +1778,11 @@ div.react-datepicker div.react-datepicker__time-container div.react-datepicker__
     overflow: hidden;
     transition: background-color 0.55s ease, outline 0.4s ease-in, box-shadow 0.4s ease-in, transform 0.6s ease-in-out;
 }
+.btn-toolbar > .show.dropdown.btn-group > .dropdown-menu.show {
+    overflow: unset;
+    box-shadow: none;
+}
+
 .show > .dropdown-menu.show .dropdown-item {
     font-family: var(--BodyFont);
     font-size: 14px;
