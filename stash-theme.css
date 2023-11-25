@@ -7284,7 +7284,7 @@ button#scene-scrape:is(:hover, :focus-visible),
     text-shadow: none;
 }
 
-.btn-toolbar select.btn-secondary.form-control:is(:hover, :focus-visible) {
+.btn-toolbar select.btn-secondary.form-control:is(:hover, :focus-visible:not(:focus)) {
     background-image: url("data:image/svg+xml;utf8,<svg fill='%23e2e2e5' height='30' viewBox='0 0 24 22' width='28' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>"), linear-gradient(to right, rgba(var( --on-surface),var(--btn-hover)), rgba(var(--on-surface),var(--btn-hover)));
     background-repeat: no-repeat repeat;
     background-position: calc( 100% - 16px ) calc(50% - 2px), center left;
@@ -7364,14 +7364,14 @@ div.mb-2.btn-group:not(.mr-2):not(.mx-2):not(.ml-2) > button.btn.btn-secondary:n
     box-shadow: none;
 }*/
 div.mb-2.btn-group:not(.mr-2):not(.mx-2):not(.ml-2) > button.btn.btn-secondary:not(.form-control):not(:disabled):not(.disabled).active:is(:focus, :focus-visible),
-.btn-toolbar select.btn-secondary.form-control:is(:focus:not(:focus-visible), :active:focus:not(:focus-visible)),
+.btn-toolbar select.btn-secondary.form-control:is(:active:focus, :active:focus-visible:not(:focus)),
 .btn-toolbar .show.dropdown .dropdown-toggle.btn.btn-secondary:is(:focus, :focus-visible) {
     background-color: rgb(var(--sec-cntnr-select-active));
     box-shadow: none;
     border-color: rgb(var(--on-surface-variant));
 }
 div.mb-2.btn-group:not(.mr-2):not(.mx-2):not(.ml-2) > button.btn.btn-secondary:not(.form-control):focus-visible,
-.btn-toolbar select.btn-secondary.form-control:focus-visible,
+.btn-toolbar select.btn-secondary.form-control:focus-visible:not(:focus),
 .btn-toolbar .show.dropdown .dropdown-toggle.btn.btn-secondary:focus-visible {
     box-shadow: none;
     outline-color: rgb(var(--focus-ring));
