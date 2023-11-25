@@ -7,5 +7,5 @@ cp $HOME/stash-theme-Dracula.css .
 cp $HOME/stash-theme_tabnavs.css .
 
 git add --all
-git commit -m "Sync zsh configs"
+git commit -m "Sync Stash CSS"
 git push origin
