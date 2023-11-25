@@ -331,13 +331,13 @@ select {
     background-repeat: no-repeat;
     background-position: calc( 100% - 16px ) calc(50% - 2px);
 }
-select:hover {
+/*select:hover {
     background-image: url("data:image/svg+xml;utf8,<svg fill='%23e2e2e5' height='30' viewBox='0 0 24 22' width='28' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
 }
 select:active,
 select:focus {
     background-image: url("data:image/svg+xml;utf8,<svg fill='%23d3e7f3' height='30' viewBox='0 0 24 22' width='28' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
-}
+}*/
 select::-ms-expand { 
 	display: none; 
 }
