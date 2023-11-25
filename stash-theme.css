@@ -7320,7 +7320,7 @@ button#scene-scrape:focus-visible,
 }
 /* */
 div.mb-2.btn-group:not(.mr-2):not(.mx-2):not(.ml-2) > button.btn.btn-secondary:not(.form-control):not(.dropdown-toggle):not(:disabled):not(.disabled).active,
-.btn-toolbar select.btn-secondary.form-control:is(:active, :focus:active),
+.btn-toolbar select.btn-secondary.form-control:active,
 .btn-toolbar .show.dropdown .dropdown-toggle.btn.btn-secondary {
     background-color: rgb(var(--sec-container));
     color: rgb(var(--on-sec-container));
