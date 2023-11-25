@@ -1779,8 +1779,7 @@ div.react-datepicker div.react-datepicker__time-container div.react-datepicker__
     transition: background-color 0.55s ease, outline 0.4s ease-in, box-shadow 0.4s ease-in, transform 0.6s ease-in-out;
 }
 .btn-toolbar > .show.dropdown.btn-group > .dropdown-menu.show {
-    overflow: unset;
-    box-shadow: none;
+    overflow: auto;
 }
 
 .show > .dropdown-menu.show .dropdown-item {
@@ -1801,7 +1800,7 @@ div.react-datepicker div.react-datepicker__time-container div.react-datepicker__
 }
 .show > .dropdown-menu.show .dropdown-item:where(:hover, :focus-visible) {
     background-color: rgba(var(--on-surface),var(--btn-hover)) !important;
-    color: rgb(var(--on-surface));
+    color: rgb(var(--on-surface)) !important;
 }
 .show > .dropdown-menu.show .dropdown-item:where(:active, :focus, :active:focus),
 .show > .dropdown-menu.show .dropdown-item.active, 
