@@ -7296,21 +7296,21 @@ button#scene-scrape:is(:hover, :focus-visible),
     text-shadow: none;
 }
 
-.btn-secondary:not(.form-control):not(.dropdown-toggle):focus:not(:focus-visible),
+.btn-secondary:not(.form-control):not(.dropdown-toggle):focus,
 /*.btn-toolbar .dropdown:not(.show) .dropdown-toggle.btn.btn-secondary:focus:not(:focus-visible),*/
-.modal-body .btn-secondary.form-control:focus:not(:focus-visible),
-button#scene-scrape:focus:not(:focus-visible),
-.scrape-url-button:not(:disabled):focus:not(:focus-visible) {
+.modal-body .btn-secondary.form-control:focus,
+button#scene-scrape:focus,
+.scrape-url-button:not(:disabled):focus {
     color: rgb(var(--on-surface));
     background-image: linear-gradient(to right, rgba(var( --on-surface),var(--btn-active)), rgba(var(--on-surface),var(--btn-active)));
     background-color: rgb(var(--body-color2));
     border-color: rgb(var(--outline));
 }
-.btn-secondary:not(.form-control):not(.dropdown-toggle):not(:disabled):not(.disabled):focus-visible,
+.btn-secondary:not(.form-control):not(.dropdown-toggle):focus-visible,
 .btn-toolbar .dropdown:not(.show) .dropdown-toggle.btn.btn-secondary:focus-visible,
 .modal-body .btn-secondary.form-control:focus-visible:not(:focus),
-button#scene-scrape:focus-visible:not(:focus),
-.scrape-url-button:not(:disabled):focus-visible:not(:focus) {
+button#scene-scrape:focus-visible,
+.scrape-url-button:not(:disabled):focus-visible {
     box-shadow: none;
     outline-color: rgb(var(--focus-ring));
     outline-width: 0.25rem;
@@ -7364,13 +7364,13 @@ div.mb-2.btn-group:not(.mr-2):not(.mx-2):not(.ml-2) > button.btn.btn-secondary:n
     box-shadow: none;
 }*/
 div.mb-2.btn-group:not(.mr-2):not(.mx-2):not(.ml-2) > button.btn.btn-secondary:not(.form-control):not(:disabled):not(.disabled).active:is(:focus, :focus-visible),
-.btn-toolbar select.btn-secondary.form-control:is(:focus:not(:focus-visible), :active:focus-visible),
+.btn-toolbar select.btn-secondary.form-control:is(:focus:not(:focus-visible), :active:focus-visible:not(:focus)),
 .btn-toolbar .show.dropdown .dropdown-toggle.btn.btn-secondary:is(:focus, :focus-visible) {
     background-color: rgb(var(--sec-cntnr-select-active));
     box-shadow: none;
     outline: rgb(var(--on-surface-variant));
 }
-div.mb-2.btn-group:not(.mr-2):not(.mx-2):not(.ml-2) > button.btn.btn-secondary:not(.form-control):not(:disabled):not(.disabled):focus-visible,
+div.mb-2.btn-group:not(.mr-2):not(.mx-2):not(.ml-2) > button.btn.btn-secondary:not(.form-control):focus-visible,
 .btn-toolbar select.btn-secondary.form-control:focus-visible,
 .btn-toolbar .show.dropdown .dropdown-toggle.btn.btn-secondary:focus-visible {
     box-shadow: none;
