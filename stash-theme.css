@@ -7325,6 +7325,7 @@ div.mb-2.btn-group:not(.mr-2):not(.mx-2):not(.ml-2) > button.btn.btn-secondary:n
     background-color: rgb(var(--sec-container));
     color: rgb(var(--on-sec-container));
     border-color: rgb(var(--outline));
+    outline: none;
 }
 .btn-secondary:not(.form-control):not(.dropdown-toggle):not(:disabled):not(.disabled):active:focus {
     box-shadow: none;
