@@ -7142,6 +7142,7 @@ svg.svg-inline--fa.fa-caret-up.fa-icon {
     margin-top: 8px;
     max-height: 36px;
     height: 36px;
+    font-weight: 600;
 }
 .btn-toolbar > .ml-2.mb-2.btn-group > button.btn.btn-danger {
     height: 36px;
