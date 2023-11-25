@@ -7320,7 +7320,7 @@ button#scene-scrape:focus-visible:not(:focus),
 }
 /* */
 div.mb-2.btn-group:not(.mr-2):not(.mx-2):not(.ml-2) > button.btn.btn-secondary:not(.form-control):not(.dropdown-toggle):not(:disabled):not(.disabled).active,
-.btn-toolbar select.btn-secondary.form-control:active,
+.btn-toolbar select.btn-secondary.form-control:is(:active, :focus:active),
 .btn-toolbar .show.dropdown .dropdown-toggle.btn.btn-secondary {
     background-color: rgb(var(--sec-container));
     color: rgb(var(--on-sec-container));
@@ -7362,13 +7362,13 @@ div.mb-2.btn-group:not(.mr-2):not(.mx-2):not(.ml-2) > button.btn.btn-secondary:n
     box-shadow: none;
 }*/
 div.mb-2.btn-group:not(.mr-2):not(.mx-2):not(.ml-2) > button.btn.btn-secondary:not(.form-control):not(:disabled):not(.disabled).active:is(:focus, :focus-visible),
-.btn-toolbar select.btn-secondary.form-control:is(:active:focus, :active:focus-visible),
+.btn-toolbar select.btn-secondary.form-control:is(:focus, :active:focus-visible),
 .btn-toolbar .show.dropdown .dropdown-toggle.btn.btn-secondary:is(:focus, :focus-visible) {
     background-color: rgb(var(--sec-cntnr-select-active));
     box-shadow: none;
 }
 div.mb-2.btn-group:not(.mr-2):not(.mx-2):not(.ml-2) > button.btn.btn-secondary:not(.form-control):not(:disabled):not(.disabled):focus-visible,
-.btn-toolbar select.btn-secondary.form-control:focus-visible,
+.btn-toolbar select.btn-secondary.form-control:focus-visible:not(:focus),
 .btn-toolbar .show.dropdown .dropdown-toggle.btn.btn-secondary:focus-visible {
     box-shadow: none;
     outline-color: rgb(var(--focus-ring));
