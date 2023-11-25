@@ -1805,8 +1805,8 @@ div.react-datepicker div.react-datepicker__time-container div.react-datepicker__
 .show > .dropdown-menu.show .dropdown-item:where(:active, :focus, :active:focus),
 .show > .dropdown-menu.show .dropdown-item.active, 
 .show > .dropdown-menu.show .dropdown-item.active:focus {
-    background-color: rgba(var(--sec-container),var(--btn-active));
-    color: rgb(var(--on-surface));
+    background-color: rgba(var(--sec-container),var(--btn-active)) !important;
+    color: rgb(var(--on-surface)) !important;
 }
 .show > .dropdown-menu.show .dropdown-item:focus-visible {
     outline-color: rgba(var(--secondary),0.95);
@@ -1814,14 +1814,14 @@ div.react-datepicker div.react-datepicker__time-container div.react-datepicker__
     outline-style: solid;
     outline-width: 0.25rem;
     box-shadow: inset 0 0 0 4px rgb(var(--menu-color)), inset 0 0 0 6px rgb(var(--focus-ring));
-    color: rgb(var(--focus-ring));
+    color: rgb(var(--focus-ring))  !important;
     text-decoration: underline;
     text-decoration-color: currentColor;
 }
 .dropdown.show > .dropdown-menu.show > .dropdown-item > svg {
     font-size: 24px;
     margin: 0 12px 0 0;
-    color: rgb(var(--on-surface-variant));
+    color: rgb(var(--on-surface-variant)) !important;
 }
 .dropdown.show > .dropdown-menu.show > .dropdown-item > svg.fa-minus.fa-icon {
     padding-right: 1.5px;
