@@ -175,10 +175,12 @@ h6,
     --on-surface-variant: 193, 199, 206; /*#c1c7ce*/
     /* Misc Colors */
     --red: 255, 136, 147; /*#ff8893*/
+    --green: 7, 255, 227; /*#07ffe3*/
     --warning: 255, 185, 136; /*#ffb988*/
     --mars: 80, 143, 184; /*#508fb8*/
     --white-color: 251, 250, 249; /*#fbfaf9*/
     --focus-ring: 255, 255, 255; /*#006590*/
+    --muted-text: 213, 229, 242; /*#d5e5f2*/
     --interactive-input: 226, 226, 229; /*#e2e2e5 --on-surface*/
     /* Select Toggle Colors */
     --sec-cntnr-select-hover: 66, 86, 101; /*#425665*/
@@ -1003,7 +1005,7 @@ input[type=range]::-ms-tooltip {
 }
 /* --- Color that is used within .card secments --- */
 .text-muted {
-    color: #ccd7d4dd !important; /*#656B84*/
+    color: rgb(var(--muted-text)) !important; /*#656B84*/
 }
 .bg-secondary {
     background: none;
@@ -4934,6 +4936,8 @@ button.minimal.favorite-button.btn.btn-primary:is(:hover, :focus, :active, :focu
     background-color: rgba(var(--pry-color),0.55) !important;
     background-blend-mode: multiply !important;
     box-shadow: var(--elevation-1) !important;
+    filter: none;
+    transition: background-color 0.55s ease, box-shadow 0.4s ease-in;
 }
 button.minimal.favorite-button.btn.btn-primary:is(:focus, :active, :focus:active) {
     background-color: rgba(var(--pry-color),0.65) !important;
@@ -6784,7 +6788,7 @@ div.modal-body b,
 .paginationIndex .scenes-stats, 
 .images-stats {
     margin-top:-3px; 
-    color: #bec9c5;
+    color: #dbe4ec;
 }
 .paginationIndex .scenes-stats:before, 
 .images-stats:before
@@ -6792,7 +6796,7 @@ div.modal-body b,
     font-size: 16px;
     margin-left:18px;
     margin-right:12px;
-    color:#c5dcee;
+    color: #e1e4e6;
     content: "-";
 }
 .form-group>.form-group {
@@ -10043,9 +10047,9 @@ button[title=Help].nav-utility.minimal.btn.btn-primary:has(>svg.svg-inline--fa.f
 /* Has StashId - Perfomer Card */
 .peformer-stashid-icon {
     position: absolute;
-    top: 210px;
-    color: #07ffe3;
-    right: 130px;
+    bottom: 10px;
+    color: rgb(var(--green));
+    left: 0.5rem;
 }
 
 /*#root:has(.recommendations-container) nav.top-nav.navbar.navbar-dark.bg-dark.fixed-top .navbar-nav .nav-link.active > .btn.btn-primary {
