@@ -2583,7 +2583,7 @@ div.react-select__control .react-select__multi-value {
     letter-spacing: 0.5px;
     position: relative;
     left: 16px;
-    /*top: 3px;*/
+    top: -4px;
 }
 
 .input-control.form-control:active,
