@@ -9291,7 +9291,7 @@ div#create-scene-page {
     flex-wrap: nowrap;
 }
 /* Tagger-Container */
-.tagger-container .col-md-6.my-1 {
+.tagger-container .search-item > .row > div:nth-child(2) {
     padding: 16px;
     background-color: #334b46;
     border-radius: 16px;
@@ -9322,8 +9322,36 @@ div#create-scene-page {
     border-radius: 5rem;
     margin-left: 8px;
 }
+
+/* Flex box for thumb in tagger */
+.tagger-container .scene-card-preview {
+    border-radius: 12px 0;
+    margin-bottom: 0;
+    height: auto;
+    overflow: hidden;
+    max-width: 50vw;
+    min-width: 50vw;
+}
+
+/* height doesnt work needs to be flexable */
+@media (min-width: 576px) {
+    .flex-sm-row {
+        flex-direction: column !important;
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 16px;
+        top: 0;
+        height: 356px;
+        border-radius: 12px 0;
+    }
+}
+
 .scene-link {
     color: #c0ebe2;
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
 }
 .scene-link:hover,
 .scene-link:focus {
