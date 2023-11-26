@@ -6791,8 +6791,7 @@ div.modal-body b,
     color: #dbe4ec;
 }
 .paginationIndex .scenes-stats:before, 
-.images-stats:before
-{
+.images-stats:before {
     font-size: 16px;
     margin-left:18px;
     margin-right:12px;
