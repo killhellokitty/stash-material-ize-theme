@@ -4443,7 +4443,7 @@ div.card.studio-card .TruncatedText,
     text-shadow: var(--light-txt-shadow);
 }
 
-/* doesn't except variables??? --white-color used for background. */
+/* doesn't except variables??? --white-color used for background. And darkened text shadow. */
 .tagger-container .TruncatedText {
     background-color: rgb(251, 250, 249, .5); 
     text-shadow: 1px 2px 1px rgb(0,0,0,.7); 
