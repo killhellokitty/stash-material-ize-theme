@@ -194,6 +194,7 @@ h6,
     --btn-disabled: 0.38;
     --text-field-tint: 0.06;
     --text-field-text: 0.87;
+    --text-screen: 0.35;
     /* Elevation Box-Shadows */
     --elevation-0: 0px 0px 0px 0px rgba(0,0,0,0.2), 0px 0px 0px 0px rgba(0,0,0,0.14), 0px 0px 0px 0px rgba(0,0,0,0.12);
     --elevation-1: 0px 3px 1px -2px rgba(0,0,0,0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 1px 5px 0px rgba(0,0,0,0.12);
@@ -4426,6 +4427,13 @@ div.card.studio-card .TruncatedText,
     letter-spacing: 0;
     font-weight: 400;
     text-shadow: none;
+}
+
+.tagger-container .TruncatedText {
+    background-color: rgba(var(--white-color),var(--text-screen));
+    border-radius: 2.5rem;
+    max-width: 65%;
+    padding: 4px 12px;
 }
 
 .no-gutters .TruncatedText {
