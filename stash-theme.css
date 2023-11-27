@@ -2926,11 +2926,9 @@ span.filter-container.text-muted.paginationIndex.center-text:last-of-type {
     padding-left: 8px;
     padding-right: 8px;
     min-height: 40px;
-    margin: 4px;
     letter-spacing: 0.1px;
     line-height: 20px;
     background-color: transparent;
-    border-style: none;
     border: 0;
     box-shadow: none;
     border-radius: 5rem;
