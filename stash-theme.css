@@ -173,6 +173,11 @@ h6,
     --outline: 139, 145, 152; /*#8b9198*/
     --surface-variant: 65, 71, 77; /*#41474d*/
     --on-surface-variant: 193, 199, 206; /*#c1c7ce*/
+    /* Link Colors */
+    --link-color: 217, 234, 249; /*#d9eaf9 very light primary*/
+    --link-hover: 193, 218, 240;/*#c1daf0 light primary*/
+    --link-active: /* see --pry-color; */;
+    --link-visited: 108, 149, 181; /*#6c95b5 darker primary*/
     /* Misc Colors */
     --red: 255, 136, 147; /*#ff8893*/
     --green: 7, 255, 227; /*#07ffe3*/
