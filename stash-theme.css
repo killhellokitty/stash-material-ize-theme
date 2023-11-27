@@ -2920,14 +2920,11 @@ span.filter-container.text-muted.paginationIndex.center-text:last-of-type {
 .btn-link:not(:has(>*.performer)) {
     font-size: 1rem;
     font-weight: 500;
-    color: #00dfc6;
+    color: rgb(var(--on-surface));
     text-decoration: none;
-    gap: 8px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 12px;
-    padding-right: 12px;
+    display: inline-block;
+    padding-left: 8px;
+    padding-right: 8px;
     min-height: 40px;
     margin: 4px;
     letter-spacing: 0.1px;
@@ -3949,10 +3946,9 @@ div.scene-file-info .TruncatedText, div.scene-file-info .text-truncate {
 }
 
 div.tagger-container .btn-link {    
-    font-family: var(--HeaderFont);
-    font-size: 110%; 
-    color: #d3f1eb; 
-    text-shadow: var(--std-txt-shadow); 
+    font-family: var(--UnicodeFont); 
+    color: rgb(var(--on-sec-container)); 
+    text-shadow: none; 
 }
 
 .scene-tabs h1.text-center {
