@@ -3945,7 +3945,9 @@ div.scene-file-info .TruncatedText, div.scene-file-info .text-truncate {
 
 div.tagger-container .btn-link {    
     font-family: var(--UnicodeFont); 
-    color: rgb(var(--on-sec-container)); 
+    color: rgb(var(--on-surface-variant)); 
+    background-color: rgb(var(--on-surface));
+    padding: 0 8px;
     text-shadow: none; 
 }
 
