@@ -175,9 +175,9 @@ h6,
     --on-surface-variant: 193, 199, 206; /*#c1c7ce*/
     /* Link Colors */
     --link-color: 217, 234, 249; /*#d9eaf9 very light primary*/
-    --link-hover: 193, 218, 240;/*#c1daf0 light primary*/
-    --link-active: /* see --pry-color; */;
-    --link-visited: 108, 149, 181; /*#6c95b5 darker primary*/
+    --link-hover: 0, 52, 77; /* --pry-color; */
+    --link-active: 60, 175, 255; /*#3cafff* richer primary color. */
+    --link-visited: 136, 147, 255; /*#8893ff primary's Analogous Color. */
     /* Misc Colors */
     --red: 255, 136, 147; /*#ff8893*/
     --green: 7, 255, 227; /*#07ffe3*/
@@ -4444,10 +4444,22 @@ div.card.studio-card .TruncatedText,
 }
 
 /* doesn't except variables??? --white-color used for background. And darkened text shadow. */
-.tagger-container .TruncatedText {
+.tagger-container .TruncatedText:hover {
     background-color: rgb(251, 250, 249, .5); 
     text-shadow: 1px 2px 1px rgb(0,0,0,.7); 
 }
+.tagger-container .TruncatedText:active {
+    background-color: rgb(251, 250, 249, .6);
+    text-shadow: 1px 2px 1px rgb(0,0,0,.5);
+}
+.tagger-container .TruncatedText:visited {
+    background-color: rgb(251, 250, 249, .7);
+    text-shadow: 1px 2px 1px rgb(0,0,0,.6);
+}
+.tagger-container .TruncatedText:focus {
+    text-decoration-color: ;
+}
+
 .no-gutters .TruncatedText {
     font-size: 16px;
     font-weight: 400;
@@ -9372,6 +9384,9 @@ div#create-scene-page {
 }
 .scene-link:active {
     color: rgb(var(--link-active));
+}
+.scene-link:visited {
+    color: rgb(var(--link-visited));
 }
 
 button.sprite-button.btn.btn-link > svg.fa-image {
