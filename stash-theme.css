@@ -9350,8 +9350,10 @@ div#create-scene-page {
 .scene-link {
     color: rgb(var(--white-color));
     position: absolute;
-    display: inline-block;
+    display: inline-flex;
+    justify-content: center;
     text-align: center;
+    padding-top: 16px;
     width: 100%;
 }
 .scene-link:hover,
