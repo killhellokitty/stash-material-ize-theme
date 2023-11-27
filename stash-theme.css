@@ -9297,10 +9297,10 @@ div#create-scene-page {
     border-radius: 16px;
     margin-left: -16px;
 }
-.tagger-container .mt-3.search-item {
-    background-color: #222c2b;
-    border-radius: 2rem;
-    padding: 16px;
+.tagger-container .search-item {
+    background-color: rgb(var(--card-color));
+    border-radius: 12px;
+    padding: 0 0 0 16px;
 }
 .mt-3, .my-3 {
     margin-top: 16px !important;
