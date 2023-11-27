@@ -4443,6 +4443,11 @@ div.card.studio-card .TruncatedText,
     text-shadow: var(--light-txt-shadow);
 }
 
+/* doesn't except variables??? --white-color used for background. */
+.tagger-container .TruncatedText {
+    background-color: rgb(251, 250, 249, .5); 
+    text-shadow: 1px 2px 1px rgb(0,0,0,.7); 
+}
 .no-gutters .TruncatedText {
     font-size: 16px;
     font-weight: 400;
@@ -9363,7 +9368,7 @@ div#create-scene-page {
 }
 .scene-link:hover,
 .scene-link:focus {
-    color: rgb(var(--link-hover));
+    color: rgb(var(--pry-color));
 }
 .scene-link:active {
     color: rgb(var(--link-active));
