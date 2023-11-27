@@ -9363,10 +9363,10 @@ div#create-scene-page {
 }
 .scene-link:hover,
 .scene-link:focus {
-    color: #c0ebe2;
+    color: rgb(var(--link-hover));
 }
 .scene-link:active {
-    color: #dcf6f0;
+    color: rgb(var(--link-active));
 }
 
 button.sprite-button.btn.btn-link > svg.fa-image {
