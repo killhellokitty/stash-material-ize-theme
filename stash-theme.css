@@ -9293,8 +9293,6 @@ div#create-scene-page {
 /* Tagger-Container */
 .tagger-container .search-item > .row > div:nth-child(2) {
     padding: 16px;
-    background-color: #334b46;
-    border-radius: 16px;
     margin-left: -16px;
 }
 .tagger-container .search-item {
