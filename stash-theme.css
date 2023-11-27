@@ -3946,8 +3946,9 @@ div.scene-file-info .TruncatedText, div.scene-file-info .text-truncate {
 div.tagger-container .btn-link {    
     font-family: var(--UnicodeFont); 
     color: rgb(var(--on-surface-variant)); 
-    background-color: rgb(var(--on-surface));
+    background-color: rgb(var(--surface-variant));
     padding: 0 8px;
+    margin: 16px;
     text-shadow: none; 
 }
 
@@ -9337,7 +9338,7 @@ div#create-scene-page {
 }
 
 .scene-link {
-    color: #c0ebe2;
+    color: rgb(var(--white-color));
     position: absolute;
     display: inline-block;
     text-align: center;
