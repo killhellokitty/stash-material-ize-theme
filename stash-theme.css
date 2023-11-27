@@ -9394,9 +9394,9 @@ button.sprite-button.btn.btn-link > svg.fa-image {
 }
 
 .tagger-container .input-group>.form-control:not(:first-child):not(:last-child) {
-    border-radius: 0.5rem;
-    left: -38px;
-    margin-right: -38px;
+    border-radius: 4px;
+    left: -34px;
+    margin-right: -30px;
 }
 .tagger-container .mt-2.text-right:has(>*.btn-primary):not(.submit-draft) {
     margin-top: 12px !important;
