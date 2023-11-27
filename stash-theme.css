@@ -9327,10 +9327,9 @@ div#create-scene-page {
 .tagger-container .scene-card-preview {
     border-radius: 12px 0;
     margin-bottom: 0;
-    height: auto;
     overflow: hidden;
-    max-width: 50vw;
-    min-width: 50vw;
+    min-width: 44.53vw;
+    max-height: 326px;
 }
 
 /* height doesnt work needs to be flexable */
@@ -9340,8 +9339,6 @@ div#create-scene-page {
         padding-left: 0;
         padding-right: 0;
         margin-bottom: 16px;
-        top: 0;
-        height: 356px;
         border-radius: 12px 0;
     }
 }
