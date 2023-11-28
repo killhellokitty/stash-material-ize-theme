@@ -9439,6 +9439,13 @@ button.sprite-button.btn.btn-link > svg.fa-image {
     letter-spacing: 0.5px;
     color: rgb(var(--on-surface-variant)) !important;
 }
+
+.search-item > .row > .original-scene-details > .collapse.show .col:has(*.performer-tag-container) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
 .original-scene-details > .collapse.show > .col > div:has(.performer-tag-container) {
     display: flex;
     margin-left: auto;
