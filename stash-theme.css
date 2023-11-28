@@ -9392,7 +9392,7 @@ div#create-scene-page {
     color: rgb(var(--link-active));
 }
 .scene-link:visited {
-    color: rgb(var(--link-visited));
+    color: rgb(var(--link-active));
 }
 
 button.sprite-button.btn.btn-link > svg.fa-image {
