@@ -9450,12 +9450,13 @@ button.sprite-button.btn.btn-link > svg.fa-image {
 .original-scene-details > .collapse.show > .col > div:has(.performer-tag-container) {
     display: flex;
     margin-left: auto;
-    float: right;
     flex-direction: row;
     justify-content: flex-end;
-    align-items: flex-end;
     flex-wrap: wrap;
-    align-content: flex-end;
+    align-content: flex-start;
+    transform: translate(0%,0%);
+    transition: all 0.35s ease-in 0s;
+    will-change: transform, margin-left, transition;
 }
 .original-scene-details > .collapse.show > .col > div:has(.performer-tag-container) + div:has(>.tag-item) {
     margin-left: auto;
