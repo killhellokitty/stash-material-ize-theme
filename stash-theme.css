@@ -9417,7 +9417,7 @@ button.sprite-button.btn.btn-link > svg.fa-image {
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.5px;
-    rgb(var(--description-color))
+    rgb(var(--description-color));
 }
 .original-scene-details>.collapse.show>.col:first-of-type>a.scene-url,
 .original-scene-details>.collapse.show>.col:first-of-type>a.scene-path,
