@@ -9460,7 +9460,7 @@ button.sprite-button.btn.btn-link > svg.fa-image {
 .original-scene-details > .collapse.show > .col > div:has(.performer-tag-container) + div:has(>.tag-item) {
     margin-left: auto;
     margin-top: auto;
-    position: absolute;
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     align-content: flex-end;
