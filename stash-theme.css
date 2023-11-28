@@ -9327,7 +9327,6 @@ div#create-scene-page {
 /* Tagger-Container */
 .tagger-container .search-item > .row > div:nth-child(2) {
     padding: 16px;
-    margin-left: -16px;
 }
 .tagger-container .search-item {
     background-color: rgb(var(--card-color));
@@ -9411,6 +9410,7 @@ button.sprite-button.btn.btn-link > svg.fa-image {
     margin-top: 12px !important;
 }
 
+/* removed right margin so thumbnail in row fills it container. */
 .tagger-container .search-item > .row > .col > .scene-card.mr-3 {
     margin-right: 0 !important;
 }
