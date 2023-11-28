@@ -9327,7 +9327,7 @@ div#create-scene-page {
 .tagger-container .search-item {
     background-color: rgb(var(--card-color));
     border-radius: 12px;
-    padding: 0 0 0 16px;
+    padding: 0;
 }
 .mt-3, .my-3 {
     margin-top: 16px !important;
