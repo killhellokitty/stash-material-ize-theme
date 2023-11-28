@@ -1188,7 +1188,7 @@ button.bg-secondary:focus {
 .input-group-text {
     border: 0;
     border-style: none;
-    color: rgb(var(--outline));
+    color: rgb(var(--on-surface-variant));
     position: relative;
     left: 13px;
     top: -28px;
