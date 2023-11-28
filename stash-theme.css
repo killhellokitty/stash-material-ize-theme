@@ -2371,19 +2371,23 @@ div#crop-btn-container {
 }
 
 .tag-item {
-    background-color: #004c6c;
-    color: #cef1ff;
-    border: 1px solid #899390;
+    background-image: linear-gradient(to right, rgb(var(--surface)), rgb(var(--surface)));
+    background-color: rgba(var(--pry-color),0.55);
+    background-blend-mode: hard-light;
+    color: rgb(var(--on-surface-variant));
+    border: 1px solid rgb(var(--outline));
     border-radius: 8px;
     text-shadow: none !important;
-    letter-spacing: 0.0357rem;
-    line-height: 1.1429rem;
-    margin: 0.2143rem;
-    /*padding: 0.2857rem 0.8571rem 0;
-    height: 1.8571rem;*/
-    font-size: 0.8571rem;
+    letter-spacing: 0.1px;
+    line-height: 28px;
+    margin: 4px;
+    font-size: 14px;
     font-weight: 500;
-    font-family: 'Roboto Flex', 'Open Sans', Verdana, Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif, ui-sans-serif, system-ui, serif, ui-serif;
+    font-family: var(--HeaderFont);
+    max-height: 32px;
+    height: 32px;
+    box-shadow: var(--elevation-0);
+    padding: 0 16px 0 16px;
 }
 .tag-item:hover,
 .tag-item:focus {
