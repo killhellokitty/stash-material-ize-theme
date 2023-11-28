@@ -2389,19 +2389,24 @@ div#crop-btn-container {
     box-shadow: var(--elevation-0);
     padding: 0 16px 0 16px;
 }
-.tag-item:hover,
-.tag-item:focus {
-    background-color: #005a80;
+.tag-item:is(:hover, :focus-visible) {
+    background-image: linear-gradient(to right, rgba(var(--surface),var(--btn-hover-rev)), rgba(var(--surface),var(--btn-hover-rev)));
+    background-color: rgba(var(--pry-color),0.55);
+    background-blend-mode: hard-light;
+    box-shadow: var(--elevation-1);
 }
-.tag-item:active {
-    background-color: #006893;
+.tag-item:is(:active, :focus) {
+    background-image: linear-gradient(to right, rgba(var(--surface),var(--btn-active-rev)), rgba(var(--surface),var(--btn-active-rev)));
+    background-color: rgba(var(--pry-color),0.55);
+    background-blend-mode: hard-light;
+    box-shadow: var(--elevation-0);
 }
 .tag-item:focus-visible {
-    background-color: #005a80;
-    outline-color: #dffffb;
+    outline-color: rgb(var(--focus-ring));
     outline-style: solid;
     outline-width: 0.25rem;
-    outline-offset: 0.2143rem;
+    outline-offset: -1px;
+    box-shadow: none;
 }
 .tag-item .btn {
     bottom: 0.07143rem;
