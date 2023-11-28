@@ -9480,14 +9480,15 @@ img.image-thumbnail {
 .performer-tag-container,
 .movie-tag-container {
     margin: 4px;
-    border: 1px solid #899390;
-    border-radius: 12px;
-    padding: 6px;
+    border: 0;
+    background-color: rgb(var(--sec-container));
+    border-radius: 4px;
+    padding: 8px;
 }
 .performer-tag-container .image-thumbnail:hover,
 .movie-tag-container .image-thumbnail:hover {
-    filter: brightness(1.15);
-    transition: filter 0.35s ease;
+    filter: brightness(1.05);
+    transition: filter 0.35s ease 0.15s;
 }
 /* Tagger Configuration Card */
 .tagger-container .collapse.show.card > .row > hr.w-100 {
