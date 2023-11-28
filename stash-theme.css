@@ -9428,6 +9428,8 @@ button.sprite-button.btn.btn-link > svg.fa-image {
     letter-spacing: 0.5px;
     color: rgb(var(--on-surface-variant)) !important;
 }
+
+
 .performer-tag-container,
 .movie-tag-container {
     margin: 4px;
