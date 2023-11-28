@@ -9441,13 +9441,13 @@ button.sprite-button.btn.btn-link > svg.fa-image {
     color: rgb(var(--on-surface-variant)) !important;
 }
 
-.search-item > .row > .original-scene-details > .collapse.show .col:has(*.performer-tag-container) {
+.search-item > .row > .original-scene-details > .collapse.show .col:is(:has(*.performer-tag-container):has(*.movie-tag-container) {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
 }
 
-.original-scene-details > .collapse.show > .col > div:has(.performer-tag-container) {
+.original-scene-details > .collapse.show > .col > div:is(:has(.performer-tag-container):has(.movie-tag-container)) {
     display: flex;
     margin-left: auto;
     flex-direction: row;
@@ -9458,7 +9458,7 @@ button.sprite-button.btn.btn-link > svg.fa-image {
     transition: all 0.35s ease-in 0s;
     will-change: transform, margin-left, transition;
 }
-.original-scene-details > .collapse.show > .col > div:has(.performer-tag-container) + div:has(>.tag-item) {
+.original-scene-details > .collapse.show > .col > div:is(:has(.performer-tag-container):has(.movie-tag-container)) + div:has(>.tag-item) {
     margin-left: auto;
     margin-top: auto;
     position: relative;
@@ -9473,6 +9473,10 @@ button.sprite-button.btn.btn-link > svg.fa-image {
     will-change: transform, height, right;
 }
 
+img.image-thumbnail {
+    min-width: 75px;
+}
+
 .performer-tag-container,
 .movie-tag-container {
     margin: 4px;
@@ -9480,12 +9484,13 @@ button.sprite-button.btn.btn-link > svg.fa-image {
     border-radius: 12px;
     padding: 6px;
 }
-.performer-tag-container .image-thumbnail:hover {
+.performer-tag-container .image-thumbnail:hover,
+.movie-tag-container .image-thumbnail:hover {
     filter: brightness(1.15);
     transition: filter 0.35s ease;
 }
 /* Tagger Configuration Card */
-.tagger-container .collapse.show.card>.row>hr.w-100 {
+.tagger-container .collapse.show.card > .row > hr.w-100 {
     border-top: 1px solid #3d515f;
     margin-right: 0.9rem;
     margin-left: 0.9rem;
