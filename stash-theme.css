@@ -9410,6 +9410,11 @@ button.sprite-button.btn.btn-link > svg.fa-image {
 .tagger-container .mt-2.text-right:has(>*.btn-primary):not(.submit-draft) {
     margin-top: 12px !important;
 }
+
+.tagger-container .search-item > .row > .col > .scene-card.mr-3 {
+    margin-right: 0 !important;
+}
+
 .original-scene-details>.collapse.show>.col:first-of-type>h4 {
     color: rgb(var(--on-sec-container));
 }
