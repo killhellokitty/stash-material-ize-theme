@@ -9439,7 +9439,16 @@ button.sprite-button.btn.btn-link > svg.fa-image {
     letter-spacing: 0.5px;
     color: rgb(var(--on-surface-variant)) !important;
 }
-
+.original-scene-details > .collapse.show > .col > div:has(.performer-tag-container) {
+    display: flex;
+    margin-left: auto;
+    float: right;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
 .original-scene-details > .collapse.show > .col > div:has(.performer-tag-container) + div:has(>.tag-item) {
     margin-left: auto;
     margin-top: auto;
