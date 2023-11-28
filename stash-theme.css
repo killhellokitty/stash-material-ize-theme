@@ -4435,7 +4435,7 @@ div.card.studio-card .TruncatedText,
     text-shadow: none;
 }
 
-.tagger-container .TruncatedText {
+.tagger-container .scene-link > .TruncatedText {
     background-color: rgba(var(--white-color),var(--text-screen));
     border-radius: 2.5rem;
     max-width: 65%;
@@ -4444,19 +4444,19 @@ div.card.studio-card .TruncatedText,
 }
 
 /* doesn't except variables??? --white-color used for background. And darkened text shadow. */
-.tagger-container .TruncatedText:hover {
+.tagger-container .scene-link > .TruncatedText:hover {
     background-color: rgb(251, 250, 249, .5); 
     text-shadow: 1px 2px 1px rgb(0,0,0,.7); 
 }
-.tagger-container .TruncatedText:active {
+.tagger-container .scene-link > .TruncatedText:active {
     background-color: rgb(251, 250, 249, .6);
     text-shadow: 1px 2px 1px rgb(0,0,0,.5);
 }
-.tagger-container .TruncatedText:visited {
+.tagger-container .scene-link > .TruncatedText:visited {
     background-color: rgb(251, 250, 249, .7);
     text-shadow: 1px 2px 1px rgb(0,0,0,.6);
 }
-.tagger-container .TruncatedText:focus {
+.tagger-container .scene-link > .TruncatedText:focus {
     text-decoration-color: ;
 }
 
