@@ -9401,7 +9401,7 @@ button.sprite-button.btn.btn-link > svg.fa-image {
 .tagger-container .input-group>.form-control:not(:first-child):not(:last-child) {
     border-radius: 4px;
     left: -34px;
-    margin-right: -30px;
+    margin-right: -31px;
     background-color: rgb(var(--card-color));
 }
 .tagger-container .input-group>.form-control:not(:first-child):not(:last-child):focus {
