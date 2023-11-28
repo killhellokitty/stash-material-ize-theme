@@ -9406,10 +9406,10 @@ button.sprite-button.btn.btn-link > svg.fa-image {
     margin-top: 12px !important;
 }
 .original-scene-details>.collapse.show>.col:first-of-type>h4 {
-    color: #87a6bd;
+    color: rgb(var(--on-sec-container));
 }
 .original-scene-details>.collapse.show>.col:first-of-type>h5 {
-    color: #99b8cf;
+    color: #adcce6;
 }
 .original-scene-details>.collapse.show>.col:first-of-type>.TruncatedText {
     margin-bottom: 8px;
