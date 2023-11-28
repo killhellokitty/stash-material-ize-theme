@@ -9469,7 +9469,7 @@ button.sprite-button.btn.btn-link > svg.fa-image {
     right: 16px;
     transform: translate(16px, 12px);
     transition: all 0.45s ease 0s;
-    will-change: transform height right;
+    will-change: transform, height, right;
 }
 
 .performer-tag-container,
