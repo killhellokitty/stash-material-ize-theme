@@ -9339,8 +9339,9 @@ div#create-scene-page {
 .mt-2, .my-2 {
     margin-top: 12px !important;
 }
-.tagger-container .col-md-6.my-1 .input-group {
+.tagger-container .col-md-6 .input-group {
     align-items: center;
+    left: -3px;
 }
 .tagger-container .col-md-6.my-1 .input-group>.input-group-append>button.btn.btn-primary,
 .tagger-container .collapse.show.card .input-group>.input-group-append>button.btn.btn-primary,
