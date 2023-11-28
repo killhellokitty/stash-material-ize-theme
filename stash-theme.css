@@ -1188,7 +1188,7 @@ button.bg-secondary:focus {
 .input-group-text {
     border: 0;
     border-style: none;
-    color: rgba(224,227,225,0.87);
+    color: rgb(var(--outline));
     position: relative;
     left: 13px;
     top: -28px;
@@ -1196,7 +1196,7 @@ button.bg-secondary:focus {
     font-weight: 500;
     line-height: 16px;
     letter-spacing: 0.5px;
-    background-color: #334b46;
+    background-color: rgb(var(--card-color));
     padding-left: 4px;
     padding-right: 4px;
     z-index: 33;
@@ -9398,6 +9398,9 @@ button.sprite-button.btn.btn-link > svg.fa-image {
     left: -34px;
     margin-right: -30px;
     background-color: rgb(var(--card-color));
+}
+.tagger-container .input-group>.form-control:not(:first-child):not(:last-child):focus {
+    background-color: rgb(var(--card-color)) !important;
 }
 .tagger-container .mt-2.text-right:has(>*.btn-primary):not(.submit-draft) {
     margin-top: 12px !important;
