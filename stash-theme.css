@@ -61,6 +61,11 @@ body ::-webkit-resizer,
     background-color: #2e3330;
 }
 
+.row {
+    margin-right: auto;
+    margin-left: auto;
+}
+
 [type=number]::-webkit-inner-spin-button {
     height: 42px;
     background: #eaeceb url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAKUlEQVQYlWNgwAT/sYhhKPiPT+F/LJgEsHv37v+EMGkmkuImoh2NoQAANlcun/q4OoYAAAAASUVORK5CYII=) no-repeat center center;;
