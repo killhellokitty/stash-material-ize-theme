@@ -9393,8 +9393,7 @@ div#create-scene-page {
     padding-top: 16px;
     width: 100%;
 }
-.scene-link:hover,
-.scene-link:focus {
+.scene-link:is(:hover, :focus) {
     color: rgb(var(--pry-color));
 }
 .scene-link:active {
@@ -9450,7 +9449,7 @@ button.sprite-button.btn.btn-link > svg.fa-image {
     color: rgb(var(--on-surface-variant)) !important;
 }
 
-.search-item > .row > .original-scene-details > .collapse.show .col:is(:has(*.performer-tag-container):has(*.movie-tag-container)) {
+.search-item > .row .original-scene-details > .collapse.show .col:is(:has(*.performer-tag-container):has(*.movie-tag-container)) {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
