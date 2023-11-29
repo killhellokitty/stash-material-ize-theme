@@ -1009,13 +1009,12 @@ input[type=range]::-ms-tooltip {
 /* --- Changes how the Bar at the top of the page behaves --- */
 .fixed-bottom, 
 .fixed-top {
-    /*position: relative !important;*/
     top:0 !important;
 }
 .fixed-top {
     position: sticky !important; 
 }
-/* --- Color that is used within .card secments --- */
+
 .text-muted {
     color: rgb(var(--muted-text)) !important; /*#656B84*/
 }
