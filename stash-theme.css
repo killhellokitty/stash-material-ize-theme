@@ -5673,7 +5673,7 @@ nav.nav.nav-tabs {
     }
 }
 .top-nav .navbar-buttons {
-    margin: 0 -4px;
+    margin: auto -4px;
 }
 .navbar-dark .navbar-nav .nav-link {
     flex-grow: 1;
