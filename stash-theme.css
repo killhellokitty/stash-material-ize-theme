@@ -9361,6 +9361,7 @@ div#create-scene-page {
         padding-right: 0;
         margin-bottom: 16px;
         border-radius: 12px 0;
+        align-items: flex-start !important;
     }
 }
 
