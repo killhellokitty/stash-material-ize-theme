@@ -5231,6 +5231,8 @@ button.minimal.collapse-button.btn-primary {
     font-size: 24px;
     border-radius: 5rem;
     border: 0;
+    padding: 0 1.5px;
+    width: 40px;
     background-color: transparent;
     box-shadow: none;
     outline: none;
