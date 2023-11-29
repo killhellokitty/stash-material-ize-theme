@@ -4440,7 +4440,7 @@ textarea.text-input.code.form-control {
 .no-gutters .TruncatedText, 
 .tag-card .TruncatedText, 
 div.card.studio-card .TruncatedText, 
-.tagger-container .TruncatedText  {
+.tagger-container .col > .scene-link > .TruncatedText  {
     font-family: var(--HeaderFont);
     font-size: 22px;
     line-height: 28px;
@@ -4449,7 +4449,7 @@ div.card.studio-card .TruncatedText,
     text-shadow: none;
 }
 
-.tagger-container .scene-link > .TruncatedText {
+.tagger-container .col > .scene-link > .TruncatedText {
     background-color: rgba(var(--white-color),var(--text-screen));
     border-radius: 2.5rem;
     max-width: 65%;
@@ -4458,20 +4458,17 @@ div.card.studio-card .TruncatedText,
 }
 
 /* doesn't except variables??? --white-color used for background. And darkened text shadow. */
-.tagger-container .scene-link > .TruncatedText:hover {
+.tagger-container .col > .scene-link > .TruncatedText:hover {
     background-color: rgb(251, 250, 249, .5); 
     text-shadow: 1px 2px 1px rgb(0,0,0,.7); 
 }
-.tagger-container .scene-link > .TruncatedText:active {
+.tagger-container .col > .scene-link > .TruncatedText:active {
     background-color: rgb(251, 250, 249, .6);
     text-shadow: 1px 2px 1px rgb(0,0,0,.5);
 }
-.tagger-container .scene-link > .TruncatedText:visited {
+.tagger-container .col > .scene-link > .TruncatedText:visited {
     background-color: rgb(251, 250, 249, .7);
     text-shadow: 1px 2px 1px rgb(0,0,0,.6);
-}
-.tagger-container .scene-link > .TruncatedText:focus {
-    text-decoration-color: ;
 }
 
 .no-gutters .TruncatedText {
@@ -9492,11 +9489,27 @@ button.sprite-button.btn.btn-link > svg.fa-image {
     background-color: rgb(var(--sec-container));
     border-radius: 4px;
     padding: 8px;
+    display: flex;
+    flex: 1 1 30%;
+    max-width: 33%;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: stretch;
+    align-content: center;
 }
 :is(.performer-tag, .movie-tag) > img.image-thumbnail:hover {
     filter: brightness(1.05);
     transition: filter 0.35s ease 0.15s;
 }
+
+.collapse.show > .col > div > .performer-tag-container > a.performer-tag.col {
+    display: flex;
+    flex: 0 0 30%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
 /* Tagger Configuration Card */
 .tagger-container .collapse.show.card > .row > hr.w-100 {
     border-top: 1px solid #3d515f;
