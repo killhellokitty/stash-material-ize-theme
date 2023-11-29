@@ -5235,33 +5235,24 @@ button.minimal.collapse-button.btn-primary {
     box-shadow: none;
     outline: none;
 }
-button.minimal.collapse-button.btn-primary:not(:disabled):not(.disabled):hover,
-button.minimal.collapse-button.btn-primary:not(:disabled):not(.disabled):hover:focus,
-button.minimal.collapse-button.btn-primary:not(:disabled):not(.disabled):focus:not(:focus-visible),
-button.minimal.collapse-button.btn-primary:not(:disabled):not(.disabled):focus-visible {
+button.minimal.collapse-button.btn-primary:not(:disabled):not(.disabled):is(:hover, :focus-visible) {
     border: 0;
-    border-style: none;
-    color: #c6e7ff;
-    background-color: #005a7f;
-    box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12);
+    color: rgb(var(--on-surface-variant));
+    background-color: rgba(var(--pry-color),var(--btn-hover));
     outline: none;
 }
-button.minimal.collapse-button.btn-primary:not(:disabled):not(.disabled):active,
-button.minimal.collapse-button.btn-primary:not(:disabled):not(.disabled):active:focus,
-button.minimal.collapse-button.btn-primary:not(:disabled):not(.disabled):active:focus:hover,
-button.minimal.collapse-button.btn-primary:not(:disabled):not(.disabled):active:hover {
+button.minimal.collapse-button.btn-primary:not(:disabled):not(.disabled):is(:active, :focus, :active:focus) {
     border: 0;
-    border-style: none;
-    color: #c6e7ff;
-    background-color: #006892;
-    box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2), 0px 8px 10px 1px rgba(0,0,0,0.14), 0px 3px 14px 2px rgba(0,0,0,0.12);
+    color: rgb(var(--on-surface-variant));
+    background-color: rgba(var(--pry-color),var(--btn-active));
+    box-shadow: none;
     outline: none;
 }
 button.minimal.collapse-button.btn-primary:not(:disabled):not(.disabled):focus-visible {
-    outline-color: #dffffb;
+    outline-color: rgb(var(--focus-ring));
     outline-style: solid;
-    outline-width: 2px;
-    outline-offset: 3px;
+    outline-width: 0.25rem;
+    outline-offset: -1px;
 }
 
 .tag-item .btn, 
