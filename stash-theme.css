@@ -10179,6 +10179,8 @@ button[title=Help].nav-utility.minimal.btn.btn-primary:has(>svg.svg-inline--fa.f
 /* The scene card Popover for Performer-tag-container to align left to right in a row*/
 .show.popover:has(.performer-tag-container) {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 /*#root:has(.recommendations-container) nav.top-nav.navbar.navbar-dark.bg-dark.fixed-top .navbar-nav .nav-link.active > .btn.btn-primary {
     color: rgb(var(--on-surface-variant));
