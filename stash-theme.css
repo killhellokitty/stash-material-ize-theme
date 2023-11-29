@@ -5982,27 +5982,28 @@ nav.top-nav.navbar .navbar-collapse.collapse.show > .navbar-nav:last-child {
 }
 .navbar-dark .navbar-nav .nav-link:not(.active) a.btn-primary:focus-visible,
 .top-nav .navbar-collapse .navbar-nav .nav-link:not(.active):focus-visible {
-    color: #00f3d7;
-    background-color: #2d3130;
+    color: rgb(var(--tertiary));
     border-radius: 0.05rem;
-    outline-color: #dffffb;
-    outline-offset: -1px;
+    outline-color: rgb(var(--focus-ring));
+    border-radius: 4px;
+    outline-offset: 1px;
     outline-style: solid;
-    outline-width: 0.23rem;
+    outline-width: 0.25rem;
     box-shadow: none;
-    text-decoration: none;
-    text-shadow: none;
+    text-underline-offset: 0.15em;
+    text-decoration-thickness: from-font;
+    text-shadow: var(--light-txt-shadow);
 }
 .navbar-dark .navbar-nav .nav-link.active a.btn-primary:not(:disabled):not(.disabled):focus-visible,
 .top-nav .navbar-collapse .navbar-nav .nav-link.active:focus-visible {
-    outline-color: #00dfc6;
-    outline-offset: -1px;
+    outline-color: rgb(var(--tertiary));
+    outline-offset: 1px;
     outline-style: solid;
     outline-width: 0.25rem;
-    background-color: transparent;
-    filter: none;
+    text-underline-offset: 0.15em;
+    text-decoration-thickness: from-font;
     box-shadow: none;
-    text-shadow: none;
+    text-shadow: var(--light-txt-shadow);
 }
 nav.top-nav.navbar .navbar-collapse.collapse:not(.show)>.navbar-nav {
     width: 100%;
