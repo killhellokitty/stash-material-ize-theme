@@ -5985,7 +5985,7 @@ nav.top-nav.navbar .navbar-collapse.collapse.show > .navbar-nav:last-child {
     color: rgb(var(--tertiary));
     outline-color: rgb(var(--focus-ring));
     border-radius: 4px;
-    outline-offset: 1px;
+    outline-offset: 3px;
     outline-style: solid;
     outline-width: 0.25rem;
     box-shadow: none;
@@ -5997,7 +5997,7 @@ nav.top-nav.navbar .navbar-collapse.collapse.show > .navbar-nav:last-child {
 .top-nav .navbar-collapse .navbar-nav .nav-link.active:focus-visible {
     border-radius: 4px;
     outline-color: rgb(var(--tertiary));
-    outline-offset: 1px;
+    outline-offset: 3px;
     outline-style: solid;
     outline-width: 0.25rem;
     text-underline-offset: 0.15em;
