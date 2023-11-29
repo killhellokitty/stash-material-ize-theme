@@ -5232,6 +5232,7 @@ button.minimal.collapse-button.btn-primary {
     border: 0;
     padding: 0 1.5px;
     width: 40px;
+    background-image: none;
     background-color: transparent;
     box-shadow: none;
     outline: none;
@@ -5242,23 +5243,17 @@ button.minimal.collapse-button.btn-primary {
 .collapse:not(.show) button.minimal.collapse-button.btn-primary {
     color: rgb(var(--on-surface-variant));
 }
-button.minimal.collapse-button.btn-primary:not(:disabled):not(.disabled):is(:hover, :focus-visible) {
-    border: 0;
+.collapse.show button.minimal.collapse-button.btn-primary:not(:disabled):not(.disabled):is(:hover, :focus-visible) {
     color: rgb(var(--pry-color));
-    background-image: none;
     background-color: rgba(var(--pry-color),var(--btn-hover));
-    outline: none;
 }
 .collapse:not(.show) button.minimal.collapse-button.btn-primary:not(:disabled):not(.disabled):is(:hover, :focus-visible) {
     color: rgb(var(--on-surface-variant));
     background-color: rgba(var(--on-surface-variant),var(--btn-hover));
 }
-button.minimal.collapse-button.btn-primary:not(:disabled):not(.disabled):is(:active, :focus, :active:focus) {
-    border: 0;
+.collapse.show button.minimal.collapse-button.btn-primary:not(:disabled):not(.disabled):is(:active, :focus, :active:focus) {
     color: rgb(var(--pry-color));
     background-color: rgba(var(--pry-color),var(--btn-active));
-    box-shadow: none;
-    outline: none;
 }
 .collapse:not(.show) button.minimal.collapse-button.btn-primary:not(:disabled):not(.disabled):is(:active, :focus, :active:focus) {
     color: rgb(var(--on-surface-variant));
