@@ -2961,10 +2961,8 @@ span.filter-container.text-muted.paginationIndex.center-text:last-of-type {
     outline: none;
     background-color: rgba(var(--surface-variant),var(--btn-hover-rev));
 }
-.btn-link:not(:has(>*.performer)):not(:disabled):not(.disabled):focus,
-.btn-link:not(:has(>*.performer)):not(:disabled):not(.disabled):active,
+.btn-link:not(:has(>*.performer)):not(:disabled):not(.disabled):is(:focus, :active, :active:focus),
 .btn-link.active:not(:has(>*.performer)):not(:disabled):not(.disabled),
-.btn-link:not(:has(>*.performer)):focus:not(:disabled):not(.disabled):active,
 .btn-link.active:not(:has(>*.performer)):not(:disabled):not(.disabled):focus {
     color: rgb(var(--on-surface-variant))
     text-decoration: none;
