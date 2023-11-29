@@ -5226,7 +5226,7 @@ button:not([title=Statistics], [title=Settings]).minimal:not(.nav-utility, .bran
 }
 
 /* Collapse Button in Search-Item Card. */
-button.minimal.collapse-button.btn-primary:is(:only-of-type, :hover, :focus-visible, :active, :focus, :active:focus) {
+.collapse button.minimal.collapse-button.btn-primary:is(:only-of-type, :hover, :focus-visible, :active, :focus, :active:focus) {
     font-size: 24px;
     border-radius: 5rem;
     border: 0;
