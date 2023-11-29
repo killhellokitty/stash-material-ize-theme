@@ -2941,7 +2941,7 @@ span.filter-container.text-muted.paginationIndex.center-text:last-of-type {
 .btn-link:not(:has(>*.performer)) {
     font-size: 1rem;
     font-weight: 500;
-    color: rgb(var(--on-surface));
+    color: rgb(var(--on-surface-variant));
     text-decoration: none;
     display: inline-block;
     padding-left: 8px;
@@ -2949,7 +2949,7 @@ span.filter-container.text-muted.paginationIndex.center-text:last-of-type {
     min-height: 40px;
     letter-spacing: 0.1px;
     line-height: 20px;
-    background-color: transparent;
+    background-color: rgb(var(--surface-variant));
     border: 0;
     box-shadow: none;
     border-radius: 5rem;
@@ -2958,7 +2958,7 @@ span.filter-container.text-muted.paginationIndex.center-text:last-of-type {
 .btn-link:not(:has(>*.performer)):focus,
 .btn-link:not(:has(>*.performer)):hover:focus:not(:disabled):not(.disabled),
 .btn-link:not(:has(>*.performer)):focus-visible {
-    color: #00f3d7;
+    color: rgb(var(--link-hover));
     text-decoration: none;
     box-shadow: none;
     outline: none;
@@ -2970,7 +2970,7 @@ span.filter-container.text-muted.paginationIndex.center-text:last-of-type {
 .btn-link.active:not(:has(>*.performer)):focus:not(:disabled):not(.disabled),
 .btn-link:not(:has(>*.performer)):active:hover:not(:disabled):not(.disabled),
 .btn-link.active:not(:has(>*.performer)):hover:not(:disabled):not(.disabled) {
-    color: #00f3d7;
+    color: rgb(var(--link-active))
     text-decoration: none;
     outline: none;
     box-shadow: none;
@@ -3971,6 +3971,7 @@ div.tagger-container .btn-link {
     padding: 0 8px;
     margin: 16px;
     text-shadow: none; 
+    box-shadow: var(--elevation-1);
 }
 
 .scene-tabs h1.text-center {
