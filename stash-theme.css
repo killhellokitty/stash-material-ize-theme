@@ -2954,37 +2954,33 @@ span.filter-container.text-muted.paginationIndex.center-text:last-of-type {
     box-shadow: none;
     border-radius: 5rem;
 }
-.btn-link:not(:has(>*.performer)):hover:not(:disabled):not(.disabled),
-.btn-link:not(:has(>*.performer)):focus,
-.btn-link:not(:has(>*.performer)):hover:focus:not(:disabled):not(.disabled),
-.btn-link:not(:has(>*.performer)):focus-visible {
-    color: rgb(var(--link-hover));
+.btn-link:not(:has(>*.performer)):is(:hover, :focus-visible) {
+    color: rgb(var(--on-surface-variant));
     text-decoration: none;
     box-shadow: none;
     outline: none;
-    background-color: rgba(168, 223, 212, 0.08);
+    background-color: rgba(var(--surface-variant),var(--btn-hover-rev));
 }
-.btn-link:not(:has(>*.performer)):active:not(:disabled):not(.disabled),
+.btn-link:not(:has(>*.performer)):not(:disabled):not(.disabled):focus,
+.btn-link:not(:has(>*.performer)):not(:disabled):not(.disabled):active,
 .btn-link.active:not(:has(>*.performer)):not(:disabled):not(.disabled),
-.btn-link:not(:has(>*.performer)):active:focus:not(:disabled):not(.disabled),
-.btn-link.active:not(:has(>*.performer)):focus:not(:disabled):not(.disabled),
-.btn-link:not(:has(>*.performer)):active:hover:not(:disabled):not(.disabled),
-.btn-link.active:not(:has(>*.performer)):hover:not(:disabled):not(.disabled) {
-    color: rgb(var(--link-active))
+.btn-link:not(:has(>*.performer)):focus:not(:disabled):not(.disabled):active,
+.btn-link.active:not(:has(>*.performer)):not(:disabled):not(.disabled):focus {
+    color: rgb(var(--on-surface-variant))
     text-decoration: none;
     outline: none;
     box-shadow: none;
-    background-color: rgba(168, 223, 212, 0.14);
+    background-color: rgba(var(--surface-variant),var(--btn-active-rev));
 }
-.btn-link:not(:has(>*.performer)):focus-visible:not(:disabled):not(.disabled) {
-    outline-color: #dffffb;
-    outline-width: 0.2rem;
+.btn-link:not(:has(>*.performer)):focus-visible {
+    outline-color: rgb(var(--focus-ring));
+    outline-width: 0.25rem;
     outline-style: solid;
-    outline-offset: 3px;
+    outline-offset: -1px;
 }
 .btn-link:not(:has(>*.performer)):disabled,
 .btn-link.disabled:not(:has(>*.performer)) {
-    opacity: 0.4;
+    opacity: 0.38;
 }
 
 button.minimal.brand-link.d-none.d-md-inline-block.btn.btn-primary {
