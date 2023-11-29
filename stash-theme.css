@@ -5234,16 +5234,13 @@ button.minimal.collapse-button.btn.btn-primary.btn-lg.enhanced:is(:only-of-type,
     padding: 0 1.5px;
     width: 40px;
     background-image: none;
-    background-color: transparent;
     box-shadow: none;
     outline: none;
 }
 button.minimal.collapse-button.btn.btn-primary.btn-lg.enhanced:is(:hover, :focus-visible) {
-    color: rgb(var(--on-surface-variant));
     background-color: rgba(var(--on-surface-variant),var(--btn-hover));
 }
 button.minimal.collapse-button.btn.btn-primary.btn-lg.enhanced:is(:active, :focus, :active:focus) {
-    color: rgb(var(--on-surface-variant));
     background-color: rgba(var(--on-surface-variant),var(--btn-active));
 }
 button.minimal.collapse-button.btn.btn-primary.btn-lg.enhanced:focus-visible {
