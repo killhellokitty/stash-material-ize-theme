@@ -189,6 +189,7 @@ h6,
     --warning: 255, 185, 136; /*#ffb988*/
     --mars: 80, 143, 184; /*#508fb8*/
     --white-color: 251, 250, 249; /*#fbfaf9*/
+    --nav-white: 250, 250, 250; /*#fafafa*/
     --focus-ring: 255, 255, 255; /*#006590*/
     --muted-text: 213, 229, 242; /*#d5e5f2*/
     --interactive-input: 226, 226, 229; /*#e2e2e5 --on-surface*/
