@@ -2079,17 +2079,16 @@ button.tag-list-button.btn.btn-secondary:not(:has(>.tag-list-anchor)):disabled {
     outline: none;
 }
 
-.top-nav > .navbar-brand > a > button.minimal.brand-link.btn.btn-primary, 
-.top-nav > .navbar-brand > a > button.minimal.brand-link.btn.btn-primary:is(:hover, :focus, :active, :active:focus, :focus-visible) {
+.top-nav > .navbar-brand > a > button.minimal.brand-link.btn.btn-primary:is(:only-of-type, :hover, :focus, :active, :active:focus, :focus-visible) {
     font-weight: 400;
-    color: rgb(var(--white-color)) !important;
+    color: rgb(var(--nav-white));
     font-size: 32px;
     font-family: var(--LogoFont);
     line-height: 40px;
     letter-spacing: 0.85px;
     height: 64px;
     position: relative;
-    background-color: transparent !important;
+    background-color: transparent;
     background-image: var(--StashLogo);
     background-position: 24px 19px;
     background-repeat: no-repeat;
@@ -2117,13 +2116,13 @@ button.tag-list-button.btn.btn-secondary:not(:has(>.tag-list-anchor)):disabled {
     }
 }
 .top-nav > .navbar-brand > a > button.minimal.brand-link.btn.btn-primary:is(:hover, :focus-visible) {
-    color: rgb(var(--btn-min-primary))!important;
+    color: rgb(var(--btn-min-primary)) !important;
 }
 .top-nav > .navbar-brand > a > button.minimal.brand-link.btn.btn-primary:focus-visible {
-    text-decoration-color: rgb(var(--btn-min-primary));
+    text-decoration-color: rgb(var(--btn-min-primary)) !important;
 }
 .top-nav > .navbar-brand > a > button.minimal.brand-link.btn.btn-primary:is(:active, :focus, :active:focus) {
-    color: rgb(var(--pry-color))!important;
+    color: rgb(var(--pry-color)) !important;
     outline: none;
 }
 
@@ -6209,7 +6208,7 @@ svg.svg-inline--fa.fa-heart.fa-icon {
 .top-nav .navbar-buttons .btn:not(.donate),
 .top-nav .navbar-buttons a.nav-utility button.minimal.btn.btn-primary:not(.donate),
 button[title=Help].nav-utility.minimal.btn.btn-primary:has(>svg.svg-inline--fa.fa-circle-question.fa-icon) {
-    color: rgb(var(--btn-toggler-color));
+    color: rgb(var(--nav-white));
     border: none;
     border-radius: 50%;
     background: none;
