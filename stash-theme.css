@@ -5226,7 +5226,7 @@ button:not([title=Statistics], [title=Settings]).minimal:not(.nav-utility, .bran
 }
 
 /* Collapse Button in Search-Item Card. */
-.collapse.show button.minimal.collapse-button.btn-primary:is(:only-of-type, :hover, :focus-visible, :active, :focus, :active:focus) {
+.collapse.show > button.minimal.collapse-button.btn.btn-primary.btn-lg.enhanced:is(:only-of-type, :hover, :focus-visible, :active, :focus, :active:focus) {
     color: rgb(var(--pry-color));
     font-size: 24px;
     border-radius: 5rem;
@@ -5238,7 +5238,7 @@ button:not([title=Statistics], [title=Settings]).minimal:not(.nav-utility, .bran
     box-shadow: none;
     outline: none;
 }
-.collapse:not(.show) button.minimal.collapse-button.btn-primary:is(:only-of-type, :hover, :focus-visible, :active, :focus, :active:focus) {
+.collapse:not(.show) > button.minimal.collapse-button.btn.btn-primary.btn-lg.enhanced:is(:only-of-type, :hover, :focus-visible, :active, :focus, :active:focus) {
     color: rgb(var(--on-surface-variant));
     font-size: 24px;
     border-radius: 5rem;
@@ -5250,23 +5250,23 @@ button:not([title=Statistics], [title=Settings]).minimal:not(.nav-utility, .bran
     box-shadow: none;
     outline: none;
 }
-.collapse.show button.minimal.collapse-button.btn-primary:is(:hover, :focus-visible) {
+.collapse.show > button.minimal.collapse-button.btn.btn-primary.btn-lg.enhanced:is(:hover, :focus-visible) {
     color: rgb(var(--pry-color));
     background-color: rgba(var(--pry-color),var(--btn-hover));
 }
-.collapse:not(.show) button.minimal.collapse-button.btn-primary:is(:hover, :focus-visible) {
+.collapse:not(.show) > button.minimal.collapse-button.btn.btn-primary.btn-lg.enhanced:is(:hover, :focus-visible) {
     color: rgb(var(--on-surface-variant));
     background-color: rgba(var(--on-surface-variant),var(--btn-hover));
 }
-.collapse.show button.minimal.collapse-button.btn-primary:is(:active, :focus, :active:focus) {
+.collapse.show > button.minimal.collapse-button.btn.btn-primary.btn-lg.enhanced:is(:active, :focus, :active:focus) {
     color: rgb(var(--pry-color));
     background-color: rgba(var(--pry-color),var(--btn-active));
 }
-.collapse:not(.show) button.minimal.collapse-button.btn-primary:is(:active, :focus, :active:focus) {
+.collapse:not(.show) > button.minimal.collapse-button.btn.btn-primary.btn-lg.enhanced:is(:active, :focus, :active:focus) {
     color: rgb(var(--on-surface-variant));
     background-color: rgba(var(--on-surface-variant),var(--btn-active));
 }
-button.minimal.collapse-button.btn-primary:focus-visible {
+button.minimal.collapse-button.btn.btn-primary.btn-lg.enhanced:focus-visible {
     outline-color: rgb(var(--focus-ring));
     outline-style: solid;
     outline-width: 0.25rem;
