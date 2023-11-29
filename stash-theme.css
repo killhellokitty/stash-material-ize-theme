@@ -5227,7 +5227,6 @@ button:not([title=Statistics], [title=Settings]).minimal:not(.nav-utility, .bran
 
 /* Collapse Button in Search-Item Card. */
 button.minimal.collapse-button.btn-primary {
-    color: rgb(var(--on-surface-variant));
     font-size: 24px;
     border-radius: 5rem;
     border: 0;
@@ -5237,18 +5236,33 @@ button.minimal.collapse-button.btn-primary {
     box-shadow: none;
     outline: none;
 }
+.collapse.show button.minimal.collapse-button.btn-primary {
+    color: rgb(var(--pry-color));
+}
+.collapse:not(.show) button.minimal.collapse-button.btn-primary {
+    color: rgb(var(--on-surface-variant));
+}
 button.minimal.collapse-button.btn-primary:not(:disabled):not(.disabled):is(:hover, :focus-visible) {
     border: 0;
-    color: rgb(var(--on-surface-variant));
+    color: rgb(var(--pry-color));
+    background-image: none;
     background-color: rgba(var(--pry-color),var(--btn-hover));
     outline: none;
 }
+.collapse:not(.show) button.minimal.collapse-button.btn-primary:not(:disabled):not(.disabled):is(:hover, :focus-visible) {
+    color: rgb(var(--on-surface-variant));
+    background-color: rgba(var(--on-surface-variant),var(--btn-hover));
+}
 button.minimal.collapse-button.btn-primary:not(:disabled):not(.disabled):is(:active, :focus, :active:focus) {
     border: 0;
-    color: rgb(var(--on-surface-variant));
+    color: rgb(var(--pry-color));
     background-color: rgba(var(--pry-color),var(--btn-active));
     box-shadow: none;
     outline: none;
+}
+.collapse:not(.show) button.minimal.collapse-button.btn-primary:not(:disabled):not(.disabled):is(:active, :focus, :active:focus) {
+    color: rgb(var(--on-surface-variant));
+    background-color: rgba(var(--on-surface-variant),var(--btn-active));
 }
 button.minimal.collapse-button.btn-primary:not(:disabled):not(.disabled):focus-visible {
     outline-color: rgb(var(--focus-ring));
