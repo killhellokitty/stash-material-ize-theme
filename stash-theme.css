@@ -5983,7 +5983,6 @@ nav.top-nav.navbar .navbar-collapse.collapse.show > .navbar-nav:last-child {
 .navbar-dark .navbar-nav .nav-link:not(.active) a.btn-primary:focus-visible,
 .top-nav .navbar-collapse .navbar-nav .nav-link:not(.active):focus-visible {
     color: rgb(var(--tertiary));
-    border-radius: 0.05rem;
     outline-color: rgb(var(--focus-ring));
     border-radius: 4px;
     outline-offset: 1px;
@@ -5996,6 +5995,7 @@ nav.top-nav.navbar .navbar-collapse.collapse.show > .navbar-nav:last-child {
 }
 .navbar-dark .navbar-nav .nav-link.active a.btn-primary:not(:disabled):not(.disabled):focus-visible,
 .top-nav .navbar-collapse .navbar-nav .nav-link.active:focus-visible {
+    border-radius: 4px;
     outline-color: rgb(var(--tertiary));
     outline-offset: 1px;
     outline-style: solid;
