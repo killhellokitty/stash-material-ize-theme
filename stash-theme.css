@@ -5993,7 +5993,7 @@ nav.top-nav.navbar .navbar-collapse.collapse.show > .navbar-nav:last-child {
     text-decoration-thickness: from-font;
     text-shadow: var(--light-txt-shadow);
 }
-.navbar-dark .navbar-nav .nav-link.active a.btn-primary:not(:disabled):not(.disabled):focus-visible,
+.navbar-dark .navbar-nav .nav-link.active a.btn-primary:focus-visible,
 .top-nav .navbar-collapse .navbar-nav .nav-link.active:focus-visible {
     border-radius: 4px;
     outline-color: rgb(var(--tertiary));
