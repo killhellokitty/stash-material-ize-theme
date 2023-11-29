@@ -2085,24 +2085,28 @@ button.tag-list-button.btn.btn-secondary:not(:has(>.tag-list-anchor)):disabled {
     font-size: 32px;
     font-family: var(--LogoFont);
     line-height: 40px;
-    letter-spacing: 0;
+    letter-spacing: 0.85px;
     height: 64px;
-    position: absolute;
+    position: relative;
     background-color: transparent !important;
     background-image: var(--StashLogo);
-    background-position: left center;
+    background-position: 24px 19px;
     background-repeat: no-repeat;
     background-size: 36px 36px;
-    padding: 11px 12px 11px 44px;
+    padding: 0 24px 0 68px;
     box-shadow: none !important;
-    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-color: rgb(var(--nav-color2));
+    text-decoration-thickness: from-font;
+    text-underline-offset: 0.11em;
     overflow: visible;
-    will-change: auto;
-    top: -28px;
-    margin-left: 20px;
-    left: 0px;
+    outline: none;
+    will-change: text-decoration, color, animation, transition;
+    top: 0%;
+    margin-left: -19%;
+    left: 0%;
     z-index: 1200;
-    transition: outline 0.2s ease-in-out, color 0.5s ease-in-out 0.2s, text-decoration 0.4s ease-in 0.15s;
+    transition: outline 0.2s ease-in-out, color 0.5s ease-in 0.2s, text-decoration 0.4s ease-in-out 0.15s;
 }
 @media (max-width: 575.98px) {
     .top-nav > .navbar-brand > a > button.minimal.brand-link.btn.btn-primary, 
@@ -2115,13 +2119,11 @@ button.tag-list-button.btn.btn-secondary:not(:has(>.tag-list-anchor)):disabled {
     color: rgb(var(--btn-min-primary))!important;
 }
 .top-nav > .navbar-brand > a > button.minimal.brand-link.btn.btn-primary:focus-visible {
-    outline: none;
-    text-decoration: underline;
     text-decoration-color: rgb(var(--btn-min-primary));
-    text-decoration-thickness: from-font;
 }
 .top-nav > .navbar-brand > a > button.minimal.brand-link.btn.btn-primary:is(:active, :focus, :active:focus) {
     color: rgb(var(--pry-color))!important;
+    outline: none;
 }
 
 .top-nav > .navbar-brand,
