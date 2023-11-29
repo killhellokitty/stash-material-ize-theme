@@ -1013,7 +1013,7 @@ input[type=range]::-ms-tooltip {
     top:0 !important;
 }
 .fixed-top {
-    position: relative !important; 
+    position: sticky !important; 
 }
 /* --- Color that is used within .card secments --- */
 .text-muted {
