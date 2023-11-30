@@ -9473,25 +9473,36 @@ button.sprite-button.btn.btn-link > svg.fa-image {
     color: rgb(var(--on-surface-variant)) !important;
 }
 
-.search-item > .row .original-scene-details > .collapse.show .col:is(:has(*.performer-tag-container)) {
+.search-item > .row .original-scene-details > .collapse.show .col:has(:is(*.performer-tag-container)) {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    visibility: hidden;
 }
 
-.original-scene-details > .collapse.show > .col > div:is(:has(.performer-tag-container)) {
+.original-scene-details > .collapse.show > .col > div:has(:is(.performer-tag-container)) {
     display: flex;
     margin-left: auto;
     flex-direction: row;
     justify-content: flex-end;
     flex-wrap: wrap;
     align-content: flex-start;
-    visibility: hidden;
-    will-change: visibility;
+    opacity: 0;
+    animation: scene-tag-in 0.55s ease-in forwards;
+    will-change: animation;
 }
-.original-scene-details > .collapse.show > .col > div:is(:has(.performer-tag-container)) + div:has(>.tag-item),
-.original-scene-details > .collapse.show > .col > div:empty + div:has(>.tag-item) {
+@keyframes scene-tag-in {
+    0% {
+        visibility: visible;
+        transform: scale(0.0%) translate(0%,0%);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(100%);
+        opacity: 1;
+    }
+}
+.original-scene-details > .collapse.show > .col > div:has(:is(.performer-tag-container)) + div:has(:is(>.tag-item)),
+.original-scene-details > .collapse.show > .col > div:empty + div:has(:is(>.tag-item)) {
     margin-left: auto;
     margin-top: auto;
     position: relative;
@@ -9519,20 +9530,8 @@ button.sprite-button.btn.btn-link > svg.fa-image {
     justify-content: flex-end;
     align-items: stretch;
     align-content: center;
-    animation: scene-tag-in 0.55s ease-in forwards;
-    will-change: animation, margin-left, visibility;
 }
-@keyframes scene-tag-in {
-    0% {
-        visibility: visible;
-        transform: scale(0.0%) translate(0%,0%);
-        opacity: 0;
-    }
-    100% {
-        transform: scale(100%);
-        opacity: 1;
-    }
-}
+
 :is(.performer-tag, .movie-tag) > img.image-thumbnail {
     min-width: 75px;
     width: 75px;
