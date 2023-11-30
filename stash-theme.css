@@ -9829,7 +9829,7 @@ button:not(.navbar-buttons a[href^="/scenes/new"] > button):not(.navbar-buttons 
     will-change: auto;
 }
 a:not([href^="/scenes"]):not([href^="/images"]):not([href^="/movies"]):not([href^="/scenes/markers"]):not([href^="/galleries"]):not([href^="/performers"]):not([href^="/studios"]):not([href^="/tags"]).minimal::after, 
-button:not(.brand-link).minimal:not(.scene-count>button.minimal):not(.o-counter>button.minimal):not(.image-count>button.minimal):not(.gallery-count>button.minimal):not(.organized>button.minimal):not(.tag-count>button.minimal):not(.performer-count>button.minimal):not(.organized-button)::after, 
+button:not(.brand-link).minimal:not(.scene-count>button.minimal):not(:where(.o-counter,.o-count)>button.minimal):not(.image-count>button.minimal):not(.gallery-count>button.minimal):not(.organized>button.minimal):not(.tag-count>button.minimal):not(.performer-count>button.minimal):not(.organized-button)::after, 
 .navbar-brand button.minimal.brand-link.d-inline-block.btn.btn-primary::after,
 button#operation-menu.minimal.dropdown-toggle.btn.btn-secondary::after,
 .card-popovers a.pwPlayer_button::after {
@@ -10014,7 +10014,7 @@ div:not(.pagination)>button:not(.duration-button):not(.scrape-url-button):not(.p
 .btn-danger:has(>:not(.fa-minus)):not(:active):not(.active)::after,
 .btn-success:not(:active):not(.active)::after,
 a:not([href^="/scenes"]):not([href^="/images"]):not([href^="/movies"]):not([href^="/scenes/markers"]):not([href^="/galleries"]):not([href^="/performers"]):not([href^="/studios"]):not([href^="/tags"]).minimal:not(:active):not(.active)::after, 
-button:not(.brand-link).minimal:not(.scene-count>button.minimal):not(.o-counter>button.minimal):not(.image-count>button.minimal):not(.gallery-count>button.minimal):not(.organized>button.minimal):not(.tag-count>button.minimal):not(.performer-count>button.minimal):not(.organized-button):not(:active):not(.active)::after, 
+button:not(.brand-link).minimal:not(.scene-count>button.minimal):not(:where(.o-counter,.o-count)>button.minimal):not(.image-count>button.minimal):not(.gallery-count>button.minimal):not(.organized>button.minimal):not(.tag-count>button.minimal):not(.performer-count>button.minimal):not(.organized-button):not(:active):not(.active)::after, 
 button#operation-menu.minimal.dropdown-toggle.btn.btn-secondary:not(:active):not(.active)::after,
 .card-popovers a.pwPlayer_button:not(:active):not(.active)::after,
 .pagination button.btn.btn-secondary:not(:hover)::after,
@@ -10043,7 +10043,7 @@ div:not(.pagination)>button:not(.duration-button):not(.scrape-url-button):not(.p
 .btn-danger:has(>:not(.fa-minus))::after,
 .btn-success::after,
 a:not([href^="/scenes"]):not([href^="/images"]):not([href^="/movies"]):not([href^="/scenes/markers"]):not([href^="/galleries"]):not([href^="/performers"]):not([href^="/studios"]):not([href^="/tags"]).minimal::after, 
-button:not(.brand-link).minimal:not(.scene-count>button.minimal):not(.o-counter>button.minimal):not(.image-count>button.minimal):not(.gallery-count>button.minimal):not(.organized>button.minimal):not(.tag-count>button.minimal):not(.performer-count>button.minimal):not(.organized-button)::after, 
+button:not(.brand-link).minimal:not(.scene-count>button.minimal):not(:where(.o-counter,.o-count)>button.minimal):not(.image-count>button.minimal):not(.gallery-count>button.minimal):not(.organized>button.minimal):not(.tag-count>button.minimal):not(.performer-count>button.minimal):not(.organized-button)::after, 
 .navbar-brand button.minimal.brand-link.d-inline-block.btn.btn-primary::after,
 button#operation-menu.minimal.dropdown-toggle.btn.btn-secondary::after,
 .card-popovers a.pwPlayer_button::after,
@@ -10067,7 +10067,7 @@ div:not(.pagination)>button:not(.duration-button):not(.scrape-url-button):not(.p
 .btn-danger:has(>:not(.fa-minus)):focus:not(:focus-visible)::after,
 .btn-success:focus:not(:focus-visible)::after,
 a:not([href^="/scenes"]):not([href^="/images"]):not([href^="/movies"]):not([href^="/scenes/markers"]):not([href^="/galleries"]):not([href^="/performers"]):not([href^="/studios"]):not([href^="/tags"]).minimal:focus:not(:focus-visible)::after, 
-button:not(.brand-link).minimal:not(.scene-count>button.minimal):not(.o-counter>button.minimal):not(.image-count>button.minimal):not(.gallery-count>button.minimal):not(.organized>button.minimal):not(.tag-count>button.minimal):not(.performer-count>button.minimal):not(.organized-button):focus:not(:focus-visible)::after, 
+button:not(.brand-link).minimal:not(.scene-count>button.minimal):not(:where(.o-counter,.o-count)>button.minimal):not(.image-count>button.minimal):not(.gallery-count>button.minimal):not(.organized>button.minimal):not(.tag-count>button.minimal):not(.performer-count>button.minimal):not(.organized-button):focus:not(:focus-visible)::after, 
 .navbar-brand button.minimal.brand-link.d-inline-block.btn.btn-primary:focus:not(:focus-visible)::after,
 button#operation-menu.minimal.dropdown-toggle.btn.btn-secondary:focus:not(:focus-visible)::after,
 .card-popovers a.pwPlayer_button:focus:not(:focus-visible)::after,
