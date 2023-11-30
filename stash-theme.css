@@ -2228,13 +2228,6 @@ svg.svg-inline--fa.fa-right-from-bracket.fa-icon {
     font-size: 24px;
 }
 
-.ml-3,
-.mx-3,
-.ml-2,
-.mx-2 {
-    margin-top: 4px;
-    margin-bottom: 4px;
-}
 /* Primary Button */
 button:not([title=Help]).btn-primary,
 .login .btn.btn-primary {
