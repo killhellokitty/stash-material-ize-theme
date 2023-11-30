@@ -2488,6 +2488,14 @@ div#crop-btn-container {
 .original-scene-details {
     padding-bottom: 12px;
 }
+.scene-details, .original-scene-details>.collapse.show {
+    transition: all 0s cubic-bezier(0.55, 0.06, 0.68, 0.19) 0.55s;
+    will-change: transition;
+}
+.scene-details, .original-scene-details>.collapse:not(.show) {
+    transition: all 0s cubic-bezier(0.18, 0.89, 0.32, 1.28) 0.55s;
+    will-change: transition;
+}
 .scene-details h5 {
     color: #ccd7d4;
 }
@@ -3198,7 +3206,14 @@ li.search-result.selected-result.active {
 .bs-popover-auto[x-placement^=left] > .arrow:before {
     border-left-color: rgba(255,255,255,0.15);
 }
-
+.popover.show {
+    transition: all 0s ease-in 0.4s;
+    will-change: transition;
+}
+.popover:not(.show) {
+    transition: all 0s ease 0s;
+    will-change: transition;
+}
 /* Tooltip */
 /*.tooltip {
     background-color: transparent;
