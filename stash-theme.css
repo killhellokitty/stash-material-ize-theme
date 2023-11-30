@@ -9373,7 +9373,7 @@ div#create-scene-page {
     }
 }
 
-.scene-link {
+.scene-link:not(.optional-field-content > .scene-link) {
     color: rgb(var(--white-color));
     position: absolute;
     display: inline-flex;
@@ -9382,14 +9382,20 @@ div#create-scene-page {
     padding-top: 16px;
     width: 100%;
 }
-.scene-link:is(:hover, :focus) {
+.scene-link:not(.optional-field-content > .scene-link):is(:hover, :focus) {
     color: rgb(var(--pry-color));
 }
-.scene-link:active {
+.scene-link:not(.optional-field-content > .scene-link):active {
     color: rgb(var(--link-active));
 }
-.scene-link:visited {
+.scene-link:not(.optional-field-content > .scene-link):visited {
     color: rgb(var(--link-active));
+}
+
+.optional-field-content > .scene-link {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
 }
 
 button.sprite-button.btn.btn-link > svg.fa-image {
