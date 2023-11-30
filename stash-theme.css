@@ -2307,6 +2307,10 @@ button:not([title=Help]).btn-primary:not(:disabled):not(.disabled):active:focus 
      outline: none;
 }
 
+.tagger-container > .tagger-container-header > div > div.d-flex > button.btn.btn-primary {
+    margin: 4px 0 4px 14px;
+}
+
 button#batch-result-toggle-off.btn.btn-primary,
 button#batch-result-toggle-mixed.btn.btn-primary,
 button#batch-result-toggle-on.btn.btn-primary {
