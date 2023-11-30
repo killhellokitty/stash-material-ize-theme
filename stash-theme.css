@@ -9455,7 +9455,8 @@ button.sprite-button.btn.btn-link > svg.fa-image {
     transition: all 0.35s ease-in 0s;
     will-change: transform, margin-left, transition;
 }
-.original-scene-details > .collapse.show > .col > div:is(:has(.performer-tag-container)) + div:has(>.tag-item) {
+.original-scene-details > .collapse.show > .col > div:is(:has(.performer-tag-container)) + div:has(>.tag-item),
+.original-scene-details > .collapse.show > .col > div:empty + div:has(>.tag-item) {
     margin-left: auto;
     margin-top: auto;
     position: relative;
