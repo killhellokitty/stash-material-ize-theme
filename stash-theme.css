@@ -6709,6 +6709,7 @@ button.clearable-text-field-clear.btn.btn-secondary:not(:disabled):not(.disabled
 
 /* */
 .hover-popover-content {
+     /*max-width: 32rem;*/
      max-width: 32rem;
      text-align: center;
      background: var(--nav-color);
