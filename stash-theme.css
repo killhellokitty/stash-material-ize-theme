@@ -3018,6 +3018,11 @@ button.minimal.brand-link.d-none.d-md-inline-block.btn.btn-primary {
      background-color: rgb(var(--card-color2));
 }
 
+/* Search Result Card from Scraper -- perhaps the above .selected-result has incorrect color?? */
+li.search-result.selected-result.active {
+    background-color: transparent;
+}
+
 /* Popovers */
 .popover {
     font-family: var(--HeaderFont);
