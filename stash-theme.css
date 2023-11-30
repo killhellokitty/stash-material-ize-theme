@@ -9473,19 +9473,17 @@ button.sprite-button.btn.btn-link > svg.fa-image {
     color: rgb(var(--on-surface-variant)) !important;
 }
 
-.collapse.show > .col > div > .performer-tag-container > a.performer-tag.col {
-    opacity: 0;
-}
-.collapse.show > .col > div > .performer-tag-container > a.performer-tag.col + .tag-item {
-    opacity: 0;
-}
-
 .search-item > .row .original-scene-details > .collapse.show .col:has(:is(*.performer-tag-container)) {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
 }
 
+.original-scene-details > .collapse.show > .col > div:has(:is(.performer-tag-container))::before {
+    content: " ";
+    visibility: hidden;
+    opacity: 0;
+}
 .original-scene-details > .collapse.show > .col > div:has(:is(.performer-tag-container)) {
     display: flex;
     margin-left: auto;
@@ -9493,15 +9491,20 @@ button.sprite-button.btn.btn-link > svg.fa-image {
     justify-content: flex-end;
     flex-wrap: wrap;
     align-content: flex-start;
+}
+.original-scene-details > .collapse.show > .col > div:has(:is(.performer-tag-container))::after {
+    content: " ";
     opacity: 0;
     animation: scene-tag-in 0.55s ease-in forwards;
     will-change: animation;
 }
 @keyframes scene-tag-in {
     0% {
-        visibility: visible;
         transform: scale(0.0%) translate(0%,0%);
         opacity: 0;
+    }
+    10% {
+        visibility: visible;
     }
     100% {
         transform: scale(100%);
