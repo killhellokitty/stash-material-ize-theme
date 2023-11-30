@@ -9473,6 +9473,13 @@ button.sprite-button.btn.btn-link > svg.fa-image {
     color: rgb(var(--on-surface-variant)) !important;
 }
 
+.collapse.show > .col > div > .performer-tag-container > a.performer-tag.col {
+    opacity: 0;
+}
+.collapse.show > .col > div > .performer-tag-container > a.performer-tag.col + .tag-item {
+    opacity: 0;
+}
+
 .search-item > .row .original-scene-details > .collapse.show .col:has(:is(*.performer-tag-container)) {
     display: flex;
     flex-direction: column;
@@ -9548,6 +9555,7 @@ button.sprite-button.btn.btn-link > svg.fa-image {
     justify-content: center;
     flex-wrap: nowrap;
 }
+
 
 /* Tagger Configuration Card */
 .tagger-container .collapse.show.card > .row > hr.w-100 {
