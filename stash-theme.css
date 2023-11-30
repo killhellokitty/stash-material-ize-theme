@@ -9471,11 +9471,6 @@ button.sprite-button.btn.btn-link > svg.fa-image {
     will-change: transform, height, right;
 }
 
-:is(.performer-tag, .movie-tag) > img.image-thumbnail {
-    min-width: 75px;
-    width: 75px;
-}
-
 :is(.performer-tag-container, .movie-tag-container) {
     margin: 4px;
     border: 0;
@@ -9489,6 +9484,10 @@ button.sprite-button.btn.btn-link > svg.fa-image {
     justify-content: flex-end;
     align-items: stretch;
     align-content: center;
+}
+:is(.performer-tag, .movie-tag) > img.image-thumbnail {
+    min-width: 75px;
+    width: 75px;
 }
 :is(.performer-tag, .movie-tag) > img.image-thumbnail:hover {
     filter: brightness(1.05);
