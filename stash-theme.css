@@ -2309,6 +2309,10 @@ button:not([title=Help]).btn-primary:not(:disabled):not(.disabled):active:focus 
     border-radius: 5rem;
     width: 40px;
 }
+/* Small Spinner on SearchButton in Tagger-Container */
+.LoadingIndicator.small .spinner-border {
+    color: rgb(var(--on-tertiary)) !important;
+}
 
 button#batch-result-toggle-off.btn.btn-primary,
 button#batch-result-toggle-mixed.btn.btn-primary,
