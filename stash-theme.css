@@ -9487,19 +9487,8 @@ button.sprite-button.btn.btn-link > svg.fa-image {
     justify-content: flex-end;
     flex-wrap: wrap;
     align-content: flex-start;
-    visibility: visible;
-    animation: scene-tag-in 0.55s ease-in forwards;
-    will-change: animation, margin-left, visibility;
-}
-@keyframes scene-tag-in {
-    0% {
-        transform: scale(0.0%) translate(0%,0%);
-        opacity: 0;
-    }
-    100% {
-        transform: scale(100%);
-        opacity: 1;
-    }
+    visibility: hidden;
+    will-change: visibility;
 }
 .original-scene-details > .collapse.show > .col > div:is(:has(.performer-tag-container)) + div:has(>.tag-item),
 .original-scene-details > .collapse.show > .col > div:empty + div:has(>.tag-item) {
@@ -9517,7 +9506,7 @@ button.sprite-button.btn.btn-link > svg.fa-image {
     will-change: transform, height, right;
 }
 
-:is(.performer-tag-container, .movie-tag-container) {
+.original-scene-details > .collapse.show > .col > div :is(.performer-tag-container, .movie-tag-container) {
     margin: 4px;
     border: 0;
     background-color: rgb(var(--sec-container));
@@ -9530,6 +9519,19 @@ button.sprite-button.btn.btn-link > svg.fa-image {
     justify-content: flex-end;
     align-items: stretch;
     align-content: center;
+    animation: scene-tag-in 0.55s ease-in forwards;
+    will-change: animation, margin-left, visibility;
+}
+@keyframes scene-tag-in {
+    0% {
+        visibility: visible;
+        transform: scale(0.0%) translate(0%,0%);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(100%);
+        opacity: 1;
+    }
 }
 :is(.performer-tag, .movie-tag) > img.image-thumbnail {
     min-width: 75px;
