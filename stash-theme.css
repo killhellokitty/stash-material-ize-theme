@@ -9479,11 +9479,16 @@ button.sprite-button.btn.btn-link > svg.fa-image {
     justify-content: flex-end;
 }
 
-.original-scene-details > .collapse.show > .col > div:has(:is(.performer-tag-container))::before {
+.original-scene-details > .collapse:not(.show):has(:is(.performer-tag-container)) {
+    visibility: hidden;
+    opacity: 0;
+}
+.original-scene-details > .collapse.show:has(:is(.performer-tag-container))::before {
     content: " ";
     visibility: hidden;
     opacity: 0;
 }
+
 .original-scene-details > .collapse.show > .col > div:has(:is(.performer-tag-container)) {
     display: flex;
     margin-left: auto;
@@ -9492,7 +9497,8 @@ button.sprite-button.btn.btn-link > svg.fa-image {
     flex-wrap: wrap;
     align-content: flex-start;
 }
-.original-scene-details > .collapse.show > .col > div:has(:is(.performer-tag-container))::after {
+
+.original-scene-details > .collapse.show:has(:is(.performer-tag-container))::after {
     content: " ";
     opacity: 0;
     animation: scene-tag-in 0.55s ease-in forwards;
@@ -9511,6 +9517,7 @@ button.sprite-button.btn.btn-link > svg.fa-image {
         opacity: 1;
     }
 }
+
 .original-scene-details > .collapse.show > .col > div:has(:is(.performer-tag-container)) + div:has(:is(>.tag-item)),
 .original-scene-details > .collapse.show > .col > div:empty + div:has(:is(>.tag-item)) {
     margin-left: auto;
