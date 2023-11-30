@@ -2476,7 +2476,10 @@ div#crop-btn-container {
 }
 
 .text-danger {
-    color: #690005 !important;
+    color: rgb(var(--error)) !important;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: 0;
 }
 
 .scene-video-filter .row .col-12 {
