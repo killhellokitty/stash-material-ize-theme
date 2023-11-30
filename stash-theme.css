@@ -3043,6 +3043,12 @@ li.search-result.selected-result.active {
     border-top: 1px solid rgb(var(--card-fold));
 }
 
+li.search-result.selected-result.active h5 .optional-field-content {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.1px;
+}
+
 /* Popovers */
 .popover {
     font-family: var(--HeaderFont);
