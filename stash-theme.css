@@ -3023,6 +3023,10 @@ li.search-result.selected-result.active {
     background-color: transparent;
 }
 
+.search-item > ul:has(>.search-result.selected-result.active) {
+    border-top: 1px solid rgb(var(--card-fold));
+}
+
 /* Popovers */
 .popover {
     font-family: var(--HeaderFont);
