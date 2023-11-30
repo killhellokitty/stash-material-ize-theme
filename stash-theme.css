@@ -9424,15 +9424,26 @@ div#create-scene-page {
     text-align: center;
     padding-top: 16px;
     width: 100%;
+    text-decoration: none;
+    text-decoration-color: transparent;
 }
 .scene-link:not(.optional-field-content > .scene-link):is(:hover, :focus) {
     color: rgb(var(--pry-color));
+    text-decoration: underline;
+    text-decoration-color: rgb(var(--pry-color));
+    text-underline-offset: 1.2em;
 }
 .scene-link:not(.optional-field-content > .scene-link):active {
     color: rgb(var(--link-active));
+    text-decoration: underline;
+    text-decoration-color: rgb(var(--link-active));
+    text-underline-offset: 1.2em;
 }
 .scene-link:not(.optional-field-content > .scene-link):visited {
     color: rgb(var(--link-active));
+    text-decoration: underline;
+    text-decoration-color: rgb(var(--link-active));
+    text-underline-offset: 1.2em;
 }
 
 .optional-field-content > .scene-link {
