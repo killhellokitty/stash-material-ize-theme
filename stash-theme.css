@@ -2963,7 +2963,7 @@ span.filter-container.text-muted.paginationIndex.center-text:last-of-type {
 .btn-link:not(:has(>*.performer)):is(:hover, :focus-visible) {
     color: rgb(var(--on-surface-variant));
     text-decoration: none;
-    box-shadow: none;
+    box-shadow: var(--elevation-2);
     outline: none;
     background-color: rgba(var(--surface-variant),var(--btn-hover-rev));
 }
@@ -2971,7 +2971,7 @@ span.filter-container.text-muted.paginationIndex.center-text:last-of-type {
     color: rgb(var(--on-surface-variant))
     text-decoration: none;
     outline: none;
-    box-shadow: none;
+    box-shadow: var(--elevation-0);
     background-color: rgba(var(--surface-variant),var(--btn-active-rev));
 }
 .btn-link:not(:has(>*.performer)):focus-visible {
@@ -2979,6 +2979,7 @@ span.filter-container.text-muted.paginationIndex.center-text:last-of-type {
     outline-width: 0.25rem;
     outline-style: solid;
     outline-offset: -1px;
+    box-shadow: none;
 }
 .btn-link:not(:has(>*.performer)):disabled,
 .btn-link.disabled:not(:has(>*.performer)) {
