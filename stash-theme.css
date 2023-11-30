@@ -2300,6 +2300,12 @@ button:not([title=Help]).btn-primary:not(:disabled):not(.disabled):active:focus 
      outline: none;
 }
 
+.tagger-container > .tagger-container-header > div > div.d-flex > div.ml-2 > button.btn.btn-primary {
+    padding: 0;
+    border-radius: 5rem;
+    width: 40px;
+}
+
 button#batch-result-toggle-off.btn.btn-primary,
 button#batch-result-toggle-mixed.btn.btn-primary,
 button#batch-result-toggle-on.btn.btn-primary {
