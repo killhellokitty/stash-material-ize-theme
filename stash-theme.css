@@ -5071,18 +5071,23 @@ button:not([title=Statistics], [title=Settings]).minimal:not(.nav-utility, .bran
     font-size: 18px;
 }
 
-:is(.scene-card, .image-card, .tag-card, .performer-card, .gallery-card, .movie-card, .studio-card) > .card-popovers > :is(:where(.o-counter, .o-count), .scene-count, .movie-count, .tag-count, .performer-count, .gallery-count, .image-count, .marker-count) > button.minimal.btn.btn-primary:is(:hover, :focus-visible) {
+:is(.scene-card, .image-card, .tag-card, .performer-card, .gallery-card, .movie-card, .studio-card) > .card-popovers > :is(:not(.scene-card > .card-popovers > :where(.o-counter, .o-count)):not(.performer-card > .card-popovers > :where(.o-counter, .o-count)):not(.movie-card > .card-popovers > :where(.o-counter, .o-count)):not(.organized), .scene-count, .movie-count, .tag-count, .performer-count, .gallery-count, .image-count, .marker-count) > button.minimal.btn.btn-primary:is(:hover, :focus-visible) {
     background-image: none !important;
     background-color: rgba(var(--btn-min-primary),var(--btn-hover)) !important;
     box-shadow: var(--elevation-0) !important;
 }
-:is(:not(.scene-card, .image-card, .movie-card)) > .card-popovers > :not(:is(.o-counter, .o-count)) > button.minimal.btn.btn-primary:is(:focus, :active, :focus:active) {
+:is(.scene-card,.movie-card,.performer-card) > .card-popovers > :is(.o-counter, .o-count, .organized) > button.minimal.btn.btn-primary:is(:hover, :focus-visible) {
+    background-image: none !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+:is(:not(.scene-card, .image-card, .movie-card)) > .card-popovers > :not(:is(.o-counter, .o-count)):not(.organized) > button.minimal.btn.btn-primary:is(:focus, :active, :focus:active) {
     background-image: none !important;
     background-color: rgba(var(--btn-min-primary),var(--btn-active)) !important;
     box-shadow: none !important;
 }
 :is(.scene-card, .image-card, .movie-card) > .card-popovers button.minimal.btn.btn-primary:is(:focus, :active, :focus:active),
-:is(.scene-card, .image-card, .tag-card, .performer-card, .gallery-card, .movie-card, .studio-card) > .card-popovers > :is(.o-counter, .o-count) > button.minimal.btn.btn-primary:is(:focus, :active, :focus:active) {
+:is(.scene-card, .image-card, .tag-card, .performer-card, .gallery-card, .movie-card, .studio-card) > .card-popovers > :is(.o-counter, .o-count, .organized) > button.minimal.btn.btn-primary:is(:focus, :active, :focus:active) {
     background-image: none !important;
     background-color: transparent !important;
     box-shadow: none !important;
