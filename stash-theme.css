@@ -2314,62 +2314,32 @@ button:not([title=Help]).btn-primary:not(:disabled):not(.disabled):active:focus 
     color: rgb(var(--on-tertiary)) !important;
 }
 
-button#batch-result-toggle-off.btn.btn-primary,
-button#batch-result-toggle-mixed.btn.btn-primary,
-button#batch-result-toggle-on.btn.btn-primary {
-    border: 1px solid #bec9c5;
-    background-color: #1f2f2e;
-    color: #bec9c5;
-}
-button#batch-result-toggle-off.btn.btn-primary:not(:disabled):not(.disabled):hover,
-button#batch-result-toggle-off.btn.btn-primary:not(:disabled):not(.disabled):hover:focus,
-button#batch-result-toggle-off.btn.btn-primary:not(:disabled):not(.disabled):focus:not(:focus-visible),
-button#batch-result-toggle-off.btn.btn-primary:not(:disabled):not(.disabled):focus-visible,
-button#batch-result-toggle-mixed.btn.btn-primary:not(:disabled):not(.disabled):hover,
-button#batch-result-toggle-mixed.btn.btn-primary:not(:disabled):not(.disabled):hover:focus,
-button#batch-result-toggle-mixed.btn.btn-primary:not(:disabled):not(.disabled):focus:not(:focus-visible),
-button#batch-result-toggle-mixed.btn.btn-primary:not(:disabled):not(.disabled):focus-visible,
-button#batch-result-toggle-on.btn.btn-primary:not(:disabled):not(.disabled):hover,
-button#batch-result-toggle-on.btn.btn-primary:not(:disabled):not(.disabled):hover:focus,
-button#batch-result-toggle-on.btn.btn-primary:not(:disabled):not(.disabled):focus:not(:focus-visible),
-button#batch-result-toggle-on.btn.btn-primary:not(:disabled):not(.disabled):focus-visible {
-    color: #bec9c5;
-    background-color: #273b3a;
+button:is(#batch-result-toggle-off, #batch-result-toggle-mixed, #batch-result-toggle-on).btn.btn-primary {
+    border: 1px solid rgb(var(--outline));
+    background-color: rgb(var(--body-color2));
+    color: rgb(var(--on-surface));
     box-shadow: none;
-    outline: none;
 }
-button#batch-result-toggle-off.btn.btn-primary:not(:disabled):not(.disabled):focus-visible,
-button#batch-result-toggle-mixed.btn.btn-primary:not(:disabled):not(.disabled):focus-visible,
-button#batch-result-toggle-on.btn.btn-primary:not(:disabled):not(.disabled):focus-visible {
+button:is(#batch-result-toggle-off, #batch-result-toggle-mixed, #batch-result-toggle-on).btn.btn-primary:not(:disabled):not(.disabled):is(:hover, :focus-visible) {
+    color: rgb(var(--on-surface));
+    background-color: rgba(var(--on-surface),var(--btn-hover));
+}
+button:is(#batch-result-toggle-off, #batch-result-toggle-mixed, #batch-result-toggle-on).btn.btn-primary:not(:disabled):not(.disabled):focus-visible {
     box-shadow: none;
-    outline-color: #dffffb;
+    outline-color: rgb(var(--focus-ring));
     outline-style: solid;
-    outline-width: 3px;
-    outline-offset: -2px;
+    outline-width: 0.25rem;
+    outline-offset: -1px;
 }
-button#batch-result-toggle-off.btn.btn-primary:not(:disabled):not(.disabled).active,
-button#batch-result-toggle-off.btn.btn-primary:not(:disabled):not(.disabled):active,
-button#batch-result-toggle-off.btn.btn-primary:not(:disabled):not(.disabled).active:hover,
-button#batch-result-toggle-off.btn.btn-primary:not(:disabled):not(.disabled).active:focus,
-button#batch-result-toggle-off.btn.btn-primary:not(:disabled):not(.disabled):active:hover,
-button#batch-result-toggle-off.btn.btn-primary:not(:disabled):not(.disabled):active:focus,
-button#batch-result-toggle-mixed.btn.btn-primary:not(:disabled):not(.disabled).active,
-button#batch-result-toggle-mixed.btn.btn-primary:not(:disabled):not(.disabled):active,
-button#batch-result-toggle-mixed.btn.btn-primary:not(:disabled):not(.disabled).active:hover,
-button#batch-result-toggle-mixed.btn.btn-primary:not(:disabled):not(.disabled).active:focus,
-button#batch-result-toggle-mixed.btn.btn-primary:not(:disabled):not(.disabled):active:hover,
-button#batch-result-toggle-mixed.btn.btn-primary:not(:disabled):not(.disabled):active:focus,
-button#batch-result-toggle-on.btn.btn-primary:not(:disabled):not(.disabled).active,
-button#batch-result-toggle-on.btn.btn-primary:not(:disabled):not(.disabled):active,
-button#batch-result-toggle-on.btn.btn-primary:not(:disabled):not(.disabled).active:hover,
-button#batch-result-toggle-on.btn.btn-primary:not(:disabled):not(.disabled).active:focus,
-button#batch-result-toggle-on.btn.btn-primary:not(:disabled):not(.disabled):active:hover,
-button#batch-result-toggle-on.btn.btn-primary:not(:disabled):not(.disabled):active:focus {
-     color: #bec9c5;
-     background-color: #3d515f;
-     box-shadow: none;
-     text-shadow: none;
+button:is(#batch-result-toggle-off, #batch-result-toggle-mixed, #batch-result-toggle-on).btn.btn-primary:not(:disabled):not(.disabled):is(.active, :active, :focus:not(:focus-visible), .active:focus:not(:focus-visible), :active:focus:not(:focus-visible)) {
+     color: rgb(var(--on-surface));
+     background-color: rgba(var(--on-surface),var(--btn-hover));
      outline: none;
+}
+button:is(#batch-result-toggle-off, #batch-result-toggle-mixed, #batch-result-toggle-on).btn.btn-primary:is(.disabled, :disabled) {
+    border-color: rgba(var(--on-surface),0.12);
+    color: rgba(var(--on-surface),var(--btn-disabled));
+    background-color: rgb(var(--body-color2));
 }
 
 div#crop-btn-container {
