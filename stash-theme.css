@@ -2905,6 +2905,12 @@ div.dropdown-menu .dropdown-item:hover {
     color: #c6e7ff;
 }
 
+/* Multi-Value__Remove SVG Icon size */
+svg.css-8mmkcg {
+    height: 20px!important;
+    width: 20px!important;
+}
+
 .text-success {
     color: #7DC778 !important;
 }
