@@ -9413,11 +9413,19 @@ div#create-scene-page {
     color: rgb(var(--link-active));
 }
 
+/* Text fields on Tagger-Container Search-Results */
+.optional-field-content:not(:has(>.scene-link)) {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+}
+/* Name of Scene, Movie, etc. */
 .optional-field-content > .scene-link {
     font-size: 18px;
     line-height: 26px;
     letter-spacing: 0.11px;
 }
+/* */
 
 button.sprite-button.btn.btn-link > svg.fa-image {
     font-size: 24px;
