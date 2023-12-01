@@ -2417,17 +2417,7 @@ div#crop-btn-container {
     font-size: 1.286rem;
     line-height: 1rem;
     padding: 0 0 0 0.12rem;
-    font-feature-settings: "liga";
     opacity: 1;
-}
-.tag-item button.minimal.ml-2.btn.btn-primary:hover:not(:disabled):not(.disabled) {
-    border-style: none;
-    border-width: 0;
-    text-shadow: none;
-    color: #cef1ff !important;
-}
-.tag-item button.minimal.ml-2.btn.btn-primary:active:not(:disabled):not(.disabled) {
-    color: #cef1ff !important;
 }
 
 /* Search-Result Tagger-Container Tag-items with Icons */
@@ -2447,6 +2437,9 @@ div#crop-btn-container {
     width: 30px;
     height: 30px;
     min-height: 30px;
+}
+.search-result span.tag-item > button.minimal.btn.btn-primary:hover {
+
 }
 
 .wrap-tags.filter-tags>span.badge {
