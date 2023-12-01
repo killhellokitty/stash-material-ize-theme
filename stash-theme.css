@@ -2438,6 +2438,7 @@ div#crop-btn-container {
 }
 .search-result span.tag-item > button.minimal.btn.btn-primary {
     display: flex;
+    color: rgb(var(--on-surface-variant));
     margin-right: -10px;
     padding: 4px 0 0;
     line-height: 26px;
