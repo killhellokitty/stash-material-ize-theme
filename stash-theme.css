@@ -2436,7 +2436,16 @@ div#crop-btn-container {
     justify-content: center;
     align-items: center;
 }
-
+.search-result span.tag-item > button.minimal.btn.btn-primary {
+    display: flex;
+    margin-right: -10px;
+    padding: 4px 0 0;
+    line-height: 26px;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: unset;
+    min-height: unset;
+}
 
 .wrap-tags.filter-tags>span.badge {
     align-content: center;
