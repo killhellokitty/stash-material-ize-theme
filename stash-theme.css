@@ -2331,6 +2331,10 @@ button:is(#batch-result-toggle-off, #batch-result-toggle-mixed, #batch-result-to
     color: rgb(var(--on-surface),var(--btn-disabled));
 }
 
+.tagger-container > .tagger-container-header > .d-flex > .d-flex {
+    margin-left: auto;
+}
+
 div#crop-btn-container {
     justify-content: flex-start;
     display: flex;
