@@ -2456,6 +2456,11 @@ div#crop-btn-container {
 }
 /* */
 
+/* Loading Spinner */
+.spinner-border {
+    color: rgb(var(--pry-color)) !important;
+}
+
 /* Search-Button Spinner */
 .LoadingIndicator.small .spinner-border {
     color: rgb(var(--on-tertiary));
@@ -5519,10 +5524,6 @@ nav.nav.nav-tabs {
 
 .image-card.card {
     padding: unset;
-}
-
-.spinner-border {
-    color: rgb(var(--pry-color)) !important;
 }
 
 .nav-item > .dropdown > button[title="Operations"]#operation-menu.minimal.dropdown-toggle.btn.btn-secondary,
