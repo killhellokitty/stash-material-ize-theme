@@ -9405,7 +9405,7 @@ div#create-scene-page {
     margin-bottom: 0;
     overflow: hidden;
     min-width: 44.53vw;
-    max-height: 326px;
+    max-height: fit-content;
 }
 
 @media (min-width: 576px) {
