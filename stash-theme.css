@@ -2442,6 +2442,10 @@ div#crop-btn-container {
 
 }
 
+.LoadingIndicator.small .spinner-border {
+    color: rgb(var(--on-tertiary));
+}
+
 .wrap-tags.filter-tags>span.badge {
     align-content: center;
     align-items: center;
