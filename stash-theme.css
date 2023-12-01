@@ -2794,15 +2794,14 @@ div.react-select__control.react-select__control--is-focused .react-select__place
 }
 /* Tags in Comboboxes */
 div.react-select__control .react-select__multi-value {
-    background-color: #004c6c;
-    color: #c6e7ff;
-    border: 1px solid #899390;
+    background-color: rgb(var(--sec-container));
+    border: 0;
     border-radius: 8px;
     text-shadow: none !important;
     font-weight: 500;
-    margin: 3px 3px;
-    padding: 1px 3px 1px 12px;
-    height: 26px;
+    margin: 4px;
+    padding: 0 8px 0 12px;
+    height: 32px;
 }
 div.react-select__control .react-select__multi-value:hover {
     background-color: #516b7e;
