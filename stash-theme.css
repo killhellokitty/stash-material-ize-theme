@@ -2440,12 +2440,13 @@ div#crop-btn-container {
     display: flex;
     color: rgb(var(--on-surface-variant));
     margin-right: -10px;
-    padding: 4px 0 0;
+    padding: 0;
     line-height: 26px;
-    margin-top: auto;
+    margin-top: 2px;
     margin-bottom: auto;
-    height: unset;
-    min-height: unset;
+    width: 30px;
+    height: 30px;
+    min-height: 30px;
 }
 
 .wrap-tags.filter-tags>span.badge {
