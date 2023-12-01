@@ -2430,6 +2430,14 @@ div#crop-btn-container {
     color: #cef1ff !important;
 }
 
+/* Search-Result Tagger-Container Tag-items with Icons */
+.search-result span.tag-item.badge.badge-secondary {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .wrap-tags.filter-tags>span.badge {
     align-content: center;
     align-items: center;
