@@ -2428,20 +2428,35 @@ div#crop-btn-container {
 }
 .search-result span.tag-item > button.minimal.btn.btn-primary {
     display: flex;
-    color: rgb(var(--on-surface-variant));
+    color: rgb(var(--on-surface-variant)) !important;
+    background-image: none;
     margin-right: -10px;
     padding: 0;
     line-height: 26px;
     margin-top: 2px;
     margin-bottom: auto;
-    width: 30px;
-    height: 30px;
-    min-height: 30px;
+    width: 28px;
+    height: 28px;
+    min-height: 28px;
+    box-shadow: none;
 }
-.search-result span.tag-item > button.minimal.btn.btn-primary:hover {
-
+.search-result span.tag-item > button.minimal.btn.btn-primary:is(:hover, :focus-visible) {
+    background-color: rgb(var(--surface-variant),var(--btn-hover-rev));
+    box-shadow: var(--elevation-0);
 }
+.search-result span.tag-item > button.minimal.btn.btn-primary:is(:focus:not(:focus-visible), :active, :active:focus) {
+    background-color: rgb(var(--surface-variant),var(--btn-active-rev));
+    box-shadow: none;
+}
+.search-result span.tag-item > button.minimal.btn.btn-primary:focus-visible {
+    outline-color: rgb(var(--focus-ring));
+    outline-offset: -2px;
+    outline-style: solid;
+    outline-width: 0.25rem;
+}
+/* */
 
+/* Search-Button Spinner */
 .LoadingIndicator.small .spinner-border {
     color: rgb(var(--on-tertiary));
 }
