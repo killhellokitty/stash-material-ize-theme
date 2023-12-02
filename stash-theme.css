@@ -6766,6 +6766,13 @@ button.text-success.include-exclude-button {
     border-radius: 2px;
     font-weight: 900;
 }
+li.active .optional-field.excluded .optional-field-content, 
+li.active .optional-field.excluded .scene-link {
+    text-decoration: line-through;
+    text-decoration-color: rgb(var(--on-error-container));
+    filter: saturate(0.6);
+}
+
 /* */
 .brand-link {
      background-color: var(--nav-color)!important;
