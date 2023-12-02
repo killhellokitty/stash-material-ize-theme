@@ -2803,20 +2803,22 @@ div.react-select__control .react-select__multi-value {
     margin: 4px 4px;
     padding: 0 8px 0 12px;
     height: 32px;
+    box-shadow: var(--elevation-0);
+    outline: none;
 }
-div.react-select__control .react-select__multi-value:hover,
-div.react-select__control.react-select__control--is-focused .react-select__multi-value:hover {
+div.react-select__control .react-select__multi-value:hover {
     background-image: linear-gradient(to right, rgb(var(--sec-container)), rgb(var(--sec-container)));
     background-color: rgba(var(--pry-color),var(--btn-hover));
     background-blend-mode: overlay;
+    box-shadow: var(--elevation-1);
 }
 div.react-select__control .react-select__multi-value:active,
-div.react-select__control.react-select__control--is-focused .react-select__multi-value:active,
 div.react-select__control .react-select__multi-value:focus,
-div.react-select__control.react-select__control--is-focused .react-select__multi-value:focus {
+div.react-select__control .react-select__multi-value:focus:active {
     background-image: linear-gradient(to right, rgb(var(--sec-container)), rgb(var(--sec-container)));
     background-color: rgba(var(--pry-color),var(--btn-active));
     background-blend-mode: overlay;
+    box-shadow: none;
 }
 /* Button Indicators in Combobox */
 div.react-select__indicator {
