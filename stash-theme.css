@@ -6748,6 +6748,22 @@ button.text-danger.include-exclude-button {
     border-radius: 2px;
     font-weight: 900;
 }
+
+button.text-success.include-exclude-button {
+    border: 0;
+    padding: 0;
+    margin: 0 8px 0 0;
+    outline: 0;
+    box-shadow: none;
+    background: none;
+    background-color: rgb(var(--tertiary-container));
+    color: rgb(var(--on-tertiary-container)) !important;
+    line-height: 0;
+    letter-spacing: 0;
+    font-size: 18px;
+    border-radius: 2px;
+    font-weight: 900;
+}
 /* */
 .brand-link {
      background-color: var(--nav-color)!important;
