@@ -6748,7 +6748,9 @@ button.text-danger.include-exclude-button {
     border-radius: 2px;
     font-weight: 900;
 }
-
+.text-success svg.svg-inline--fa.fa-check.fa-icon {
+    width: 1em;
+}
 button.text-success.include-exclude-button {
     border: 0;
     padding: 0;
