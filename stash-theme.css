@@ -2892,15 +2892,18 @@ div.dropdown-menu .dropdown-item:hover {
     border-radius: 5rem;
     border: 0;
     color: rgb(var(--on-surface-variant));
+    box-shadow: none;
+    outline: none;
 }
 .react-select__multi-value__remove:hover {
-    background-color: #005a80;
-    color: #c6e7ff;
+    background-color: rgba(var(--on-surface-variant),var(--btn-hover));
+    box-shadow: var(--elevation-0);
 }
 .react-select__multi-value__remove:active,
 .react-select__multi-value__remove.active {
-    background-color: #006893;
-    color: #c6e7ff;
+    background-color: rgba(var(--on-surface-variant),var(--btn-active));
+    box-shadow: none;
+    outline: none;
 }
 
 /* Multi-Value__Remove SVG Icon size */
