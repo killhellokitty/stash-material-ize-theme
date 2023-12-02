@@ -2859,7 +2859,6 @@ div.dropdown-menu {
      color: rgb(var(--on-surface));
      box-shadow: var(--elevation-2);
      border-radius: 0 4px 4px 0;
-     display: flex;
 }
 div.react-select__menu .react-select__option,
 div.react-select__menu .dropdown-item,
