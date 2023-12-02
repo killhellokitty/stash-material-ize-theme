@@ -6728,6 +6728,26 @@ button.clearable-text-field-clear.btn.btn-secondary:not(:disabled):not(.disabled
     opacity: 0.4;
 }
 
+/* Tagger-Container Text-Danger-Button */
+.text-danger svg.svg-inline--fa.fa-xmark.fa-icon {
+    min-height: 14px;
+    width: 1em;
+}
+button.text-danger.include-exclude-button {
+    border: 0;
+    padding: 0;
+    margin: 0 8px 0 0;
+    outline: 0;
+    box-shadow: none;
+    background: none;
+    background-color: rgb(var(--on-error-container));
+    color: rgb(var(--error-container)) !important;
+    font-size: 18px;
+    line-height: 0;
+    letter-spacing: 0;
+    border-radius: 2px;
+    font-weight: 900;
+}
 /* */
 .brand-link {
      background-color: var(--nav-color)!important;
