@@ -274,15 +274,13 @@ dd > a:focus:hover {
      text-decoration: underline;
      outline: none;
 }
-/*a:focus-visible {
+a:focus-visible {
     color: #00f9dd;
     text-shadow: none;
     text-decoration: solid underline;
-    outline-color: #dffffb;
-    outline-width: 2px;
-    outline-style: solid;
-    outline-offset: 2px;
-}*/
+    text-underline-offset: 0.2em;
+    outline: 0;
+}
 dd > a:visited {
     color: #AD87DF; /*purple*/
     text-decoration: none;
