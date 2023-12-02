@@ -2797,9 +2797,10 @@ div.react-select__control .react-select__multi-value {
     background-color: rgb(var(--sec-container));
     border: 0;
     border-radius: 8px;
-    text-shadow: none !important;
+    align-content: center;
+    flex-flow: wrap;
     font-weight: 500;
-    margin: 4px;
+    margin: 4px 4px;
     padding: 0 8px 0 12px;
     height: 32px;
 }
@@ -2868,32 +2869,20 @@ div.dropdown-menu .dropdown-item:hover {
 /* Scraper Tags Selected */
 .react-select__multi-value__label {
     background-color: transparent;
-    border-radius: 0;
-    border: 0;
-    border-style: none;
-    color: #c6e7ff;
+    color: rgb(var(--on-sec-container));
     text-shadow: none !important;
-    text-align: center;
     vertical-align: middle;
-    letter-spacing: 0.03571428571428571rem;
-    line-height: 1.1428571428571428rem;
-    padding-left: 0;
-    padding-right: 0.21428571428571427rem;
+    letter-spacing: 0.1px;
+    line-height: 20px;
     font-weight: 500;
-    font-size: 0.8571428571428571rem;
+    font-size: 14px;
 }
 /* ...close button */
 .react-select__multi-value__remove {
     background-color: transparent;
     border-radius: 5rem;
     border: 0;
-    border-style: none;
-    padding: 0.2857142857142857rem 0.35714285714285715rem;
-    color: #c6e7ff;
-    letter-spacing: 0.03571428571428571rem;
-    line-height: 1.1428571428571428rem;
-    font-weight: 500;
-    font-size: 0.8571428571428571rem;
+    color: rgb(var(--on-surface-variant));
 }
 .react-select__multi-value__remove:hover {
     background-color: #005a80;
