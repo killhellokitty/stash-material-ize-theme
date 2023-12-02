@@ -2804,12 +2804,19 @@ div.react-select__control .react-select__multi-value {
     padding: 0 8px 0 12px;
     height: 32px;
 }
-div.react-select__control .react-select__multi-value:hover {
-    background-color: #516b7e;
+div.react-select__control .react-select__multi-value:hover,
+div.react-select__control.react-select__control--is-focused .react-select__multi-value:hover {
+    background-image: linear-gradient(to right, rgb(var(--sec-container)), rgb(var(--sec-container)));
+    background-color: rgba(var(--pry-color),0.08);
+    background-blend-mode: overlay;
 }
 div.react-select__control .react-select__multi-value:active,
-div.react-select__control .react-select__multi-value.active {
-    background-color: #58758a;
+div.react-select__control.react-select__control--is-focused .react-select__multi-value:active,
+div.react-select__control .react-select__multi-value:focus,
+div.react-select__control.react-select__control--is-focused .react-select__multi-value:focus {
+    background-image: linear-gradient(to right, rgb(var(--sec-container)), rgb(var(--sec-container)));
+    background-color: rgba(var(--pry-color),0.13);
+    background-blend-mode: overlay;
 }
 /* Button Indicators in Combobox */
 div.react-select__indicator {
