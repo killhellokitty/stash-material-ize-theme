@@ -2479,12 +2479,12 @@ div#crop-btn-container {
     color: rgb(var(--mars));
 }
 
-.text-danger {
+/*.text-danger {
     color: rgb(var(--error)) !important;
     font-size: 22px;
     line-height: 28px;
     letter-spacing: 0;
-}
+}*/
 
 .scene-video-filter .row .col-12 {
     color: #c0ebe2;
