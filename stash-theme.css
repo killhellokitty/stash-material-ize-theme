@@ -274,7 +274,7 @@ dd > a:focus:hover {
      text-decoration: underline;
      outline: none;
 }
-a:focus-visible {
+/*a:focus-visible {
     color: #00f9dd;
     text-shadow: none;
     text-decoration: solid underline;
@@ -282,7 +282,7 @@ a:focus-visible {
     outline-width: 2px;
     outline-style: solid;
     outline-offset: 2px;
-}
+}*/
 dd > a:visited {
     color: #AD87DF; /*purple*/
     text-decoration: none;
@@ -5271,7 +5271,7 @@ button.minimal.collapse-button.btn.btn-primary.btn-lg.enhanced:is(:hover, :focus
 button.minimal.collapse-button.btn.btn-primary.btn-lg.enhanced:is(:active, :focus, :active:focus) {
     background-color: rgba(var(--on-surface-variant),var(--btn-active));
 }
-button.minimal.collapse-button.btn.btn-primary.btn-lg.enhanced:focus-visible {
+div.original-scene-details button.minimal.collapse-button.btn.btn-primary.btn-lg.enhanced:focus-visible {
     outline-color: rgb(var(--focus-ring));
     outline-style: solid;
     outline-width: 0.25rem;
