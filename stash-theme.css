@@ -9405,15 +9405,19 @@ div#create-scene-page {
     text-align: center;
     padding-top: 16px;
     width: 100%;
+    outline: 0;
 }
 .scene-link:not(.optional-field-content > .scene-link):is(:hover, :focus) {
     color: rgb(var(--pry-color));
+    outline: 0;
 }
 .scene-link:not(.optional-field-content > .scene-link):active {
     color: rgb(var(--link-active));
+    outline: 0;
 }
 .scene-link:not(.optional-field-content > .scene-link):visited {
     color: rgb(var(--link-active));
+    outline: 0;
 }
 
 /* Text fields on Tagger-Container Search-Results */
