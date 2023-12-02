@@ -2434,7 +2434,7 @@ div#crop-btn-container {
 
 /* Search-Button Spinner */
 .LoadingIndicator.small .spinner-border {
-    color: rgb(var(--on-tertiary));
+    color: rgb(var(--on-tertiary)) !important;
 }
 
 .wrap-tags.filter-tags>span.badge {
