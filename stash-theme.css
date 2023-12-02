@@ -2855,13 +2855,24 @@ div.react-select__indicator.react-select__clear-indicator:hover {
 
 div.react-select__menu, 
 div.dropdown-menu {
-     background-color: #373d3b;
-     color: #dcf6f0;
+     background-color: rgb(var(--menu-color));
+     color: rgb(var(--on-surface));
+     box-shadow: var(--elevation-2);
+     border-radius: 0 4px 4px 0;
+     display: flex;
 }
 div.react-select__menu .react-select__option,
 div.react-select__menu .dropdown-item,
 div.dropdown-menu .react-select__option {
-    color: #dcf6f0;
+    color: rgb(var(--on-surface));
+}    
+div.dropdown-menu .dropdown-item{
+    height: 48px;
+    max-height: 48px;
+    display: flex;
+    padding-left: 12px;
+    padding-right: 12px;
+    align-content: center;
 }
 div.react-select__menu .react-select__option--is-focused,
 div.react-select__menu .dropdown-item:focus,
@@ -2869,8 +2880,8 @@ div.react-select__menu .dropdown-item:hover,
 div.dropdown-menu .react-select__option--is-focused,
 div.dropdown-menu .dropdown-item:focus,
 div.dropdown-menu .dropdown-item:hover {
-    background-color: #00dfc6;
-    color: #003730;
+    background-color: rgb(var(--on-surface),var(--btn-hover));
+    color: rgb(var(--on-surface));
 }
 
 /* Scraper Tags Selected */
