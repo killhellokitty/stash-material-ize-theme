@@ -3656,6 +3656,7 @@ h5.card-section-title, .scene-tabs .scene-header {
 .scene-card a, .gallery-card a {
     color: rgb(var(--white-color));
     display: flex;
+    outline: 0;
 }
 
 .gallery-card .card-popovers {
