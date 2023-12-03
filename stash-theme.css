@@ -9885,7 +9885,7 @@ button.btn.btn-primary.btn-sm:last-child {
     margin: auto .5rem 2rem .5rem;
 }
 
-.d-flex.align-items-center .d-flex > button + button.ml-1.btn.btn-primary {
+.tagger-container .d-flex.align-items-center .d-flex > button + button.ml-1.btn.btn-primary {
     margin-left: 1rem !important;
 }
 
