@@ -9638,6 +9638,7 @@ label.form-check-label {
 .tagger-container .collapse.show.card .input-group:not(.has-validation)>input.form-control:not(:last-child) {
     border-radius: 0.5rem;
     margin-right: -54px;
+    padding-right: 68px;
 }
 .tagger-container .collapse.show.card h4 {
     color: ;
