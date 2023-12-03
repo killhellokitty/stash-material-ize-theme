@@ -9415,7 +9415,6 @@ div#create-scene-page {
 }
 .tagger-container .col-md-6 .input-group {
     align-items: center;
-    left: -3px;
 }
 .tagger-container .col-md-6.my-1 .input-group>.input-group-append>button.btn.btn-primary,
 .tagger-container .collapse.show.card .input-group>.input-group-append>button.btn.btn-primary,
@@ -9615,7 +9614,7 @@ label.form-check-label {
 }
 .tagger-container .collapse.show.card .input-group:not(.has-validation)>input.form-control:not(:last-child) {
     border-radius: 0.5rem;
-    margin-bottom: 6px;
+    margin-right: -86px;
 }
 .tagger-container .collapse.show.card h4 {
     color: ;
