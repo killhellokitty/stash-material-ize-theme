@@ -232,7 +232,7 @@ code,
     font-size: 12px;
     font-weight: 200;
     line-height: 16px;
-    letter-spacing: 0.5px;
+    letter-spacing: 1.2px;
     font-variant: tabular-nums slashed-zero;
     color: rgb(var(--on-background));
     background-color: rgb(var(--background));
