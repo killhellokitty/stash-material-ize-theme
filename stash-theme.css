@@ -4539,11 +4539,8 @@ input.form-control-plaintext {
     margin-bottom: 32px;
 }
 .input-group-append {
-    margin-top: 5px;
-    margin-bottom: 2px; /* just added 4-7-23 */
     position: relative;
-    top: -5px; /* just changed 4-7-23 from -4px to -5px */
-    margin-left: 1px;
+    left: -4px;
 }
 .input-control, .text-input {
     color: rgb(var(--interactive-input));
