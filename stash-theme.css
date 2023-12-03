@@ -2390,13 +2390,12 @@ div#crop-btn-container {
 }
 
 /* Search-Result Tagger-Container Tag-items with Icons */
-.search-result span.tag-item.badge.badge-secondary,
-.tagger-container-header > .d-flex.align-items-center + .collapse.show.card span.tag-item.badge.badge-secondary {
+:is(.search-result, .collapse.show.card) span.tag-item.badge.badge-secondary {
     display: inline-flex;
     justify-content: center;
     align-items: center;
 }
-.search-result span.tag-item > button.minimal.btn.btn-primary {
+:is(.search-result, .collapse.show.card)span.tag-item > button.minimal.btn.btn-primary {
     display: flex;
     color: rgb(var(--on-surface-variant)) !important;
     background-image: none;
@@ -2410,15 +2409,15 @@ div#crop-btn-container {
     min-height: 28px;
     box-shadow: none;
 }
-.search-result span.tag-item > button.minimal.btn.btn-primary:is(:hover, :focus-visible) {
+:is(.search-result, .collapse.show.card) span.tag-item > button.minimal.btn.btn-primary:is(:hover, :focus-visible) {
     background-color: rgb(var(--surface-variant),var(--btn-hover-rev));
     box-shadow: var(--elevation-0);
 }
-.search-result span.tag-item > button.minimal.btn.btn-primary:is(:focus:not(:focus-visible), :active, :active:focus) {
+:is(.search-result, .collapse.show.card) span.tag-item > button.minimal.btn.btn-primary:is(:focus:not(:focus-visible), :active, :active:focus) {
     background-color: rgb(var(--surface-variant),var(--btn-active-rev));
     box-shadow: none;
 }
-.search-result span.tag-item > button.minimal.btn.btn-primary:focus-visible {
+:is(.search-result, .collapse.show.card) span.tag-item > button.minimal.btn.btn-primary:focus-visible {
     outline-color: rgb(var(--focus-ring));
     outline-offset: -2px;
     outline-style: solid;
