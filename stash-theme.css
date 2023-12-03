@@ -9479,6 +9479,19 @@ div#create-scene-page {
     max-height: fit-content;
 }
 
+.tagger-container div:has(>code) {
+    position: relative;
+    margin: 8px 0 12px 8px;
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+.tagger-container div > code {
+    display: flex;
+    margin-top: 2px;
+}
+
 @media (min-width: 576px) {
     .flex-sm-row {
         flex-direction: column !important;
