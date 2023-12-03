@@ -2871,10 +2871,6 @@ div.dropdown-menu .react-select__option {
     max-height: 48px;
     padding-top: 15px;
 }    
-div.dropdown-menu .dropdown-item{
-    display: flex;
-    align-content: center;
-}
 div.react-select__menu .react-select__option--is-focused,
 div.react-select__menu .dropdown-item:focus,
 div.react-select__menu .dropdown-item:hover,
@@ -4907,14 +4903,7 @@ div.mb-2 select.btn-secondary.form-control.focus option {
     border-style: none;
     appearance: none;
 }
-div.dropdown-menu .dropdown-item:focus,
-div.dropdown-menu .dropdown-item:hover,
-div.dropdown-menu .react-select__option--is-focused,
-div.react-select__menu .dropdown-item:focus,
-div.react-select__menu .dropdown-item:hover,
-div.react-select__menu .react-select__option--is-focused {
-    background-color:rgba(0,184,163,0.85);
-}
+
 .scene-divider .btn.btn-primary,
 .scene-divider .btn.btn-primary:focus {
     color: #ffffff9f;
