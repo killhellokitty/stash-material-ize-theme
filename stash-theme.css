@@ -58,7 +58,7 @@ body ::-webkit-scrollbar-corner,
 }
 body ::-webkit-resizer,
 ::-webkit-resizer {
-    background-color: #2e3330;
+    background-color: rgb(var(--background));
 }
 
 .row {
