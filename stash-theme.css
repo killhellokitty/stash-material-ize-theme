@@ -9443,14 +9443,18 @@ div#create-scene-page {
     color: transparent;
     box-shadow: none;
 }
-.tagger-container .collapse.show.card .input-group>.input-group-append>button.btn.btn-primary:is(:hover, :focus-visible) {
+.tagger-container .collapse.show.card .input-group > .input-group-append > button.btn.btn-primary:hover {
     background-color: rgb(var(--on-surface),var(--btn-hover));
 }
-.tagger-container .collapse.show.card .input-group>.input-group-append>button.btn.btn-primary:is(:active, :focus:not(:focus-visible)) {
+.tagger-container .collapse.show.card .input-group > .input-group-append > button.btn.btn-primary:is(:active, :focus:not(:focus-visible)) {
     background-color: rgb(var(--on-surface),var(--btn-active));
     outline: none;
 }
-.tagger-container .collapse.show.card .input-group>.input-group-append>button.btn.btn-primary::after {
+.tagger-container .collapse.show.card .input-group > .input-group-append > button.btn.btn-primary:focus-visible {
+    background-color: rgb(var(--on-tertiary),var(--btn-hover));
+    color: rgb(var(--tertiary));
+}
+.tagger-container .collapse.show.card .input-group > .input-group-append > button.btn.btn-primary::after {
     color: rgb(var(--on-surface));
     display: flex;
     content: "\FF0B";
