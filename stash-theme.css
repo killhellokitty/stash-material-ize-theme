@@ -9885,6 +9885,10 @@ button.btn.btn-primary.btn-sm:last-child {
     margin: auto .5rem 2rem .5rem;
 }
 
+.d-flex.align-items-center .d-flex > button + button.ml-1.btn.btn-primary {
+    margin-left: 1rem !important;
+}
+
 /* *** */
 /* Button Ripple */
 button:not(.navbar-buttons a[href^="/scenes/new"] > button):not(.navbar-buttons a[href^="/movies/new"] > button):not(.navbar-buttons a[href^="/galleries/new"] > button):not(.navbar-buttons a[href^="/performers/new"] > button):not(.navbar-buttons a[href^="/studios/new"] > button):not(.navbar-buttons a[href^="/tags/new"] > button).btn.btn-primary:not(.scrubber-button):not(.minimal):not([title="Search"])::after {
