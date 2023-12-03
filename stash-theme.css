@@ -9432,8 +9432,7 @@ div#create-scene-page {
     border-radius: 5rem;
     margin-left: 8px;
 }
-.tagger-container .collapse.show.card .input-group>.input-group-append>button.btn.btn-primary,
-.tagger-container .collapse.show.card .input-group:not(.has-validation) > input.form-control:not(:last-child):focus:not(:focus-visible) + .input-group-append > button.btn.btn-primary {
+.tagger-container .collapse.show.card .input-group>.input-group-append>button.btn.btn-primary {
     border-radius: 5rem;
     padding: 0;
     margin-right: 4px;
@@ -9443,13 +9442,12 @@ div#create-scene-page {
     background: none;
     color: transparent;
     box-shadow: none;
+    z-index: 51;
 }
-.tagger-container .collapse.show.card .input-group > .input-group-append > button.btn.btn-primary:hover,
-.tagger-container .collapse.show.card .input-group:not(.has-validation) > input.form-control:not(:last-child):focus:not(:focus-visible) + .input-group-append > button.btn.btn-primary:hover {
+.tagger-container .collapse.show.card .input-group > .input-group-append > button.btn.btn-primary:hover {
     background-color: rgb(var(--on-surface),var(--btn-hover));
 }
-.tagger-container .collapse.show.card .input-group > .input-group-append > button.btn.btn-primary:is(:active, :focus:not(:focus-visible)),
-.tagger-container .collapse.show.card .input-group:not(.has-validation) > input.form-control:not(:last-child):focus:not(:focus-visible) + .input-group-append > button.btn.btn-primary:is(:active, :focus:not(:focus-visible)) {
+.tagger-container .collapse.show.card .input-group > .input-group-append > button.btn.btn-primary:is(:active, :focus:not(:focus-visible)) {
     background-color: rgb(var(--on-surface),var(--btn-active));
     outline: none;
 }
@@ -9457,8 +9455,7 @@ div#create-scene-page {
     background-color: rgb(var(--on-tertiary),var(--btn-hover));
     color: rgb(var(--tertiary));
 }
-.tagger-container .collapse.show.card .input-group > .input-group-append > button.btn.btn-primary::after,
-.tagger-container .collapse.show.card .input-group:not(.has-validation) > input.form-control:not(:last-child):focus:not(:focus-visible) + .input-group-append > button.btn.btn-primary::after {
+.tagger-container .collapse.show.card .input-group > .input-group-append > button.btn.btn-primary::after {
     color: rgb(var(--on-surface));
     display: flex;
     content: "\FF0B";
