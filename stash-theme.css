@@ -2393,7 +2393,7 @@ div#crop-btn-container {
 
 /* Search-Result Tagger-Container Tag-items with Icons */
 :is(.search-result, .collapse.show.card) span.tag-item.badge.badge-secondary {
-    display: inline-flex;
+    display: inline-flex !important;
     justify-content: center;
     align-items: center;
 }
