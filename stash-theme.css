@@ -170,7 +170,7 @@ h6,
     --on-error-container: 255, 218, 214; /*#ffdad6*/
     /* Background Colors */
     --background: 25, 28, 30; /*#191c1e*/
-    --on-background: 226, 226, 229; /*#e2e2e5*/
+    --on-background: 253, 253, 253; /*#fdfdfd*/
     /* Surface & Outline Colors */
     --surface: 30, 36, 42; /*#1e242a*/
     --surface-sel: 33, 41, 47; /*#21292f*/
@@ -233,8 +233,10 @@ code,
     font-weight: 200;
     line-height: 16px;
     letter-spacing: 0.5px;
-    font-variant: no-common-ligatures tabular-nums slashed-zero;
-    color: #fff;
+    font-variant: tabular-nums slashed-zero;
+    color: rgb(var(--on-background));
+    background-color: rgb(var(--background));
+    padding: 2px;
 }
 
 small,
