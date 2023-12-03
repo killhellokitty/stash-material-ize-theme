@@ -2397,7 +2397,7 @@ div#crop-btn-container {
     justify-content: center;
     align-items: center;
 }
-:is(.search-result, .collapse.show.card)span.tag-item > button.minimal.btn.btn-primary {
+:is(.search-result, .collapse.show.card) span.tag-item > button.minimal.btn.btn-primary {
     display: flex;
     color: rgb(var(--on-surface-variant)) !important;
     background-image: none;
