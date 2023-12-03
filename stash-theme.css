@@ -9431,6 +9431,16 @@ div#create-scene-page {
     border-radius: 5rem;
 }
 
+.tagger-container .collapse.show.card .input-group>.input-group-append>button.btn.btn-primary::after {
+    color: rgb(var(--on-surface));
+    content: "\FE62";
+    font-family: var(--UnicodeFont);
+    font-weight: 400;
+    font-size: calc((24px * 2) + (0.5 * 24px));
+    position: relative;
+    top: -9px;
+}
+
 /* Flex box for thumb in tagger */
 .tagger-container .scene-card-preview {
     border-radius: 12px 0;
