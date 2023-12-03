@@ -4540,7 +4540,6 @@ input.form-control-plaintext {
 }
 .input-group-append {
     position: relative;
-    left: -4px;
 }
 .input-control, .text-input {
     color: rgb(var(--interactive-input));
@@ -9427,18 +9426,29 @@ div#create-scene-page {
     margin-left: 8px;
 }
 .tagger-container .collapse.show.card .input-group>.input-group-append>button.btn.btn-primary {
-    align-items: center;
     border-radius: 5rem;
+    padding: 0;
+    margin-right: 4px;
+    width: 40px;
+    max-width: 40px;
+    height: 40px;
+    background: none;
+    color: transparent;
 }
 
 .tagger-container .collapse.show.card .input-group>.input-group-append>button.btn.btn-primary::after {
     color: rgb(var(--on-surface));
-    content: "\FE62";
+    display: flex;
+    content: "\FF0B";
     font-family: var(--UnicodeFont);
-    font-weight: 400;
-    font-size: calc((24px * 2) + (0.5 * 24px));
-    position: relative;
-    top: -9px;
+    font-weight: 1000;
+    font-size: 24px;
+    position: absolute;
+    width: 40px;
+    max-width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Flex box for thumb in tagger */
