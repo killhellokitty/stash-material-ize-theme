@@ -7356,7 +7356,7 @@ a#new-performer-filter {
     box-shadow: var(--elevation-1);
     background-repeat: no-repeat repeat;
     background-position: calc( 100% - 8px ) calc(50% - 2px), center center;
-    padding: 0 16px 0 24px;
+    padding: 0 16px 0 20px;
     border: 0;
 }
 .o-counter.btn-group > button[title="O-Counter"].minimal.btn.btn-secondary:has(+ .dropdown > .dropdown-toggle.btn-secondary):focus-visible,
@@ -7374,7 +7374,7 @@ a#new-performer-filter {
     box-shadow: var(--elevation-0);
     background-repeat: no-repeat repeat;
     background-position: calc( 100% - 8px ) calc(50% - 2px), center center;
-    padding: 0 16px 0 24px;
+    padding: 0 16px 0 20px;
     border: 0;
 }
 .btn-group>.btn:not(:first-child), 
