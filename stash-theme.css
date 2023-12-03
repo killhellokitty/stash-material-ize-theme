@@ -9417,7 +9417,6 @@ div#create-scene-page {
     align-items: center;
 }
 .tagger-container .col-md-6.my-1 .input-group>.input-group-append>button.btn.btn-primary,
-.tagger-container .collapse.show.card .input-group>.input-group-append>button.btn.btn-primary,
 .PerformerTagger-box-link.input-group>.input-group-append>button.btn.btn-primary,
 .PerformerTagger-details>.input-group>.input-group-append>button.btn.btn-primary {
     align-items: center;
@@ -9426,6 +9425,10 @@ div#create-scene-page {
     padding-right: 24px;
     border-radius: 5rem;
     margin-left: 8px;
+}
+.tagger-container .collapse.show.card .input-group>.input-group-append>button.btn.btn-primary {
+    align-items: center;
+    border-radius: 5rem;
 }
 
 /* Flex box for thumb in tagger */
