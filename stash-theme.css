@@ -1877,6 +1877,11 @@ div.react-datepicker div.react-datepicker__time-container div.react-datepicker__
     width: 16px;
     height: 16px;
 }
+.saved-filter-list button.save-button.btn.btn-secondary.btn-sm,
+.saved-filter-list button.delete-button.btn.btn-secondary.btn-sm {
+    font-size: 24px;
+}
+
 .show>.saved-filter-list-menu.show .input-group-append button.btn.btn-secondary,
 .saved-filter-list button.save-button.btn.btn-secondary.btn-sm,
 .saved-filter-list button.delete-button.btn.btn-secondary.btn-sm,
@@ -6241,7 +6246,7 @@ svg.svg-inline--fa.fa-bars.fa-icon {
     min-height: 24px;
 }
 svg.svg-inline--fa.fa-xmark.fa-icon {
-    min-height: 24px;
+    min-height: 28px;
 }
 button[title=Statistics].minimal.btn.btn-primary {
     margin-left: 12px;
