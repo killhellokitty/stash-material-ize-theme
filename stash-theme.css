@@ -1869,10 +1869,10 @@ div.react-datepicker div.react-datepicker__time-container div.react-datepicker__
     color: rgb(var(--on-surface));
 }
 .saved-filter-list .dropdown-item-container>a.dropdown-item:hover {
+    background-color: transparent !important;
 }
 .saved-filter-list .dropdown-item-container:nth-child(1n+1):hover {
-    background-color: #009180 !important;
-    color: #dcf6f0;
+    background-color: rgba(var(--on-surface),var(--btn-hover)) !important;
 }
 .saved-filter-list .dropdown-item-container .btn-group {
     align-items: center;
