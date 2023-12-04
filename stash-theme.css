@@ -1934,10 +1934,6 @@ div.react-datepicker div.react-datepicker__time-container div.react-datepicker__
     max-height: 32px;
     width: auto;
     float: left;
-    font-size: 11px;
-    font-weight: 500;
-    line-height: 16px;
-    letter-spacing: 0.5px;
     transition: background-color 0.55s ease, box-shadow 0.4s ease-in;
 }
 .show > .saved-filter-list-menu.show .input-group-append button.btn.btn-secondary:is(:hover, :focus-visible),
@@ -2069,10 +2065,15 @@ button.tag-list-button.btn.btn-secondary:not(:has(>.tag-list-anchor)):disabled {
     letter-spacing: 0.5px;
 }
 
+/* Button-Small thoughout */
 .btn-sm,
 .btn-group-sm>.btn {
-    padding: .5rem .5rem;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.5px;
 }
+/* */
 .addresses .btn-sm {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
