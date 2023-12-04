@@ -1865,11 +1865,10 @@ div.react-datepicker div.react-datepicker__time-container div.react-datepicker__
     padding-bottom: 8px;
     margin-bottom: 8px;
 }
-.saved-filter-list .dropdown-item-container>a.dropdown-item:hover {
-    background-color: #afbbb8 !important;
+.saved-filter-list .dropdown-item-container .dropdown-item {
+    color: rgb(var(--on-surface));
 }
-.saved-filter-list .dropdown-item-container>a.dropdown-item span {
-    color: #dcf6f0;
+.saved-filter-list .dropdown-item-container>a.dropdown-item:hover {
 }
 .saved-filter-list .dropdown-item-container:nth-child(1n+1):hover {
     background-color: #009180 !important;
@@ -1951,7 +1950,7 @@ div.react-datepicker div.react-datepicker__time-container div.react-datepicker__
 }
 .show > .saved-filter-list-menu.show .input-group-append button.btn.btn-secondary:focus-visible,
 .saved-filter-list button:is(.save-button, .delete-button).btn.btn-secondary.btn-sm:focus-visible,
-.saved-filter-list-menu button.set-as-default-button.btn.btn-secondary.btn-sm {
+.saved-filter-list-menu button.set-as-default-button.btn.btn-secondary.btn-sm:focus-visible {
     background-color: rgb(var(--on-tertiary));
     color: rgb(var(--tertiary));
 }
@@ -6876,8 +6875,6 @@ div.modal-body b,
     text-shadow: none;
 }
 
-.saved-filter-list .dropdown-item-container .dropdown-item {
-}
 .set-as-default-button {
     margin-top: 8px;
 }
