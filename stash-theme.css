@@ -1920,8 +1920,8 @@ div.react-datepicker div.react-datepicker__time-container div.react-datepicker__
     background-color: transparent;
     box-shadow: none;
     color: rgb(var(--on-surface-variant));
-    height: 40px;
-    max-height: 40px;
+    height: 32px;
+    max-height: 32px;
     width: auto;
     float: left;
     font-size: 11px;
