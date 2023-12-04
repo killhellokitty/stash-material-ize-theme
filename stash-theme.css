@@ -1908,7 +1908,7 @@ div.react-datepicker div.react-datepicker__time-container div.react-datepicker__
     margin-right: 12px;
 }
 .show>.saved-filter-list-menu.show .input-group-append button.btn.btn-secondary {
-    padding: 0 7px 0 7px;
+    padding: 0 9px 0 7px;
     justify-content: flex-end;
     margin-top: auto;
     margin-bottom: auto;
@@ -1916,7 +1916,6 @@ div.react-datepicker div.react-datepicker__time-container div.react-datepicker__
     left: -12px;
     top: -5px;
     font-size: 18px;
-    padding-right: 9px;
 }
 .saved-filter-list-menu button.set-as-default-button.btn.btn-secondary.btn-sm {
     padding-left: 24px;
