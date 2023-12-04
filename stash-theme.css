@@ -4092,13 +4092,14 @@ div.tagger-container .btn-link {
      background-color: #1f2f2e;
 }
 .modal-header {
-    background-color: #2b5a52;
-    border-bottom: 1px solid #254e46;
-    color: #c0ebe2;
-    font-size: 22px;
-    letter-spacing: 0;
-    line-height: 28px;
+    background-color: rgb(var(--card-color2));
+    border-bottom: 1px solid #233337;
+    color: #cae9e3;
     font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: 0;
+    font-family: var(--HeaderFont);
 }
 .edit-filter-dialog .modal-body {
     margin-left: 12px;
@@ -4161,6 +4162,10 @@ textarea.text-input.code.form-control {
     background-color: #3f4946 !important;
     border: 1px solid #899390;
     box-shadow: none;
+}
+
+.edit-filter-dialog .modal-header {
+    padding: 12px 16px;
 }
 
 @media (min-width: 576px) {
