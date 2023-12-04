@@ -1818,6 +1818,7 @@ div.react-datepicker div.react-datepicker__time-container div.react-datepicker__
     overflow: auto;
 }
 
+/* DropDown Menus */
 .show > .dropdown-menu.show .dropdown-item {
     font-family: var(--BodyFont);
     font-size: 14px;
@@ -1864,6 +1865,7 @@ div.react-datepicker div.react-datepicker__time-container div.react-datepicker__
     padding-left: 1.5px;
 }
 
+/* DropDown Filter List Menu */
 .saved-filter-list {
     border-bottom: 1px solid rgb(var(--outline-variant));
     padding-bottom: 8px;
@@ -1972,6 +1974,7 @@ div.react-datepicker div.react-datepicker__time-container div.react-datepicker__
 .show>.saved-filter-list-menu.show .input-group-append button.btn.btn-secondary.disabled {
     visibility: hidden;
 }
+/* */
 
 .badge-info {
     background-color: #87a6bd;
