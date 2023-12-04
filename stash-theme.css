@@ -1045,26 +1045,30 @@ button.bg-secondary:focus {
 
 /* --- Input Boxs --- */
 .text-input,  
-.text-input[readonly] {
+.text-input[readonly],
+input:is(#batch-search-delay, #colorize-color-green, #colorize-color-yellow, #colorize-color-red).query-text-field.bg-secondary.text-white.border-secondary.form-control {
      background-color: rgb(var(--body-color2));
      border: 0;
      border-style: none;
      transition: box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1), border 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.text-input:hover {
+.text-input:hover,
+input:is(#batch-search-delay, #colorize-color-green, #colorize-color-yellow, #colorize-color-red).query-text-field.bg-secondary.text-white.border-secondary.form-control:hover {
     border: 0;
     border-style: none;
     box-shadow: inset 0 0 0 1px transparent;
     border: 1px solid rgb(var(--on-surface));
 }
 .text-input:focus,
-.text-input:active {
+.text-input:active,
+input:is(#batch-search-delay, #colorize-color-green, #colorize-color-yellow, #colorize-color-red).query-text-field.bg-secondary.text-white.border-secondary.form-control:is(:active, :focus) {
     background-color: rgb(var(--body-color2)) !important; /*#696c90*/
     box-shadow: inset 0 0 0 1px rgb(var(--pry-color));
     border: 1px solid rgb(var(--pry-color));
     outline: none;
 }
-.text-input:not(:focus):focus-visible {
+.text-input:not(:focus):focus-visible,
+input:is(#batch-search-delay, #colorize-color-green, #colorize-color-yellow, #colorize-color-red).query-text-field.bg-secondary.text-white.border-secondary.form-control:not(:focus):focus-visible {
     color: rgb(var(--focus-ring));
     background-color: rgb(var(--body-color2));
     box-shadow: none;
@@ -1074,7 +1078,8 @@ button.bg-secondary:focus {
     outline-style: solid;
     outline-width: 0.25rem;
 }
-.text-input:disabled {
+.text-input:disabled,
+input:is(#batch-search-delay, #colorize-color-green, #colorize-color-yellow, #colorize-color-red).query-text-field.bg-secondary.text-white.border-secondary.form-control:disabled {
     opacity: var(--btn-disabled);
 }
 
