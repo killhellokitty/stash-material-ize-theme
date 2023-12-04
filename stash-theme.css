@@ -1052,6 +1052,10 @@ input:is(#batch-search-delay, #colorize-color-green, #colorize-color-yellow, #co
      border-style: none;
      transition: box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1), border 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
+input:is(#batch-search-delay, #colorize-color-green, #colorize-color-yellow, #colorize-color-red).query-text-field.bg-secondary.text-white.border-secondary.form-control {
+    box-shadow: 1px solid rgb(var(--outline));
+}
+
 .text-input:hover,
 input:is(#batch-search-delay, #colorize-color-green, #colorize-color-yellow, #colorize-color-red).query-text-field.bg-secondary.text-white.border-secondary.form-control:hover {
     border: 0;
@@ -1062,7 +1066,7 @@ input:is(#batch-search-delay, #colorize-color-green, #colorize-color-yellow, #co
 .text-input:focus,
 .text-input:active,
 input:is(#batch-search-delay, #colorize-color-green, #colorize-color-yellow, #colorize-color-red).query-text-field.bg-secondary.text-white.border-secondary.form-control:is(:active, :focus) {
-    background-color: rgb(var(--body-color2)) !important; /*#696c90*/
+    background-color: rgb(var(--body-color2)) !important; 
     box-shadow: inset 0 0 0 1px rgb(var(--pry-color));
     border: 1px solid rgb(var(--pry-color));
     outline: none;
