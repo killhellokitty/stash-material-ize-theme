@@ -9658,10 +9658,11 @@ button.sprite-button.btn.btn-link > svg.fa-image {
 
 /* Tagger Configuration Card */
 .tagger-container .collapse.show.card > .row > hr.w-100 {
-    border-top: 1px solid #3d515f;
-    margin-right: 0.9rem;
-    margin-left: 0.9rem;
-    margin-bottom: 0.9rem;
+    border-top: 1px solid rgb(var(--outline));
+    margin-right: 16px;
+    margin-left: 16px;
+    margin-bottom: 16px;
+    margin-top: 4px;
 }
 small.form-text {
     font-size: 11px;
