@@ -1912,21 +1912,18 @@ div.react-datepicker div.react-datepicker__time-container div.react-datepicker__
     left: -12px;
 }
 .saved-filter-list-menu button.set-as-default-button.btn.btn-secondary.btn-sm {
-    box-shadow: inset 0 0 0 1px #899390;
     padding-left: 24px;
     padding-right: 24px;
-    margin-right: 0.65rem;
-    margin-bottom: 0.65rem;
+    margin-left: 12px;
+    margin-top: 0;
     border: 0;
-    color: #c0ebe2;
-    text-shadow: none;
     background-color: transparent;
     box-shadow: none;
-    border: 0;
     color: rgb(var(--on-surface-variant));
-    height:40px;
+    height: 40px;
     max-height: 40px;
     width: auto;
+    float: left;
 }
 .show > .saved-filter-list-menu.show .input-group-append button.btn.btn-secondary:is(:hover, :focus-visible),
 .saved-filter-list button:is(.save-button, .delete-button).btn.btn-secondary.btn-sm:is(:hover, :focus-visible) {
