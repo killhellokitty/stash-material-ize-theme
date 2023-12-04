@@ -1877,8 +1877,7 @@ div.react-datepicker div.react-datepicker__time-container div.react-datepicker__
     width: 16px;
     height: 16px;
 }
-.saved-filter-list button.save-button.btn.btn-secondary.btn-sm,
-.saved-filter-list button.delete-button.btn.btn-secondary.btn-sm {
+.saved-filter-list button.save-button.btn.btn-secondary.btn-sm {
     font-size: 24px;
 }
 
