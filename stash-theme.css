@@ -1851,8 +1851,8 @@ div.react-datepicker div.react-datepicker__time-container div.react-datepicker__
     outline-width: 0.25rem;
     box-shadow: inset 0 0 0 4px rgb(var(--menu-color)), inset 0 0 0 6px rgb(var(--focus-ring));
     color: rgb(var(--focus-ring))  !important;
-    text-decoration: underline;
-    text-decoration-color: currentColor;
+    text-decoration: none;
+    text-decoration-color: transparent;
 }
 .dropdown.show > .dropdown-menu.show > .dropdown-item > svg {
     font-size: 24px;
@@ -1877,23 +1877,6 @@ div.react-datepicker div.react-datepicker__time-container div.react-datepicker__
 }
 .saved-filter-list .dropdown-item-container:nth-child(1n+1):hover {
     background-color: rgba(var(--on-surface),var(--btn-hover)) !important;
-}
-.show > .dropdown-menu.show .saved-filter-list .dropdown-item:focus-visible {
-    outline: 0;
-    box-shadow: none;
-    color: rgb(var(--on-surface));
-    text-decoration: none;
-    text-decoration-color: transparent;
-}
-.saved-filter-list .dropdown-item-container:nth-child(1n+1):focus-visible {
-    outline-color: rgba(var(--secondary),0.95);
-    outline-offset: -0.25rem;
-    outline-style: solid;
-    outline-width: 0.25rem;
-    box-shadow: inset 0 0 0 4px rgb(var(--menu-color)), inset 0 0 0 6px rgb(var(--focus-ring));
-    color: rgb(var(--focus-ring)) !important;
-    text-decoration: none;
-    text-decoration-color: transparent;
 }
 
 .saved-filter-list .dropdown-item-container .btn-group {
