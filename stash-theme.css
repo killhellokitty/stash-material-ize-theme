@@ -1912,21 +1912,22 @@ ul.saved-filter-list {
     left: -12px;
 }
 .saved-filter-list-menu button.set-as-default-button.btn.btn-secondary.btn-sm {
-    box-shadow: inset 0 0 0 1px #899390;
+    box-shadow: var(--elevation-0);
     padding-left: 24px;
     padding-right: 24px;
-    margin-right: 0.65rem;
-    margin-bottom: 0.65rem;
-    border: 0;
-    color: #c0ebe2;
-    text-shadow: none;
-    background-color: transparent;
-    box-shadow: none;
-    border: 0;
-    color: rgb(var(--on-surface-variant));
-    height:40px;
+    margin: 0;
+    margin-right: 12px;
+    border: 1px solid rgb(var(--outline));
+    color: rgb(var(--pry-color));
+    height: 40px;
     max-height: 40px;
+    border-radius: 10rem;
+    line-height: 20px;
+    letter-spacing: 0.1px;
+    font-size: 14px;
+    font-weight: 500;
     width: auto;
+    max-width: unset;
 }
 .show > .saved-filter-list-menu.show .input-group-append button.btn.btn-secondary:is(:hover, :focus-visible),
 .saved-filter-list button:is(.save-button, .delete-button).btn.btn-secondary.btn-sm:is(:hover, :focus-visible) {
