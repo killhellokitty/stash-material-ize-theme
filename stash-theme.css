@@ -1883,9 +1883,8 @@ div.react-datepicker div.react-datepicker__time-container div.react-datepicker__
     align-items: center;
 }
 /* Save Icon sized smaller to fit in Text-Input */
-.show>.saved-filter-list-menu.show .input-group-append>button.btn.btn-secondary>svg.svg-inline--fa.fa-floppy-disk.fa-icon {
-    width: 16px;
-    height: 16px;
+.show>.saved-filter-list-menu.show .input-group-append > button.btn.btn-secondary > svg.svg-inline--fa.fa-floppy-disk.fa-icon {
+    font-size: 24px;
 }
 .saved-filter-list button.save-button.btn.btn-secondary.btn-sm {
     font-size: 18px;
