@@ -1884,16 +1884,23 @@ div.react-datepicker div.react-datepicker__time-container div.react-datepicker__
     font-size: 22px;
     min-height: 18px;
 }
-.show>.saved-filter-list-menu.show .input-group-append button.btn.btn-secondary,
-.saved-filter-list button.save-button.btn.btn-secondary.btn-sm,
-.saved-filter-list button.delete-button.btn.btn-secondary.btn-sm,
+.show > .saved-filter-list-menu.show .input-group-append button.btn.btn-secondary,
+.saved-filter-list button:is(.save-button, .delete-button).btn.btn-secondary.btn-sm {
+    background-color: transparent;
+    box-shadow: none;
+    border: 0;
+    color: rgb(var(--on-surface-variant));
+    padding: 0;
+    border-radius: 5rem;
+    width: 40px;
+    max-width: 40px;
+    height: auto;
+}
 .saved-filter-list-menu button.set-as-default-button.btn.btn-secondary.btn-sm {
     background-color: transparent;
     box-shadow: none;
-    border-color: transparent;
-    color: #dcf6f0;
-    padding: 0 12px 0 12px;
-    border-radius: 5rem;
+    border: 0;
+    color: rgb(var(--on-surface-variant));
 }
 .saved-filter-list button.delete-button.btn.btn-secondary.btn-sm {
     margin-right: 0.65rem;
