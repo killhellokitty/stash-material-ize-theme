@@ -1810,9 +1810,9 @@ div.react-datepicker div.react-datepicker__time-container div.react-datepicker__
     min-width: 112px;
     box-shadow: var(--elevation-2);
     transform: translate3d(0px, 38px, 0px) !important;
-    will-change: transform;
+    will-change: transform, transition;
     overflow: hidden;
-    transition: background-color 0.55s ease, outline 0.4s ease-in, box-shadow 0.4s ease-in, transform 0.6s ease-in-out;
+    transition: background-color 0.55s ease, outline 0.4s ease-in, box-shadow 0.4s ease-in, transform 0.8s ease;
 }
 .btn-toolbar > .show.dropdown.btn-group > .dropdown-menu.show {
     overflow: auto;
@@ -1906,6 +1906,7 @@ div.react-datepicker div.react-datepicker__time-container div.react-datepicker__
     height: 40px;
     max-height: 40px;
     margin-right: 12px;
+    transition: background-color 0.55s ease, box-shadow 0.4s ease-in;
 }
 .show>.saved-filter-list-menu.show .input-group-append button.btn.btn-secondary {
     padding: 0 9px 0 7px;
@@ -1934,6 +1935,7 @@ div.react-datepicker div.react-datepicker__time-container div.react-datepicker__
     font-weight: 500;
     line-height: 16px;
     letter-spacing: 0.5px;
+    transition: background-color 0.55s ease, box-shadow 0.4s ease-in;
 }
 .show > .saved-filter-list-menu.show .input-group-append button.btn.btn-secondary:is(:hover, :focus-visible),
 .saved-filter-list button:is(.save-button, .delete-button).btn.btn-secondary.btn-sm:is(:hover, :focus-visible) {
