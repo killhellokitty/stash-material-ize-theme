@@ -486,18 +486,18 @@ input[type=checkbox]:disabled:checked {
     opacity: 0.4;
 }
 input#ignore-auto-tag[type="checkbox"] {
-    box-shadow: 0 0 0 1px rgb(var(--outline)), inset 0 0 0 5rem rgb(var(--body-color2));
+    box-shadow: inset 0 0 0 2px rgb(var(--on-surface-variant)), inset 0 0 0 5rem rgb(var(--body-color2));
 }
 .tagger-container .collapse.show.card input.form-check-input[type="checkbox"] {
-    box-shadow: 0 0 0 1px rgb(var(--outline)), inset 0 0 0 5rem rgb(var(--card-color2));
+    box-shadow: inset 0 0 0 2px rgb(var(--on-surface-variant)), inset 0 0 0 5rem rgb(var(--card-color2));
 }
 input#ignore-auto-tag[type="checkbox"]:hover,
 .tagger-container .collapse.show.card input.form-check-input[type="checkbox"]:hover {
-    box-shadow: 0 0 0 1px rgb(var(--on-surface)), inset 0 0 0 5rem rgb(var(--body-color2));
+    box-shadow: 0 0 0 2px rgb(var(--on-surface)), inset 0 0 0 5rem rgb(var(--card-color));
 }
 input#ignore-auto-tag[type="checkbox"]:checked,
 .tagger-container .collapse.show.card input.form-check-input[type="checkbox"]:checked {
-    box-shadow: 0 0 0 1px rgb(var(--pry-color)), inset 0 0 0 5rem transparent;
+    box-shadow: inset 0 0 0 5rem transparent;
 }
 
 /* --- Range Slider and Thumb decorations ---*/
