@@ -175,9 +175,10 @@ h6,
     --surface: 30, 36, 42; /*#1e242a*/
     --surface-sel: 33, 41, 47; /*#21292f*/
     --on-surface: 226, 226, 229; /*#e2e2e5*/
-    --outline: 139, 145, 152; /*#8b9198*/
     --surface-variant: 65, 71, 77; /*#41474d*/
     --on-surface-variant: 193, 199, 206; /*#c1c7ce*/
+    --outline: 139, 145, 152; /*#8b9198*/
+    --outline-variant: 69, 71, 73; /*#454749*/
     /* Link Colors */
     --link-color: 217, 234, 249; /*#d9eaf9 very light primary*/
     --link-hover: 0, 52, 77; /* --pry-color; */
