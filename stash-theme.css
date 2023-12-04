@@ -1884,7 +1884,7 @@ div.react-datepicker div.react-datepicker__time-container div.react-datepicker__
 .saved-filter-list .dropdown-item-container .btn-group {
     align-items: center;
 }
-/* Save Icon sized smaller to fit in Text-Input */
+
 .show>.saved-filter-list-menu.show .input-group-append > button.btn.btn-secondary > svg.svg-inline--fa.fa-floppy-disk.fa-icon {
     font-size: 24px;
 }
@@ -1895,6 +1895,7 @@ div.react-datepicker div.react-datepicker__time-container div.react-datepicker__
     font-size: 22px;
     min-height: 18px;
 }
+
 .show > .saved-filter-list-menu.show .input-group-append button.btn.btn-secondary,
 .saved-filter-list button:is(.save-button, .delete-button).btn.btn-secondary.btn-sm {
     background-color: transparent;
