@@ -1065,6 +1065,9 @@ input:is(#batch-search-delay, #colorize-color-green, #colorize-color-yellow, #co
     box-shadow: inset 0 0 0 1px transparent;
     border: 1px solid rgb(var(--on-surface));
 }
+input:is(#batch-search-delay, #colorize-color-green, #colorize-color-yellow, #colorize-color-red).query-text-field.bg-secondary.text-white.border-secondary.form-control:hover {
+    border-color: rgb(var(--on-surface-variant));
+}
 .text-input:focus,
 .text-input:active,
 input:is(#batch-search-delay, #colorize-color-green, #colorize-color-yellow, #colorize-color-red).query-text-field.bg-secondary.text-white.border-secondary.form-control:is(:active, :focus) {
