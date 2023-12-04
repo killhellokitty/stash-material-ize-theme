@@ -1916,26 +1916,17 @@ div.react-datepicker div.react-datepicker__time-container div.react-datepicker__
     box-shadow: none;
     border: 0;
     color: rgb(var(--on-surface-variant));
+    height:40px;
+    max-height: 40px;
+    width: auto;
 }
 .show > .saved-filter-list-menu.show .input-group-append button.btn.btn-secondary:is(:hover, :focus-visible),
 .saved-filter-list button:is(.save-button, .delete-button).btn.btn-secondary.btn-sm:is(:hover, :focus-visible) {
     background-color: rgb(var(--on-surface-variant),var(--btn-hover));
 }   
-.show>.saved-filter-list-menu.show .input-group-append button.btn.btn-secondary:focus-visible,
-.saved-filter-list button.save-button.btn.btn-secondary.btn-sm:focus-visible,
-.saved-filter-list button.delete-button.btn.btn-secondary.btn-sm:focus-visible {
-    box-shadow: inset 0 0 0 0.23rem #bec9c5;
-}
 .saved-filter-list-menu button.set-as-default-button.btn.btn-secondary.btn-sm:hover {
     box-shadow: inset 0 0 0 1px #899390;
     background-color: #404745;
-}
-.saved-filter-list-menu button.set-as-default-button.btn.btn-secondary.btn-sm:focus-visible {
-    box-shadow: 0 0 0 1px #bec9c5;
-    outline-color: #bec9c5;
-    outline-style: solid;
-    outline-width: 2px;
-    outline-offset: -1px;
 }
 .show > .saved-filter-list-menu.show .input-group-append button.btn.btn-secondary:is(:active, :focus:not(:focus-visible)),
 .saved-filter-list button:is(.save-button, .delete-button).btn.btn-secondary.btn-sm:is(:active, :focus:not(:focus-visible)) {
