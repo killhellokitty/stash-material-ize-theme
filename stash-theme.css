@@ -1872,6 +1872,7 @@ div.react-datepicker div.react-datepicker__time-container div.react-datepicker__
 }
 .saved-filter-list .dropdown-item-container .btn-group {
     align-items: center;
+    height: 48px;
 }
 /* Save Icon sized smaller to fit in Text-Input */
 .show>.saved-filter-list-menu.show .input-group-append>button.btn.btn-secondary>svg.svg-inline--fa.fa-floppy-disk.fa-icon {
