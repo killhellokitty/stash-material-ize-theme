@@ -1860,6 +1860,11 @@ div.react-datepicker div.react-datepicker__time-container div.react-datepicker__
     padding-left: 1.5px;
 }
 
+.saved-filter-list {
+    border-bottom: 1px solid rgb(var(--outline-variant));
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+}
 .saved-filter-list .dropdown-item-container>a.dropdown-item:hover {
     background-color: #afbbb8 !important;
 }
