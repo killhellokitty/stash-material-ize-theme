@@ -4045,10 +4045,10 @@ div.tagger-container .btn-link {
 }
 
 .modal-backdrop {
-    background-color: #0a1211;
+    background-color: black;
 }
 .modal-backdrop.show { 
-    opacity: 0.65;
+    opacity: 0.6;
 }
 
 .show {
