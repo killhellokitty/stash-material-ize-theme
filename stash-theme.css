@@ -4134,7 +4134,7 @@ div.tagger-container .btn-link {
     height: 72px;
     max-height: 72px;
 }
-.dialog-content .criterion-list.accordion .card:hover {
+.dialog-content .criterion-list.accordion .card:hover:has(*.collapse:not(.show)) {
     background-color: rgb(var(--card-color-hover));
 }
 .modal-body {
