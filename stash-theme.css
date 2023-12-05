@@ -7446,11 +7446,9 @@ button#scene-scrape:focus,
 .modal-body .btn-secondary.form-control:focus-visible:not(:focus),
 button#scene-scrape:focus-visible,
 .scrape-url-button:not(:disabled):focus-visible {
+    background-color: rgba(var( --on-tertiary));
+    color: rgb(var(--tertiary));
     box-shadow: none;
-    outline-color: rgb(var(--focus-ring));
-    outline-width: 0.25rem;
-    outline-style: solid;
-    outline-offset: -1px;
     z-index: 20;
 }
 /* */
