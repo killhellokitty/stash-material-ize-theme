@@ -4138,10 +4138,10 @@ div.tagger-container .btn-link {
 }
 
 /* Modal Secondary Button */
-.modal-dialog button.btn.btn-secondary:not(.form-control):not(.dropdown-toggle):not(:disabled):not(.disabled) {
+.modal-dialog button.btn.btn-secondary:not(.form-control):not(.dropdown-toggle) {
     background-color: rgb(var(--modal-color));
 }
-.btn-secondary:not(.form-control):not(.dropdown-toggle):focus-visible {
+.modal-dialog button.btn-secondary:not(.form-control):not(.dropdown-toggle):focus-visible {
     background-image: linear-gradient(to right, rgba(var(--pry-container)), rgba(var(--pry-container)));
 }
 
