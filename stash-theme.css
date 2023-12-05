@@ -237,7 +237,7 @@ h6,
     /**/
     box-shadow: none;
 }
-*:focus-visible:not(:focus):not(.focus) {
+*:is(:focus-visible) {
     outline-color: rgb(var(--focus-ring));
     outline-offset: -0.10rem;
     outline-style: solid;
@@ -10396,7 +10396,7 @@ button[title=Help].nav-utility.minimal.btn.btn-primary:has(>svg.svg-inline--fa.f
     /**/
     box-shadow: none;
 }
-*:focus-visible:not(:focus):not(.focus) {
+*:is(:focus-visible) {
     outline-color: rgb(var(--focus-ring));
     outline-offset: -0.10rem;
     outline-style: solid;
