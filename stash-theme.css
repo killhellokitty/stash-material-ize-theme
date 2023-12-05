@@ -4144,6 +4144,12 @@ div.tagger-container .btn-link {
 }
 .modal-dialog button.btn-secondary:not(.form-control):not(.dropdown-toggle):focus-visible {
     background-image: linear-gradient(to right, rgba(var(--pry-container)), rgba(var(--pry-container)));
+    outline-color: rgb(var(--focus-ring));
+    outline-offset: -0.10rem;
+    outline-style: solid;
+    outline-width: 0.30rem;
+    box-shadow: none;
+    text-shadow: none;
 }
 
 #settings-dailog .modal-content .sub-heading {
