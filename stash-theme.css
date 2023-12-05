@@ -148,6 +148,8 @@ h6,
     --tooltip-color: 46, 49, 51; /*#2e3133*/
     --menu-color: 50, 62, 72; /*#323e48 should this be named --surface-container? */
     --modal-color: 25, 32, 38; /*#192026*/
+    --accordion-color: 64, 82, 97; /*#405261*/
+    --accordion-color-hover: 72, 92, 109; /*#485c6d*/ 
     /* Primary Colors */
     --pry-color: 136, 206, 255; /*#88ceff*/
     --on-pry: 0, 52, 77; /*#00344d*/
