@@ -7673,19 +7673,12 @@ button.minimal.star-fill-0.btn.btn-secondary:not(:focus):not(:disabled):not(.dis
     box-shadow: none;
 }
 
-
 .Lightbox > .Lightbox-footer > .Lightbox-footer-left > .rating-stars > button.minimal.star-fill-100.btn.btn-secondary:disabled,
 .Lightbox > .Lightbox-footer > .Lightbox-footer-left > .rating-stars > button.minimal.star-fill-0.btn.btn-secondary:disabled,
 .Lightbox > .Lightbox-footer > .Lightbox-footer-left > .rating-stars > button.minimal.star-fill-100.btn.btn-secondary.disabled,
 .Lightbox > .Lightbox-footer > .Lightbox-footer-left > .rating-stars > button.minimal.star-fill-0.btn.btn-secondary.disabled {
     color: white;
     opacity: var(--btn-disabled);
-}
-
-.btn:focus:not(:focus-visible),
-.btn.focus:not(:focus-visible) {
-    outline: 0;
-    box-shadow: none;
 }
 
 .input-group>.input-group-append .btn:not(:first-child):not(.duration-button):last-child {
