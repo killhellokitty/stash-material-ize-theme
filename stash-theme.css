@@ -249,6 +249,7 @@ h6,
     */
     /**/
     box-shadow: none;
+    text-shadow: none;
 }
 /* - */
 
@@ -7468,9 +7469,10 @@ button#scene-scrape:focus,
 .modal-body .btn-secondary.form-control:focus-visible:not(:focus),
 button#scene-scrape:focus-visible,
 .scrape-url-button:not(:disabled):focus-visible {
+    background-image: none;
     background-color: rgba(var( --pry-container));
     color: rgb(var(--on-tertiary-container));
-    box-shadow: none;
+    border-color: transparent;
     z-index: 20;
 }
 /* */
