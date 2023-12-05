@@ -4076,7 +4076,7 @@ div.tagger-container .btn-link {
     height: 100%;
 }
 .modal-footer {
-    border-top: 1px solid #171c21;
+    border-top: 1px solid #14181c;
     border-radius: 0 0 28px 28px;
 }
 .modal-footer>* {
@@ -4091,7 +4091,7 @@ div.tagger-container .btn-link {
     font-weight: 500;
 }
 .modal-header {
-    border-bottom: 1px solid #171c21;
+    border-bottom: 1px solid #14181c;
     border-radius: 28px 28px 0 0;
     color: #cae9e3;
     font-weight: 200;
