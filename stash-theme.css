@@ -4127,9 +4127,11 @@ div.tagger-container .btn-link {
     max-height: 380px;
 }
 .dialog-content .criterion-list.accordion .card {
-    background-color: #405261;
+    background-color: rgb(var(--accordion-color));
 }
-
+.dialog-content .criterion-list.accordion .card:hover {
+    background-color: rgb(var(--acordion-color-hover));
+}
 .modal-body {
     margin-left: 12px;
     margin-right: 12px;
