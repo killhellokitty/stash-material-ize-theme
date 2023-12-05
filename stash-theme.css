@@ -232,6 +232,7 @@ h6,
     outline-offset: -1px;
     outline-style: solid;
     outline-width: 0.25rem;
+    /* Background and Foreground Colors */
     /*background-color: rgba(var( --pry-container));
     color: rgb(var(--on-tertiary-container));
     box-shadow: none;*/
