@@ -4118,6 +4118,11 @@ div.tagger-container .btn-link {
 .modal-title h4 {
     font-weight: 200;
 }
+
+.modal-dialog button.btn.btn-secondary:not(.form-control):not(.dropdown-toggle):not(:disabled):not(.disabled) {
+    background-color: rgb(var(--modal-color));
+}
+
 #settings-dailog .modal-content .sub-heading {
     background-color: rgba(0,0,0,0.12);
     padding: 0.5rem;
