@@ -192,7 +192,7 @@ h6,
     --mars: 80, 143, 184; /*#508fb8*/
     --white-color: 251, 250, 249; /*#fbfaf9*/
     --nav-white: 250, 250, 250; /*#fafafa*/
-    --focus-ring: 255, 255, 255; /*#006590*/
+    --focus-ring: 255, 254, 254; /*#fffefe*/
     --muted-text: 213, 229, 242; /*#d5e5f2*/
     --interactive-input: 226, 226, 229; /*#e2e2e5 --on-surface*/
     /* Select Toggle Colors */
@@ -4124,7 +4124,7 @@ div.tagger-container .btn-link {
     background-color: rgb(var(--modal-color));
 }
 .btn-secondary:not(.form-control):not(.dropdown-toggle):focus-visible {
-    background-image: linear-gradient(to right, rgba(var( --on-tertiary)), rgba(var(--on-tertiary)));
+    background-image: linear-gradient(to right, rgba(var(--pry-container)), rgba(var(--pry-container)));
 }
 
 #settings-dailog .modal-content .sub-heading {
@@ -7450,8 +7450,8 @@ button#scene-scrape:focus,
 .modal-body .btn-secondary.form-control:focus-visible:not(:focus),
 button#scene-scrape:focus-visible,
 .scrape-url-button:not(:disabled):focus-visible {
-    background-color: rgba(var( --on-tertiary));
-    color: rgb(var(--tertiary));
+    background-color: rgba(var( --pry-container));
+    color: rgb(var(--on-tertiary-container));
     box-shadow: none;
     z-index: 20;
 }
