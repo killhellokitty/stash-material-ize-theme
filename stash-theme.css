@@ -4074,23 +4074,21 @@ div.tagger-container .btn-link {
     max-height: 900px !important;
     height: 100%;
 }
-.modal-header, .modal-body, .modal-footer {
-     color: rgb(var(--on-surface));
-     font-size: 16px;
-     letter-spacing: 0.15px;
-     line-height: 24px;
-     font-weight: 500;
-}
 .modal-footer {
     border-top: none;
 }
 .modal-footer>* {
     margin: 0.75rem;
 }
-.modal-body, .modal-footer {
+.modal-body, .modal-footer, .modal-header {
     background-image: linear-gradient(to right, #2e3133, #2e3133);
     background-color: rgba(var(--pry-color),0.5);
     background-blend-mode: multiply;
+    color: rgb(var(--on-surface));
+    font-size: 16px;
+    letter-spacing: 0.15px;
+    line-height: 24px;
+    font-weight: 500;
 }
 .modal-header {
     background-color: rgb(var(--card-color2));
