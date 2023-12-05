@@ -4054,7 +4054,7 @@ div.tagger-container .btn-link {
     transition: all 0.5s cubic-bezier(0.2, 0.0, 0, 1.0);
 }
 .fade {
-    transition: all 0.2s cubic-bezier(0.3, 0.0, 0.8, 0.15);
+    transition: all 0.3s cubic-bezier(0.3, 0.0, 0.8, 0.15);
 }
 .modal.show div#settings-dialog.modal-dialog {
     transition: all 0.8s ease-in;
