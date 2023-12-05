@@ -4099,6 +4099,10 @@ div.tagger-container .btn-link {
     letter-spacing: 0;
     font-family: var(--HeaderFont);
 }
+.dialog-content .criterion-list.accordion {
+    margin-right: -12px;
+    margin-left: -12px;
+}
 .edit-filter-dialog .modal-body {
     margin-left: 12px;
     margin-right: 12px;
