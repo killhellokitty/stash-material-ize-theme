@@ -9043,6 +9043,7 @@ form#studio-edit {
     background-color: rgba(var(--pry-color),0.5);
     background-blend-mode: multiply;
     box-shadow: var(--elevation-3);
+    border-radius: 28px;
 }
 
 .dialog-content .criterion-list .collapse.show .card-body {
