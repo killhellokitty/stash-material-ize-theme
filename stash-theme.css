@@ -7438,7 +7438,6 @@ button#scene-scrape:hover,
     border-color: rgb(var(--outline));
     color: rgb(var(--on-surface));
     box-shadow: none;
-    outline: none;
     text-shadow: none;
 }
 
@@ -7449,9 +7448,6 @@ button#scene-scrape:hover,
     background-color: rgb(var(--body-color2));
     border-color: rgb(var(--outline));
     color: rgb(var(--on-surface));
-    box-shadow: none;
-    outline: none;
-    text-shadow: none;
 }
 
 .btn-secondary:not(.form-control):not(.dropdown-toggle):focus,
@@ -7470,34 +7466,29 @@ button#scene-scrape:focus,
 button#scene-scrape:focus-visible,
 .scrape-url-button:not(:disabled):focus-visible {
     background-image: none;
-    background-color: rgba(var( --pry-container));
+    background-color: rgba(var(--pry-container));
     color: rgb(var(--on-tertiary-container));
     border-color: transparent;
     z-index: 20;
 }
 /* */
 .btn-toolbar select.btn-secondary.form-control:focus-visible {
-    background-image: url("data:image/svg+xml;utf8,<svg fill='%23e2e2e5' height='30' viewBox='0 0 24 22' width='28' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>"), linear-gradient(to right, rgba(var( --on-surface),var(--btn-hover)), rgba(var(--on-surface),var(--btn-hover)));
+    background-image: url("data:image/svg+xml;utf8,<svg fill='%23e2e2e5' height='30' viewBox='0 0 24 22' width='28' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
     background-repeat: no-repeat repeat;
     background-position: calc( 100% - 16px ) calc(50% - 2px), center left;
-    background-color: rgb(var(--body-color2));
-    border-color: rgb(var(--outline));
-    color: rgb(var(--on-surface));
-    box-shadow: none;
-    outline-color: rgb(var(--focus-ring));
-    outline-width: 0.25rem;
-    outline-style: solid;
-    outline-offset: -1px;
+    background-color: rgb(var(--pry-container));
+    border-color: transparent;
+    color: rgb(var(--on-tertiary-container));
 }
 div.mb-2.btn-group:not(.mr-2):not(.mx-2):not(.ml-2) > button.btn.btn-secondary:not(.form-control):not(.dropdown-toggle):not(:disabled):not(.disabled).active,
-.btn-toolbar select.btn-secondary.form-control:is(:active, :focus:not(:focus-visible), :active:focus:not(:focus-visible)),
+.btn-toolbar select.btn-secondary.form-control:where(:active, :focus, :active:focus),
 .btn-toolbar .show.dropdown .dropdown-toggle.btn.btn-secondary {
     background-color: rgb(var(--sec-container));
     color: rgb(var(--on-sec-container));
     border-color: rgb(var(--on-surface-variant));
     outline: none;
 }
-.btn-secondary:not(.form-control):not(.dropdown-toggle):not(:disabled):not(.disabled):active:focus {
+.btn-secondary:not(.form-control):not(.dropdown-toggle):active:focus {
     box-shadow: none;
 }
 .btn-secondary:not(.form-control):not(.dropdown-toggle):not(:disabled):not(.disabled):active,
@@ -7520,7 +7511,7 @@ button#scene-scrape:not(:disabled):not(.disabled).active,
     border-color: rgb(var(--outline));
 }*/
 div.mb-2.btn-group:not(.mr-2):not(.mx-2):not(.ml-2) > button.btn.btn-secondary:not(.form-control):not(:disabled):not(.disabled).active:hover,
-.btn-toolbar select.btn-secondary.form-control:is(:active:hover, :focus:hover, :active:focus:hover),
+.btn-toolbar select.btn-secondary.form-control:where(:active:hover, :focus:hover, :active:focus:hover),
 .btn-toolbar .show.dropdown .dropdown-toggle.btn.btn-secondary:hover {
     background-color: rgb(var(--sec-cntnr-select-hover));
     box-shadow: none;
@@ -7551,11 +7542,7 @@ div.mb-2.btn-group:not(.mr-2):not(.mx-2):not(.ml-2) > button.btn.btn-secondary:n
 }
 div.mb-2.btn-group:not(.mr-2):not(.mx-2):not(.ml-2) > button.btn.btn-secondary:not(.form-control):focus-visible,
 .btn-toolbar .show.dropdown .dropdown-toggle.btn.btn-secondary:focus-visible {
-    box-shadow: none;
-    outline-color: rgb(var(--focus-ring));
-    outline-width: 0.25rem;
-    outline-style: solid;
-    outline-offset: -1px;
+
 }
 .btn-secondary:not(.form-control).disabled,
 .btn-secondary:not(.form-control):disabled,
