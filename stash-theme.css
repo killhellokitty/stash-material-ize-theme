@@ -4076,7 +4076,8 @@ div.tagger-container .btn-link {
     height: 100%;
 }
 .modal-footer {
-    border-top: none;
+    border-top: 1px solid #171c21;
+    border-radius: 0 0 28px 28px;
 }
 .modal-footer>* {
     margin: 0.75rem;
@@ -4104,9 +4105,11 @@ div.tagger-container .btn-link {
     margin-left: -12px;
     max-height: 380px;
 }
-.edit-filter-dialog .modal-body {
+.modal-body {
     margin-left: 12px;
     margin-right: 12px;
+    margin-top: -12px;
+    margin-bottom: -12px;
 }
 .modal-title h4 {
     font-weight: 200;
