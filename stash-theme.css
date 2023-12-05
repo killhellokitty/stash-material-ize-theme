@@ -7428,11 +7428,11 @@ a#new-performer-filter {
 }
 /* *** */
 
-.btn-secondary:not(.form-control):not(.dropdown-toggle):is(:hover, :focus-visible),
-.btn-toolbar .dropdown:not(.show) .dropdown-toggle.btn.btn-secondary:is(:hover, :focus-visible),
-.modal-body .btn-secondary.form-control:is(:hover, :focus-visible:not(:focus)),
-button#scene-scrape:is(:hover, :focus-visible),
-.scrape-url-button:is(:not(:disabled):hover, :focus-visible) {
+.btn-secondary:not(.form-control):not(.dropdown-toggle):hover,
+.btn-toolbar .dropdown:not(.show) .dropdown-toggle.btn.btn-secondary:hover,
+.modal-body .btn-secondary.form-control:hover,
+button#scene-scrape:hover,
+.scrape-url-button:hover {
     background-image: linear-gradient(to right, rgba(var( --on-surface),var(--btn-hover)), rgba(var(--on-surface),var(--btn-hover)));
     background-color: rgb(var(--body-color2));
     border-color: rgb(var(--outline));
