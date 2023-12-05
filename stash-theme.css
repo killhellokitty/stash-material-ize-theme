@@ -7542,7 +7542,10 @@ div.mb-2.btn-group:not(.mr-2):not(.mx-2):not(.ml-2) > button.btn.btn-secondary:n
 }
 div.mb-2.btn-group:not(.mr-2):not(.mx-2):not(.ml-2) > button.btn.btn-secondary:not(.form-control):focus-visible,
 .btn-toolbar .show.dropdown .dropdown-toggle.btn.btn-secondary:focus-visible {
-
+    background-image: none;
+    background-color: rgba(var(--pry-container));
+    color: rgb(var(--on-tertiary-container));
+    border-color: transparent;
 }
 .btn-secondary:not(.form-control).disabled,
 .btn-secondary:not(.form-control):disabled,
