@@ -4091,8 +4091,9 @@ div.tagger-container .btn-link {
 }
 .modal-header {
     border-bottom: 1px solid #171c21;
+    border-radius: 28px 28px 0 0;
     color: #cae9e3;
-    font-weight: 400;
+    font-weight: 200;
     font-size: 36px;
     line-height: 44px;
     letter-spacing: 0;
