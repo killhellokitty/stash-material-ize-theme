@@ -4176,9 +4176,6 @@ textarea.text-input.code.form-control {
         min-height:350px; 
         height:65vh !important
     }
-    .modal-dialog {
-        max-width: 500px;
-    }
     .modal-dialog .modal-content .form-group .multi-set {
         width:82%;margin-top:12px; 
         flex: 0 0 82%; 
