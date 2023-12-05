@@ -4075,15 +4075,11 @@ div.tagger-container .btn-link {
     height: 100%;
 }
 .modal-header, .modal-body, .modal-footer {
-     color: #dcf6f0;
+     color: rgb(var(--on-surface));
      font-size: 16px;
      letter-spacing: 0.15px;
      line-height: 24px;
      font-weight: 500;
-     background-repeat: no-repeat;
-     background-size: cover;
-     background-attachment: fixed;
-     background-position: center;
 }
 .modal-footer {
     border-top: none;
