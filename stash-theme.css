@@ -237,7 +237,7 @@ h6,
     /**/
     box-shadow: none;
 }
-*:focus-visible {
+*:focus-visible:not(:focus):not(.focus) {
     outline-color: rgb(var(--focus-ring));
     outline-offset: -0.10rem;
     outline-style: solid;
