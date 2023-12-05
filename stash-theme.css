@@ -4128,6 +4128,8 @@ div.tagger-container .btn-link {
 }
 .dialog-content .criterion-list.accordion .card {
     background-color: rgb(var(--accordion-color));
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
 .dialog-content .criterion-list.accordion .card:hover {
     background-color: rgb(var(--acordion-color-hover));
