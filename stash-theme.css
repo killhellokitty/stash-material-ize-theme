@@ -4119,8 +4119,12 @@ div.tagger-container .btn-link {
     font-weight: 200;
 }
 
+/* Modal Secondary Button */
 .modal-dialog button.btn.btn-secondary:not(.form-control):not(.dropdown-toggle):not(:disabled):not(.disabled) {
     background-color: rgb(var(--modal-color));
+}
+.btn-secondary:not(.form-control):not(.dropdown-toggle):focus-visible {
+    background-image: linear-gradient(to right, rgba(var( --on-tertiary)), rgba(var(--on-tertiary)));
 }
 
 #settings-dailog .modal-content .sub-heading {
