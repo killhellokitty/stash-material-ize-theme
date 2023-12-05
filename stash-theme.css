@@ -10385,3 +10385,29 @@ button[title=Help].nav-utility.minimal.btn.btn-primary:has(>svg.svg-inline--fa.f
 .toast-container .toast-header{background-color:transparent;border:none;color:#e0e3e1}
 .toast-container .toast-header .close{color:#e0e3e1;text-shadow:none}
 /* *** */
+
+/* Focus is NOT the same as Focus-Visible */
+*:focus:not(:focus-visible), 
+*.focus:not(:focus-visible) {
+    outline-color: transparent;
+    outline-offset: 0;
+    outline-style: none;
+    outline-width: 0;
+    /**/
+    box-shadow: none;
+}
+*:focus-visible:not(:focus):not(.focus) {
+    outline-color: rgb(var(--focus-ring));
+    outline-offset: -0.10rem;
+    outline-style: solid;
+    outline-width: 0.30rem;
+    /*
+    * Background and Foreground Colors *
+    background-color: rgba(var( --pry-container));
+    color: rgb(var(--on-tertiary-container))
+    */
+    /**/
+    box-shadow: none;
+    text-shadow: none;
+}
+/* - */
