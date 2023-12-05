@@ -4089,7 +4089,7 @@ div.tagger-container .btn-link {
     margin: 0.75rem;
 }
 .modal-body, .modal-footer {
-     background-color: #1f2f2e;
+    background-color: rgb(var(--nav-color2));
 }
 .modal-header {
     background-color: rgb(var(--card-color2));
@@ -4106,7 +4106,7 @@ div.tagger-container .btn-link {
     margin-right: 12px;
 }
 .modal-title h4 {
-    font-weight: 900;
+    font-weight: 200;
 }
 #settings-dailog .modal-content .sub-heading {
     background-color: rgba(0,0,0,0.12);
