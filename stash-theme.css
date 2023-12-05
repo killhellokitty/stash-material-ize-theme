@@ -4134,8 +4134,17 @@ div.tagger-container .btn-link {
     height: 72px;
     max-height: 72px;
 }
-.dialog-content .criterion-list.accordion .card:hover:has(*.collapse:not(.show)) {
+.dialog-content .criterion-list.accordion .card:has(> .filter-item-header + .collapse:not(.show)):hover {
     background-color: rgb(var(--card-color-hover));
+}
+.dialog-content .criterion-list.accordion .card > .filter-item-header,
+.edit-filter-dialog .criterion-list .filter-item-header .btn:focus-visible {
+    background-color: rgb(var(--pry-color));
+    color: rgb(var(--on-tertiary-container));
+    outline-color: rgb(var(--focus-ring));
+    outline-offset: 0.06rem;
+    outline-style: solid;
+    outline-width: 0.24rem;
 }
 .modal-body {
     margin-left: 12px;
