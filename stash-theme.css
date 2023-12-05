@@ -4102,6 +4102,7 @@ div.tagger-container .btn-link {
 .dialog-content .criterion-list.accordion {
     margin-right: -12px;
     margin-left: -12px;
+    max-height: 380px;
 }
 .edit-filter-dialog .modal-body {
     margin-left: 12px;
