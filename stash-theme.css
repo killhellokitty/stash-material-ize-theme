@@ -229,9 +229,9 @@ h6,
 
 *:focus-visible {
     outline-color: rgb(var(--focus-ring));
-    outline-offset: -1px;
+    outline-offset: -0.10rem;
     outline-style: solid;
-    outline-width: 0.25rem;
+    outline-width: 0.30rem;
     /* Background and Foreground Colors */
     /*background-color: rgba(var( --pry-container));
     color: rgb(var(--on-tertiary-container));
