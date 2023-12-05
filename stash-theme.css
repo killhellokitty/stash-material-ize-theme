@@ -147,6 +147,7 @@ h6,
     --popover-color2: 80, 110, 130; /*#506e82 --#466172*/ 
     --tooltip-color: 46, 49, 51; /*#2e3133*/
     --menu-color: 50, 62, 72; /*#323e48 should this be named --surface-container? */
+    --modal-color: 25, 32, 38; /*#192026*/
     /* Primary Colors */
     --pry-color: 136, 206, 255; /*#88ceff*/
     --on-pry: 0, 52, 77; /*#00344d*/
@@ -4081,9 +4082,7 @@ div.tagger-container .btn-link {
     margin: 0.75rem;
 }
 .modal-body, .modal-footer, .modal-header {
-    background-image: linear-gradient(to right, #2e3133, #2e3133);
-    background-color: rgba(var(--pry-color),0.5);
-    background-blend-mode: multiply;
+    background-color: rgba(var(--modal-color));
     color: rgb(var(--on-surface));
     font-size: 16px;
     letter-spacing: 0.15px;
