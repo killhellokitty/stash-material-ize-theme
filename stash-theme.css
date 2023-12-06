@@ -4130,6 +4130,9 @@ div.tagger-container .btn-link {
 .dialog-content .criterion-list.accordion .card {
     background-color: rgb(var(--card-color));
 }
+.dialog-content .criterion-list.accordion .card:nth-of-type(1) {
+    padding-top: 12px;
+}
 .dialog-content .criterion-list.accordion .card >.filter-item-header {
     padding-top: 13.5px;
     padding-bottom: 13.5px;
