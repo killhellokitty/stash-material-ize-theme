@@ -10027,7 +10027,7 @@ button#parser-field-select.dropdown-toggle.btn.btn-primary {
     background-image: linear-gradient(to right, rgb(255,255,255,0.12), rgb(255,255,255,0.12)), linear-gradient(to right, rgb(var(--tertiary-container)), rgb(var(--tertiary-container)));
     border: 1px solid rgb(var(--tertiary-container));
 }
-.modifier-options button.modifier-option.btn.btn-primary:is(:not(.disabled, :disabled).selected):is(:hover, :active:hover) {
+.modifier-options button.modifier-option.btn.btn-primary:is(:not(.disabled, :disabled).selected):is(:hover, :focus:hover) {
     color: rgb(var(--on-tertiary-container));
     box-shadow: var(--elevation-1);
     background-color: transparent;
