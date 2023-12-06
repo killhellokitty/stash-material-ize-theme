@@ -10005,11 +10005,11 @@ button#parser-field-select.dropdown-toggle.btn.btn-primary {
     border: 1px solid #899390;
 }
 .modifier-options button.modifier-option.selected::before {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 100;
-    font-style: normal;
+    content: "\2713";
+    font-family: var(--UnicodeFont);
+    font-weight: 1000;
+    font-size: 24px;
     display: inline-block;
-    content: "\f00c";
     padding-right: 8px;
 }
 .modifier-options button.modifier-option.selected.btn.btn-primary:not(:disabled):not(.disabled):hover,
