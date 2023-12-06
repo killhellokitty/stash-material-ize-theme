@@ -4140,6 +4140,7 @@ div.tagger-container .btn-link {
 }
 .dialog-content .criterion-list.accordion .card >.filter-item-header:has(+ .collapse:not(.show)):hover {
     background-color: rgb(var(--card-color-hover));
+    border-radius: 0;
 }
 .dialog-content .criterion-list.accordion .card > .filter-item-header:focus-visible {
     color: rgb(var(--on-tertiary-container));
