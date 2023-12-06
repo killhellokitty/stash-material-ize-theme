@@ -9967,14 +9967,20 @@ button#parser-field-select.dropdown-toggle.btn.btn-primary {
 }
 
 .modifier-options button.modifier-option {
-    background-color: #3f4946;
-    padding: 0 20px;
-    border-radius: 0;
-    margin-right: 0;
-    color: #bec9c5;
-    border: 1px solid #899390;
-    font-size: 12px;
-    line-height: 16px;
+    background-color: rgb(var(--surface));
+    padding: 0 16px;
+    border-radius: 8px;
+    color: rgb(var(--on-surface-variant));
+    border: 1px solid rgb(var(--outline));
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.1px;
+    font-weight: 500;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    height: 32px;
+    min-height: 32px;
+    width: auto;
 }
 .modifier-options button.modifier-option:first-of-type {
     border-top-left-radius: 5rem;
