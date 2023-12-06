@@ -10008,7 +10008,7 @@ button#parser-field-select.dropdown-toggle.btn.btn-primary {
     content: "\2713";
     font-family: var(--UnicodeFont);
     font-weight: 1000;
-    font-size: 24px;
+    font-size: 18px;
     display: inline-block;
     padding-right: 8px;
 }
