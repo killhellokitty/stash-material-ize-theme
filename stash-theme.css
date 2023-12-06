@@ -4149,17 +4149,27 @@ div.tagger-container .btn-link {
     text-decoration-thickness: from-font;
 }
 
-.edit-filter-dialog .criterion-list .filter-item-header .btn:focus-visible {
-    background-color: rgba(var( --pry-container));
-    color: rgb(var(--on-tertiary-container));
+.edit-filter-dialog .criterion-list .pin-criterion-button {
+    color: rgb(var(--on-surface-variant));
     border-radius: 5rem;
     width: 40px;
     max-width: 40px;
     height: 40px;
+}
+.edit-filter-dialog .criterion-list .filter-item-header .btn:hover {
+    background-color: rgb(var(--on-surface-variant),var(--btn-hover));
+    box-shadow: var(--elevation-0);
+    filter: none;
+}
+.edit-filter-dialog .criterion-list .filter-item-header .btn:focus-visible {
+    background-color: rgba(var( --pry-container));
+    color: rgb(var(--on-tertiary-container));
     outline-color: rgb(var(--focus-ring));
     outline-offset: -0.06rem;
     outline-style: solid;
     outline-width: 0.24rem;
+    box-shadow: none;
+    filter: none;
 }
 .modal-body {
     margin-left: 12px;
