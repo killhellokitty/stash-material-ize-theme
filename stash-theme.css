@@ -10010,7 +10010,8 @@ button#parser-field-select.dropdown-toggle.btn.btn-primary {
     font-weight: 1000;
     font-size: 18px;
     display: inline-block;
-    padding-right: 8px;
+    /*padding-right: 8px;*/
+    color: rgb(var(--green));
 }
 .modifier-options button.modifier-option.selected.btn.btn-primary:not(:disabled):not(.disabled):hover,
 .modifier-options button.modifier-option.selected.btn.btn-primary:focus-visible {
