@@ -10027,6 +10027,7 @@ button#parser-field-select.dropdown-toggle.btn.btn-primary {
 }
 .modifier-options button.modifier-option.btn-primary:not(.selected):focus-visible,
 .modifier-options button.modifier-option.selected.btn.btn-primary:focus-visible {
+    background-image: none;
     background-color: rgb(var(--pry-container));
     color: rgb(var(--on-tertiary-container));
 }
