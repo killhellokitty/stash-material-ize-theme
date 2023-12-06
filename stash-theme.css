@@ -9993,43 +9993,42 @@ button#parser-field-select.dropdown-toggle.btn.btn-primary {
 }*/
 .modifier-options button.modifier-option.btn-primary:not(.selected):hover,
 .modifier-options button.modifier-option.btn-primary:not(.selected):focus-visible {
-    background-image: linear-gradient(to right, rgb(var(--pry-container)), rgb(var(--pry-container)));
-    background-color: rgb(255,255,255,0.5);
+    background-image: linear-gradient(to right, rgb(var(--surface)), rgb(var(--surface)));
+    background-color: rgb(255,255,255,0.06);
     background-blend-mode: multiply;
     box-shadow: none;
     color: #bec9c5;
 }
-.modifier-options button.modifier-option.selected,
-.modifier-options button.modifier-option.btn.btn-primary:not(:disabled):not(.disabled):active,
-.modifier-options button.modifier-option.btn.btn-primary:not(:disabled):not(.disabled):not(:focus-visible):focus {
-    background-color: rgb(var(--pry-container));
-    box-shadow: var(--elevation-0);
-    color: rgb(var(--on-pry-container));
-    border: 1px solid rgb(var(--pry-container));
-}
 .modifier-options button.modifier-option.selected::before {
     content: "\2713";
     font-family: var(--UnicodeFont);
-    font-weight: 1000;
+    font-weight: 500;
     font-size: 18px;
     display: inline-block;
-    /*padding-right: 8px;*/
     color: rgb(var(--green));
 }
-.modifier-options button.modifier-option.selected.btn.btn-primary:hover,
-.modifier-options button.modifier-option.selected.btn.btn-primary:focus-visible {
-    box-shadow: none;
-    color: rgb(var(--on-pry-container));
+.modifier-options button.modifier-option.selected,
+.modifier-options button.modifier-option.btn.btn-primary:not(:disabled):not(.disabled):active,
+.modifier-options button.modifier-option.btn.btn-primary:not(:disabled):not(.disabled):focus {
+    background-color: rgb(var(--pry-container));
     background-image: linear-gradient(to right, rgb(var(--pry-container)), rgb(var(--pry-container)));
+    box-shadow: var(--elevation-0);
+    color: rgb(var(--on-pry-container));
+    border: 1px solid rgb(var(--pry-container));
+    opacity: 1;
+}
+.modifier-options button.modifier-option.selected.btn.btn-primary:hover {
+    box-shadow: none;
+    box-shadow: var(--elevation-0);
+    background-image: linear-gradient(to right, rgb(var(--pry-container)), rgb(var(--pry-container)));
+    border: 1px solid rgb(var(--pry-container));
     background-color: rgb(255,255,255,0.06);
     background-blend-mode: multiply;
 }
 .modifier-options button.modifier-option.btn-primary:not(.selected):focus-visible,
 .modifier-options button.modifier-option.selected.btn.btn-primary:focus-visible {
-    outline-color: #dffffb;
-    outline-style: solid;
-    outline-width: 3px;
-    outline-offset: 2px;
+    background-color: rgb(var(--pry-container));
+    color: rgb(var(--on-tertiary-container));
 }
 
 button.btn.btn-primary.btn-sm:first-child {
