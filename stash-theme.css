@@ -9966,7 +9966,8 @@ button#parser-field-select.dropdown-toggle.btn.btn-primary {
     background-color: transparent;
 }
 
-.modifier-options button.modifier-option {
+/* Chips/Tag-Items for the Filter Editor */ 
+.modifier-options button.modifier-option.btn-primary:not(.selected) {
     background-color: rgb(var(--surface));
     padding: 0 16px;
     border-radius: 8px;
@@ -9983,22 +9984,24 @@ button#parser-field-select.dropdown-toggle.btn.btn-primary {
     width: auto;
     box-shadow: var(--elevation-0);
 }
-/*.modifier-options button.modifier-option:first-of-type {
-    border-top-left-radius: 5rem;
-    border-bottom-left-radius: 5rem;
+.modifier-options button.modifier-option.btn-primary:not(.selected):hover {
+    color: rgb(var(--on-surface-variant));
+    box-shadow: var(--elevation-0);
+    background-image: linear-gradient(to right, rgb(255,255,255,0.06), rgb(255,255,255,0.06)), linear-gradient(to right, rgb(var(--surface)), rgb(var(--surface)));
+    border: 1px solid rgb(var(--outline));
+    background-color: transparent;
 }
-.modifier-options button.modifier-option:last-of-type {
-    border-top-right-radius: 5rem;
-    border-bottom-right-radius: 5rem;
-}*/
-.modifier-options button.modifier-option.btn-primary:not(.selected):hover,
 .modifier-options button.modifier-option.btn-primary:not(.selected):focus-visible {
-    background-image: linear-gradient(to right, rgb(var(--surface)), rgb(var(--surface)));
-    background-color: rgb(255,255,255,0.06);
-    background-blend-mode: multiply;
+    background-image: linear-gradient(to right, rgb(var(--pry-container)), rgb(var(--pry-container)));
+    background-color: transparent;
+    color: rgb(var(--on-tertiary-container));
+    outline-color: rgb(var(--focus-ring));
+    outline-offset: -0.1rem;
+    outline-style: solid;
+    outline-width: 0.3rem;
     box-shadow: none;
-    color: #bec9c5;
 }
+
 .modifier-options button.modifier-option.selected::before {
     content: "\2713";
     font-family: var(--UnicodeFont);
@@ -10018,19 +10021,24 @@ button#parser-field-select.dropdown-toggle.btn.btn-primary {
     opacity: 1;
     transition: background-image 0.55s ease, border 0.25s ease-in, box-shadow 0.4s ease-out, background-color 0.55s ease-in;
 }
-.modifier-options button.modifier-option.selected.btn.btn-primary:hover {
+.modifier-options button.modifier-option.selected.btn.btn-primary.selected:hover {
     color: rgb(var(--on-tertiary-container));
-    box-shadow: var(--elevation-0);
+    box-shadow: var(--elevation-1);
     background-image: linear-gradient(to right, rgb(255,255,255,0.06), rgb(255,255,255,0.06)), linear-gradient(to right, rgb(var(--tertiary-container)), rgb(var(--tertiary-container)));
     border: 1px solid rgb(var(--tertiary-container));
     background-color: transparent;
 }
-.modifier-options button.modifier-option.btn-primary:not(.selected):focus-visible,
 .modifier-options button.modifier-option.selected.btn.btn-primary:focus-visible {
     background-image: none;
-    background-color: rgb(var(--pry-container));
-    color: rgb(var(--on-tertiary-container));
+    background-color: rgb(var(--tertiary-container));
+    color: rgb(var(--on-pry-container));
+    outline-color: rgb(var(--focus-ring));
+    outline-offset: -0.1rem;
+    outline-style: solid;
+    outline-width: 0.3rem;
+    box-shadow: none;
 }
+/* * */
 
 button.btn.btn-primary.btn-sm:first-child {
     border-bottom-left-radius: 5rem;
