@@ -9981,6 +9981,7 @@ button#parser-field-select.dropdown-toggle.btn.btn-primary {
     height: 32px;
     min-height: 32px;
     width: auto;
+    box-shadow: var(--elevation-0);
 }
 /*.modifier-options button.modifier-option:first-of-type {
     border-top-left-radius: 5rem;
@@ -9990,7 +9991,7 @@ button#parser-field-select.dropdown-toggle.btn.btn-primary {
     border-top-right-radius: 5rem;
     border-bottom-right-radius: 5rem;
 }*/
-.modifier-options button.modifier-option.btn-primary:not(.selected):not(:disabled):not(.disabled):hover,
+.modifier-options button.modifier-option.btn-primary:not(.selected):hover,
 .modifier-options button.modifier-option.btn-primary:not(.selected):focus-visible {
     background-color: rgba(61, 81, 95, 0.62);
     box-shadow: none;
@@ -9999,10 +10000,10 @@ button#parser-field-select.dropdown-toggle.btn.btn-primary {
 .modifier-options button.modifier-option.selected,
 .modifier-options button.modifier-option.btn.btn-primary:not(:disabled):not(.disabled):active,
 .modifier-options button.modifier-option.btn.btn-primary:not(:disabled):not(.disabled):not(:focus-visible):focus {
-    background-color: rgba(61, 81, 95, 0.92);
-    box-shadow: none;
-    color: #bec9c5;
-    border: 1px solid #899390;
+    background-color: rgb(var(--pry-container));
+    box-shadow: var(--elevation-0);
+    color: rgb(var(--on-pry-container));
+    border: 1px solid rgb(var(--pry-container));
 }
 .modifier-options button.modifier-option.selected::before {
     content: "\2713";
@@ -10013,7 +10014,7 @@ button#parser-field-select.dropdown-toggle.btn.btn-primary {
     /*padding-right: 8px;*/
     color: rgb(var(--green));
 }
-.modifier-options button.modifier-option.selected.btn.btn-primary:not(:disabled):not(.disabled):hover,
+.modifier-options button.modifier-option.selected.btn.btn-primary:hover,
 .modifier-options button.modifier-option.selected.btn.btn-primary:focus-visible {
     background-color: rgba(61, 81, 95, 0.92);
     box-shadow: none;
