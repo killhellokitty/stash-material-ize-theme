@@ -9967,7 +9967,7 @@ button#parser-field-select.dropdown-toggle.btn.btn-primary {
 }
 
 /* Chips/Tag-Items for the Filter Editor */ 
-.modifier-options button.modifier-option.btn-primary:not(.selected) {
+.modifier-options button.modifier-option.btn-primary {
     background-color: rgb(var(--surface));
     padding: 0 16px;
     border-radius: 8px;
