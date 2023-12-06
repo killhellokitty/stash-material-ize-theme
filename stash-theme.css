@@ -9974,7 +9974,7 @@ button#parser-field-select.dropdown-toggle.btn.btn-primary {
     border: 1px solid rgb(var(--outline));
     font-size: 14px;
     line-height: 20px;
-    letter-spacing: 0.1px;
+    letter-spacing: 0.15px;
     font-weight: 500;
     margin-right: 8px;
     margin-bottom: 8px;
@@ -9982,14 +9982,14 @@ button#parser-field-select.dropdown-toggle.btn.btn-primary {
     min-height: 32px;
     width: auto;
 }
-.modifier-options button.modifier-option:first-of-type {
+/*.modifier-options button.modifier-option:first-of-type {
     border-top-left-radius: 5rem;
     border-bottom-left-radius: 5rem;
 }
 .modifier-options button.modifier-option:last-of-type {
     border-top-right-radius: 5rem;
     border-bottom-right-radius: 5rem;
-}
+}*/
 .modifier-options button.modifier-option.btn-primary:not(.selected):not(:disabled):not(.disabled):hover,
 .modifier-options button.modifier-option.btn-primary:not(.selected):focus-visible {
     background-color: rgba(61, 81, 95, 0.62);
