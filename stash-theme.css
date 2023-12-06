@@ -4140,12 +4140,24 @@ div.tagger-container .btn-link {
 .dialog-content .criterion-list.accordion .card >.filter-item-header:has(+ .collapse:not(.show)):hover {
     background-color: rgb(var(--card-color-hover));
 }
-.dialog-content .criterion-list.accordion .card > .filter-item-header:focus-visible,
-.edit-filter-dialog .criterion-list .filter-item-header .btn:focus-visible {
-    background-color: rgb(var(--pry-color));
+.dialog-content .criterion-list.accordion .card > .filter-item-header:focus-visible {
     color: rgb(var(--on-tertiary-container));
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: rgb(var(--on-tertiary-container));
+    text-underline-offset: 0.3em;
+    text-decoration-thickness: from-font;
+}
+
+.edit-filter-dialog .criterion-list .filter-item-header .btn:focus-visible {
+    background-color: rgba(var( --pry-container));
+    color: rgb(var(--on-tertiary-container));
+    border-radius: 5rem;
+    width: 40px;
+    max-width: 40px;
+    height: 40px;
     outline-color: rgb(var(--focus-ring));
-    outline-offset: 0.06rem;
+    outline-offset: -0.06rem;
     outline-style: solid;
     outline-width: 0.24rem;
 }
