@@ -4129,12 +4129,15 @@ div.tagger-container .btn-link {
 }
 .dialog-content .criterion-list.accordion .card {
     background-color: rgb(var(--card-color));
+}
+.dialog-content .criterion-list.accordion .card >.filter-item-header {
     padding-top: 13.5px;
     padding-bottom: 13.5px;
     height: 72px;
     max-height: 72px;
+    border-radius: 0;
 }
-.dialog-content .criterion-list.accordion .card:has(> .filter-item-header + .collapse:not(.show)):hover {
+.dialog-content .criterion-list.accordion .card >.filter-item-header:has(+ .collapse:not(.show)):hover {
     background-color: rgb(var(--card-color-hover));
 }
 .dialog-content .criterion-list.accordion .card > .filter-item-header:focus-visible,
