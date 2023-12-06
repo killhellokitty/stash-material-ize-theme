@@ -9123,10 +9123,12 @@ form#studio-edit {
     margin-right: 8px;
 }
 .dialog-content .criterion-list .collapse.show .card-body {
-    background-color: rgb(var(--card-color-hover));
+    background-color: rgb(var(--card-color-collaps-show));
     border-radius: 12px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
+    transform: translate(0%,0%);
+    transition: transform 0.3s ease-in 0.25s;
 }
 
 .criterion-editor .form-group .input-group.has-validation>input.date-input.text-input.form-control {
@@ -9951,12 +9953,14 @@ button#parser-field-select.dropdown-toggle.btn.btn-primary {
 }
 .edit-filter-dialog .criterion-list .card .filter-item-header:focus,
 .edit-filter-dialog .criterion-list .card:has(>*.collapse.show) .filter-item-header {
-    background-color: rgb(var(--card-color-hover));
+    background-color: rgb(var(--card-color-collaps-show));
     border-color: transparent;
     border-radius: 0;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     box-shadow: none;
+    transform: translate(0%,0%);
+    transition: tranform 0.25s ease-out 0s;
 }
 .edit-filter-dialog .criterion-list .card .filter-item-header:focus {
     background-color: transparent;
