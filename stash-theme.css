@@ -7385,6 +7385,10 @@ button.filter-button.btn.btn-secondary {
     border-top-left-radius: 0;
 }
 
+.modal-body .btn-secondary.form-control {
+    background-color: transparent;
+}
+
 /**********************/
 .mr-2.mb-2.btn-group {
     margin-top: 8px;
