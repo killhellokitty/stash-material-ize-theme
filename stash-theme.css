@@ -10011,7 +10011,7 @@ button#parser-field-select.dropdown-toggle.btn.btn-primary {
     color: rgb(var(--green));
 }
 .modifier-options button.modifier-option.selected,
-.modifier-options button.modifier-option.btn.btn-primary:is(:not(.disabled, :disabled):not(.selected)):is(:focus, :active, :active:focus) {
+.modifier-options button.modifier-option.btn.btn-primary:is(:not(.disabled, :disabled):not(.selected)):is(:focus) {
     background-color: transparent;
     background-image: linear-gradient(to right, rgb(var(--tertiary-container)), rgb(var(--tertiary-container)));
     box-shadow: var(--elevation-0);
@@ -10020,7 +10020,7 @@ button#parser-field-select.dropdown-toggle.btn.btn-primary {
     opacity: 1;
     transition: background-image 0.55s ease, border 0.25s ease-in, box-shadow 0.4s ease-out, background-color 0.55s ease-in;
 }
-.modifier-options button.modifier-option.btn.btn-primary:is(:not(.disabled, :disabled).selected):is(:focus, :active, :active:focus) {
+.modifier-options button.modifier-option.btn.btn-primary:is(:not(.disabled, :disabled).selected):is(:active, :active:focus) {
     color: rgb(var(--on-tertiary-container));
     box-shadow: var(--elevation-0);
     background-color: transparent;
