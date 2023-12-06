@@ -9112,12 +9112,16 @@ form#studio-edit {
     border-radius: 28px;
 }
 
+.edit-filter-dialog .criterion-list .card .collapse-icon {
+    margin-right: 8px;
+}
 .dialog-content .criterion-list .collapse.show .card-body {
     background-color: rgb(var(--card-color-hover));
     border-radius: 12px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 }
+
 .criterion-editor .form-group .input-group.has-validation>input.date-input.text-input.form-control {
    width: 380px; 
    border-top-right-radius: 0.5rem;
