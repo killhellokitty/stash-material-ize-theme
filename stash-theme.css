@@ -9993,7 +9993,9 @@ button#parser-field-select.dropdown-toggle.btn.btn-primary {
 }*/
 .modifier-options button.modifier-option.btn-primary:not(.selected):hover,
 .modifier-options button.modifier-option.btn-primary:not(.selected):focus-visible {
-    background-color: rgba(61, 81, 95, 0.62);
+    background-image: linear-gradient(to right, rgb(var(--pry-container)), rgb(var(--pry-container)));
+    background-color: rgb(255,255,255,0.5);
+    background-blend-mode: multiply;
     box-shadow: none;
     color: #bec9c5;
 }
@@ -10016,9 +10018,11 @@ button#parser-field-select.dropdown-toggle.btn.btn-primary {
 }
 .modifier-options button.modifier-option.selected.btn.btn-primary:hover,
 .modifier-options button.modifier-option.selected.btn.btn-primary:focus-visible {
-    background-color: rgba(61, 81, 95, 0.92);
     box-shadow: none;
-    color: #bec9c5;
+    color: rgb(var(--on-pry-container));
+    background-image: linear-gradient(to right, rgb(var(--pry-container)), rgb(var(--pry-container)));
+    background-color: rgb(255,255,255,0.06);
+    background-blend-mode: multiply;
 }
 .modifier-options button.modifier-option.btn-primary:not(.selected):focus-visible,
 .modifier-options button.modifier-option.selected.btn.btn-primary:focus-visible {
