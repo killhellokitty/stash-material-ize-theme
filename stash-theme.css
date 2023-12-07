@@ -1724,6 +1724,14 @@ div.react-datepicker .react-datepicker-time__header {
     border-radius: 12px;
     border-bottom: 0;
 }
+div.react-datepicker .react-datepicker__month-dropdown-container .react-datepicker__month-read-view, 
+div.react-datepicker .react-datepicker__year-dropdown-container .react-datepicker__year-read-view {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.1px;
+    color: rgb(var(--on-surface-variant));
+}
 .react-datepicker__year-read-view--down-arrow, 
 .react-datepicker__month-read-view--down-arrow, 
 .react-datepicker__month-year-read-view--down-arrow, 
