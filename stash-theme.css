@@ -1843,7 +1843,12 @@ div.react-datepicker .react-datepicker__year-text--keyboard-selected:hover {
     color: #121e1b;
 }
 .react-datepicker__time-container {
-    border-left: 1px solid #206556;
+    border-left: 0;
+    float: inline-start;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
 }
 div.react-datepicker div.react-datepicker__time-container div.react-datepicker__time {
     background-color: #2d3130;
