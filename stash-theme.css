@@ -8158,13 +8158,10 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
     background: transparent;
     outline: none;
     box-shadow: none;
-    top: 7px;
-    left: -12px;
-    padding: 0 14px;
     border-radius: 5rem;
     border-style: none;
     border: 0;
-    color: #c0ebe2;
+    color: rgb(var(--on-surface-variant));
 }
 .form-group .input-group>.input-group-append:last-child > button.scrape-url-button.btn:not(:last-child):not(.dropdown-toggle),
 .form-group .input-group>.input-group-append > button.scrape-url-button.btn:not(.dropdown-toggle),
@@ -9186,6 +9183,12 @@ form#studio-edit {
 .react-datepicker-wrapper {
     display: flex;
 }
+.react-datepicker__input-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+}
 .criterion-editor .form-group .input-group.has-validation>.input-group-append>.react-datepicker-wrapper button.btn.btn-secondary:has(>.fa-calendar):not(:first-child):last-child,
 .criterion-editor .form-group .input-group.has-validation>.input-group-append>.react-datepicker-wrapper button.btn.btn-secondary:has(>.fa-calendar):not(:first-child):last-child:not(:disabled):not(.disabled):hover,
 .criterion-editor .form-group .input-group.has-validation>.input-group-append>.react-datepicker-wrapper button.btn.btn-secondary:has(>.fa-calendar):not(:first-child):last-child:not(:disabled):not(.disabled):focus,
@@ -9194,7 +9197,10 @@ form#studio-edit {
 .criterion-editor .form-group .input-group.has-validation>.input-group-append>.react-datepicker-wrapper button.btn.btn-secondary:has(>.fa-calendar):not(:first-child):last-child:not(:disabled):not(.disabled):active:hover,
 .criterion-editor .form-group .input-group.has-validation>.input-group-append>.react-datepicker-wrapper button.btn.btn-secondary:has(>.fa-calendar):not(:first-child):last-child:not(:disabled):not(.disabled).active:hover,
 .criterion-editor .form-group .input-group.has-validation>.input-group-append>.react-datepicker-wrapper button.btn.btn-secondary:has(>.fa-calendar):not(:first-child):last-child:not(:disabled):not(.disabled):focus-visible {
-    left: -48px;
+    padding: 0;
+    width: 40px;
+    max-width: 40px;
+    height: 40px;
 }
 
 .criterion-editor .form-group .input-group:not(.has-validation)>.input-group-append>button.btn.btn-secondary {
