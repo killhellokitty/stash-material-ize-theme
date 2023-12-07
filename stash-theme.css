@@ -4158,6 +4158,9 @@ div.tagger-container .btn-link {
     text-decoration-thickness: from-font;
 }
 
+.edit-filter-dialog .criterion-list .pin-criterion-button {
+    font-size: 18px;
+}
 .edit-filter-dialog .criterion-list :is(.pin-criterion-button, .remove-criterion-button) {
     color: rgb(var(--on-surface-variant));
     border-radius: 5rem;
