@@ -4088,7 +4088,7 @@ div.tagger-container .btn-link {
     height: 100%;
 }
 .modal-footer {
-    border-top: 1px solid #14181c;
+    border-top: 0;
     border-radius: 0 0 28px 28px;
 }
 .modal-footer>* {
@@ -4148,9 +4148,8 @@ div.tagger-container .btn-link {
 }
 
 .edit-filter-dialog .filter-tags {
-    border-top: 1px solid rgba(16,22,26,.4);
+    border-top: 0;
     padding: 1rem 1rem 0;
-
 }
 
 button.remove-criterion-button.btn.btn-minimal > svg.svg-inline--fa.fa-xmark.fa-icon {
