@@ -2373,7 +2373,8 @@ div#crop-btn-container {
     padding-bottom: 0.8571428571428571rem;
 }
 
-.tag-item {
+.tag-item, 
+.filter-tags>span.tag-item {
     background-image: linear-gradient(to right, rgb(var(--surface)), rgb(var(--surface)));
     background-color: rgba(var(--pry-color),0.55);
     background-blend-mode: hard-light;
@@ -2392,19 +2393,22 @@ div#crop-btn-container {
     box-shadow: var(--elevation-0);
     padding: 0 16px 0 16px;
 }
-.tag-item:is(:hover, :focus-visible) {
+.tag-item:is(:hover, :focus-visible),
+.filter-tags>span.tag-item:is(:hover, :focus-visible) {
     background-image: linear-gradient(to right, rgba(var(--surface),var(--btn-hover-rev)), rgba(var(--surface),var(--btn-hover-rev)));
     background-color: rgba(var(--pry-color),0.55);
     background-blend-mode: hard-light;
     box-shadow: var(--elevation-1);
 }
-.tag-item:is(:active, :focus) {
+.tag-item:is(:active, :focus),
+.filter-tags>span.tag-item:is(:active, :focus) {
     background-image: linear-gradient(to right, rgba(var(--surface),var(--btn-active-rev)), rgba(var(--surface),var(--btn-active-rev)));
     background-color: rgba(var(--pry-color),0.55);
     background-blend-mode: hard-light;
     box-shadow: var(--elevation-0);
 }
-.tag-item:focus-visible {
+.tag-item:focus-visible,
+.filter-tags>span.tag-item:focus-visible {
     outline-color: rgb(var(--focus-ring));
     outline-style: solid;
     outline-width: 0.25rem;
@@ -2468,23 +2472,8 @@ div#crop-btn-container {
 }
 
 .wrap-tags.filter-tags>span.badge {
-    align-content: center;
     align-items: center;
-    flex-wrap: wrap;
     display: flex;
-    height: 2.286rem;
-    padding: 0;
-    padding-left: 1.143rem;
-    padding-right: 0.571rem;
-    margin: 0.423rem 0.214rem 0;
-    gap: 0.571rem;
-    text-align: start;
-    vertical-align: middle;
-    font-size: 1rem;
-    font-weight: 500;
-    letter-spacing: 0.007rem;
-    line-height: 1.429rem;
-    border-radius: 0.571rem;
 }
 .badge-pill.badge-secondary {
     color: #690005;
@@ -4156,6 +4145,12 @@ div.tagger-container .btn-link {
     text-decoration-color: rgb(var(--on-tertiary-container));
     text-underline-offset: 0.3em;
     text-decoration-thickness: from-font;
+}
+
+.edit-filter-dialog .filter-tags {
+    border-top: 1px solid rgba(16,22,26,.4);
+    padding: 1rem 1rem 0;
+
 }
 
 button.remove-criterion-button.btn.btn-minimal > svg.svg-inline--fa.fa-xmark.fa-icon {
