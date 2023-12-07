@@ -2483,6 +2483,7 @@ div#crop-btn-container {
 }
 .tag-item > button.btn.btn-secondary {
     background-color: transparent;
+    color: rgb(var(--on-surface-variant));
     border: 0;
     width: 26px;
     max-width: 26px;
@@ -2496,6 +2497,10 @@ div#crop-btn-container {
 .tag-item > button.btn.btn-secondary:hover {
     background-image: none;
     background-color: rgb(var(--on-surface-variant),var(--btn-hover));
+}
+.tag-item > button.btn.btn-secondary:is(:focus, :active, :active:focus) {
+    background-image: none;
+    background-color: rgb(var(--on-surface-variant),var(--btn-active));
 }
 
 .badge-pill.badge-secondary {
