@@ -4158,6 +4158,10 @@ div.tagger-container .btn-link {
     text-decoration-thickness: from-font;
 }
 
+button.remove-criterion-button.btn.btn-minimal > svg.svg-inline--fa.fa-xmark.fa-icon {
+    min-height: 18px;
+    font-size: 25px;
+}
 .edit-filter-dialog .criterion-list .pin-criterion-button {
     font-size: 18px;
 }
