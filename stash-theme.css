@@ -1141,7 +1141,7 @@ input:is(#batch-search-delay, #colorize-color-green, #colorize-color-yellow, #co
     letter-spacing: 0.5px;
 }
 .form-control:hover::placeholder {
-    color: rgb(var(--on-surface));
+    color: rgb(var(--on-surface-variant));
 }
 .form-control:focus::placeholder,
 .form-control:active::placeholder {
