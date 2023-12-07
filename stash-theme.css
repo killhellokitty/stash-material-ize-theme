@@ -2493,6 +2493,10 @@ div#crop-btn-container {
     padding: 0;
     display: flex;
 }
+.tag-item > button.btn.btn-secondary:hover {
+    background-image: none;
+    background-color: rgb(var(--on-surface-variant),var(--btn-hover));
+}
 
 .badge-pill.badge-secondary {
     color: #690005;
