@@ -4193,7 +4193,7 @@ button.remove-criterion-button.btn.btn-minimal > svg.svg-inline--fa.fa-xmark.fa-
 }
 
 /* Modal Secondary Button */
-.modal-dialog button.btn.btn-secondary:not(.form-control):not(.dropdown-toggle) {
+.modal-footer button.btn.btn-secondary:not(.form-control):not(.dropdown-toggle) {
     background-color: rgb(var(--modal-color));
 }
 .modal-dialog button.btn-secondary:not(.form-control):not(.dropdown-toggle):focus-visible {
