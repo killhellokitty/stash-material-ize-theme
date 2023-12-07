@@ -1737,6 +1737,9 @@ div.react-datepicker .react-datepicker__year-dropdown-container .react-datepicke
     letter-spacing: 0.1px;
     color: rgb(var(--on-surface-variant));
 }
+.react-datepicker__navigation-icon {
+    font-size: 32px;
+}
 .react-datepicker__year-read-view--down-arrow, 
 .react-datepicker__month-read-view--down-arrow, 
 .react-datepicker__month-year-read-view--down-arrow, 
