@@ -4158,7 +4158,7 @@ div.tagger-container .btn-link {
     text-decoration-thickness: from-font;
 }
 
-.edit-filter-dialog .criterion-list .pin-criterion-button {
+.edit-filter-dialog .criterion-list :is(.pin-criterion-button, .remove-criterion-button) {
     color: rgb(var(--on-surface-variant));
     border-radius: 5rem;
     width: 40px;
@@ -9967,9 +9967,7 @@ button#parser-field-select.dropdown-toggle.btn.btn-primary {
 .edit-filter-dialog .criterion-list .card .filter-item-header:focus {
     background-color: transparent;
 }
-.edit-filter-dialog .criterion-list .remove-criterion-button {
-    color: rgb(var(--on-surface-variant));
-}
+
 
 /* Chips/Tag-Items for the Filter Editor */ 
 .modifier-options button.modifier-option.btn-primary {
