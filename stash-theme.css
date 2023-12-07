@@ -1711,11 +1711,16 @@ li#vjs-menu-text:first-of-type {
 
 /*--- DatePicker ---*/
 div.react-datepicker {
-    background-color: #2d3130;
+    background-color: rgb(var(--popover-color));
     border: 0;
-    border-style: none;
-    border-radius: 12px;
-    color: #c0ebe2;
+    border-radius: 16px;
+    color: rgb(var(--on-surface));
+    box-shadow: var(--elevation-3);
+    font-family: var(--HeaderFont);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
 }
 div.react-datepicker .react-datepicker__header,
 div.react-datepicker .react-datepicker-time__header {
