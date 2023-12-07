@@ -1724,9 +1724,9 @@ div.react-datepicker {
 }
 div.react-datepicker .react-datepicker__header,
 div.react-datepicker .react-datepicker-time__header {
-    background-color: #2d3130;
-    color: #c0ebe2;
-    border-radius: 12px;
+    background-color: rgb(var(--popover-color));
+    color: rgb(var(--on-surface));
+    border-radius: 16px;
     border-bottom: 0;
 }
 div.react-datepicker .react-datepicker__month-dropdown-container .react-datepicker__month-read-view, 
