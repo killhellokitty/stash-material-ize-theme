@@ -2471,6 +2471,10 @@ div#crop-btn-container {
     color: rgb(var(--on-tertiary)) !important;
 }
 
+.tag-item button.btn.btn-secondary > svg.svg-inline--fa.fa-xmark.fa-icon {
+    min-height: 18px;
+    font-size: 24px;
+}
 .wrap-tags.filter-tags>span.badge {
     align-items: center;
     display: flex;
