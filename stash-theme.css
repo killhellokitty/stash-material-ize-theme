@@ -1775,7 +1775,7 @@ div.react-datepicker .react-datepicker__day-name {
     line-height: 24px;
 }
 div.react-datepicker .react-datepicker__day {
-    color: #c0ebe2;
+    color: rgb(var(--on-surface));
 }
 .react-datepicker__day-name, 
 .react-datepicker__day, 
@@ -1792,11 +1792,11 @@ div.react-datepicker .react-datepicker__day--keyboard-selected,
 div.react-datepicker .react-datepicker__month-text--keyboard-selected, 
 div.react-datepicker .react-datepicker__quarter-text--keyboard-selected, 
 div.react-datepicker .react-datepicker__year-text--keyboard-selected {
-    background-color: #00dfc6;
-    color: #121e1b;
+    background-color: rgb(var(--pry-color));
+    color: rgb(var(--on-pry));
     border-radius: 5rem;
-    font-weight: bold;
-    font-size: 0.9rem;
+    font-weight: 400;
+    font-size: 18px;
 }
 div.react-datepicker .react-datepicker__day--keyboard-selected:focus-visible, 
 div.react-datepicker .react-datepicker__month-text--keyboard-selected:focus-visible, 
