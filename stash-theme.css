@@ -3020,8 +3020,8 @@ svg.css-8mmkcg {
 }
 
 .btn-toolbar {
-    margin-left: 24px;
-    margin-right: 24px;
+    margin-left: auto;
+    margin-right: auto;
     align-content: center;
     align-items: center;
 }
