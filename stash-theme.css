@@ -1797,16 +1797,22 @@ div.react-datepicker .react-datepicker__year-text--keyboard-selected {
     border-radius: 5rem;
     font-weight: 400;
     font-size: 18px;
+    padding: 0.892rem;
+    margin: unset;
+    min-width: calc(0.892rem + 0.892rem + 24px);
+    width: calc(0.892rem + 0.892rem + 24px);
+    height: calc(0.892rem + 0.892rem + 24px);
 }
 div.react-datepicker .react-datepicker__day--keyboard-selected:focus-visible, 
 div.react-datepicker .react-datepicker__month-text--keyboard-selected:focus-visible, 
 div.react-datepicker .react-datepicker__quarter-text--keyboard-selected:focus-visible, 
 div.react-datepicker .react-datepicker__year-text--keyboard-selected:focus-visible {
-    color: #121e1b;
-    outline-color: #dffffb;
+    color: rgb(var(--on-tertiary-container));
+    background-color: rgb(var(--pry-container));
+    outline-color: rgb(var(--focus-ring));
     outline-style: solid;
-    outline-width: 3px;
-    outline-offset: -1px;
+    outline-width: 0.24rem;
+    outline-offset: -0.06rem;
 }
 div.react-datepicker .react-datepicker__day--selected, 
 div.react-datepicker .react-datepicker__day--in-selecting-range, 
