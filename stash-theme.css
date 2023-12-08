@@ -1774,7 +1774,7 @@ div.react-datepicker .react-datepicker__day-name {
     letter-spacing: 0.5px;
     line-height: 24px;
 }
-div.react-datepicker .react-datepicker__day {
+div.react-datepicker .react-datepicker__day:not([aria-disabled="true"]):not([aria-disabled="false"]) {
     color: rgb(var(--on-surface));
 }
 .react-datepicker__day-name, 
@@ -1785,7 +1785,7 @@ div.react-datepicker .react-datepicker__day {
     width: 24px;
 }
 
-div.react-datepicker .react-datepicker__day.react-datepicker__day--outside-month,
+div.react-datepicker .react-datepicker__day.react-datepicker__day--outside-month:not([aria-disabled="true"]):not([aria-disabled="false"]),
 div.react-datepicker .react-datepicker__day.react-datepicker__day--today,
 div.react-datepicker .react-datepicker__day--keyboard-selected, 
 div.react-datepicker .react-datepicker__month-text--keyboard-selected, 
@@ -1795,7 +1795,9 @@ div.react-datepicker .react-datepicker__year-text--keyboard-selected {
     color: rgb(var(--on-pry));
     border-radius: 5rem;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.5;
     padding: 0.892rem;
     margin: unset;
     min-width: calc(0.892rem + 0.892rem + 24px);
@@ -1807,7 +1809,7 @@ div.react-datepicker .react-datepicker__day.react-datepicker__day--today {
     color: rgb(var(--pry-color));
     box-shadow: inset 0 0 0 1px rgb(var(--pry-color));
 }
-div.react-datepicker .react-datepicker__day--outside-month {
+div.react-datepicker .react-datepicker__day--outside-month[aria-disabled="false"] {
     opacity: 1;
     color: rgb(var(--on-surface-variant));
 }
@@ -1815,13 +1817,15 @@ div.react-datepicker .react-datepicker__day.react-datepicker__day--today:hover {
     background-color: rgb(var(--pry-color),var(--btn-hover));
     color: rgb(var(--pry-color));
     box-shadow: inset 0 0 0 1px rgb(var(--pry-color));
+    font-size: 18px;
 }
-div.react-datepicker .react-datepicker__day.react-datepicker__day--outside-month:hover {
+div.react-datepicker .react-datepicker__day.react-datepicker__day--outside-month[aria-disabled="false"]:hover {
     color: rgb(var(--on-surface-variant));
     background-color: rgb(var(--on-surface-variant));
+    font-size: 18px;
 }
 div.react-datepicker .react-datepicker__day.react-datepicker__day--today:focus-visible,
-div.react-datepicker .react-datepicker__day.react-datepicker__day--outside-month:focus-visible,
+div.react-datepicker .react-datepicker__day.react-datepicker__day--outside-month[aria-disabled="false"]:focus-visible,
 div.react-datepicker .react-datepicker__day--keyboard-selected:focus-visible, 
 div.react-datepicker .react-datepicker__month-text--keyboard-selected:focus-visible, 
 div.react-datepicker .react-datepicker__quarter-text--keyboard-selected:focus-visible, 
@@ -1863,7 +1867,7 @@ div.react-datepicker    .react-datepicker__year-text--in-range {
     width: calc(0.892rem + 0.892rem + 24px);
     height: calc(0.892rem + 0.892rem + 24px);
 }
-div.react-datepicker .react-datepicker__day:hover, 
+div.react-datepicker .react-datepicker__day[aria-disabled="false"]:hover, 
 div.react-datepicker .react-datepicker__month-text:hover, 
 div.react-datepicker .react-datepicker__quarter-text:hover, 
 div.react-datepicker .react-datepicker__year-text:hover {
