@@ -1755,9 +1755,9 @@ div.react-datepicker .react-datepicker__year-dropdown-container .react-datepicke
 .react-datepicker__month-year-read-view--down-arrow, 
 .react-datepicker__navigation-icon:before {
     border-color: rgb(var(--on-surface-variant));
-    height: 12px;
-    widht: 12px;
-    top: 3px;
+    height: 10px;
+    width: 10px;
+    top: 18px;
 }
 div.react-datepicker .react-datepicker__year-dropdown, 
 div.react-datepicker .react-datepicker__month-dropdown,
