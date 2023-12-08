@@ -1788,6 +1788,7 @@ div.react-datepicker .react-datepicker__day--outside-month {
     opacity: 1;
     color: rgb(var(--on-surface-variant));
 }
+div.react-datepicker .react-datepicker__day.react-datepicker__day--outside-month:hover,
 div.react-datepicker .react-datepicker__day.react-datepicker__day--today,
 div.react-datepicker .react-datepicker__day--keyboard-selected, 
 div.react-datepicker .react-datepicker__month-text--keyboard-selected, 
@@ -1817,7 +1818,6 @@ div.react-datepicker .react-datepicker__day.react-datepicker__day--today:hover {
 div.react-datepicker .react-datepicker__day.react-datepicker__day--outside-month:hover {
     color: rgb(var(--on-surface-variant));
     background-color: rgb(var(--on-surface-variant));
-    box-shadow: none;
 }
 div.react-datepicker .react-datepicker__day.react-datepicker__day--today:focus-visible,
 div.react-datepicker .react-datepicker__day.react-datepicker__day--outside-month:focus-visible,
@@ -1831,6 +1831,13 @@ div.react-datepicker .react-datepicker__year-text--keyboard-selected:focus-visib
     outline-style: solid;
     outline-width: 0.24rem;
     outline-offset: -0.06rem;
+}
+div.react-datepicker .react-datepicker__day--keyboard-selected:focus-visible, 
+div.react-datepicker .react-datepicker__month-text--keyboard-selected:focus-visible, 
+div.react-datepicker .react-datepicker__quarter-text--keyboard-selected:focus-visible, 
+div.react-datepicker .react-datepicker__year-text--keyboard-selected:focus-visible {
+    color: rgb(var(--pry-container));
+    background-color: rgb(var(--on-tertiary-container));
 }
 div.react-datepicker .react-datepicker__day--selected, 
 div.react-datepicker .react-datepicker__day--in-selecting-range, 
