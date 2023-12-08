@@ -1745,6 +1745,7 @@ div.react-datepicker .react-datepicker__year-dropdown-container .react-datepicke
     line-height: 20px;
     letter-spacing: 0.1px;
     color: rgb(var(--on-surface-variant));
+    padding-bottom: 30px;
 }
 .react-datepicker__navigation-icon {
     font-size: 32px;
