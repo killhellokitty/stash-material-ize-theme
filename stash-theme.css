@@ -1860,7 +1860,7 @@ div.react-datepicker .react-datepicker__quarter-text--in-selecting-range,
 div.react-datepicker .react-datepicker__quarter-text--in-range, 
 div.react-datepicker .react-datepicker__year-text--selected, 
 div.react-datepicker .react-datepicker__year-text--in-selecting-range, 
-div.react-datepicker    .react-datepicker__year-text--in-range {
+div.react-datepicker .react-datepicker__year-text--in-range {
     background-color: rgb(var(--pry-color));
     color: rgb(var(--on-pry));
     border-radius: 5rem;
