@@ -1780,7 +1780,7 @@ div.react-datepicker .react-datepicker__day:not([aria-disabled="true"]):not([ari
 }
 /* "Aria-Disabled" ="true" and ="false" within "Not" psuedo-element makes both statements "FALSE!" 
 It is neither True nor False, it is "ANYTHING" regardless of the "Aria!" */
-div.react-datepicker .react-datepicker__day-name:not([aria-disabled="true"]):not([aria-disabled="false"]),
+div.react-datepicker .react-datepicker__day:not([aria-disabled="true"]):not([aria-disabled="false"]),
 div.react-datepicker .react-datepicker__day.react-datepicker__day--outside-month:not([aria-disabled="true"]):not([aria-disabled="false"]),
 div.react-datepicker .react-datepicker__day.react-datepicker__day--today,
 div.react-datepicker .react-datepicker__day--keyboard-selected, 
