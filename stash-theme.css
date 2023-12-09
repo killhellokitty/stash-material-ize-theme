@@ -9303,15 +9303,22 @@ form#studio-edit {
     height: 40px;
 }
 
+.criterion-editor > div > .form-group + .form-group > .input-group .input-group-append {
+    margin-left: auto;
+    padding-right: 16px;
+    padding-left: 12px;
+    top: -50%;
+}
 .criterion-editor .form-group .input-group:not(.has-validation)>.input-group-append>button.btn.btn-secondary {
-    left: -20px;
-    padding: 0 24px;
+    padding: 0;
     border-radius: 5rem;
-    width: 24px;
-    bottom: -8px;
-    border-style: none;
     border: 0;
     z-index: 3;
+    width: 40px;
+    max-width: 40px;
+    height: 40px;
+    font-size: 24px;
+    background-color: transparent;
 }
 .criterion-editor > div > .form-group > .duration-input .input-group-append {
     margin-left: auto;
