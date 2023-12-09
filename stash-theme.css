@@ -1778,6 +1778,7 @@ div.react-datepicker .react-datepicker__month-year-dropdown {
 It is neither True nor False, it is "ANYTHING" regardless of the "Aria!" */
 div.react-datepicker .react-datepicker__day[aria-disabled="false"],
 div.react-datepicker .react-datepicker__day.react-datepicker__day--outside-month[aria-disabled="false"],
+div.react-datepicker .react-datepicker__day.react-datepicker__day--disabled,
 div.react-datepicker .react-datepicker__day.react-datepicker__day--today,
 div.react-datepicker .react-datepicker__day--keyboard-selected, 
 div.react-datepicker .react-datepicker__month-text--keyboard-selected, 
@@ -1800,6 +1801,7 @@ div.react-datepicker .react-datepicker__day:not([aria-disabled="true"]) {
     color: rgb(var(--on-surface));
     background-color: rgb(var(--popover-color));
 }
+
 div.react-datepicker .react-datepicker__day-name {
     color: rgb(var(--on-surface));
     background-color: rgb(var(--popover-color));
@@ -1903,6 +1905,10 @@ div.react-datepicker .react-datepicker__year-text--keyboard-selected:hover {
     background-color: rgb(var(--pry-color));
     background-image: linear-gradient(to right, rgb(255,255,255,0.06), rgb(255,255,255,0.06));
     color: rgb(var(--on-pry));
+}
+div.react-datepicker .react-datepicker__day.react-datepicker__day--disabled[aria-disabled="true"] {
+    color: rgb(var(--on-surface),var(--btn-disabled));
+    background-color: rgb(var(--popover-color));
 }
 .react-datepicker__time-container {
     border-left: 0;
