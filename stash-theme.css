@@ -9398,6 +9398,7 @@ form#studio-edit {
     border-radius: 4px;
     width: 100%;
     margin-right: unset;
+    background-color: transparent !important;
 }
 
 .modal-body .criterion-editor .form-group input.btn-secondary.form-control {
