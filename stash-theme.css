@@ -10257,13 +10257,16 @@ button#parser-field-select.dropdown-toggle.btn.btn-primary {
 /* Folder-Lists */
 .criterion-editor .form-group .folder-list.collapse.show > .folder-list-item > button.btn.btn-link {
     background-color: transparent;
-    padding: 0;
+    padding: 0 8px;
     border-radius: 8px;
 }
 .criterion-editor .form-group .folder-list.collapse.show > .folder-list-item > button.btn.btn-link:hover {
     box-shadow: none;
     border-radius: 8px;
     background-color: rgb(var(--on-surface),var(--btn-hover));
+}
+.criterion-editor .form-group ul.folder-list.collapse.show {
+        overflow-x: visible;
 }
 /* * */
 
