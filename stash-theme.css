@@ -9393,6 +9393,7 @@ form#studio-edit {
 .criterion-editor .form-group .input-group:not(.has-validation)>input.form-control:not(:last-child) {
     border-radius: 4px;
     width: 100%;
+    padding-right: 72px;
 }
 .criterion-editor .form-group>.duration-input>.input-group:not(.has-validation)>input.duration-control.form-control:not(:last-child),
 .modal-body>.percent-input>.input-group:not(.has-validation)>input.percent-control.form-control:not(:last-child),
