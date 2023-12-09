@@ -10250,7 +10250,9 @@ button#parser-field-select.dropdown-toggle.btn.btn-primary {
     color: rgb(var(--on-surface-variant));
     padding-right: 16px;
 }
-
+.criterion-editor .folder-list-item .btn span {
+    color: rgb(var(--on-surface-variant));
+}
 /* * */
 
 button.btn.btn-primary.btn-sm:first-child {
