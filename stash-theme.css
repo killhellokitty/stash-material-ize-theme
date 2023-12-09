@@ -10261,7 +10261,9 @@ button#parser-field-select.dropdown-toggle.btn.btn-primary {
     border-radius: 8px;
 }
 .criterion-editor .form-group .folder-list.collapse.show > .folder-list-item > button.btn.btn-link:hover {
-
+    box-shadow: none;
+    border-radius: 8px;
+    background-color: rgb(var(--on-surface),var(--btn-hover));
 }
 /* * */
 
