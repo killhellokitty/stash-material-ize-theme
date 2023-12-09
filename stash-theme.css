@@ -9387,11 +9387,8 @@ form#studio-edit {
 }
 
 .criterion-editor .form-group .input-group:not(.has-validation)>input.form-control:not(:last-child) {
-    margin-right: -40px;
-    border-top-right-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem;
-    border-top-left-radius: 0.5rem;
-    border-bottom-left-radius: 0.5rem;
+    border-radius: 4px;
+    width: 100%;
 }
 .criterion-editor .form-group>.duration-input>.input-group:not(.has-validation)>input.duration-control.form-control:not(:last-child),
 .modal-body>.percent-input>.input-group:not(.has-validation)>input.percent-control.form-control:not(:last-child),
