@@ -10244,6 +10244,7 @@ button#parser-field-select.dropdown-toggle.btn.btn-primary {
     color: rgb(var(--on-surface-variant));
     width: 100%;
 }
+/* Folder-List Unicode Characters */
 .criterion-editor .folder-list-item .btn span::before {
     content: "\251c \1F5BF";
     font-size: 20px;
@@ -10252,6 +10253,15 @@ button#parser-field-select.dropdown-toggle.btn.btn-primary {
 }
 .criterion-editor .folder-list-item .btn span {
     color: rgb(var(--on-surface-variant));
+}
+/* Folder-Lists */
+.criterion-editor .form-group .folder-list.collapse.show > .folder-list-item > button.btn.btn-link {
+    background-color: transparent;
+    padding: 0;
+    border-radius: 8px;
+}
+.criterion-editor .form-group .folder-list.collapse.show > .folder-list-item > button.btn.btn-link:hover {
+
 }
 /* * */
 
