@@ -9333,6 +9333,7 @@ form#studio-edit {
 .modal-body>.percent-input>.input-group>.input-group-append>.btn-group-vertical>button.percent-button.btn.btn-secondary,
 .modal-body .duration-input>.input-group>.input-group-append>.btn-group-vertical>button.duration-button.btn.btn-secondary {
     border: 0;
+    background-color: transparent;
     border-radius: 5rem;
     padding: 0;
     z-index: 3;
