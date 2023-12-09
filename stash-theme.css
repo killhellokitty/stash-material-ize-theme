@@ -9313,24 +9313,37 @@ form#studio-edit {
     border: 0;
     z-index: 3;
 }
-
+.criterion-editor > div > .form-group > .duration-input .input-group-append {
+    margin-left: auto;
+    top: -50%;
+}
 .criterion-editor .form-group .input-group>.input-group-append>.btn-group-vertical:has(>.duration-button),
 .modal-body>.percent-input>.input-group>.input-group-append>.btn-group-vertical:has(>.percent-button),
 .modal-body .duration-input>.input-group>.input-group-append>.btn-group-vertical:has(>.duration-button) {
     flex-direction: row;
-    align-items: flex-end;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
 }
 .modal-body>.percent-input>.input-group>.input-group-append>.btn-group-vertical:has(>.percent-button),
 .modal-body .duration-input>.input-group>.input-group-append>.btn-group-vertical:has(>.duration-button) {
-    padding-right: 12px;
+    padding-right: 16px;
 }
 .criterion-editor .form-group .input-group>.input-group-append>.btn-group-vertical>button.duration-button.btn.btn-secondary,
 .modal-body>.percent-input>.input-group>.input-group-append>.btn-group-vertical>button.percent-button.btn.btn-secondary,
 .modal-body .duration-input>.input-group>.input-group-append>.btn-group-vertical>button.duration-button.btn.btn-secondary {
     border: 0;
     border-radius: 5rem;
-    padding: 0 14px;
+    padding: 0;
     z-index: 3;
+    font-size: 24px;
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin-left: 12px;
 }
 .criterion-editor .form-group .input-group:not(.has-validation)>.input-group-append>button.btn.btn-secondary:hover:not(:disabled):not(.disabled),
 .criterion-editor .form-group .input-group:not(.has-validation)>.input-group-append>button.btn.btn-secondary:focus:not(:disabled):not(.disabled),
