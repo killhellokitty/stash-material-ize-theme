@@ -10244,6 +10244,13 @@ button#parser-field-select.dropdown-toggle.btn.btn-primary {
     color: rgb(var(--on-surface-variant));
     width: 100%;
 }
+.criterion-editor .folder-list-item .btn span::before {
+    content: "\251c \1F5BF";
+    font-size: 20px;
+    color: rgb(var(--on-surface-variant));
+    padding-right: 16px;
+}
+
 /* * */
 
 button.btn.btn-primary.btn-sm:first-child {
