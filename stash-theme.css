@@ -10217,6 +10217,27 @@ button#parser-field-select.dropdown-toggle.btn.btn-primary {
 }
 /* * */
 
+/* Critereion Filter Editor Input Labels */
+.criterion-editor .form-group:has(>.input-group > input[placeholder="File path"].btn-secondary.form-control) {
+    position: relative;
+}
+.criterion-editor .form-group:has(>.input-group > input[placeholder="File path"].btn-secondary.form-control)::before {
+    content: "File path";
+    font-size: 12px;
+    background-color: rgb(var(--accordion-color));
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-bottom: -2.5%;
+    margin-left: 16px;
+    z-index: 5;
+    transform: translate(0%,0%);
+    transition: all 0.35s ease;
+}
+.criterion-editor .form-group:has(>.input-group > input[placeholder="File path"].btn-secondary.form-control):focus-within::before {
+    visibility: visible;
+}
+/* * */
+
 button.btn.btn-primary.btn-sm:first-child {
     border-bottom-left-radius: 5rem;
 }
