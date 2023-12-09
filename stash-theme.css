@@ -1793,7 +1793,7 @@ div.react-datepicker .react-datepicker__year-text--keyboard-selected {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    letter-spacing: 0.5;
+    letter-spacing: 0.5px;
     padding: 0.892rem;
     margin: unset;
     min-width: calc(0.892rem + 0.892rem + 24px);
