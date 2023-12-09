@@ -1862,7 +1862,7 @@ div.react-datepicker .react-datepicker__year-text--keyboard-selected:focus-visib
     color: rgb(var(--pry-container));
     background-color: rgb(var(--on-tertiary-container));
 }
-div.react-datepicker .react-datepicker__day--selected, 
+div.react-datepicker .react-datepicker__day.react-datepicker__day--selected.react-datepicker__day--selected, 
 div.react-datepicker .react-datepicker__day--in-selecting-range, 
 div.react-datepicker .react-datepicker__day--in-range, 
 div.react-datepicker .react-datepicker__month-text--selected, 
