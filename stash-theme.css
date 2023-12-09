@@ -10274,6 +10274,10 @@ button#parser-field-select.dropdown-toggle.btn.btn-primary {
     content: "\A71B";
     visibility: visible;
 }
+/* Search Bar in Tags */
+.criterion-editor input.clearable-text-field.form-control {
+        border: 1px solid rgb(var(--outline));
+}
 
 /* * */
 
