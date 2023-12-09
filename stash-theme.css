@@ -9395,9 +9395,9 @@ form#studio-edit {
 .criterion-editor .form-group>.duration-input>.input-group:not(.has-validation)>input.duration-control.form-control:not(:last-child),
 .modal-body>.percent-input>.input-group:not(.has-validation)>input.percent-control.form-control:not(:last-child),
 .modal-body .duration-input>.input-group:not(.has-validation)>input.duration-control.form-control:not(:last-child) {
-    margin-right: -92px;
-    padding-right: 104px;
-    border-radius: 0.5rem;
+    border-radius: 4px;
+    width: 100%;
+    margin-right: unset;
 }
 
 .modal-body .criterion-editor .form-group input.btn-secondary.form-control {
