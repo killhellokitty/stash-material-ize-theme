@@ -10269,6 +10269,12 @@ button#parser-field-select.dropdown-toggle.btn.btn-primary {
 .criterion-editor .form-group ul.folder-list.collapse.show {
         overflow-x: visible;
 }
+/* Parent Folder Icon */
+.criterion-editor .folder-list-parent.folder-list-item .btn span::before {
+    content: "\A71B";
+    visibility: visible;
+}
+}
 /* * */
 
 button.btn.btn-primary.btn-sm:first-child {
