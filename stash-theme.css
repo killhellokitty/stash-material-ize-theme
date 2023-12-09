@@ -10217,7 +10217,7 @@ button#parser-field-select.dropdown-toggle.btn.btn-primary {
 }
 /* * */
 
-/* Critereion Filter Editor Input Labels */
+/* Critereion Filter Editor */
 .criterion-editor .form-group:has(>.input-group > input[placeholder="File path"].btn-secondary.form-control) {
     position: relative;
 }
@@ -10237,6 +10237,12 @@ button#parser-field-select.dropdown-toggle.btn.btn-primary {
 }
 .criterion-editor .form-group:has(>.input-group > input[placeholder="File path"].btn-secondary.form-control):focus-within::before {
     visibility: visible;
+}
+
+.criterion-editor > div > .form-group + .form-group > div > div.react-select__control {
+    background-color: transparent;
+    color: rgb(var(--on-surface-variant));
+    width: 100%;
 }
 /* * */
 
