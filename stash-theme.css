@@ -10224,7 +10224,7 @@ button#parser-field-select.dropdown-toggle.btn.btn-primary {
 .criterion-editor .form-group:has(>.input-group > input[placeholder="File path"].btn-secondary.form-control)::before {
     content: "File path";
     font-size: 12px;
-    background-color: rgb(var(--accordion-color));
+    background-color: rgb(var(--card-color-collaps-show));
     padding-left: 4px;
     padding-right: 4px;
     margin-bottom: -2.5%;
