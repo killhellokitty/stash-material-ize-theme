@@ -1917,10 +1917,10 @@ div.react-datepicker .react-datepicker__day.react-datepicker__day--disabled[aria
 .react-datepicker__time-container {
     border-left: 0;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: space-around;
+    align-items: baseline;
     width: unset;
     min-width: 120px;
 }
