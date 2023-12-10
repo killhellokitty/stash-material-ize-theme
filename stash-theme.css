@@ -1921,8 +1921,8 @@ div.react-datepicker .react-datepicker__day.react-datepicker__day--disabled[aria
     align-items: center;
 }
 div.react-datepicker div.react-datepicker__time-container div.react-datepicker__time {
-    background-color: #2d3130;
-    color: #c0ebe2;
+    background-color: rgb(var(--popover-color2));
+    color: rgb(var(--on-surface-varient));
 }
 div.react-datepicker div.react-datepicker__time-container div.react-datepicker__time ul.react-datepicker__time-list li.react-datepicker__time-list-item:hover {
     background-color: rgba(255,255,255,0.10);
@@ -10334,6 +10334,17 @@ button#parser-field-select.dropdown-toggle.btn.btn-primary {
 .criterion-editor .form-group:nth-child(2):has(>input[placeholder="Stash ID"].btn-secondary.form-control):focus-within::before {
     visibility: visible;
 }
+
+/* Time in Calendar */
+div.react-datepicker .react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box {
+    width: unset;
+    margin-bottom: 0;
+    margin-top: 0%;
+}
+div.react-datepicker .react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list {
+    height: 70px !important;
+}
+
 /* * */
 
 button.btn.btn-primary.btn-sm:first-child {
