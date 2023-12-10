@@ -5428,61 +5428,36 @@ button:not([title=Statistics], [title=Settings]).minimal:not(.nav-utility, .bran
     opacity: 1;
     outline-color: rgb(var(--focus-ring));
     outline-style: solid;
-    outline-width: 0.25rem;
-    outline-offset: -1px;
+    outline-width: 0.24rem;
+    outline-offset: -0.06rem;
 }
 
-
-.selectable-filter ul .selected-object button.minimal.exclude-button.btn.btn-primary,
-.selectable-filter ul .excluded-object button.minimal.exclude-button.btn.btn-primary,
-.selectable-filter ul .unselected-object button.minimal.exclude-button.btn.btn-primary {
+/* Exclude Button */
+.selectable-filter ul :is(.selected-object, .excluded-object, .unselected-object) button.minimal.exclude-button.btn.btn-primary {
     background-color: transparent;
     box-shadow: none;
     border-style: none;
-    padding: 0 14px;
+    padding: 0 12px;
     height: 32px;
     min-height: 32px;
     max-height: 32px;
     contain: content;
     overflow: hidden;
-    border-radius: 5rem;
+    border-radius: 8px;
     transition: background-color 0.55s ease, color 0.2s ease-in-out;
 }
-.selectable-filter ul .selected-object button.minimal.exclude-button.btn.btn-primary:hover:not(:disabled):not(.disabled),
-.selectable-filter ul .selected-object button.minimal.exclude-button.btn.btn-primary:focus:not(:disabled):not(.disabled):hover,
-.selectable-filter ul .selected-object button.minimal.exclude-button.btn.btn-primary:focus:not(:disabled):not(.disabled),
-.selectable-filter ul .excluded-object button.minimal.exclude-button.btn.btn-primary:hover:not(:disabled):not(.disabled),
-.selectable-filter ul .excluded-object button.minimal.exclude-button.btn.btn-primary:focus:not(:disabled):not(.disabled):hover,
-.selectable-filter ul .excluded-object button.minimal.exclude-button.btn.btn-primary:focus:not(:disabled):not(.disabled),
-.selectable-filter ul .unselected-object button.minimal.exclude-button.btn.btn-primary:hover:not(:disabled):not(.disabled),
-.selectable-filter ul .unselected-object button.minimal.exclude-button.btn.btn-primary:focus:not(:disabled):not(.disabled):hover,
-.selectable-filter ul .unselected-object button.minimal.exclude-button.btn.btn-primary:focus:not(:disabled):not(.disabled) {
-    background-color: rgba(255,255,255,0.10);
+.selectable-filter ul :is(.selected-object, .excluded-object, .unselected-object) button.minimal.exclude-button.btn.btn-primary:hover {
+    background-color: rgba(0,0,0,0.06);
 }
-.selectable-filter ul .selected-object button.minimal.exclude-button.btn.btn-primary:not(:disabled):not(.disabled):active,
-.selectable-filter ul .selected-object button.minimal.exclude-button.btn.btn-primary:not(:disabled):not(.disabled):active:focus,
-.selectable-filter ul .selected-object button.minimal.exclude-button.btn.btn-primary:not(:disabled):not(.disabled):active:hover,
-.selectable-filter ul .selected-object button.minimal.exclude-button.btn.btn-primary:not(:disabled):not(.disabled):active:hover:focus,
-.selectable-filter ul .excluded-object button.minimal.exclude-button.btn.btn-primary:not(:disabled):not(.disabled):active,
-.selectable-filter ul .excluded-object button.minimal.exclude-button.btn.btn-primary:not(:disabled):not(.disabled):active:focus,
-.selectable-filter ul .excluded-object button.minimal.exclude-button.btn.btn-primary:not(:disabled):not(.disabled):active:hover,
-.selectable-filter ul .excluded-object button.minimal.exclude-button.btn.btn-primary:not(:disabled):not(.disabled):active:hover:focus,
-.selectable-filter ul .unselected-object button.minimal.exclude-button.btn.btn-primary:not(:disabled):not(.disabled):active,
-.selectable-filter ul .unselected-object button.minimal.exclude-button.btn.btn-primary:not(:disabled):not(.disabled):active:focus,
-.selectable-filter ul .unselected-object button.minimal.exclude-button.btn.btn-primary:not(:disabled):not(.disabled):active:hover,
-.selectable-filter ul .unselected-object button.minimal.exclude-button.btn.btn-primary:not(:disabled):not(.disabled):active:hover:focus {
-    background-color: rgba(255,255,255,0.16);
+.selectable-filter ul :is(.selected-object, .excluded-object, .unselected-object) button.minimal.exclude-button.btn.btn-primary:is(:active, :focus, :active:focus) {
+    background-color: rgba(0,0,0,0.11);
 }
 
-.selectable-filter ul .selected-object .exclude-icon, 
-.selectable-filter ul .excluded-object .exclude-icon, 
-.selectable-filter ul .unselected-object .exclude-icon {
-    color: #ffb4ab;
+.selectable-filter ul :is(.selected-object, .excluded-object, .unselected-object) .exclude-icon {
+    color: rgb(var(--error));
 }
-.selectable-filter ul .selected-object .exclude-button .exclude-button-text, 
-.selectable-filter ul .excluded-object .exclude-button .exclude-button-text, 
-.selectable-filter ul .unselected-object .exclude-button .exclude-button-text {
-    color: #ffb4ab;
+.selectable-filter ul :is(.selected-object, .excluded-object, .unselected-object) .exclude-button .exclude-button-text {
+    color: rgb(var(--error));
 }
 
 /* Collapse Button in Search-Item Card. */
@@ -10276,9 +10251,11 @@ button#parser-field-select.dropdown-toggle.btn.btn-primary {
 }
 /* Search Bar in Tags */
 .criterion-editor input.clearable-text-field.form-control {
-        border: 1px solid rgb(var(--outline));
+    border: 1px solid rgb(var(--outline));
 }
-
+.criterion-editor input.clearable-text-field.form-control:hover {
+    border: 1px solid rgb(var(--on-surface-variant));
+}
 /* * */
 
 button.btn.btn-primary.btn-sm:first-child {
