@@ -1920,6 +1920,10 @@ div.react-datepicker .react-datepicker__day.react-datepicker__day--disabled[aria
     justify-content: flex-start;
     align-items: center;
 }
+div.react-datepicker .react-datepicker__header.react-datepicker__header--time {
+    padding: 8px 12px 16px 12px;
+    padding-bottom: 12px;
+}
 div.react-datepicker div.react-datepicker__time-container div.react-datepicker__time {
     background-color: rgb(var(--popover-color2));
     color: rgb(var(--on-surface-varient));
