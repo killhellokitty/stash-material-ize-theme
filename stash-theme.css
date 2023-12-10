@@ -1798,11 +1798,11 @@ div.react-datepicker .react-datepicker__year-text--keyboard-selected {
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.5px;
-    padding: 0.892rem;
+    padding: 0.446rem;
     margin: unset;
-    min-width: calc(0.892rem + 0.892rem + 24px);
-    width: calc(0.892rem + 0.892rem + 24px);
-    height: calc(0.892rem + 0.892rem + 24px);
+    min-width: calc(0.446rem + 0.446rem + 24px);
+    width: calc(0.446rem + 0.446rem + 24px);
+    height: calc(0.446rem + 0.446rem + 24px);
 }
 div.react-datepicker .react-datepicker__day:not([aria-disabled="true"]) {
     color: rgb(var(--on-surface));
@@ -1881,11 +1881,11 @@ div.react-datepicker .react-datepicker__year-text--in-range {
     color: rgb(var(--on-pry));
     border-radius: 5rem;
     font-weight: 400;
-    padding: 0.892rem;
+    padding: 0.446rem;
     margin: unset;
-    min-width: calc(0.892rem + 0.892rem + 24px);
-    width: calc(0.892rem + 0.892rem + 24px);
-    height: calc(0.892rem + 0.892rem + 24px);
+    min-width: calc(0.446rem + 0.446rem + 24px);
+    width: calc(0.446rem + 0.446rem + 24px);
+    height: calc(0.446rem + 0.446rem + 24px);
 }
 
 div.react-datepicker .react-datepicker__day--selected:hover, 
