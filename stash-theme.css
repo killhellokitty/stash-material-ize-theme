@@ -520,6 +520,16 @@ input#ignore-auto-tag[type="checkbox"]:checked,
     box-shadow: inset 0 0 0 5rem transparent;
 }
 
+input#include-sub-tags[type="checkbox"] {
+    box-shadow: inset 0 0 0 2px rgb(var(--on-surface-variant)), inset 0 0 0 5rem rgb(var(--card-color-collaps-show));
+}
+input#include-sub-tags[type="checkbox"]:hover {
+    box-shadow: inset 0 0 0 2px rgb(var(--on-surface)), inset 0 0 0 5rem rgb(var(--card-color-collaps-show));
+}
+input#include-sub-tags[type="checkbox"]:checked {
+    box-shadow: inset 0 0 0 5rem transparent;
+}
+
 /* --- Range Slider and Thumb decorations ---*/
 @media (min-width: 576px) {
     .d-sm-inline-flex {
@@ -5460,6 +5470,11 @@ button:not([title=Statistics], [title=Settings]).minimal:not(.nav-utility, .bran
     color: rgb(var(--error));
 }
 
+.selectable-filter ul :is(.selected-object, .excluded-object, .unselected-object) .include-button {
+    color: rgb(var(--green));
+}
+
+
 /* Collapse Button in Search-Item Card. */
 button.minimal.collapse-button.btn.btn-primary.btn-lg.enhanced:is(:only-of-type, :hover, :focus-visible, :active, :focus, :active:focus) {
     color: rgb(var(--on-surface-variant));
@@ -8794,4 +8809,1919 @@ input#update-stashids::placeholder {
 #performer-edit .form-group:nth-of-type(3) .string-list-input .input-group button.btn.btn-danger:not(:disabled):not(.disabled):hover,
 #performer-edit .form-group:nth-of-type(3) .string-list-input .input-group button.btn.btn-danger:not(:disabled):not(.disabled):focus,
 #tag-edit .form-group:nth-of-type(2) .string-list-input .input-group button.btn.btn-danger:not(:disabled):not(.disabled):hover,
-#tag-edit .form-group:n
+#tag-edit .form-group:nth-of-type(2) .string-list-input .input-group button.btn.btn-danger:not(:disabled):not(.disabled):focus,
+#studio-edit .form-group .string-list-input .input-group .input-group-append button.btn.btn-danger:not(:disabled):not(.disabled):hover,
+#studio-edit .form-group .string-list-input .input-group .input-group-append button.btn.btn-danger:not(:disabled):not(.disabled):focus {
+    border-color: #c0ebe2;
+    color: #c0ebe2;
+    background-color: rgba(255,255,255,0.15);
+}
+#performer-edit .form-group:nth-of-type(3) .string-list-input .input-group button.btn.btn-danger:not(:disabled):not(.disabled):active,
+#performer-edit .form-group:nth-of-type(3) .string-list-input .input-group button.btn.btn-danger:not(:disabled):not(.disabled).active,
+#performer-edit .form-group:nth-of-type(3) .string-list-input .input-group button.btn.btn-danger:not(:disabled):not(.disabled):active:hover,
+#performer-edit .form-group:nth-of-type(3) .string-list-input .input-group button.btn.btn-danger:not(:disabled):not(.disabled).active:hover,
+#performer-edit .form-group:nth-of-type(3) .string-list-input .input-group button.btn.btn-danger:not(:disabled):not(.disabled):active:focus,
+#performer-edit .form-group:nth-of-type(3) .string-list-input .input-group button.btn.btn-danger:not(:disabled):not(.disabled).active:focus,
+#tag-edit .form-group:nth-of-type(2) .string-list-input .input-group button.btn.btn-danger:not(:disabled):not(.disabled):active,
+#tag-edit .form-group:nth-of-type(2) .string-list-input .input-group button.btn.btn-danger:not(:disabled):not(.disabled).active,
+#tag-edit .form-group:nth-of-type(2) .string-list-input .input-group button.btn.btn-danger:not(:disabled):not(.disabled):active:hover,
+#tag-edit .form-group:nth-of-type(2) .string-list-input .input-group button.btn.btn-danger:not(:disabled):not(.disabled).active:hover,
+#tag-edit .form-group:nth-of-type(2) .string-list-input .input-group button.btn.btn-danger:not(:disabled):not(.disabled):active:focus,
+#tag-edit .form-group:nth-of-type(2) .string-list-input .input-group button.btn.btn-danger:not(:disabled):not(.disabled).active:focus,
+#studio-edit .form-group .string-list-input .input-group .input-group-append button.btn.btn-danger:not(:disabled):not(.disabled):active,
+#studio-edit .form-group .string-list-input .input-group .input-group-append button.btn.btn-danger:not(:disabled):not(.disabled).active,
+#studio-edit .form-group .string-list-input .input-group .input-group-append button.btn.btn-danger:not(:disabled):not(.disabled):active:hover,
+#studio-edit .form-group .string-list-input .input-group .input-group-append button.btn.btn-danger:not(:disabled):not(.disabled).active:hover,
+#studio-edit .form-group .string-list-input .input-group .input-group-append button.btn.btn-danger:not(:disabled):not(.disabled):active:focus,
+#studio-edit .form-group .string-list-input .input-group .input-group-append button.btn.btn-danger:not(:disabled):not(.disabled).active:focus {
+    border-color: #c0ebe2;
+    color: #c0ebe2;
+    background-color: rgba(255,255,255,0.23);
+}
+#performer-edit .form-group:nth-of-type(3) .string-list-input .input-group button.btn.btn-danger:not(:disabled):not(.disabled):focus-visible,
+#tag-edit .form-group:nth-of-type(2) .string-list-input .input-group button.btn.btn-danger:not(:disabled):not(.disabled):focus-visible,
+#studio-edit .form-group .string-list-input .input-group .input-group-append button.btn.btn-danger:not(:disabled):not(.disabled):focus-visible {
+    border-color: #c0ebe2;
+    color: #c0ebe2;
+    background-color: rgba(255,255,255,0.15);
+}
+#performer-edit .form-group:nth-of-type(3) .string-list-input .input-group:not(.has-validation)>.form-control:not(:last-child),
+#tag-edit .form-group:nth-of-type(2) .string-list-input .input-group:not(.has-validation)>.form-control:not(:last-child),
+#studio-edit .form-group .string-list-input .input-group:not(.has-validation)>.form-control:not(:last-child) {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    margin-right: -1.7142857142857142rem;
+    padding-right: 3.7142857142857144rem;
+}
+.studio-details #studio-edit .form-group:nth-of-type(2) .string-list-input .input-group:not(.has-validation)>.form-control:not(:last-child) {
+    margin-right: -34px;
+    margin-left: -10px;
+}
+#performer-edit .form-group:nth-of-type(5) .input-group.has-validation>#birthdate.form-control,
+#performer-edit .form-group:nth-of-type(6) .input-group.has-validation>#death_date.form-control,
+#gallery-edit-details .form-group:nth-of-type(3) .input-group.has-validation>#date.form-control,
+#movie-edit .form-group:nth-of-type(4) .input-group.has-validation>#date.form-control,
+#image-edit-details .form-group:nth-of-type(3) .input-group.has-validation>#date.form-control {
+    border-radius: 4px;
+    margin-right: -40px;
+    padding-right: 64px;
+}
+#performer-edit .form-group:nth-of-type(5) .input-group.has-validation>#birthdate.form-control:focus::placeholder,
+#performer-edit .form-group:nth-of-type(5) .input-group.has-validation>#birthdate.form-control:active::placeholder,
+#performer-edit .form-group:nth-of-type(6) .input-group.has-validation>#death_date.form-control:focus::placeholder,
+#performer-edit .form-group:nth-of-type(6) .input-group.has-validation>#death_date.form-control:active::placeholder,
+#gallery-edit-details .form-group:nth-of-type(3) .input-group.has-validation>#date.form-control:focus:placeholder,
+#gallery-edit-details .form-group:nth-of-type(3) .input-group.has-validation>#date.form-control:active:placeholder,
+#movie-edit .form-group:nth-of-type(4) .input-group.has-validation>#date.form-control:focus:placeholder,
+#movie-edit .form-group:nth-of-type(4) .input-group.has-validation>#date.form-control:active:placeholder,
+#image-edit-details .form-group:nth-of-type(3) .input-group.has-validation>#date.form-control:focus:placeholder,
+#image-edit-details .form-group:nth-of-type(3) .input-group.has-validation>#date.form-control:active:placeholder {
+    visibility: visible;
+}
+#performer-edit .form-group:nth-of-type(20) .input-group:not(.has-validation)>#url.form-control:not(:last-child),
+#gallery-edit-details .form-group:nth-of-type(2) .input-group:not(.has-validation)>#url.form-control:not(:last-child),
+#movie-edit .form-group:nth-of-type(n+1) .input-group:not(.has-validation)>#url.form-control:not(:last-child) {
+    border-radius: 4px;
+    margin-right: -40px;
+    padding-right: 64px;
+}
+#image-edit-details .form-group:nth-of-type(2) .input-group:not(.has-validation)>#url.form-control:not(:last-child) {
+    border-radius: 4px;
+    margin-right: -40px;
+    padding-right: 64px;
+}
+.form-container .form-group:nth-of-type(3):focus-within input.form-control,
+.form-container .form-group:nth-of-type(4):focus-within input.form-control,
+.form-group:focus-within .input-group.has-validation>input#death_date,
+.form-group:focus-within .input-group.has-validation>input#birthdate,
+.form-group:focus-within .input-group.has-validation>input#date,
+.form-group:focus-within .string-list-input .input-group:not(.has-validation)>.form-control,
+.form-group:focus-within .input-group:not(.has-validation)>#url.form-control {
+    box-shadow: inset 0 0 0 1px rgb(var(--pry-color));
+    border: 1px solid rgb(var(--pry-color));
+}
+
+#performer-edit .form-group:has(>div .form-check .form-check-input[value="true"]) label.form-label.col-form-label[for="ignore-auto-tag"] {
+    color: #00dfc6;
+}
+
+/* Tag Editor */
+form#tag-edit {
+    /*background-color: #414846;*/
+    border-radius: 1rem;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 6px;
+    padding-top: 6px;
+}
+@media (min-width: 576px) {
+    .col-sm-3:has(>*:not(.nav-pills)) {
+        flex: 0 0 35%;
+        max-width: 35%;
+    }
+}
+#tag-edit .form-group:nth-of-type(-n+3) .col-form-label {
+    visibility: hidden;
+    padding: 0 0.2857142857142857rem 0 0.2857142857142857rem;
+    left: 2.0714285714285716rem;
+    top: 0.5714285714285714rem;
+    background-color: rgb(var(--body-color2));
+    z-index: 33;
+}
+#tag-edit .form-group:nth-of-type(1) .col-form-label {
+    max-width: 2.857142857142857rem;
+}
+#tag-edit .form-group:nth-of-type(2) .col-form-label {
+    max-width: 3.4285714285714284rem;
+    visibility: visible;
+    color: #c0ebe2;
+}
+#tag-edit .form-group:nth-of-type(3) .col-form-label {
+    max-width: 5.142857142857143rem;
+}
+#tag-edit .form-group:nth-of-type(-n+3):focus-within .col-form-label {
+    color: #00dfc6;
+    visibility: visible;
+}
+#tag-edit .form-group:has(>.col-9 .is-invalid) .col-form-label {
+    color: #93000a;
+}
+#image-edit-details .form-group .col-form-label,
+#tag-edit .form-group:nth-of-type(n+4) .col-form-label,
+#studio-edit>.row:not(.form-group)>.col-form-label,
+.studio-details>.form-group>.col-form-label {
+    color: #c0ebe2;
+    display: flex;
+    padding-bottom: 0.2857142857142857rem;
+    padding-left: 2.0714285714285716rem;
+    font-size: 0.8571428571428571rem;
+    font-weight: 400;
+    line-height: 1.1428571428571428rem;
+    letter-spacing: 0.028571428571428574rem;
+}
+#tag-edit .form-group:last-of-type .col-form-label[for="ignore-auto-tag"] {
+    max-width: 10rem;
+    flex-basis: 10rem;
+    top: 1.7142857142857142rem;
+    right: -24px;
+}
+#tag-edit .form-group:has(input#ignore-auto-tag[value="true"]) .form-label.col-form-label[for="ignore-auto-tag"] {
+    color: #00dfc6;
+}
+
+/* Studio Editor */
+form#studio-edit {
+    margin-top: 24px;
+    /*background-color: #414846;*/
+    border-radius: 1rem;
+}
+
+#studio-edit .form-group:nth-of-type(-n+3) .col-form-label,
+#studio-edit .form-group label[for="aliases"].col-form-label {
+    visibility: hidden;
+    padding: 0 0.2857142857142857rem 0 0.2857142857142857rem;
+    left: 2.0714285714285716rem;
+    top: 0.5714285714285714rem;
+    background-color: rgb(var(--body-color2));
+    z-index: 3999;
+}
+#studio-edit .form-group:nth-of-type(1) .col-form-label {
+    max-width: 2.857142857142857rem;
+    visibility: visible;
+    color: #c0ebe2;
+}
+#studio-edit .form-group:nth-of-type(2) .col-form-label {
+    max-width: 2.142857142857143rem;
+    visibility: visible;
+    color: #c0ebe2;
+}
+#studio-edit .form-group:nth-of-type(3) .col-form-label {
+    max-width: 31px;
+    visibility: visible;
+    color: #c0ebe2;
+}
+#studio-edit .form-group label[for="aliases"].col-form-label {
+    /*top: 1.0714285714285714rem;*/
+    max-width: 3.4285714285714284rem;
+    visibility: visible;
+    color: #c0ebe2;
+}
+#studio-edit .form-group:nth-of-type(4) .col-form-label {
+    max-width: 9.857142857142858rem;
+    flex-basis: 9.857142857142858rem;
+    padding-bottom: 0.2857142857142857rem;
+    padding-left: 2.357142857142857rem;
+    color: #c0ebe2;
+}
+#studio-edit .form-group:nth-of-type(5) .col-form-label {
+    padding-bottom: 0.2857142857142857rem;
+    padding-left: 2.357142857142857rem;
+    color: #c0ebe2;
+}
+#studio-edit>.row:not(.form-group)>.col-form-label {
+    padding-left: 4rem;
+    color: #c0ebe2;
+    padding-bottom: 0.2857142857142857rem;
+}
+.studio-details>.form-group>.col-form-label {
+    flex-basis: 10.714285714285714rem;
+    max-width: 10.714285714285714rem;
+    padding-left: 2.5714285714285716rem;
+    top: 1.7142857142857142rem;
+}
+.studio-details > .form-group > label.form-label.col-form-label[for="ignore-auto-tag"] {
+    position: relative;
+    left: 16px;
+}
+.studio-details > .form-group:has(.form-check-input[value="true"]) > label.form-label.col-form-label[for="ignore-auto-tag"] {
+    color: #00dfc6;
+}
+.studio-head .form-group label.form-label.col-form-label[for="ignore-auto-tag"] {
+    position: relative;
+    left: 44px;
+    top: 28px;
+}
+.studio-head .form-group:has(input#ignore-auto-tag[value="true"]) .form-label.col-form-label[for="ignore-auto-tag"] {
+    color: #00dfc6;
+}
+#studio-edit .form-group:focus-within:nth-of-type(-n+3) .col-form-label,
+#studio-edit .form-group:focus-within label[for="aliases"].col-form-label {
+    color: #00dfc6;
+    visibility: visible;
+}
+#studio-edit .form-group:has(>.col-9 .is-invalid) .col-form-label {
+    color: #93000a;
+}
+#studio-edit>.row .row.no-gutters button.mr-2.py-0.btn.btn-danger {
+    margin-left: 1.6428571428571428rem;
+}
+
+/* Galleries Editor */
+.gallery-tabs {
+    max-height: none;
+}
+.tab-content>.tab-pane.active.show>#gallery-edit-details>form>.form-container:first-of-type>.col:has(>*.edit-button) {
+    max-width: 50%;
+}
+
+#gallery-edit-details .form-container:nth-of-type(2) .form-group:nth-of-type(-n+3) .col-form-label {
+    visibility: hidden;
+    padding: 0 0.2857142857142857rem 0 0.2857142857142857rem;
+    left: 2.0714285714285716rem;
+    top: 0.5714285714285714rem;
+    background-color: rgb(var(--body-color2));
+    z-index: 3999;
+}
+#gallery-edit-details .form-container:nth-of-type(2) .form-group:focus-within:nth-of-type(-n+3) .col-form-label {
+    color: #00dfc6;
+    visibility: visible;
+}
+#gallery-edit-details .form-container:nth-of-type(2) .form-group:nth-of-type(1) .col-form-label {
+    max-width: 34px;
+}
+#gallery-edit-details .form-container:nth-of-type(2) .form-group:has(>.col-9 .is-invalid) .col-form-label {
+    color: #93000a;
+}
+#gallery-edit-details .form-container:nth-of-type(2) .form-group .url-label .col-form-label {
+    margin-left: -16px;
+    z-index: 39999;
+    padding-bottom: 2px;
+    top: 10px;
+}
+#gallery-edit-details .form-container:nth-of-type(2) .form-group:nth-of-type(3) .col-form-label {
+    left: 28px;
+    max-width: 35px;
+}
+#gallery-edit-details .form-container:nth-of-type(2) .form-group:nth-of-type(4) .col-form-label {
+    left: 16px;
+    top: 10px;
+    color: #c0ebe2;
+}
+#gallery-edit-details .form-container:nth-of-type(2) .form-group:nth-of-type(5) .col-form-label,
+#gallery-edit-details .form-container:nth-of-type(2) .form-group:nth-of-type(6) .col-form-label,
+#gallery-edit-details .form-container:nth-of-type(2) .form-group:nth-of-type(7) .col-form-label,
+#gallery-edit-details .form-container:nth-of-type(2) .form-group:nth-of-type(8) .col-form-label {
+    left: 16px;
+    top: 6px;
+    color: #c0ebe2;
+}
+#gallery-edit-details .form-container:nth-of-type(2) .form-group:not(.row) .form-label {
+    color: #c0ebe2;
+    font-size: 0.8571428571428571rem;
+    font-weight: 400;
+    line-height: 1.1428571428571428rem;
+    letter-spacing: 0.028571428571428574rem;
+    position: relative;
+    left: 16px;
+    top: 14px;
+    background-color: rgb(var(--body-color2));
+    padding-left: 4px;
+    padding-right: 4px;
+}
+#gallery-edit-details .form-container:nth-of-type(2) .form-group:not(.row):focus-within .form-label {
+    color: #00dfc6;
+}
+
+/* Image Edit Tab */
+#image-edit-details>form>.form-container>.edit-buttons {
+    margin-bottom: 12px !important;
+}
+#image-edit-details .form-container:nth-of-type(2) .form-group:nth-of-type(-n+3) .col-form-label {
+    visibility: hidden;
+    padding: 0 0.2857142857142857rem 0 0.2857142857142857rem;
+    left: 2.0714285714285716rem;
+    top: 0.5714285714285714rem;
+    background-color: rgb(var(--body-color2));
+    z-index: 3999;
+}
+#image-edit-details .form-container:nth-of-type(2) .form-group:nth-of-type(1) .col-form-label {
+    max-width: 32px;
+}
+#image-edit-details .form-container:nth-of-type(2) .form-group:nth-of-type(2) .col-form-label {
+    position: relative;
+    left: 14px;
+    max-width: 30px;
+}
+#image-edit-details .form-container:nth-of-type(2) .form-group:nth-of-type(3) .col-form-label {
+    max-width: 34px;
+}
+#image-edit-details .form-container:nth-of-type(2) .form-group:focus-within:nth-of-type(-n+3) .col-form-label {
+    color: #00dfc6;
+    visibility: visible;
+}
+#image-edit-details .form-container:nth-of-type(2) .form-group:nth-of-type(n+4) .col-form-label {
+
+}
+
+/* Scene-Markers-Panel */
+@media (min-width: 1200px) {
+    .col-xl-6 {
+        flex: 0 0 55%;
+        max-width: 55%;
+    }
+}
+.scene-markers-panel .primary-card-body.card-body>div>hr {
+    border: 1px solid #3f4946;
+}
+.scene-tabs .tab-content>.fade.tab-pane.active.show {
+    padding: 0 16px;
+}
+
+.scene-tabs .tab-content .fade.tab-pane.active.show .form-group .col-form-label {
+    color: #dcf6f0;
+    display: flex;
+    padding-bottom: 0.2857142857142857rem;
+    padding-left: 2.0714285714285716rem;
+    font-size: 0.8571428571428571rem;
+    font-weight: 400;
+    line-height: 1.1428571428571428rem;
+    letter-spacing: 0.028571428571428574rem;
+}
+.scene-tabs .tab-content .fade.tab-pane.active.show .form-group .row {
+    margin-top: 24px;
+}
+.scene-tabs .tab-content .fade.tab-pane.active.show .form-group .row label.col-form-label {
+    top: -11px;
+    left: 108px;
+    background-color: rgb(var(--body-color2));
+    z-index: 3339;
+    padding: 2px 4px;
+    max-width: 36px;
+    margin-left: -82px;
+    margin-bottom: 40px;
+}
+.form-group:has(*.select-suggest) .col-form-label[for="title"] {
+    max-width: 129px;
+}
+.scene-tabs .tab-content .fade.tab-pane.active.show .form-group:focus-within .row label.col-form-label {
+    color: #00dfc6;
+}
+.scene-tabs .duration-input>.input-group>.input-group-append>button.btn.btn-secondary {
+    border-style: none;
+    border: 0;
+    border-radius: 5rem;
+    top: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
+    left: -88px;
+}
+.scene-tabs .duration-input>.input-group>.input-group-append>.btn-group-vertical>button.duration-button.btn.btn-secondary {
+    flex: 1 1 28px;
+    max-height: 26px;
+    border-radius: 5rem;
+    left: -88px;
+    top: 4px;
+    border: 0;
+    border-style: none;
+}
+.scene-tabs .duration-input>.input-group:not(.has-validation)>.duration-control.form-control:not(:last-child) {
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    /*margin-right: -84px;
+    padding-right: 5.2142857142857144rem;*/
+    left: 46px;
+    height: 58px;
+}
+.scene-tabs .duration-input>.input-group:not(.has-validation)>.duration-control.form-control:focus-within:not(:last-child) {
+    box-shadow: 0 0 0 0.07142857142857142rem #00dfc6, inset 0 0 0 0.07142857142857142rem #00dfc6;
+}
+
+/*Modal Edit-filter-dialog */
+.modal-content, 
+.modal-lg, 
+.modal-xl {
+    background-image: linear-gradient(to right, #2e3133, #2e3133);
+    background-color: rgba(var(--pry-color),0.5);
+    background-blend-mode: multiply;
+    box-shadow: var(--elevation-3);
+    border-radius: 28px;
+}
+
+.edit-filter-dialog .criterion-list .card .collapse-icon {
+    margin-right: 8px;
+}
+.dialog-content .criterion-list .collapse.show .card-body {
+    background-color: rgb(var(--card-color-collaps-show));
+    border-radius: 12px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    transform: translate(0%,0%);
+    transition: transform 0.3s ease-in 0.25s;
+}
+.criterion-editor .form-group + .form-group > div {
+    display: flex;
+    width: 100%;
+}
+.criterion-editor .form-group + .form-group .input-group.has-validation {
+    width: 100%;
+}
+.criterion-editor .form-group + .form-group .input-group.has-validation > input + .input-group-append {
+    position: absolute;
+    right: 16px;
+    margin-left: 90%;
+    height: 100%;
+}
+.criterion-editor .form-group .input-group.has-validation>input.date-input.text-input.form-control {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background-color: transparent !important;
+    display: flex;
+}
+.react-datepicker-wrapper {
+    display: flex;
+}
+.react-datepicker__input-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+}
+.criterion-editor .form-group .input-group.has-validation>.input-group-append>.react-datepicker-wrapper button.btn.btn-secondary:has(>.fa-calendar):not(:first-child):last-child,
+.criterion-editor .form-group .input-group.has-validation>.input-group-append>.react-datepicker-wrapper button.btn.btn-secondary:has(>.fa-calendar):not(:first-child):last-child:not(:disabled):not(.disabled):hover,
+.criterion-editor .form-group .input-group.has-validation>.input-group-append>.react-datepicker-wrapper button.btn.btn-secondary:has(>.fa-calendar):not(:first-child):last-child:not(:disabled):not(.disabled):focus,
+.criterion-editor .form-group .input-group.has-validation>.input-group-append>.react-datepicker-wrapper button.btn.btn-secondary:has(>.fa-calendar):not(:first-child):last-child:not(:disabled):not(.disabled):active,
+.criterion-editor .form-group .input-group.has-validation>.input-group-append>.react-datepicker-wrapper button.btn.btn-secondary:has(>.fa-calendar):not(:first-child):last-child:not(:disabled):not(.disabled).active,
+.criterion-editor .form-group .input-group.has-validation>.input-group-append>.react-datepicker-wrapper button.btn.btn-secondary:has(>.fa-calendar):not(:first-child):last-child:not(:disabled):not(.disabled):active:hover,
+.criterion-editor .form-group .input-group.has-validation>.input-group-append>.react-datepicker-wrapper button.btn.btn-secondary:has(>.fa-calendar):not(:first-child):last-child:not(:disabled):not(.disabled).active:hover,
+.criterion-editor .form-group .input-group.has-validation>.input-group-append>.react-datepicker-wrapper button.btn.btn-secondary:has(>.fa-calendar):not(:first-child):last-child:not(:disabled):not(.disabled):focus-visible {
+    padding: 0;
+    width: 40px;
+    max-width: 40px;
+    height: 40px;
+}
+
+.criterion-editor > div > .form-group + .form-group > .input-group .input-group-append {
+    margin-left: auto;
+    padding-right: 16px;
+    padding-left: 12px;
+    top: -50%;
+}
+.criterion-editor .form-group .input-group:not(.has-validation)>.input-group-append>button.btn.btn-secondary {
+    padding: 0;
+    border-radius: 5rem;
+    border: 0;
+    z-index: 3;
+    width: 40px;
+    max-width: 40px;
+    height: 40px;
+    font-size: 24px;
+    background-color: transparent;
+}
+.criterion-editor > div > .form-group > .duration-input .input-group-append {
+    margin-left: auto;
+    top: -50%;
+}
+.criterion-editor .form-group .input-group>.input-group-append>.btn-group-vertical:has(>.duration-button),
+.modal-body>.percent-input>.input-group>.input-group-append>.btn-group-vertical:has(>.percent-button),
+.modal-body .duration-input>.input-group>.input-group-append>.btn-group-vertical:has(>.duration-button) {
+    flex-direction: row;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+.modal-body>.percent-input>.input-group>.input-group-append>.btn-group-vertical:has(>.percent-button),
+.modal-body .duration-input>.input-group>.input-group-append>.btn-group-vertical:has(>.duration-button) {
+    padding-right: 16px;
+}
+.criterion-editor .form-group .input-group>.input-group-append>.btn-group-vertical>button.duration-button.btn.btn-secondary,
+.modal-body>.percent-input>.input-group>.input-group-append>.btn-group-vertical>button.percent-button.btn.btn-secondary,
+.modal-body .duration-input>.input-group>.input-group-append>.btn-group-vertical>button.duration-button.btn.btn-secondary {
+    border: 0;
+    background-color: transparent;
+    border-radius: 5rem;
+    padding: 0;
+    z-index: 3;
+    font-size: 24px;
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin-left: 12px;
+}
+.criterion-editor .form-group .input-group:not(.has-validation)>.input-group-append>button.btn.btn-secondary:hover:not(:disabled):not(.disabled),
+.criterion-editor .form-group .input-group:not(.has-validation)>.input-group-append>button.btn.btn-secondary:focus:not(:disabled):not(.disabled),
+.criterion-editor .form-group .input-group:not(.has-validation)>.input-group-append>button.btn.btn-secondary:focus-visible:not(:focus):not(:disabled):not(.disabled),
+.criterion-editor .form-group .input-group>.input-group-append>.btn-group-vertical>button.duration-button.btn.btn-secondary:hover:not(:disabled):not(.disabled),
+.criterion-editor .form-group .input-group>.input-group-append>.btn-group-vertical>button.duration-button.btn.btn-secondary:focus:not(:disabled):not(.disabled),
+.criterion-editor .form-group .input-group>.input-group-append>.btn-group-vertical>button.duration-button.btn.btn-secondary:focus-visible:not(:focus):not(:disabled):not(.disabled),
+.modal-body>.percent-input>.input-group>.input-group-append>.btn-group-vertical>button.percent-button.btn.btn-secondary:hover:not(:disabled):not(.disabled),
+.modal-body>.percent-input>.input-group>.input-group-append>.btn-group-vertical>button.percent-button.btn.btn-secondary:focus:not(:disabled):not(.disabled),
+.modal-body>.percent-input>.input-group>.input-group-append>.btn-group-vertical>button.percent-button.btn.btn-secondary:focus-visible:not(:focus):not(:disabled):not(.disabled),
+.modal-body .duration-input>.input-group>.input-group-append>.btn-group-vertical>button.duration-button.btn.btn-secondary:hover:not(:disabled):not(.disabled),
+.modal-body .duration-input>.input-group>.input-group-append>.btn-group-vertical>button.duration-button.btn.btn-secondary:focus:not(:disabled):not(.disabled),
+.modal-body .duration-input>.input-group>.input-group-append>.btn-group-vertical>button.duration-button.btn.btn-secondary:focus-visible:not(:focus):not(:disabled):not(.disabled) {
+    background-color: rgba(255,255,255,0.08);
+    box-shadow: none;
+}
+.criterion-editor .form-group .input-group:not(.has-validation)>.input-group-append>button.btn.btn-secondary:active:not(:disabled):not(.disabled),
+.criterion-editor .form-group .input-group:not(.has-validation)>.input-group-append>button.btn.btn-secondary:active:hover:not(:disabled):not(.disabled),
+.criterion-editor .form-group .input-group:not(.has-validation)>.input-group-append>button.btn.btn-secondary:active:focus:not(:disabled):not(.disabled),
+.criterion-editor .form-group .input-group>.input-group-append>.btn-group-vertical>button.duration-button.btn.btn-secondary:active:not(:disabled):not(.disabled),
+.criterion-editor .form-group .input-group>.input-group-append>.btn-group-vertical>button.duration-button.btn.btn-secondary:active:hover:not(:disabled):not(.disabled),
+.criterion-editor .form-group .input-group>.input-group-append>.btn-group-vertical>button.duration-button.btn.btn-secondary:active:focus:not(:disabled):not(.disabled),
+.modal-body>.percent-input>.input-group>.input-group-append>.btn-group-vertical>button.percent-button.btn.btn-secondary:active:not(:disabled):not(.disabled),
+.modal-body>.percent-input>.input-group>.input-group-append>.btn-group-vertical>button.percent-button.btn.btn-secondary:active:hover:not(:disabled):not(.disabled),
+.modal-body>.percent-input>.input-group>.input-group-append>.btn-group-vertical>button.percent-button.btn.btn-secondary:active:focus:not(:disabled):not(.disabled),
+.modal-body .duration-input>.input-group>.input-group-append>.btn-group-vertical>button.duration-button.btn.btn-secondary:active:not(:disabled):not(.disabled),
+.modal-body .duration-input>.input-group>.input-group-append>.btn-group-vertical>button.duration-button.btn.btn-secondary:active:hover:not(:disabled):not(.disabled),
+.modal-body .duration-input>.input-group>.input-group-append>.btn-group-vertical>button.duration-button.btn.btn-secondary:active:focus:not(:disabled):not(.disabled) {
+    background-color: rgba(255,255,255,0.16);
+    box-shadow: none;
+}
+.criterion-editor .form-group .input-group:not(.has-validation)>.input-group-append>button.btn.btn-secondary:focus-visible:not(:focus):not(:disabled):not(.disabled),
+.criterion-editor .form-group .input-group>.input-group-append>.btn-group-vertical>button.duration-button.btn.btn-secondary:focus-visible:not(:focus):not(:disabled):not(.disabled),
+.modal-body>.percent-input>.input-group>.input-group-append>.btn-group-vertical>button.percent-button.btn.btn-secondary:focus-visible:not(:focus):not(:disabled):not(.disabled),
+.modal-body .duration-input>.input-group>.input-group-append>.btn-group-vertical>button.duration-button.btn.btn-secondary:focus-visible:not(:focus):not(:disabled):not(.disabled) {
+    outline-color: #dcf6f0;
+    outline-width: 3px;
+    outline-style: solid;
+    outline-offset: 0;
+}
+
+.criterion-editor .form-group .input-group:not(.has-validation)>input.form-control:not(:last-child) {
+    border-radius: 4px;
+    width: 100%;
+    padding-right: 72px;
+}
+.criterion-editor .form-group>.duration-input>.input-group:not(.has-validation)>input.duration-control.form-control:not(:last-child),
+.modal-body>.percent-input>.input-group:not(.has-validation)>input.percent-control.form-control:not(:last-child),
+.modal-body .duration-input>.input-group:not(.has-validation)>input.duration-control.form-control:not(:last-child) {
+    border-radius: 4px;
+    width: 100%;
+    margin-right: unset;
+    background-color: transparent !important;
+}
+
+.modal-body .criterion-editor .form-group input.btn-secondary.form-control {
+    min-height: 56px;
+    padding: 0 16px 0 16px;
+    border-radius: 4px;
+    border: 0;
+    background-color: transparent;
+    background-image: none;
+    box-shadow: 0 0 0 1px rgb(var(--outline)), inset 0 0 0 1px transparent;
+    transition: background-color 0.55s ease, box-shadow 0.4s ease-in;
+}
+.modal-body .criterion-editor .form-group input.btn-secondary.form-control:hover {
+    box-shadow: 0 0 0 1px rgb(var(--on-surface)), inset 0 0 0 1px rgba(0,0,0,0.0);
+    background-color: transparent;
+    background-image: none;
+}
+.modal-body .criterion-editor .form-group input.btn-secondary.form-control:focus,
+.modal-body .criterion-editor .form-group input.btn-secondary.form-control:not(:disabled):not(.disabled):active,
+.modal-body .criterion-editor .form-group input.btn-secondary.form-control:focus:not(:disabled):not(.disabled):active {
+    background-color: transparent;
+    background-image: none;
+    box-shadow: inset 0 0 0 1px rgb(var(--pry-color)), 0 0 0 1px rgb(var(--pry-color));
+}
+.modal-body .criterion-editor .form-group input.btn-secondary.form-control:focus-visible {
+    outline-offset: 3px;
+}
+
+#temp-enable-duration>small.text-muted.form-text {
+    left: -312px;
+    position: relative;
+    top: 58px;
+}
+/* ***Create*** */
+
+/* Scene */
+div#create-scene-page {
+    background-color: rgb(var(--body-color2));
+}
+#create-scene-page.new-view h2 {
+    /*background-color: #373d3b;*/
+    padding: 16px;
+    margin-bottom: 0;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+}
+#create-scene-page.new-view #scene-edit-details>form>.form-container.edit-buttons-container {
+    /*background-color: #373d3b;*/
+    padding: 16px;
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    position: relative;
+}
+#create-scene-page.new-view #scene-edit-details .edit-buttons-container>.edit-buttons.mb-3.pl-0 {
+    padding-left: 16px !important;
+}
+#create-scene-page.new-view #scene-edit-details .form-container:nth-of-type(2) .col-12:nth-of-type(2) .form-group:last-of-type>.form-label {
+    margin-bottom: 16px;
+}
+/* Movie */
+@media (min-width: 768px) {
+    .movie-details.mb-3.col>div {
+        flex: 0 0 66.66666667%;
+        max-width: 66.66666667%;
+        position: relative;
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+.movie-details.mb-3.col {
+    margin: 24px;
+    /*background-color: #414846;*/
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-radius: 1.65rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.movie-details.mb-3.col>div>h2 {
+    position: relative;
+    padding: 16px;
+    background-color: #373d3b;
+    border-radius: 1.5rem;
+}
+
+#movie-edit .form-group .col-form-label {
+    color: transparent;
+    display: flex;
+    padding-bottom: 0.2857142857142857rem;
+    padding-left: 4px;
+    left: 28px;
+    font-size: 0.8571428571428571rem;
+    font-weight: 400;
+    line-height: 1.1428571428571428rem;
+    letter-spacing: 0.028571428571428574rem;
+}
+#movie-edit .form-group:nth-of-type(-n+4) .col-form-label,
+#movie-edit .form-group:nth-of-type(6) .col-form-label,
+#movie-edit .form-group:nth-of-type(n+8) .col-form-label {
+    top: 11px;
+    background-color: rgb(var(--body-color2));
+    z-index: 33339;
+    color: #00dfc6;
+    visibility: hidden;
+    transition: all 0.15s ease-in-out;
+}
+#movie-edit .form-group:nth-of-type(7) .col-form-label[for="url"] {
+    color: #00dfc6;
+}
+#movie-edit .form-group:focus-within:nth-of-type(-n+4) .col-form-label,
+#movie-edit .form-group:focus-within:nth-of-type(6) .col-form-label,
+#movie-edit .form-group:focus-within:nth-of-type(n+8) .col-form-label {
+    visibility: visible;
+}
+#movie-edit .form-group:nth-of-type(1) .col-form-label {
+    max-width: 42px;
+}
+#movie-edit .form-group:has(>.col-9 .is-invalid) .col-form-label {
+    color: #93000a;
+}
+#movie-edit .form-group:nth-of-type(2) .col-form-label {
+    max-width: 50px;
+}
+#movie-edit .form-group:nth-of-type(3) .col-form-label {
+    max-width: 58px;
+}
+#movie-edit .form-group:nth-of-type(4) .col-form-label {
+    max-width: 35px;
+}
+#movie-edit .form-group:nth-of-type(5) .col-form-label {
+    top: 3px;
+}
+#movie-edit .form-group:nth-of-type(6) .col-form-label {
+    max-width: 54px;
+}
+/*#movie-edit .form-group:nth-of-type(7) .col-form-label {
+    top: 6px;
+}*/
+#movie-edit .form-group:nth-of-type(8) .col-form-label {
+    max-width: 60px;
+}
+#movie-edit .form-group:nth-of-type(9) .col-form-label {
+    padding-bottom: 0;
+    top: 7px;
+    max-width: 60px;
+}
+#movie-edit .duration-input>.input-group>.input-group-append>.btn-group-vertical {
+    flex-direction: row;
+    align-items: flex-end;
+}
+#movie-edit .duration-input>.input-group>.input-group-append>.btn-group-vertical>button.duration-button.btn.btn-secondary {
+    left: -12px;
+    padding: 0 14px;
+    border-radius: 5rem;
+    border: 0;
+    border-style: none;
+    box-shadow: none;
+}
+#movie-edit .duration-input>.input-group>.input-group-append>.btn-group-vertical>button.duration-button.btn.btn-secondary:hover:not(:disabled):not(.disabled),
+#movie-edit .duration-input>.input-group>.input-group-append>.btn-group-vertical>button.duration-button.btn.btn-secondary:focus:not(:disabled):not(.disabled),
+#movie-edit .duration-input>.input-group>.input-group-append>.btn-group-vertical>button.duration-button.btn.btn-secondary:focus-visible:not(:focus):not(:disabled):not(.disabled) {
+    background-color: rgba(255,255,255,0.08);
+    box-shadow: none;
+}
+#movie-edit .duration-input>.input-group>.input-group-append>.btn-group-vertical>button.duration-button.btn.btn-secondary:active:not(:disabled):not(.disabled),
+#movie-edit .duration-input>.input-group>.input-group-append>.btn-group-vertical>button.duration-button.btn.btn-secondary:active:hover:not(:disabled):not(.disabled),
+#movie-edit .duration-input>.input-group>.input-group-append>.btn-group-vertical>button.duration-button.btn.btn-secondary:active:focus:not(:disabled):not(.disabled),
+#movie-edit .duration-input>.input-group>.input-group-append>.btn-group-vertical>button.duration-button.btn.btn-secondary.active:not(:disabled):not(.disabled),
+#movie-edit .duration-input>.input-group>.input-group-append>.btn-group-vertical>button.duration-button.btn.btn-secondary.active:hover:not(:disabled):not(.disabled),
+#movie-edit .duration-input>.input-group>.input-group-append>.btn-group-vertical>button.duration-button.btn.btn-secondary.active:focus:not(:disabled):not(.disabled) {
+    background-color: rgba(255,255,255,0.16);
+    box-shadow: none;
+}
+#movie-edit .duration-input>.input-group>.input-group-append>.btn-group-vertical>button.duration-button.btn.btn-secondary:focus-visible:not(:focus):not(:disabled):not(.disabled) {
+    outline-color: #dffffb;
+    outline-style: solid;
+    outline-width: 3px;
+    outline-offset: 0;
+}
+#movie-edit .duration-input>.input-group:not(.has-validation)>.duration-control.form-control:not(:last-child) {
+    border-radius: 0.5rem;
+    margin-right: -80px;
+    padding-right: 104px;
+}
+#movie-edit .duration-input>.input-group:not(.has-validation)>.duration-control.form-control:focus:placeholder,
+#movie-edit .duration-input>.input-group:not(.has-validation)>.duration-control.form-control:active:placeholder {
+    visibility: visible;
+}
+
+/* ImageCard */
+.image-card-preview > .preview-button > button.btn.btn-primary:not(.fa-magnifying-glass) {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+/* Galleries */
+@media (min-width: 768px) {
+    .new-view>.col-md-6:has(>*#gallery-edit-details) {
+        position: relative;
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 15px;
+        border-radius: 1.65rem;
+        /*background-color: #41384a;*/
+    }
+}
+.new-view>.col-md-6:has(>*#gallery-edit-details)>h2 {
+    position: relative;
+    padding: 16px;
+    background-color: #373d3b;
+    margin-bottom: 0;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+}
+.new-view>.col-md-6>#gallery-edit-details>form>.form-container:first-of-type {
+    background-color: #373d3b;
+    padding: 16px;
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    position: relative;
+    margin-left: 0;
+    margin-right: 0;
+}
+/* Performer */
+#performer-page.row.new-view:has(>*.performer-image-container) {
+    position: relative;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    border-radius: 1.65rem;
+    /*background-color: #414846;*/
+}
+@media (min-width: 1200px) {
+    #performer-page.row.new-view:has(>*.performer-image-container) .details-edit.col-xl-9.mb-3:has(>*.dropup) {
+        max-width: 100%;
+    }
+}
+#performer-page.row.new-view:has(>*.performer-image-container)>.col-md-8:has(>*#performer-edit)>h2 {
+    position: relative;
+    padding: 16px;
+    background-color: #373d3b;
+    margin-bottom: 0;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+}
+#performer-page.row.new-view:has(>*.performer-image-container) .details-edit.col-xl-9.mb-3:has(>*.dropup) {
+    background-color: #373d3b;
+    padding: 16px;
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    position: relative;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    flex-wrap: nowrap;
+}
+/* Tagger-Container */
+.tagger-container .search-item > .row > div:nth-child(2) {
+    padding: 16px;
+}
+.tagger-container .search-item {
+    background-color: rgb(var(--card-color));
+    border-radius: 12px;
+    padding: 0;
+}
+.mt-3, .my-3 {
+    margin-top: 16px !important;
+}
+.mt-2, .my-2 {
+    margin-top: 12px !important;
+}
+.tagger-container .col-md-6 .input-group {
+    align-items: center;
+}
+.tagger-container .col-md-6.my-1 .input-group>.input-group-append>button.btn.btn-primary,
+.PerformerTagger-box-link.input-group>.input-group-append>button.btn.btn-primary,
+.PerformerTagger-details>.input-group>.input-group-append>button.btn.btn-primary {
+    align-items: center;
+    margin-top: 7px;
+    padding-left: 24px;
+    padding-right: 24px;
+    border-radius: 5rem;
+    margin-left: 8px;
+}
+.tagger-container .collapse.show.card .input-group>.input-group-append>button.btn.btn-primary {
+    border-radius: 5rem;
+    padding: 0;
+    margin-right: 4px;
+    width: 40px;
+    max-width: 40px;
+    height: 40px;
+    background: none;
+    color: transparent;
+    box-shadow: none;
+    z-index: 51;
+    transform: translate(0%, 0%);
+    transition: all 0s;
+    will-change: auto;
+}
+.tagger-container .collapse.show.card .input-group > .input-group-append > button.btn.btn-primary:hover {
+    background-color: rgb(var(--on-surface),var(--btn-hover));
+}
+.tagger-container .collapse.show.card .input-group > .input-group-append > button.btn.btn-primary:is(:active, :focus:not(:focus-visible)) {
+    background-color: rgb(var(--on-surface),var(--btn-active));
+    outline: none;
+}
+.tagger-container .collapse.show.card .input-group > .input-group-append > button.btn.btn-primary:focus-visible {
+    background-color: rgb(var(--on-tertiary),var(--btn-hover));
+    color: rgb(var(--tertiary));
+}
+.tagger-container .collapse.show.card .input-group > .input-group-append > button.btn.btn-primary::after {
+    color: rgb(var(--on-surface));
+    display: flex;
+    content: "\FF0B";
+    font-family: var(--UnicodeFont);
+    font-weight: 1000;
+    font-size: 24px;
+    position: absolute;
+    width: 40px;
+    max-width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Flex box for thumb in tagger */
+.tagger-container .scene-card-preview {
+    border-radius: 12px 0;
+    margin-bottom: 0;
+    overflow: hidden;
+    min-width: 44.53vw;
+    max-height: fit-content;
+}
+
+.tagger-container div:has(>code) {
+    position: relative;
+    margin: 8px 0 12px 8px;
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+.tagger-container div > code {
+    display: flex;
+    margin-top: 2px;
+}
+
+@media (min-width: 576px) {
+    .flex-sm-row {
+        flex-direction: column !important;
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 16px;
+        border-radius: 12px 0;
+        align-items: flex-start !important;
+    }
+}
+
+.scene-link:not(.optional-field-content > .scene-link) {
+    color: rgb(var(--white-color));
+    position: absolute;
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 16px;
+    width: 100%;
+    outline: 0;
+}
+.scene-link:not(.optional-field-content > .scene-link):is(:hover, :focus) {
+    color: rgb(var(--pry-color));
+    outline: 0;
+}
+.scene-link:not(.optional-field-content > .scene-link):active {
+    color: rgb(var(--link-active));
+    outline: 0;
+}
+.scene-link:not(.optional-field-content > .scene-link):visited {
+    color: rgb(var(--link-active));
+    outline: 0;
+}
+
+/* Text fields on Tagger-Container Search-Results */
+.optional-field-content:not(:has(>.scene-link)) {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+}
+/* Name of Scene, Movie, etc. */
+.optional-field-content > .scene-link {
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0.11px;
+}
+/* */
+
+button.sprite-button.btn.btn-link > svg.fa-image {
+    font-size: 24px;
+}
+
+.tagger-container .input-group>.form-control:not(:first-child):not(:last-child) {
+    border-radius: 4px;
+    left: -34px;
+    margin-right: -31px;
+    background-color: rgb(var(--card-color));
+}
+.tagger-container .input-group>.form-control:not(:first-child):not(:last-child):focus {
+    background-color: rgb(var(--card-color)) !important;
+}
+.tagger-container .mt-2.text-right:has(>*.btn-primary):not(.submit-draft) {
+    margin-top: 12px !important;
+}
+
+/* removed right margin so thumbnail in row fills it container. */
+.tagger-container .search-item > .row > .col > .scene-card.mr-3 {
+    margin-right: 0 !important;
+}
+
+.original-scene-details>.collapse.show>.col:first-of-type>h4 {
+    color: rgb(var(--on-sec-container));
+}
+.original-scene-details>.collapse.show>.col:first-of-type>h5 {
+    color: #adcce6;
+}
+.original-scene-details>.collapse.show>.col:first-of-type>.TruncatedText {
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: rgb(var(--description-color));
+}
+.original-scene-details>.collapse.show>.col:first-of-type>a.scene-url,
+.original-scene-details>.collapse.show>.col:first-of-type>a.scene-path,
+.original-scene-details>.collapse.show>.col:first-of-type>span.scene-duration {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+    color: rgb(var(--on-surface-variant)) !important;
+}
+
+.search-item > .row .original-scene-details > .collapse.show .col:is(:has(*.performer-tag-container)) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.original-scene-details > .collapse.show > .col > div:is(:has(.performer-tag-container)) {
+    display: flex;
+    margin-left: auto;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    transform: translate(0%,0%);
+    transition: all 0.35s ease-in 0s;
+    will-change: transform, margin-left, transition;
+}
+.original-scene-details > .collapse.show > .col > div:is(:has(.performer-tag-container)) + div:has(>.tag-item),
+.original-scene-details > .collapse.show > .col > div:empty + div:has(>.tag-item) {
+    margin-left: auto;
+    margin-top: auto;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: flex-end;
+    height: 110%;
+    right: 16px;
+    transform: translate(16px, 12px);
+    transition: all 0.45s ease 0s;
+    will-change: transform, height, right;
+}
+
+:is(.performer-tag-container, .movie-tag-container) {
+    margin: 4px;
+    border: 0;
+    background-color: rgb(var(--sec-container));
+    border-radius: 4px;
+    padding: 8px;
+    display: flex;
+    flex: 1 1 30%;
+    max-width: 33%;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: stretch;
+    align-content: center;
+}
+:is(.performer-tag, .movie-tag) > img.image-thumbnail {
+    min-width: 75px;
+    width: 75px;
+}
+:is(.performer-tag, .movie-tag) > img.image-thumbnail:hover {
+    filter: brightness(1.05);
+    transition: filter 0.35s ease 0.15s;
+}
+
+.collapse.show > .col > div > .performer-tag-container > a.performer-tag.col {
+    display: flex;
+    flex: 0 0 30%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+/* Tagger Configuration Card */
+.tagger-container .collapse.show.card > .row > hr.w-100 {
+    border-top: 1px solid rgb(var(--outline));
+    margin-right: 16px;
+    margin-left: 16px;
+    margin-bottom: 16px;
+    margin-top: 4px;
+}
+small.form-text {
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+    color: rgb(var(--on-surface));
+    filter: brightness(0.7);
+}
+label.form-check-label {
+    margin-left: 6px;
+}
+.tagger-container .collapse.show.card .input-group:not(.has-validation)>input.form-control:not(:last-child) {
+    border-radius: 0.5rem;
+    margin-right: -54px;
+    padding-right: 68px;
+}
+.tagger-container .collapse.show.card h4 {
+    color: #cae9e3;
+}
+.tagger-container .collapse.show.card h5 {
+    color: #94d2c6;
+}
+/*.tagger-container .collapse.show.card .tag-item.badge.badge-secondary {
+    padding-top: 0;
+    padding-bottom: 38px;
+}*/
+
+/* Performer Tagger */
+.PerformerTagger-performer {
+    border-radius: 1.35rem;
+    margin: 12px;
+    padding: 12px;
+    background-color: rgb(var(--body-color2));
+}
+.PerformerTagger-box-link.input-group>.input-group-text {
+    top: 0;
+    left: 0;
+}
+.PerformerTagger-box-link.input-group>.input-group-append>button.btn.btn-primary {
+    margin-left: 0;
+}
+.PerformerTagger-details>.input-group>input.form-control {
+    border-radius: 0.5rem;
+}
+.PerformerTagger-details>.input-group>.input-group-append>button.btn.btn-primary {
+    margin-bottom: 6px;
+}
+
+.SceneScrapeModal .input-group:not(.has-validation)>.form-control:not(:last-child) {
+    margin-right: -62px;
+    border-radius: 0.5rem;
+    padding-right: 64px;
+}
+.SceneScrapeModal .input-group .input-group-append>button.btn.btn-primary[title="Search"] {
+    padding: 0 14px;
+    margin-right: 18px;
+    border-radius: 5rem;
+    position: relative;
+    top: 8px;
+    left: 6px;
+    background-color: transparent;
+    color: #a8dfd4;
+    box-shadow: none;
+}
+.SceneScrapeModal .input-group .input-group-append>button.btn.btn-primary[title="Search"]:hover:not(:disabled):not(.disabled),
+.SceneScrapeModal .input-group .input-group-append>button.btn.btn-primary[title="Search"]:focus:not(:disabled):not(.disabled),
+.SceneScrapeModal .input-group .input-group-append>button.btn.btn-primary[title="Search"]:focus-visible:not(:disabled):not(.disabled):not(:focus) {
+    background-color: rgba(255,255,255,0.10);
+    color: #a8dfd4;
+    box-shadow: none;
+}
+.SceneScrapeModal .input-group .input-group-append>button.btn.btn-primary[title="Search"]:active:not(:disabled):not(.disabled),
+.SceneScrapeModal .input-group .input-group-append>button.btn.btn-primary[title="Search"].active:not(:disabled):not(.disabled),
+.SceneScrapeModal .input-group .input-group-append>button.btn.btn-primary[title="Search"]:active:hover:not(:disabled):not(.disabled),
+.SceneScrapeModal .input-group .input-group-append>button.btn.btn-primary[title="Search"].active:hover:not(:disabled):not(.disabled),
+.SceneScrapeModal .input-group .input-group-append>button.btn.btn-primary[title="Search"]:active:focus:not(:disabled):not(.disabled),
+.SceneScrapeModal .input-group .input-group-append>button.btn.btn-primary[title="Search"].active:focus:not(:disabled):not(.disabled) {
+    background-color: rgba(255,255,255,0.16);
+    color: #a8dfd4;
+    box-shadow: none;
+}
+
+.modal-body .dialog-container>.input-group:not(.has-validation)>input.btn-secondary.form-control:not(:last-child) {
+    margin-right: -40px;
+    border-radius: 5rem;
+    min-height: 56px;
+    padding-left: 64px;
+}
+.modal-body .dialog-container:has(>*.folder-list)>.input-group>.input-group-append>button.btn.btn-secondary:has(>.fa-plus) {
+    background-color: transparent;
+    border: 0;
+    border-radius: 5rem;
+    padding: 0 14px 0 14px;
+    position: relative;
+    top: 8px;
+    left: -12px;
+}
+.modal-body .dialog-container:has(>*.folder-list)>.input-group>.input-group-append>button.btn.btn-secondary:has(>.fa-plus):hover:not(:disabled):not(.disabled),
+.modal-body .dialog-container:has(>*.folder-list)>.input-group>.input-group-append>button.btn.btn-secondary:has(>.fa-plus):focus:not(:disabled):not(.disabled),
+.modal-body .dialog-container:has(>*.folder-list)>.input-group>.input-group-append>button.btn.btn-secondary:has(>.fa-plus):focus-visible:not(:disabled):not(.disabled):not(:focus) {
+    background-color: rgba(255,255,255,0.16);
+    box-shadow: none;
+}
+.modal-body .dialog-container:has(>*.folder-list)>.input-group>.input-group-append>button.btn.btn-secondary:has(>.fa-plus):active:not(:disabled):not(.disabled),
+.modal-body .dialog-container:has(>*.folder-list)>.input-group>.input-group-append>button.btn.btn-secondary:has(>.fa-plus):active:hover:not(:disabled):not(.disabled),
+.modal-body .dialog-container:has(>*.folder-list)>.input-group>.input-group-append>button.btn.btn-secondary:has(>.fa-plus):active:focus:not(:disabled):not(.disabled) {
+    background-color: rgba(255,255,255,0.08);
+    box-shadow: none;
+}
+.modal-body .dialog-container:has(>*.folder-list)>.input-group>.input-group-append>button.btn.btn-secondary:has(>.fa-plus):focus-visible:not(:focus):not(:disabled):not(.disabled) {
+    outline-color: #dffffb;
+    outline-width: 3px;
+    outline-style: solid;
+    outline-offset: 0;
+}
+.modal-body .dialog-content:has(>*.folder-list)>.input-group:not(.has-validation)>input.btn-secondary.form-control {
+    min-height: 56px;
+}
+.modal-body .string-list-input .input-group:not(.has-validation)>input.text-input.form-control:not(:last-child) {
+    border-radius: 0.5rem;
+    margin-right: -40px;
+    padding-right: 64px;
+}
+.modal-body .string-list-input .input-group>.input-group-append>button.btn.btn-danger:has(>.fa-minus) {
+    border: 1px solid #dcf6f0;
+    color: #dcf6f0;
+    background-color: transparent;
+    border-radius: 5rem;
+    padding: 0 14px 0 14px;
+    position: relative;
+    top: 8px;
+    left: -12px;
+}
+.modal-body .string-list-input .input-group>.input-group-append>button.btn.btn-danger:has(>.fa-minus):hover:not(:disabled):not(.disabled),
+.modal-body .string-list-input .input-group>.input-group-append>button.btn.btn-danger:has(>.fa-minus):focus:not(:disabled):not(.disabled),
+.modal-body .string-list-input .input-group>.input-group-append>button.btn.btn-danger:has(>.fa-minus):focus-visible:not(:disabled):not(.disabled):not(:focus) {
+    background-color: rgba(255,255,255,0.08);
+    border-color: #ffb4ab;
+    color: #ffb4ab;
+    box-shadow: none;
+}
+.modal-body .string-list-input .input-group>.input-group-append>button.btn.btn-danger:has(>.fa-minus):active:not(:disabled):not(.disabled),
+.modal-body .string-list-input .input-group>.input-group-append>button.btn.btn-danger:has(>.fa-minus):active:hover:not(:disabled):not(.disabled),
+.modal-body .string-list-input .input-group>.input-group-append>button.btn.btn-danger:has(>.fa-minus):active:focus:not(:disabled):not(.disabled) {
+    background-color: rgba(255,255,255,0.16);
+    border-color: #ffb4ab;
+    color: #ffb4ab;
+    box-shadow: none;
+}
+.modal-body .string-list-input .input-group>.input-group-append>button.btn.btn-danger:has(>.fa-minus):focus-visible:not(:focus):not(:disabled):not(.disabled) {
+    outline-color: #dffffb;
+    outline-width: 3px;
+    outline-style: solid;
+    outline-offset: 0;
+}
+
+.main.container-fluid>div:has(>*.error-message)>h2 {
+    color: #690005;
+}
+.error-message {
+    color: #93000a;
+}
+
+input#filename-pattern.text-input.form-control {
+    border-radius: 0.5rem;
+    margin-right: 12px;
+}
+button#parser-field-select.dropdown-toggle.btn.btn-primary {
+    position: relative;
+    top: 8px;
+}
+.duplicate-checker .d-flex.mt-2.mb-2 select.w-auto.ml-2.btn-secondary.form-control {
+    width: 100% !important;
+}
+.duplicate-checker-table tbody>tr td>button.edit-button.btn {
+    margin-bottom: 4px;
+    margin-top: 4px;
+}
+#parser-container .form-group>.row.form-group>button.ml-3.col-1.btn.btn-secondary {
+    position: relative;
+    top: 8px;
+}
+.preview-button .fa-icon {
+    color: #fff;
+    height: 2.75em;
+    width: 2.75em;
+}
+.edit-filter-dialog .criterion-list .card .card-header {
+    border-bottom: 0;
+    border-style: none;
+}
+.edit-filter-dialog .criterion-list .card {
+    border-style: none;
+    border: 0;
+    border-radius: 0;
+}
+.edit-filter-dialog .criterion-list .card .filter-item-header {
+    background-color: transparent;
+    border-bottom: 0;
+    border-radius: 1.35rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.edit-filter-dialog .criterion-list .card .filter-item-header:focus,
+.edit-filter-dialog .criterion-list .card:has(>*.collapse.show) .filter-item-header {
+    background-color: rgb(var(--card-color-collaps-show));
+    border-color: transparent;
+    border-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    box-shadow: none;
+    transform: translate(0%,0%);
+    transition: tranform 0.25s ease-out 0s;
+}
+.edit-filter-dialog .criterion-list .card .filter-item-header:focus {
+    background-color: transparent;
+}
+
+
+/* Chips/Tag-Items for the Filter Editor */ 
+.modifier-options button.modifier-option.btn-primary {
+    background-color: rgb(var(--surface));
+    padding: 0 16px;
+    border-radius: 8px;
+    color: rgb(var(--on-surface-variant));
+    border: 1px solid rgb(var(--outline));
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.15px;
+    font-weight: 500;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    height: 32px;
+    min-height: 32px;
+    width: auto;
+    box-shadow: var(--elevation-0);
+}
+.modifier-options button.modifier-option.btn.btn-primary:not(.selected):hover {
+    color: rgb(var(--on-surface-variant));
+    box-shadow: var(--elevation-0);
+    background-color: transparent;
+    background-image: linear-gradient(to right, rgb(255,255,255,0.06), rgb(255,255,255,0.06)), linear-gradient(to right, rgb(var(--surface)), rgb(var(--surface)));
+    border: 1px solid rgb(var(--outline));
+}
+.modifier-options button.modifier-option.btn.btn-primary:is(:not(.selected)):focus-visible {
+    background-color: transparent;
+    background-image: linear-gradient(to right, rgb(var(--pry-container)), rgb(var(--pry-container))) !important;
+    color: rgb(var(--on-tertiary-container));
+    outline-color: rgb(var(--focus-ring));
+    outline-offset: -0.1rem;
+    outline-style: solid;
+    outline-width: 0.3rem;
+    box-shadow: none;
+}
+
+.modifier-options button.modifier-option.selected::before {
+    content: "\2713";
+    font-family: var(--UnicodeFont);
+    font-weight: 500;
+    font-size: 18px;
+    display: inline-block;
+    color: rgb(var(--green));
+}
+.modifier-options button.modifier-option.selected,
+.modifier-options button.modifier-option.btn.btn-primary:is(:not(.disabled, :disabled):not(.selected)):is(:focus) {
+    background-color: transparent;
+    background-image: linear-gradient(to right, rgb(var(--tertiary-container)), rgb(var(--tertiary-container)));
+    box-shadow: var(--elevation-0);
+    color: rgb(var(--on-tertiary-container)) !important;
+    border: 1px solid rgb(var(--tertiary-container));
+    opacity: 1;
+    transition: background-image 0.55s ease, border 0.25s ease-in, box-shadow 0.4s ease-out, background-color 0.55s ease-in;
+}
+.modifier-options button.modifier-option.btn.btn-primary:is(:not(.disabled, :disabled).selected):is(:active, :active:focus) {
+    color: rgb(var(--on-tertiary-container));
+    box-shadow: var(--elevation-0);
+    background-color: transparent;
+    background-image: linear-gradient(to right, rgb(255,255,255,0.12), rgb(255,255,255,0.12)), linear-gradient(to right, rgb(var(--tertiary-container)), rgb(var(--tertiary-container)));
+    border: 1px solid rgb(var(--tertiary-container));
+}
+.modifier-options button.modifier-option.btn.btn-primary:is(:not(.disabled, :disabled).selected):is(:hover) {
+    color: rgb(var(--on-tertiary-container));
+    box-shadow: var(--elevation-1);
+    background-color: transparent;
+    background-image: linear-gradient(to right, rgb(255,255,255,0.06), rgb(255,255,255,0.06)), linear-gradient(to right, rgb(var(--tertiary-container)), rgb(var(--tertiary-container)));
+    border: 1px solid rgb(var(--tertiary-container));
+}
+.modifier-options button.modifier-option.selected.btn.btn-primary:focus-visible {
+    background-color: transparent;
+    background-image: linear-gradient(to right, rgb(var(--tertiary-container)), rgb(var(--tertiary-container)));
+    color: rgb(var(--on-pry-container)) !important;
+    outline-color: rgb(var(--focus-ring));
+    outline-offset: -0.1rem;
+    outline-style: solid;
+    outline-width: 0.3rem;
+    box-shadow: none;
+}
+/* * */
+
+/* Critereion Filter Editor */
+.criterion-editor .form-group:has(>.input-group > input[placeholder="File path"].btn-secondary.form-control) {
+    position: relative;
+}
+.criterion-editor .form-group:has(>.input-group > input[placeholder="File path"].btn-secondary.form-control)::before {
+    content: "File path";
+    font-size: 12px;
+    color: rgb(var(--pry-color));
+    background-color: rgb(var(--card-color-collaps-show));
+    position: relative;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-bottom: -2.5%;
+    margin-left: 16px;
+    z-index: 5;
+    transform: translate(0%,0%);
+    transition: all 0.35s ease;
+}
+.criterion-editor .form-group:has(>.input-group > input[placeholder="File path"].btn-secondary.form-control):focus-within::before {
+    visibility: visible;
+}
+
+.criterion-editor > div > .form-group + .form-group > div > div.react-select__control {
+    background-color: transparent;
+    color: rgb(var(--on-surface-variant));
+    width: 100%;
+}
+/* Folder-List Unicode Characters */
+.criterion-editor .folder-list-item .btn span::before {
+    content: "\251c \1F5BF";
+    font-size: 20px;
+    color: rgb(var(--on-surface-variant));
+    padding-right: 16px;
+}
+.criterion-editor .folder-list-item .btn span {
+    color: rgb(var(--on-surface-variant));
+}
+/* Folder-Lists */
+.criterion-editor .form-group .folder-list.collapse.show > .folder-list-item > button.btn.btn-link {
+    background-color: transparent;
+    padding: 0 8px;
+    border-radius: 8px;
+}
+.criterion-editor .form-group .folder-list.collapse.show > .folder-list-item > button.btn.btn-link:hover {
+    box-shadow: none;
+    border-radius: 8px;
+    background-color: rgb(var(--on-surface),var(--btn-hover));
+}
+.criterion-editor .form-group ul.folder-list.collapse.show {
+        overflow-x: visible;
+}
+/* Parent Folder Icon */
+.criterion-editor .folder-list-parent.folder-list-item .btn span::before {
+    content: "\A71B";
+    visibility: visible;
+}
+/* Search Bar in Tags */
+.criterion-editor input.clearable-text-field.form-control {
+    border: 1px solid rgb(var(--outline));
+}
+.criterion-editor input.clearable-text-field.form-control:hover {
+    border: 1px solid rgb(var(--on-surface-variant));
+}
+/* * */
+
+button.btn.btn-primary.btn-sm:first-child {
+    border-bottom-left-radius: 5rem;
+}
+button.btn.btn-primary.btn-sm:last-child {
+    border-bottom-right-radius: 5rem;
+}
+.stats-element {
+    margin: auto .5rem 2rem .5rem;
+}
+
+.tagger-container .d-flex.align-items-center .d-flex > button + button.ml-1.btn.btn-primary {
+    margin-left: 1rem !important;
+}
+
+/* *** */
+/* Button Ripple */
+body :is(:not(.collapse.show.card .input-group):has(> .input-group-append)) button:not(.navbar-buttons a[href^="/scenes/new"] > button):not(.navbar-buttons a[href^="/movies/new"] > button):not(.navbar-buttons a[href^="/galleries/new"] > button):not(.navbar-buttons a[href^="/performers/new"] > button):not(.navbar-buttons a[href^="/studios/new"] > button):not(.navbar-buttons a[href^="/tags/new"] > button).btn.btn-primary:not(.scrubber-button):not(.minimal):not([title="Search"])::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 92px;
+    height: 92px;
+    margin-left: -46px;
+    margin-top: -30px;
+    background: radial-gradient(ellipse, #d4ebff9a 0%, #ffffffca 35%, #82c5b8 100%);
+    border-radius: 5rem;
+    opacity: 0.6;
+    transform: scale(0);
+    will-change: auto;
+}
+a:not([href^="/scenes"]):not([href^="/images"]):not([href^="/movies"]):not([href^="/scenes/markers"]):not([href^="/galleries"]):not([href^="/performers"]):not([href^="/studios"]):not([href^="/tags"]).minimal::after, 
+button:not(.brand-link).minimal:not(.scene-count>button.minimal):not(:where(.o-counter,.o-count)>button.minimal):not(.image-count>button.minimal):not(.gallery-count>button.minimal):not(.organized>button.minimal):not(.tag-count>button.minimal):not(.performer-count>button.minimal):not(.organized-button)::after, 
+.navbar-brand button.minimal.brand-link.d-inline-block.btn.btn-primary::after,
+button#operation-menu.minimal.dropdown-toggle.btn.btn-secondary::after,
+.card-popovers a.pwPlayer_button::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 90px;
+    height: 90px;
+    margin-left: -45px;
+    margin-top: -30px;
+    background: radial-gradient(ellipse, #dffffb9a 0%, #ffffffca 20%, #373d3b 100%);
+    border-radius: 5rem;
+    opacity: 0.6;
+    transform: scale(0);
+    will-change: auto;
+}
+.navbar-brand button.minimal.brand-link.d-inline-block.btn.btn-primary::after {
+    background: radial-gradient(ellipse, #ffffffa9 0%, #dffffba9 35%, #202B33 100%);
+    opacity: 0.5;
+    top: 90%;
+    transform: scale(0);
+    transition: transform 0s;
+    will-change: auto;
+}
+
+
+.top-nav .navbar-buttons:not(:has(a[href^="/scenes/new"])):not(:has(a[href^="/movies/new"])):not(:has(a[href^="/galleries/new"])):not(:has(a[href^="/performers/new"])):not(:has(a[href^="/studios/new"])):not(:has(a[href^="/tags/new"])) .btn:not(.donate)::after,
+.top-nav .navbar-buttons a.nav-utility button.minimal.btn.btn-primary:not(.donate)::after,
+.top-nav .navbar-buttons button.minimal.btn.btn-primary:not(.donate)::after,
+.modal-header .close::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 48px;
+    height: 48px;
+    margin-left: -20px;
+    margin-top: -20px;
+    background: radial-gradient(circle at center, #d4ebff9a 0%, #ffffffca 35%, #687988 100%);
+    border-radius: 50%;
+    opacity: 0.6;
+    transform: scale(0);
+    will-change: auto;
+}
+.top-nav .navbar-buttons a.nav-utility button[title="Donate"].minimal.donate.btn.btn-primary::after,
+button.minimal.collapse-button.btn-primary::after,
+button.tag-list-button.btn.btn-secondary:has(>.tag-list-anchor)::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 92px;
+    height: 92px;
+    margin-left: -46px;
+    margin-top: -30px;
+    background: radial-gradient(ellipse, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
+    border-radius: 5rem;
+    opacity: 0.6;
+    transform: scale(0);
+    will-change: auto;
+}
+/* Nav-Tabs cented ripple */
+.nav-tabs>.nav-item:has(>*:not(.btn-secondary):not(.dropdown):not(.o-counter))::after, 
+.nav-tabs .nav-item.nav-link::after,
+.nav-tabs .nav-link::after,
+.show > .dropdown-menu.show .dropdown-item::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 92px;
+    height: 92px;
+    background: radial-gradient(ellipse, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%) center/15000%;
+    border-radius: 5rem;
+    opacity: 0.6;
+    transform: scale(0);
+    will-change: auto;
+}
+div:not(.pagination)>button:not(.tag-list-button:has(>.tag-list-anchor)):not(.duration-button):not(.scrape-url-button):not(.percent-button).btn.btn-secondary:not(:has(>.fa-plus)):not(:has(>.fa-calendar))::after,
+.justify-content-center.btn-toolbar > .mb-2 > select.btn-secondary.form-control::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 51px;
+    height: 51px;
+    margin-left: -23px;
+    margin-top: -15px;
+    background: radial-gradient(ellipse, #ffffffa9 0%, #dffffba9 35%, #202B33 100%);
+    border-radius: 5rem;
+    opacity: 0.4;
+    transform: scale(0);
+    will-change: auto;
+}
+/*nav.top-nav.navbar .navbar-buttons .mr-2 a[href^="/scenes/new"]>button.btn.btn-primary::after, 
+nav.top-nav.navbar .navbar-buttons .mr-2 a[href^="/galleries/new"]>button.btn.btn-primary::after, 
+nav.top-nav.navbar .navbar-buttons .mr-2 a[href^="/movies/new"]>button.btn.btn-primary::after, 
+nav.top-nav.navbar .navbar-buttons .mr-2 a[href^="/performers/new"]>button.btn.btn-primary::after, 
+nav.top-nav.navbar .navbar-buttons .mr-2 a[href^="/studios/new"]>button.btn.btn-primary::after, 
+nav.top-nav.navbar .navbar-buttons .mr-2 a[href^="/tags/new"]>button.btn.btn-primary::after,*/
+.pagination button.btn.btn-secondary::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 92px;
+    height: 92px;
+    margin-left: -46px;
+    margin-top: -30px;
+    background: radial-gradient(ellipse, #d4ebff9a 0%, #ffffffca 35%, #57605e 100%);
+    border-radius: 5rem;
+    opacity: 0.6;
+    transform: scale(0);
+    will-change: auto;
+}
+.btn-danger:has(>:not(.fa-minus))::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 92px;
+    height: 92px;
+    margin-left: -46px;
+    margin-top: -30px;
+    background: radial-gradient(ellipse, #fff8f89a 0%, #ffffffca 35%, #bf1400 100%);
+    border-radius: 5rem;
+    opacity: 0.6;
+    transform: scale(0);
+    will-change: auto;
+}
+.btn-success::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 92px;
+    height: 92px;
+    margin-left: -46px;
+    margin-top: -30px;
+    background: radial-gradient(ellipse, #f8fbfa9a 0%, #ffffffca 35%, #59877b 100%);
+    border-radius: 5rem;
+    opacity: 0.6;
+    transform: scale(0);
+    will-change: auto;
+}
+@keyframes ripple {
+    0% {
+        transform: scale(0);
+    }
+    80% {
+        transform: scale(2.5);
+    }
+    100% {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+@keyframes nav-ripple {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(2.25);
+        opacity: 0;
+    }
+}
+body :is(:not(.collapse.show.card .input-group):has(> .input-group-append)) button:not(.navbar-buttons a[href^="/scenes/new"] > button):not(.navbar-buttons a[href^="/movies/new"] > button):not(.navbar-buttons a[href^="/galleries/new"] > button):not(.navbar-buttons a[href^="/performers/new"] > button):not(.navbar-buttons a[href^="/studios/new"] > button):not(.navbar-buttons a[href^="/tags/new"] > button).btn.btn-primary:not(.scrubber-button):not(.minimal):not([title="Search"]):not(:active):not(.active)::after,
+.top-nav .navbar-buttons:not(:has(a[href^="/scenes/new"])):not(:has(a[href^="/movies/new"])):not(:has(a[href^="/galleries/new"])):not(:has(a[href^="/performers/new"])):not(:has(a[href^="/studios/new"])):not(:has(a[href^="/tags/new"])) .btn:not(:active):not(.active):not(.donate)::after,
+.top-nav .navbar-buttons a.nav-utility button.minimal.btn.btn-primary:not(:active):not(.active):not(.donate)::after,
+.top-nav .navbar-buttons button.minimal.donate.btn.btn-primary:not(:active):not(.active)::after,
+button.minimal.collapse-button.btn-primary:not(:active):not(.active)::after,
+.modal-header .close:not(:active):not(.active)::after,
+.recommendation-row-head>a:not(:active):not(.active)::after,
+div:not(.pagination)>button:not(.duration-button):not(.scrape-url-button):not(.percent-button).btn.btn-secondary:not(:has(>.fa-plus)):not(:has(>.fa-calendar)):not(:active):not(.active)::after,
+.btn-danger:has(>:not(.fa-minus)):not(:active):not(.active)::after,
+.btn-success:not(:active):not(.active)::after,
+a:not([href^="/scenes"]):not([href^="/images"]):not([href^="/movies"]):not([href^="/scenes/markers"]):not([href^="/galleries"]):not([href^="/performers"]):not([href^="/studios"]):not([href^="/tags"]).minimal:not(:active):not(.active)::after, 
+button:not(.brand-link).minimal:not(.scene-count>button.minimal):not(:where(.o-counter,.o-count)>button.minimal):not(.image-count>button.minimal):not(.gallery-count>button.minimal):not(.organized>button.minimal):not(.tag-count>button.minimal):not(.performer-count>button.minimal):not(.organized-button):not(:active):not(.active)::after, 
+button#operation-menu.minimal.dropdown-toggle.btn.btn-secondary:not(:active):not(.active)::after,
+.card-popovers a.pwPlayer_button:not(:active):not(.active)::after,
+.pagination button.btn.btn-secondary:not(:hover)::after,
+.justify-content-center.btn-toolbar > .mb-2 > select.btn-secondary.form-control:not(:hover)::after,
+button.tag-list-button.btn.btn-secondary:not(:active):not(.active)::after,
+.nav-tabs>.nav-item:has(>*:not(.btn-secondary):not(.dropdown):not(.o-counter)):not(:hover)::after, 
+.nav-tabs>.nav-item:has(>*:not(.btn-secondary):not(.dropdown):not(.o-counter)):not(:hover:active)::after,
+.nav-tabs .nav-item.nav-link:not(:hover)::after,
+.nav-tabs .nav-link:not(:hover)::after,
+.show > .dropdown-menu.show .dropdown-item:not(:active)::after {
+    animation: ripple 0.85s ease-in-out forwards;
+    will-change: animation;
+}
+.navbar-brand button.minimal.brand-link.d-inline-block.btn.btn-primary:not(:active):not(.active)::after {
+    animation: nav-ripple 0.85s ease forwards;
+    will-change: animation;
+}
+body :is(:not(.collapse.show.card .input-group):has(> .input-group-append)) button:not(.navbar-buttons a[href^="/scenes/new"] > button):not(.navbar-buttons a[href^="/movies/new"] > button):not(.navbar-buttons a[href^="/galleries/new"] > button):not(.navbar-buttons a[href^="/performers/new"] > button):not(.navbar-buttons a[href^="/studios/new"] > button):not(.navbar-buttons a[href^="/tags/new"] > button).btn.btn-primary:not(.scrubber-button):not(.minimal):not([title="Search"])::after,
+.top-nav .navbar-buttons:not(:has(a[href^="/scenes/new"])):not(:has(a[href^="/movies/new"])):not(:has(a[href^="/galleries/new"])):not(:has(a[href^="/performers/new"])):not(:has(a[href^="/studios/new"])):not(:has(a[href^="/tags/new"])) .btn::after,
+.top-nav .navbar-buttons a.nav-utility button.minimal.btn.btn-primary:not(.donate)::after,
+.top-nav .navbar-buttons button.minimal.donate.btn.btn-primary::after,
+button.minimal.collapse-button.btn-primary::after,
+.modal-header .close::after,
+.recommendation-row-head>a::after,
+div:not(.pagination)>button:not(.duration-button):not(.scrape-url-button):not(.percent-button).btn.btn-secondary:not(:has(>.fa-plus)):not(:has(>.fa-calendar))::after,
+.btn-danger:has(>:not(.fa-minus))::after,
+.btn-success::after,
+a:not([href^="/scenes"]):not([href^="/images"]):not([href^="/movies"]):not([href^="/scenes/markers"]):not([href^="/galleries"]):not([href^="/performers"]):not([href^="/studios"]):not([href^="/tags"]).minimal::after, 
+button:not(.brand-link).minimal:not(.scene-count>button.minimal):not(:where(.o-counter,.o-count)>button.minimal):not(.image-count>button.minimal):not(.gallery-count>button.minimal):not(.organized>button.minimal):not(.tag-count>button.minimal):not(.performer-count>button.minimal):not(.organized-button)::after, 
+.navbar-brand button.minimal.brand-link.d-inline-block.btn.btn-primary::after,
+button#operation-menu.minimal.dropdown-toggle.btn.btn-secondary::after,
+.card-popovers a.pwPlayer_button::after,
+.pagination button.btn.btn-secondary:not(.active):not(:active)::after,
+.justify-content-center.btn-toolbar > .mb-2 > select.btn-secondary.form-control::after,
+button.tag-list-button.btn.btn-secondary::after,
+.nav-tabs>.nav-item:has(>*:not(.btn-secondary):not(.dropdown):not(.o-counter))::after, 
+.nav-tabs .nav-item.nav-link::after,
+.nav-tabs .nav-link::after,
+.show > .dropdown-menu.show .dropdown-item::after {
+    visibility: hidden;
+}
+body :is(:not(.collapse.show.card .input-group):has(> .input-group-append)) button:not(.navbar-buttons a[href^="/scenes/new"] > button):not(.navbar-buttons a[href^="/movies/new"] > button):not(.navbar-buttons a[href^="/galleries/new"] > button):not(.navbar-buttons a[href^="/performers/new"] > button):not(.navbar-buttons a[href^="/studios/new"] > button):not(.navbar-buttons a[href^="/tags/new"] > button).btn.btn-primary:not(.scrubber-button):not(.minimal):not([title="Search"]):focus:not(:focus-visible)::after,
+.top-nav .navbar-buttons:not(:has(a[href^="/scenes/new"])):not(:has(a[href^="/movies/new"])):not(:has(a[href^="/galleries/new"])):not(:has(a[href^="/performers/new"])):not(:has(a[href^="/studios/new"])):not(:has(a[href^="/tags/new"])) .btn:focus:not(:focus-visible)::after,
+.top-nav .navbar-buttons a.nav-utility button.minimal.btn.btn-primary:not(.donate):focus:not(:focus-visible)::after,
+.top-nav .navbar-buttons button.minimal.donate.btn.btn-primary:focus:not(:focus-visible)::after,
+button.minimal.collapse-button.btn-primary:focus:not(:focus-visible)::after,
+.modal-header .close:focus:not(:focus-visible)::after,
+.recommendation-row-head>a:focus:not(:focus-visible)::after,
+div:not(.pagination)>button:not(.duration-button):not(.scrape-url-button):not(.percent-button).btn.btn-secondary:not(:has(>.fa-plus)):not(:has(>.fa-calendar)):focus:not(:focus-visible)::after,
+.btn-danger:has(>:not(.fa-minus)):focus:not(:focus-visible)::after,
+.btn-success:focus:not(:focus-visible)::after,
+a:not([href^="/scenes"]):not([href^="/images"]):not([href^="/movies"]):not([href^="/scenes/markers"]):not([href^="/galleries"]):not([href^="/performers"]):not([href^="/studios"]):not([href^="/tags"]).minimal:focus:not(:focus-visible)::after, 
+button:not(.brand-link).minimal:not(.scene-count>button.minimal):not(:where(.o-counter,.o-count)>button.minimal):not(.image-count>button.minimal):not(.gallery-count>button.minimal):not(.organized>button.minimal):not(.tag-count>button.minimal):not(.performer-count>button.minimal):not(.organized-button):focus:not(:focus-visible)::after, 
+.navbar-brand button.minimal.brand-link.d-inline-block.btn.btn-primary:focus:not(:focus-visible)::after,
+button#operation-menu.minimal.dropdown-toggle.btn.btn-secondary:focus:not(:focus-visible)::after,
+.card-popovers a.pwPlayer_button:focus:not(:focus-visible)::after,
+.pagination button.btn.btn-secondary:focus:not(:focus-visible)::after,
+.justify-content-center.btn-toolbar > .mb-2 > select.btn-secondary.form-control:focus::after,
+button.tag-list-button.btn.btn-secondary:focus:not(:focus-visible)::after,
+.nav-tabs>.nav-item:has(>*:not(.btn-secondary):not(.dropdown):not(.o-counter)):focus::after, 
+.nav-tabs .nav-item.nav-link:focus::after,
+.nav-tabs .nav-link:focus::after,
+.nav-tabs>.nav-item:has(>*:not(.btn-secondary):not(.dropdown):not(.o-counter)).active:focus::after, 
+.nav-tabs .nav-item.nav-link.active:focus::after,
+.nav-tabs .nav-link.active:focus::after,
+.show > .dropdown-menu.show .dropdown-item:focus:not(:focus-visible)::after {
+    visibility: visible;
+}
+
+/* *** TOP NAV BUTTONS *** */
+.navbar-dark .navbar-toggler.collapsed::before,
+.navbar-dark .navbar-toggler:not(.collapsed)::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 49%;
+    top: 49%;
+    width: 2px;
+    height: 2px;
+    /*margin-left: -46px;
+    margin-top: -30px;*/
+    background: radial-gradient(circle at center, rgba(var(--btn-toggler-color),var(--btn-hover)) 0%, rgba(var(--btn-toggler-color),var(--btn-hover)) 100%);
+    border-radius: 50%;
+    opacity: 1;
+    transform: scale(0);
+}
+.top-nav .navbar-buttons:not(:has(a[href^="/scenes/new"])):not(:has(a[href^="/movies/new"])):not(:has(a[href^="/galleries/new"])):not(:has(a[href^="/performers/new"])):not(:has(a[href^="/studios/new"])):not(:has(a[href^="/tags/new"])) .btn:not(.donate)::before,
+.top-nav .navbar-buttons a.nav-utility button.minimal.btn.btn-primary:not(.donate)::before,
+button[title=Help].nav-utility.minimal.btn.btn-primary:has(>svg.svg-inline--fa.fa-circle-question.fa-icon)::before,
+.top-nav .navbar-buttons a.minimal.logout-button.btn.btn-primary::before {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    width: 2px;
+    height: 2px;
+    background: radial-gradient(circle at center, rgba(var(--btn-toggler-color),var(--btn-hover)) 0%, rgba(var(--btn-toggler-color),var(--btn-hover)) 100%);
+    border-radius: 50%;
+    opacity: 1;
+    transform: scale(0);
+}
+.navbar-dark .navbar-toggler:not(.collapsed)::before, 
+.top-nav .navbar-buttons:not(:has(a[href^="/scenes/new"])):not(:has(a[href^="/movies/new"])):not(:has(a[href^="/galleries/new"])):not(:has(a[href^="/performers/new"])):not(:has(a[href^="/studios/new"])):not(:has(a[href^="/tags/new"])) .btn:not(.donate)::before, 
+.top-nav .navbar-buttons a.nav-utility button.minimal.btn.btn-primary:not(.donate)::before,
+button[title=Help].nav-utility.minimal.btn.btn-primary:has(>svg.svg-inline--fa.fa-circle-question.fa-icon)::before,
+.top-nav .navbar-buttons a.minimal.logout-button.btn.btn-primary::before {
+    background: radial-gradient(circle at center, rgba(var(--pry-color),var(--btn-hover)) 0%, rgba(var(--pry-color),var(--btn-hover)) 100%);
+}
+@keyframes bubble {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+        height: 2px;
+        width: 2px;
+    }
+    100% {
+        opacity: 1;
+        transform: scale(24);
+    }
+}
+.navbar-dark .navbar-toggler.collapsed:hover:not(:active):not(.active)::before, 
+.navbar-dark .navbar-toggler:hover:not(.collapsed):not(:active):not(.active)::before, 
+.top-nav .navbar-buttons:not(:has(a[href^="/scenes/new"])):not(:has(a[href^="/movies/new"])):not(:has(a[href^="/galleries/new"])):not(:has(a[href^="/performers/new"])):not(:has(a[href^="/studios/new"])):not(:has(a[href^="/tags/new"])) .btn:not(.donate):hover:not(:active):not(.active)::before, 
+.top-nav .navbar-buttons a.nav-utility button.minimal.btn.btn-primary:not(.donate):hover:not(:active):not(.active)::before,
+button[title=Help].nav-utility.minimal.btn.btn-primary:has(>svg.svg-inline--fa.fa-circle-question.fa-icon):hover:not(:active):not(.active)::before,
+.top-nav .navbar-buttons a.minimal.logout-button.btn.btn-primary:hover:not(:active):not(.active)::before {
+    animation: bubble 0.55s ease-in forwards;
+    will-change: animation;
+    max-height: 48px;
+    min-height: 2px;
+    max-width: 48px;
+    min-width: 2px;
+}
+.navbar-dark .navbar-toggler.collapsed::before, 
+.navbar-dark .navbar-toggler:not(.collapsed)::before,
+.top-nav .navbar-buttons:not(:has(a[href^="/scenes/new"])):not(:has(a[href^="/movies/new"])):not(:has(a[href^="/galleries/new"])):not(:has(a[href^="/performers/new"])):not(:has(a[href^="/studios/new"])):not(:has(a[href^="/tags/new"])) .btn:not(.donate)::before, 
+.top-nav .navbar-buttons a.nav-utility button.minimal.btn.btn-primary:not(.donate)::before,
+button[title=Help].nav-utility.minimal.btn.btn-primary:has(>svg.svg-inline--fa.fa-circle-question.fa-icon)::before,
+.top-nav .navbar-buttons a.minimal.logout-button.btn.btn-primary::before {
+    visibility: hidden;
+}
+.navbar-dark .navbar-toggler.collapsed:hover::before, 
+.navbar-dark .navbar-toggler:not(.collapsed):hover::before, 
+.top-nav .navbar-buttons:not(:has(a[href^="/scenes/new"])):not(:has(a[href^="/movies/new"])):not(:has(a[href^="/galleries/new"])):not(:has(a[href^="/performers/new"])):not(:has(a[href^="/studios/new"])):not(:has(a[href^="/tags/new"])) .btn:not(.donate):hover::before, 
+.top-nav .navbar-buttons a.nav-utility button.minimal.btn.btn-primary:not(.donate):hover::before,
+button[title=Help].nav-utility.minimal.btn.btn-primary:has(>svg.svg-inline--fa.fa-circle-question.fa-icon):hover::before,
+.top-nav .navbar-buttons a.minimal.logout-button.btn.btn-primary:hover::before {
+    visibility: visible;
+}
+/* *** *** */
+
+/* Scene Markers */
+/*.scene-tabs .fade.tab-pane.active.show form .form-group:nth-of-type(2) .css-b62m3t-container {
+    top: 26px;
+    left: -150px;
+    margin-right: -100px;
+}*/
+.scene-tabs .fade.tab-pane.active.show form .form-group:nth-of-type(2) .invalid-feedback {
+    top: 26px;
+    left: -190px;
+    position: relative;    
+}
+/*.scene-tabs .fade.tab-pane.active.show form .form-group:nth-of-type(2) .duration-input {
+    margin-left: 44px;
+    margin-right: -112px;
+}*/
+.scene-tabs .fade.tab-pane.active.show form .form-group:nth-of-type(2) .row > .col-form-label.text-sm-right.text-xl-left.form-label {
+    top: -20px;
+    left: 8px;
+    background-color: transparent;
+    padding: 2px 4px;
+    max-width: 36px;
+    margin-left: -82px;
+    margin-bottom: 40px;
+}
+
+/* Has StashId - Perfomer Card */
+.peformer-stashid-icon {
+    position: absolute;
+    bottom: 10px;
+    color: rgb(var(--green));
+    left: 0.5rem;
+}
+
+/* The scene card Popover for Performer-tag-container to align left to right in a row*/
+.show.popover:has(.performer-tag-container) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+/*#root:has(.recommendations-container) nav.top-nav.navbar.navbar-dark.bg-dark.fixed-top .navbar-nav .nav-link.active > .btn.btn-primary {
+    color: rgb(var(--on-surface-variant));
+}
+#root:has(.recommendations-container) .top-nav.navbar.navbar-dark.bg-dark.fixed-top .navbar-nav .col-4.col-sm-3.col-md-2.col-lg-auto.nav-link.active::after {
+    border-bottom-color: rgb(var(--nav-color2));
+}
+#root:has(.recommendations-container) .top-nav.navbar.navbar-dark.bg-dark.fixed-top .navbar-nav .nav-link.active:hover {
+    background-color: rgba(var(--on-surface),var(--btn-hover));
+}*/
+
+.toast-container .success{background-color:#00a492}
+.toast-container .danger{background-color:#93000a}
+.toast-container .warning{background-color:#dfc600}
+.toast-container .toast-header{background-color:transparent;border:none;color:#e0e3e1}
+.toast-container .toast-header .close{color:#e0e3e1;text-shadow:none}
+/* *** */
+
+/* Focus is NOT the same as Focus-Visible */
+*:focus:not(:focus-visible), 
+*.focus:not(:focus-visible) {
+    outline-color: transparent;
+    outline-offset: 0;
+    outline-style: none;
+    outline-width: 0;
+    /**/
+    box-shadow: none;
+}
+*:is(:focus-visible) {
+    outline-color: rgb(var(--focus-ring));
+    outline-offset: -0.10rem;
+    outline-style: solid;
+    outline-width: 0.30rem;
+    /*
+    * Background and Foreground Colors *
+    background-color: rgba(var( --pry-container));
+    color: rgb(var(--on-tertiary-container))
+    */
+    /**/
+    box-shadow: none;
+    text-shadow: none;
+}
+/* - */
