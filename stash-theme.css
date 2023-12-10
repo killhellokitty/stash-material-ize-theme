@@ -5453,7 +5453,7 @@ button:not([title=Statistics], [title=Settings]).minimal:not(.nav-utility, .bran
     max-height: 32px;
     contain: content;
     overflow: hidden;
-    border-radius: 8px;
+    border-radius: 0;
     transition: background-color 0.55s ease, color 0.2s ease-in-out;
 }
 .selectable-filter ul :is(.selected-object, .excluded-object, .unselected-object) button.minimal.exclude-button.btn.btn-primary:hover {
