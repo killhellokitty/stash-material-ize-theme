@@ -10225,6 +10225,7 @@ button#parser-field-select.dropdown-toggle.btn.btn-primary {
     z-index: 5;
     transform: translate(0%,0%);
     transition: all 0.35s ease;
+    visibility: hidden;
 }
 .criterion-editor .form-group:has(>.input-group > input[placeholder="File path"].btn-secondary.form-control):focus-within::before {
     visibility: visible;
@@ -10287,6 +10288,7 @@ button#parser-field-select.dropdown-toggle.btn.btn-primary {
     margin-left: 16px;
     z-index: 5;
     transform: translate(0%,0%);
+    visibility: hidden;
 }
 .criterion-editor .form-group:has(>input[placeholder="phash"].btn-secondary.form-control):focus-within::before {
     visibility: visible;
@@ -10306,6 +10308,7 @@ button#parser-field-select.dropdown-toggle.btn.btn-primary {
     margin-left: 16px;
     z-index: 5;
     transform: translate(0%,0%);
+    visibility: hidden;
 }
 .criterion-editor .form-group:has(>input[placeholder="Stash ID Endpoint"].btn-secondary.form-control):focus-within::before {
     visibility: visible;
