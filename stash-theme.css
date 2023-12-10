@@ -1778,7 +1778,7 @@ div.react-datepicker .react-datepicker__month-year-dropdown {
 .react-datepicker__day, 
 .react-datepicker__time-name {
     line-height: 24px;
-    margin: 0.892rem;
+    margin: 0.446rem;
     width: 24px;
 }
 /* "Aria-Disabled" ="true" and ="false" within "Not" psuedo-element makes both statements "FALSE!" 
@@ -1915,10 +1915,12 @@ div.react-datepicker .react-datepicker__day.react-datepicker__day--disabled[aria
 .react-datepicker__time-container {
     border-left: 0;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
+    width: unset;
+    min-width: 120px;
 }
 div.react-datepicker .react-datepicker__header.react-datepicker__header--time {
     padding: 8px 12px 16px 12px;
