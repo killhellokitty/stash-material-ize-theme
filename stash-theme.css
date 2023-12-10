@@ -10298,6 +10298,7 @@ button#parser-field-select.dropdown-toggle.btn.btn-primary {
     position: relative;
 }
 .criterion-editor .form-group:has(>input[placeholder="Stash ID Endpoint"].btn-secondary.form-control)::before {
+    content: "Stash ID Endpoint";
     font-size: 12px;
     color: rgb(var(--pry-color));
     background-color: rgb(var(--card-color-collaps-show));
