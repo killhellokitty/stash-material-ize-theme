@@ -1933,7 +1933,7 @@ div.react-datepicker .react-datepicker__day.react-datepicker__day--disabled[aria
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: nowrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     width: unset;
     min-width: 120px;
