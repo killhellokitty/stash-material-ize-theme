@@ -1931,7 +1931,7 @@ div.react-datepicker .react-datepicker__header.react-datepicker__header--time {
     line-height: 18px;
 }
 div.react-datepicker div.react-datepicker__time-container div.react-datepicker__time {
-    background-color: rgb(var(--popover-color2));
+    background-color: rgb(var(--popover-color3));
     color: rgb(var(--on-surface-varient));
 }
 div.react-datepicker .react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box {
@@ -1943,8 +1943,8 @@ div.react-datepicker .react-datepicker__time-container .react-datepicker__time .
     height: 70px !important;
 }
 div.react-datepicker div.react-datepicker__time-container div.react-datepicker__time ul.react-datepicker__time-list li.react-datepicker__time-list-item:hover {
-    background-color: rgba(255,255,255,0.10);
-    color: #e7f7f4;
+    background-color: rgba(var(--white-color),var(--btn-hover));
+    color: rgb(var(--on-surface));
 }
 /* Month/Year Picker */
 .react-datepicker__year-option, .react-datepicker__month-option, .react-datepicker__month-year-option {
