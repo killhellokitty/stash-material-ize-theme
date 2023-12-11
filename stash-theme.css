@@ -135,6 +135,7 @@ h6,
     --card-color: 37, 54, 64; /*#253640*/
     --card-color-hover: 44, 64, 76; /*#2c404c*/
     --card-color-collaps-show: 30, 44, 52; /*#1e2c34*/
+    --card-color-collaps-show-hover: 39, 58, 68; /*#273a44*/
     --card-color2: 41, 57, 67; /*#293943*/
     --card-color-sel: 48, 64, 77; /*#30404D*/
     --card-fold: 59, 77, 92; /*#3b4d5c*/
@@ -10426,10 +10427,38 @@ button.btn.btn-primary.btn-sm:last-child {
 
 /* Radio Button Replacements */
 .form-check:has(>input[type="radio"]) {
-    display: none;
+    display: flex;
+    align-content: space-around;
+    flex-wrap: wrap;
+    position: relative;
 }
-
-
+.form-check > input[type="radio"] + label {
+    margin-left: 8px;
+    margin-top: -2px;
+    padding-bottom: 12px;
+}
+.form-check > input[type="radio"]::before {
+    content: "";
+    display: inline-block;
+    vertical-align: top;
+    width: 18px;
+    height: 18px;
+    border-radius: 5rem;
+    border: 2px solid rgb(var(--on-surface));
+    background-color: rgb(var(--card-color-collaps-show));
+    opacity: 1;
+    transition: all 0.55s ease-in 0.1s;
+}
+.form-check > input[type="radio"]:hover::before {
+    background-color: var(--card-color-collaps-show-hover);
+}
+.form-check > input[type="radio"]:checked::before {
+    box-shadow: inset 0 0 0 2px rgb(var(--card-color-collaps-show));
+    background-color: rgb(var(--pry-color));
+}
+.form-check > input[type="radio"]:focus-visible::before {
+    
+}
 
 /* Button Ripple */
 body :is(:not(.collapse.show.card .input-group):has(> .input-group-append)) button:not(.navbar-buttons a[href^="/scenes/new"] > button):not(.navbar-buttons a[href^="/movies/new"] > button):not(.navbar-buttons a[href^="/galleries/new"] > button):not(.navbar-buttons a[href^="/performers/new"] > button):not(.navbar-buttons a[href^="/studios/new"] > button):not(.navbar-buttons a[href^="/tags/new"] > button).btn.btn-primary:not(.scrubber-button):not(.minimal):not([title="Search"])::after {
