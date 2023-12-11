@@ -10481,6 +10481,19 @@ button.btn.btn-primary.btn-sm:last-child {
     box-shadow: inset 0 0 0 3px rgb(var(--pry-container));
 }
 
+/* Checkbox Button Replacements */
+.form-check:has(>input[type="checkbox"]) {
+    display: flex;
+    align-content: space-around;
+    flex-wrap: wrap;
+    position: relative;
+}
+.form-check > input[type="checkbox"] + label {
+
+}
+
+
+
 /*** Button Ripple ***/
 body :is(:not(.collapse.show.card .input-group):has(> .input-group-append)) button:not(.navbar-buttons a[href^="/scenes/new"] > button):not(.navbar-buttons a[href^="/movies/new"] > button):not(.navbar-buttons a[href^="/galleries/new"] > button):not(.navbar-buttons a[href^="/performers/new"] > button):not(.navbar-buttons a[href^="/studios/new"] > button):not(.navbar-buttons a[href^="/tags/new"] > button).btn.btn-primary:not(.scrubber-button):not(.minimal):not([title="Search"])::after {
     content: "";
