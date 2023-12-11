@@ -10433,9 +10433,9 @@ button.btn.btn-primary.btn-sm:last-child {
     position: relative;
 }
 .form-check > input[type="radio"] + label {
-    margin-left: 8px;
+    margin-left: 11px;
     margin-top: -2px;
-    padding-bottom: 12px;
+    padding-bottom: 13px;
 }
 .form-check > input[type="radio"]::before {
     content: "";
@@ -10457,7 +10457,7 @@ button.btn.btn-primary.btn-sm:last-child {
     background-color: rgb(var(--pry-color));
 }
 .form-check > input[type="radio"]:focus-visible::before {
-    
+
 }
 
 /* Button Ripple */
