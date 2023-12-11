@@ -1778,6 +1778,7 @@ div.react-datepicker .react-datepicker__month-year-dropdown {
     background-color: rgb(var(--popover-color2));
     border: 0;
     color: rgb(var(--on-surface));
+    box-shadow: var(--elevation-1);
 }
 .react-datepicker__day-name, 
 .react-datepicker__day, 
