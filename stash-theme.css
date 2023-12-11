@@ -1954,7 +1954,7 @@ div.react-datepicker div.react-datepicker__time-container div.react-datepicker__
 }
 /* Month/Year Picker */
 .react-datepicker__year-option, .react-datepicker__month-option, .react-datepicker__month-year-option {
-    line-height: 28px;
+    line-height: 32px;
 }
 .react-datepicker__year-option--selected, .react-datepicker__month-option--selected, .react-datepicker__month-year-option--selected {
     left: 7px;
