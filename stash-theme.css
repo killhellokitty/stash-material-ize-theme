@@ -1919,7 +1919,7 @@ div.react-datepicker .react-datepicker__day.react-datepicker__day--disabled[aria
 .react-datepicker__time-container {
     border-left: 0;
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     flex-wrap: nowrap;
     justify-content: space-around;
     align-items: baseline;
