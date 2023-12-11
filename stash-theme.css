@@ -1760,6 +1760,9 @@ div.react-datepicker .react-datepicker__year-dropdown-container .react-datepicke
     color: rgb(var(--on-surface-variant));
     padding-bottom: 30px;
 }
+div.react-datepicker button.react-datepicker__navigation {
+    top: calc(0.4rem + 10px);
+}
 .react-datepicker__navigation-icon {
     font-size: 32px;
 }
