@@ -1748,8 +1748,10 @@ div.react-datepicker .react-datepicker__header {
     padding-bottom: calc(16px - 0.4rem);
 }
 div.react-datepicker__month-container {
-    border-bottom: 1px solid rgb(var(--outline));
     padding-bottom: 8px;
+}
+div.react-datepicker:has(*.react-datepicker__time-container) div.react-datepicker__month-container {
+    border-bottom: 1px solid rgb(var(--outline));
 }
 div.react-datepicker .react-datepicker__month-dropdown-container .react-datepicker__month-read-view, 
 div.react-datepicker .react-datepicker__year-dropdown-container .react-datepicker__year-read-view {
