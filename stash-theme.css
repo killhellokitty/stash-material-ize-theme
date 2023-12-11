@@ -10488,9 +10488,9 @@ button.btn.btn-primary.btn-sm:last-child {
 
 /* Checkbox Button Replacements */
 .form-check:has(>input[type="checkbox"]) {
-    display: flex;
-    align-content: space-around;
-    flex-wrap: wrap;
+    display: block;
+    /*align-content: space-around;
+    flex-wrap: wrap;*/
     position: relative;
 }
 .form-check > input[type="checkbox"] + label {
@@ -10507,11 +10507,13 @@ button.btn.btn-primary.btn-sm:last-child {
     height: 18px;
     border-radius: 2px;
     border: 2px solid rgb(var(--on-surface-variant));
-    background-color: rgb(var(--card-color-collaps-show));
+    background-color: rgb(var(--card-color2));
     opacity: 1;
     transition: all 0.55s ease-in 0.1s;
 }
+.form-check > input[type="checkbox"]:hover::before {
 
+}
 
 /*** Button Ripple ***/
 body :is(:not(.collapse.show.card .input-group):has(> .input-group-append)) button:not(.navbar-buttons a[href^="/scenes/new"] > button):not(.navbar-buttons a[href^="/movies/new"] > button):not(.navbar-buttons a[href^="/galleries/new"] > button):not(.navbar-buttons a[href^="/performers/new"] > button):not(.navbar-buttons a[href^="/studios/new"] > button):not(.navbar-buttons a[href^="/tags/new"] > button).btn.btn-primary:not(.scrubber-button):not(.minimal):not([title="Search"])::after {
