@@ -1763,6 +1763,10 @@ div.react-datepicker .react-datepicker__year-dropdown-container .react-datepicke
 .react-datepicker__navigation-icon {
     font-size: 32px;
 }
+.react-datepicker__navigation--next--with-time:not(.react-datepicker__navigation--next--with-today-button) {
+    right: 0;
+}
+
 .react-datepicker__year-read-view--down-arrow, 
 .react-datepicker__month-read-view--down-arrow, 
 .react-datepicker__month-year-read-view--down-arrow, 
