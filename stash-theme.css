@@ -10478,7 +10478,7 @@ button.btn.btn-primary.btn-sm:last-child {
     outline-offset: 0.1rem;
     background-color: rgba(var(--focus-ring));
     border: 2px solid rgb(var(--on-tertiary-container));
-    box-shadow: inset 0 0 0 2px rgb(var(--pry-container));
+    box-shadow: inset 0 0 0 3px rgb(var(--pry-container));
 }
 
 /*** Button Ripple ***/
