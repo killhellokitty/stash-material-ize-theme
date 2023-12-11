@@ -1968,10 +1968,10 @@ div.react-datepicker div.react-datepicker__time-container div.react-datepicker__
 .react-datepicker__month-year-option {
     line-height: 32px;
 }
-.react-datepicker__year-option .react-datepicker__year-option--selected-year,
-.react-datepicker__month-option .react-datepicker__month-option--selected-month,
-.react-datepicker__month-year-option .react-datepicker__month-year-option--selected-month-year {
-    color: rgb(var(--pry-color));
+.react-datepicker__year-option.react-datepicker__year-option--selected-year,
+.react-datepicker__month-option.react-datepicker__month-option--selected-month,
+.react-datepicker__month-year-option.react-datepicker__month-year-option--selected-month-year {
+    color: rgb(var(--btn-min-primary));
 }
 
 .react-datepicker__year-option--selected, 
