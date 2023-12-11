@@ -423,8 +423,8 @@ option:checked {
     top: 1.3rem;
 }
 input[type=radio] {
-    width: 18px;
-    height: 18px;
+    width: 20px;
+    height: 20px;
     accent-color: rgb(var(--pry-color));
 }
 input[type=checkbox] {
@@ -10440,16 +10440,17 @@ button.btn.btn-primary.btn-sm:last-child {
     content: "";
     display: inline-block;
     vertical-align: top;
-    width: 18px;
-    height: 18px;
+    width: 20px;
+    height: 20px;
     border-radius: 5rem;
-    border: 2px solid rgb(var(--on-surface));
+    border: 2px solid rgb(var(--on-surface-variant));
     background-color: rgb(var(--card-color-collaps-show));
     opacity: 1;
     transition: all 0.55s ease-in 0.1s;
 }
 .form-check > input[type="radio"]:hover::before {
     background-color: rgb(var(--card-color-collaps-show-hover));
+    border: 2px solid rgb(var(--on-surface));
 }
 .form-check > input[type="radio"]:checked::before,
 .form-check > input[type="radio"]:hover:checked::before {
@@ -10462,13 +10463,13 @@ button.btn.btn-primary.btn-sm:last-child {
     outline-width: 0.3rem;
     outline-style: solid;
     outline-color: rgb(var(--focus-ring));
-    outline-offset: 0.25rem;
+    outline-offset: 0.1rem;
 }
 .form-check > input[type="radio"]:focus-visible:checked::before {
     outline-width: 0.3rem;
     outline-style: solid;
     outline-color: rgb(var(--focus-ring));
-    outline-offset: 0.25rem;
+    outline-offset: 0.1rem;
     background-color: rgba(var(--focus-ring));
     border: 2px solid rgb(var(--on-tertiary-container));
     box-shadow: inset 0 0 0 2px rgb(var(--pry-container));
