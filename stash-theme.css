@@ -1780,6 +1780,9 @@ div.react-datepicker button.react-datepicker__navigation {
     width: 11px;
     top: 8px;
 }
+.react-datepicker__navigation:hover *:before {
+    border-color: rgb(var(--on-surface-variant));
+}
 div.react-datepicker .react-datepicker__year-dropdown, 
 div.react-datepicker .react-datepicker__month-dropdown,
 div.react-datepicker .react-datepicker__month-year-dropdown {
