@@ -487,19 +487,19 @@ input[type=checkbox]:focus-visible {
 }
 /*input[type=checkbox]:checked {
     accent-color: rgb(var(--pry-color));
-    box-shadow: none;*/
-}
+    box-shadow: none;
+}*/
 /*input[type=checkbox]:checked:hover {
-    accent-color: #99d4ff;*/
-}
+    accent-color: #99d4ff;
+}*/
 /*input[type=checkbox]:checked:focus-visible {
     accent-color: rgb(var(--pry-color));
     outline-color: rgb(var(--white-color));
     outline-style: solid;
     outline-width: 0.25rem;
     outline-offset: -1px;
-    box-shadow: none;*/
-}
+    box-shadow: none;
+}*/
 /*input[type=checkbox]:disabled {
     accent-color: rgb(var(--pry-color));
     box-shadow: none;
