@@ -10489,9 +10489,23 @@ button.btn.btn-primary.btn-sm:last-child {
     position: relative;
 }
 .form-check > input[type="checkbox"] + label {
-
+    margin-left: 11px;
+    margin-top: -2px;
+    padding-bottom: 13px;
+    margin-bottom: 0.15rem;
 }
-
+.form-check > input[type="checkbox"]::before {
+    content: "";
+    display: inline-block;
+    vertical-align: top;
+    width: 18px;
+    height: 18px;
+    border-radius: 2px;
+    border: 2px solid rgb(var(--on-surface-variant));
+    background-color: rgb(var(--card-color-collaps-show));
+    opacity: 1;
+    transition: all 0.55s ease-in 0.1s;
+}
 
 
 /*** Button Ripple ***/
