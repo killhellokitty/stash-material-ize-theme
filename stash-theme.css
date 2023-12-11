@@ -1946,8 +1946,9 @@ div.react-datepicker .react-datepicker__header.react-datepicker__header--time {
 }
 div.react-datepicker div.react-datepicker__time-container div.react-datepicker__time {
     background-color: rgb(var(--popover-color3));
-    color: rgb(var(--on-surface-varient));
+    color: rgb(var(--on-surface-variant));
     box-shadow: var(--elevation-0-inverse);
+    border-radius: 4px;
 }
 div.react-datepicker .react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box {
     width: unset;
