@@ -10456,9 +10456,21 @@ button.btn.btn-primary.btn-sm:last-child {
     background-color: rgb(var(--pry-color));
 }
 .form-check > input[type="radio"]:focus-visible::before {
-    background-color: rgba(var( --pry-container));
-    border: 3px solid rgb(var(--on-tertiary-container));
-    outline: 0;
+    background-color: rgba(var(--pry-container));
+    border: 2px solid rgb(var(--on-tertiary-container));
+    outline-width: 0.3rem;
+    outline-style: solid;
+    outline-color: rgb(var(--focus-ring));
+    outline-offset: 0.25rem;
+}
+.form-check > input[type="radio"]:focus-visible:checked::before {
+    outline-width: 0.3rem;
+    outline-style: solid;
+    outline-color: rgb(var(--focus-ring));
+    outline-offset: 0.25rem;
+    background-color: rgba(var(--focus-ring));
+    border: 2px solid rgb(var(--on-tertiary-container));
+    box-shadow: inset 0 0 0 2px rgb(var(--pry-container));
 }
 
 /* Button Ripple */
