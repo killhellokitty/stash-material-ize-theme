@@ -1967,7 +1967,8 @@ div.react-datepicker div.react-datepicker__time-container div.react-datepicker__
     background-color: rgba(var(--white-color),var(--btn-hover));
     color: rgb(var(--on-surface));
 }
-.react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list li.react-datepicker__time-list-item--selected {
+div.react-datepicker div.react-datepicker__time-container div.react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list li.react-datepicker__time-list-item--selected,
+div.react-datepicker div.react-datepicker__time-container div.react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list li.react-datepicker__time-list-item--selected:hover {
     background-color: rgb(var(--btn-min-primary));
     color: rgb(var(--btn-primary-text));
 }
