@@ -1929,6 +1929,7 @@ div.react-datepicker .react-datepicker__day.react-datepicker__day--disabled[aria
     width: unset;
     min-width: 120px;
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 div.react-datepicker .react-datepicker__header.react-datepicker__header--time {
     padding: 0 12px 12px;
