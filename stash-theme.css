@@ -1971,6 +1971,7 @@ div.react-datepicker div.react-datepicker__time-container div.react-datepicker__
 div.react-datepicker div.react-datepicker__time-container div.react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list li.react-datepicker__time-list-item--selected:hover {
     background-color: rgb(var(--btn-min-primary));
     color: rgb(var(--btn-primary-text));
+    font-weight: 500;
 }
 /* Month/Year Picker */
 .react-datepicker__year-option, 
