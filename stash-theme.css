@@ -485,15 +485,15 @@ input[type=checkbox]:focus-visible {
     /*box-shadow: inset 0 0 0 5rem rgba(var(--white-color),var(--btn-hover));
     box-shadow: none;*/
 }
-input[type=checkbox]:checked {
-    /*accent-color: rgb(var(--pry-color));
+/*input[type=checkbox]:checked {
+    accent-color: rgb(var(--pry-color));
     box-shadow: none;*/
 }
-input[type=checkbox]:checked:hover {
-    /*accent-color: #99d4ff;*/
+/*input[type=checkbox]:checked:hover {
+    accent-color: #99d4ff;*/
 }
-input[type=checkbox]:checked:focus-visible {
-    /*accent-color: rgb(var(--pry-color));
+/*input[type=checkbox]:checked:focus-visible {
+    accent-color: rgb(var(--pry-color));
     outline-color: rgb(var(--white-color));
     outline-style: solid;
     outline-width: 0.25rem;
