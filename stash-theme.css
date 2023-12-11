@@ -433,13 +433,15 @@ input[type=checkbox] {
     border-radius: 5rem;
     border-style: none;
     border: 0;
-    box-shadow: inset 0 0 0 5rem rgba(var(--white-color),var(--btn-hover));
+    /*box-shadow: inset 0 0 0 5rem rgba(var(--white-color),var(--btn-hover));
+    box-shadow: none;*/
 }
-.scene-card input[type=checkbox].card-check.form-control,
+/*.scene-card input[type=checkbox].card-check.form-control,
 .performer-card input[type=checkbox].card-check.form-control,
 .scene-card input[type=checkbox].card-check.form-control:focus-visible,
 .performer-card input[type=checkbox].card-check.form-control:focus-visible {
     box-shadow: inset 0 0 0 5rem rgba(var(--white-color),var(--btn-hover));
+    box-shadow: none;
 }
 .scene-card input[type=checkbox].card-check.form-control:checked,
 .performer-card input[type=checkbox].card-check.form-control:checked,
@@ -450,14 +452,17 @@ input[type=checkbox] {
 .scene-table label input[type=checkbox].form-control {
     box-shadow: inset 0 0 0 2px #6f7976, inset 0 0 0 5rem #293c38;
     outline-offset: 2px;
+    box-shadow: none;
+    outline: 0;
 }
 .scene-table label input[type="checkbox"].form-control:hover {
     box-shadow: inset 0 0 0 2px #6f7976, inset 0 0 0 5rem #3d5a54;
+    box-shadow: none;
 }
 .scene-table label input[type="checkbox"].form-control:checked,
 .scene-table label input[type="checkbox"].form-control:checked:focus {
     box-shadow: inset 0 0 0 5rem transparent;
-}
+}*/
 table.table.table-striped.table-bordered>tbody>tr:hover>td label input[type="checkbox"].form-control:focus-visible,
 table.table.table-striped.table-bordered>tbody>tr:nth-child(odd):hover>td label input[type="checkbox"].form-control:focus-visible,
 table.table.table-striped.table-bordered>tbody>tr:hover>td label input[type="checkbox"].form-control:checked:focus-visible,
@@ -475,38 +480,37 @@ input[type=radio]:focus-visible {
     outline-width: 0;
 }
 input[type=checkbox]:focus-visible {
-    outline-color: rgb(var(--white-color));
-    outline-style: solid;
-    outline-width: 0.25rem;
-    outline-offset: -1.5px;
-    box-shadow: inset 0 0 0 5rem rgba(var(--white-color),var(--btn-hover));
+    outline-style: none;
+    outline-width: 0;
+    /*box-shadow: inset 0 0 0 5rem rgba(var(--white-color),var(--btn-hover));
+    box-shadow: none;*/
 }
 input[type=checkbox]:checked {
-    accent-color: rgb(var(--pry-color));
-    box-shadow: none;
+    /*accent-color: rgb(var(--pry-color));
+    box-shadow: none;*/
 }
 input[type=checkbox]:checked:hover {
-    accent-color: #99d4ff;
+    /*accent-color: #99d4ff;*/
 }
 input[type=checkbox]:checked:focus-visible {
-    accent-color: rgb(var(--pry-color));
+    /*accent-color: rgb(var(--pry-color));
     outline-color: rgb(var(--white-color));
     outline-style: solid;
     outline-width: 0.25rem;
     outline-offset: -1px;
-    box-shadow: none;
+    box-shadow: none;*/
 }
-input[type=checkbox]:disabled {
+/*input[type=checkbox]:disabled {
     accent-color: rgb(var(--pry-color));
     box-shadow: none;
     opacity: 0.4;
-}
-input[type=checkbox]:disabled:checked {
+}*/
+/*input[type=checkbox]:disabled:checked {
     accent-color: rgb(var(--pry-color));
     box-shadow: none;
     opacity: 0.4;
-}
-input#ignore-auto-tag[type="checkbox"] {
+}*/
+/*input#ignore-auto-tag[type="checkbox"] {
     box-shadow: inset 0 0 0 2px rgb(var(--on-surface-variant)), inset 0 0 0 5rem rgb(var(--body-color2));
 }
 .tagger-container .collapse.show.card input.form-check-input[type="checkbox"] {
@@ -519,9 +523,9 @@ input#ignore-auto-tag[type="checkbox"]:hover,
 input#ignore-auto-tag[type="checkbox"]:checked,
 .tagger-container .collapse.show.card input.form-check-input[type="checkbox"]:checked {
     box-shadow: inset 0 0 0 5rem transparent;
-}
+}*/
 
-input#include-sub-tags[type="checkbox"] {
+/*input#include-sub-tags[type="checkbox"] {
     box-shadow: inset 0 0 0 2px rgb(var(--on-surface-variant)), inset 0 0 0 5rem rgb(var(--card-color-collaps-show));
 }
 input#include-sub-tags[type="checkbox"]:hover {
@@ -529,7 +533,7 @@ input#include-sub-tags[type="checkbox"]:hover {
 }
 input#include-sub-tags[type="checkbox"]:checked {
     box-shadow: inset 0 0 0 5rem transparent;
-}
+}*/
 
 /* --- Range Slider and Thumb decorations ---*/
 @media (min-width: 576px) {
