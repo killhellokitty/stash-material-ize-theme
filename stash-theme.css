@@ -147,6 +147,7 @@ h6,
     --tab-active-color: 122, 190, 238; /*#7abeee*/
     --popover-color: 70, 97, 114; /*#466172 --#3c5463*/
     --popover-color2: 80, 110, 130; /*#506e82 --#466172*/ 
+    --popover-color3: 60, 84, 98; /*#3c5462*/
     --tooltip-color: 46, 49, 51; /*#2e3133*/
     --menu-color: 50, 62, 72; /*#323e48 should this be named --surface-container? */
     --modal-color: 25, 32, 38; /*#192026*/
@@ -1770,9 +1771,9 @@ div.react-datepicker .react-datepicker__year-dropdown-container .react-datepicke
 div.react-datepicker .react-datepicker__year-dropdown, 
 div.react-datepicker .react-datepicker__month-dropdown,
 div.react-datepicker .react-datepicker__month-year-dropdown {
-    background-color: #373d3b;
+    background-color: rgb(var(--popover-color2));
     border: 0;
-    color: #c0ebe2;
+    color: rgb(var(--on-surface));
 }
 .react-datepicker__day-name, 
 .react-datepicker__day, 
@@ -1945,7 +1946,13 @@ div.react-datepicker div.react-datepicker__time-container div.react-datepicker__
     background-color: rgba(255,255,255,0.10);
     color: #e7f7f4;
 }
-
+/* Month/Year Picker */
+.react-datepicker__year-option, .react-datepicker__month-option, .react-datepicker__month-year-option {
+    line-height: 28px;
+}
+.react-datepicker__year-option--selected, .react-datepicker__month-option--selected, .react-datepicker__month-year-option--selected {
+    left: 7px;
+}
 /* --- Dropdown Menu's --- */
 .show > .dropdown-menu.show,
 .show.dropdown.btn-group .dropdown-menu.show {
