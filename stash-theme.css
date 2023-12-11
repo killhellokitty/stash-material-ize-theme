@@ -10423,6 +10423,14 @@ button.btn.btn-primary.btn-sm:last-child {
 }
 
 /* *** */
+
+/* Radio Button Replacements */
+.form-check:has(>input[type="radio"]) {
+    display: none;
+}
+
+
+
 /* Button Ripple */
 body :is(:not(.collapse.show.card .input-group):has(> .input-group-append)) button:not(.navbar-buttons a[href^="/scenes/new"] > button):not(.navbar-buttons a[href^="/movies/new"] > button):not(.navbar-buttons a[href^="/galleries/new"] > button):not(.navbar-buttons a[href^="/performers/new"] > button):not(.navbar-buttons a[href^="/studios/new"] > button):not(.navbar-buttons a[href^="/tags/new"] > button).btn.btn-primary:not(.scrubber-button):not(.minimal):not([title="Search"])::after {
     content: "";
