@@ -471,10 +471,8 @@ table.table.table-striped.table-bordered>tbody>tr:nth-child(odd):hover>td label 
     margin-top: -0.05rem;
 }
 input[type=radio]:focus-visible {
-    outline-color: rgb(var(--white-color));
-    outline-style: solid;
-    outline-width: 0.25rem;
-    outline-offset: -1.5px;
+    outline-style: none;
+    outline-width: 0;
 }
 input[type=checkbox]:focus-visible {
     outline-color: rgb(var(--white-color));
@@ -10436,6 +10434,7 @@ button.btn.btn-primary.btn-sm:last-child {
     margin-left: 11px;
     margin-top: -2px;
     padding-bottom: 13px;
+    margin-bottom: 0.15rem;
 }
 .form-check > input[type="radio"]::before {
     content: "";
@@ -10450,14 +10449,16 @@ button.btn.btn-primary.btn-sm:last-child {
     transition: all 0.55s ease-in 0.1s;
 }
 .form-check > input[type="radio"]:hover::before {
-    background-color: var(--card-color-collaps-show-hover);
+    background-color: rgb(var(--card-color-collaps-show-hover));
 }
 .form-check > input[type="radio"]:checked::before {
     box-shadow: inset 0 0 0 2px rgb(var(--card-color-collaps-show));
     background-color: rgb(var(--pry-color));
 }
 .form-check > input[type="radio"]:focus-visible::before {
-
+    background-color: rgba(var( --pry-container));
+    border: 3px solid rgb(var(--on-tertiary-container));
+    outline: 0;
 }
 
 /* Button Ripple */
