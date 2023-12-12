@@ -424,20 +424,33 @@ option:checked {
     top: 1.3rem;
 }
 input[type=radio] {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
     width: 20px;
     height: 20px;
-    accent-color: rgb(var(--pry-color));
-    display: flex;
+    /* accent-color: rgb(var(--pry-color)); */
+    display: inline-block;
     position: relative;
 }
 input[type=checkbox] {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
     width: 18px;
     height: 18px;
+    z-index: -1;
+    position: absolute;
+    display: block;
+    /* margin: 0; */
     border-radius: 5rem;
-    border-style: none;
-    border: 0;
-    /*box-shadow: inset 0 0 0 5rem rgba(var(--white-color),var(--btn-hover));
-    box-shadow: none;*/
+    width: 40px;
+    height: 40px;
+    transform: scale(1);
+    transition: transform 0.35s ease;
+    background-color: rgb(var(--on-surface),var(--btn-hover));
+    top: -9px;
+    left: -7px;
 }
 /*.scene-card input[type=checkbox].card-check.form-control,
 .performer-card input[type=checkbox].card-check.form-control,
@@ -10494,10 +10507,12 @@ button.btn.btn-primary.btn-sm:last-child {
 
 /* Checkbox Button Replacements */
 .form-check:has(>input[type="checkbox"]) {
-    display: flex;
-    /*align-content: space-around;
-    flex-wrap: wrap;*/
+    display: inline-block;
     position: relative;
+    z-index: 0;
+    line-height: 1.5;
+    font-size: 16px;
+    font-family: 'Roboto Flex','Roboto';
 }
 .form-check > input[type="checkbox"] + label {
     margin-left: 11px;
