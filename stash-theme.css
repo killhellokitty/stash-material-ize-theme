@@ -10429,8 +10429,8 @@ button.btn.btn-primary.btn-sm:last-child {
 
 /* Radio Button Replacements */
 .form-check:has(>input[type="radio"]) {
-    /*display: flex;*/
-    display: block;
+    display: flex;
+    /*display: block;*/
     /*align-content: space-around;
     flex-wrap: wrap;*/
     position: relative;
@@ -10486,9 +10486,13 @@ button.btn.btn-primary.btn-sm:last-child {
     box-shadow: inset 0 0 0 3px rgb(var(--pry-container));
 }
 /* Radio Buttons Misc. Background-Colors etc. */
-#query-edit-config .form-check > input[type="radio"]::before {
+#query-edit-config .form-check > input[type="radio"]:not(:checked)::before {
     background-color: rgb(var(--card-color2));
     content: "";
+}
+#query-edit-config .form-check > input[type="radio"]:hover::before {
+    background-color: rgb(var(--card-color-hover));
+    box-shadow: 0 0 0 8px rgb(var(--card-color-hover));
 }
 
 /* Checkbox Button Replacements */
