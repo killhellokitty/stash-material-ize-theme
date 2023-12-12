@@ -10515,10 +10515,14 @@ button.btn.btn-primary.btn-sm:last-child {
     font-family: 'Roboto Flex','Roboto';
 }
 .form-check > input[type="checkbox"] + label {
-    margin-left: 11px;
+    /*margin-left: 11px;
     margin-top: -2px;
     padding-bottom: 13px;
-    margin-bottom: 0.15rem;
+    margin-bottom: 0.15rem;*/
+    margin: 0;
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
 }
 .form-check > input[type="checkbox"]::before {
     content: "";
