@@ -10449,7 +10449,14 @@ button.btn.btn-primary.btn-sm:last-child {
 .tagger-container .d-flex.align-items-center .d-flex > button + button.ml-1.btn.btn-primary {
     margin-left: 1rem !important;
 }
-
+.row:has(>:is(label[for="batch-search-delay"], label[for="colorize-color-green"], label[for="colorize-color-yellow"], label[for="colorize-color-red"])) {
+    flex-wrap: nowrap;
+}
+:is(label[for="batch-search-delay"], label[for="colorize-color-green"], label[for="colorize-color-yellow"], label[for="colorize-color-red"]) {
+    margin-right: 30px;
+    white-space: normal;
+    padding-right: 0;
+}
 /* *** */
 
 /* Radio Button Replacements */
