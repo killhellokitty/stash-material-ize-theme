@@ -476,7 +476,7 @@ table.table.table-striped.table-bordered>tbody>tr:nth-child(odd):hover>td label 
     accent-color: var(--body-color2);
 }
 .form-check-input {
-    margin-top: -0.05rem;
+    margin-top: -0.169rem;
 }
 input[type=radio]:focus-visible {
     outline-style: none;
@@ -10494,7 +10494,7 @@ button.btn.btn-primary.btn-sm:last-child {
 
 /* Checkbox Button Replacements */
 .form-check:has(>input[type="checkbox"]) {
-    display: block;
+    display: flex;
     /*align-content: space-around;
     flex-wrap: wrap;*/
     position: relative;
