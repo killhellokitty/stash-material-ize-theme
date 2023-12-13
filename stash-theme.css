@@ -10604,7 +10604,7 @@ button.btn.btn-primary.btn-sm:last-child {
     opacity: 0.32;
 }
 .form-check:hover > input[type="checkbox"]:focus {
-    opacity: 0.36;
+    opacity: 0.38;
 }
 .form-check > input[type="checkbox"]:active {
     opacity: 1;
