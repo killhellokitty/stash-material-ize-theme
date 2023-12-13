@@ -433,25 +433,26 @@ input[type=radio] {
     display: inline-block;
     position: relative;
 }
-/*input[type=checkbox] {
+input[type=checkbox] {
     appearance: none;
-    -moz-appearance: none;
+    --moz-appearance: none;
     -webkit-appearance: none;
-    width: 18px;
-    height: 18px;
     z-index: -1;
     position: absolute;
-    display: block;*/
-    /* margin: 0; */
-    /*border-radius: 5rem;
+    display: block;
+    border-radius: 5rem;
+    background-color: rgb(var(--on-surface),var(--btn-hover));
     width: 40px;
     height: 40px;
-    transform: scale(1);
-    transition: transform 0.35s ease;
-    background-color: rgb(var(--on-surface),var(--btn-hover));
     top: -9px;
     left: -7px;
-}*/
+    opacity: 0;
+    box-shadow: none;
+    outline: none;
+    pointer-events: none;
+    transform: scale(1);
+    transition: opacity 0.4s, transform 0.45s;
+}
 /*.scene-card input[type=checkbox].card-check.form-control,
 .performer-card input[type=checkbox].card-check.form-control,
 .scene-card input[type=checkbox].card-check.form-control:focus-visible,
