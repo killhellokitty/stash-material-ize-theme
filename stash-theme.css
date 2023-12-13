@@ -254,7 +254,7 @@ h6,
     /*
     * Background and Foreground Colors *
     background-color: rgba(var( --pry-container));
-    color: rgb(var(--on-tertiary-container))
+    color: rgb(var(--on-tertiary-container));
     */
     /**/
     box-shadow: none;
@@ -5138,8 +5138,7 @@ div[draggable="true"] .recommendation-row:not(.scene-recommendations):not(.studi
     padding-left: 24px;
     padding-right: 24px;
 }
-.pagination button.btn.btn-secondary:not(:disabled):not(.disabled):hover,
-.pagination button.btn.btn-secondary:not(:disabled):not(.disabled):focus:not(:focus-visible) {
+.pagination button.btn.btn-secondary:not(:disabled):not(.disabled):hover {
     background-color: rgba(var(--pry-color),0.5);
     border-color: transparent;
     color: rgb(var(--on-pry));
@@ -5152,12 +5151,14 @@ div[draggable="true"] .recommendation-row:not(.scene-recommendations):not(.studi
 .pagination button.btn.btn-secondary:not(:disabled):not(.disabled):focus-visible {
     outline-color: rgb(var(--focus-ring));
     outline-style: solid;
-    outline-width: 0.25rem;
-    outline-offset: -1px;
+    outline-width: 0.3rem;
+    outline-offset: -0.1rem;
     border-color: transparent;
     text-shadow: none;
-    background-color: rgba(var(--pry-color),0.5);
-    color: rgb(var(--on-pry));
+    /*background-color: rgba(var(--pry-color),0.5);
+    color: rgb(var(--on-pry));*/
+    background-color: rgba(var( --pry-container));
+    color: rgb(var(--on-tertiary-container));
     box-shadow: none;
     z-index: 2;
 }
@@ -5174,7 +5175,7 @@ div[draggable="true"] .recommendation-row:not(.scene-recommendations):not(.studi
     opacity: var(--btn-disabled);
 }
 .pagination button.btn.btn-secondary:not(:disabled):not(.disabled).active,
-.pagination button.btn.btn-secondary:not(:disabled):not(.disabled).active:is(:hover, :focus, :focus-visible) {
+.pagination button.btn.btn-secondary:not(:disabled):not(.disabled).active:is(:hover, :focus) {
     color: rgb(var(--on-pry));
     background-color: rgb(var(--pry-color));
     border-color: transparent;
@@ -5189,6 +5190,8 @@ div[draggable="true"] .recommendation-row:not(.scene-recommendations):not(.studi
     outline-offset: -1px;
     outline-style: solid;
     outline-width: 0.25rem;
+    color: rgba(var( --pry-container));
+    background-color: rgb(var(--on-tertiary-container));
     box-shadow: none;
     z-index: 2;
 }
