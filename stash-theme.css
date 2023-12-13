@@ -2008,6 +2008,7 @@ div.react-datepicker div.react-datepicker__time-container div.react-datepicker__
     max-width: 280px;
     min-width: 112px;
     box-shadow: var(--elevation-2);
+    transform: translate3d(0px, 38px, 0px) !important;
     will-change: transform, transition;
     overflow: hidden;
     transition: background-color 0.55s ease, outline 0.4s ease-in, box-shadow 0.4s ease-in, transform 0.8s ease;
