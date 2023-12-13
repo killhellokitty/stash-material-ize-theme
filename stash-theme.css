@@ -433,7 +433,7 @@ input[type=radio] {
     display: inline-block;
     position: relative;
 }
-input[type=checkbox] {
+/*input[type=checkbox] {
     appearance: none;
     -moz-appearance: none;
     -webkit-appearance: none;
@@ -441,9 +441,9 @@ input[type=checkbox] {
     height: 18px;
     z-index: -1;
     position: absolute;
-    display: block;
+    display: block;*/
     /* margin: 0; */
-    border-radius: 5rem;
+    /*border-radius: 5rem;
     width: 40px;
     height: 40px;
     transform: scale(1);
@@ -451,7 +451,7 @@ input[type=checkbox] {
     background-color: rgb(var(--on-surface),var(--btn-hover));
     top: -9px;
     left: -7px;
-}
+}*/
 /*.scene-card input[type=checkbox].card-check.form-control,
 .performer-card input[type=checkbox].card-check.form-control,
 .scene-card input[type=checkbox].card-check.form-control:focus-visible,
@@ -10571,9 +10571,12 @@ button.btn.btn-primary.btn-sm:last-child {
     border-color: rgb(var(--pry-color));
     background-color: rgb(var(--pry-color));
 }
-input[type=checkbox]:is(:checked, :indeterminate) + label::after {
+.form-check > input[type=checkbox]:is(:checked, :indeterminate) + label::after {
     color: rgb(var(--on-sec));
 }
+
+
+
 /*** Button Ripple ***/
 body :is(:not(.collapse.show.card .input-group):has(> .input-group-append)) button:not(.navbar-buttons a[href^="/scenes/new"] > button):not(.navbar-buttons a[href^="/movies/new"] > button):not(.navbar-buttons a[href^="/galleries/new"] > button):not(.navbar-buttons a[href^="/performers/new"] > button):not(.navbar-buttons a[href^="/studios/new"] > button):not(.navbar-buttons a[href^="/tags/new"] > button).btn.btn-primary:not(.scrubber-button):not(.minimal):not([title="Search"])::after {
     content: "";
