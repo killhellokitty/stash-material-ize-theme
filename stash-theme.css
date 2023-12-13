@@ -10638,7 +10638,9 @@ button.btn.btn-primary.btn-sm:last-child {
     top: 0%;
     position: relative;
 }
-
+.criterion-editor .form-check > input[type="checkbox"] + label::after {
+    left: 14px;
+}
 
 /*** Button Ripple ***/
 body :is(:not(.collapse.show.card .input-group):has(> .input-group-append)) button:not(.navbar-buttons a[href$="/new"] > button).btn.btn-primary:not(.scrubber-button):not(.minimal):not([title="Search"])::after {
