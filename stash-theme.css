@@ -1058,23 +1058,23 @@ input[type=range]::-ms-tooltip {
 }
 
 .text-muted {
-    color: rgb(var(--muted-text)) !important; /*#656B84*/
+    color: rgb(var(--muted-text)); /*#656B84*/
 }
 .bg-secondary {
     background: none;
-    background-color: unset !important;
+    background-color: transparent;
 }
 a.bg-secondary:hover, 
 a.bg-secondary:focus, 
 button.bg-secondary:hover, 
 button.bg-secondary:focus {
-    background-color: unset !important;
+    background-color: transparent;
 }
 .text-white {
-     color: unset !important;
+    color: rgb(var(--on-surface));
 }
 .border-secondary {
-     border-color: #bec9c5 !important;
+     border-color: #bec9c5;
 }
 /* --- Changes the space between the button in the top right corner of the page --- */
 .order-2 button {
