@@ -10550,6 +10550,16 @@ button.btn.btn-primary.btn-sm:last-child {
     top: -9px;
     left: -7px;
 }
+.form-check > input[type="checkbox"] + label {
+    /*margin-left: 11px;
+    margin-top: -2px;
+    padding-bottom: 13px;
+    margin-bottom: 0.15rem;*/
+    margin: 0;
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+}
 .form-check > input[type="checkbox"] + label::before {
     content: "";
     margin: 0 16px 0 -30.5px;
@@ -10562,22 +10572,12 @@ button.btn.btn-primary.btn-sm:last-child {
     vertical-align: top;
     transition: border-color 0.35s, background-color 0.55s;
 }
-.form-check > input[type="checkbox"] + label {
-    /*margin-left: 11px;
-    margin-top: -2px;
-    padding-bottom: 13px;
-    margin-bottom: 0.15rem;*/
-    margin: 0;
-    display: inline-block;
-    width: 100%;
-    cursor: pointer;
-}
 .form-check > input[type="checkbox"] + label::after {
     content: "\2714";
     display: block;
     position: absolute;
     font-size: 18px;
-    color: rgb(var(--pry-color));
+    color: transparent;
     top: -4px;
     left: -12px;
     transform: scale(1);
