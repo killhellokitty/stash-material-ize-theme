@@ -10596,6 +10596,20 @@ button.btn.btn-primary.btn-sm:last-child {
 .form-check > input[type="checkbox"]:indeterminate + label::after {
     content: "\223D";
 }
+.form-check:hover > input[type="checkbox"] {
+    opacity: 0.46;
+}
+.form-check > input[type="checkbox"]:focus {
+    opacity: 0.58;
+}
+.form-check:hover > input[type="checkbox"]:focus {
+    opacity: 0.72;
+}
+.form-check > input[type="checkbox"]:active {
+    opacity: 1;
+    transform: scale(0);
+    transition: transform 0s, opacity 0s;
+}
 .form-check > input[type="checkbox"]:active + label::before {
     border-color: rgb(var(--on-surface));
 }
