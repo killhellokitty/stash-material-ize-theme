@@ -10598,13 +10598,13 @@ button.btn.btn-primary.btn-sm:last-child {
     content: "\223D";
 }
 .form-check:hover > input[type="checkbox"] {
-    opacity: 0.04;
+    opacity: 0.24;
 }
 .form-check > input[type="checkbox"]:focus {
-    opacity: 0.12;
+    opacity: 0.32;
 }
 .form-check:hover > input[type="checkbox"]:focus {
-    opacity: 0.16;
+    opacity: 0.36;
 }
 .form-check > input[type="checkbox"]:active {
     opacity: 1;
