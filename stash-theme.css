@@ -495,12 +495,12 @@ input[type=radio]:focus-visible {
     outline-style: none;
     outline-width: 0;
 }
-input[type=checkbox]:focus-visible {
+/*input[type=checkbox]:focus-visible {
     outline-style: none;
     outline-width: 0;
-    /*box-shadow: inset 0 0 0 5rem rgba(var(--white-color),var(--btn-hover));
-    box-shadow: none;*/
-}
+    box-shadow: inset 0 0 0 5rem rgba(var(--white-color),var(--btn-hover));
+    box-shadow: none;
+}*/
 /*input[type=checkbox]:checked {
     accent-color: rgb(var(--pry-color));
     box-shadow: none;
