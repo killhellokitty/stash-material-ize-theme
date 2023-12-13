@@ -10534,7 +10534,7 @@ button.btn.btn-primary.btn-sm:last-child {
 }
 .form-check > input[type=checkbox] {
     appearance: none;
-    -moz-appearance: none;
+    --moz-appearance: none;
     -webkit-appearance: none;
     z-index: -1;
     position: absolute;
@@ -10561,7 +10561,7 @@ button.btn.btn-primary.btn-sm:last-child {
     cursor: pointer;
 }
 .form-check > input[type="checkbox"] + label::before {
-    content: "";
+    content: " ";
     margin: 0 16px 0 -30.5px;
     display: inline-block;
     border: solid 2px;
