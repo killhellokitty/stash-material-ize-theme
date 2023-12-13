@@ -10592,7 +10592,9 @@ button.btn.btn-primary.btn-sm:last-child {
 .form-check > input[type=checkbox]:is(:checked, :indeterminate) + label::after {
     color: rgb(var(--on-sec));
 }
-
+.form-check > input[type="checkbox"]:indeterminate + label::after {
+    content: "\223D";
+}
 
 
 /*** Button Ripple ***/
