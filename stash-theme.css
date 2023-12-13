@@ -10567,8 +10567,13 @@ button.btn.btn-primary.btn-sm:last-child {
 .form-check > input[type=checkbox]:is(:checked, :indeterminate) {
     background-color: rgb(var(--pry-color));
 }
-
-
+.form-check > input[type=checkbox]:is(:checked, :indeterminate) + label::before {
+    border-color: rgb(var(--pry-color));
+    background-color: rgb(var(--pry-color));
+}
+input[type=checkbox]:is(:checked, :indeterminate) + label::after {
+    color: rgb(var(--on-sec));
+}
 /*** Button Ripple ***/
 body :is(:not(.collapse.show.card .input-group):has(> .input-group-append)) button:not(.navbar-buttons a[href^="/scenes/new"] > button):not(.navbar-buttons a[href^="/movies/new"] > button):not(.navbar-buttons a[href^="/galleries/new"] > button):not(.navbar-buttons a[href^="/performers/new"] > button):not(.navbar-buttons a[href^="/studios/new"] > button):not(.navbar-buttons a[href^="/tags/new"] > button).btn.btn-primary:not(.scrubber-button):not(.minimal):not([title="Search"])::after {
     content: "";
