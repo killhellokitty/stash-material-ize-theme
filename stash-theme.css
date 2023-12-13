@@ -315,7 +315,7 @@ dd > a:focus:hover {
 a:focus-visible {
     color: #00f9dd;
     text-shadow: none;
-    text-decoration: solid underline;
+    text-decoration: underline;
     text-underline-offset: 0.2em;
     outline: 0;
 }
