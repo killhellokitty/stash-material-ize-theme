@@ -5115,7 +5115,7 @@ div[draggable="true"] .recommendation-row:not(.scene-recommendations):not(.studi
     letter-spacing: 0.25px;
     box-shadow: none;
     text-shadow: none;
-    transition: color .25s ease-in-out,background-color .55s ease,border-color .15s ease-in-out,box-shadow .25s ease,text-shadow .15s ease-in-out;
+    transition: color .05s ease-in-out,background-color .4s ease 0.1s, border-color .05s ease-in-out,box-shadow .35s ease 0.05s,text-shadow .05s ease-in-out;
     /*background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cline x1='0' y1='80' x2='0' y2='20' stroke='rgba(0,0,0,0.85)' stroke-width='2' vector-effect='non-scaling-stroke'%3E%3C/line%3E%3C/svg%3E");
     background-repeat: repeat-y;
     background-position: left center;*/
