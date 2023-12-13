@@ -10543,13 +10543,13 @@ button.btn.btn-primary.btn-sm:last-child {
     background-color: rgb(var(--on-surface),var(--btn-hover));
     width: 40px;
     height: 40px;
-    transform: scale(1);
     top: -9px;
     left: -7px;
     opacity: 0;
     box-shadow: none;
     outline: none;
     pointer-events: none;
+    transform: scale(1);
     transition: opacity 0.3s, transform 0.35s;
 }
 .form-check > input[type="checkbox"] + label {
