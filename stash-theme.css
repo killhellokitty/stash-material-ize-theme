@@ -10531,6 +10531,7 @@ button.btn.btn-primary.btn-sm:last-child {
     font-family: 'Roboto Flex','Roboto';
     margin-bottom: 6px;
     margin-top: 10px;
+    width: 100%;
 }
 .form-check > input[type=checkbox] {
     appearance: none;
@@ -10630,6 +10631,12 @@ button.btn.btn-primary.btn-sm:last-child {
 .form-check > input[type="checkbox"]:indeterminate:disabled + label::before {
     border-color: transparent;
     background-color: currentColor;
+}
+/* Critereon Editor Checkbox */
+.criterion-editor .form-check > input[type=checkbox] {
+    left: -2%;
+    top: 0%;
+    position: relative;
 }
 
 
