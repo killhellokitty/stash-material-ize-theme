@@ -1058,23 +1058,23 @@ input[type=range]::-ms-tooltip {
 }
 
 .text-muted {
-    color: rgb(var(--muted-text)); /*#656B84*/
+    color: rgb(var(--muted-text)) !important; /*#656B84*/
 }
 .bg-secondary {
     background: none;
-    background-color: transparent;
+    background-color: unset !important;
 }
 a.bg-secondary:hover, 
 a.bg-secondary:focus, 
 button.bg-secondary:hover, 
 button.bg-secondary:focus {
-    background-color: transparent;
+    background-color: unset !important;
 }
 .text-white {
-    color: rgb(var(--on-surface));
+     color: unset !important;
 }
 .border-secondary {
-     border-color: #bec9c5;
+     border-color: #bec9c5 !important;
 }
 /* --- Changes the space between the button in the top right corner of the page --- */
 .order-2 button {
@@ -2008,7 +2008,7 @@ div.react-datepicker div.react-datepicker__time-container div.react-datepicker__
     max-width: 280px;
     min-width: 112px;
     box-shadow: var(--elevation-2);
-    transform: translate3d(0px, 38px, 0px);
+    transform: translate3d(0px, 38px, 0px) !important;
     will-change: transform, transition;
     overflow: hidden;
     transition: background-color 0.55s ease, outline 0.4s ease-in, box-shadow 0.4s ease-in, transform 0.8s ease;
