@@ -10549,6 +10549,7 @@ button.btn.btn-primary.btn-sm:last-child {
     background-color: rgb(var(--on-surface),var(--btn-hover));
     top: -9px;
     left: -7px;
+    opacity: 0;
 }
 .form-check > input[type="checkbox"] + label {
     /*margin-left: 11px;
