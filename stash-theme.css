@@ -10530,8 +10530,8 @@ button.btn.btn-primary.btn-sm:last-child {
     line-height: 1.5;
     font-size: 16px;
     font-family: 'Roboto Flex','Roboto';
-    margin-bottom: 6px;
-    margin-top: 10px;
+    margin-bottom: 6px !important;
+    margin-top: 10px !important;
     width: 100%;
 }
 .form-check > input[type=checkbox] {
