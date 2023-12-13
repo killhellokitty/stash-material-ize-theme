@@ -5815,8 +5815,8 @@ nav.nav.nav-tabs {
     background-image: linear-gradient(to right, rgba(var(--pry-color),var(--btn-hover)), rgba(var(--pry-color),var(--btn-hover))),linear-gradient(to right, rgb(var(--body-color2)), rgb(var(--body-color2))) !important;
 }
 .nav-item > button[title="Organized"].minimal.organized-button.organized.btn.btn-secondary:is(:only-of-type, :hover, :focus) {
-    color: rgb(var(--on-tertiary)) !important;
-    background-color: rgb(var(--tertiary));
+    color: rgb(var(--tertiary)) !important;
+    background-color: transparent;
 }
 .nav-item > button[title="Organized"].minimal.organized-button.organized.btn.btn-secondary:is(:hover, :focus) {
     color: rgb(var(--tertiary)) !important;
