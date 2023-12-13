@@ -5179,7 +5179,7 @@ div[draggable="true"] .recommendation-row:not(.scene-recommendations):not(.studi
     color: rgb(var(--on-pry));
     background-color: rgb(var(--pry-color));
     border-color: transparent;
-    box-shadow: none;
+    box-shadow: var(--elevation-0);
     text-shadow: none;
     outline: none;
     padding-left: 24px;
