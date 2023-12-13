@@ -10550,7 +10550,7 @@ button.btn.btn-primary.btn-sm:last-child {
     outline: none;
     pointer-events: none;
     transform: scale(1);
-    transition: opacity 0.3s, transform 0.35s;
+    transition: opacity 0.4s, transform 0.45s;
 }
 .form-check > input[type="checkbox"] + label {
     /*margin-left: 11px;
