@@ -10503,7 +10503,7 @@ button.btn.btn-primary.btn-sm:last-child {
 
 
 /* Checkbox Button Replacements */
-.form-check:has(>input[type="checkbox"]) {
+/*.form-check:has(>input[type="checkbox"]) {
     display: inline-block;
     position: relative;
     z-index: 0;
@@ -10535,10 +10535,6 @@ button.btn.btn-primary.btn-sm:last-child {
     transition: opacity 0.4s, transform 0.45s;
 }
 .form-check > input[type="checkbox"] + label {
-    /*margin-left: 11px;
-    margin-top: -2px;
-    padding-bottom: 13px;
-    margin-bottom: 0.15rem;*/
     margin: 0;
     display: inline-block;
     width: 100%;
@@ -10613,7 +10609,7 @@ button.btn.btn-primary.btn-sm:last-child {
     border-color: transparent;
     background-color: currentColor;
 }
-/* Critereon Editor Checkbox */
+
 .criterion-editor .form-check > input[type=checkbox],
 .modal-content .form-check > input[type=checkbox] {
     appearance: none;
@@ -10647,7 +10643,7 @@ button.btn.btn-primary.btn-sm:last-child {
 }
 .criterion-editor .form-check > input[type="checkbox"] + label::after {
     left: 2px;
-}
+}*/
 
 /*** Button Ripple ***/
 body :is(:not(.collapse.show.card .input-group):has(> .input-group-append)) button:not(.navbar-buttons a[href$="/new"] > button).btn.btn-primary:not(.scrubber-button):not(.minimal):not([title="Search"])::after {
