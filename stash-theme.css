@@ -10635,8 +10635,24 @@ button.btn.btn-primary.btn-sm:last-child {
 /* Critereon Editor Checkbox */
 .criterion-editor .form-check > input[type=checkbox],
 .modal-content .form-check > input[type=checkbox] {
+    appearance: none;
+    --moz-appearance: none;
+    -webkit-appearance: none;
+    z-index: -1;
+    position: absolute;
+    display: block;
+    border-radius: 5rem;
+    background-color: rgb(var(--on-surface),var(--btn-hover));
+    width: 40px;
+    height: 40px;
     left: 1.8%;
     top: -8px;
+    opacity: 0;
+    box-shadow: none;
+    outline: none;
+    pointer-events: none;
+    transform: scale(1);
+    transition: opacity 0.4s, transform 0.45s;
 }
 .criterion-editor .form-check > input[type="checkbox"] + label,
 .modal-content .form-check > input[type="checkbox"] + label {
