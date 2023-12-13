@@ -10532,6 +10532,24 @@ button.btn.btn-primary.btn-sm:last-child {
     margin-bottom: 6px;
     margin-top: 10px;
 }
+.form-check > input[type=checkbox] {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    z-index: -1;
+    position: absolute;
+    display: block;
+    border-radius: 5rem;
+    width: 40px;
+    height: 40px;
+    transform: scale(1);
+    transition: transform 0.35s ease;
+    background-color: rgb(var(--on-surface),var(--btn-hover));
+    top: -9px;
+    left: -7px;
+}
 .form-check > input[type="checkbox"] + label::before {
     content: "";
     margin: 0 16px 0 -30.5px;
