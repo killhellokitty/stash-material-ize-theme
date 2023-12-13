@@ -10633,17 +10633,19 @@ button.btn.btn-primary.btn-sm:last-child {
     background-color: currentColor;
 }
 /* Critereon Editor Checkbox */
-.criterion-editor .form-check > input[type=checkbox] {
-    left: -2%;
-    top: 0%;
-    position: relative;
+.criterion-editor .form-check > input[type=checkbox],
+.modal-content .form-check > input[type=checkbox] {
+    left: 1.8%;
+    top: -8px;
 }
-.criterion-editor .form-check > input[type="checkbox"] + label {
+.criterion-editor .form-check > input[type="checkbox"] + label,
+.modal-content .form-check > input[type="checkbox"] + label {
     margin: -30px 0px -20px 0;
     position: absolute;
     white-space: normal;
 }
-.criterion-editor .form-check > input[type="checkbox"] + label::before {
+.criterion-editor .form-check > input[type="checkbox"] + label::before,
+.modal-content .form-check > input[type="checkbox"] + label::before {
     margin: 0 16px 20px -16px
 ;
 }
