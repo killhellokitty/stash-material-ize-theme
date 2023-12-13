@@ -10631,6 +10631,8 @@ button.btn.btn-primary.btn-sm:last-child {
     border-color: transparent;
     background-color: currentColor;
 }
+
+
 /*** Button Ripple ***/
 body :is(:not(.collapse.show.card .input-group):has(> .input-group-append)) button:not(.navbar-buttons a[href$="/new"] > button).btn.btn-primary:not(.scrubber-button):not(.minimal):not([title="Search"])::after {
     content: "";
