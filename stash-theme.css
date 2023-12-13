@@ -10554,7 +10554,16 @@ button.btn.btn-primary.btn-sm:last-child {
     width: 100%;
     cursor: pointer;
 }
-
+.form-check > input[type="checkbox"] + label::after {
+    content: "\2714";
+    display: block;
+    position: absolute;
+    font-size: 18px;
+    color: rgb(var(--pry-color));
+    top: -4px;
+    left: -12px;
+    transform: scale(1);
+}
 
 
 /*** Button Ripple ***/
