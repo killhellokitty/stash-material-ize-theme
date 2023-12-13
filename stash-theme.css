@@ -10650,7 +10650,7 @@ button.btn.btn-primary.btn-sm:last-child {
 ;
 }
 .criterion-editor .form-check > input[type="checkbox"] + label::after {
-    left: 14px;
+    left: 2px;
 }
 
 /*** Button Ripple ***/
