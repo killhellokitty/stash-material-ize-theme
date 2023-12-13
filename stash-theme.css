@@ -10547,6 +10547,8 @@ button.btn.btn-primary.btn-sm:last-child {
     top: -9px;
     left: -7px;
     opacity: 0;
+    box-shadow: none;
+    outline: none;
     pointer-events: none;
     transition: opacity 0.3s, transform 0.35s ease;
 }
