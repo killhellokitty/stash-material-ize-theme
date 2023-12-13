@@ -10638,6 +10638,11 @@ button.btn.btn-primary.btn-sm:last-child {
     top: 0%;
     position: relative;
 }
+.criterion-editor .form-check > input[type="checkbox"] + label {
+    margin: -30px 0px -20px 0;
+    position: absolute;
+    white-space: normal;
+}
 .criterion-editor .form-check > input[type="checkbox"] + label::before {
     margin: 0 16px 20px -16px
 ;
