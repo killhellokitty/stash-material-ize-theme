@@ -10537,12 +10537,12 @@ button.btn.btn-primary.btn-sm:last-child {
     margin: 0 16px 0 -30.5px;
     display: inline-block;
     border: solid 2px;
+    border-color: rgb(var(--on-surface-variant));
     border-radius: 2px;
     width: 18px;
     height: 18px;
     vertical-align: top;
-    transition: border-color 0.2s, background-color 0.2s;
-    border-color: rgb(var(--on-surface-variant));
+    transition: border-color 0.35s, background-color 0.55s;
 }
 .form-check > input[type="checkbox"] + label {
     /*margin-left: 11px;
