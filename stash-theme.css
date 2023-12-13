@@ -5819,8 +5819,9 @@ nav.nav.nav-tabs {
     background-color: rgb(var(--tertiary));
 }
 .nav-item > button[title="Organized"].minimal.organized-button.organized.btn.btn-secondary:is(:hover, :focus) {
-    color: rgb(var(--on-tertiary)) !important;
-    background-image: linear-gradient(to right, rgba(var(--tertiary),var(--btn-hover-rev)), rgba(var(--tertiary),var(--btn-hover-rev))),linear-gradient(to right, rgb(var(--body-color2)), rgb(var(--body-color2))) !important;
+    color: rgb(var(--tertiary)) !important;
+    background-color: rgb(var(--body-color2));
+    background-image: linear-gradient(to right, rgba(var(--tertiary),var(--btn-hover)), rgba(var(--tertiary),var(--btn-hover))),linear-gradient(to right, rgb(var(--body-color2)), rgb(var(--body-color2))) !important;
 }
 
 .o-counter.btn-group > button[title="O-Counter"].minimal.btn.btn-secondary > span > svg,
