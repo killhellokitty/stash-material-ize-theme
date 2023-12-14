@@ -2858,7 +2858,7 @@ div.react-select__control .react-select__multi-value {
     background-color: transparent;
     border: 0;
     border-style: none;
-    border-radius: 0.5rem;
+    border-radius: 4px;
     color: #cae6ff;
     height: 56px;
     margin-right: 16px;
