@@ -2497,6 +2497,7 @@ button:not([title=Help]).btn-primary:not(:where(:disabled, .disabled)):where(:fo
 }
 /* * */
 
+/* Tagger-Container Settings Button */
 .tagger-container > .tagger-container-header > div > div.d-flex > div.ml-2 > button.btn.btn-primary {
     padding: 0;
     border-radius: 5rem;
