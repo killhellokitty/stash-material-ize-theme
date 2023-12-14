@@ -2511,6 +2511,7 @@ button:not([title=Help]).btn-primary:not(:disabled):not(.disabled):active:focus 
     padding: 0;
     border-radius: 5rem;
     width: 40px;
+    margin-left: 8px;
 }
 
 button:is(#batch-result-toggle-off, #batch-result-toggle-mixed, #batch-result-toggle-on).btn.btn-primary {
