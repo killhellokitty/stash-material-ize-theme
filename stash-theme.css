@@ -165,11 +165,16 @@ h6,
     --on-sec: 33, 50, 63; /*#21323f*/
     --sec-container: 56, 73, 86; /*#384956*/
     --on-sec-container: 211, 231, 243; /*#d3e7f3*/
-    /* Tertiary Colors*/
+    /* Tertiary Colorsf*/
     --tertiary: 5, 125, 116; /*#057d74*/
     --on-tertiary:  237, 252, 250; /*#edfcfa*/
-    --tertiary-container: 0, 80, 70; /*#005046*/
-    --on-tertiary-container: 73, 252, 226; /*#49fce2*/
+    --tertiary-container: 6, 65, 62; /*#06413e*/
+    --on-tertiary-container: 197, 246, 245; /*#c5f6f5*/
+    /* Split Complementary Colors */
+    /*--split-comp: ;*/ /* */
+    /*--on-split-comp: ;*/ /* */
+    --split-comp-container: 68, 3, 40;/*#440328 */
+    --on-split-comp-container: 249, 116, 192; /*#f974c0*/
     /* Error Colors */
     --error: 255, 180, 171; /*#ffb4ab*/
     --on-error: 105, 0, 5; /*#690005*/
