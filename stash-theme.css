@@ -212,6 +212,7 @@ h6,
     --btn-active: 0.12;
     --btn-active-rev: 0.88;
     --btn-disabled: 0.38;
+    --btn-background-disabled: 0.12;
     --text-field-tint: 0.06;
     --text-field-text: 0.87;
     --text-screen: 0.35;
@@ -2438,38 +2439,34 @@ svg.svg-inline--fa.fa-right-from-bracket.fa-icon {
 /* Primary Button */
 button:not([title=Help]).btn-primary,
 .login .btn.btn-primary {
-     color: #121e1b;
-     background-color: #00dfc6;
+     color: rgb(var(--on-tertiary));
+     background-color: rgb(var(--tertiary));
      font-weight: 500;
-     border-style: none;
      border: 0;
      border-radius: 5rem;
      gap: 8px;
      display: inline-flex;
      justify-content: center;
      align-items: center;
-     flex-direction: row;
      height: 40px;
      line-height: 20px;
-     letter-spacing: 0.1px;
-     padding: 0 24px;
-     box-shadow: none;
+     letter-spacing: 0.185px;
+     padding-left: 24px;
+     padding-right: 24px;
+     box-shadow: var(--elevation-0);
      text-shadow: none;
      position: relative;
      overflow: hidden;
-     transition: background-color 0.55s ease, outline 0.4s ease-in-out, box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+     transition: background-color 0.55s cubic-bezier(0.4, 0, 0.2, 1), outline 0.4s ease-in, box-shadow 0.4s ease-in;
 }
 @media (min-width: 1200px) {
     .details-divider button {
-        color: #a8dfd4;
+        color: rgb(var(--on-tertiary));
     }
 }
-button:not([title=Help]).btn.btn-primary.disabled, 
-button:not([title=Help]).btn.btn-primary:disabled,
-button:not([title=Help]).btn.btn-primary:disabled:hover,
-button:not([title=Help]).btn.btn-primary.disabled:hover {
+button:not([title=Help]).btn.btn-primary:where(.disabled, :disabled, .disabled:hover, :disabled:hover) {
     color: #121e1b;
-    background-color: #00dfc6;
+    background-color: rgb(var(--on-surface),var(--btn-background-disabled));
     opacity: 0.4;
 }
 button:not([title=Help]).btn-primary:not(:disabled):not(.disabled):hover,
