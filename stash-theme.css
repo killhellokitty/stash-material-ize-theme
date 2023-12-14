@@ -2481,6 +2481,7 @@ button:not([title=Help]).btn-primary:not(:disabled):not(.disabled):hover,
     background-image: linear-gradient(to right, rgb(255,255,255,0.08), rgb(255,255,255,0.08));
     background-blend-mode: overlay;
     box-shadow: var(--elevation-1);
+    opacity: 1;
 }
 button:not([title=Help]).btn-primary:not(:disabled):not(.disabled):focus-visible,
 .login .btn.btn-primary:focus-visible {
