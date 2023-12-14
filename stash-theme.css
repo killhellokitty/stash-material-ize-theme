@@ -2843,16 +2843,6 @@ div.react-select__control .react-select__multi-value {
     top: -4px;
 }
 
-.input-control.form-control:active,
-.input-control.form-control:active:focus {
-    background-color: #414846;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-    color: #c0ebe2;
-    outline: none;
-    box-shadow: 0 1px 0 0 #00dfc6, inset 0 -1px 0 0 #00dfc6;
-    outline: none;
-}
 .input-control.form-control,
 .input-control.form-control:disabled:hover {
     background-color: transparent;
@@ -2877,30 +2867,25 @@ div.react-select__control .react-select__multi-value {
 }
 .input-control:disabled,
 .input-control.form-control:disabled {
-    opacity: 0.4;
+    opacity: var(--btn-disabled);
 }
 .input-control.form-control:hover {
-    background-color: #133348;
+    background-color: rgb(var(--pry-container));
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
-    box-shadow: 0 1px 0 0 #bec9c5, inset 0 -1px 0 0 transparent;
+    box-shadow: 0 1px 0 0 rgb(var(--on-surface)), inset 0 -1px 0 0 transparent;
 }
-.input-control.form-control:focus {
-    background-color: #133348;
+.input-control.form-control:where(:focus, :focus:hover, :active) {
+    background-color: rgb(var(--on-pry));
+    color: rgb(var(--pry-color));
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
-    box-shadow: 0 1px 0 0 #accae5, inset 0 -2px 0 0 #accae5;
-}
-.input-control.form-control:focus:hover {
-    background-color: #133348;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-    box-shadow: 0 1px 0 0 #accae5, inset 0 -2px 0 0 #accae5;
+    box-shadow: 0 1px 0 0 rgb(var(--pry-color)), inset 0 -2px 0 0 rgb(var(--pry-color));
 }
 .input-control.form-control:focus-visible {
-    background-color: #133348;
-    color: #cae6ff;
-    box-shadow: 0 1px 0 0 #accae5, inset 0 -1px 0 0 #accae5;
+    background-color: rgba(var( --pry-container));
+    color: rgb(var(--on-tertiary-container));
+    box-shadow: 0 1px 0 0 rgb(var(--on-surface)), inset 0 -1px 0 0 rgb(var(--on-surface));
     outline: none;
 }
 
