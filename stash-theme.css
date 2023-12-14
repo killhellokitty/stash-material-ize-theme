@@ -2473,6 +2473,7 @@ button:not([title=Help]).btn-primary,
 button:not([title=Help]).btn.btn-primary:where(.disabled, :disabled, .disabled:hover, :disabled:hover) {
     color: rgb(var(--on-surface),var(--btn-disabled));
     background-color: rgb(var(--on-surface),var(--btn-background-disabled));
+    background-image: none;
 }
 button:not([title=Help]).btn-primary:not(:disabled):not(.disabled):hover,
 .login .btn.btn-primary:hover {
