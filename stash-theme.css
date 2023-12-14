@@ -2455,6 +2455,7 @@ button:not([title=Help]).btn-primary,
      padding-right: 24px;
      box-shadow: var(--elevation-0);
      text-shadow: none;
+     outline: 0;
      position: relative;
      overflow: hidden;
      transition: background-color 0.55s cubic-bezier(0.4, 0, 0.2, 1), outline 0.4s ease-in, box-shadow 0.4s ease-in;
@@ -2465,24 +2466,21 @@ button:not([title=Help]).btn-primary,
     }
 }
 button:not([title=Help]).btn.btn-primary:where(.disabled, :disabled, .disabled:hover, :disabled:hover) {
-    color: #121e1b;
+    color: rgb(var(--on-surface),var(--btn-disabled));
     background-color: rgb(var(--on-surface),var(--btn-background-disabled));
-    opacity: 0.4;
 }
 button:not([title=Help]).btn-primary:not(:disabled):not(.disabled):hover,
-.login .btn.btn-primary:hover,
-button:not([title=Help]).btn-primary:not(:disabled):not(.disabled):hover:focus,
-button:not([title=Help]).btn-primary:not(:disabled):not(.disabled):focus:not(:focus-visible),
-.login .btn.btn-primary:focus:not(:focus-visible),
-button:not([title=Help]).btn-primary:not(:disabled):not(.disabled):focus-visible,
-.login .btn.btn-primary:focus-visible {
-     color: #121e1b;
-     background-color: #00f3d7;
-     box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 1px 5px 0px rgba(0,0,0,0.12);
-     outline: none;
+.login .btn.btn-primary:hover {
+    color: rgb(var(--on-tertiary));
+    background-color: rgba(var(--tertiary));
+    background-image: linear-gradient(to right, rgb(255,255,255,0.08), rgb(255,255,255,0.08));
+    background-blend-mode: overlay;
+    box-shadow: var(--elevation-1);
 }
 button:not([title=Help]).btn-primary:not(:disabled):not(.disabled):focus-visible,
 .login .btn.btn-primary:focus-visible {
+    background-color: rgba(var( --pry-container));
+    color: rgb(var(--on-tertiary-container));
     box-shadow: none;
     outline-color: #dffffb;
     outline-style: solid;
