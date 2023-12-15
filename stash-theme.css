@@ -8188,10 +8188,10 @@ div#settings-container div#configuration-tabs-tabpane-about .card .setting div b
 nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/new"],[href="/movies/new"],[href="/performers/new"],[href="/studios/new"],[href="/tags/new"]) > button.btn.btn-primary::before {
     content: "\FE62";
     font-family: var(--UnicodeFont);
-    font-weight: 900;
+    font-weight: 700;
     font-size: 62px;
     position: relative;
-    top: -8px;
+    top: -9px;
     left: 4px;
 }
     /* Moves button to bottom right of screen */
@@ -8202,7 +8202,7 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
     border-radius: 16px;
     box-shadow: var(--elevation-5);
     height: 56px;
-    font-weight: 500;
+    font-weight: 700;
     overflow: hidden;
     position: fixed;
     z-index: 995590 !important;
@@ -8214,12 +8214,11 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
     padding-top: 28px;
     padding-bottom: 30px;
     margin: 16px;
-    align-items: center;
-    justify-content: center;
     right: 0%;
     bottom: 68px;
     will-change: animation, transition;
     transition: background-color 0.55s ease, background 0.55s ease, box-shadow 0.25s ease, outline 0.35s ease, opacity 0.55s ease;
+    -webkit-transition: background-color 0.55s ease, background 0.55s ease, box-shadow 0.25s ease, outline 0.35s ease, opacity 0.55s ease;
 }
 nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/new"],[href="/movies/new"],[href="/performers/new"],[href="/studios/new"],[href="/tags/new"]) > button.btn.btn-primary:hover {
     color: rgb(var(--on-tertiary-container));
