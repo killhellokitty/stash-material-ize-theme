@@ -2464,9 +2464,9 @@ button:not([title=Help]).btn-primary,
      position: relative;
      overflow: hidden;
      opacity: 1;
-     transition: background-color 0.55s cubic-bezier(0.4, 0, 0.2, 1), background-image 0.55s cubic-bezier(0.4, 0, 0.2, 1), outline 0.4s ease-in, box-shadow 0.4s ease-in, opacity 0 ease;
-     --moz-transition: background-color 0.55s cubic-bezier(0.4, 0, 0.2, 1), background-image 0.55s cubic-bezier(0.4, 0, 0.2, 1), outline 0.4s ease-in, box-shadow 0.4s ease-in, opacity 0 ease;
-     -web-kit-transition: background-color 0.55s cubic-bezier(0.4, 0, 0.2, 1), background-image 0.55s cubic-bezier(0.4, 0, 0.2, 1), outline 0.4s ease-in, box-shadow 0.4s ease-in, opacity 0 ease;
+     transition: background-color 0.55s cubic-bezier(0.4, 0, 0.2, 1), background-image 0.55s cubic-bezier(0.4, 0, 0.2, 1), outline 0.4s ease-in, box-shadow 0.4s ease-in, opacity 0 linear;
+     --moz-transition: background-color 0.55s cubic-bezier(0.4, 0, 0.2, 1), background-image 0.55s cubic-bezier(0.4, 0, 0.2, 1), outline 0.4s ease-in, box-shadow 0.4s ease-in, opacity 0 linear;
+     -web-kit-transition: background-color 0.55s cubic-bezier(0.4, 0, 0.2, 1), background-image 0.55s cubic-bezier(0.4, 0, 0.2, 1), outline 0.4s ease-in, box-shadow 0.4s ease-in, opacity 0 linear;
 }
 @media (min-width: 1200px) {
     .details-divider button {
