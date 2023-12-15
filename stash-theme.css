@@ -2463,7 +2463,10 @@ button:not([title=Help]).btn-primary,
      outline: 0;
      position: relative;
      overflow: hidden;
-     transition: background-color 0.55s cubic-bezier(0.4, 0, 0.2, 1), outline 0.4s ease-in, box-shadow 0.4s ease-in;
+     opacity: 1;
+     transition: background-color 0.55s cubic-bezier(0.4, 0, 0.2, 1), background-image 0.55s cubic-bezier(0.4, 0, 0.2, 1), outline 0.4s ease-in, box-shadow 0.4s ease-in, opacity 0 ease;
+     --moz-transition: background-color 0.55s cubic-bezier(0.4, 0, 0.2, 1), background-image 0.55s cubic-bezier(0.4, 0, 0.2, 1), outline 0.4s ease-in, box-shadow 0.4s ease-in, opacity 0 ease;
+     -web-kit-transition: background-color 0.55s cubic-bezier(0.4, 0, 0.2, 1), background-image 0.55s cubic-bezier(0.4, 0, 0.2, 1), outline 0.4s ease-in, box-shadow 0.4s ease-in, opacity 0 ease;
 }
 @media (min-width: 1200px) {
     .details-divider button {
@@ -2478,14 +2481,14 @@ button:not([title=Help]).btn.btn-primary:where(.disabled, :disabled, .disabled:h
 button:not([title=Help]).btn-primary:not(:disabled):not(.disabled):hover,
 .login .btn.btn-primary:hover {
     color: rgb(var(--on-tertiary));
+    background-image: linear-gradient(to right, rgba(255,255,255,0.08), rgba(255,255,255,0.08));
     background-color: rgba(var(--tertiary));
-    background-image: linear-gradient(to right, rgb(255,255,255,0.08), rgb(255,255,255,0.08));
     background-blend-mode: overlay;
     box-shadow: var(--elevation-1);
-    opacity: 1;
 }
 button:not([title=Help]).btn-primary:not(:disabled):not(.disabled):focus-visible,
 .login .btn.btn-primary:focus-visible {
+    background-image: none;
     background-color: rgba(var(--pry-container));
     color: rgb(var(--on-tertiary-container));
     box-shadow: none;
@@ -2497,8 +2500,8 @@ button:not([title=Help]).btn-primary:not(:disabled):not(.disabled):focus-visible
 button:not([title=Help]).btn-primary:not(:where(:disabled, .disabled)):where(:focus, .active, .active:focus, :active, :active:focus),
 .login .btn.btn-primary:where(.active, :active) {
     color: rgb(var(--on-tertiary));
-    background-color: rgba(var(--tertiary));
     background-image: linear-gradient(to right, rgb(255,255,255,0.12), rgb(255,255,255,0.12));
+    background-color: rgba(var(--tertiary));
     background-blend-mode: overlay;
     box-shadow: var(--elevation-0);
 }
