@@ -216,7 +216,7 @@ h6,
     --btn-hover-rev: 0.92;
     --btn-active: 0.12;
     --btn-active-rev: 0.88;
-    --btn-disabled: 0.38;
+    --disabled: 0.38;
     --btn-background-disabled: 0.12;
     --text-field-tint: 0.06;
     --text-field-text: 0.87;
@@ -1134,7 +1134,7 @@ input:is(#batch-search-delay, #colorize-color-green, #colorize-color-yellow, #co
 }
 .text-input:disabled,
 input:is(#batch-search-delay, #colorize-color-green, #colorize-color-yellow, #colorize-color-red).query-text-field.bg-secondary.text-white.border-secondary.form-control:disabled {
-    opacity: var(--btn-disabled);
+    opacity: var(--disabled);
 }
 
 .address .text-input:not(:last-child):not(:only-child):first-child:hover,
@@ -1941,7 +1941,7 @@ div.react-datepicker .react-datepicker__day.react-datepicker__day--selected.reac
     box-shadow: 0 0 0 1px rgb(var(--btn-primary-text));
 }
 div.react-datepicker .react-datepicker__day.react-datepicker__day--disabled[aria-disabled="true"] {
-    color: rgb(var(--on-surface),var(--btn-disabled));
+    color: rgb(var(--on-surface),var(--disabled));
     background-color: rgb(var(--popover-color));
 }
 /* Time in Calendar */
@@ -2172,7 +2172,7 @@ div.react-datepicker div.react-datepicker__time-container div.react-datepicker__
 
 .saved-filter-list button:is(.save-button, .delete-button).btn.btn-secondary.btn-sm:is(:disabled, .disabled),
 .saved-filter-list-menu button.set-as-default-button.btn.btn-secondary.btn-sm:is(:disabled, .disabled) {
-    opacity: var(--btn-disabled);
+    opacity: var(--disabled);
 }
 .show>.saved-filter-list-menu.show .input-group-append button.btn.btn-secondary:disabled,
 .show>.saved-filter-list-menu.show .input-group-append button.btn.btn-secondary.disabled {
@@ -2473,7 +2473,7 @@ button:not([title=Help]).btn-primary,
     }
 }
 button:not([title=Help]).btn.btn-primary:where(.disabled, :disabled, .disabled:hover, :disabled:hover) {
-    color: rgb(var(--on-surface),var(--btn-disabled));
+    color: rgb(var(--on-surface),var(--disabled));
     background-color: rgb(var(--on-surface),var(--btn-background-disabled));
     background-image: none;
 }
@@ -2496,7 +2496,7 @@ button:not([title=Help]).btn-primary:not(:disabled):not(.disabled):focus-visible
     outline-width: 0.3rem;
     outline-offset: -0.1rem;
 }
-button:not([title=Help]).btn-primary:not(:where(:disabled, .disabled)):where(:focus, .active, .active:focus, :active, :active:focus),
+button:not([title=Help]).btn-primary:not(:where(:disabled, .disabled)):is(:focus, .active, .active:focus, :active, :active:focus),
 .login .btn.btn-primary:where(.active, :active) {
     color: rgb(var(--on-tertiary));
     background-image: linear-gradient(to right, rgb(255,255,255,0.12), rgb(255,255,255,0.12));
@@ -2535,8 +2535,8 @@ button:is(#batch-result-toggle-off, #batch-result-toggle-mixed, #batch-result-to
 }
 button:is(#batch-result-toggle-off, #batch-result-toggle-mixed, #batch-result-toggle-on).btn.btn-primary:is(.disabled, :disabled) {
     border-color: rgb(var(--on-surface),0.12);
-    background-color: rgb(var(--on-surface),var(--btn-disabled));
-    color: rgb(var(--on-surface),var(--btn-disabled));
+    background-color: rgb(var(--on-surface),var(--disabled));
+    color: rgb(var(--on-surface),var(--disabled));
 }
 
 .tagger-container > .tagger-container-header > .d-flex > .d-flex {
@@ -2868,7 +2868,7 @@ div.react-select__control .react-select__multi-value {
 }
 .input-control:disabled,
 .input-control.form-control:disabled {
-    opacity: var(--btn-disabled);
+    opacity: var(--disabled);
 }
 .input-control.form-control:hover {
     background-color: rgb(var(--pry-container));
@@ -5153,7 +5153,7 @@ div[draggable="true"] .recommendation-row:not(.scene-recommendations):not(.studi
     text-shadow: none;
     outline: none;
     color: rgb(var(--on-pry-container));
-    opacity: var(--btn-disabled);
+    opacity: var(--disabled);
 }
 .pagination button.btn.btn-secondary:not(:disabled):not(.disabled).active,
 .pagination button.btn.btn-secondary:not(:disabled):not(.disabled).active:is(:hover, :focus) {
@@ -7905,7 +7905,7 @@ button.minimal.star-fill-0.btn.btn-secondary:not(:focus):not(:disabled):not(.dis
 .Lightbox > .Lightbox-footer > .Lightbox-footer-left > .rating-stars > button.minimal.star-fill-100.btn.btn-secondary.disabled,
 .Lightbox > .Lightbox-footer > .Lightbox-footer-left > .rating-stars > button.minimal.star-fill-0.btn.btn-secondary.disabled {
     color: white;
-    opacity: var(--btn-disabled);
+    opacity: var(--disabled);
 }
 
 .input-group>.input-group-append .btn:not(:first-child):not(.duration-button):last-child {
