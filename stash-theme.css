@@ -5473,7 +5473,7 @@ button:not([title=Statistics], [title=Settings]).minimal:not(.nav-utility, .bran
 }
 
 .card-popovers>.organized button.minimal.btn.btn-primary {
-    color: lch(68.921, 45.12, 186.214) !important;
+    color: lch(68.921% 45.12 186.214) !important;
     background: none;
     box-shadow: none;
 }
