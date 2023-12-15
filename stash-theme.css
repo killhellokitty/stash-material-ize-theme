@@ -175,6 +175,11 @@ h6,
     /*--on-split-comp: ;*/ /* */
     --split-comp-container: 68, 3, 40;/*#440328 */
     --on-split-comp-container: 249, 116, 192; /*#f974c0*/
+    /* Compliementary Colors */
+    --complement: 174, 121, 250; /*#ae79fa*/
+    --on-complement: 243, 236, 252; /*#f3ecfc*/
+    --complenent-container: ;
+    --on-complement-container: ;
     /* Error Colors */
     --error: 255, 180, 171; /*#ffb4ab*/
     --on-error: 105, 0, 5; /*#690005*/
