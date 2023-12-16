@@ -5415,7 +5415,7 @@ button:not([title=Statistics], [title=Settings]).minimal:not(.nav-utility, .bran
     box-shadow: none !important;
 }
 
-.o-count > button.minimal.btn-primary > span.fa-icon > span > svg {
+:where(.o-count, .o-counter) > button.minimal.btn-primary > span.fa-icon > span > svg {
     color: rgb(var(--pry-color)) !important;
 }
 
