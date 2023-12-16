@@ -8204,17 +8204,17 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
     box-shadow: var(--elevation-5);
     height: 56px;
     min-height: 56px;
+    width: max-content;
     font-weight: 700;
     overflow: hidden;
     position: fixed;
     z-index: 995590 !important;
     display: flex;
     gap: 8px;
-    /*padding: 16px;*/
-    padding-right: 50px;
-    padding-left: 40px;
-    padding-top: 34px;
-    padding-bottom: 32px;
+    padding-right: 19px;
+    padding-left: 6px;
+    padding-top: 0;
+    padding-bottom: 0;
     margin: 16px;
     right: 0%;
     bottom: 68px;
