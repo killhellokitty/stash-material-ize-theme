@@ -3723,10 +3723,11 @@ div.card-section hr {
 }
 .recommendation-row-head h2 {
     font-size: 45px;
-    font-weight: 400;
+    font-weight: 200;
     line-height: 52px;
     letter-spacing: 0;
-    color: rgb(var(--on-surface-variant));
+    color: #d3dae0;
+    text-transform: none;
 }
 .recommendation-row-head a {
     font-size: 14px;
