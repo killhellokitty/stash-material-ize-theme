@@ -2925,7 +2925,7 @@ div.react-select__control {
 }
 div.react-select__control:not(:focus):focus-visible {
     background-color: rgba(255,255,255,0.06);
-    background-image: linear-gradient(to right, rgba(255,255,255,var(--btn-hover)), rgba(255,255,255,var(--btn-hover))),linear-gradient(to right, rgb(var(--body-color2)), rgb(var(--body-color2)));
+    background-image: var(--btn-hover-highlight),linear-gradient(to right, rgb(var(--body-color2)), rgb(var(--body-color2)));
     outline-color: rgb(var(--focus-ring));
     outline-offset: -1px;
     outline-style: solid;
@@ -2944,7 +2944,7 @@ div.react-select__value-container {
 .CountrySelect>.react-select__control:hover,
 div.react-select__control:hover {
     background-color: rgba(255,255,255,var(--btn-hover));
-    background-image: linear-gradient(to right, rgba(255,255,255,var(--btn-hover)), rgba(255,255,255,var(--btn-hover))),linear-gradient(to right, rgb(var(--body-color2)), rgb(var(--body-color2)));
+    background-image: var(--btn-hover-highlight),linear-gradient(to right, rgb(var(--body-color2)), rgb(var(--body-color2)));
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     box-shadow: 0 1px 0 0 rgb(var(--on-surface)), inset 0 -1px 0 0 transparent;
@@ -2952,7 +2952,7 @@ div.react-select__control:hover {
 }
 .row.form-group:has(.invalid-feedback)>div>div>div.react-select__control:hover {
     background-color: rgba(255,255,255,var(--btn-hover));
-    background-image: linear-gradient(to right, rgba(255,255,255,var(--btn-hover)), rgba(255,255,255,var(--btn-hover))),linear-gradient(to right, rgb(var(--body-color2)), rgb(var(--body-color2)));
+    background-image: var(--btn-hover-highlight),linear-gradient(to right, rgb(var(--body-color2)), rgb(var(--body-color2)));
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     box-shadow: 0 1px 0 0 rgb(var(--on-error-container)), inset 0 -1px 0 0 transparent;
@@ -2960,7 +2960,7 @@ div.react-select__control:hover {
 }
 div.react-select__control.react-select__control--is-focused {
     background-color: rgba(255,255,255,var(--btn-active));
-    background-image: linear-gradient(to right, rgba(255,255,255,var(--btn-active)), rgba(255,255,255,var(--btn-active))),linear-gradient(to right, rgb(var(--body-color2)), rgb(var(--body-color2)));
+    background-image: var(--btn-active-highlight),linear-gradient(to right, rgb(var(--body-color2)), rgb(var(--body-color2)));
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     box-shadow: 0 1px 0 0 rgb(var(--pry-color)), inset 0 -1px 0 0 rgb(var(--pry-color));
@@ -2968,7 +2968,7 @@ div.react-select__control.react-select__control--is-focused {
 }
 .row.form-group:has(.invalid-feedback)>div>div>div.react-select__control--is-focused {
     background-color: rgba(255,255,255,var(--btn-active));
-    background-image: linear-gradient(to right, rgba(255,255,255,var(--btn-active)), rgba(255,255,255,var(--btn-active))),linear-gradient(to right, rgb(var(--body-color2)), rgb(var(--body-color2)));
+    background-image: var(--btn-active-highlight),linear-gradient(to right, rgb(var(--body-color2)), rgb(var(--body-color2)));
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     box-shadow: 0 1px 0 0 rgb(var(--error-container)), inset 0 -1px 0 0 rgb(var(--error-container));
@@ -2976,11 +2976,11 @@ div.react-select__control.react-select__control--is-focused {
 }
 div.react-select__control.react-select__control--is-focused:hover {
     background-color: rgba(255,255,255,var(--btn-hover));
-    background-image: linear-gradient(to right, rgba(255,255,255,var(--btn-hover)), rgba(255,255,255,var(--btn-hover))),linear-gradient(to right, rgb(var(--body-color2)), rgb(var(--body-color2)));
+    background-image: var(--btn-active-highlight),linear-gradient(to right, rgb(var(--body-color2)), rgb(var(--body-color2)));
 }
 .row.form-group:has(.invalid-feedback)>div>div>div.react-select__control--is-focused:hover {
     background-color: rgba(255,255,255,var(--btn-active));
-    background-image: linear-gradient(to right, rgba(255,255,255,var(--btn-active)), rgba(255,255,255,var(--btn-active))),linear-gradient(to right, rgb(var(--body-color2)), rgb(var(--body-color2)));
+    background-image: var(--btn-active-highlight),linear-gradient(to right, rgb(var(--body-color2)), rgb(var(--body-color2)));
 }
 
 div.react-select__control .react-select__single-value, 
