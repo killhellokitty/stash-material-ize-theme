@@ -10503,8 +10503,19 @@ button.btn.btn-primary.btn-sm:last-child {
     box-shadow: inset 0 0 0 3px rgb(var(--pry-container));
 }
 /* Radio Buttons Misc. Background-Colors etc. */
+#query-edit-config .form-check:has(>input[type="radio"]) {
+    justify-content: space-around;
+}
 
-
+#query-edit-config .form-check:has(>input[type="radio"]) + label {
+    margin-left: 8px;
+    margin-right: 24px;
+    margin-top: -8px;
+    padding-bottom: 0;
+    margin-bottom: 8px;
+    position: relative;
+    bottom: -9px;
+}
 
 /* Checkbox Button Replacements */
 /*.form-check:has(>input[type="checkbox"]) {
