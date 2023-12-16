@@ -11,9 +11,10 @@
     text-decoration: none;
     text-decoration-color: transparent;
     text-shadow: 0.1px 0.1px 0.1px rgba(0,0,0,0.004);
+    text-rendering: geometricPrecision;
     filter: none;
-    scrollbar-width: thin;
-    scrollbar-color: #5d6760 #252926;
+    scrollbar-width: auto;
+    scrollbar-color: rgba(255,255,255,0.54) rgba(0,0,0,0.14);
     -webkit-font-smoothing: antialiased;
     -webkit-font-smoothing: subpixel-antialiased;
     -moz-osx-font-smoothing: auto;
@@ -218,8 +219,10 @@ h6,
     /* Alpha's */
     --btn-hover: 0.08;
     --btn-hover-rev: 0.92;
+    --btn-hover-highlight: linear-gradient(to right, rgb(255,255,255,0.06), rgb(255,255,255,0.06));
     --btn-active: 0.12;
     --btn-active-rev: 0.88;
+    --btn-active-highlight: linear-gradient(to right, rgb(255,255,255,0.11), rgb(255,255,255,0.11));
     --disabled: 0.38;
     --btn-background-disabled: 0.12;
     --text-field-tint: 0.06;
