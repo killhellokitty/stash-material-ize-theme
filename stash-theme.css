@@ -5415,6 +5415,10 @@ button:not([title=Statistics], [title=Settings]).minimal:not(.nav-utility, .bran
     box-shadow: none !important;
 }
 
+.o-count > button.minimal.btn-primary > span.fa-icon > span > svg {
+    color: rgb(var(--pry-color)) !important;
+}
+
 a.minimal:not(.logout-button), 
 button:not([title=Statistics], [title=Settings]).minimal:not(.nav-utility, .brand-link, .donate, .dropdown-toggle), 
 .dropdown > button#operation-menu.minimal.dropdown-toggle.btn-secondary {
