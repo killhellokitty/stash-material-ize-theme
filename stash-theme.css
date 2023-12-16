@@ -8192,7 +8192,7 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
     font-weight: 700;
     font-size: 62px;
     position: relative;
-    top: -9px;
+    top: -10.5px;
     left: 4px;
 }
     /* Moves button to bottom right of screen */
@@ -8203,6 +8203,7 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
     border-radius: 16px;
     box-shadow: var(--elevation-5);
     height: 56px;
+    min-height: 56px;
     font-weight: 700;
     overflow: hidden;
     position: fixed;
@@ -8210,10 +8211,10 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
     display: flex;
     gap: 8px;
     /*padding: 16px;*/
-    padding-right: 60px;
-    padding-left: 50px;
-    padding-top: 28px;
-    padding-bottom: 30px;
+    padding-right: 50px;
+    padding-left: 40px;
+    padding-top: 34px;
+    padding-bottom: 32px;
     margin: 16px;
     right: 0%;
     bottom: 68px;
