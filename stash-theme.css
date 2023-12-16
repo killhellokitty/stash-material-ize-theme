@@ -5416,7 +5416,7 @@ button:not([title=Statistics], [title=Settings]).minimal:not(.nav-utility, .bran
 }
 
 :where(.o-count, .o-counter) > button.minimal.btn-primary > span.fa-icon > span > svg {
-    color: rgb(var(--pry-color)) !important;
+    color: lch(67.951% 32.672 253.332) !important;;
 }
 
 a.minimal:not(.logout-button), 
