@@ -437,6 +437,9 @@ option:checked {
 .grid-card .card-check:checked {
     top: 1.3rem;
 }
+label.form-check-label {
+    margin-left: 12px;
+}
 input[type=radio] {
     appearance: none;
     -moz-appearance: none;
@@ -450,8 +453,6 @@ input[type=radio] {
 input[type=checkbox] {
     width: 18px;
     height: 18px;
-    border-radius: 5rem;
-    border-style: none;
     border: 0;
     box-shadow: inset 0 0 0 5rem rgba(var(--white-color),var(--btn-hover));
 }
@@ -500,10 +501,10 @@ input[type=radio]:focus-visible {
     outline-width: 0;
 }
 input[type=checkbox]:focus-visible {
-    outline-color: rgb(var(--white-color));
+    outline-color: rgb(var(--focus-ring));
     outline-style: solid;
-    outline-width: 0.25rem;
-    outline-offset: -1.5px;
+    outline-width: 0.3rem;
+    outline-offset: -0.1rem;
     box-shadow: inset 0 0 0 5rem rgba(var(--white-color),var(--btn-hover));
 }
 input[type=checkbox]:checked {
@@ -511,39 +512,42 @@ input[type=checkbox]:checked {
     box-shadow: none;
 }
 input[type=checkbox]:checked:hover {
-    accent-color: #99d4ff;
+    accent-color: #a2d9ff;
 }
 input[type=checkbox]:checked:focus-visible {
-    accent-color: rgb(var(--pry-color));
-    outline-color: rgb(var(--white-color));
+    accent-color: rgb(var(--complement));
+    outline-color: rgb(var(--focus-ring));
     outline-style: solid;
-    outline-width: 0.25rem;
-    outline-offset: -1px;
+    outline-width: 0.3rem;
+    outline-offset: -0.1rem;
     box-shadow: none;
 }
 input[type=checkbox]:disabled {
     accent-color: rgb(var(--pry-color));
-    box-shadow: none;
-    opacity: 0.4;
+    box-shadow: inset 0 0 0 2px rgb(var(--on-surface-variant)), inset 0 0 0 5rem rgb(var(--body-color2));
+    opacity: var(--disabled);
 }
 input[type=checkbox]:disabled:checked {
     accent-color: rgb(var(--pry-color));
-    box-shadow: none;
-    opacity: 0.4;
+    box-shadow: inset 0 0 0 2px rgb(var(--pry-color)), inset 0 0 0 5rem transparent;
+    opacity: var(--disabled);
 }
+    /* New Editor Pages & Tagger-Container Preferences */
 input#ignore-auto-tag[type="checkbox"] {
-    box-shadow: 0 0 0 1px #899390, inset 0 0 0 5rem var(--body-color2);
+    box-shadow: inset 0 0 0 2px rgb(var(--on-surface-variant)), inset 0 0 0 5rem rgb(var(--body-color2));
+}
+input#ignore-auto-tag[type="checkbox"]:hover {
+    box-shadow: inset 0 0 0 2px rgb(var(--on-surface)), inset 0 0 0 5rem rgb(var(--body-color2));
 }
 .tagger-container .collapse.show.card input.form-check-input[type="checkbox"] {
-    inset 0 0 0 2px rgb(var(--on-surface-variant)), inset 0 0 0 5rem rgb(var(--card-color2));
+    box-shadow: inset 0 0 0 2px rgb(var(--on-surface-variant)), inset 0 0 0 5rem rgb(var(--card-color2));
 }
-input#ignore-auto-tag[type="checkbox"]:hover,
 .tagger-container .collapse.show.card input.form-check-input[type="checkbox"]:hover {
-    box-shadow: 0 0 0 1px #899390, inset 0 0 0 5rem #373d3b;
+    box-shadow: inset 0 0 0 2px rgb(var(--on-surface)), inset 0 0 0 5rem rgb(var(--card-color2));
 }
 input#ignore-auto-tag[type="checkbox"]:checked,
 .tagger-container .collapse.show.card input.form-check-input[type="checkbox"]:checked {
-    box-shadow: 0 0 0 1px #00dfc6, inset 0 0 0 5rem transparent;
+    box-shadow: inset 0 0 0 2px rgb(var(--pry-color)), inset 0 0 0 5rem transparent;
 }
 
 /* --- Range Slider and Thumb decorations ---*/
@@ -9999,9 +10003,7 @@ small.form-text {
     margin-left: 3%;
     margin-right: 80%;
 }
-label.form-check-label {
-    margin-left: 6px;
-}
+
 .tagger-container .collapse.show.card .input-group:not(.has-validation)>input.form-control:not(:last-child) {
     border-radius: 0.5rem;
     margin-right: -54px;
