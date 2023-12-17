@@ -10508,7 +10508,7 @@ button.btn.btn-primary.btn-sm:last-child {
 }
 
 #query-edit-config .form-check:has(>input[type="radio"]) > input[type="radio"] + label, 
-#query-edit-config .form-check:has(>input[type="radio"]) > input[type="radio"] + label +label, 
+#query-edit-config .form-check:has(>input[type="radio"]) > input[type="radio"] + label + label, 
 #query-edit-config .form-check:has(>input[type="radio"]) > input[type="radio"] + label + label + label {
     margin-left: 8px;
     margin-right: 24px;
