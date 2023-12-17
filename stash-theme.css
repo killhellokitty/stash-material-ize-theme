@@ -3136,6 +3136,9 @@ div.dropdown-menu .dropdown-item:hover {
     line-height: 20px;
     font-weight: 500;
     font-size: 14px;
+    padding-right: 8px;
+    position: relative;
+    top: 2px;
 }
 /* ...close button */
 .react-select__multi-value__remove {
@@ -3145,14 +3148,19 @@ div.dropdown-menu .dropdown-item:hover {
     color: rgb(var(--on-surface-variant));
     box-shadow: none;
     outline: none;
+    min-width: 30px;
+    width: 30px;
+    height: 30px;
 }
 .react-select__multi-value__remove:hover {
     background-color: rgba(var(--on-surface-variant),var(--btn-hover));
     box-shadow: var(--elevation-0);
+    color: rgb(var(--on-surface-variant));
 }
 .react-select__multi-value__remove:active,
 .react-select__multi-value__remove.active {
     background-color: rgba(var(--on-surface-variant),var(--btn-active));
+    color: rgb(var(--on-surface-variant));
     box-shadow: none;
     outline: none;
 }
