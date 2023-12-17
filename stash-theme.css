@@ -7095,9 +7095,9 @@ button.text-success.include-exclude-button {
 }
 button:is(.text-success, .text-danger).include-exclude-button:focus-visible {
     outline-color: rgb(var(--focus-ring));
-    outline-offset: -1px;
+    outline-offset: -0.1rem;
     outline-style: solid;
-    outline-width: 0.25rem;
+    outline-width: 0.3rem;
     box-shadow: none;
 }
 
