@@ -535,7 +535,7 @@ input#ignore-auto-tag[type="checkbox"] {
     box-shadow: 0 0 0 1px #899390, inset 0 0 0 5rem var(--body-color2);
 }
 .tagger-container .collapse.show.card input.form-check-input[type="checkbox"] {
-    box-shadow: 0 0 0 1px #899390, inset 0 0 0 5rem var(--card-color2);
+    inset 0 0 0 2px rgb(var(--on-surface-variant)), inset 0 0 0 5rem rgb(var(--card-color2));
 }
 input#ignore-auto-tag[type="checkbox"]:hover,
 .tagger-container .collapse.show.card input.form-check-input[type="checkbox"]:hover {
@@ -10504,7 +10504,7 @@ button.btn.btn-primary.btn-sm:last-child {
 }
 /* Radio Buttons Misc. Background-Colors etc. */
 #query-edit-config .form-check:has(>input[type="radio"]) {
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 #query-edit-config .form-check:has(>input[type="radio"]) + label {
