@@ -10517,6 +10517,10 @@ button.btn.btn-primary.btn-sm:last-child {
     bottom: -9px;
 }
 
+#query-edit-config .form-check:has(>input[type="radio"]) > input[type="radio"] ~ input[type="radio"] {
+    margin-left: 16px;
+}
+
 /* Checkbox Button Replacements */
 /*.form-check:has(>input[type="checkbox"]) {
     display: inline-block;
