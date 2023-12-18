@@ -2527,7 +2527,7 @@ button:not([title=Help]).btn-primary:not(:where(:disabled, .disabled)):is(:focus
 }
 
 button:is(#batch-result-toggle-off, #batch-result-toggle-mixed, #batch-result-toggle-on).btn.btn-primary {
-    border: 1px solid rgb(var(--outline));
+    border: 0;
     background-color: rgb(var(--sec-container));
     color: rgb(var(--on-sec-container));
     box-shadow: var(--elevation-0);
@@ -2537,13 +2537,11 @@ button:is(#batch-result-toggle-off, #batch-result-toggle-mixed, #batch-result-to
     background-image: var(--btn-hover-highlight);
     background-color: rgb(var(--sec-container));
     background-blend-mode: overlay;
-    border-color: rgb(var(--on-surface));
 }
 button:is(#batch-result-toggle-off, #batch-result-toggle-mixed, #batch-result-toggle-on).btn.btn-primary:focus-visible {
     background-image: var(--btn-hover-highlight);
     background-color: rgb(var(--sec-container));
     background-blend-mode: overlay;
-    border-color: rgb(var(--on-surface));
     outline-color: rgb(var(--focus-ring));
     outline-style: solid;
     outline-width: 0.3rem;
@@ -2553,22 +2551,20 @@ button:is(#batch-result-toggle-off, #batch-result-toggle-mixed, #batch-result-to
     background-image: var(--btn-active-highlight);
     background-color: rgb(var(--sec-container));
     background-blend-mode: overlay;
-    border-color: rgb(var(--on-surface));
 }
 button:is(#batch-result-toggle-off, #batch-result-toggle-mixed, #batch-result-toggle-on).btn.btn-primary:is(.disabled, :disabled) {
-    border-color: rgb(var(--outline),0.12);
     background-color: rgb(var(--sec-container),var(--disabled));
     color: rgb(var(--on-sec-container),var(--disabled));
 }
-button#batch-result-toggle-off.btn.btn-primary {
+button#batch-result-toggle-off.btn {
     padding-left: 16px;
     padding-right: 12px;
 }
-button#batch-result-toggle-mixed.btn.btn-primary {
+button#batch-result-toggle-mixed.btn {
     padding-right: 12px;
     padding-left: 12px;
 }
-button#batch-result-toggle-on.btn.btn-primary {
+button#batch-result-toggle-on.btn {
     padding-left: 12px;
     padding-right: 16px;
 }
