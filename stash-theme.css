@@ -2519,6 +2519,11 @@ button:not([title=Help]).btn-primary:not(:where(:disabled, .disabled)):is(:focus
 }
 /* * */
 
+/* Shrink Margin between Unmatched and Batch-buttons */
+.tagger-container .d-flex > .w-auto + .d-flex > button.btn.btn-primary {
+    margin-right: -4px;
+}
+
 /* Tagger-Container Settings Button */
 .tagger-container > .tagger-container-header > div > div.d-flex > div.ml-2 > button.btn.btn-primary {
     padding: 0;
@@ -7708,7 +7713,7 @@ a#new-performer-filter {
 }
 /* *** */
 
-.btn-secondary:not(.form-control):not(.dropdown-toggle):hover,
+.btn-secondary:not(.form-control):hover,
 .btn-toolbar .dropdown:not(.show) .dropdown-toggle.btn.btn-secondary:hover,
 .modal-body .btn-secondary.form-control:hover,
 button#scene-scrape:hover,
@@ -7740,7 +7745,7 @@ button#scene-scrape:focus,
     background-color: rgb(var(--body-color2));
     border-color: rgb(var(--outline));
 }
-.btn-secondary:not(.form-control):not(.dropdown-toggle):focus-visible,
+.btn-secondary:not(.form-control):focus-visible,
 .btn-toolbar .dropdown:not(.show) .dropdown-toggle.btn.btn-secondary:focus-visible,
 .modal-body .btn-secondary.form-control:focus-visible:not(:focus),
 button#scene-scrape:focus-visible,
