@@ -1108,7 +1108,8 @@ input:is(#batch-search-delay, #colorize-color-green, #colorize-color-yellow, #co
      transition: box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1), border 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 input:is(#batch-search-delay, #colorize-color-green, #colorize-color-yellow, #colorize-color-red).query-text-field.bg-secondary.text-white.border-secondary.form-control {
-    border: 1px solid rgb(var(--outline));
+    border: 1px solid rgb(var(--outline)) !important;
+    background-image: linear-gradient(to right, rgba(var(--pry-color),var(--text-field-tint)), rgba(var(--pry-color),var(--text-field-tint))),linear-gradient(to right, rgb(var(--card-color)), rgb(var(--card-color))) !important;
     border-radius: 4px;
     box-shadow: inset 0 0 0 1px transparent;
     margin-left: 30px;
@@ -1122,7 +1123,7 @@ input:is(#batch-search-delay, #colorize-color-green, #colorize-color-yellow, #co
     border: 1px solid rgb(var(--on-surface));
 }
 input:is(#batch-search-delay, #colorize-color-green, #colorize-color-yellow, #colorize-color-red).query-text-field.bg-secondary.text-white.border-secondary.form-control:hover {
-    border-color: rgb(var(--on-surface-variant));
+    border-color: rgb(var(--on-surface-variant)) !important;
 }
 .text-input:focus,
 .text-input:active,
@@ -2476,8 +2477,8 @@ button:not([title=Help]).btn-primary,
      position: relative;
      overflow: hidden;
      opacity: 1;
-     transition: background-color 0.55s cubic-bezier(0.4, 0, 0.2, 1), background-image 0.55s cubic-bezier(0.4, 0, 0.2, 1), outline 0.4s ease-in, box-shadow 0.4s ease-in, opacity 0 linear;
-     -webkit-transition: background-color 0.55s cubic-bezier(0.4, 0, 0.2, 1), background-image 0.55s cubic-bezier(0.4, 0, 0.2, 1), outline 0.4s ease-in, box-shadow 0.4s ease-in, opacity 0 linear;
+     transition: background-color 0.55s cubic-bezier(0.4, 0, 0.2, 1), background-image 0.55s cubic-bezier(0.4, 0, 0.2, 1), outline 0.4s ease-in, box-shadow 0.4s ease-in, opacity 0s linear;
+     -webkit-transition: background-color 0.55s cubic-bezier(0.4, 0, 0.2, 1), background-image 0.55s cubic-bezier(0.4, 0, 0.2, 1), outline 0.4s ease-in, box-shadow 0.4s ease-in, opacity 0s linear;
 }
 @media (min-width: 1200px) {
     .details-divider button {
