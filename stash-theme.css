@@ -2740,12 +2740,13 @@ div#crop-btn-container {
     color: rgb(var(--mars));
 }
 
-/*.text-danger {
-    color: rgb(var(--error)) !important;
+.text-danger {
+    color: rgb(var(--error))!important;
+    text-shadow: var(--light-txt-shadow);
     font-size: 22px;
     line-height: 28px;
-    letter-spacing: 0;
-}*/
+    letter-spacing: 0.35px;
+}
 
 .scene-video-filter .row .col-12 {
     color: #c0ebe2;
