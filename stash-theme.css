@@ -9890,6 +9890,7 @@ div#create-scene-page {
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0.25px;
+    color: rgb(var(--on-surface-variant));
 }
 /* Name of Scene, Movie, etc. */
 .optional-field-content > .scene-link {
@@ -9898,6 +9899,12 @@ div#create-scene-page {
     letter-spacing: 0.11px;
 }
 /* */
+.search-result svg.svg-inline--fa.fa-circle-check.fa-icon {
+    color: rgb(var(--green)) !important;
+}
+.search-result .entity-name {
+    color: rgb(var(--on-surface-variant));
+}
 
 button.sprite-button.btn.btn-link > svg.fa-image {
     font-size: 24px;
