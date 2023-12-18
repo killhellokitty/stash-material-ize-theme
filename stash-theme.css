@@ -7102,7 +7102,6 @@ li.active .optional-field.excluded .optional-field-content,
 li.active .optional-field.excluded .scene-link {
     text-decoration: line-through;
     text-decoration-color: rgb(var(--on-error-container));
-    color: rgb(var(--on-pry-container)) !important;
     filter: saturate(0.6);
 }
 
