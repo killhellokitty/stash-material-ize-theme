@@ -5194,6 +5194,7 @@ div[draggable="true"] .recommendation-row:not(.scene-recommendations):not(.studi
 }
 .pagination button.btn.btn-secondary:is(.disabled, :disabled, .disabled:hover, :disabled:hover) {
     background-color: transparent;
+    background-image: none;
     border-color: transparent;
     box-shadow: none;
     text-shadow: none;
