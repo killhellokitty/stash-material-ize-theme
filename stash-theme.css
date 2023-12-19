@@ -2776,8 +2776,13 @@ div#queue-content {
     background-color: #232626;
     padding-left: 12px;
 }
-#queue-viewer #queue-content .justify-content-center > .btn.btn-primary {
-  margin-bottom: 8px;
+#queue-viewer #queue-content > .d-flex > .btn.btn-primary:is(:only-of-type, :hover, :active, :focus, :active:focus) {
+    background-color: transparent;
+    background-image: none;
+    font-size: 27.45px;
+    color: rgb(var(--on-surface-variant));
+    font-weight: 900;
+    box-shadow: none;
 }
 #queue-viewer a {
     color: #c0ebe2;
