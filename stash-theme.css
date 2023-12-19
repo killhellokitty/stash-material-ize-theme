@@ -11113,11 +11113,11 @@ button[title=Help].nav-utility.minimal.btn.btn-primary:has(>svg.svg-inline--fa.f
     background-color: rgba(var(--on-surface),var(--btn-hover));
 }*/
 
-.toast-container .success{background-color:#00a492}
-.toast-container .danger{background-color:#93000a}
-.toast-container .warning{background-color:#dfc600}
-.toast-container .toast-header{background-color:transparent;border:none;color:#e0e3e1}
-.toast-container .toast-header .close{color:#e0e3e1;text-shadow:none}
+.toast-container .success{background-color: rgb(var(--green))}
+.toast-container .danger{background-color: rgb(var(--error))}
+.toast-container .warning{background-color: rgb(var(--warning))}
+.toast-container .toast-header{background-color:transparent;border:none;color: rgb(var(--on-surface))}
+.toast-container .toast-header .close{color: rgb(var(--on-surface));text-shadow:none}
 /* *** */
 
 /* Focus is NOT the same as Focus-Visible */
