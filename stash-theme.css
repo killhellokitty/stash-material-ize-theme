@@ -2804,10 +2804,10 @@ div#queue-content {
 }
 #queue-viewer a {
     color: rgb(var(--on-surface-variant));
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 0.15px;
-    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.25px;
+    font-weight: 400;
     transition: background-color 0.55s ease, color 0.15s ease-in-out;
 }
 #queue-viewer li.my-2 a:hover,
@@ -2827,13 +2827,10 @@ div#queue-content {
     background-color: #49fce2;
 }
 li.my-2::marker {
-    color: #dce4e2;
+    font-weight: 700;
 }
 li.my-2.current::marker {
-    color: #c0ebe2;
-}
-#queue-content li.my-2:nth-of-type(odd) {
-    background-color: rgb(255,255,255,.03);;
+    font-weight: 900;
 }
 /*#queue-content li.my-2:nth-of-type(even) {
     background-color: #363a3a;
@@ -2856,11 +2853,11 @@ li.my-2.current::marker {
     margin-left: 0 !important;
 }
 #queue-viewer .thumbnail-container {
-    height: 64px;
+    height: 72px;
     margin-bottom: 12px;
     margin-right: 16px;
     margin-top: 12px;
-    min-width: 100px;
+    min-width: 126px;
     width: auto;
 }
 .queue-controls .form-check>.form-check-label {
