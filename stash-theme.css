@@ -2770,11 +2770,13 @@ div#crop-btn-container {
 
 /* Queue-Viewer */
 div#queue-content {
-    background-color: #232626;
+    background-color: rgb(var(--card-color2));
 }
 #queue-viewer .queue-controls {
-    background-color: #232626;
-    padding-left: 12px;
+    background-color: rgb(var(--card-color2));
+    padding-left: 24px;
+    padding-right: 12px;
+    padding-top: 12px;
 }
 #queue-viewer > .queue-controls > div + div {
     display: flex;
