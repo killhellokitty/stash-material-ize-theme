@@ -2770,11 +2770,14 @@ div#crop-btn-container {
 
 /* Queue-Viewer */
 div#queue-content {
-    background-color: rgb(var(--card-color2));
+    background-color: transparent;
+    border-top: 1px solid rgb(255,255,255,0.13);
+    margin-top: 8px;
+    padding-top: 8px;
 }
 #queue-viewer .queue-controls {
-    background-color: rgb(var(--card-color2));
-    padding-left: 24px;
+    background-color: rgb(var(--card-color));
+    padding-left: 12px;
     padding-right: 12px;
     padding-top: 12px;
 }
@@ -2783,6 +2786,13 @@ div#queue-content {
 }
 #queue-viewer > .queue-controls button.minimal.btn.btn-secondary {
     font-size: 18px;
+}
+#queue-viewer .queue-controls + div#queue-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: center;
 }
 #queue-viewer #queue-content > .d-flex > .btn.btn-primary:is(:only-of-type, :hover, :active, :focus, :active:focus) {
     background-color: transparent;
@@ -2793,12 +2803,12 @@ div#queue-content {
     box-shadow: none;
 }
 #queue-viewer a {
-    color: #c0ebe2;
-    font-size: 16px;
-    line-height: 24px;
+    color: rgb(var(--on-surface-variant));
+    font-size: 14px;
+    line-height: 20px;
     letter-spacing: 0.15px;
     font-weight: 500;
-    transition: background-color 0.25s ease, color 0.12s ease-in-out;
+    transition: background-color 0.55s ease, color 0.15s ease-in-out;
 }
 #queue-viewer li.my-2 a:hover,
 #queue-viewer li.my-2 a:focus,
@@ -2823,7 +2833,7 @@ li.my-2.current::marker {
     color: #c0ebe2;
 }
 #queue-content li.my-2:nth-of-type(odd) {
-    background-color: #2d3130;
+    background-color: rgb(255,255,255,.03);;
 }
 /*#queue-content li.my-2:nth-of-type(even) {
     background-color: #363a3a;
