@@ -9276,7 +9276,7 @@ form#studio-edit {
     border: 1px solid #3f4946;
 }
 .scene-tabs .tab-content>.fade.tab-pane.active.show {
-    padding: 0 16px;
+    padding: 0;
 }
 
 .scene-tabs .tab-content .fade.tab-pane.active.show .form-group .col-form-label {
