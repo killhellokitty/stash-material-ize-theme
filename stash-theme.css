@@ -2776,6 +2776,9 @@ div#queue-content {
     background-color: #232626;
     padding-left: 12px;
 }
+#queue-viewer > .queue-controls > div + div {
+    display: flex;
+}
 #queue-viewer > .queue-controls button.minimal.btn.btn-secondary {
     font-size: 18px;
 }
