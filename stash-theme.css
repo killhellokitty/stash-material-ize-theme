@@ -2776,7 +2776,7 @@ div#queue-content {
     padding-top: 8px;
 }
 #queue-viewer .queue-controls {
-    background-color: rgb(var(--card-color));
+    background-color: transparent;
     padding-left: 12px;
     padding-right: 12px;
     padding-top: 12px;
@@ -2808,42 +2808,33 @@ div#queue-content {
     line-height: 24px;
     letter-spacing: 0.25px;
     font-weight: 400;
+    text-shadow: var(--light-txt-shadow);
     transition: background-color 0.55s ease, color 0.15s ease-in-out;
 }
-#queue-viewer li.my-2 a:hover,
-#queue-viewer li.my-2 a:focus,
-#queue-viewer li.my-2 a:hover:focus {
-    color: #005046;
+#queue-viewer li.my-2 a:hover {
+    color: rgb(var(--on-surface));
 }
-#queue-content li.my-2:hover, 
-#queue-content li.my-2:focus, 
-#queue-content li.my-2:hover:focus,
-#queue-content li.my-2:nth-of-type(even):hover,
-#queue-content li.my-2:nth-of-type(even):focus,
-#queue-content li.my-2:nth-of-type(even):hover:focus,
-#queue-content li.my-2:nth-of-type(odd):hover, 
-#queue-content li.my-2:nth-of-type(odd):focus, 
-#queue-content li.my-2:nth-of-type(odd):hover:focus {
-    background-color: #49fce2;
+#queue-content li.my-2:hover {
+    background-color: rgb(255,255,255,0.15);
 }
 li.my-2::marker {
     font-weight: 700;
+    text-shadow: var(--light-txt-shadow);
+}
+li.my-2:hover::marker {
+    color: rgb(var(--on-surface));
 }
 li.my-2.current::marker {
+    color: rgb(var(--on-surface-variant));
     font-weight: 900;
+    text-shadow: var(--light-txt-shadow);
 }
-/*#queue-content li.my-2:nth-of-type(even) {
-    background-color: #363a3a;
-}*/
-#queue-content li.my-2.current,
-#queue-content li.my-2.current:nth-of-type(odd),
-#queue-content li.my-2.current:nth-of-type(even) {
-    background-color: #00dfc6;
+#queue-content li.my-2.current {
+    background-color: rgb(255,255,255,0.05);
 }
-#queue-content li.my-2.current a,
-#queue-content li.my-2.current:nth-of-type(odd) a,
-#queue-content li.my-2.current:nth-of-type(even) a {
-    color: #003730;
+#queue-content li.my-2.current a {
+    font-weight: 500;
+    text-shadow: var(--light-txt-shadow);
 }
 #queue-viewer>#queue-content li.my-2 {
     margin-top: 0 !important;
@@ -2860,9 +2851,7 @@ li.my-2.current::marker {
     min-width: 126px;
     width: auto;
 }
-.queue-controls .form-check>.form-check-label {
-        padding-left: 8px;
-}
+/* * */
 
 .input-group>.input-group-append>.react-datepicker-wrapper button.btn.btn-secondary:not(:first-child):last-child {
     border-left: 2px solid #899390;
