@@ -4256,6 +4256,7 @@ div.scene-file-info .TruncatedText, div.scene-file-info .text-truncate {
 }
 .scene-tabs {   
     max-height: calc(99vh - 4rem); 
+    padding-left: 0;
 }
 
 div.tagger-container .btn-link {    
