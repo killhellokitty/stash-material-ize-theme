@@ -10045,9 +10045,10 @@ small.form-text {
 }
 
 .tagger-container .collapse.show.card .input-group:not(.has-validation)>input.form-control:not(:last-child) {
-    border-radius: 0.5rem;
+    border-radius: 4px;
     margin-right: -54px;
     padding-right: 68px;
+    background-color: rgb(var(--card-color2));
 }
 .tagger-container .collapse.show.card h4 {
     color: #cae9e3;
