@@ -3813,10 +3813,9 @@ h5.card-section-title, .scene-tabs .scene-header {
 }
 
 .scene-tabs .scene-header { 
-    margin-top: 8px; 
-    margin-bottom: 16px;
-    color: #e0e3e1; 
-    text-shadow: none;
+    margin-bottom: 12px;
+    color: rgb(var(--on-surface));
+    text-shadow: var(--really-light-txt-shadow);
 }
 .scene-tabs .studio-logo {  
     margin-top: 0;
