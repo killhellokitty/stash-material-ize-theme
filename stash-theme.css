@@ -42,17 +42,17 @@ body ::-webkit-scrollbar-track-piece,
 }
 body ::-webkit-scrollbar-thumb,
 ::-webkit-scrollbar-thumb {
-    background: rgba(255,255,255,0.54);
+    background: rgba(255,255,255,0.52);
     border-radius: 0.5rem;
     border: 2px solid rgb(var(--background));
 }
-/*body ::-webkit-scrollbar-thumb:hover,
+body ::-webkit-scrollbar-thumb:hover,
 ::-webkit-scrollbar-thumb:hover {
-    background: rgba(255,255,255,0.62);
-}*/
+    background: rgba(255,255,255,0.64);
+}
 body ::-webkit-scrollbar-thumb:focus,
 ::-webkit-scrollbar-thumb:focus {
-    background: rgba(255,255,255,0.62);
+    background: rgba(255,255,255,0.58);
 }
 body ::-webkit-scrollbar-corner,
 ::-webkit-scrollbar-corner {
@@ -1538,9 +1538,11 @@ input::-ms-input-placeholder {
 }
 
 /* --- VideoPlayer Adjustments ---*/
-.VideoPlayer {
-    margin-top: -1.28rem;
+.scene-player-container {
+    padding-right: 0;
+    margin-top: -0.9%;
 }
+
 /* --- Video Overlay Controls --- */
 .video-js {
     color: #fff;
@@ -1549,9 +1551,6 @@ input::-ms-input-placeholder {
     font-weight: 500;
     line-height: 20px;
     letter-spacing: 0.1px;
-}
-.video-js .vjs-tech {
-    top: 3%; /* Changing to top nav bar height created the need for this fix of the video screen 3% or maybe 20px works */
 }
 .video-js .vjs-slider {
     background-color: #8d8d8d8c;
