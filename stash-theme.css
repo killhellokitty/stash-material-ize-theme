@@ -5262,72 +5262,55 @@ div.mb-2 select.btn-secondary.form-control.focus option {
     border-style: none;
     appearance: none;
 }
+
 @media (min-width: 1200px) {
-.scene-divider:has(+.scene-player-container:not(.expanded)>.VideoPlayer) > button.btn.btn-primary,
-.scene-divider:has(+.scene-player-container.expanded>.VideoPlayer) > button.btn.btn-primary {
-    color: rgb(var(--on-pry-container));
-    border: 0;
-    background-color: rgb(var(--pry-container));
-    font-size: 27.45px;
-    font-weight: 1000;
-    box-shadow: var(--elevation-1);
-    text-shadow: none;
-    z-index: 2;
-    height: 56px;
-    width: 56px;
-    max-width: 56px;
-    padding: 0;
-    padding-left: 1px;
-    margin-left: -22px;
-    border-radius: 16px;
-    opacity: 1;
-    will-change: animation;
-}
-.scene-divider:has(+.scene-player-container.expanded>.VideoPlayer) > button.btn.btn-primary {
-    margin-left: -4px;
-}
-.scene-divider:has(+.scene-player-container:not(.expanded)>.VideoPlayer) > button.btn.btn-primary:hover,
-.scene-divider:has(+.scene-player-container.expanded>.VideoPlayer) > button.btn.btn-primary:hover {
-    color: rgb(var(--on-pry-container));
-    background-image: linear-gradient(45deg, rgb(255,255,255,0.08), rgb(255,255,255,0.08));
-    background-color: rgb(var(--pry-container));
-    background-blend-mode: overlay;
-    box-shadow: var(--elevation-2);
-}
-.scene-divider:has(+.scene-player-container:not(.expanded)>.VideoPlayer) > button.btn.btn-primary:active,
-.scene-divider:has(+.scene-player-container.expanded>.VideoPlayer) > button.btn.btn-primary:active {
-    color: rgb(var(--on-pry-container));
-    background-image: linear-gradient(45deg, rgb(255,255,255,0.12), rgb(255,255,255,0.12));
-    background-color: rgb(var(--pry-container));
-    background-blend-mode: overlay;
-    box-shadow: var(--elevation-1);
-    animation: sceneplayeropacity 0.2s ease-in 0s forwards;
-}
-.scene-divider:has(+.scene-player-container:not(.expanded)>.VideoPlayer) > button.btn.btn-primary:focus,
-.scene-divider:has(+.scene-player-container.expanded>.VideoPlayer) > button.btn.btn-primary:focus {
-    color: rgb(var(--on-pry-container));
-    background-image: linear-gradient(45deg, rgb(255,255,255,0.12), rgb(255,255,255,0.12));
-    background-color: rgb(var(--pry-container));
-    background-blend-mode: overlay;
-    box-shadow: var(--elevation-1);
-    animation: sceneplayergrow 0.25s ease-out 0s forwards;
-}
-@keyframes sceneplayergrow {
-    0% {
-        transform: scale(0.25) translate(-12.25%, -12.25%);
+    .scene-divider:has(+.scene-player-container:not(.expanded)) > button.btn.btn-primary,
+    .scene-divider:has(+.scene-player-container.expanded) > button.btn.btn-primary {
+        color: rgb(var(--on-pry-container));
+        border: 0;
+        background-color: rgb(var(--pry-container));
+        font-size: 27.45px;
+        font-weight: 900;
+        box-shadow: var(--elevation-1);
+        z-index: 2;
+        height: 56px;
+        width: 56px;
+        max-width: 56px;
+        padding: 0 0 0 1px;
+        margin-left: -22px;
+        border-radius: 16px;
+        opacity: 1;
+        will-change: animation;
     }
-    100% { 
-        transform: scale(1);
+    .scene-divider:has(+.scene-player-container.expanded) > button.btn.btn-primary {
+        margin-left: -4px;
+    }
+    .scene-divider:has(+.scene-player-container:not(.expanded)) > button.btn.btn-primary:hover,
+    .scene-divider:has(+.scene-player-container.expanded) > button.btn.btn-primary:hover {
+        color: rgb(var(--on-pry-container));
+        background-image: linear-gradient(45deg, rgb(255,255,255,0.08), rgb(255,255,255,0.08));
+        background-color: rgb(var(--pry-container));
+        background-blend-mode: overlay;
+        box-shadow: var(--elevation-2);
+    }
+    .scene-divider:has(+.scene-player-container:not(.expanded)) > button.btn.btn-primary:active,
+    .scene-divider:has(+.scene-player-container.expanded) > button.btn.btn-primary:active {
+        color: rgb(var(--on-pry-container));
+        background-image: linear-gradient(45deg, rgb(255,255,255,0.12), rgb(255,255,255,0.12));
+        background-color: rgb(var(--pry-container));
+        background-blend-mode: overlay;
+        box-shadow: var(--elevation-1);
+    }
+    .scene-divider:has(+.scene-player-container:not(.expanded)) > button.btn.btn-primary:focus,
+    .scene-divider:has(+.scene-player-container.expanded) > button.btn.btn-primary:focus {
+        color: rgb(var(--on-pry-container));
+        background-image: linear-gradient(45deg, rgb(255,255,255,0.12), rgb(255,255,255,0.12));
+        background-color: rgb(var(--pry-container));
+        background-blend-mode: overlay;
+        box-shadow: var(--elevation-1);
     }
 }
-@keyframes sceneplayeropacity {
-    0% {
-    }
-    100% { 
-        visibility: hidden;
-    }
-}
-}
+
 .scrubber-wrapper {
     background-color: black;
     border-style: none;
