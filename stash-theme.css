@@ -5268,9 +5268,9 @@ div.mb-2 select.btn-secondary.form-control.focus option {
     color: rgb(var(--on-pry-container));
     border: 0;
     background-color: rgb(var(--pry-container));
-    font-size: 27.45px;
+    font-size: 24px;
     font-weight: 1000;
-    box-shadow: var(--elevation-3);
+    box-shadow: var(--elevation-1);
     text-shadow: none;
     z-index: 2;
     height: 40px;
@@ -5279,15 +5279,15 @@ div.mb-2 select.btn-secondary.form-control.focus option {
     padding: 0;
     padding-left: 1px;
     margin-left: -12px;
-    border-radius: 5rem;
+    border-radius: 16px;
 }
-.row > .scene-tabs:not(.collapsed) + .scene-divider:has(+.scene-player-container:not(.expanded)>.VideoPlayer) > button.btn.btn-primary:hover,
-.row > .scene-tabs.collapsed + .scene-divider:has(+.scene-player-container.expanded>.VideoPlayer) > button.btn.btn-primary:hover {
+.row > .scene-tabs:not(.collapsed) + .scene-divider:has(+.scene-player-container:not(.expanded)>.VideoPlayer) > button.btn.btn-primary:not(:disabled, .disabled):is(:hover, :hover:focus),
+.row > .scene-tabs.collapsed + .scene-divider:has(+.scene-player-container.expanded>.VideoPlayer) > button.btn.btn-primary:not(:disabled, .disabled):is(:hover, :hover:focus) {
     color: rgb(var(--on-pry-container));
     background-image: linear-gradient(45deg, rgb(255,255,255,0.08), rgb(255,255,255,0.08));
     background-color: rgb(var(--pry-container));
     background-blend-mode: overlay;
-    box-shadow: var(--elevation-5);
+    box-shadow: var(--elevation-2);
 }
 .row > .scene-tabs:not(.collapsed) + .scene-divider:has(+.scene-player-container:not(.expanded)>.VideoPlayer) > button.btn.btn-primary:not(:disabled, .disabled):is(:active, :focus, :active:focus),
 .row > .scene-tabs.collapsed + .scene-divider:has(+.scene-player-container.expanded>.VideoPlayer) > button.btn.btn-primary:not(:disabled, .disabled):is(:active, :focus, :active:focus) {
@@ -5295,7 +5295,7 @@ div.mb-2 select.btn-secondary.form-control.focus option {
     background-image: linear-gradient(45deg, rgb(255,255,255,0.12), rgb(255,255,255,0.12));
     background-color: rgb(var(--pry-container));
     background-blend-mode: overlay;
-    box-shadow: var(--elevation-0);
+    box-shadow: var(--elevation-1);
 }
 
 .scrubber-wrapper {
