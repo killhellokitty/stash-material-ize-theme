@@ -5268,21 +5268,21 @@ div.mb-2 select.btn-secondary.form-control.focus option {
     color: rgb(var(--on-pry-container));
     border: 0;
     background-color: rgb(var(--pry-container));
-    font-size: 24px;
+    font-size: 27.45px;
     font-weight: 1000;
     box-shadow: var(--elevation-1);
     text-shadow: none;
     z-index: 2;
-    height: 52px;
-    width: 52px;
-    max-width: 52px;
+    height: 56px;
+    width: 56px;
+    max-width: 56px;
     padding: 0;
     padding-left: 1px;
-    margin-left: -18px;
+    margin-left: -20px;
     border-radius: 16px;
     opacity: 1;
 }
-.scene-divider:has(+.scene-player-container:not(.expanded)>.VideoPlayer) > button.btn.btn-primary {
+.scene-divider:has(+.scene-player-container.expanded>.VideoPlayer) > button.btn.btn-primary {
     margin-left: -6px;
 }
 .scene-divider:has(+.scene-player-container:not(.expanded)>.VideoPlayer) > button.btn.btn-primary:not(:disabled, .disabled):is(:hover, :hover:focus),
