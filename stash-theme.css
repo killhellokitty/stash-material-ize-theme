@@ -2758,14 +2758,14 @@ div#crop-btn-container {
     padding-bottom: 12px;
 }
 .scene-details h5 {
-    color: rgb(var(--date-color));;
+    color: rgb(var(--on-surface-variant));
 }
 .scene-tabs .row.justify-content-center.scene-performers {
     margin-top: 6px;
     border-radius: 1rem;
 }
 .scene-tabs p.pre {
-    color: #c0ebe2;
+    color: rgb(var(--description-color));
 }
 
 /* Queue-Viewer */
