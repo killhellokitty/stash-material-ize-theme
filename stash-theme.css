@@ -34,27 +34,27 @@ body ::-webkit-scrollbar,
 }
 body ::-webkit-scrollbar-track,
 ::-webkit-scrollbar-track {
-    background: #252926;
+    background: rgb(var(--background));
 }
 body ::-webkit-scrollbar-track-piece,
 ::-webkit-scrollbar-track-piece {
-    background: #2e3330;
+    background: rgba(0,0,0,0.14);
 }
 body ::-webkit-scrollbar-thumb,
 ::-webkit-scrollbar-thumb {
-    background: #4a524d;
+    background: rgba(255,255,255,0.54);
     border-radius: 3px;
-    border: 1px solid #252926;
+    border: 1px solid rgb(var(--background));
 }
 body ::-webkit-scrollbar-thumb:hover,
 body ::-webkit-scrollbar-thumb:focus,
 ::-webkit-scrollbar-thumb:hover,
 ::-webkit-scrollbar-thumb:focus {
-    background: #5d6760;
+    background: rgba(255,255,255,0.60);
 }
 body ::-webkit-scrollbar-corner,
 ::-webkit-scrollbar-corner {
-    background-color: #252926;
+    background-color: rgb(var(--background));
 }
 body ::-webkit-resizer,
 ::-webkit-resizer {
