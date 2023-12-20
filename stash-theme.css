@@ -5283,7 +5283,7 @@ div.mb-2 select.btn-secondary.form-control.focus option {
     opacity: 1;
 }
 .scene-divider:has(+.scene-player-container.expanded>.VideoPlayer) > button.btn.btn-primary {
-    margin-left: -6px;
+    margin-left: -4px;
 }
 .scene-divider:has(+.scene-player-container:not(.expanded)>.VideoPlayer) > button.btn.btn-primary:not(:disabled, .disabled):is(:hover, :hover:focus),
 .scene-divider:has(+.scene-player-container.expanded>.VideoPlayer) > button.btn.btn-primary:not(:disabled, .disabled):is(:hover, :hover:focus) {
