@@ -2761,11 +2761,15 @@ div#crop-btn-container {
     color: rgb(var(--on-surface-variant));
 }
 .scene-tabs .row.justify-content-center.scene-performers {
-    margin-top: 6px;
-    border-radius: 1rem;
+    margin-top: 0;
+    padding-top: 0;
 }
 .scene-tabs p.pre {
     color: rgb(var(--description-color));
+    margin-bottom: 16px;
+}
+.scene-tabs span.tag-item.badge.badge-secondary:last-of-type {
+    margin-bottom: 16px;
 }
 
 /* Queue-Viewer */
