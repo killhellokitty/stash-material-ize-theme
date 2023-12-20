@@ -2758,7 +2758,7 @@ div#crop-btn-container {
     padding-bottom: 12px;
 }
 .scene-details h5 {
-    color: #ccd7d4;
+    color: rgb(var(--date-color));;
 }
 .scene-tabs .row.justify-content-center.scene-performers {
     margin-top: 6px;
@@ -3876,9 +3876,9 @@ h5.card-section-title, .scene-tabs .scene-header {
 }*/
 
 .scene-details h6 {
-    color: #94a19d;
+    color: rgb(var(--date-color));
+    text-shadow: var(--light-txt-shadow);
     padding-bottom: 0;
-    padding-top: 12px;
 }
 
 .zoom-0 {
