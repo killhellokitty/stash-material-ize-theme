@@ -14,7 +14,7 @@
     text-rendering: geometricPrecision;
     filter: none;
     scrollbar-width: auto;
-    scrollbar-color: rgba(255,255,255,0.54) rgba(0,0,0,0.14);
+    scrollbar-color: rgba(255,255,255,0.46) rgba(0,0,0,0.12);
     -webkit-font-smoothing: antialiased;
     -webkit-font-smoothing: subpixel-antialiased;
     -moz-osx-font-smoothing: auto;
@@ -22,45 +22,66 @@
     font-weight: 400;
     letter-spacing: 0.25px;
     line-height: 20px;
+    transition: background 0.55s ease, background-color 0.55s ease, color 0.2s ease-in, text-decoration-color 0.15s ease-in-out, text-shadow 0.15s ease-in-out, scrollbar-color 0.55s ease;
+    -webkit-transition: background 0.55s ease, background-color 0.55s ease, color 0.2s ease-in, text-decoration-color 0.15s ease-in-out, text-shadow 0.15s ease-in-out;
+    -moz-transition: background 0.55s ease, background-color 0.55s ease, color 0.2s ease-in, text-decoration-color 0.15s ease-in-out, text-shadow 0.15s ease-in-out, scrollbar-color 0.55s ease;
 }
 @media (max-width: 575.98px) {
     body {
         background: rgb(var(--body-color2));
     }
 }
-body ::-webkit-scrollbar,
+
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 9px;
 }
-body ::-webkit-scrollbar-track,
+body ::-webkit-scrollbar {
+    width: 9px;
+}
 ::-webkit-scrollbar-track {
     background: rgb(var(--background));
 }
-body ::-webkit-scrollbar-track-piece,
+body ::-webkit-scrollbar-track {
+    background: rgba(0,0,0,0.12);
+}
 ::-webkit-scrollbar-track-piece {
-    background: rgba(0,0,0,0.14);
+    background: rgb(var(--background));
 }
-body ::-webkit-scrollbar-thumb,
+body ::-webkit-scrollbar-track-piece {
+    background: rgba(0,0,0,0.12);
+}
 ::-webkit-scrollbar-thumb {
-    background: rgba(255,255,255,0.52);
-    border-radius: 0.5rem;
-    border: 2px solid rgb(var(--background));
+    background: rgba(255,255,255,0.46);
+    border-radius: 3px;
+    border: 0;
+    opacity: 1;
+    -webkit-transition: background 0.55s ease-in;
 }
-body ::-webkit-scrollbar-thumb:hover,
+body ::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,0.46);
+    border-radius: 3px;
+    border: 0;
+    opacity: 1;
+    -webkit-transition: background 0.55s ease-in;
+}
 ::-webkit-scrollbar-thumb:hover {
-    background: rgba(255,255,255,0.64);
+    background: rgba(255,255,255,0.52);
 }
-body ::-webkit-scrollbar-thumb:focus,
-::-webkit-scrollbar-thumb:focus {
-    background: rgba(255,255,255,0.58);
+body ::-webkit-scrollbar-thumb:hover {
+    background: rgba(255,255,255,0.52);
 }
-body ::-webkit-scrollbar-corner,
 ::-webkit-scrollbar-corner {
     background-color: rgb(var(--background));
 }
-body ::-webkit-resizer,
+body ::-webkit-scrollbar-corner {
+    background-color: rgba(0,0,0,0.12);
+}
+
 ::-webkit-resizer {
-    background-color: rgb(var(--background));
+    background-color: rgb(var(--body-color2));
+}
+body ::-webkit-resizer {
+    background-color: rgba(0,0,0,0.12);
 }
 
 .row {
@@ -70,7 +91,7 @@ body ::-webkit-resizer,
 
 [type=number]::-webkit-inner-spin-button {
     height: 42px;
-    background: #eaeceb url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAKUlEQVQYlWNgwAT/sYhhKPiPT+F/LJgEsHv37v+EMGkmkuImoh2NoQAANlcun/q4OoYAAAAASUVORK5CYII=) no-repeat center center;;
+    background: #eaeceb url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAKUlEQVQYlWNgwAT/sYhhKPiPT+F/LJgEsHv37v+EMGkmkuImoh2NoQAANlcun/q4OoYAAAAASUVORK5CYII=) no-repeat center center;
     position: absolute;
     top: 7px;
     right: 12px;
@@ -239,11 +260,11 @@ h6,
     --elevation-5: 0px 8px 10px -6px rgba(0,0,0,0.2), 0px 16px 24px 2px rgba(0,0,0,0.14), 0px 6px 30px 5px rgba(0,0,0,0.12);
     --elevation-0-inverse: inset 0px 0px 0px 0px rgba(0,0,0,0.2), inset 0px 0px 0px 0px rgba(0,0,0,0.14), inset 0px 0px 0px 0px rgba(0,0,0,0.12);
     /* Fonts */
-    --HeaderFont: -apple-system, blinkmacsystemfont, OpenSans, "DejaVu Sans", "Roboto Flex", Roboto, "Segoe UI", 'Helvetica Neue', Arial, Ubuntu, "Noto Sans", 'Liberation Sans', Helvetica, sans-serif;
-    --BodyFont: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto Flex", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Liberation Sans", "Helvetica Neue","Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", emoji, math, serif, ui-serif;
-    --MonoFont: "Inconsolata", "SF Mono", "FiraCode Mono", "Liberation Mono", "Roboto Mono", SFMono-Regular, Monaco, Consolas, "Source Code Pro", 'Courier New', 'NotoSans Mono', monospace;
-    --SerifFont: "Apple Garamond", "Baskerville", "Times New Roman", "Droid Serif", "Times","Source Serif Pro", serif;
-    --UnicodeFont: "Noto", "FiraCode", "Roboto Flex", Roboto;
+    --HeaderFont: -apple-system, blinkmacsystemfont, OpenSans, "DejaVu Sans", "Roboto Flex", Roboto, "Segoe UI", "Noto Sans", 'Helvetica Neue', Arial, Ubuntu, 'Liberation Sans', Helvetica, sans-serif, system-ui;
+    --BodyFont: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto Flex", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Liberation Sans", "Noto Sans", "Helvetica Neue", Arial, Helvetica, sans-serif, "Apple Color Emoji", "Noto Color Emoji", "Segoe UI Emoji", emoji, math, serif, ui-serif, system-ui;
+    --MonoFont: "SF Mono", SFMono-Regular, Monaco, Consolas, Hermit, "Inconsolata", "FiraCode Mono", "Roboto Mono", "Source Code Pro", 'Courier New', "Liberation Mono", 'NotoSans Mono', monospace;
+    --SerifFont: "Apple Garamond", "Baskerville", "Times New Roman", "Droid Serif", "Times","Source Serif Pro", serif, system-ui;
+    --UnicodeFont: "Noto", "FiraCode", "Roboto Flex", Roboto, system-ui;
     --LogoFont: "San Francisco", "DejaVu Sans", Arial, "Helvetica Neue", "Roboto Flex", Roboto, sans-serif, system-ui;
     --light-txt-shadow: 1px 2px 1px rgba(0,0,0,0.22);
     --really-light-txt-shadow: 0.5px 1px 0.5px rgba(0,0,0,0.16);
@@ -284,7 +305,7 @@ code,
     font-size: 12px;
     font-weight: 200;
     line-height: 16px;
-    letter-spacing: 1.2px;
+    letter-spacing: 1.25px;
     font-variant: tabular-nums slashed-zero;
     color: rgb(var(--on-background));
     background-color: rgb(var(--background));
@@ -368,30 +389,36 @@ hr {
     border-style: none;
 }
 
-::-moz-selection {
-    background-color: #0a1211;
-    color: #edf2f0;
-}
 ::selection {
-    background-color: #0a1211;
-    color: #edf2f0;
+    background: rgb(var(--on-background));
+    color: rgb(var(--background));
+    transition: background 0.25s ease, color 0.15s linear;
+    -webkit-transition: background 0.25s ease, color 0.15s linear;
+}
+::-moz-selection {
+    background: rgb(var(--on-background));
+    color: rgb(var(--background));
+    -moz-transition: background 0.25s ease, color 0.15s linear;
+}
+
+textarea::selection, 
+input::selection {
+    background-color: rgb(var(--on-surface-variant));
+    color: rgb(var(--surface-variant));
+    transition: background 0.25s ease, color 0.15s linear;
+    -webkit-transition: background 0.25s ease, color 0.15s linear;
 }
 textarea::-moz-selection, 
 input::-moz-selection {
-    background-color: #edf2f0;
-    color: #0a1211;
-}
-textarea::selection, 
-input::selection {
-    background-color: #edf2f0;
-    color: #0a1211;
+    background-color: rgb(var(--on-surface-variant));
+    color: rgb(var(--surface-variant));
+    -moz-transition: background 0.25s ease, color 0.15s linear;
 }
 
 select {
     -webkit-appearance: none;
     -moz-appearance: none;
     -ms-appearance: none;
-    -o-appearance: none;
     appearance: none;
     background:transparent;
     background-image: url("data:image/svg+xml;utf8,<svg fill='%23e2e2e5' height='30' viewBox='0 0 24 22' width='28' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
@@ -1546,11 +1573,11 @@ input::-ms-input-placeholder {
 /* --- Video Overlay Controls --- */
 .video-js {
     color: #fff;
-    font-family: Arial,Helvetica,var(--BodyFont);
+    font-family: var(--BodyFont);
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
-    letter-spacing: 0.1px;
+    letter-spacing: 0.15px;
 }
 .video-js .vjs-slider {
     background-color: #8d8d8d8c;
@@ -2791,6 +2818,7 @@ div#queue-content {
 }
 #queue-viewer > .queue-controls button.minimal.btn.btn-secondary {
     font-size: 18px;
+    width: 40px;
 }
 #queue-viewer .queue-controls + div#queue-content {
     display: flex;
@@ -4857,15 +4885,15 @@ div.card.studio-card .TruncatedText,
 /* doesn't except variables??? --white-color used for background. And darkened text shadow. */
 .tagger-container .col > .scene-link > .TruncatedText:hover {
     background-color: rgb(251, 250, 249, .5); 
-    text-shadow: var(--really-light-txt-shadow);; 
+    text-shadow: var(--really-light-txt-shadow);
 }
 .tagger-container .col > .scene-link > .TruncatedText:is(:active, :focus) {
     background-color: rgb(251, 250, 249, .6);
-    text-shadow: var(--really-light-txt-shadow);;
+    text-shadow: var(--really-light-txt-shadow);
 }
 .tagger-container .col > .scene-link > .TruncatedText:visited {
     background-color: rgb(251, 250, 249, .7);
-    text-shadow: var(--really-light-txt-shadow);;
+    text-shadow: var(--really-light-txt-shadow);
 }
 .tagger-container .col > .scene-link > .TruncatedText:focus {
     text-decoration-color: rgb(251, 250, 249, .6);
@@ -5264,48 +5292,47 @@ div.mb-2 select.btn-secondary.form-control.focus option {
 }
 
 @media (min-width: 1200px) {
-    .scene-divider:has(+.scene-player-container:not(.expanded)) > button.btn.btn-primary,
-    .scene-divider:has(+.scene-player-container.expanded) > button.btn.btn-primary {
-        color: rgb(var(--on-pry-container));
+    .scene-divider:has(+.scene-player-container) > button.btn.btn-primary {
+        color: rgb(var(--secondary));
         border: 0;
-        background-color: rgb(var(--pry-container));
-        font-size: 27.45px;
+        background-color: rgb(var(--on-sec));
+        font-size: 24px;
         font-weight: 900;
         box-shadow: var(--elevation-1);
         z-index: 2;
-        height: 56px;
-        width: 56px;
-        max-width: 56px;
-        padding: 0 0 0 1px;
-        margin-left: -22px;
-        border-radius: 16px;
+        height: 48px;
+        width: 48px;
+        max-width: 48px;
+        padding: 0;
+        margin-left: -16px;
+        border-radius: 13px;
         opacity: 1;
-        will-change: animation;
+        margin-top: 12px;
+        transition: background-color 0.55s ease, color 0.2s ease-in, box-shadow 0.4s ease-in-out, margin-left 0.35s ease;
+        -webkit-transition: background-color 0.55s ease, color 0.2s ease-in, box-shadow 0.4s ease-in-out, margin-left 0.35s ease;
+        -moz-transition: background-color 0.55s ease, color 0.2s ease-in, box-shadow 0.4s ease-in-out, margin-left 0.35s ease;
     }
     .scene-divider:has(+.scene-player-container.expanded) > button.btn.btn-primary {
         margin-left: -4px;
     }
-    .scene-divider:has(+.scene-player-container:not(.expanded)) > button.btn.btn-primary:hover,
-    .scene-divider:has(+.scene-player-container.expanded) > button.btn.btn-primary:hover {
-        color: rgb(var(--on-pry-container));
+    .scene-divider:has(+.scene-player-container) > button.btn.btn-primary:hover {
+        color: rgb(var(--secondary));
         background-image: linear-gradient(45deg, rgb(255,255,255,0.08), rgb(255,255,255,0.08));
-        background-color: rgb(var(--pry-container));
+        background-color: rgb(var(--on-sec));
         background-blend-mode: overlay;
         box-shadow: var(--elevation-2);
     }
-    .scene-divider:has(+.scene-player-container:not(.expanded)) > button.btn.btn-primary:active,
-    .scene-divider:has(+.scene-player-container.expanded) > button.btn.btn-primary:active {
-        color: rgb(var(--on-pry-container));
+    .scene-divider:has(+.scene-player-container) > button.btn.btn-primary:active {
+        color: rgb(var(--secondary));
         background-image: linear-gradient(45deg, rgb(255,255,255,0.12), rgb(255,255,255,0.12));
-        background-color: rgb(var(--pry-container));
+        background-color: rgb(var(--on-sec));
         background-blend-mode: overlay;
         box-shadow: var(--elevation-1);
     }
-    .scene-divider:has(+.scene-player-container:not(.expanded)) > button.btn.btn-primary:focus,
-    .scene-divider:has(+.scene-player-container.expanded) > button.btn.btn-primary:focus {
-        color: rgb(var(--on-pry-container));
+    .scene-divider:has(+.scene-player-container) > button.btn.btn-primary:focus {
+        color: rgb(var(--secondary));
         background-image: linear-gradient(45deg, rgb(255,255,255,0.12), rgb(255,255,255,0.12));
-        background-color: rgb(var(--pry-container));
+        background-color: rgb(var(--on-sec));
         background-blend-mode: overlay;
         box-shadow: var(--elevation-1);
     }
@@ -5884,7 +5911,7 @@ nav.nav.nav-tabs {
 }
 .nav-item > button[title="Organized"].minimal.organized-button.not-organized.btn.btn-secondary:is(:hover, :focus) {
     color: rgb(var(--pry-color)) !important;
-    background-image: linear-gradient(to right, rgb(var(--pry-color),var(--btn-hover)), rgb(var(--pry-color),var(--btn-hover))),linear-gradient(to right, rgb(var(--body-color2)), rgb(var(--body-color2))) !important;
+    background-image: linear-gradient(to right, rgba(var(--pry-color),var(--btn-hover)), rgba(var(--pry-color),var(--btn-hover))),linear-gradient(to right, rgb(var(--body-color2)), rgb(var(--body-color2))) !important;
 }
 .nav-item > button[title="Organized"].minimal.organized-button.organized.btn.btn-secondary:is(:only-of-type, :hover, :focus) {
     color: lch(63.921% 32.12 186.214) !important;
@@ -5893,7 +5920,7 @@ nav.nav.nav-tabs {
 .nav-item > button[title="Organized"].minimal.organized-button.organized.btn.btn-secondary:is(:hover, :focus) {
     color: lch(63.921% 32.12 186.214) !important;
     background-color: rgb(var(--body-color2));
-    background-image: linear-gradient(to right, rgb(68, 170, 160,var(--btn-hover)), rgb(68, 170, 160,var(--btn-hover))),linear-gradient(to right, rgb(var(--body-color2)), rgb(var(--body-color2))) !important;
+    background-image: linear-gradient(to right, lch(63.921% 32.12 186.214 / var(--btn-hover)), lch(63.921% 32.12 186.214 / var(--btn-hover))),linear-gradient(to right, rgb(var(--body-color2)), rgb(var(--body-color2))) !important;
 }
 
 .o-counter.btn-group > button[title="O-Counter"].minimal.btn.btn-secondary > span > svg,
