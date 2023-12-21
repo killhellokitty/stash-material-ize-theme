@@ -5884,16 +5884,16 @@ nav.nav.nav-tabs {
 }
 .nav-item > button[title="Organized"].minimal.organized-button.not-organized.btn.btn-secondary:is(:hover, :focus) {
     color: rgb(var(--pry-color)) !important;
-    background-image: linear-gradient(to right, rgba(var(--pry-color),var(--btn-hover)), rgba(var(--pry-color),var(--btn-hover))),linear-gradient(to right, rgb(var(--body-color2)), rgb(var(--body-color2))) !important;
+    background-image: linear-gradient(to right, rgb(var(--pry-color),var(--btn-hover)), rgb(var(--pry-color),var(--btn-hover))),linear-gradient(to right, rgb(var(--body-color2)), rgb(var(--body-color2))) !important;
 }
 .nav-item > button[title="Organized"].minimal.organized-button.organized.btn.btn-secondary:is(:only-of-type, :hover, :focus) {
     color: lch(63.921% 32.12 186.214) !important;
     background-color: transparent;
 }
 .nav-item > button[title="Organized"].minimal.organized-button.organized.btn.btn-secondary:is(:hover, :focus) {
-    color: rgb(var(--tertiary)) !important;
+    color: lch(63.921% 32.12 186.214) !important;
     background-color: rgb(var(--body-color2));
-    background-image: linear-gradient(to right, rgba(var(--tertiary),var(--btn-hover)), rgba(var(--tertiary),var(--btn-hover))),linear-gradient(to right, rgb(var(--body-color2)), rgb(var(--body-color2))) !important;
+    background-image: linear-gradient(to right, rgb(68, 170, 160,var(--btn-hover)), rgb(68, 170, 160,var(--btn-hover))),linear-gradient(to right, rgb(var(--body-color2)), rgb(var(--body-color2))) !important;
 }
 
 .o-counter.btn-group > button[title="O-Counter"].minimal.btn.btn-secondary > span > svg,
