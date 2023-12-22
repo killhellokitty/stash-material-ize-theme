@@ -2800,6 +2800,13 @@ div#crop-btn-container {
     margin-bottom: 16px;
 }
 
+.scene-file-info.details-list dt {
+    color: rgb(var(--on-surface));
+}
+.scene-file-info.details-list dd {
+    color: rgb(var(--on-surface-variant));
+}
+
 /* Queue-Viewer */
 div#queue-content {
     background-color: transparent;
