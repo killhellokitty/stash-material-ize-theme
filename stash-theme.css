@@ -2803,15 +2803,14 @@ div#crop-btn-container {
 /* Queue-Viewer */
 div#queue-content {
     background-color: transparent;
-    border-top: 1px solid rgb(255,255,255,0.13);
     margin-top: 8px;
     padding-top: 8px;
 }
 #queue-viewer .queue-controls {
     background-color: transparent;
-    padding-left: 12px;
-    padding-right: 12px;
-    padding-top: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 16px;
 }
 #queue-viewer > .queue-controls > div + div {
     display: flex;
