@@ -2507,6 +2507,7 @@ button:not([title=Help]).btn-primary,
      opacity: 1;
      transition: background-color 0.55s cubic-bezier(0.4, 0, 0.2, 1), background-image 0.55s cubic-bezier(0.4, 0, 0.2, 1), outline 0.4s ease-in, box-shadow 0.4s ease-in, opacity 0s linear;
      -webkit-transition: background-color 0.55s cubic-bezier(0.4, 0, 0.2, 1), background-image 0.55s cubic-bezier(0.4, 0, 0.2, 1), outline 0.4s ease-in, box-shadow 0.4s ease-in, opacity 0s linear;
+     -moz-transition: background-color 0.55s cubic-bezier(0.4, 0, 0.2, 1), background-image 0.55s cubic-bezier(0.4, 0, 0.2, 1), outline 0.4s ease-in, box-shadow 0.4s ease-in, opacity 0s linear;
 }
 @media (min-width: 1200px) {
     .details-divider button {
@@ -2515,8 +2516,9 @@ button:not([title=Help]).btn-primary,
 }
 button:not([title=Help]).btn.btn-primary:where(.disabled, :disabled, .disabled:hover, :disabled:hover) {
     color: rgb(var(--on-surface),var(--disabled));
+    background-image: linear-gradient(45deg, rgb(var(--body-color2)), rgb(var(--body-color2)));
     background-color: rgb(var(--on-surface),var(--btn-background-disabled));
-    background-image: none;
+    background-blend-mode: overlay;
 }
 button:not([title=Help]).btn-primary:not(:disabled):not(.disabled):hover,
 .login .btn.btn-primary:hover {
