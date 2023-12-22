@@ -2778,8 +2778,8 @@ div#crop-btn-container {
     letter-spacing: 0.35px;
 }
 
-.scene-video-filter .row .col-12 {
-    color: #c0ebe2;
+.scene-video-filter > .row > span > h5 {
+    color: rgb(var(--outline));
 }
 .scene-details, 
 .original-scene-details {
