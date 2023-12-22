@@ -5766,7 +5766,7 @@ nav.nav.nav-tabs {
     /*margin-left: 0.2rem;*/
     justify-content: space-evenly;
     border-bottom: 1px solid rgb(255,255,255,0.13);
-    padding-bottom: 24px;
+    padding-bottom: 16px;
     /* align-items: center; */
     margin-bottom: 0;
 }
