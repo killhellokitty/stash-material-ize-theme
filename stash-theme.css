@@ -2833,7 +2833,7 @@ div#queue-content {
     color: rgb(var(--on-surface-variant));
     font-weight: 900;
     box-shadow: none;
-    padding: 0;
+    padding: 0 0 16px 0;
 }
 #queue-viewer a {
     color: rgb(var(--on-surface-variant));
