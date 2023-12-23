@@ -404,14 +404,14 @@ hr {
 textarea::selection, 
 input::selection {
     background-color: rgb(var(--on-surface-variant));
-    color: rgb(var(--surface-variant));
+    color: rgb(var(--surface));
     transition: background 0.25s ease, color 0.15s linear;
     -webkit-transition: background 0.25s ease, color 0.15s linear;
 }
 textarea::-moz-selection, 
 input::-moz-selection {
     background-color: rgb(var(--on-surface-variant));
-    color: rgb(var(--surface-variant));
+    color: rgb(var(--surface));
     -moz-transition: background 0.25s ease, color 0.15s linear;
 }
 
@@ -3617,7 +3617,7 @@ li.search-result.selected-result.active {
      background-color: hsla(0, 0%, 39.2%, .4);
 }
  #scene-edit-details .edit-buttons-container {
-    margin: 0;
+    margin: 0 16px;
     background-color: rgb(var(--body-color2));
     background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPgo8cmVjdCB3aWR0aD0iNSIgaGVpZ2h0PSI1IiBmaWxsPSIjMWEyMDI1Ij48L3JlY3Q+CjxwYXRoIGQ9Ik0wIDVMNSAwWk02IDRMNCA2Wk0tMSAxTDEgLTFaIiBzdHJva2U9IiMxMDE0MTciIHN0cm9rZS13aWR0aD0iMSI+PC9wYXRoPgo8L3N2Zz4=");
     padding: 16px 0 !important;
@@ -8556,7 +8556,7 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
     top: 17px;
     position: relative;
     background-color: transparent;
-    z-index: 3;
+    z-index: 2;
 }
 #scene-edit-details .form-container .form-group:nth-of-type(-n+5) .col-form-label:not([for="urls"])::before,
 #scene-edit-details .form-label[for="details"]::before {
