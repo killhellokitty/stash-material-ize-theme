@@ -8609,12 +8609,11 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
 #scene-edit-details > form > .form-container + .form-container .form-group.row:nth-of-type(3) .string-list-input > .form-group > .input-group > input.text-input.form-control + .input-group-append {
     display: flex;
     margin-left: unset;
-    align-items: flex-start;
     justify-content: flex-start;
-    flex-wrap: wrap;
     margin-right: auto;
     margin-left: auto;
     width: auto;
+    min-width: 100%;
     position: absolute;
 }
 #scene-edit-details > form > .form-container + .form-container .form-group.row:nth-of-type(3) .string-list-input > .form-group > .input-group > input.text-input.form-control + .input-group-append > button.scrape-url-button.text-input.btn.btn-secondary {
