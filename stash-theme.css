@@ -8515,9 +8515,6 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
 }
 #scene-edit-details .form-container .form-group:nth-of-type(3) input.form-control {
     border-radius: 4px;
-    width: auto;
-    min-width: 100%;
-    padding-right: 64px;
 } 
 #scene-edit-details .form-container .form-group:nth-of-type(4) input.form-control {
     border-radius: 4px;
@@ -8609,7 +8606,7 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
 #scene-edit-details > form > .form-container + .form-container .form-group.row:nth-of-type(3) .string-list-input > .form-group > .input-group > input.text-input.form-control + .input-group-append {
     display: flex;
     margin-left: unset;
-    justify-content: flex-start;
+    justify-content: flex-end;
     margin-right: auto;
     margin-left: auto;
     width: auto;
