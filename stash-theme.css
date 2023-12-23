@@ -8607,7 +8607,15 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
 
 /* Scene-Edit-Details URL's Input-Append */
 #scene-edit-details > form > .form-container + .form-container .form-group.row:nth-of-type(3) .string-list-input > .form-group > .input-group > input.text-input.form-control + .input-group-append {
-    
+    display: flex;
+    margin-left: unset;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-right: auto;
+    margin-left: auto;
+    width: auto;
+    position: absolute;
 }
 /*#scene-edit-details .form-container .form-group:nth-of-type(3) .col-form-label,*/
 #scene-edit-details .col-form-label[for="urls"],
