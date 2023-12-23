@@ -8514,10 +8514,9 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
     padding-right: 1.1428571428571428rem;
 }
 #scene-edit-details .form-container .form-group:nth-of-type(3) input.form-control {
-    border-radius: 3px;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-    margin-right: -40px;
+    border-radius: 4px;
+    width: auto;
+    min-width: 100%;
     padding-right: 64px;
 } 
 #scene-edit-details .form-container .form-group:nth-of-type(4) input.form-control {
@@ -8604,6 +8603,11 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
 #scene-edit-details .form-container .form-group:nth-of-type(3):focus-within .col-form-label[for="urls"],
 #movie-edit .form-group:nth-of-type(7):focus-within .col-form-label[for="url"] {
     visibility: visible;
+}
+
+/* Scene-Edit-Details URL's Input-Append */
+#scene-edit-details > form > .form-container + .form-container .form-group.row:nth-of-type(3) .string-list-input > .form-group > .input-group > input.text-input.form-control + .input-group-append {
+    
 }
 /*#scene-edit-details .form-container .form-group:nth-of-type(3) .col-form-label,*/
 #scene-edit-details .col-form-label[for="urls"],
