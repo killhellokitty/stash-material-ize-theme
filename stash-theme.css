@@ -8515,7 +8515,7 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
 }
 #scene-edit-details .form-container .form-group:nth-of-type(3) input.form-control {
     border-radius: 4px;
-    padding-right: 104px;
+    padding-right: 120px;
 } 
 #scene-edit-details .form-container .form-group:nth-of-type(4) input.form-control {
     border-radius: 4px;
