@@ -8522,6 +8522,9 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
     margin-right: -40px;
     padding-right: 64px;
 }
+#scene-edit-details .form-container .form-group:nth-of-type(3) input.text-input.form-control:focus {
+    padding-right: 12px;
+}
 #scene-edit-details .form-container .form-group:nth-of-type(-n+5) input.form-control::placeholder {
     font-size: 1rem;
     font-weight: 400;
