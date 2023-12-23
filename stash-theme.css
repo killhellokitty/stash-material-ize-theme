@@ -8515,6 +8515,7 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
 }
 #scene-edit-details .form-container .form-group:nth-of-type(3) input.form-control {
     border-radius: 4px;
+    padding-right: 104px;
 } 
 #scene-edit-details .form-container .form-group:nth-of-type(4) input.form-control {
     border-radius: 4px;
@@ -8606,13 +8607,14 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
 #scene-edit-details > form > .form-container + .form-container .form-group.row:nth-of-type(3) .string-list-input > .form-group > .input-group > input.text-input.form-control + .input-group-append {
     display: flex;
     margin-left: unset;
-    margin-left: 75%;
+    margin-left: 70%;
     position: absolute;
     margin-bottom: -10%;
     margin-top: 2%;
-    padding-right: 9px;
+    padding-right: 12px;
     z-index: 2;
     justify-content: flex-end;
+    column-gap: 12px;
 }
 #scene-edit-details > form > .form-container + .form-container .form-group.row:nth-of-type(3) .string-list-input > .form-group > .input-group > input.text-input.form-control + .input-group-append > button.scrape-url-button.text-input.btn.btn-secondary {
     padding: unset;
