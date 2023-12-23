@@ -8619,6 +8619,7 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
     left: 0%;
     width: 40px;
     height: 40px;
+    font-size: 24px;
 }
 #scene-edit-details > form > .form-container + .form-container .form-group.row:nth-of-type(3) .string-list-input > .form-group > .input-group > input.text-input.form-control + .input-group-append > button.scrape-url-button.text-input.btn.btn-secondary + button.btn.btn-danger {
     padding: unset;
@@ -8631,6 +8632,7 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
     width: 40px;
     height: 40px;
     margin-right: 1px;
+    font-size: 24px;
 }
 /*#scene-edit-details .form-container .form-group:nth-of-type(3) .col-form-label,*/
 #scene-edit-details .col-form-label[for="urls"],
