@@ -9890,7 +9890,7 @@ div#create-scene-page {
 #scene-edit-details .form-container .form-group.row + .form-group.row > label.col-form-label.form-label {
     font-size: 12px;
     line-height: 16px;
-    letter-spacing: 0.35px;
+    letter-spacing: 1.0px;
     font-weight: 500;
     color: rgb(var(--pry-color));
 }
