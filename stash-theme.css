@@ -9907,6 +9907,10 @@ div#create-scene-page {
     padding-right: 4px;
     background-color: rgb(var(--body-color2));
     margin-right: 38%;
+    visibility: hidden;
+}
+.form-container .form-group.row + .form-group.row:focus-within > .url-label > label[for="urls"].col-form-label {
+    visibility: visible;
 }
 
 /* Tagger-Container */
