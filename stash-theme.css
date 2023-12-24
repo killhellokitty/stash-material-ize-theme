@@ -8522,20 +8522,20 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
     margin-right: -40px;
     padding-right: 64px;
 }
+
 #scene-edit-details .form-container .form-group:nth-of-type(3) input.text-input.form-control:focus {
     padding-right: 12px;
 }
+
 #scene-edit-details .form-container .form-group:nth-of-type(-n+5) input.form-control::placeholder {
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 400;
-    line-height: 1.4285714285714286rem;
-    letter-spacing: 0.017857142857142856rem;
+    line-height: 24px;
+    letter-spacing: 0.5px;
 }
-#scene-edit-details .form-container .form-group:nth-of-type(-n+5) input.form-control:focus::placeholder {
-    color: transparent;
-}
+
 #scene-edit-details .form-container .form-group:nth-of-type(4) input.form-control:focus::placeholder {
-    color: #6a7573;
+    color: rgb(var(--on-surface-variant));
     visibility: visible;
 }
 /* general settings for Text-Field Labels */
@@ -9882,6 +9882,33 @@ div#create-scene-page {
     margin-top: 0;
     flex-wrap: nowrap;
 }
+
+/* Text-Input Column-Form-Label */
+.form-container .form-group.row + .form-group.row label.col-form-label.form-label {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.35px;
+    color: rgb(var(--pry-color));
+}
+    /* URL's */
+.form-container .form-group.row + .form-group.row > .url-label > label[for="urls"].col-form-label {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.35px;
+    font-weight: 500;
+    color: rgb(var(--pry-color));
+    position: relative;
+    display: block;
+    margin-left: 12px;
+    margin-bottom: -18%;
+    margin-top: calc(11% + 4px);
+    z-index: 2;
+    padding-left: 4px;
+    padding-right: 4px;
+    background-color: rgb(var(--body-color2));
+    margin-right: 38%;
+}
+
 /* Tagger-Container */
 .tagger-container .search-item > .row > div:nth-child(2) {
     padding: 16px;
