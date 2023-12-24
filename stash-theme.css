@@ -8539,7 +8539,7 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
     visibility: visible;
 }
 /* general settings for Text-Field Labels */
-#scene-edit-details .form-container .form-group:nth-of-type(-n+5) .col-form-label,
+#scene-edit-details .form-container .form-group:nth-of-type(-n+5) .col-form-label:not([for="urls"]),
 #scene-edit-details .form-label[for="details"] {
     color: #00dfc6;
     font-size: 0.8571428571428571rem;
@@ -8590,7 +8590,7 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
     max-width: 5.571428571428571rem;
     width: 5.571428571428571rem;
 }
-#scene-edit-details .form-container .form-group:nth-of-type(3) .col-form-label[for="urls"]::before,
+/*#scene-edit-details .form-container .form-group:nth-of-type(3) .col-form-label[for="urls"]::before,*/
 #movie-edit .form-group:nth-of-type(7) .col-form-label[for="url"]::before {
     content: "";
     background-color: rgb(var(--body-color2));
@@ -8601,7 +8601,7 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
     z-index: -1;
 }
 /*#scene-edit-details .form-container .form-group:nth-of-type(3):focus-within .col-form-label,*/
-#scene-edit-details .form-container .form-group:nth-of-type(3):focus-within .col-form-label[for="urls"],
+/*#scene-edit-details .form-container .form-group:nth-of-type(3):focus-within .col-form-label[for="urls"],*/
 #movie-edit .form-group:nth-of-type(7):focus-within .col-form-label[for="url"] {
     visibility: visible;
 }
@@ -8640,7 +8640,7 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
     font-size: 24px;
 }
 /*#scene-edit-details .form-container .form-group:nth-of-type(3) .col-form-label,*/
-#scene-edit-details .col-form-label[for="urls"],
+/*#scene-edit-details .col-form-label[for="urls"],*/
 #movie-edit .col-form-label[for="url"] {
     visibility: hidden;
     left: 12px;
@@ -8654,11 +8654,11 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
     top: 10px;
 }
 /*#scene-edit-details .form-container .form-group:nth-of-type(3) .col-form-label::before,*/
-#scene-edit-details .col-form-label[for="urls"],
+/*#scene-edit-details .col-form-label[for="urls"],
 #scene-edit-details .col-form-label[for="urls"]::before {
     max-width: 37px;
     width: 37px;
-}
+}*/
 #movie-edit .col-form-label[for="url"],
 #movie-edit .col-form-label[for="url"]::before {
     max-width: 31px;
@@ -9907,6 +9907,7 @@ div#create-scene-page {
     padding-right: 4px;
     background-color: rgb(var(--body-color2));
     margin-right: 38%;
+    transform: translate(0%,0%);
     visibility: hidden;
 }
 .form-container .form-group.row + .form-group.row:focus-within > .url-label > label[for="urls"].col-form-label {
