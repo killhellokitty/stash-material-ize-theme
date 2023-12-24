@@ -8541,7 +8541,7 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
     visibility: visible;
 }
 /* general settings for Text-Field Labels */
-#scene-edit-details .form-container .form-group:nth-of-type(-n+5) .col-form-label:not([for="urls"]),
+#scene-edit-details .form-container .form-group:nth-of-type(-n+5) .col-form-label:not([for="urls"]):not([for="code"]),
 #scene-edit-details .form-label[for="details"] {
     color: #00dfc6;
     font-size: 0.8571428571428571rem;
@@ -8550,7 +8550,7 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
     letter-spacing: 0.028571428571428574rem;
     transition: color .15s ease-in-out;
 }
-#scene-edit-details .form-container .form-group:nth-of-type(-n+5) .col-form-label:not([for="urls"]),
+#scene-edit-details .form-container .form-group:nth-of-type(-n+5) .col-form-label:not([for="urls"]):not([for="code"]),
 #scene-edit-details .form-label[for="details"] {
     visibility: hidden;
     padding: 0 0.2857142857142857rem 0.5714285714285714rem 0.2857142857142857rem;
@@ -8576,7 +8576,7 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
 #scene-edit-details .form-label[for="details"]::before {
     top: 8px;
 }
-#scene-edit-details .form-container .form-group:nth-of-type(-n+5):focus-within .col-form-label:not([for="urls"]) {
+#scene-edit-details .form-container .form-group:nth-of-type(-n+5):focus-within .col-form-label:not([for="urls"]):not([for="code"]) {
     visibility: visible;
 }
 /* */
