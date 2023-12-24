@@ -9890,6 +9890,7 @@ div#create-scene-page {
     font-size: 12px;
     line-height: 16px;
     letter-spacing: 0.35px;
+    font-weight: 500;
     color: rgb(var(--pry-color));
 }
     /* URL's */
@@ -9904,7 +9905,7 @@ div#create-scene-page {
     margin-left: 12px;
     margin-bottom: -18%;
     margin-top: calc(11% + 4px);
-    z-index: 2;
+    z-index: 4;
     padding-left: 4px;
     padding-right: 4px;
     background-color: rgb(var(--body-color2));
