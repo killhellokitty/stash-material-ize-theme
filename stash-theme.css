@@ -8610,11 +8610,11 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
 #scene-edit-details > form > .form-container + .form-container .form-group.row:nth-of-type(3) .string-list-input > .form-group > .input-group > input.text-input.form-control + .input-group-append {
     display: flex;
     margin-left: unset;
-    margin-left: 70%;
+    margin-left: 71.5%; /* Moved form 70% to cover the .invalid exclamation unicode symbol */
     position: absolute;
     margin-bottom: -10%;
     margin-top: 2%;
-    padding-right: 12px;
+    padding-right: 10px;
     z-index: 2;
     justify-content: flex-end;
     column-gap: 12px;
