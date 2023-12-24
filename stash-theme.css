@@ -9920,6 +9920,13 @@ div#create-scene-page {
 .string-list-input .input-group {
     margin-bottom: 8px;
 }
+#scene-edit-details .string-list-input > .form-group:is(:only-child, :last-child) {
+    margin-bottom: 0;
+}
+#scene-edit-details .string-list-input > .form-group > .input-group:is(:last-child:not(:only-child)) {
+    margin-bottom: 0;
+}
+
 
     /* Title */
 #scene-edit-details .form-container .form-group.row > label[for="title"].form-label.col-form-label.col-3 {
