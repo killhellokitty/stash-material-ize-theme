@@ -1212,6 +1212,7 @@ input:is(#batch-search-delay, #colorize-color-green, #colorize-color-yellow, #co
 .was-validated .form-control:invalid,
 .form-control.is-invalid {
    border: 0;
+   background-image: none;
    border-style: none;
    caret-color: rgb(var(--error-container));
    box-shadow: 0 0 0 1px rgb(var(--error-container)), inset 0 0 0 1px transparent;
@@ -1224,7 +1225,8 @@ input:is(#batch-search-delay, #colorize-color-green, #colorize-color-yellow, #co
     box-shadow: 0 0 0 1px rgb(var(--on-error-container)), inset 0 0 0 1px transparent;
 }
 .was-validated .form-control:invalid:focus,
-.form-control.is-invalid:focus {
+.form-control.is-invalid:focus,
+.form-container .string-list-input.is-invalid > .form-group:focus-within .input-group > input.is-invalid.form-control {
     border: 0;
     border-style: none;
     box-shadow: 0 0 0 1px rgb(var(--error-container)), inset 0 0 0 1px rgb(var(--error-container));
