@@ -9916,6 +9916,10 @@ div#create-scene-page {
 #scene-edit-details .form-container .form-group.row + .form-group.row:focus-within > label.form-label.col-form-label.col-3 {
     visibility: visible;
 }
+    /* For Editor Text-Inputs with multiple Inputs spacing between. */
+.string-list-input .input-group {
+    margin-bottom: 8px;
+}
 
     /* Title */
 #scene-edit-details .form-container .form-group.row > label[for="title"].form-label.col-form-label.col-3 {
