@@ -9920,10 +9920,10 @@ div#create-scene-page {
 .string-list-input .input-group {
     margin-bottom: 8px;
 }
-#scene-edit-details .string-list-input > .form-group:is(:only-child, :last-child) {
+/*#scene-edit-details .string-list-input > .form-group:is(:only-child, :last-child) {
     margin-bottom: 0;
-}
-#scene-edit-details .string-list-input > .form-group > .input-group:is(:last-child:not(:only-child)) {
+}*/
+#scene-edit-details .string-list-input > .form-group > .input-group:is(:last-child, :only-child) {
     margin-bottom: 0;
 }
 
