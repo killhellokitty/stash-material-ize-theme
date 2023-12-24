@@ -9886,6 +9886,7 @@ div#create-scene-page {
 }
 
 /* Text-Input Column-Form-Label */
+#scene-edit-details .form-container .form-group.row > label[for="title"].col-form-label.form-label,
 #scene-edit-details .form-container .form-group.row + .form-group.row > label.col-form-label.form-label {
     font-size: 12px;
     line-height: 16px;
@@ -9893,6 +9894,7 @@ div#create-scene-page {
     font-weight: 500;
     color: rgb(var(--pry-color));
 }
+#scene-edit-details .form-container .form-group.row > label[for="title"].form-label.col-form-label.col-3,
 #scene-edit-details .form-container .form-group.row + .form-group.row > label.form-label.col-form-label.col-3 {
     position: relative;
     display: block;
@@ -9911,6 +9913,7 @@ div#create-scene-page {
     flex-basis: fit-content;
     visibility: hidden;
 }
+#scene-edit-details .form-container .form-group.row:focus-within > label[for="title"].form-label.col-form-label.col-3,
 #scene-edit-details .form-container .form-group.row + .form-group.row:focus-within > label.form-label.col-form-label.col-3 {
     visibility: visible;
 }
@@ -9939,6 +9942,7 @@ div#create-scene-page {
 .form-container .form-group.row + .form-group.row:focus-within > .url-label > label[for="urls"].col-form-label {
     visibility: visible;
 }
+/* * */
 
 /* Tagger-Container */
 .tagger-container .search-item > .row > div:nth-child(2) {
