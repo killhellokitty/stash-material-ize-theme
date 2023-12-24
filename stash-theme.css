@@ -8587,11 +8587,11 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
     width: 2.4285714285714284rem;
 }
 /*#scene-edit-details .form-container .form-group:nth-of-type(2) .col-form-label,*/
-#scene-edit-details .col-form-label[for="code"],
+/*#scene-edit-details .col-form-label[for="code"],
 #scene-edit-details .col-form-label[for="code"]::before {
     max-width: 5.571428571428571rem;
     width: 5.571428571428571rem;
-}
+}*/
 /*#scene-edit-details .form-container .form-group:nth-of-type(3) .col-form-label[for="urls"]::before,*/
 #movie-edit .form-group:nth-of-type(7) .col-form-label[for="url"]::before {
     content: "";
