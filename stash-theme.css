@@ -3119,6 +3119,7 @@ div.react-select__control .react-select__multi-value:focus:active {
 /* Button Indicators in Combobox */
 div.react-select__indicator {
     color: rgb(var(--on-surface-variant));
+    opacity: 1;
 }
 div.react-select__control:hover div.react-select__indicator:hover {
     color: rgb(var(--on-surface-variant));
@@ -3131,22 +3132,22 @@ div.react-select__control.react-select__control--is-focused div.react-select__in
 div.react-select__control.react-select__control--is-focused div.react-select__indicator.react-select__clear-indicator:focus,
 div.react-select__control.react-select__control--is-focused div.react-select__indicator.react-select__clear-indicator:active {
     color: rgb(var(--on-surface-variant));
-    background-color: rgba(255,255,255,0.16);
+    background-color: rgb(var(--on-surface-variant),var(--btn-active));
     border-radius: 5rem;
     opacity: 1;
 }
 div.react-select__dropdown-indicator,
 div.react-select__clear-indicator {
     color: rgb(var(--on-surface-variant));
-    padding: 10px;
+    padding: 0;
     position: relative;
-    left: -12px;
+    margin-right: 12px;
     opacity: 1;
 }
 div.react-select__indicator.react-select__dropdown-indicator:hover,
 div.react-select__indicator.react-select__clear-indicator:hover {
     color: rgb(var(--on-surface-variant));
-    background-color: rgba(255,255,255,0.08);
+    background-color: rgb(var(--on-surface-variant),var(--btn-hover));
     border-radius: 5rem;
     opacity: 1;
 }
@@ -3218,10 +3219,10 @@ div.dropdown-menu .dropdown-item:hover {
     outline: none;
 }
 
-/* Multi-Value__Remove SVG Icon size */
+/* React dropdown SVG Icon size */
 svg.css-8mmkcg {
-    height: 24px!important;
-    width: 24px!important;
+    height: 40px!important;
+    width: 40px!important;
 }
 
 .text-success {
