@@ -1461,25 +1461,18 @@ input#update-stashids.query-text-field.bg-secondary.text-white.border-secondary.
 
 /* Placeholder inside Input Boxes */
 input::placeholder {
-    color: rgb(117, 117, 117);
-    font-size: 14px;
+    color: rgb(var(--on-surface-variant));
+    font-size: 16px;
     font-weight: 400;
-    line-height: 20px !important;
-    letter-spacing: 0.1px;
+    line-height: 24px !important;
+    letter-spacing: 0.5px;
 }
 input:-ms-input-placeholder {
-    color: rgb(117, 117, 117);
-    font-size: 14px;
+    color: rgb(var(--on-surface-variant));
+    font-size: 16px;
     font-weight: 400;
-    line-height: 20px !important;
-    letter-spacing: 0.1px;
-}
-input::-ms-input-placeholder {
-    color: rgb(117, 117, 117);
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 20px !important;
-    letter-spacing: 0.1px;
+    line-height: 24px !important;
+    letter-spacing: 0.5px;
 }
 
 /* --- Video timeline thumbnails bars --- */
@@ -3067,14 +3060,18 @@ div.react-select__control.react-select__control--is-focused:hover {
 div.react-select__control .react-select__single-value, 
 div.react-select__control .react-select__input-container {
     color: rgb(var(--interactive-input));
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
-    letter-spacing: 0.5px;
-    line-height: 24px;
+    letter-spacing: 0.15px;
+    line-height: 20px;
 }
 .react-select__placeholder,
 .css-1wa3eu0-placeholder {
     color: rgb(var(--on-surface-variant));
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
     text-shadow: none;
 }
 .row.form-group:has(.invalid-feedback)>div>div>div.react-select__control .react-select__placeholder {
