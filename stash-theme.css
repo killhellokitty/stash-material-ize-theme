@@ -9962,6 +9962,17 @@ div#create-scene-page {
 #scene-edit-details .form-group:has(>label[for="details"]) {
     padding: 0 14px;
 }
+#scene-edit-details .form-label[for="details"] {
+    top: 2%;
+    visibility: hidden;
+    position: absolute;
+    margin-left: 16px;
+    margin-bottom: unset;
+    z-index: 4;
+    padding: 0 4px;
+    background-color: rgb(var(--body-color2));
+    transform: translate(0%,0%);
+}
 
 /* */
 .scene-cover {
