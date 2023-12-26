@@ -9959,6 +9959,9 @@ div#create-scene-page {
 }
 
 /* Scene Editor - Details textarea */
+#scene-edit-details .form-group:has(>label[for="details"]) {
+    padding: 0 16px;
+}
 textarea#details {
     position: relative;
     width: 100%;
