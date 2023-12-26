@@ -8687,9 +8687,7 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
     max-width: 48px;
     width: 48px;
 }*/
-#scene-edit-details .form-group:focus-within .form-label[for="details"] {
-    color: #00dfc6 !important;
-}
+
 #scene-edit-details .col-form-label[for="rating"] {
     top: 0.42857142857142855rem;
 }
@@ -9915,9 +9913,11 @@ div#create-scene-page {
     visibility: hidden;
 }
 #scene-edit-details .form-container .form-group.row:focus-within > label[for="title"].form-label.col-form-label.col-3,
-#scene-edit-details .form-container .form-group.row + .form-group.row:focus-within > label.form-label.col-form-label.col-3 {
+#scene-edit-details .form-container .form-group.row + .form-group.row:focus-within > label.form-label.col-form-label.col-3,
+#scene-edit-details .form-group:focus-within .form-label[for="details"] {
     visibility: visible;
 }
+
     /* For Editor Text-Inputs with multiple Inputs spacing between. */
 .string-list-input .input-group {
     margin-bottom: 8px;
