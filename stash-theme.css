@@ -8558,7 +8558,7 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
     z-index: 2;
 }*/
 /*#scene-edit-details .form-container .form-group:nth-of-type(-n+5) .col-form-label:not([for="urls"]):not([for="code"]):not([for="title"])::before,*/
-#scene-edit-details .form-label[for="details"]::before {
+/*#scene-edit-details .form-label[for="details"]::before {
     content: "";
     background-color: rgb(var(--body-color2));
     height: 3px;
@@ -8566,7 +8566,7 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
     left: 0;
     position: absolute;
     z-index: -1;
-}
+}*/
 #scene-edit-details .form-container .form-group:nth-of-type(-n+5) .col-form-label[for="date"]::before {
     top: 6px;
 }
