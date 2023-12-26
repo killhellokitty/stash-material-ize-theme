@@ -9965,7 +9965,7 @@ div#create-scene-page {
 #scene-edit-details .form-label[for="details"]::before {
     content: "";
 }
-#scene-edit-details .form-label[for="details"]::before:focus {
+#scene-edit-details .form-label[for="details"]:focus::before {
     content: "Description";
     position: absolute;
     z-index: -1;
@@ -9992,7 +9992,7 @@ div#create-scene-page {
     background-color: rgb(var(--body-color2));
     transform: translate(0%,0%);
 }
-#scene-edit-details .form-label[for="details"]::after:focus {
+#scene-edit-details .form-label[for="details"]:focus::after {
     content: "Description";
     position: absolute;
     font-size: 16px;
