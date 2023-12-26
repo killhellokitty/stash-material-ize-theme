@@ -8608,7 +8608,7 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
 }
 
 /* Scene-Edit-Details URL's Input-Append */
-#scene-edit-details > form > .form-container + .form-container .form-group.row:nth-of-type(3) .string-list-input > .form-group > .input-group > input.text-input.form-control + .input-group-append {
+#scene-edit-details > form > .form-container + .form-container .form-group.row:nth-of-type(3) .string-list-input > .form-group > .input-group > input[placeholder="URL"].text-input.form-control + .input-group-append {
     display: flex;
     margin-left: unset;
     margin-left: 70%;
@@ -8619,7 +8619,7 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
     justify-content: flex-end;
     column-gap: 12px;
 }
-#scene-edit-details > form > .form-container + .form-container .form-group.row:nth-of-type(3) .string-list-input > .form-group > .input-group > input.text-input.form-control + .input-group-append > button.scrape-url-button.text-input.btn.btn-secondary {
+#scene-edit-details > form > .form-container + .form-container .form-group.row:nth-of-type(3) .string-list-input > .form-group > .input-group > input[placeholder="URL"].text-input.form-control + .input-group-append > button.scrape-url-button.text-input.btn.btn-secondary {
     padding: unset;
     top: 0%;
     left: 0%;
@@ -8627,7 +8627,7 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
     height: 40px;
     font-size: 24px;
 }
-#scene-edit-details > form > .form-container + .form-container .form-group.row:nth-of-type(3) .string-list-input > .form-group > .input-group > input.text-input.form-control + .input-group-append > button.scrape-url-button.text-input.btn.btn-secondary + button.btn.btn-danger {
+#scene-edit-details > form > .form-container + .form-container .form-group.row:nth-of-type(3) .string-list-input > .form-group > .input-group > input[placeholder="URL"].text-input.form-control + .input-group-append > button.scrape-url-button.text-input.btn.btn-secondary + button.btn.btn-danger {
     padding: unset;
     border-radius: 5rem;
     display: flex;
