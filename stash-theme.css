@@ -4336,9 +4336,9 @@ div.tagger-container .btn-link {
     column-gap: 12px;
 }
 
-#scene-edit-details .form-group {
+/*#scene-edit-details .form-group {
     margin-bottom: 0.65rem;
-}
+}*/
 
 #tasks-panel .tasks-panel-queue {
      background: var(--body-color2);
@@ -9882,7 +9882,11 @@ div#create-scene-page {
     margin-top: 0;
     flex-wrap: nowrap;
 }
-
+/* Scene Editor --- row/column spacing */
+#scene-edit-details .form-group {
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
 /* Text-Input Column-Form-Label */
 #scene-edit-details .form-container .form-group.row > label[for="title"].col-form-label.form-label,
 #scene-edit-details .form-container .form-group.row + .form-group.row > label.col-form-label.form-label {
