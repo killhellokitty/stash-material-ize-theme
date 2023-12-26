@@ -9962,7 +9962,7 @@ div#create-scene-page {
 #scene-edit-details .form-group:has(>label[for="details"]) {
     padding: 0 14px;
 }
-#scene-edit-details .form-label[for="details"]::before {
+#scene-edit-details .form-container .form-group > label.form-label[for="details"]::before {
     content: "Description";
     position: absolute;
     z-index: -1;
@@ -9989,22 +9989,22 @@ div#create-scene-page {
     background-color: rgb(var(--body-color2));
     transform: translate(0%,0%);
 }
-#scene-edit-details .form-label[for="details"]:focus::before {
-    content: "Description";
+#scene-edit-details .form-container .form-group:focus-within > label.form-label[for="details"]::before {
+    content: "";
+    /*content: "Description";
     position: absolute;
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 0.5px;
-    line-height: 24px;
-    visibility: visible;
-    isolation: auto;
-    top: 0%;
+    line-height: 24px;*/
+    visibility: hidden;
+    /*top: 0%;
     margin-top: 50%;
     margin-left: -85%;
     text-shadow: none;
     bottom: 0%;
     color: rgb(var(--body-color2));
-    transform: translate(0%,0%);
+    transform: translate(0%,0%);*/
 }
 
 /* */
