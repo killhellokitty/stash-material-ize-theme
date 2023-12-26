@@ -9996,14 +9996,14 @@ div#create-scene-page {
     font-weight: 400;
     letter-spacing: 0.5px;
     line-height: 24px;
-    visibility: hidden;
+    visibility: visible;
     isolation: auto;
     top: 0%;
     margin-top: 50%;
     margin-left: -85%;
     text-shadow: none;
     bottom: 0%;
-    color: rgb(var(--on-surface-variant));
+    color: rgb(var(--body-color2));
     transform: translate(0%,0%);
 }
 
