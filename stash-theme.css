@@ -8514,9 +8514,10 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
     padding-left: 1.1428571428571428rem;
     padding-right: 1.1428571428571428rem;
 }*/
-#scene-edit-details .form-container .form-group:nth-of-type(3) input.form-control {
+#scene-edit-details .form-container .form-group input[placeholder="URL"].form-control {
     border-radius: 4px;
     padding-right: 120px;
+    margin-top: -2.5%;
 } 
 #scene-edit-details .form-container .form-group:nth-of-type(4) input.form-control {
     border-radius: 4px;
@@ -8524,7 +8525,7 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
     padding-right: 64px;
 }
 
-#scene-edit-details .form-container .form-group:nth-of-type(3) input.text-input.form-control:focus {
+#scene-edit-details .form-container .form-group input[placeholder="URL"].form-control:focus {
     padding-right: 12px;
 }
 
