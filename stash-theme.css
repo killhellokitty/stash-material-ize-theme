@@ -9962,6 +9962,22 @@ div#create-scene-page {
 #scene-edit-details .form-group:has(>label[for="details"]) {
     padding: 0 14px;
 }
+#scene-edit-details .form-label[for="details"]::before:focus {
+    content: "Description";
+    position: absolute;
+    z-index: -1;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    line-height: 24px;
+    text-shadow: none;
+    color: rgb(var(--on-surface-variant));
+    isolation: auto;
+    top: 0%;
+    margin-top: 50%;
+    visibility: visible;
+    transform: translate(0%,0%);
+}
 #scene-edit-details .form-label[for="details"] {
     top: 2%;
     visibility: hidden;
@@ -9971,6 +9987,23 @@ div#create-scene-page {
     z-index: 4;
     padding: 0 4px;
     background-color: rgb(var(--body-color2));
+    transform: translate(0%,0%);
+}
+#scene-edit-details .form-label[for="details"]::after {
+    content: "Description";
+    position: absolute;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    line-height: 24px;
+    visibility: hidden;
+    isolation: auto;
+    top: 0%;
+    margin-top: 50%;
+    margin-left: -85%;
+    text-shadow: none;
+    bottom: 0%;
+    color: rgb(var(--on-surface-variant));
     transform: translate(0%,0%);
 }
 
