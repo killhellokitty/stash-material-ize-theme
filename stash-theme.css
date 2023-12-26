@@ -9963,9 +9963,6 @@ div#create-scene-page {
     padding: 0 14px;
 }
 #scene-edit-details .form-label[for="details"]::before {
-    content: "";
-}
-#scene-edit-details .form-label[for="details"]:focus::before {
     content: "Description";
     position: absolute;
     z-index: -1;
