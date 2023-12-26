@@ -9989,7 +9989,7 @@ div#create-scene-page {
     background-color: rgb(var(--body-color2));
     transform: translate(0%,0%);
 }
-#scene-edit-details .form-label[for="details"]:focus::after {
+#scene-edit-details .form-label[for="details"]:focus::before {
     content: "Description";
     position: absolute;
     font-size: 16px;
