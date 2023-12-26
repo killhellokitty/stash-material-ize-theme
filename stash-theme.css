@@ -3623,6 +3623,7 @@ li.search-result.selected-result.active {
     padding: 16px 0 !important;
     align-items: center;
     border-bottom: 1px solid rgb(255,255,255,0.13);
+    z-index: 10;
 }
 @media (max-width: 575.98px) {
     #scene-edit-details .edit-buttons-container {
@@ -9944,15 +9945,16 @@ div#create-scene-page {
     position: relative;
     display: block;
     margin-left: 12px;
-    margin-bottom: -18%;
+    margin-bottom: -35%;
+    margin-top: 35%;
     z-index: 4;
-    padding-top: 2px;
+    padding-top: 4px;
     padding-left: 4px;
     padding-right: 4px;
     background-color: rgb(var(--body-color2));
     margin-right: 38%;
     transform: translate(0%,0%);
-    visibility: hidden;
+    visibility: visible;
 }
 .form-container .form-group.row + .form-group.row:focus-within > .url-label > label[for="urls"].col-form-label {
     visibility: visible;
