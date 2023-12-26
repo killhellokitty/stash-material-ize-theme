@@ -9962,12 +9962,6 @@ div#create-scene-page {
 #scene-edit-details .form-group:has(>label[for="details"]) {
     padding: 0 16px;
 }
-textarea#details {
-    position: relative;
-    width: 100%;
-    max-width: 92%;
-    margin-left: 4%;
-}
 
 /* */
 .scene-cover {
