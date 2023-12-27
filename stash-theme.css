@@ -10017,6 +10017,9 @@ div#create-scene-page {
     color: rgb(var(--body-color2));
     transform: translate(0%,0%);*/
 }
+textarea#details.text-input.form-control::placeholder {
+    color: rgb(var(--body-color2));
+}
 
 /* */
 .scene-cover {
