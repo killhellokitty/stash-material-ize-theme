@@ -9948,7 +9948,7 @@ div#create-scene-page {
 }
 
     /* URL's */
-.form-container .form-group.row + .form-group.row > .url-label > label[for="urls"].col-form-label {
+/*.form-container .form-group.row + .form-group.row > .url-label > label[for="urls"].col-form-label {
     font-size: 12px;
     line-height: 16px;
     letter-spacing: 0.35px;
@@ -9969,7 +9969,7 @@ div#create-scene-page {
 }
 .form-container .form-group.row + .form-group.row:focus-within > .url-label > label[for="urls"].col-form-label {
     visibility: visible;
-}
+}*/
 
 /* Scene Editor - Details textarea */
 /*#scene-edit-details .form-group:has(>label[for="details"]) {
