@@ -9969,9 +9969,9 @@ div#create-scene-page {
 }
 
 /* Scene Editor - Details textarea */
-#scene-edit-details .form-group:has(>label[for="details"]) {
+/*#scene-edit-details .form-group:has(>label[for="details"]) {
     padding: 0 14px;
-}
+}*/
 #scene-edit-details .form-container .form-group > label.form-label[for="details"]::before {
     content: "Description";
     position: absolute;
