@@ -4479,13 +4479,13 @@ button.remove-criterion-button.btn.btn-minimal > svg.svg-inline--fa.fa-xmark.fa-
     box-shadow: none;
     filter: none;
 }
-.modal-body,
+/*.modal-body,
 .edit-filter-dialog .modal-body {
     margin-top: -14px;
     margin-bottom: -14px;
     padding-right: 1rem;
     padding-left: 1rem;
-}
+}*/
 .modal-title h4 {
     font-weight: 200;
 }
