@@ -8446,7 +8446,7 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
     box-shadow: none;
     border-radius: 5rem;
     border-style: none;
-    border: 0;
+    border: 0 !important;
     color: rgb(var(--on-surface-variant));
     width: 40px;
     height: 40px;
