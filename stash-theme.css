@@ -8440,14 +8440,7 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
     flex: 1 0 100%;
     max-width: 100%;
 }
-.form-group .input-group>.input-group-append>.react-datepicker-wrapper button.btn.btn-secondary:not(:first-child):last-child,
-.form-group .input-group>.input-group-append>.react-datepicker-wrapper button.btn.btn-secondary:not(:first-child):last-child:not(:disabled):not(.disabled):hover,
-.form-group .input-group>.input-group-append>.react-datepicker-wrapper button.btn.btn-secondary:not(:first-child):last-child:not(:disabled):not(.disabled):focus,
-.form-group .input-group>.input-group-append>.react-datepicker-wrapper button.btn.btn-secondary:not(:first-child):last-child:not(:disabled):not(.disabled):active,
-.form-group .input-group>.input-group-append>.react-datepicker-wrapper button.btn.btn-secondary:not(:first-child):last-child:not(:disabled):not(.disabled).active,
-.form-group .input-group>.input-group-append>.react-datepicker-wrapper button.btn.btn-secondary:not(:first-child):last-child:not(:disabled):not(.disabled):active:hover,
-.form-group .input-group>.input-group-append>.react-datepicker-wrapper button.btn.btn-secondary:not(:first-child):last-child:not(:disabled):not(.disabled).active:hover,
-.form-group .input-group>.input-group-append>.react-datepicker-wrapper button.btn.btn-secondary:not(:first-child):last-child:not(:disabled):not(.disabled):focus-visible {
+.form-group .input-group>.input-group-append .react-datepicker__input-container > button.btn.btn-secondary {
     background: transparent;
     outline: none;
     box-shadow: none;
@@ -8481,9 +8474,8 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
     border: 0;
     color: #c0ebe2;
 }
-.form-group .input-group>.input-group-append>.react-datepicker-wrapper button.btn.btn-secondary:not(:first-child):last-child:not(:disabled):not(.disabled):hover,
-.form-group .input-group>.input-group-append>.react-datepicker-wrapper button.btn.btn-secondary:not(:first-child):last-child:not(:disabled):not(.disabled):focus,
-.form-group .input-group>.input-group-append>.react-datepicker-wrapper button.btn.btn-secondary:not(:first-child):last-child:not(:disabled):not(.disabled):focus-visible,
+.form-group .input-group>.input-group-append .react-datepicker__input-container > button.btn.btn-secondary:hover,
+.form-group .input-group>.input-group-append .react-datepicker__input-container > button.btn.btn-secondary:focus-visible,
 .form-group .input-group>.input-group-append:last-child > button.scrape-url-button.btn:not(:last-child):not(.dropdown-toggle):not(:disabled):not(.disabled):hover,
 .form-group .input-group>.input-group-append:last-child > button.scrape-url-button.btn:not(:last-child):not(.dropdown-toggle):not(:disabled):not(.disabled):focus,
 .form-group .input-group>.input-group-append:last-child > button.scrape-url-button.btn:not(:last-child):not(.dropdown-toggle):not(:disabled):not(.disabled):focus-visible,
@@ -8495,10 +8487,11 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
     text-shadow: none;
     outline: none;
 }
-.form-group .input-group>.input-group-append>.react-datepicker-wrapper button.btn.btn-secondary:not(:first-child):last-child:not(:disabled):not(.disabled):active,
-.form-group .input-group>.input-group-append>.react-datepicker-wrapper button.btn.btn-secondary:not(:first-child):last-child:not(:disabled):not(.disabled).active,
-.form-group .input-group>.input-group-append>.react-datepicker-wrapper button.btn.btn-secondary:not(:first-child):last-child:not(:disabled):not(.disabled):active:hover,
-.form-group .input-group>.input-group-append>.react-datepicker-wrapper button.btn.btn-secondary:not(:first-child):last-child:not(:disabled):not(.disabled).active:hover,
+.form-group .input-group>.input-group-append .react-datepicker__input-container > button.btn.btn-secondary:active,
+.form-group .input-group>.input-group-append .react-datepicker__input-container > button.btn.btn-secondary.active,
+.form-group .input-group>.input-group-append .react-datepicker__input-container > button.btn.btn-secondary:active:hover,
+.form-group .input-group>.input-group-append .react-datepicker__input-container > button.btn.btn-secondary.active:hover,
+.form-group .input-group>.input-group-append .react-datepicker__input-container > button.btn.btn-secondary:focus,
 .form-group .input-group>.input-group-append:last-child > button.scrape-url-button.btn:not(:last-child):not(.dropdown-toggle):not(:disabled):not(.disabled):active,
 .form-group .input-group>.input-group-append:last-child > button.scrape-url-button.btn:not(:last-child):not(.dropdown-toggle).active:not(:disabled):not(.disabled),
 .form-group .input-group>.input-group-append:last-child > button.scrape-url-button.btn:not(:last-child):not(.dropdown-toggle):not(:disabled):not(.disabled):active:hover,
@@ -8513,7 +8506,7 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
     outline: none;
 }
 .form-group button.scrape-url-button.text-input.btn.btn-secondary:not(:disabled):not(.disabled):focus-visible,
-.form-group .input-group>.input-group-append>.react-datepicker-wrapper button.btn.btn-secondary:not(:first-child):last-child:not(:disabled):not(.disabled):focus-visible {
+.form-group .input-group>.input-group-append .react-datepicker__input-container > button.btn.btn-secondary:focus-visible {
     outline-color: #dffffb;
     outline-width: 0.14285714285714285rem;
     outline-style: solid;
