@@ -8455,6 +8455,11 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
     border-style: none;
     border: 0;
     color: rgb(var(--on-surface-variant));
+    width: 40px;
+    height: 40px;
+    max-height: 40px;
+    font-size: 24px;
+    padding: 0;
 }
 .form-group .input-group>.input-group-append:last-child > button.scrape-url-button.btn:not(:last-child):not(.dropdown-toggle),
 .form-group .input-group>.input-group-append > button.scrape-url-button.btn:not(.dropdown-toggle),
@@ -8530,7 +8535,7 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
 } 
 #scene-edit-details .form-container .form-group:nth-of-type(4) input.form-control {
     border-radius: 4px;
-    margin-right: -40px;
+    margin-right: -11%;
     padding-right: 64px;
 }
 
@@ -10019,6 +10024,10 @@ textarea#details.text-input.form-control::placeholder {
     color: rgb(var(--body-color2));
 }
 
+    /* Scene Editor Date-Input */
+ input.date-input + .input-group-append:has(>.react-datepicker-wrapper) {
+    left: -12px;
+ }   
 /* */
 .scene-cover {
     max-width: 92%;
