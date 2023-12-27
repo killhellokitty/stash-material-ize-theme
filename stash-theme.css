@@ -4393,9 +4393,9 @@ div.tagger-container .btn-link {
     background-color: rgba(var(--modal-color));
     color: rgb(var(--on-surface));
     font-size: 16px;
-    letter-spacing: 0.15px;
+    letter-spacing: 0.5px;
     line-height: 24px;
-    font-weight: 500;
+    font-weight: 400;
 }
 .modal-header {
     border-bottom: 1px solid #14181c;
