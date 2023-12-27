@@ -4408,6 +4408,7 @@ div.tagger-container .btn-link {
     font-family: var(--HeaderFont);
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     padding: 16px 24px;
 }
 .dialog-content .criterion-list.accordion {
