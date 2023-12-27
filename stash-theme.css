@@ -8627,6 +8627,7 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
     z-index: 2;
     justify-content: flex-end;
     column-gap: 12px;
+    top: -7px;
 }
 #scene-edit-details > form > .form-container + .form-container .form-group.row:nth-of-type(3) .string-list-input > .form-group > .input-group > input[placeholder="URL"].text-input.form-control + .input-group-append > button.scrape-url-button.text-input.btn.btn-secondary {
     padding: unset;
@@ -9895,8 +9896,7 @@ div#create-scene-page {
     margin-top: 16px;
 }
 /* Text-Input Column-Form-Label */
-#scene-edit-details .form-container .form-group.row > label[for="title"].col-form-label.form-label,
-#scene-edit-details .form-container .form-group.row + .form-group.row > label.col-form-label.form-label,
+#scene-edit-details .form-container .form-group.row > label.col-form-label.form-label,
 #scene-edit-details .form-label[for="details"] {
     font-size: 12px;
     line-height: 16px;
@@ -9904,8 +9904,7 @@ div#create-scene-page {
     font-weight: 500;
     color: rgb(var(--pry-color));
 }
-#scene-edit-details .form-container .form-group.row > label[for="title"].form-label.col-form-label.col-3,
-#scene-edit-details .form-container .form-group.row + .form-group.row > label.form-label.col-form-label.col-3 {
+#scene-edit-details .form-container .form-group.row > label.form-label.col-form-label {
     position: relative;
     display: block;
     margin-left: 28px;
@@ -9922,8 +9921,7 @@ div#create-scene-page {
     flex-basis: fit-content;
     visibility: hidden;
 }
-#scene-edit-details .form-container .form-group.row:focus-within > label[for="title"].form-label.col-form-label.col-3,
-#scene-edit-details .form-container .form-group.row + .form-group.row:focus-within > label.form-label.col-form-label.col-3,
+#scene-edit-details .form-container .form-group.row:focus-within > label.form-label.col-form-label,
 #scene-edit-details .form-group:focus-within .form-label[for="details"] {
     visibility: visible;
 }
@@ -9936,11 +9934,11 @@ div#create-scene-page {
     margin-bottom: 0;
 }*/
 #scene-edit-details .string-list-input > .form-group > .input-group:is(:last-child, :only-child) {
-    margin-bottom: 0;
+    margin-bottom: -4.5%;
 }
 
     /* Title */
-#scene-edit-details .form-container .form-group.row > label[for="title"].form-label.col-form-label.col-3 {
+#scene-edit-details .form-container .form-group.row > label[for="title"].form-label.col-form-label {
     padding-top: 8px;
 }
 
