@@ -4490,6 +4490,11 @@ button.remove-criterion-button.btn.btn-minimal > svg.svg-inline--fa.fa-xmark.fa-
     font-weight: 200;
 }
 
+/* For Modal -- Relaease Notes */
+.modal-body > .m-n3 > .m-3:has(>.markdown) > h3 {
+    color: rgb(var(--outline));
+}
+
 /* Modal Secondary Button */
 .modal-footer button.btn.btn-secondary:not(.form-control):not(.dropdown-toggle) {
     background-color: rgb(var(--modal-color));
