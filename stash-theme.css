@@ -4402,10 +4402,13 @@ div.tagger-container .btn-link {
     border-radius: 28px 28px 0 0;
     color: #cae9e3;
     font-weight: 200;
-    font-size: 36px;
-    line-height: 44px;
-    letter-spacing: 0;
+    font-size: 57px;
+    line-height: 64px;
+    letter-spacing: -0.25px;
     font-family: var(--HeaderFont);
+    display: flex;
+    justify-content: space-around;
+    padding: 16px 24px;
 }
 .dialog-content .criterion-list.accordion {
     margin-right: -12px;
