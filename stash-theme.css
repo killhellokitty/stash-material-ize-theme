@@ -9992,8 +9992,9 @@ div#create-scene-page {
     top: 2%;
     visibility: hidden;
     position: absolute;
-    margin-left: 16px;
+    margin-left: 7.25%;
     margin-bottom: unset;
+    width: 12.3%;
     z-index: 4;
     padding: 0 4px;
     background-color: rgb(var(--body-color2));
