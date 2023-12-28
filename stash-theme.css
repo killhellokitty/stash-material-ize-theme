@@ -8533,7 +8533,7 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
 }
 
 #scene-edit-details .form-container .form-group input[placeholder="URL"].form-control:focus {
-    padding-right: 12px;
+    padding-right: 120px;
 }
 
 #scene-edit-details .form-container .form-group:nth-of-type(-n+5) input.form-control::placeholder {
