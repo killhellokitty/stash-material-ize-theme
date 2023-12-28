@@ -10030,6 +10030,7 @@ label[for="cover_image"].form-label {
 }
 .scene-cover {
     border-radius: 4px;
+    margin-bottom: 12px;
 }
     /* Rating Stars */
 #scene-edit-details .form-group.row > label.form-label.col-form-label:has(+ div > .rating-stars) {
