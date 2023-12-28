@@ -10037,6 +10037,9 @@ textarea#details.text-input.form-control::placeholder {
     height: 56px;
     align-items: flex-end;
 }
+.rating-stars .unsetting, .rating-stars .setting, .rating-stars .set {
+    color: rgb(var(--star-color));
+}
 /* * */
 
 
