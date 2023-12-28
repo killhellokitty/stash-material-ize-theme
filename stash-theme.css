@@ -235,6 +235,7 @@ h6,
     --focus-ring: 255, 254, 254; /*#fffefe*/
     --muted-text: 213, 229, 242; /*#d5e5f2*/
     --interactive-input: 226, 226, 229; /*#e2e2e5 --on-surface*/
+    --star-color: 255, 243, 111; /* #fff36f --- lch 94.53, 64.926, 100.665 */
     /* Select Toggle Colors */
     --sec-cntnr-select-hover: 66, 86, 101; /*#425665*/
     --sec-cntnr-select-active: 76, 99, 117; /*#4c6375*/
