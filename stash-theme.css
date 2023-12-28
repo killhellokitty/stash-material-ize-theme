@@ -10032,6 +10032,10 @@ textarea#details.text-input.form-control::placeholder {
     visibility: visible;
     color: rgb(var(--on-surface-variant));
 }
+#scene-edit-details .rating-stars {
+    height: 56px;
+    align-items: flex-end;
+}
 /* * */
 
 
