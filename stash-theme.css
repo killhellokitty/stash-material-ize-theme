@@ -8524,7 +8524,7 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
 #scene-edit-details .form-container .form-group input[placeholder="URL"].form-control {
     border-radius: 4px;
     padding-right: 120px;
-    margin-top: -4.5%;
+    /*margin-top: -4.5%;*/
 } 
 #scene-edit-details .form-container .form-group:nth-of-type(4) input.form-control {
     border-radius: 4px;
