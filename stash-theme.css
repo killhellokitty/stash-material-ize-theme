@@ -234,8 +234,8 @@ h6,
     --nav-white: 250, 250, 250; /*#fafafa*/
     --focus-ring: 255, 254, 254; /*#fffefe*/
     --muted-text: 213, 229, 242; /*#d5e5f2*/
-    --interactive-input: 226, 226, 229; /*#e2e2e5 --on-surface*/
-    --star-color: 255, 243, 111; /* #fff36f --- lch 94.53, 64.926, 100.665 */
+    --interactive-input: 239, 239, 241; /*#efeff1 --- lch 94.498 1.035 290.078*/
+    --star-color: 255, 243, 111; /* #fff36f --- lch 94.53 64.926 100.665 */
     /* Select Toggle Colors */
     --sec-cntnr-select-hover: 66, 86, 101; /*#425665*/
     --sec-cntnr-select-active: 76, 99, 117; /*#4c6375*/
@@ -10023,9 +10023,12 @@ textarea#details.text-input.form-control::placeholder {
     left: -12px;
  }   
 /* */
+label[for="cover_image"].form-label {
+    margin-bottom: 0%;
+    position: relative;
+    top: 6px;
+}
 .scene-cover {
-    max-width: 92%;
-    margin-left: 4%;
     border-radius: 4px;
 }
     /* Rating Stars */
