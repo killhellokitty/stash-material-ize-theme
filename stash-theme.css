@@ -9889,10 +9889,10 @@ div#create-scene-page {
     flex-wrap: nowrap;
 }
 /* Scene Editor --- row/column spacing */
-/*#scene-edit-details .form-group {
+#scene-edit-details .form-group {
     margin-bottom: 16px;
-    margin-top: 16px;
-}*/
+    /*margin-top: 16px;*/
+}
 /* Text-Input Column-Form-Label */
 #scene-edit-details .form-container .form-group.row > label.col-form-label.form-label,
 #scene-edit-details .form-label[for="details"] {
