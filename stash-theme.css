@@ -3235,6 +3235,10 @@ svg.css-8mmkcg {
     height: 40px!important;
     width: 40px!important;
 }
+#scene-edit-details .form-container .form-group:nth-last-of-type(-n +6) div.react-select__indicators svg.css-8mmkcg {
+    stroke: rgb(var(--body-color2));
+    stroke-width: 0.55;
+}
 
 .text-success {
     color: #7DC778 !important;
