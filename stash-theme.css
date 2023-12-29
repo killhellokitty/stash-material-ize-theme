@@ -10837,7 +10837,7 @@ button.btn.btn-primary.btn-sm:last-child {
     border: 2px solid rgb(var(--on-surface-variant));
     background-color: rgb(var(--card-color2));
     opacity: 1;
-    transition: all 0.55s ease-in 0.1s;
+    transition: all 0.3s ease-in 0.1s;
 }
 .form-check > input[type="radio"]:hover::before {
     background-color: rgb(var(--card-color2-hover));
