@@ -3170,6 +3170,16 @@ div.dropdown-menu .react-select__option {
     height: 66px;
     max-height: 66px;
     padding-top: 8px;
+} 
+div.react-select.performer-select div.react-select__menu .react-select__option,
+div.react-select.performer-select div.react-select__menu .dropdown-item,
+div.react-select.performer-select div.dropdown-menu .react-select__option {
+    color: rgb(var(--on-surface));
+    padding-left: 12px;
+    padding-right: 12px;
+    height: 66px;
+    max-height: 66px;
+    padding-top: 8px;
 }    
 div.react-select__menu .react-select__option--is-focused,
 div.react-select__menu .dropdown-item:focus,
