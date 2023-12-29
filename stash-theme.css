@@ -2515,6 +2515,7 @@ button:not([title=Help]).btn.btn-primary:where(.disabled, :disabled, .disabled:h
     background-image: linear-gradient(45deg, rgb(var(--body-color2)), rgb(var(--body-color2)));
     background-color: rgb(var(--on-surface),var(--btn-background-disabled));
     background-blend-mode: overlay;
+    box-shadow: none;
 }
 button:not([title=Help]).btn-primary:not(:disabled):not(.disabled):hover,
 .login .btn.btn-primary:hover {
