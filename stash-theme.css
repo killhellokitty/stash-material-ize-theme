@@ -3087,7 +3087,7 @@ div.react-select__control.react-select__control--is-focused .react-select__place
     letter-spacing: 1.0px;
     transform: scale(1);
     will-change: transition;
-    transition: all 0.115s cubic-bezier(0.47, 0, 0.75, 0.72);
+    transition: transform 0.115s cubic-bezier(0.47, 0, 0.75, 0.72);
 }
 /* Tags in Comboboxes */
 div.react-select__control .react-select__multi-value {
