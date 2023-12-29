@@ -10596,8 +10596,10 @@ button#parser-field-select.dropdown-toggle.btn.btn-primary {
 .modifier-options button.modifier-option.btn.btn-primary:not(.selected):hover {
     color: rgb(var(--on-surface-variant));
     box-shadow: var(--elevation-0);
-    background-color: transparent;
-    background-image: var(--btn-hover-highlight), linear-gradient(to right, rgb(var(--surface)), rgb(var(--surface)));
+    background-color: rgb(var(--surface));
+    background-image: var(--btn-hover-highlight);
+    background-color: rgb(var(--surface));
+    background-blend-mode: overlay;
     border: 1px solid rgb(var(--outline));
 }
 .modifier-options button.modifier-option.btn.btn-primary:is(:not(.selected)):focus-visible {
