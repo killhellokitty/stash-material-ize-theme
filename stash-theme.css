@@ -3239,6 +3239,11 @@ svg.css-8mmkcg {
     stroke: rgb(var(--body-color2));
     stroke-width: 0.55;
 }
+#scene-edit-details .form-container .form-group:nth-last-of-type(-n + 6) div.react-select__control.react-select__control--is-focused div.react-select__indicators svg.css-8mmkcg,
+#scene-edit-details .form-container .form-group:nth-last-of-type(-n + 6) div.react-select__control.react-select__control--is-focused:hover div.react-select__indicators svg.css-8mmkcg,
+#scene-edit-details .form-container .form-group:nth-last-of-type(-n + 6) div.react-select__control.react-select__control--is-focused div.react-select__indicators:hover svg.css-8mmkcg {
+    stroke: #404345;
+}
 
 .text-success {
     color: #7DC778 !important;
