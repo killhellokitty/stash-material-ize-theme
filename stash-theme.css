@@ -8760,6 +8760,12 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
     margin-bottom: 0;
     padding-left: 0 !important;
 }
+
+/* Scene Editor React-Select Input */
+#scene-edit-details .form-container .form-group:nth-last-of-type(-n + 6) div.react-select__control {
+    margin-top: 13px;
+}
+
 /*.form-container.row.px-3:not(.pt-3) {
     padding-top: 1.7142857142857142rem;
     padding-left: 0.8571428571428571rem !important;
