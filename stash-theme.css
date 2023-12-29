@@ -1102,6 +1102,7 @@ input[type=range]::-ms-tooltip {
 .fixed-top {
     position: fixed !important; 
     box-shadow: var(--elevation-0);
+    z-index: 35001;
 }
 
 .text-muted {
