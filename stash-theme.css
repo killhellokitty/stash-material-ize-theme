@@ -8765,7 +8765,12 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
 #scene-edit-details .form-container .form-group:nth-last-of-type(-n + 6) div.react-select__control {
     margin-top: 13px;
 }
-
+    /* label */
+#scene-edit-details .form-container .form-group:nth-last-of-type(-n +6):has(* div.react-select__control) label.form-label.col-form-label {
+    visibility: visible;
+    color: rgb(var(--on-surface-variant));
+    margin-left: 16px;
+}
 /*.form-container.row.px-3:not(.pt-3) {
     padding-top: 1.7142857142857142rem;
     padding-left: 0.8571428571428571rem !important;
