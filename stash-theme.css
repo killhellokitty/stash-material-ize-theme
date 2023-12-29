@@ -10048,6 +10048,7 @@ label[for="cover_image"].form-label {
     margin-bottom: 0%;
     position: relative;
     top: 6px;
+    padding-left: 6px;
 }
 .scene-cover {
     border-radius: 4px;
