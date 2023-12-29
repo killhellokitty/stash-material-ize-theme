@@ -10051,6 +10051,7 @@ textarea#details.text-input.form-control::placeholder {
     /* Scene Editor Date-Input */
  input.date-input + .input-group-append:has(>.react-datepicker-wrapper) {
     left: -12px;
+    margin-left: 0%;
  }   
 /* */
 label[for="cover_image"].form-label {
