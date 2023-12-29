@@ -4434,9 +4434,9 @@ div.tagger-container .btn-link {
     padding: 16px 24px;
 }
 .dialog-content .criterion-list.accordion {
-    margin-right: -12px;
-    margin-left: -12px;
-    max-height: 380px;
+    margin-right: -2%;
+    margin-left: auto;
+    /*max-height: 380px;*/
 }
 .dialog-content .criterion-list.accordion .card {
     background-color: rgb(var(--card-color));
