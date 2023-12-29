@@ -8640,13 +8640,14 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
     display: flex;
     margin-left: unset;
     margin-left: 70%;
+    margin-right: auto;
     position: absolute;
     margin-bottom: -10%;
     padding-right: 12px;
     z-index: 2;
-    justify-content: flex-end;
     column-gap: 12px;
     top: 7px;
+    right: 0%;
 }
 #scene-edit-details > form > .form-container + .form-container .form-group.row:nth-of-type(3) .string-list-input > .form-group > .input-group > input[placeholder="URL"].text-input.form-control + .input-group-append > button.scrape-url-button.text-input.btn.btn-secondary {
     padding: unset;
