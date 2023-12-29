@@ -10058,6 +10058,7 @@ label[for="cover_image"].form-label {
 #scene-edit-details .form-group.row > label.form-label.col-form-label:has(+ div > .rating-stars) {
     visibility: visible;
     color: rgb(var(--on-surface-variant));
+    margin-left: 16px;
 }
 #scene-edit-details .rating-stars {
     height: 56px;
