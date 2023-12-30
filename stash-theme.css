@@ -6908,37 +6908,24 @@ button.clearable-text-field-clear.btn.btn-secondary {
     top: 11px;
 }
 button.query-text-field-clear.btn.btn-secondary:hover,
-button.query-text-field-clear.btn.btn-secondary:focus,
-button.query-text-field-clear.btn.btn-secondary:hover:focus,
-button.clearable-text-field-clear.btn.btn-secondary:hover,
-button.clearable-text-field-clear.btn.btn-secondary:focus,
-button.clearable-text-field-clear.btn.btn-secondary:hover:focus {
-    background-color: #373d3b;
-    box-shadow: 0px 3px 1px -2px rgb(0,0,0,0.2), 0px 2px 2px 0px rgb(0,0,0,0.14), 0px 1px 5px 0px rgb(0,0,0,0.12);
+button.clearable-text-field-clear.btn.btn-secondary:hover {
+    background-color: rgb(var(--on-surface-variant),var(--btn-hover));
+    box-shadow: var(--elevation-0);
 }
 /* Text-Input Clear button ACTIVE */
-button.query-text-field-clear.btn.btn-secondary:not(:disabled):not(.disabled):active,
-button.query-text-field-clear.btn.btn-secondary:not(:disabled):not(.disabled):active:hover,
-button.query-text-field-clear.btn.btn-secondary:not(:disabled):not(.disabled):active:focus,
-button.clearable-text-field-clear.btn.btn-secondary:not(:disabled):not(.disabled):active,
-button.clearable-text-field-clear.btn.btn-secondary:not(:disabled):not(.disabled):active:hover,
-button.clearable-text-field-clear.btn.btn-secondary:not(:disabled):not(.disabled):active:focus, {
-    background-color: #626d6a;
+button.query-text-field-clear.btn.btn-secondary:not(:disabled):not(.disabled):is(:active, :focus, :focus:active),
+button.clearable-text-field-clear.btn.btn-secondary:not(:disabled):not(.disabled):is(:active, :focus, :focus:active) {
+    background-color: rgb(var(--on-surface-variant),var(--btn-active));
     box-shadow: none;
     outline: none;
 }
 button.query-text-field-clear.btn.btn-secondary:focus-visible,
-button.query-text-field-clear.btn.btn-secondary:not(:disabled):not(.disabled):active:focus-visible,
-button.query-text-field-clear.btn.btn-secondary:not(:disabled):not(.disabled):active:focus-visible,,
-button.clearable-text-field-clear.btn.btn-secondary:focus-visible,
-button.clearable-text-field-clear.btn.btn-secondary:not(:disabled):not(.disabled):active:focus-visible,
-button.clearable-text-field-clear.btn.btn-secondary:not(:disabled):not(.disabled):active:focus-visible {
-    background-color: #373d3b;
+button.clearable-text-field-clear.btn.btn-secondary:focus-visible {
     box-shadow: none;
-    outline-color: #dffffb;
+    outline-color: rgb(var(--focus-ring));
     outline-style: solid;
-    outline-width: 0.25rem;
-    outline-offset: 0;
+    outline-width: 0.3rem;
+    outline-offset: -0.1rem;
 }
 /* Switch */
 .custom-switch {
