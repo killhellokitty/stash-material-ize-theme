@@ -243,7 +243,7 @@ h6,
     /* Alpha's */
     --btn-hover: 0.08;
     --btn-hover-rev: 0.92;
-    --btn-hover-highlight: linear-gradient(to right, rgb(255,255,255,0.06), rgb(255,255,255,0.06));
+    --btn-hover-highlight: linear-gradient(to right, rgb(255,255,255,0.08), rgb(255,255,255,0.08));
     --btn-active: 0.12;
     --btn-active-rev: 0.88;
     --btn-active-highlight: linear-gradient(to right, rgb(255,255,255,0.11), rgb(255,255,255,0.11));
@@ -7785,13 +7785,15 @@ a#new-performer-filter {
     transition: background-image 0.55s ease, color 0.2s ease-in-out, outline 0.4s ease-in-out 0.2s;
 }
 .o-counter.btn-group > button[title="O-Counter"].minimal.btn.btn-secondary:has(+ .dropdown > .dropdown-toggle.btn-secondary):where(:hover, :focus-visible) {
-    background-image: linear-gradient(to right, rgba(var( --pry-color),var(--btn-hover-rev)), rgba(var(--pry-color),var(--btn-hover-rev)));
-    background-color: rgb(var(--body-color2));
+    background-image: var(--btn-hover-highlight);
+    background-color: rgb(var(--pry-color));
+    background-blend-mode: overlay;
     box-shadow: var(--elevation-1);
 }
 .o-counter.btn-group > button[title="O-Counter"].minimal.btn.btn-secondary:has(+ .dropdown > .dropdown-toggle.btn-secondary):where(:focus:not(:focus-visible), :active) {
-    background-image: linear-gradient(to right, rgba(var( --pry-color),var(--btn-active-rev)), rgba(var(--pry-color),var(--btn-active-rev)));
-    background-color: rgb(var(--body-color2));
+    background-image: var(--btn-active-highlight);
+    background-color: rgb(var(--pry-color));
+    background-blend-mode: overlay;
     box-shadow: var(--elevation-0);
 }
 /* O-Counter sibling Dropdown Toggle */
@@ -7810,8 +7812,9 @@ a#new-performer-filter {
 }
 .o-counter.btn-group > button[title="O-Counter"].minimal.btn.btn-secondary + .dropdown > .dropdown-toggle.btn-secondary:hover,
 .o-counter.btn-group > .dropdown > .dropdown-toggle.btn-secondary:hover {
-    background-image: url("data:image/svg+xml;utf8,<svg fill='%2300344d' height='30' viewBox='0 0 24 22' width='28' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>"), linear-gradient(to right, rgba(var( --pry-color),var(--btn-hover-rev)), rgba(var(--pry-color),var(--btn-hover-rev)));
-    background-color: rgb(var(--body-color2));
+    background-image: url("data:image/svg+xml;utf8,<svg fill='%2300344d' height='30' viewBox='0 0 24 22' width='28' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>"), var(--btn-hover-highlight);
+    background-color: rgb(var(--pry-color));
+    background-blend-mode: overlay;
     box-shadow: var(--elevation-1);
     background-repeat: no-repeat repeat;
     background-position: calc( 100% - 8px ) calc(50% - 2px), center center;
@@ -7821,14 +7824,14 @@ a#new-performer-filter {
 .o-counter.btn-group > button[title="O-Counter"].minimal.btn.btn-secondary:has(+ .dropdown > .dropdown-toggle.btn-secondary):focus-visible,
 .o-counter.btn-group > button[title="O-Counter"].minimal.btn.btn-secondary + .dropdown > .dropdown-toggle.btn-secondary:focus-visible {
     outline-color: rgb(var(--focus-ring));
-    outline-width: 0.25rem;
+    outline-width: 0.3rem;
     outline-style: solid;
-    outline-offset: -1px;
+    outline-offset: -0.1rem;
     box-shadow: none;
 }
 .o-counter.btn-group > button[title="O-Counter"].minimal.btn.btn-secondary + .dropdown > .dropdown-toggle.btn-secondary:is(:focus:not(:focus-visible), :active),
 .o-counter.btn-group > .dropdown > .dropdown-toggle.btn-secondary:where(:focus:not(:focus-visible), :active) {
-    background-image: url("data:image/svg+xml;utf8,<svg fill='%2300344d' height='30' viewBox='0 0 24 22' width='28' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>"), linear-gradient(to right, rgba(var( --pry-color),var(--btn-active-rev)), rgba(var(--pry-color),var(--btn-active-rev)));
+    background-image: url("data:image/svg+xml;utf8,<svg fill='%2300344d' height='30' viewBox='0 0 24 22' width='28' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>"), var(--btn-active-highlight);
     background-color: rgb(var(--body-color2));
     box-shadow: var(--elevation-0);
     background-repeat: no-repeat repeat;
