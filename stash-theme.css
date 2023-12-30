@@ -11466,6 +11466,14 @@ button[title=Help].nav-utility.minimal.btn.btn-primary:has(>svg.svg-inline--fa.f
     background-color: rgba(var(--on-surface),var(--btn-hover));
 }*/
 
+span.stash-id-pill {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.75px;
+    vertical-align: middle;
+}
+
 .toast-container .success{background-color: rgb(var(--green))}
 .toast-container .danger{background-color: rgb(var(--error))}
 .toast-container .warning{background-color: rgb(var(--warning))}
