@@ -4143,6 +4143,7 @@ table.table.table-striped.table-bordered tr {
 }
 table.table.table-striped.table-bordered>tbody>tr>td {
     border-right: 1px solid rgb(var(--card-color2-hover));
+    transition: background 0.15s cubic-bezier(0.4, 0, 0.2, 1);
 }
 table.table.table-striped.table-bordered>tbody>tr:hover>td,
 table.table.table-striped.table-bordered>tbody>tr:nth-child(odd):hover>td {
