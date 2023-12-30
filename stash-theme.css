@@ -2054,6 +2054,7 @@ div.react-datepicker div.react-datepicker__time-container div.react-datepicker__
     will-change: transform, transition;
     overflow: hidden;
     transition: background-color 0.55s ease, outline 0.4s ease-in, box-shadow 0.4s ease-in, transform 0.8s ease;
+    z-index: 120001;
 }
 .btn-toolbar > .show.dropdown.btn-group > .dropdown-menu.show {
     overflow: auto;
