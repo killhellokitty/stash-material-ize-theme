@@ -9462,9 +9462,7 @@ form#studio-edit {
     line-height: 1.1428571428571428rem;
     letter-spacing: 0.028571428571428574rem;
 }
-.scene-tabs .tab-content .fade.tab-pane.active.show .form-group .row {
-    margin-top: 24px;
-}
+
 .scene-tabs .tab-content .fade.tab-pane.active.show .form-group .row label.col-form-label {
     top: -11px;
     left: 108px;
