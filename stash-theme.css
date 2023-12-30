@@ -1760,7 +1760,7 @@ li#vjs-menu-text:first-of-type {
     margin: 24px;
     /*background-color: #26323a;*/
     background-color: #334b46;
-    background-color: rgb(var(--card-color));
+    background-color: rgb(var(--tables-even));
     padding-top: 24px;
     padding-bottom: 24px;
     border-radius: 28px;
@@ -4164,17 +4164,17 @@ table.table.table-striped.table-bordered>thead {
 .table-striped tr:nth-child(odd) td,
 .table-striped tbody tr:nth-of-type(odd) {
     /*background: #2e3c46;*/
-    background: rgb(var(--card-color-collaps-show));
+    background: rgb(var(--tables-odd));
 }
 .table-striped tbody tr:hover,
 .table-striped tbody tr:nth-child(odd):hover td {
-    background: rgb(var(--pry-color));; /*#00695e*/
+    background: rgb(var(--tables-hover));; /*#00695e*/
 }
 .table-striped tbody tr:hover a, 
 .table-striped tbody tr:hover td, 
 .table-striped tbody tr:nth-child(odd):hover a, 
 .table-striped tbody tr:nth-child(odd):hover td {
-    color: #003730;
+    color: rgb(var(--on-surface));
 }
 
 .table tbody td.d-none.d-sm-block {
