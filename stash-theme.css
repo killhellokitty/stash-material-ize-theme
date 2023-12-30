@@ -4454,6 +4454,10 @@ div.tagger-container .btn-link {
     max-height: 72px;
     border-radius: 0;
     align-items: center;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: 0;
 }
 .dialog-content .criterion-list.accordion .card >.filter-item-header:has(+ .collapse:not(.show)):hover {
     background-color: rgb(var(--card-color-hover));
