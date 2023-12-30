@@ -2112,8 +2112,7 @@ div.react-datepicker div.react-datepicker__time-container div.react-datepicker__
     padding-right: 1.5px;
     padding-left: 1.5px;
 }
-.scene-tabs .dropdown.show > button.dropdown-toggle + .dropdown-menu.show > a.dropdown-item,
-.btn-toolbar .dropdown.show > .input-group-prepend + .dropdown-menu.show > a.dropdown-item {
+:is(.scene-tabs, .btn-toolbar) .dropdown.show .dropdown-menu.show > a.dropdown-item {
     display: flex;
     justify-content: flex-start;
     align-items: center;
