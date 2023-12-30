@@ -4159,7 +4159,7 @@ table.table.table-striped.table-bordered>tbody>tr>td:first-of-type:has(>label>*.
     border-right: 0;
 }
 table.table.table-striped.table-bordered>thead {
-    background: rgb(var(--accordion-color));
+    background: rgb(var(--card-color2-hover));
 }
 .table-striped tr:nth-child(odd) td,
 .table-striped tbody tr:nth-of-type(odd) {
