@@ -4187,10 +4187,10 @@ table.table.table-striped.table-bordered>thead {
     flex-wrap: wrap;
 }
 .table-list a {
-    color: #cde8e1;
+    color: rgb(var(--on-background));
 }
 .table-list tr:nth-child(odd) a {
-    color: #b1ccc5;
+    color: rgb(var(--on-surface));
 }
 .table-list td, 
 .table-list th {
