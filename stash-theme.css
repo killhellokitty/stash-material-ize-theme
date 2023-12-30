@@ -9509,6 +9509,8 @@ form#studio-edit {
 
 .edit-filter-dialog .criterion-list .card .collapse-icon {
     margin-right: 8px;
+    width: 24px;
+    height: 24px;
 }
 .dialog-content .criterion-list .collapse.show .card-body {
     background-color: rgb(var(--card-color-collaps-show));
