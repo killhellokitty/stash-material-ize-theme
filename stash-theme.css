@@ -2111,6 +2111,12 @@ div.react-datepicker div.react-datepicker__time-container div.react-datepicker__
     padding-left: 1.5px;
 }
 
+.scene-tabs .dropdown.show > button.dropdown-toggle + .dropdown-menu.show > a.bg-secondary.text-white.dropdown-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
 /* DropDown Filter List Menu */
 .saved-filter-list {
     border-bottom: 1px solid rgb(var(--outline-variant));
