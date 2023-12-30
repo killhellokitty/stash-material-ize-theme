@@ -6835,9 +6835,9 @@ a.nav-utility.nav-link:focus-visible {
     background-color: rgba(var(--pry-color),var(--btn-active));
     box-shadow: none;
     outline-color: rgb(var(--focus-ring));
-    outline-offset: -1px;
+    outline-offset: -0.1rem;
     outline-style: solid;
-    outline-width: 0.25rem;
+    outline-width: 0.3rem;
     text-decoration: none !important;
     text-decoration-color: transparent !important;
 }
@@ -6847,9 +6847,9 @@ a.nav-utility.nav-link:focus-visible {
     background-color: rgba(var(--sec-container),var(--btn-active-rev));
     box-shadow: none;
     outline-color: rgb(var(--focus-ring));
-    outline-offset: -1px;
+    outline-offset: -0.1rem;
     outline-style: solid;
-    outline-width: 0.25rem;
+    outline-width: 0.3rem;
 }
 .top-nav .navbar-buttons .btn:not(.donate):not(:disabled):not(.disabled):focus-visible,
 .top-nav .navbar-buttons a.nav-utility button.minimal.btn.btn-primary:not(.donate):not(:disabled):not(.disabled):focus-visible {
@@ -6859,9 +6859,9 @@ a.nav-utility.nav-link:focus-visible {
     border-radius: 5rem;
     box-shadow: none;
     outline-color: rgb(var(--focus-ring));
-    outline-offset: -1px;
+    outline-offset: -0.1rem;
     outline-style: solid;
-    outline-width: 0.25rem;
+    outline-width: 0.3rem;
     text-decoration: none !important;
     text-decoration-color: transparent !important;
 }
@@ -6870,9 +6870,9 @@ a.nav-utility.nav-link:focus-visible {
     background-color: rgba(var(--sec-container),var(--btn-hover-rev));
     box-shadow: none;
     outline-color: rgb(var(--focus-ring));
-    outline-offset: -1px;
+    outline-offset: -0.1rem;
     outline-style: solid;
-    outline-width: 0.25rem;
+    outline-width: 0.3rem;
 }
 
 /* --- Text-Input Clear button --- */
