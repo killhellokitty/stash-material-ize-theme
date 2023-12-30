@@ -561,24 +561,26 @@ input[type=checkbox]:disabled:checked {
     box-shadow: inset 0 0 0 2px rgb(var(--pry-color)), inset 0 0 0 5rem transparent;
     opacity: var(--disabled);
 }
-    /* New Editor Pages & Tagger-Container Preferences */
+    /* New Editor Pages & Tagger-Container Preferences & Modal */
 input#ignore-auto-tag[type="checkbox"] {
     box-shadow: inset 0 0 0 2px rgb(var(--on-surface-variant)), inset 0 0 0 5rem rgb(var(--body-color2));
 }
 input#ignore-auto-tag[type="checkbox"]:hover {
     box-shadow: inset 0 0 0 2px rgb(var(--on-surface)), inset 0 0 0 5rem rgb(var(--body-color2));
 }
-.tagger-container .collapse.show.card input.form-check-input[type="checkbox"] {
+.tagger-container .collapse.show.card input.form-check-input[type="checkbox"],
+input[type="checkbox"]#include-sub-tags.form-check-input {
     box-shadow: inset 0 0 0 2px rgb(var(--on-surface-variant)), inset 0 0 0 5rem rgb(var(--card-color2));
 }
-.tagger-container .collapse.show.card input.form-check-input[type="checkbox"]:hover {
+.tagger-container .collapse.show.card input.form-check-input[type="checkbox"]:hover,
+input[type="checkbox"]#include-sub-tags.form-check-input:hover {
     box-shadow: inset 0 0 0 2px rgb(var(--on-surface)), inset 0 0 0 5rem rgb(var(--card-color2));
 }
 input#ignore-auto-tag[type="checkbox"]:checked,
-.tagger-container .collapse.show.card input.form-check-input[type="checkbox"]:checked {
+.tagger-container .collapse.show.card input.form-check-input[type="checkbox"]:checked,
+input[type="checkbox"]#include-sub-tags.form-check-input:checked {
     box-shadow: inset 0 0 0 2px rgb(var(--pry-color)), inset 0 0 0 5rem transparent;
 }
-
 /* --- Range Slider and Thumb decorations ---*/
 @media (min-width: 576px) {
     .d-sm-inline-flex {
