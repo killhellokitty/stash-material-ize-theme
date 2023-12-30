@@ -11473,6 +11473,12 @@ span.stash-id-pill {
     letter-spacing: 0.75px;
     vertical-align: middle;
 }
+.stash-id-pill > span {
+    background-color: rgb(var(--pry-color));
+    color: rgb(var(--on-pry));
+    border-radius: 8px 0 0 8px;
+    margin-top: 8px;
+}
 
 .toast-container .success{background-color: rgb(var(--green))}
 .toast-container .danger{background-color: rgb(var(--error))}
