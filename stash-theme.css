@@ -6889,6 +6889,7 @@ button.clearable-text-field-clear.btn.btn-secondary {
     border-radius: 5rem;
     height: 40px;
     min-height: 40px;
+    max-height: 40px;
     width: 40px;
     min-width: 40px;
     padding: 0;
