@@ -90,15 +90,15 @@ body ::-webkit-resizer {
 }
 
 [type=number]::-webkit-inner-spin-button {
-    height: 42px;
+    height: 46px;
     background: #8b9198 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAKUlEQVQYlWNgwAT/sYhhKPiPT+F/LJgEsHv37v+EMGkmkuImoh2NoQAANlcun/q4OoYAAAAASUVORK5CYII=) no-repeat center center;
     position: absolute;
-    top: 7px;
-    right: 12px;
+    top: 0px;
+    right: 0;
     bottom: 0;
-    width: 0.2em;
-    padding: 0 4px;
-    border-radius: 0.6rem;
+    width: 2em;
+    padding: 6px 6px 6px 6px;
+    border-radius: 0 4px 4px 0;
     opacity: 0.8;
 } 
 [type=number]::-webkit-outer-spin-button {
