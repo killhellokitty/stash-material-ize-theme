@@ -503,11 +503,17 @@ input[type=checkbox] {
     height: auto;
     vertical-align: middle;
     text-align: center;
-    box-shadow: 0 0 0 1px #6f7976, inset 0 0 0 5rem #293c38;
+    box-shadow: 0 0 0 1px #6f7976, inset 0 0 0 5rem rgb(var(--card-color));
     outline-offset: 2px;
 }
+.scene-table label input[type=checkbox].form-control:nth-of-type(odd) {
+    box-shadow: 0 0 0 1px #6f7976, inset 0 0 0 5rem rgb(var(--card-color-collaps-show));
+}
 .scene-table label input[type="checkbox"].form-control:hover {
-    box-shadow: 0 0 0 1px #6f7976, inset 0 0 0 5rem #3d5a54;
+    box-shadow: 0 0 0 1px #6f7976, inset 0 0 0 5rem rgb(var(--card-color-hover));
+}
+.scene-table label input[type=checkbox].form-control:nth-of-type(odd):hover {
+    box-shadow: 0 0 0 1px #6f7976, inset 0 0 0 5rem rgb(var(--card-color-collaps-show-hover));
 }
 .scene-table label input[type="checkbox"].form-control:checked,
 .scene-table label input[type="checkbox"].form-control:checked:focus {
