@@ -4155,7 +4155,7 @@ table.table.table-striped.table-bordered>tbody>tr>td:first-of-type:has(>label>*.
     border-right: 0;
 }
 table.table.table-striped.table-bordered>thead {
-    background: #20413b;
+    background: rgb(var(--accordion-color));
 }
 .table-striped tr:nth-child(odd) td,
 .table-striped tbody tr:nth-of-type(odd) {
