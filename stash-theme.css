@@ -178,8 +178,8 @@ h6,
     --modal-color: 25, 32, 38; /*#192026*/
     --accordion-color: 64, 82, 97; /*#405261*/
     --accordion-color-hover: 72, 92, 109; /*#485c6d*/ 
-    --tables-even: 74, 95, 112;/* #4a5f70 */
-    --tables-odd: 94, 121, 143;/* #5e798f */
+    --tables-even: 60, 84, 99;/* #3c5463 */
+    --tables-odd: 66, 83, 93;/* #42535d */
     --tables-hover: 84, 108, 128;/*#546c80 */
     /* Primary Colors */
     --pry-color: 136, 206, 255; /*#88ceff*/
