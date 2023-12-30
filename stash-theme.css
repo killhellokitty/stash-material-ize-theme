@@ -10782,7 +10782,7 @@ button#parser-field-select.dropdown-toggle.btn.btn-primary {
     position: relative;
     padding-left: 4px;
     padding-right: 4px;
-    margin-bottom: -2.5%;
+    margin-bottom: -1.75%;
     margin-left: 16px;
     z-index: 5;
     transform: translate(0%,0%);
@@ -10797,12 +10797,15 @@ button#parser-field-select.dropdown-toggle.btn.btn-primary {
 .criterion-editor .form-group:nth-child(2):has(>input[placeholder="Stash ID"].btn-secondary.form-control)::before {
     content: "Stash ID";
     font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 1px;
     color: rgb(var(--pry-color));
     background-color: rgb(var(--card-color-collaps-show));
     position: relative;
     padding-left: 4px;
     padding-right: 4px;
-    margin-bottom: -2.5%;
+    margin-bottom: -1.75%;
     margin-left: 16px;
     z-index: 5;
     transform: translate(0%,0%);
