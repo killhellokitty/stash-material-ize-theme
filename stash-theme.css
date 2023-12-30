@@ -7667,7 +7667,7 @@ button#scene-scrape,
     height: 36px;
     max-height: 36px;
     min-height: 36px;
-    font-weight: 600;
+    font-weight: 500;
     padding-left: 16px; 
     padding-right: 16px;
     background-color: rgb(var(--body-color2));
