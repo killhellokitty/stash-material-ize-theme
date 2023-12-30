@@ -4154,7 +4154,7 @@ table.table.table-striped.table-bordered>thead {
 .table-striped tr:nth-child(odd) td,
 .table-striped tbody tr:nth-of-type(odd) {
     /*background: #2e3c46;*/
-    background: #1c3530
+    background: rgb(var(--card-color-collaps-show));
 }
 .table-striped tbody tr:hover,
 .table-striped tbody tr:nth-child(odd):hover td {
