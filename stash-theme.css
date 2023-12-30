@@ -4164,7 +4164,7 @@ table.table.table-striped.table-bordered>thead {
 }
 .table-striped tbody tr:hover,
 .table-striped tbody tr:nth-child(odd):hover td {
-    background: #49fce2; /*#00695e*/
+    background: rgb(var(--pry-color));; /*#00695e*/
 }
 .table-striped tbody tr:hover a, 
 .table-striped tbody tr:hover td, 
