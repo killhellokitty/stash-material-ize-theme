@@ -1751,6 +1751,7 @@ li#vjs-menu-text:first-of-type {
     margin: 24px;
     /*background-color: #26323a;*/
     background-color: #334b46;
+    background-color: rgb(var(--card-color));
     padding-top: 24px;
     padding-bottom: 24px;
     border-radius: 28px;
@@ -4105,7 +4106,7 @@ h5.card-section-title, .scene-tabs .scene-header {
 
 /*scenes List View */
 .table {
-    color: #dcf6f0;
+    color: rgb(var(--description-color));;
     border-style: solid;
     border: 2px solid #899390;
     margin-bottom: 16px;
