@@ -2166,14 +2166,16 @@ div.react-datepicker div.react-datepicker__time-container div.react-datepicker__
     transition: background-color 0.55s ease, box-shadow 0.4s ease-in;
 }
 .show>.saved-filter-list-menu.show .input-group-append button.btn.btn-secondary {
-    padding: 0 9px 0 7px;
-    justify-content: flex-end;
+    justify-content: center;
     margin-top: auto;
     margin-bottom: auto;
     position: relative;
     left: -4px;
-    top: -5px;
+    top: -5%;
     font-size: 18px;
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
     z-index: 12;
 }
 .saved-filter-list-menu button.set-as-default-button.btn.btn-secondary.btn-sm {
