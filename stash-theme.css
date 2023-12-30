@@ -4482,7 +4482,7 @@ button.remove-criterion-button.btn.btn-minimal > svg.svg-inline--fa.fa-xmark.fa-
     font-size: 25px;
 }
 .edit-filter-dialog .criterion-list .pin-criterion-button {
-    font-size: 18px;
+    font-size: 24px;
 }
 .edit-filter-dialog .criterion-list :is(.pin-criterion-button, .remove-criterion-button) {
     color: rgb(var(--on-surface-variant));
