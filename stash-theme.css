@@ -7868,6 +7868,7 @@ button#scene-scrape:hover,
     background-position: calc( 100% - 16px ) calc(50% - 2px), center left;
     background-color: rgb(var(--body-color2));
     border-color: rgb(var(--outline));
+    box-shadow: none;
     color: rgb(var(--on-surface));
 }
 
@@ -7890,6 +7891,7 @@ button#scene-scrape:focus-visible,
     background-color: rgba(var(--pry-container));
     color: rgb(var(--on-tertiary-container));
     border-color: transparent;
+    box-shadow: none;
     z-index: 20;
 }
 /* */
@@ -7900,6 +7902,7 @@ button#scene-scrape:focus-visible,
     background-color: rgb(var(--pry-container));
     border-color: transparent;
     color: rgb(var(--on-tertiary-container));
+    box-shadow: none;
 }
 div.mb-2.btn-group:not(.mr-2):not(.mx-2):not(.ml-2) > button.btn.btn-secondary:not(.form-control):not(.dropdown-toggle):not(:disabled):not(.disabled).active,
 .btn-toolbar select.btn-secondary.form-control:not(.disabled):not(:disabled):where(:active, :focus, :active:focus),
@@ -7908,8 +7911,9 @@ div.mb-2.btn-group:not(.mr-2):not(.mx-2):not(.ml-2) > button.btn.btn-secondary:n
     color: rgb(var(--on-sec-container));
     border-color: rgb(var(--on-surface-variant));
     outline: none;
+    box-shadow: none;
 }
-.btn-secondary:not(.form-control):not(.dropdown-toggle):active:focus {
+.btn-secondary:not(.form-control):not(.dropdown-toggle):not(.disabled):not(:disabled):active:focus {
     box-shadow: none;
 }
 .btn-secondary:not(.form-control):not(.dropdown-toggle):not(:disabled):not(.disabled):active,
