@@ -1338,7 +1338,7 @@ input.btn-secondary.search-input.form-control {
     margin: 8px;
     font-size: 16px;
     font-weight: 400;
-    letter-spacing: 0.05px;
+    letter-spacing: 0.5px;
     line-height: 24px;
     box-shadow: none;
     caret-color: rgb(var(--pry-color)); 
