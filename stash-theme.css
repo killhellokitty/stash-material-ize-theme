@@ -6883,22 +6883,24 @@ button.clearable-text-field-clear.btn.btn-secondary>svg.svg-inline--fa.fa-xmark.
 }
 button.query-text-field-clear.btn.btn-secondary,
 button.clearable-text-field-clear.btn.btn-secondary {
-    color: #c0ebe2;
+    color: rgb(var(--on-surface-variant));
     background-color: transparent;
     border-style: none;
     border-radius: 5rem;
-    height: 20px;
+    height: 40px;
+    min-height: 40px;
+    width: 40px;
+    min-width: 40px;
     padding: 0;
-    padding-left: 12px;
-    padding-right: 12px;
     margin-left: -48px;
     z-index: 3;
-    top: 12px;
-    right: 1px;
-    box-shadow: none;
+    right: 4px;
+    margin-top: auto;
+    margin-bottom: auto;
     outline: none;
-    text-shadow: 0 1px 0 #c0ebe2 !important;
-    transition: background-color 0.25s ease;
+    transition: background-color 0.55s ease;
+    -webkit-transition: background-color 0.55s ease;
+    -moz-tranzition: background-color 0.55s ease;
 }
 button.clearable-text-field-clear.btn.btn-secondary {
     height: 40px;
