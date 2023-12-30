@@ -9515,6 +9515,7 @@ form#studio-edit {
     margin-right: 8px;
     width: 24px;
     height: 24px;
+    color: rgb(var(--on-surface-variant));
 }
 .dialog-content .criterion-list .collapse.show .card-body {
     background-color: rgb(var(--card-color-collaps-show));
