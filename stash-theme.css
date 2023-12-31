@@ -520,7 +520,7 @@ input[type=checkbox] {
 }
 .scene-table label input[type="checkbox"].form-control:checked,
 .scene-table label input[type="checkbox"].form-control:checked:focus {
-    box-shadow: 0 0 0 1px rgb(var(--on-surface-variant)), inset 0 0 0 5rem transparent;
+    box-shadow: 0 0 0 1px rgb(var(--pry-color)), inset 0 0 0 5rem transparent;
 }
 table.table.table-striped.table-bordered>tbody>tr:hover>td label input[type="checkbox"].form-control:focus-visible,
 table.table.table-striped.table-bordered>tbody>tr:nth-child(odd):hover>td label input[type="checkbox"].form-control:focus-visible,
