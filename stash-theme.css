@@ -10234,7 +10234,7 @@ label[for="cover_image"].form-label {
 }
 .scene-link:not(.optional-field-content > .scene-link):active {
     text-decoration: underline;
-    text-decoration-color: rgb(var(--link-active));
+    text-decoration-color: rgb(var(--nav-white));
     text-underline-offset: 0.22em;
     text-underline-position: from-font;
     outline: 0;
