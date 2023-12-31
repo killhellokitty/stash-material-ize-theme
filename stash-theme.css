@@ -4329,7 +4329,7 @@ div:has(>*.filter-tags)>table:not(.table-striped):not(.table-bordered).table>tbo
 .wall-item-text {
     margin-bottom:0px; 
     color: #111; 
-    text-shadow: 1px 1px 1px #fff;
+    text-shadow: 1px 1px 1px #ffffff61;
     background: linear-gradient(rgba(255,255,255,0.15), rgba(255,255,255,0.5));
     backdrop-filter: blur(2px);
 }
