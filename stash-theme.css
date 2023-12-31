@@ -4955,11 +4955,15 @@ div.card.studio-card .TruncatedText,
 }
 
 .tagger-container .col > .scene-link > .TruncatedText {
-    background-color: rgba(var(--white-color),var(--text-screen));
-    border-radius: 2.5rem;
-    max-width: 65%;
-    padding: 4px 12px;
-    text-shadow: var(--really-light-txt-shadow);
+    min-width: 44.53vw;
+    width: 150px;
+    height: 42px;
+    padding: 0 86px 0 12px;
+    text-shadow: var(--light-txt-shadow);
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    color: rgb(var(--nav-white));
 }
 
 /* doesn't except variables??? --white-color used for background. And darkened text shadow. */
