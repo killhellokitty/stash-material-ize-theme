@@ -4964,12 +4964,16 @@ div.card.studio-card .TruncatedText,
     align-items: center;
     font-size: 20px;
     color: rgb(var(--nav-white));
+    text-decoration: none;
+    text-decoration-color: transparent;
 }
 
 /* doesn't except variables??? --white-color used for background. And darkened text shadow. */
 .tagger-container .col > .scene-link > .TruncatedText:is(:active, :focus, :hover, :visited) {
     background-color: transparent;
     text-shadow: var(--really-light-txt-shadow);
+    text-decoration: none;
+    text-decoration-color: transparent;
 }
 
 .no-gutters .TruncatedText {
