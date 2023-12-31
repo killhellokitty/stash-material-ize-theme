@@ -506,17 +506,17 @@ input[type=checkbox] {
     height: auto;
     vertical-align: middle;
     text-align: center;
-    box-shadow: 0 0 0 1px rgb(var(--card-color2-hover)), inset 0 0 0 5rem rgb(var(--card-color));
+    box-shadow: 0 0 0 1px rgb(var(--card-color2-hover)), inset 0 0 0 5rem rgb(var(--tables-even));
     outline-offset: 2px;
 }
 .scene-table label input[type=checkbox].form-control:nth-of-type(odd) {
-    box-shadow: 0 0 0 1px rgb(var(--card-color2-hover)), inset 0 0 0 5rem rgb(var(--card-color-collaps-show));
+    box-shadow: 0 0 0 1px rgb(var(--card-color2-hover)), inset 0 0 0 5rem rgb(var(--tables-odd));
 }
 .scene-table label input[type="checkbox"].form-control:hover {
-    box-shadow: 0 0 0 1px rgb(var(--card-color2-hover)), inset 0 0 0 5rem rgb(var(--card-color-hover));
+    box-shadow: 0 0 0 1px rgb(var(--card-color2-hover)), inset 0 0 0 5rem rgb(var(--tables-hover));
 }
 .scene-table label input[type=checkbox].form-control:nth-of-type(odd):hover {
-    box-shadow: 0 0 0 1px rgb(var(--card-color2-hover)), inset 0 0 0 5rem rgb(var(--card-color-collaps-show-hover));
+    box-shadow: 0 0 0 1px rgb(var(--card-color2-hover)), inset 0 0 0 5rem rgb(var(--tables-hover));
 }
 .scene-table label input[type="checkbox"].form-control:checked,
 .scene-table label input[type="checkbox"].form-control:checked:focus {
