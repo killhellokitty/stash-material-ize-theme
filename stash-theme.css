@@ -4332,6 +4332,7 @@ div:has(>*.filter-tags)>table:not(.table-striped):not(.table-bordered).table>tbo
     text-shadow: 1px 1px 1px #ffffff61;
     background: linear-gradient(rgba(255,255,255,0.15), rgba(255,255,255,0.5));
     backdrop-filter: blur(2px);
+    font-weight: 500;
 }
 
 .scene-popovers .fa-icon {
