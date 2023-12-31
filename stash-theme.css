@@ -4967,21 +4967,9 @@ div.card.studio-card .TruncatedText,
 }
 
 /* doesn't except variables??? --white-color used for background. And darkened text shadow. */
-.tagger-container .col > .scene-link > .TruncatedText:hover {
-    background-color: rgb(251, 250, 249, .5); 
+.tagger-container .col > .scene-link > .TruncatedText:is(:active, :focus, :hover, :visited) {
+    background-color: transparent;
     text-shadow: var(--really-light-txt-shadow);
-}
-.tagger-container .col > .scene-link > .TruncatedText:is(:active, :focus) {
-    background-color: rgb(251, 250, 249, .6);
-    text-shadow: var(--really-light-txt-shadow);
-}
-.tagger-container .col > .scene-link > .TruncatedText:visited {
-    background-color: rgb(251, 250, 249, .7);
-    text-shadow: var(--really-light-txt-shadow);
-}
-.tagger-container .col > .scene-link > .TruncatedText:focus {
-    text-decoration-color: rgb(251, 250, 249, .6);
-    text-decoration: underline;
 }
 
 .no-gutters .TruncatedText {
@@ -10235,20 +10223,23 @@ label[for="cover_image"].form-label {
 }
 .scene-link:not(.optional-field-content > .scene-link):is(:hover, :focus) {
     text-decoration: underline;
-    text-decoration-color: rgb(var(--body-color));
-    text-underline-offset: 0.15em;
+    text-decoration-color: rgb(var(--link-hover));
+    text-underline-offset: 0.22em;
+    text-underline-position: from-font;
     outline: 0;
 }
 .scene-link:not(.optional-field-content > .scene-link):active {
     text-decoration: underline;
-    text-decoration-color: rgb(var(--nav-white));
-    text-underline-offset: 0.15em;
+    text-decoration-color: rgb(var(--link-active));
+    text-underline-offset: 0.22em;
+    text-underline-position: from-font;
     outline: 0;
 }
 .scene-link:not(.optional-field-content > .scene-link):visited {
     text-decoration: underline;
-    text-decoration-color: rgb(var(--nav-white));
-    text-underline-offset: 0.15em;
+    text-decoration-color: rgb(var(--link-visited));
+    text-underline-offset: 0.22em;
+    text-underline-position: from-font;
     outline: 0;
 }
 
