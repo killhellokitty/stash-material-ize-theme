@@ -10225,16 +10225,16 @@ label[for="cover_image"].form-label {
     justify-content: flex-start;
     border-radius: 0 0 12px;
 }
-.scene-link:not(.optional-field-content > .scene-link):is(:hover, :focus) {
+.scene-link:not(.optional-field-content > .scene-link):is(:hover, :active) {
     text-decoration: underline;
     text-decoration-color: rgb(var(--nav-white));
     text-underline-offset: 0.22em;
     text-underline-position: from-font;
     outline: 0;
 }
-.scene-link:not(.optional-field-content > .scene-link):active {
+.scene-link:not(.optional-field-content > .scene-link):focus {
     text-decoration: underline;
-    text-decoration-color: rgb(var(--nav-white));
+    text-decoration-color: rgb(var(--link-hover));
     text-underline-offset: 0.22em;
     text-underline-position: from-font;
     outline: 0;
