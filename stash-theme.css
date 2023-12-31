@@ -4964,8 +4964,10 @@ div.card.studio-card .TruncatedText,
     align-items: center;
     font-size: 20px;
     color: rgb(var(--nav-white));
+    transform: translate(0%,0%);
     text-decoration: none;
     text-decoration-color: transparent;
+    transition: text-shadow 0.2s ease-in, color 0.25s ease-in, all 0s;
 }
 
 /* doesn't except variables??? --white-color used for background. And darkened text shadow. */
@@ -10224,6 +10226,8 @@ label[for="cover_image"].form-label {
     flex-wrap: nowrap;
     justify-content: flex-start;
     border-radius: 0 0 12px;
+    transform: translate(0%,0%);
+    transition: text-decoration 0.25s ease-in, all 0s;
 }
 .scene-link:not(.optional-field-content > .scene-link):is(:hover, :active) {
     text-decoration: underline;
@@ -10241,7 +10245,7 @@ label[for="cover_image"].form-label {
 }
 .scene-link:not(.optional-field-content > .scene-link):visited {
     text-decoration: underline;
-    text-decoration-color: rgb(var(--link-visited));
+    text-decoration-color: rgb(var(--nav-white));
     text-underline-offset: 0.22em;
     text-underline-position: from-font;
     outline: 0;
