@@ -4372,7 +4372,9 @@ div.tagger-container .btn-link {
     padding: 0 8px;
     margin: 16px;
     text-shadow: none; 
-    box-shadow: var(--elevation-1);
+    box-shadow: var(--elevation-0);
+    z-index: 5;
+    filter: none;
 }
 
 .scene-tabs h1.text-center {
