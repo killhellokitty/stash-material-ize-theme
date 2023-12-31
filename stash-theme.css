@@ -5726,7 +5726,7 @@ button:not([title=Statistics], [title=Settings]).minimal:not(.nav-utility, .bran
 /* Collapse Button in Search-Item Card. */
 button.minimal.collapse-button.btn.btn-primary.btn-lg.enhanced:is(:only-of-type, :hover, :focus-visible, :active, :focus, :active:focus) {
     color: rgb(var(--on-surface-variant));
-    font-size: 24px;
+    font-size: 27.45px;
     border-radius: 5rem;
     border: 0;
     padding: 0 1.5px;
