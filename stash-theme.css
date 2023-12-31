@@ -10216,7 +10216,7 @@ label[for="cover_image"].form-label {
 }
 
 .scene-link:not(.optional-field-content > .scene-link) {
-    color: rgb(var(--nav-white));
+    color:  rgb(var(--body-color));;
     position: absolute;
     display: inline-flex;
     justify-content: flex-start;
@@ -10229,15 +10229,21 @@ label[for="cover_image"].form-label {
     margin-left: 16px;
 }
 .scene-link:not(.optional-field-content > .scene-link):is(:hover, :focus) {
-    color: #d1e4f1;
+    text-decoration: underline;
+    text-decoration-color: rgb(var(--body-color));
+    text-underline-offset: 0.15em;
     outline: 0;
 }
 .scene-link:not(.optional-field-content > .scene-link):active {
-    color: #f2f0ee;
+    text-decoration: underline;
+    text-decoration-color: rgb(var(--nav-white));
+    text-underline-offset: 0.15em;
     outline: 0;
 }
 .scene-link:not(.optional-field-content > .scene-link):visited {
-    color: #f2f0ee;
+    text-decoration: underline;
+    text-decoration-color: rgb(var(--nav-white));
+    text-underline-offset: 0.15em;
     outline: 0;
 }
 
