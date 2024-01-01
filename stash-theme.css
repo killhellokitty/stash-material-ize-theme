@@ -10187,8 +10187,12 @@ label[for="cover_image"].form-label {
     border-radius: 12px 0;
     margin-bottom: 0;
     overflow: hidden;
-    min-width: 44.53vw;
-    max-height: fit-content;
+    /* max-width: 44.53vw; */
+    min-width: 800px;
+    flex: 1 1 100%;
+    width: auto;
+    max-height: unset;
+    aspect-ratio: 16/9;
 }
 
 .tagger-container div:has(>code) {
@@ -10217,15 +10221,13 @@ label[for="cover_image"].form-label {
 
 .scene-link:not(.optional-field-content > .scene-link) {
     position: relative;
-    display: flex;
     outline: 0;
     top: -43px;
+    width: 100%;
     margin-top: 1px;
-    min-width: 44.53vw;
-    background-color: rgba(var(--white-color),0.38);
-    flex-wrap: nowrap;
-    justify-content: flex-start;
+    background-color: rgba(var(--white-color),0.32);
     border-radius: 0 0 12px;
+    backdrop-filter: blur(4.75px);
     transform: translate(0%,0%);
     transition: text-decoration 0.25s ease-in, all 0s;
 }
