@@ -10190,8 +10190,8 @@ label[for="cover_image"].form-label {
     overflow: hidden;
     /* min-width: 42.3vw; */
     flex: 1 1 100%;
-    width: 41.25vw; /*31.25vw*/
-    max-width: 60.78vh; /*177.78vh*/
+    width: 39.25vw;
+    max-width: 59.78vh;
     max-height: unset;
     aspect-ratio: 16/9;
     display: block;
