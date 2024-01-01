@@ -10187,12 +10187,13 @@ label[for="cover_image"].form-label {
     border-radius: 12px 0;
     margin-bottom: 0;
     overflow: hidden;
-    /* max-width: 44.53vw; */
-    min-width: 800px;
+    /* min-width: 42.3vw; */
+    max-width: 177.78vh;
     flex: 1 1 100%;
-    width: auto;
+    width: 31.25vw;
     max-height: unset;
-    aspect-ratio: 16/9;
+    /* aspect-ratio: 16/9; */
+    display: block;
 }
 
 .tagger-container div:has(>code) {
@@ -10223,8 +10224,9 @@ label[for="cover_image"].form-label {
     position: relative;
     outline: 0;
     top: -43px;
-    width: 100%;
-    margin-top: 1px;
+    width: 31.25vw;
+    max-width: 177.78vh;
+    margin-top: 2px;
     background-color: rgba(var(--white-color),0.32);
     border-radius: 0 0 12px;
     backdrop-filter: blur(4.75px);
