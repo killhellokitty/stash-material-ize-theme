@@ -4955,7 +4955,7 @@ div.card.studio-card .TruncatedText,
 }
 
 .tagger-container .col > .scene-link > .TruncatedText {
-    height: 43px;
+    height: 68px;
     padding: 0 86px 0 16px;
     text-shadow: var(--light-txt-shadow);
     display: flex;
@@ -10224,7 +10224,7 @@ label[for="cover_image"].form-label {
 .scene-link:not(.optional-field-content > .scene-link) {
     position: relative;
     outline: 0;
-    top: -43px;
+    top: -48px;
     /*width: 41.25vw; 31.25vw*/
     /*max-width: 60.78vh; 177.78vh*/
     /*margin-top: 1px;*/
