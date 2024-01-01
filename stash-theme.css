@@ -10229,7 +10229,7 @@ label[for="cover_image"].form-label {
     margin-top: 3px;
     background-color: rgba(var(--white-color),0.32);
     border-radius: 0 0 12px;
-    backdrop-filter: blur(4.75px);
+    backdrop-filter: blur(10px);
     transform: translate(0%,0%);
     transition: text-decoration 0.25s ease-in, all 0s;
 }
