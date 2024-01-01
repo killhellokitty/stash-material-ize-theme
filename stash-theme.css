@@ -4955,10 +4955,8 @@ div.card.studio-card .TruncatedText,
 }
 
 .tagger-container .col > .scene-link > .TruncatedText {
-    min-width: 44.53vw;
-    width: 150px;
-    height: 42px;
-    padding: 0 86px 0 12px;
+    height: 43px;
+    padding: 0 86px 0 16px;
     text-shadow: var(--light-txt-shadow);
     display: flex;
     align-items: center;
@@ -4968,6 +4966,9 @@ div.card.studio-card .TruncatedText,
     text-decoration: none;
     text-decoration-color: transparent;
     transition: text-shadow 0.2s ease-in, color 0.25s ease-in, all 0s;
+    border-radius: 0 0 12px 0;
+    width: 39.25vw;
+    max-width: 59.78vh;
 }
 
 /* doesn't except variables??? --white-color used for background. And darkened text shadow. */
@@ -10226,7 +10227,7 @@ label[for="cover_image"].form-label {
     top: -43px;
     /*width: 41.25vw; 31.25vw*/
     /*max-width: 60.78vh; 177.78vh*/
-    margin-top: 1px;
+    /*margin-top: 1px;*/
     background-color: rgba(var(--white-color),0.32);
     border-radius: 0 0 12px;
     backdrop-filter: blur(10px);
