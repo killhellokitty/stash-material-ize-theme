@@ -10189,8 +10189,8 @@ label[for="cover_image"].form-label {
     overflow: hidden;
     /* min-width: 42.3vw; */
     flex: 1 1 100%;
-    width: 41.25; /*31.25vw*/
-    max-width: 60.78; /*177.78vh*/
+    width: 41.25vw; /*31.25vw*/
+    max-width: 60.78vh; /*177.78vh*/
     max-height: unset;
     aspect-ratio: 16/9;
     display: block;
@@ -10224,8 +10224,8 @@ label[for="cover_image"].form-label {
     position: relative;
     outline: 0;
     top: -43px;
-    width: 41.25; /*31.25vw*/
-    max-width: 60.78; /*177.78vh*/
+    width: 41.25vw; /*31.25vw*/
+    max-width: 60.78vh; /*177.78vh*/
     margin-top: 3px;
     background-color: rgba(var(--white-color),0.32);
     border-radius: 0 0 12px;
