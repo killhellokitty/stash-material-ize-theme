@@ -10226,7 +10226,7 @@ label[for="cover_image"].form-label {
     top: -43px;
     width: 31.25vw;
     max-width: 177.78vh;
-    margin-top: 2px;
+    margin-top: 3px;
     background-color: rgba(var(--white-color),0.32);
     border-radius: 0 0 12px;
     backdrop-filter: blur(4.75px);
