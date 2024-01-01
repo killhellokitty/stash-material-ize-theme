@@ -10192,7 +10192,7 @@ label[for="cover_image"].form-label {
     flex: 1 1 100%;
     width: 31.25vw;
     max-height: unset;
-    /* aspect-ratio: 16/9; */
+    aspect-ratio: 16/9;
     display: block;
 }
 
