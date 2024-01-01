@@ -10224,14 +10224,16 @@ label[for="cover_image"].form-label {
     position: relative;
     outline: 0;
     top: -43px;
-    width: 41.25vw; /*31.25vw*/
-    max-width: 60.78vh; /*177.78vh*/
-    margin-top: 3px;
+    /*width: 41.25vw; 31.25vw*/
+    /*max-width: 60.78vh; 177.78vh*/
+    margin-top: 1px;
     background-color: rgba(var(--white-color),0.32);
     border-radius: 0 0 12px;
     backdrop-filter: blur(10px);
     transform: translate(0%,0%);
     transition: text-decoration 0.25s ease-in, all 0s;
+    width: 39.25vw;
+    max-width: 59.78vh;
 }
 .scene-link:not(.optional-field-content > .scene-link):is(:hover, :active) {
     text-decoration: underline;
