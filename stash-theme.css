@@ -7009,8 +7009,8 @@ button.clearable-text-field-clear.btn.btn-secondary:focus-visible {
 .custom-control-label:hover::before,
 .custom-control-label:focus::before,
 .custom-control-label:active::before {
-    background-color: #57605e;
-    border: 2px solid #899390;
+    background-color: rgb(var(--menu-color));
+    border: 2px solid rgb(var(--outline));
     top: -4.5px;
 }
 .custom-switch .custom-control-label::after {
