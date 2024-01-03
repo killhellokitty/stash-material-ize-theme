@@ -7014,12 +7014,13 @@ button.clearable-text-field-clear.btn.btn-secondary:focus-visible {
     top: -4.5px;
 }
 .custom-switch .custom-control-label::after {
-    background-color: #94a19d;
+    background-color: rgb(var(--outline));
     width: 16px;
     height: 16px;
     border-radius: 5rem;
     top: 3px;
     left: -24px;
+    box-shadow: var(--elevation-1);
 }
 .custom-switch .custom-control-label:hover::after {
     background-color: #bec9c5;
