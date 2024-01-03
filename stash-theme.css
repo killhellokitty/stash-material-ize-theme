@@ -1058,6 +1058,28 @@ input[type=range]::-ms-tooltip {
     top: 1rem;
 }
 
+/* || Stats Page */
+    /* Removes background-image from Stats page */
+body:has(.main.container-fluid>div>.stats) {
+    background-image: none;
+    background-color: rgb(var(--body-color2));
+}
+.stats .title {
+    color: rgb(var(--on-surface));
+    text-shadow: var(--light-txt-shadow);
+}
+p.title {
+    margin-bottom: 2rem;
+}
+.stats .heading {
+    color: rgb(var(--on-surface-variant));
+    text-shadow: var(--light-txt-shadow);
+}
+p.heading {
+    margin-bottom: 2.3rem;
+}
+/* || */
+
 .bg-dark {
      background-color: rgb(var(--nav-color2))!important;
 }
@@ -1427,49 +1449,85 @@ input#update-stashids.query-text-field.bg-secondary.text-white.border-secondary.
 .login input[type=text]#username.text-input,
 .login input[type=password]#password.text-input {
     background: none !important;
-    background-color: rgba(227,224,225,0.06) !important;
-    border: 0 !important;
-    border-style: none;
-    border-radius: 0.5rem;
-    font-size: 16px;
-    font-weight: 400;
-    letter-spacing: 0.5px;
-    line-height: 24px;
-    box-shadow: none;
-    caret-color: #00dfc6;
-    transition: background-color 0.55s ease, box-shadow 200ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: transparent !important;
+    background-image: none !important;
+    border: 1px solid rgb(var(--outline)) !important;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.25px;
+    line-height: 20px;
+    box-shadow: inset 0 0 0 1px transparent !important;
+    caret-color: rgb(var(--pry-color));
+    transition: background-color 0.35s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.25s ease-in;
 }
 .login input[type=text]#username.text-input:hover,
 .login input[type=password]#password.text-input:hover,
 .login input[type=text]#username.text-input:focus-visible,
-.login input[type=password]#password.text-input:focus-visible,
-.login input[type=text]#username.text-input:hover:focus,
-.login input[type=password]#password.text-input:hover:focus {
-    background-color: rgba(227,224,225,0.10) !important;
-    box-shadow: 0 0 0 1px #9598b0, inset 0 0 0 1px rgba(224,227,225,0.08) !important;
+.login input[type=password]#password.text-input:focus-visible {
+    background-color: transparent !important;
+    background-image: none !important;
+    border: 1px solid rgb(var(--on-surface-variant)) !important;
+    box-shadow: inset 0 0 0 1px transparent !important;
 }
 .login input[type=text]#username.text-input:focus,
 .login input[type=text]#username.text-input:active,
 .login input[type=password]#password.text-input:focus,
 .login input[type=password]#password.text-input:active {
-    background-color: rgba(227,224,225,0.06) !important;
-    border: 0 !important;
-    border-style: none;
-    box-shadow: 0 0 0 1px #00dfc6, inset 0 0 0 1px #00dfc6;
+    background-color: transparent !important;
+    background-image: none !important;
+    border: 1px solid rgb(var(--pry-color)) !important;
+    box-shadow: inset 0 0 0 1px rgb(var(--pry-color)) !important;
     outline: none;
 }
 .login input[type=text]#username.text-input:hover:focus,
 .login input[type=password]#password.text-input:hover:focus {
-    box-shadow: 0 0 0 1px #00dfc6, inset 0 0 0 1px #00dfc6;
+    border: 1px solid rgb(var(--pry-color)) !important;
+    box-shadow: inset 0 0 0 1px rgb(var(--pry-color)) !important;
 }
-.login input[type=text]#username.text-input:focus-visible,
-.login input[type=password]#password.text-input:focus-visible {
-    background-color: rgba(227,224,225,0.10) !important;
-    box-shadow: none;
-    outline-color: #00dfc6;
+.login input[type=text]#username.text-input:focus-visible:not(:focus),
+.login input[type=password]#password.text-input:focus-visible:not(:focus) {
+    box-shadow: none !important;
+    outline-color: rgb(var(--focus-ring));
     outline-style: solid;
-    outline-width: 2px;
-    outline-offset: -2px;
+    outline-width: 0.3rem;
+    outline-offset: -0.1rem;
+}
+.login input[type=text]#username.text-input:is(:focus, :not(:focus-visible)):autofill,
+.login input[type=password]#password.text-input:is(:focus, :not(:focus-visible)):autofill {
+    border: 1px solid rgb(var(--on-split-comp-container)) !important;
+    box-shadow: var(--elevation-0), inset 0 0 0 1px transparent; !important;
+    caret-color: rgb(var(--on-split-comp-container));
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    outline: 0;
+}
+.login input[type=text]#username.text-input:is(:focus, :not(:focus-visible))::-webkit-autofill,
+.login input[type=password]#password.text-input:is(:focus, :not(:focus-visible))::-webkit-autofill {
+    border: 1px solid rgb(var(--on-split-comp-container)) !important;
+    box-shadow: var(--elevation-0), inset 0 0 0 1px transparent; !important;
+    caret-color: rgb(var(--on-split-comp-container));
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    outline: 0;
+}
+textarea:autofill::selection, 
+input:autofill::selection {
+    background-color: rgb(var(--split-comp-container)) !important;
+    color: rgb(var(--on-split-comp-container)) !important;
+    caret-color: rgb(var(--split-comp-container));
+    transition: background 0.25s ease, color 0.15s linear;
+    -webkit-transition: background 0.25s ease, color 0.15s linear;
+}
+textarea::-webkit-autofill::selection, 
+input::-webkit-autofill::selection {
+    background-color: rgb(var(--split-comp-container)) !important;
+    color: rgb(var(--on-split-comp-container)) !important;
+    caret-color: rgb(var(--split-comp-container));
+    transition: background 0.25s ease, color 0.15s linear;
+    -webkit-transition: background 0.25s ease, color 0.15s linear;
 }
 
 /* Placeholder inside Input Boxes */
@@ -1666,8 +1724,8 @@ li#vjs-menu-text:first-of-type {
      box-shadow: none;
      margin: 4px;
      background-color: rgb(var(--card-color2));
-     /*box-shadow: 0 0 0 1px #6f7976;*/
-     transition: background-image .55s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.2s ease-in-out 0s;
+     padding: 16px;
+     transition: background-image .55s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.4s ease-in-out 0s;
 }
 #settings-container .card {
     box-shadow: none;
@@ -1706,10 +1764,10 @@ li#vjs-menu-text:first-of-type {
     text-shadow: none;
 }
 .grid-card a > .card-section-title:focus-visible {
-    outline-color: #dffffb;
+    outline-color: rgb(var(--focus-ring));
     outline-style: solid;
-    outline-width: 3px;
-    outline-offset: 3px;
+    outline-width: 0.3rem;
+    outline-offset: -0.1rem;
 }
 .scene-card.grid-card:hover,
 .scene-card.grid-card:focus,
@@ -1768,11 +1826,18 @@ li#vjs-menu-text:first-of-type {
 
 /* --- LOGIN CARD --- */
 .login .card:focus-within {
-    background-color: #111211;
-    transition: background-color .55s ease;
+    background-color: rgb(var(--card-color));
+    transition: background-color .65s ease;
 }
-.login .form-group label h6 {
+/*.login .form-group label h6 {
     font-variant: small-caps;
+}*/
+.login-error {
+    color: rgb(var(--error));
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.65px;
+    font-weight: 500;
 }
 
 /*--- DatePicker ---*/
@@ -2552,8 +2617,8 @@ button:not([title=Help]).btn-primary:not(:disabled):not(.disabled):hover,
 button:not([title=Help]).btn-primary:not(:disabled):not(.disabled):focus-visible,
 .login .btn.btn-primary:focus-visible {
     background-image: none;
-    background-color: rgba(var(--complement));
-    color: rgb(var(--on-complement));
+    background-color: rgba(var(--split-comp-container));
+    color: rgb(var(--on-split-comp-container));
     box-shadow: none;
     outline-color: rgb(var(--focus-ring));
     outline-style: solid;
@@ -5069,11 +5134,6 @@ div.studio-details dl.details-list {
 }
 .svg-inline--fa.fa-w-18 {
     width: 1.4em;
-}
-
-/* --- Adds a text shadow to the statistics on the startpage --- */
-.stats .title {
-    text-shadow: 1px 2px 3px rgba(0,0,0,0.40);
 }
 
 .slick-prev::before, 
