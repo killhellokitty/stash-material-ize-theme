@@ -7030,10 +7030,10 @@ button.clearable-text-field-clear.btn.btn-secondary:focus-visible {
 .custom-switch .custom-control-label:focus::after {
     width: 28px;
     height: 28px;
-    background-color: #dee2e1;
+    background-color: rgb(var(--on-surface-variant));
     top: -2.5px;
     left: -30px;
-    box-shadow: 0 0 0 6px rgba(255,255,255,0.10);
+    box-shadow: 0 0 0 6px rgb(var(--on-surface-variant),var(--btn-hover));
 }
 .custom-control-input:checked~.custom-control-label::before,
 .custom-control-input:checked~.custom-control-label:hover::before,
