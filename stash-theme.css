@@ -1537,24 +1537,20 @@ input#update-stashids.query-text-field.bg-secondary.text-white.border-secondary.
     outline: 0;
 }
 textarea:autofill::selection, 
-input:autofill::selection,
-textarea:is(:hover, :active, :focus, :hover:focus, :active:focus, :not(:focus-visible)):autofill::selection, 
-input:is(:hover, :active, :focus, :hover:focus, :active:focus, :not(:focus-visible)):autofill::selection {
-    box-shadow: inset 0 0 0 40rem rgb(var(--split-comp-container)) !important;
+input:autofill::selection {
+    background-color: rgb(var(--split-comp-container)) !important;
     color: rgb(var(--on-split-comp-container)) !important;
     caret-color: rgb(var(--split-comp-container));
-    transition: box-shadow 0.15s ease, color 0.1s linear;
-    -webkit-transition: box-shadow 0.15s ease, color 0.1s linear;
+    transition: background-color 0.25s ease, color 0.1s linear;
+    -webkit-transition: background-color 0.25s ease, color 0.1s linear;
 }
 textarea::-webkit-autofill::selection, 
-input::-webkit-autofill::selection,
-textarea:is(:hover, :active, :focus, :hover:focus, :active:focus, :not(:focus-visible))::-webkit-autofill::selection,
-input:is(:hover, :active, :focus, :hover:focus, :active:focus, :not(:focus-visible))::-webkit-autofill::selection {
-    box-shadow: inset 0 0 0 40rem rgb(var(--split-comp-container)) !important;
+input::-webkit-autofill::selection {
+    background-color: rgb(var(--split-comp-container)) !important;
     color: rgb(var(--on-split-comp-container)) !important;
     caret-color: rgb(var(--split-comp-container));
-    transition: box-shadow 0.15s ease, color 0.1s linear;
-    -webkit-transition: box-shadow 0.15s ease, color 0.1s linear;
+    transition: background-color 0.25s ease, color 0.1s linear;
+    -webkit-transition: background-color 0.25s ease, color 0.1s linear;
 }
 
 /* Placeholder inside Input Boxes */
