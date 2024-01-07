@@ -466,6 +466,7 @@ option:checked {
     color: #cae6ff !important;
 }  
 
+/* ||Autofill Text Entries */
 input:autofill,
 input:autofill:hover, 
 input:autofill:focus {
@@ -481,7 +482,7 @@ input::-webkit-autofill:focus {
     caret-color: rgb(var(--on-pry-container));
 }
 
-/* --- Check-Boxes ---*/
+/* ||Check-Boxes & Radio */
 .grid-card .card-check {
     width: 1.75rem;
     left: 0.8rem;
