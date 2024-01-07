@@ -469,17 +469,16 @@ option:checked {
 input:autofill,
 input:autofill:hover, 
 input:autofill:focus {
-  -webkit-text-fill-color: rgb(var(--pry-container));
-  box-shadow: inset 0 0 0px 40rem rgb(var(--on-pry-container));
+    -webkit-text-fill-color: rgb(var(--on-pry-container));
+    box-shadow: inset 0 0 0px 40rem rgb(var(--pry-container));
+    caret-color: rgb(var(--on-pry-container));
 }
-.login input[type=text]#username.text-input::-webkit-autofill,
-.login input[type=password]#password.text-input::-webkit-autofill,
-.login input[type=text]#username.text-input::-webkit-autofill:hover,
-.login input[type=password]#password.text-input::-webkit-autofill:hover, 
-.login input[type=text]#username.text-input::-webkit-autofill:focus,
-.login input[type=password]#password.text-input::-webkit-autofill:focus {
-  -webkit-text-fill-color: rgb(var(--pry-container));
-  box-shadow: inset 0 0 0px 40rem rgb(var(--on-pry-container));
+input::-webkit-autofill,
+input::-webkit-autofill:hover, 
+input::-webkit-autofill:focus {
+    -webkit-text-fill-color: rgb(var(--on-pry-container));
+    box-shadow: inset 0 0 0px 40rem rgb(var(--pry-container));
+    caret-color: rgb(var(--on-pry-container));
 }
 
 /* --- Check-Boxes ---*/
@@ -1516,21 +1515,25 @@ input#update-stashids.query-text-field.bg-secondary.text-white.border-secondary.
     outline-width: 0.3rem;
     outline-offset: -0.1rem;
 }
-.login input[type=text]#username.text-input,
-.login input[type=password]#password.text-input,
-.login input[type=text]#username.text-input:is(:hover, :focus, :hover:focus, :not(:focus-visible)):autofill,
-.login input[type=password]#password.text-input:is(:focus, :hover, :hover:focus, :not(:focus-visible)):autofill {
-    caret-color: rgb(var(--pry-color));
+.login input[type=text]#username.text-input:autofill,
+.login input[type=password]#password.text-input:autofill,
+.login input[type=text]#username.text-input:is(:hover, :focus, :hover:focus, :focus-visible):autofill,
+.login input[type=password]#password.text-input:is(:focus, :hover, :hover:focus, :focus-visible):autofill {
+    -webkit-text-fill-color: rgb(var(--on-pry-container));
+    box-shadow: inset 0 0 0px 40rem rgb(var(--pry-container)) !important;
+    caret-color: rgb(var(--on-pry-container));
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0.25px;
     outline: 0;
 }
-.login input[type=text]#username.text-input,
-.login input[type=password]#password.text-input,
-.login input[type=text]#username.text-input:is(:hover, :focus, :hover:focus, :not(:focus-visible))::-webkit-autofill,
-.login input[type=password]#password.text-input:is(:hover, :focus, :hover:focus, :not(:focus-visible))::-webkit-autofill { 
-    caret-color: rgb(var(--pry-color));
+.login input[type=text]#username.text-input::-webkit-autofill,
+.login input[type=password]#password.text-input::-webkit-autofill,
+.login input[type=text]#username.text-input:is(:hover, :focus, :hover:focus, :focus-visible)::-webkit-autofill,
+.login input[type=password]#password.text-input:is(:hover, :focus, :hover:focus, :focus-visible)::-webkit-autofill { 
+    -webkit-text-fill-color: rgb(var(--on-pry-container));
+    box-shadow: inset 0 0 0px 40rem rgb(var(--pry-container)) !important;
+    caret-color: rgb(var(--on-pry-container));
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0.25px;
