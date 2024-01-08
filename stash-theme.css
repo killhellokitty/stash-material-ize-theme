@@ -11706,12 +11706,13 @@ span.stash-id-pill {
     line-height: 16px;
     letter-spacing: 0.75px;
     vertical-align: middle;
+    margin-top: 8px;
 }
 .stash-id-pill > span {
-    background-color: rgb(var(--pry-color));
-    color: rgb(var(--on-pry));
-    border-radius: 8px 0 0 8px;
-    margin-top: 8px;
+    background-color: rgb(var(--on-tertiary));
+    color: rgb(var(--tertiary));
+    border-radius: 5rem 0 0 5rem;
+    padding: 0.6em 8px 0.6em 16px;
 }
 .stash-id-pill a {
     color: rgb(var(--on-tertiary-container));
@@ -11722,7 +11723,7 @@ span.stash-id-pill {
     padding-top: 0.6em;
     padding-bottom: 0.6em;
 }
-.stash-id-pill a:hover {
+.stash-id-pill a:is(:hover, :focus-visible) {
     text-decoration: underline;
     text-decoration-color: currentColor;
     text-decoration-style: solid;
