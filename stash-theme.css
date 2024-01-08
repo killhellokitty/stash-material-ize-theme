@@ -11716,11 +11716,18 @@ span.stash-id-pill {
 .stash-id-pill a {
     color: rgb(var(--on-tertiary-container));
     background-color: rgb(var(--tertiary-container));
-    border-radius: 0 8px 8px 0;
-    padding-right: 12px;
+    border-radius: 0 5rem 5rem 0;
+    padding-right: 16px;
     padding-left: 8px;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
+    padding-top: 0.6em;
+    padding-bottom: 0.6em;
+}
+.stash-id-pill a:hover {
+    text-decoration: underline;
+    text-decoration-color: currentColor;
+    text-decoration-style: solid;
+    text-underline-offset: 0.25em;
+    text-decoration-thickness: 0.125em;
 }
 
 .toast-container .success{background-color: rgb(var(--green))}
