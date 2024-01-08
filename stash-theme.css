@@ -11714,7 +11714,7 @@ span.stash-id-pill {
     margin-top: 8px;
 }
 .stash-id-pill a {
-    background-color: rgb(var(--sec-container));
+    background-color: rgb(var(--on-sec-container));
     border-radius: 0 8px 8px 0;
 }
 
