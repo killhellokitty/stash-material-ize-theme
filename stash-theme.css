@@ -11723,9 +11723,9 @@ button[title="Delete Stash ID"].btn-danger {
     min-width: 32px;
     height: 32px;
     font-size: 14px;
-    /* top: 66px; */
-    /* margin-top: -48px; */
-    /* margin-bottom: 24px;*/
+    margin-top: 5%;
+    margin-bottom: -4px;
+    margin-left: auto;
 }
 span.stash-id-pill {
     font-size: 12px;
