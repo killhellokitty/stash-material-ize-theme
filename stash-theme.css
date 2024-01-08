@@ -7926,10 +7926,13 @@ button#scene-scrape {
     border-right-width: 0;
 }
 
+svg.svg-inline--fa.fa-magnifying-glass.fa-icon {
+    font-size: 20px;
+}
 .scraper-group > .dropdown:not(:first-child) button.dropdown-toggle:not(:disabled) {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
-    padding-left: 16px;
+    padding-left: 12px;
 }
 button.filter-button.btn.btn-secondary {
     border-bottom-left-radius: 0;
