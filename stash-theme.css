@@ -10236,23 +10236,7 @@ div#create-scene-page {
 /*#scene-edit-details .form-group:has(>label[for="details"]) {
     padding: 0 14px;
 }*/
-#scene-edit-details .form-container .form-group.row > label[for="stash_ids"].form-label.col-form-label {
-    font-size: 12px;
-    line-height: 16px;
-    letter-spacing: 0.35px;
-    text-shadow: var(--light-text-shadow);
-    font-weight: 500;
-    color: rgb(var( --on-surface-variant));
-    position: relative;
-    display: block;
-    background-color: transparent;
-    transform: translate(0%,0%);
-    visibility: visible;
-    margin-left: 4px;
-    margin-left: 16px;
-    margin-bottom: -12%;
-    margin-top: 6%;
-}
+
 
 #scene-edit-details .form-container .form-group > label.form-label[for="details"]::before {
     content: "Description";
@@ -11719,6 +11703,23 @@ button[title=Help].nav-utility.minimal.btn.btn-primary:has(>svg.svg-inline--fa.f
 }*/
 
 /* ||Stash ID */
+#scene-edit-details .form-container .form-group.row > label[for="stash_ids"].form-label.col-form-label {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.35px;
+    text-shadow: var(--light-text-shadow);
+    font-weight: 500;
+    color: rgb(var( --on-surface-variant));
+    position: relative;
+    display: block;
+    background-color: transparent;
+    transform: translate(0%,0%);
+    visibility: visible;
+    margin-left: 4px;
+    margin-left: 16px;
+    margin-bottom: -12%;
+    margin-top: 6%;
+}
 button[title="Delete Stash ID"].btn-danger {
     padding: 0;
     width: 32px;
@@ -11727,7 +11728,8 @@ button[title="Delete Stash ID"].btn-danger {
     font-size: 14px;
     margin-top: 5%;
     margin-bottom: -4px;
-    margin-left: auto;
+    margin-left: 20%;
+    margin-right: auto !important;
 }
 span.stash-id-pill {
     font-size: 12px;
