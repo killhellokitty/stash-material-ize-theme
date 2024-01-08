@@ -10249,7 +10249,7 @@ div#create-scene-page {
     transform: translate(0%,0%);
     visibility: visible;
     margin-left: 4px;
-    margin-bottom: -6%;
+    margin-bottom: -10%;
 }
 
 #scene-edit-details .form-container .form-group > label.form-label[for="details"]::before {
