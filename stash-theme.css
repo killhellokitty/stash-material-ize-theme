@@ -11700,6 +11700,10 @@ button[title=Help].nav-utility.minimal.btn.btn-primary:has(>svg.svg-inline--fa.f
     background-color: rgba(var(--on-surface),var(--btn-hover));
 }*/
 
+/* ||Stash ID */
+button[title="Delete Stash ID"].btn-danger {
+
+}
 span.stash-id-pill {
     font-size: 12px;
     font-weight: 500;
@@ -11731,6 +11735,7 @@ span.stash-id-pill {
     text-underline-offset: 0.25em;
     text-decoration-thickness: 0.12em;
 }
+/* --- */
 
 .toast-container .success{background-color: rgb(var(--green))}
 .toast-container .danger{background-color: rgb(var(--error))}
