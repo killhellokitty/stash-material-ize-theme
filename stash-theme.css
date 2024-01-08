@@ -1524,8 +1524,8 @@ input#update-stashids.query-text-field.bg-secondary.text-white.border-secondary.
 }
 .login input[type=text]#username.text-input:autofill,
 .login input[type=password]#password.text-input:autofill,
-.login input[type=text]#username.text-input:is(:hover, :focus, :hover:focus, :focus-visible):autofill,
-.login input[type=password]#password.text-input:is(:focus, :hover, :hover:focus, :focus-visible):autofill {
+.login input[type=text]#username.text-input:where(:hover, :focus, :hover:focus, :focus-visible):autofill,
+.login input[type=password]#password.text-input:where(:focus, :hover, :hover:focus, :focus-visible):autofill {
     -webkit-text-fill-color: rgb(var(--on-pry-container));
     box-shadow: inset 0 0 0px 40rem rgb(var(--pry-container)) !important;
     caret-color: rgb(var(--on-pry-container));
@@ -1534,14 +1534,14 @@ input#update-stashids.query-text-field.bg-secondary.text-white.border-secondary.
     letter-spacing: 0.25px;
     outline: 0;
 }
-.login input[type=text]#username.text-input:is(:not(:hover), :focus, :hover:focus, :focus-visible):autofill,
-.login input[type=password]#password.text-input:is(:not(:hover), :focus, :hover:focus, :focus-visible):autofill {
+.login input[type=text]#username.text-input:is(:focus, :hover:focus, :focus-visible):autofill,
+.login input[type=password]#password.text-input:is(:focus, :hover:focus, :focus-visible):autofill {
     box-shadow: inset 0 0 0 1px rgb(var(--pry-color)), inset 0 0 0px 40rem rgb(var(--pry-container)) !important;
 }
 .login input[type=text]#username.text-input::-webkit-autofill,
 .login input[type=password]#password.text-input::-webkit-autofill,
-.login input[type=text]#username.text-input:is(:hover, :focus, :hover:focus, :focus-visible)::-webkit-autofill,
-.login input[type=password]#password.text-input:is(:hover, :focus, :hover:focus, :focus-visible)::-webkit-autofill { 
+.login input[type=text]#username.text-input:where(:hover, :focus, :hover:focus, :focus-visible)::-webkit-autofill,
+.login input[type=password]#password.text-input:where(:hover, :focus, :hover:focus, :focus-visible)::-webkit-autofill { 
     -webkit-text-fill-color: rgb(var(--on-pry-container));
     box-shadow: inset 0 0 0px 40rem rgb(var(--pry-container)) !important;
     caret-color: rgb(var(--on-pry-container));
@@ -1550,8 +1550,8 @@ input#update-stashids.query-text-field.bg-secondary.text-white.border-secondary.
     letter-spacing: 0.25px;
     outline: 0;
 }
-.login input[type=text]#username.text-input:is(:not(:hover), :focus, :hover:focus, :focus-visible)::-webkit-autofill,
-.login input[type=password]#password.text-input:is(:not(:hover), :focus, :hover:focus, :focus-visible)::-webkit-autofill {
+.login input[type=text]#username.text-input:is(:focus, :hover:focus, :focus-visible)::-webkit-autofill,
+.login input[type=password]#password.text-input:is(:focus, :hover:focus, :focus-visible)::-webkit-autofill {
     box-shadow: inset 0 0 0 1px rgb(var(--pry-color)), inset 0 0 0px 40rem rgb(var(--pry-container)) !important;
 }
 textarea:autofill::selection, 
