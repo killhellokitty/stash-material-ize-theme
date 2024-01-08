@@ -10236,6 +10236,22 @@ div#create-scene-page {
 /*#scene-edit-details .form-group:has(>label[for="details"]) {
     padding: 0 14px;
 }*/
+#scene-edit-details .form-container .form-group.row > label[for="stash_ids"].form-label.col-form-label {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.35px;
+    text-shadow: var(--light-text-shadow);
+    font-weight: 500;
+    color: rgb(var( --on-surface-variant));
+    position: relative;
+    display: block;
+    background-color: transparent;
+    transform: translate(0%,0%);
+    visibility: visible;
+    margin-left: 4px;
+    margin-bottom: -6%;
+}
+
 #scene-edit-details .form-container .form-group > label.form-label[for="details"]::before {
     content: "Description";
     position: absolute;
