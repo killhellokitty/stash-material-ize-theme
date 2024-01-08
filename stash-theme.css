@@ -11702,7 +11702,8 @@ button[title=Help].nav-utility.minimal.btn.btn-primary:has(>svg.svg-inline--fa.f
 
 span.stash-id-pill {
     font-size: 12px;
-    font-weight: 700;
+    font-weight: 500;
+    text-shadow: var(--really-light-txt-shadow);
     line-height: 16px;
     letter-spacing: 0.75px;
     vertical-align: middle;
@@ -11728,7 +11729,7 @@ span.stash-id-pill {
     text-decoration-color: currentColor;
     text-decoration-style: solid;
     text-underline-offset: 0.25em;
-    text-decoration-thickness: 0.125em;
+    text-decoration-thickness: 0.12em;
 }
 
 .toast-container .success{background-color: rgb(var(--green))}
