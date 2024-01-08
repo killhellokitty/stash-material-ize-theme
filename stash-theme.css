@@ -1533,9 +1533,9 @@ input#update-stashids.query-text-field.bg-secondary.text-white.border-secondary.
     line-height: 20px;
     letter-spacing: 0.25px;
     outline: 0;
-    transition: box-shadow 0.25s ease-in-out, -webkit-text-fill-color 0.15s ease-in, font-size 0.15s ease-in-out;
-    -webkit-transition: box-shadow 0.25s ease-in-out, -webkit-text-fill-color 0.15s ease-in, font-size 0.15s ease-in-out;
-    -moz-transition: box-shadow 0.25s ease-in-out, -webkit-text-fill-color 0.15s ease-in, font-size 0.15s ease-in-out;
+    transition: box-shadow 0s ease-in-out, -webkit-text-fill-color 0.15s ease-in, font-size 0.15s ease-in-out;
+    -webkit-transition: box-shadow 0s ease-in-out, -webkit-text-fill-color 0.15s ease-in, font-size 0.15s ease-in-out;
+    -moz-transition: box-shadow 0s ease-in-out, -webkit-text-fill-color 0.15s ease-in, font-size 0.15s ease-in-out;
 }
 .login input[type=text]#username.text-input:autofill:focus,
 .login input[type=password]#password.text-input:autofill:focus {
@@ -1554,9 +1554,9 @@ input#update-stashids.query-text-field.bg-secondary.text-white.border-secondary.
     line-height: 20px;
     letter-spacing: 0.25px;
     outline: 0;
-    transition: box-shadow 0.25s ease-in-out, -webkit-text-fill-color 0.15s ease-in, font-size 0.15s ease-in-out;
-    -webkit-transition: box-shadow 0.25s ease-in-out, -webkit-text-fill-color 0.15s ease-in, font-size 0.15s ease-in-out;
-    -moz-transition: box-shadow 0.25s ease-in-out, -webkit-text-fill-color 0.15s ease-in, font-size 0.15s ease-in-out;
+    transition: box-shadow 0s ease-in-out, -webkit-text-fill-color 0.15s ease-in, font-size 0.15s ease-in-out;
+    -webkit-transition: box-shadow 0s ease-in-out, -webkit-text-fill-color 0.15s ease-in, font-size 0.15s ease-in-out;
+    -moz-transition: box-shadow 0s ease-in-out, -webkit-text-fill-color 0.15s ease-in, font-size 0.15s ease-in-out;
 }
 .login input[type=text]#username.text-input::-webkit-autofill:focus,
 .login input[type=password]#password.text-input::-webkit-autofill:focus {
