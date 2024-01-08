@@ -8974,7 +8974,7 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
     letter-spacing: 0.028571428571428574rem;
 }
 /* StashID's if installed */
-#scene-edit-details .form-label[for="stashIDs"],
+#scene-edit-details .form-label[for="stash_ids"],
 #scene-edit-details .form-label[for="cover"] {
     padding-bottom: 0.2857142857142857rem;
     font-size: 0.8571428571428571rem;
@@ -8987,7 +8987,7 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
 #scene-edit-details .form-container .form-group:nth-last-of-type(2) label.form-label:not([for="details"]) {
     padding-left: 2.142857142857143rem;
 }
-#scene-edit-details .form-label[for="stashIDs"] {
+#scene-edit-details .form-label[for="stash_ids"] {
     position: relative;
     left: 16px;
     top: 22px;
@@ -8998,7 +8998,7 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
     left: -2px;
     top: 10px;
 }
-#scene-edit-details .form-container .form-group:has(>*.form-label[for="stashIDs"]) {
+#scene-edit-details .form-container .form-group:has(>*.form-label[for="stash_ids"]) {
     margin-top: -10px;
 }
 #scene-edit-details .form-container .form-group:nth-of-type(12) ul.pl-0 {
