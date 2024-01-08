@@ -11723,13 +11723,13 @@ span.stash-id-pill {
 .stash-id-pill > span {
     background-color: rgb(var(--on-tertiary));
     color: rgb(var(--tertiary));
-    border-radius: 5rem 0 0 5rem;
+    border-radius: 12px 0 0 12px;
     padding: 0.6em 8px 0.6em 16px;
 }
 .stash-id-pill a {
     color: rgb(var(--on-tertiary-container));
     background-color: rgb(var(--tertiary-container));
-    border-radius: 0 5rem 5rem 0;
+    border-radius: 0 12px 12px 0;
     padding-right: 16px;
     padding-left: 8px;
     padding-top: 0.6em;
