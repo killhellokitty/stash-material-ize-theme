@@ -11702,7 +11702,14 @@ button[title=Help].nav-utility.minimal.btn.btn-primary:has(>svg.svg-inline--fa.f
 
 /* ||Stash ID */
 button[title="Delete Stash ID"].btn-danger {
-
+    padding: 0;
+    width: 32px;
+    min-width: 32px;
+    height: 32px;
+    font-size: 14px;
+    /* top: 66px; */
+    /* margin-top: -48px; */
+    /* margin-bottom: 24px;*/
 }
 span.stash-id-pill {
     font-size: 12px;
