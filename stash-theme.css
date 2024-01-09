@@ -235,7 +235,7 @@ h6,
     --mars: 80, 143, 184; /*#508fb8*/
     --white-color: 248, 255, 254; /*#f8fffe*/
     --nav-white: 246, 247, 249; /*#f6f7f9*/
-    --focus-ring: 255, 254, 254; /*#fffefe*/
+    --focus-ring: 238, 245, 244; /*#eef5f4*/
     --muted-text: 213, 229, 242; /*#d5e5f2*/
     --interactive-input: 239, 239, 241; /*#efeff1 --- lch 94.498 1.035 290.078*/
     --star-color: 255, 243, 111; /* #fff36f --- lch 94.53 64.926 100.665 */
@@ -3781,7 +3781,7 @@ li.search-result.selected-result.active {
     background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPgo8cmVjdCB3aWR0aD0iNSIgaGVpZ2h0PSI1IiBmaWxsPSIjMWEyMDI1Ij48L3JlY3Q+CjxwYXRoIGQ9Ik0wIDVMNSAwWk02IDRMNCA2Wk0tMSAxTDEgLTFaIiBzdHJva2U9IiMxMDE0MTciIHN0cm9rZS13aWR0aD0iMSI+PC9wYXRoPgo8L3N2Zz4=");
     padding: 16px 0 !important;
     align-items: center;
-    border-bottom: 1px solid rgb(255,255,255,0.13);
+    border: 0;
     z-index: 20901;
 }
 @media (max-width: 575.98px) {
