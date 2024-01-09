@@ -4509,9 +4509,6 @@ div.tagger-container .btn-link {
 .studio-stashid-icon svg.svg-inline--fa.fa-circle-check.fa-icon.undefined {
     color: #309e27 !important;
 }
-#scene-edit-details .form-group.row {
-    padding-top: 1ex;
-}
 
 /*#scene-edit-details .form-group {
     margin-bottom: 0.65rem;
@@ -10159,10 +10156,9 @@ div#create-scene-page {
     margin-top: 0;
     flex-wrap: nowrap;
 }
-/* Scene Editor --- row/column spacing */
-#scene-edit-details .form-group {
-    margin-bottom: 16px;
-    /*margin-top: 16px;*/
+/* Scene Editor --- top spacing filler */
+#scene-edit-details .form-group.row {
+    padding-top: 1ex;
 }
 /* Text-Input Column-Form-Label */
 #scene-edit-details .form-container .form-group.row > label.col-form-label.form-label,
