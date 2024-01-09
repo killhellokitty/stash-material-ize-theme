@@ -10185,12 +10185,23 @@ div#create-scene-page {
     transform: translate(0%,0%);
     flex-basis: fit-content;
     visibility: hidden;
+    /*opacity: 1;*/
+    /*transition: margin-bottom 0.2s ease-in, opacity 0.2s, background-color 0.2s;*/
 }
 #scene-edit-details .form-container .form-group.row:focus-within > label.form-label.col-form-label,
 #scene-edit-details .form-group:focus-within .form-label[for="details"] {
-    visibility: visible;
+    animation: opacityname 0.4s linear forwards;
+    will-change: animation;
 }
-
+@keyframes opacityname {
+    0% {
+        
+    }
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
     /* For Editor Text-Inputs with multiple Inputs spacing between. */
 .string-list-input .input-group {
     margin-bottom: 8px;
@@ -10205,10 +10216,6 @@ div#create-scene-page {
     /* Title */
 #scene-edit-details .form-container .form-group.row > label[for="title"].form-label.col-form-label {
     padding-top: 8px;
-}
-
-.form-container input.form-control:is(:focus, :focus-visible)::placeholder {
-    transform: translateX(16px) translateY(-28px);
 }
 
     /* URL's */
