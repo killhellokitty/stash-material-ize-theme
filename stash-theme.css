@@ -11746,17 +11746,17 @@ span.stash-id-pill {
 .stash-id-pill > span {
     background-color: rgb(var(--on-tertiary));
     color: rgb(var(--tertiary));
-    border-radius: 12px 0 0 12px;
-    padding: 0.6em 8px 0.6em 16px;
+    border-radius: 8px 0 0 8px;
+    padding: 0.4em 4px 0.4em 6px;
 }
 .stash-id-pill a {
     color: rgb(var(--on-tertiary-container));
     background-color: rgb(var(--tertiary-container));
-    border-radius: 0 12px 12px 0;
-    padding-right: 16px;
-    padding-left: 8px;
-    padding-top: 0.6em;
-    padding-bottom: 0.6em;
+    border-radius: 0 8px 8px 0;
+    padding-right: 6px;
+    padding-left: 4px;
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
 }
 .stash-id-pill a:is(:hover, :focus-visible) {
     text-decoration: underline;
