@@ -5612,7 +5612,7 @@ button:not([title=Statistics], [title=Settings]).minimal:not(.nav-utility, .bran
     outline: none;
 }
 
-.performer-card button:is(.favorite, .not-favorite).minimal.btn.favorite-button.btn.btn-primary > svg.svg-inline--fa.fa-heart.fa-icon {
+.performer-card button.minimal.btn.favorite-button.not-favorite.btn.btn-primary > svg.svg-inline--fa.fa-heart.fa-icon {
     color: unset;
     padding: 0;
     margin: 0;
@@ -5620,7 +5620,11 @@ button:not([title=Statistics], [title=Settings]).minimal:not(.nav-utility, .bran
     transition: font-size 0.25 ease-in-out;
 }
 .performer-card button.minimal.btn.favorite-button.favorite.btn.btn-primary > svg.svg-inline--fa.fa-heart.fa-icon {
-    font-size: 24px;
+    color: unset;
+    padding: 0;
+    margin: 0;
+    font-size: 28px;
+    transition: font-size 0.25 ease-in-out;
 }
 .performer-card button.btn.favorite-button.not-favorite {
     color: rgb(var(--on-split-comp-container),0.5) !important;
