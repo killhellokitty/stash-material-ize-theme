@@ -5626,7 +5626,7 @@ button:not([title=Statistics], [title=Settings]).minimal:not(.nav-utility, .bran
     margin: 0;
     font-size: 28px;
     z-index: 5;
-    transition: font-size 0.25 ease-in-out;
+    transition: font-size 0.2 ease-in-out;
 }
 .performer-card button.btn.favorite-button.not-favorite {
     color: rgb(var(--on-split-comp-container),0.5) !important;
@@ -5646,7 +5646,7 @@ button:is(.favorite, .not-favorite).minimal.favorite-button.btn.btn-primary {
     background-image: none;
     background-color: transparent;
     box-shadow: none;
-    transition: background-color 0.55s ease, box-shadow 0.35s ease-in, filter 0.15s;
+    transition: background-color 0.55s ease, box-shadow 0.35s ease-in, filter 0.25s;
 }
 button:is(.favorite, .not-favorite).minimal.favorite-button.btn.btn-primary:hover {
     /*background-image: var(--btn-hover-highlight);
@@ -5659,8 +5659,8 @@ button:is(.favorite, .not-favorite).minimal.favorite-button.btn.btn-primary:hove
 button:is(.favorite, .not-favorite).minimal.favorite-button.btn.btn-primary:is(:focus, :active, :focus:active) {
     /*background-image: var(--btn-active-highlight);
     background-color: rgb(var(--split-comp-container));
-    background-blend-mode: overlay;
-    box-shadow: var(--elevation-0);*/
+    background-blend-mode: overlay;*/
+    box-shadow: var(--elevation-0);
     filter: none;
     opacity: 1;
 }
@@ -11680,6 +11680,7 @@ button[title=Help].nav-utility.minimal.btn.btn-primary:has(>svg.svg-inline--fa.f
     100% {
         opacity: 1;
         transform: scale(24);
+        box-shadow: var(--elevation-1);
     }
 }
 .navbar-dark .navbar-toggler.collapsed:hover:not(:active):not(.active)::before, 
@@ -11688,7 +11689,7 @@ button[title=Help].nav-utility.minimal.btn.btn-primary:has(>svg.svg-inline--fa.f
 .top-nav .navbar-buttons a.nav-utility button.minimal.btn.btn-primary:not(.donate):hover:not(:active):not(.active)::before,
 button[title=Help].nav-utility.minimal.btn.btn-primary:has(>svg.svg-inline--fa.fa-circle-question.fa-icon):hover:not(:active):not(.active)::before,
 .top-nav .navbar-buttons a.minimal.logout-button.btn.btn-primary:hover:not(:active):not(.active)::before {
-    animation: bubble 0.55s ease-in forwards;
+    animation: bubble 0.35s ease-in forwards;
     will-change: animation;
     max-height: 48px;
     min-height: 2px;
@@ -11696,7 +11697,7 @@ button[title=Help].nav-utility.minimal.btn.btn-primary:has(>svg.svg-inline--fa.f
     min-width: 2px;
 }
 button:is(.favorite, .not-favorite).minimal.favorite-button.btn.btn-primary:hover:not(:active)::before {
-    animation: bubble 0.55s ease-in forwards;
+    animation: bubble 0.35s ease-in forwards;
     will-change: animation;
     max-height: 40px;
     min-height: 2px;
