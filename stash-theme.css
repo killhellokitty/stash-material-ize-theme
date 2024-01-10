@@ -5641,22 +5641,24 @@ button:is(.favorite, .not-favorite).minimal.favorite-button.btn.btn-primary {
     border: 0;
     right: 5px;
     top: 5px;
+    background-image: none;
+    background-color: transparent;
     box-shadow: none;
     transition: background-color 0.55s ease, box-shadow 0.35s ease-in, filter 0.15s;
 }
 button:is(.favorite, .not-favorite).minimal.favorite-button.btn.btn-primary:hover {
-    background-image: var(--btn-hover-highlight);
+    /*background-image: var(--btn-hover-highlight);
     background-color: rgb(var(--split-comp-container));
     background-blend-mode: overlay;
-    box-shadow: var(--elevation-1);
+    box-shadow: var(--elevation-1);*/
     filter: none;
     opacity: 1;
 }
 button:is(.favorite, .not-favorite).minimal.favorite-button.btn.btn-primary:is(:focus, :active, :focus:active) {
-    background-image: var(--btn-active-highlight);
+    /*background-image: var(--btn-active-highlight);
     background-color: rgb(var(--split-comp-container));
     background-blend-mode: overlay;
-    box-shadow: var(--elevation-0);
+    box-shadow: var(--elevation-0);*/
     filter: none;
     opacity: 1;
 }
