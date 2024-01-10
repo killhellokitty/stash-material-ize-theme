@@ -5657,9 +5657,9 @@ button:is(.favorite, .not-favorite).minimal.favorite-button.btn.btn-primary:hove
     opacity: 1;
 }
 button:is(.favorite, .not-favorite).minimal.favorite-button.btn.btn-primary:is(:focus, :active, :focus:active) {
-    /*background-image: var(--btn-active-highlight);
+    background-image: var(--btn-active-highlight);
     background-color: rgb(var(--split-comp-container));
-    background-blend-mode: overlay;*/
+    background-blend-mode: overlay;
     box-shadow: var(--elevation-0);
     filter: none;
     opacity: 1;
