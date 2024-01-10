@@ -467,24 +467,24 @@ option:checked {
 }  
 
 /* ||Autofill Text Entries */
-input:autofill,
-input:autofill:hover, 
-input:autofill:focus {
+input:not(.login input):autofill,
+input:not(.login input):autofill:hover, 
+input:not(.login input):autofill:focus {
     -webkit-text-fill-color: rgb(var(--on-pry-container));
     box-shadow: inset 0 0 0px 40rem rgb(var(--pry-container));
     caret-color: rgb(var(--on-pry-container));
 }
-input:autofill:focus {
+input:not(.login input):autofill:focus {
     box-shadow: inset 0 0 0 1px rgb(var(--pry-color)), inset 0 0 0px 40rem rgb(var(--pry-container));
 }
-input::-webkit-autofill,
-input::-webkit-autofill:hover, 
-input::-webkit-autofill:focus {
+input:not(.login input)::-webkit-autofill,
+input:not(.login input)::-webkit-autofill:hover, 
+input:not(.login input)::-webkit-autofill:focus {
     -webkit-text-fill-color: rgb(var(--on-pry-container));
     box-shadow: inset 0 0 0px 40rem rgb(var(--pry-container));
     caret-color: rgb(var(--on-pry-container));
 }
-input::-webkit-autofill:focus {
+input:not(.login input)::-webkit-autofill:focus {
     box-shadow: inset 0 0 0 1px rgb(var(--pry-color)), inset 0 0 0px 40rem rgb(var(--pry-container));
 }
 
@@ -1520,7 +1520,7 @@ input#update-stashids.query-text-field.bg-secondary.text-white.border-secondary.
     outline-width: 0.3rem;
     outline-offset: -0.1rem;
 }
-.login input[type=text]#username.text-input:autofill,
+/*.login input[type=text]#username.text-input:autofill,
 .login input[type=password]#password.text-input:autofill,
 .login input[type=text]#username.text-input:autofill:hover,
 .login input[type=password]#password.text-input:autofill:hover,
@@ -1536,12 +1536,12 @@ input#update-stashids.query-text-field.bg-secondary.text-white.border-secondary.
     transition: box-shadow 0s ease-in-out, -webkit-text-fill-color 0.15s ease-in, font-size 0.15s ease-in-out;
     -webkit-transition: box-shadow 0s ease-in-out, -webkit-text-fill-color 0.15s ease-in, font-size 0.15s ease-in-out;
     -moz-transition: box-shadow 0s ease-in-out, -webkit-text-fill-color 0.15s ease-in, font-size 0.15s ease-in-out;
-}
-.login input[type=text]#username.text-input:autofill:focus,
+}*/
+/*.login input[type=text]#username.text-input:autofill:focus,
 .login input[type=password]#password.text-input:autofill:focus {
     box-shadow: inset 0 0 0 1px rgb(var(--pry-color)), inset 0 0 0px 40rem rgb(var(--pry-container)) !important;
-}
-.login input[type=text]#username.text-input::-webkit-autofill,
+}*/
+/*.login input[type=text]#username.text-input::-webkit-autofill,
 .login input[type=password]#password.text-input::-webkit-autofill,
 .login input[type=text]#username.text-input::-webkit-autofill:hover,
 .login input[type=password]#password.text-input::-webkit-autofill:hover,
@@ -1557,11 +1557,11 @@ input#update-stashids.query-text-field.bg-secondary.text-white.border-secondary.
     transition: box-shadow 0s ease-in-out, -webkit-text-fill-color 0.15s ease-in, font-size 0.15s ease-in-out;
     -webkit-transition: box-shadow 0s ease-in-out, -webkit-text-fill-color 0.15s ease-in, font-size 0.15s ease-in-out;
     -moz-transition: box-shadow 0s ease-in-out, -webkit-text-fill-color 0.15s ease-in, font-size 0.15s ease-in-out;
-}
-.login input[type=text]#username.text-input::-webkit-autofill:focus,
+}*/
+/*.login input[type=text]#username.text-input::-webkit-autofill:focus,
 .login input[type=password]#password.text-input::-webkit-autofill:focus {
     box-shadow: inset 0 0 0 1px rgb(var(--pry-color)), inset 0 0 0px 40rem rgb(var(--pry-container)) !important;
-}
+}*/
 textarea:autofill::selection, 
 input:autofill::selection {
     background-color: rgb(var(--split-comp-container)) !important;
@@ -5612,23 +5612,49 @@ button:not([title=Statistics], [title=Settings]).minimal:not(.nav-utility, .bran
     outline: none;
 }
 
-.performer-card button.minimal.btn.favorite-button.not-favorite.btn.btn-primary > svg.svg-inline--fa.fa-heart.fa-icon {
+.performer-card button:is(.favorite, .not-favorite).minimal.btn.favorite-button.btn.btn-primary > svg.svg-inline--fa.fa-heart.fa-icon {
     color: unset;
+    padding: 0;
+    margin: 0;
+    font-size: 22px;
+    transition: font-size 0.25 ease-in-out;
+}
+.performer-card button.minimal.btn.favorite-button.favorite.btn.btn-primary > svg.svg-inline--fa.fa-heart.fa-icon {
+    font-size: 24px;
 }
 .performer-card button.btn.favorite-button.not-favorite {
-    color: rgba(var(--red),0.5) !important;
+    color: rgb(var(--on-split-comp-container),0.5) !important;
+    filter: drop-shadow(0 0 0.2rem rgba(0,0,0,.65));
 }
-button.minimal.favorite-button.btn.btn-primary:is(:hover, :focus, :active, :focus:active) {
-    background-image: linear-gradient(to right, rgb(var(--surface)), rgb(var(--surface))) !important;
-    background-color: rgba(var(--pry-color),0.55) !important;
-    background-blend-mode: multiply !important;
-    box-shadow: var(--elevation-1) !important;
+.performer-card button.btn.favorite-button.favorite {
+    color: rgb(var(--on-split-comp-container)) !important;
+    filter: drop-shadow(0 0 0.22rem rgba(0,0,0,.82));
+}
+button:is(.favorite, .not-favorite).minimal.favorite-button.btn.btn-primary {
+    padding: 0;
+    width: 40px;
+    min-width: 40px;
+    border: 0;
+    right: 5px;
+    top: 5px;
+    box-shadow: none;
+    transition: background-color 0.55s ease, box-shadow 0.35s ease-in, filter 0.15s;
+}
+button:is(.favorite, .not-favorite).minimal.favorite-button.btn.btn-primary:hover {
+    background-image: var(--btn-hover-highlight);
+    background-color: rgb(var(--split-comp-container));
+    background-blend-mode: overlay;
+    box-shadow: var(--elevation-1);
     filter: none;
-    transition: background-color 0.55s ease, box-shadow 0.4s ease-in;
+    opacity: 1;
 }
-button.minimal.favorite-button.btn.btn-primary:is(:focus, :active, :focus:active) {
-    background-color: rgba(var(--pry-color),0.65) !important;
-    box-shadow: var(--elevation-0) !important;
+button:is(.favorite, .not-favorite).minimal.favorite-button.btn.btn-primary:is(:focus, :active, :focus:active) {
+    background-image: var(--btn-active-highlight);
+    background-color: rgb(var(--split-comp-container));
+    background-blend-mode: overlay;
+    box-shadow: var(--elevation-0);
+    filter: none;
+    opacity: 1;
 }
 
 
@@ -6806,7 +6832,7 @@ svg.svg-inline--fa.fa-xmark.fa-icon {
 button[title=Statistics].minimal.btn.btn-primary {
     margin-left: 12px;
 }
-svg.svg-inline--fa.fa-heart.fa-icon {
+.top-nav .navbar-buttons .btn.donate svg.svg-inline--fa.fa-heart.fa-icon {
     color: rgb(var(--red));
     padding-bottom: 2px;
     font-size: 18px;
@@ -10190,7 +10216,7 @@ div#create-scene-page {
 }
 #scene-edit-details .form-container .form-group.row:focus-within > label.form-label.col-form-label,
 #scene-edit-details .form-group:focus-within .form-label[for="details"] {
-    animation: opacityname 0.4s linear forwards;
+    animation: opacityname 0.3s linear forwards;
     will-change: animation;
 }
 @keyframes opacityname {
@@ -10248,7 +10274,7 @@ div#create-scene-page {
 }*/
 
 
-#scene-edit-details .form-container .form-group > label.form-label[for="details"]::before {
+/*#scene-edit-details .form-container .form-group > label.form-label[for="details"]::before {
     content: "Description";
     position: absolute;
     z-index: -1;
@@ -10263,7 +10289,7 @@ div#create-scene-page {
     margin-top: 50%;
     visibility: visible;
     transform: translate(0%,0%);
-}
+}*/
 #scene-edit-details .form-label[for="details"] {
     top: 2%;
     visibility: hidden;
@@ -10276,15 +10302,15 @@ div#create-scene-page {
     background-color: rgb(var(--body-color2));
     transform: translate(0%,0%);
 }
-#scene-edit-details .form-container .form-group:focus-within > label.form-label[for="details"]::before {
-    content: "";
+/*#scene-edit-details .form-container .form-group:focus-within > label.form-label[for="details"]::before {*/
+    /*content: "";*/
     /*content: "Description";
     position: absolute;
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 0.5px;
     line-height: 24px;*/
-    visibility: hidden;
+    /*visibility: hidden;*/
     /*top: 0%;
     margin-top: 50%;
     margin-left: -85%;
@@ -10292,10 +10318,10 @@ div#create-scene-page {
     bottom: 0%;
     color: rgb(var(--body-color2));
     transform: translate(0%,0%);*/
-}
-textarea#details.text-input.form-control::placeholder {
+/*}*/
+/*textarea#details.text-input.form-control::placeholder {
     color: rgb(var(--body-color2));
-}
+}*/
 
     /* Scene Editor Date-Input */
  input.date-input + .input-group-append:has(>.react-datepicker-wrapper) {
@@ -11690,10 +11716,8 @@ button[title=Help].nav-utility.minimal.btn.btn-primary:has(>svg.svg-inline--fa.f
 
 /* Has StashId - Perfomer Card */
 .peformer-stashid-icon {
-    position: absolute;
-    bottom: 10px;
-    color: rgb(var(--green));
     left: 0.5rem;
+    top: 245px;
 }
 
 /* The scene card Popover for Performer-tag-container to align left to right in a row*/
@@ -11716,19 +11740,19 @@ button[title=Help].nav-utility.minimal.btn.btn-primary:has(>svg.svg-inline--fa.f
 #scene-edit-details .form-container .form-group.row > label[for="stash_ids"].form-label.col-form-label {
     font-size: 12px;
     line-height: 16px;
-    letter-spacing: 0.35px;
+    letter-spacing: 0.85px;
     text-shadow: var(--light-text-shadow);
     font-weight: 500;
-    color: rgb(var( --on-surface-variant));
+    color: rgb(var(--on-surface-variant));
     position: relative;
     display: block;
     background-color: transparent;
     transform: translate(0%,0%);
     visibility: visible;
     margin-left: 4px;
-    margin-left: 16px;
-    margin-bottom: -12%;
-    margin-top: 6%;
+    margin-left: 2px;
+    margin-bottom: -5%;
+    margin-top: auto;
 }
 button[title="Delete Stash ID"].btn-danger {
     padding: 0;
@@ -11738,7 +11762,7 @@ button[title="Delete Stash ID"].btn-danger {
     font-size: 14px;
     margin-top: 5%;
     margin-bottom: -2px;
-    margin-left: 19%;
+    margin-left: 20.5%;
     margin-right: auto !important;
 }
 span.stash-id-pill {
