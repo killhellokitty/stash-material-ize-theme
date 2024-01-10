@@ -11643,6 +11643,21 @@ button[title=Help].nav-utility.minimal.btn.btn-primary:has(>svg.svg-inline--fa.f
     opacity: 1;
     transform: scale(0);
 }
+button:is(.favorite, .not-favorite).minimal.favorite-button.btn.btn-primary::before {
+    content: "";
+    display: block
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    width: 2px;
+    height: 2px;
+    background-image: radial-gradient(circle at center, rgb(255,255,255,0.08) 0%, rgb(255,255,255,0.08) 100%);
+    background-color: rgb(var(--split-comp-container));
+    background-blend-mode: screen;
+    border-radius: 5rem;
+    opacity: 1;
+    transform: scale(0);
+}
 .navbar-dark .navbar-toggler:not(.collapsed)::before, 
 .top-nav .navbar-buttons:not(:has(a[href^="/scenes/new"])):not(:has(a[href^="/movies/new"])):not(:has(a[href^="/galleries/new"])):not(:has(a[href^="/performers/new"])):not(:has(a[href^="/studios/new"])):not(:has(a[href^="/tags/new"])) .btn:not(.donate)::before, 
 .top-nav .navbar-buttons a.nav-utility button.minimal.btn.btn-primary:not(.donate)::before,
@@ -11650,6 +11665,7 @@ button[title=Help].nav-utility.minimal.btn.btn-primary:has(>svg.svg-inline--fa.f
 .top-nav .navbar-buttons a.minimal.logout-button.btn.btn-primary::before {
     background: radial-gradient(circle at center, rgba(var(--pry-color),var(--btn-hover)) 0%, rgba(var(--pry-color),var(--btn-hover)) 100%);
 }
+
 @keyframes bubble {
     0% {
         opacity: 0;
@@ -11675,12 +11691,21 @@ button[title=Help].nav-utility.minimal.btn.btn-primary:has(>svg.svg-inline--fa.f
     max-width: 48px;
     min-width: 2px;
 }
+button:is(.favorite, .not-favorite).minimal.favorite-button.btn.btn-primary:hover:not(:active)::before {
+    animation: bubble 0.55s ease-in forwards;
+    will-change: animation;
+    max-height: 40px;
+    min-height: 2px;
+    max-width: 40px;
+    min-width: 2px;
+}
 .navbar-dark .navbar-toggler.collapsed::before, 
 .navbar-dark .navbar-toggler:not(.collapsed)::before,
 .top-nav .navbar-buttons:not(:has(a[href^="/scenes/new"])):not(:has(a[href^="/movies/new"])):not(:has(a[href^="/galleries/new"])):not(:has(a[href^="/performers/new"])):not(:has(a[href^="/studios/new"])):not(:has(a[href^="/tags/new"])) .btn:not(.donate)::before, 
 .top-nav .navbar-buttons a.nav-utility button.minimal.btn.btn-primary:not(.donate)::before,
 button[title=Help].nav-utility.minimal.btn.btn-primary:has(>svg.svg-inline--fa.fa-circle-question.fa-icon)::before,
-.top-nav .navbar-buttons a.minimal.logout-button.btn.btn-primary::before {
+.top-nav .navbar-buttons a.minimal.logout-button.btn.btn-primary::before,
+button:is(.favorite, .not-favorite).minimal.favorite-button.btn.btn-primary::before {
     visibility: hidden;
 }
 .navbar-dark .navbar-toggler.collapsed:hover::before, 
@@ -11688,7 +11713,8 @@ button[title=Help].nav-utility.minimal.btn.btn-primary:has(>svg.svg-inline--fa.f
 .top-nav .navbar-buttons:not(:has(a[href^="/scenes/new"])):not(:has(a[href^="/movies/new"])):not(:has(a[href^="/galleries/new"])):not(:has(a[href^="/performers/new"])):not(:has(a[href^="/studios/new"])):not(:has(a[href^="/tags/new"])) .btn:not(.donate):hover::before, 
 .top-nav .navbar-buttons a.nav-utility button.minimal.btn.btn-primary:not(.donate):hover::before,
 button[title=Help].nav-utility.minimal.btn.btn-primary:has(>svg.svg-inline--fa.fa-circle-question.fa-icon):hover::before,
-.top-nav .navbar-buttons a.minimal.logout-button.btn.btn-primary:hover::before {
+.top-nav .navbar-buttons a.minimal.logout-button.btn.btn-primary:hover::before,
+button:is(.favorite, .not-favorite).minimal.favorite-button.btn.btn-primary:hover::before {
     visibility: visible;
 }
 /* *** *** */
