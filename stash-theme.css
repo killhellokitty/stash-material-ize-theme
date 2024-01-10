@@ -5617,6 +5617,7 @@ button:not([title=Statistics], [title=Settings]).minimal:not(.nav-utility, .bran
     padding: 0;
     margin: 0;
     font-size: 22px;
+    z-index: 5;
     transition: font-size 0.25 ease-in-out;
 }
 .performer-card button.minimal.btn.favorite-button.favorite.btn.btn-primary > svg.svg-inline--fa.fa-heart.fa-icon {
@@ -5624,6 +5625,7 @@ button:not([title=Statistics], [title=Settings]).minimal:not(.nav-utility, .bran
     padding: 0;
     margin: 0;
     font-size: 28px;
+    z-index: 5;
     transition: font-size 0.25 ease-in-out;
 }
 .performer-card button.btn.favorite-button.not-favorite {
@@ -11647,7 +11649,7 @@ button[title=Help].nav-utility.minimal.btn.btn-primary:has(>svg.svg-inline--fa.f
 }
 button:is(.favorite, .not-favorite).minimal.favorite-button.btn.btn-primary::before {
     content: "";
-    display: block
+    display: block;
     position: absolute;
     right: 50%;
     top: 50%;
