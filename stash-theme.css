@@ -7978,6 +7978,10 @@ button#scene-scrape {
 svg.svg-inline--fa.fa-magnifying-glass.fa-icon {
     font-size: 20px;
 }
+.preview-button > button.btn-primary > svg.svg-inline--fa.fa-magnifying-glass.fa-icon {
+    font-size: 12px;
+}
+
 .scraper-group > .dropdown:not(:first-child) button.dropdown-toggle:not(:disabled) {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
