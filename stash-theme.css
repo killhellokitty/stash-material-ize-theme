@@ -553,21 +553,22 @@ input[type=checkbox] {
     height: auto;
     vertical-align: middle;
     text-align: center;
-    box-shadow: 0 0 0 1px rgb(var(--on-background)), inset 0 0 0 5rem rgb(var(--tables-even));
-    outline-offset: 2px;
+    box-shadow: 0 0 0 0.11rem rgb(var(--on-background)), inset 0 0 0 5rem rgb(var(--tables-even));
+    outline-offset: 1px;
 }
 .scene-table label input[type=checkbox].form-control:nth-of-type(odd) {
-    box-shadow: 0 0 0 1px rgb(var(--on-surface)), inset 0 0 0 5rem rgb(var(--tables-odd));
+    box-shadow: 0 0 0 0.11rem rgb(var(--on-surface)), inset 0 0 0 5rem rgb(var(--tables-odd));
 }
 .scene-table label input[type="checkbox"].form-control:hover {
-    box-shadow: 0 0 0 1px rgb(var(--on-background)), inset 0 0 0 5rem rgb(var(--tables-hover));
+    box-shadow: 0 0 0 0.11rem rgb(var(--on-background)), inset 0 0 0 5rem rgb(var(--tables-hover));
 }
 .scene-table label input[type=checkbox].form-control:nth-of-type(odd):hover {
-    box-shadow: 0 0 0 1px rgb(var(--on-surface)), inset 0 0 0 5rem rgb(var(--tables-hover));
+    box-shadow: 0 0 0 0.11rem rgb(var(--on-surface)), inset 0 0 0 5rem rgb(var(--tables-hover));
 }
 .scene-table label input[type="checkbox"].form-control:checked,
+.scene-table label input[type="checkbox"].form-control:checked:hover,
 .scene-table label input[type="checkbox"].form-control:checked:focus {
-    box-shadow: 0 0 0 1px rgb(var(--pry-color)), inset 0 0 0 5rem transparent;
+    box-shadow: 0 0 0 0.11rem rgb(var(--pry-color)), inset 0 0 0 5rem transparent;
 }
 table.table.table-striped.table-bordered>tbody>tr:hover>td label input[type="checkbox"].form-control:focus-visible,
 table.table.table-striped.table-bordered>tbody>tr:nth-child(odd):hover>td label input[type="checkbox"].form-control:focus-visible,
