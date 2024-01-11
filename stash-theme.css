@@ -3959,8 +3959,7 @@ div.card.performer-card .text-muted {
     padding-bottom: 0;
 }
 
-.thumbnail-section:has(>.tag-card-header) {
-    display: block;
+.tag-card-image {
     height: auto;
     min-height: 180px;
 }
