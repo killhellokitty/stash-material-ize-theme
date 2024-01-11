@@ -3960,6 +3960,10 @@ div.card.performer-card .text-muted {
     min-height: 190px;
     height: 190px;
 }
+.tag-card .card-section {
+    min-height: 130px;
+    height: 150px;
+}
 .card-section span {
     padding-bottom: 4px;
     font-size:11px;
