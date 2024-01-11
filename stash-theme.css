@@ -3957,7 +3957,7 @@ div.card.performer-card .text-muted {
 .card-section { 
     margin-bottom: -0.5rem !important; 
     padding: 8px 16px 8px;
-    min-height: 190px;
+    min-height: 160px;
     height: 190px;
 }
 .tag-card .card-section {
