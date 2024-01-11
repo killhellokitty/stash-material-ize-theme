@@ -554,7 +554,8 @@ input[type=checkbox] {
     vertical-align: middle;
     text-align: center;
     box-shadow: 0 0 0 0.11rem rgb(var(--on-background)), inset 0 0 0 5rem rgb(var(--tables-even));
-    outline-offset: 1px;
+    outline-offset: 0.16rem;
+    outline-width: 0.11rem;
 }
 .scene-table label input[type=checkbox].form-control:nth-of-type(odd) {
     box-shadow: 0 0 0 0.11rem rgb(var(--on-surface)), inset 0 0 0 5rem rgb(var(--tables-odd));
