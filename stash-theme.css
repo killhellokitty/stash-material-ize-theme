@@ -5643,7 +5643,7 @@ button:not([title=Statistics], [title=Settings]).minimal:not(.nav-utility, .bran
     color: rgb(var(--on-split-comp-container)) !important;
     filter: drop-shadow(0 0 0.22rem rgba(0,0,0,.82));
 }
-button:is(.favorite, .not-favorite).minimal.favorite-button.btn.btn-primary {
+button:is(.favorite, .not-favorite).minimal.mousetrap.favorite-button.btn.btn-primary {
     padding: 0;
     width: 40px;
     min-width: 40px;
@@ -5655,7 +5655,7 @@ button:is(.favorite, .not-favorite).minimal.favorite-button.btn.btn-primary {
     box-shadow: none;
     transition: background-color 0.55s ease, box-shadow 0.35s ease-in, filter 0.25s;
 }
-button:is(.favorite, .not-favorite).minimal.favorite-button.btn.btn-primary:hover {
+button:is(.favorite, .not-favorite).minimal.mousetrap.favorite-button.btn.btn-primary:hover {
     /*background-image: var(--btn-hover-highlight);
     background-color: rgb(var(--split-comp-container));
     background-blend-mode: overlay;
@@ -5663,7 +5663,7 @@ button:is(.favorite, .not-favorite).minimal.favorite-button.btn.btn-primary:hove
     filter: none;
     opacity: 1;
 }
-button:is(.favorite, .not-favorite).minimal.favorite-button.btn.btn-primary:is(:focus, :active, :focus:active) {
+button:is(.favorite, .not-favorite).minimal.mousetrap.favorite-button.btn.btn-primary:is(:focus, :active, :focus:active) {
     background-image: var(--btn-active-highlight);
     background-color: rgb(var(--split-comp-container));
     background-blend-mode: overlay;
