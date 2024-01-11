@@ -4110,9 +4110,6 @@ h5.card-section-title, .scene-tabs .scene-header {
     padding-bottom: 0;
 }
 
-.zoom-0 {
-    margin: 4px 0.50% 10px;
-}
 .show>.buttons-container.row .btn.btn.primary { 
     margin: 0; 
 }
