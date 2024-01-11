@@ -5036,6 +5036,9 @@ textarea.text-input.code.form-control {
 }
 
 /* Studios */
+.studio-card {  
+    padding: 0;
+}
 
 .studio-details input.form-control-plaintext {  
     background-color: rgba(16,22,26,.0); 
