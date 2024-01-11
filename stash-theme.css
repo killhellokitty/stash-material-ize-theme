@@ -5199,14 +5199,6 @@ td:first-child {
 #studio-edit .form-group.row:nth-last-child(1) .form-group {
     background-color: transparent;
 }
-/*div.studio-card.card .card-popovers { 
-    margin-bottom: 3px;
-    margin-top:-10px;
-}*/
-.studio-card.card .card-section div:nth-child(2) {
-    margin-bottom:6px;
-    margin-top:-3px;
-}
 
 div.studio-details dl.details-list {
     grid-column-gap:0
