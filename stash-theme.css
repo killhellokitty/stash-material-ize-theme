@@ -4174,6 +4174,9 @@ h5.card-section-title, .scene-tabs .scene-header {
     object-fit: cover;
 }
 
+.tag-card {
+    padding: 0;
+}
 
 /* --- Thumbnail images slightly darkened and brightened --- */
 .scene-card-preview-image {
