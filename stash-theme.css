@@ -4181,10 +4181,6 @@ h5.card-section-title, .scene-tabs .scene-header {
     box-shadow: none;
 }
 
-.image-card-preview.portrait .image-card-preview-image {
-    object-fit: cover;
-}
-
 /* --- Thumbnail images slightly darkened and brightened --- */
 .scene-card-preview-image {
     filter: brightness(88%) contrast(1.2) saturate(0.93);
