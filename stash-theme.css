@@ -5085,6 +5085,7 @@ div.card.studio-card .TruncatedText,
     text-shadow: none;
 }
 .no-gutters .TruncatedText, 
+.tag-card .TruncatedText,
 div.card.studio-card .TruncatedText {
     font-weight: 400;
 }
