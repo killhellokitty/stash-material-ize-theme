@@ -2920,6 +2920,7 @@ div#crop-btn-container {
 
 .fa-mars {
     color: rgb(var(--mars));
+    font-size: 24px;
 }
 
 .text-danger {
@@ -4116,25 +4117,28 @@ h5.card-section-title, .scene-tabs .scene-header {
 }
 
 .card hr {
-    margin-top: 0;
+    margin-top: 8px;
     margin-right: 16px;
     margin-left: 16px;
-    margin-bottom: 0;
-    border: 1px solid rgb(var(--card-fold));
+    margin-bottom: 12px;
+    background-color: rgb(var(--card-fold));
+    height: 1px;
 }
+
+.card.performer-card {
+    padding: 0;
+}
+
 .scene-popovers, 
 .card-popovers { 
-    min-width:0;
+    max-height: 40px;
+    height: 40px;
     margin-bottom: 16px;
-    margin-top: 12px;
     margin-right: 16px;
     margin-left: 16px;
-    /*max-height: 64px;
-    height: 64px;*/
-    padding-top: 0;
+    padding: 0;
     flex-basis: content;
     justify-content: flex-start;
-    /*border-top: 1px solid rgb(var(--card-fold));*/
 }
 .scene-card__details, 
 .gallery-card__details {
