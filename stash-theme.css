@@ -3955,6 +3955,10 @@ div.card.performer-card .text-muted {
     margin-left: 22px;
 }
 
+.gallery-card.card {
+    padding-bottom: 0;
+}
+
 .tag-card-header {
     min-height: 180px;
 }
