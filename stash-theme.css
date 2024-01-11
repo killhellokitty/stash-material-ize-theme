@@ -572,13 +572,14 @@ input[type=checkbox] {
     box-shadow: 0 0 0 0.11rem rgb(var(--pry-color)), inset 0 0 0 5rem transparent;
 }
 table.table.table-striped.table-bordered>tbody>tr:hover>td label input[type="checkbox"].form-control:focus-visible,
-table.table.table-striped.table-bordered>tbody>tr:nth-child(odd):hover>td label input[type="checkbox"].form-control:focus-visible,
+table.table.table-striped.table-bordered>tbody>tr:nth-child(odd):hover>td label input[type="checkbox"].form-control:focus-visible {
+    accent-color: rgb(var(--body-color2));
+}
 table.table.table-striped.table-bordered>tbody>tr:hover>td label input[type="checkbox"].form-control:checked:focus-visible,
 table.table.table-striped.table-bordered>tbody>tr:nth-child(odd):hover>td label input[type="checkbox"].form-control:checked:focus-visible,
 table.table.table-striped.table-bordered>tbody>tr:hover>td label input[type="checkbox"].form-control:checked,
 table.table.table-striped.table-bordered>tbody>tr:nth-child(odd):hover>td label input[type="checkbox"].form-control:checked {
-    outline-color: var(--body-color2);
-    accent-color: var(--body-color2);
+    accent-color: rgb(var(--pry-color));
 }
 .form-check-input {
     margin-top: -0.05rem;
