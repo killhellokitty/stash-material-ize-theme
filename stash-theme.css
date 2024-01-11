@@ -537,20 +537,12 @@ input[type=checkbox] {
     -webkit-transition: box-shadow 0.35s ease-in-out, accent-color 0.45s ease, outline 0.35s ease-in-out;
     /*box-shadow: inset 0 0 0 5rem rgba(var(--white-color),var(--btn-hover));*/
 }
-.scene-card input[type=checkbox].card-check.form-control,
-.performer-card input[type=checkbox].card-check.form-control,
-.studio-card input[type=checkbox].card-check.form-control,
-.scene-card input[type=checkbox].card-check.form-control:focus-visible,
-.performer-card input[type=checkbox].card-check.form-control:focus-visible,
-.studio-card input[type=checkbox].card-check.form-control:focus-visible {
+:is(.scene-card, .performer-card, .studio-card, .tag-card) input[type=checkbox].card-check.form-control,
+:is(.scene-card, .performer-card, .studio-card, .tag-card) input[type=checkbox].card-check.form-control:focus-visible {
     box-shadow: inset 0 0 0 2px rgb(var(--white-color)), inset 0 0 0 5rem transparent;
 }
-.scene-card input[type=checkbox].card-check.form-control:checked,
-.performer-card input[type=checkbox].card-check.form-control:checked,
-.studio-card input[type=checkbox].card-check.form-control:checked,
-.scene-card input[type=checkbox].card-check.form-control:checked:focus-visible,
-.performer-card input[type=checkbox].card-check.form-control:checked:focus-visible,
-.studio-card input[type=checkbox].card-check.form-control:checked:focus-visible {
+:is(.scene-card, .performer-card, .studio-card, .tag-card) input[type=checkbox].card-check.form-control:checked,
+:is(.scene-card, .performer-card, .studio-card, .tag-card) input[type=checkbox].card-check.form-control:checked:focus-visible {
     box-shadow: inset 0 0 0 2px rgb(var(--pry-color)), inset 0 0 0 5rem transparent;
 }
 .scene-table label input[type=checkbox].form-control {
