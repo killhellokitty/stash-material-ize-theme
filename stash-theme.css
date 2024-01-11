@@ -6109,10 +6109,6 @@ nav.nav.nav-tabs {
     justify-content: space-evenly;
 }
 
-.image-card.card {
-    padding: unset;
-}
-
 .nav-item > .dropdown > button[title="Operations"]#operation-menu.minimal.dropdown-toggle.btn.btn-secondary,
 .nav-item > button[title="Organized"].minimal.organized-button.not-organized.btn.btn-secondary,
 .nav-item > button[title="Organized"].minimal.organized-button.organized.btn.btn-secondary {
