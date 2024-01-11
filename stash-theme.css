@@ -3954,11 +3954,20 @@ div.card.performer-card .text-muted {
 #performer-page .performer-head .name-icons {
     margin-left: 22px;
 }
+
+.tag-card-header {
+    min-height: 180px;
+}
+
 .card-section { 
     margin-bottom: -0.5rem !important; 
     padding: 8px 16px 8px;
     min-height: 160px;
     height: 190px;
+}
+.gallery-card .card-section {
+    min-height: 100px;
+    height: auto;
 }
 .tag-card .card-section {
     min-height: 130px;
@@ -4167,12 +4176,10 @@ h5.card-section-title, .scene-tabs .scene-header {
     margin-bottom: 16px;
 }
 .zoom-1 .gallery-card-image, .zoom-1 .tag-card-image {
-    height: 220px;
+    max-height: 220px;
     max-width: 100%;
-    max-height: 100%;
     margin: auto;
-    display: block;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .tag-card {
