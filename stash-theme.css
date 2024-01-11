@@ -3810,10 +3810,6 @@ li.search-result.selected-result.active {
 /* --- The name of the Performer. Different font, less space to the left & to the top, Text-Shadow --- */
 .text-truncate, 
 .card.performer-card .TruncatedText {
-    /*margin-left:-1.5%; */
-    margin-top: -2px; 
-    width: 120%; 
-    line-height:130%; 
     text-shadow: none;
 }
 
