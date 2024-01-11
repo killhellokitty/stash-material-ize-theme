@@ -3977,6 +3977,10 @@ div.card.performer-card .text-muted {
     min-height: 130px;
     height: 150px;
 }
+.image-card .card-section {
+    min-height: 70px;
+    height: auto;
+}
 .card-section span {
     padding-bottom: 4px;
     font-size:11px;
