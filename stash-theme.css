@@ -3842,7 +3842,7 @@ li.search-result.selected-result.active {
 
 /* --- Minimum height for the section in case Age and Nationality is missing and elements would overlap --- */
 .performer-card .card-section {
-    min-height: 100px;
+    min-height: 130px;
     height: auto;
 }
 
