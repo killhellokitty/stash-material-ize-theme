@@ -11885,5 +11885,17 @@ span.stash-id-pill {
     /**/
     box-shadow: none;
     text-shadow: none;
+    animation: focus-ring-width-bounce 0.55s ease-in-out 0.15s forwards;
+}
+@keyframes focus-ring-width-bounce {
+    0% {
+        outline-width: 0.30rem;
+    }
+    50% {
+        outline-width: 0.55rem;
+    }
+    100% {
+        outline-width: 0.30rem;
+    }
 }
 /* - */
