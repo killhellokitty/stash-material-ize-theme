@@ -3842,8 +3842,8 @@ li.search-result.selected-result.active {
 
 /* --- Minimum height for the section in case Age and Nationality is missing and elements would overlap --- */
 .performer-card .card-section {
-    min-height: 130px;
-    height: 130px;
+    min-height: 60px;
+    height: auto;
 }
 
 /*.card.performer-card {
@@ -3961,27 +3961,28 @@ div.card.performer-card .text-muted {
 
 .tag-card-image {
     height: auto;
-    min-height: 180px;
+    min-height: 60px;
 }
 
 .card-section { 
-    margin-bottom: -0.5rem !important; 
-    padding: 8px 16px 8px;
-    min-height: 160px;
-    height: 190px;
+    margin-bottom: 0 !important; 
+    padding: 8px 16px 12px;
+    min-height: 60px;
+    height: auto;
 }
 .gallery-card .card-section {
-    min-height: 100px;
+    min-height: 60px;
     height: auto;
 }
 .tag-card .card-section {
-    min-height: 130px;
-    height: 150px;
-}
-.image-card .card-section {
-    min-height: 70px;
+    min-height: 60px;
     height: auto;
 }
+.image-card .card-section {
+    min-height: 60px;
+    height: auto;
+}
+
 .card-section span {
     padding-bottom: 4px;
     font-size:11px;
@@ -3989,11 +3990,7 @@ div.card.performer-card .text-muted {
     letter-spacing: 0.5px;
     color: rgb(var(--date-color));
     font-weight: 500;
-    font-family: 'Roboto Flex', Roboto, 'Open Sans', Verdana, Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif, ui-sans-serif, system-ui, serif, ui-serif;
-}
-
-div.card-section hr {
-    display:none;
+    font-family: var(--BodyFont);
 }
 
 .alert-danger {
@@ -5083,8 +5080,8 @@ textarea.text-input.code.form-control {
 }
 .studio-card .card-section {    
     margin-top: 22px;
-    min-height: 116px;
-    height: 116px;
+    min-height: 90px;
+    height: auto;
 }
 
 @media (min-width: 1200px) {
