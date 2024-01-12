@@ -311,7 +311,7 @@ h6,
     outline-color: rgb(var(--focus-ring));
     outline-offset: -0.10rem;
     outline-style: solid;
-    outline-width: 0.30rem;
+    outline-width: 0.19rem;
     /*
     * Background and Foreground Colors *
     background-color: rgba(var( --pry-container));
@@ -589,7 +589,7 @@ input[type=radio]:focus-visible {
 input[type=checkbox]:focus-visible {
     outline-color: rgb(var(--focus-ring));
     outline-style: solid;
-    outline-width: 0.3rem;
+    outline-width: 0.19rem;
     outline-offset: -0.1rem;
     box-shadow: inset 0 0 0 5rem rgba(var(--white-color),var(--btn-hover));
 }
@@ -604,7 +604,7 @@ input[type=checkbox]:checked:focus-visible {
     accent-color: rgb(var(--complement));
     outline-color: rgb(var(--focus-ring));
     outline-style: solid;
-    outline-width: 0.3rem;
+    outline-width: 0.19rem;
     outline-offset: -0.1rem;
     box-shadow: none;
 }
@@ -1536,7 +1536,7 @@ input#update-stashids.query-text-field.bg-secondary.text-white.border-secondary.
     box-shadow: none !important;
     outline-color: rgb(var(--focus-ring));
     outline-style: solid;
-    outline-width: 0.3rem;
+    outline-width: 0.19rem;
     outline-offset: -0.1rem;
 }
 /*.login input[type=text]#username.text-input:autofill,
@@ -1834,7 +1834,7 @@ li#vjs-menu-text:first-of-type {
 .grid-card a > .card-section-title:focus-visible {
     outline-color: rgb(var(--focus-ring));
     outline-style: solid;
-    outline-width: 0.3rem;
+    outline-width: 0.19rem;
     outline-offset: -0.1rem;
 }
 .scene-card.grid-card:hover,
@@ -2687,7 +2687,7 @@ button:not([title=Help]).btn-primary:not(:disabled):not(.disabled):focus-visible
     box-shadow: none;
     outline-color: rgb(var(--focus-ring));
     outline-style: solid;
-    outline-width: 0.3rem;
+    outline-width: 0.19rem;
     outline-offset: -0.1rem;
 }
 button:not([title=Help]).btn-primary:not(:where(:disabled, .disabled)):is(:focus, .active, .active:focus, :active, :active:focus),
@@ -2731,7 +2731,7 @@ button:is(#batch-result-toggle-off, #batch-result-toggle-mixed, #batch-result-to
     background-blend-mode: overlay;
     outline-color: rgb(var(--focus-ring));
     outline-style: solid;
-    outline-width: 0.3rem;
+    outline-width: 0.19rem;
     outline-offset: -0.1rem;
 }
 button:is(#batch-result-toggle-off, #batch-result-toggle-mixed, #batch-result-toggle-on).btn.btn-primary:not(:disabled):not(.disabled):is(:focus:not(:focus-visible), .active, :active, .active:focus, :active:focus) {
@@ -4711,7 +4711,7 @@ button.remove-criterion-button.btn.btn-minimal > svg.svg-inline--fa.fa-xmark.fa-
     outline-color: rgb(var(--focus-ring));
     outline-offset: -0.10rem;
     outline-style: solid;
-    outline-width: 0.30rem;
+    outline-width: 0.19rem;
     box-shadow: none;
     text-shadow: none;
 }
@@ -5454,7 +5454,7 @@ div[draggable="true"] .recommendation-row:not(.scene-recommendations):not(.studi
 .pagination button.btn.btn-secondary:not(:disabled):not(.disabled):focus-visible {
     outline-color: rgb(var(--focus-ring));
     outline-style: solid;
-    outline-width: 0.3rem;
+    outline-width: 0.19rem;
     outline-offset: -0.1rem;
     border-color: transparent;
     text-shadow: none;
@@ -7007,7 +7007,7 @@ a.nav-utility.nav-link:focus-visible {
     outline-color: rgb(var(--focus-ring));
     outline-offset: -0.1rem;
     outline-style: solid;
-    outline-width: 0.3rem;
+    outline-width: 0.19rem;
     text-decoration: none !important;
     text-decoration-color: transparent !important;
 }
@@ -7019,7 +7019,7 @@ a.nav-utility.nav-link:focus-visible {
     outline-color: rgb(var(--focus-ring));
     outline-offset: -0.1rem;
     outline-style: solid;
-    outline-width: 0.3rem;
+    outline-width: 0.19rem;
 }
 .top-nav .navbar-buttons .btn:not(.donate):not(:disabled):not(.disabled):focus-visible,
 .top-nav .navbar-buttons a.nav-utility button.minimal.btn.btn-primary:not(.donate):not(:disabled):not(.disabled):focus-visible {
@@ -7031,7 +7031,7 @@ a.nav-utility.nav-link:focus-visible {
     outline-color: rgb(var(--focus-ring));
     outline-offset: -0.1rem;
     outline-style: solid;
-    outline-width: 0.3rem;
+    outline-width: 0.19rem;
     text-decoration: none !important;
     text-decoration-color: transparent !important;
 }
@@ -7042,7 +7042,7 @@ a.nav-utility.nav-link:focus-visible {
     outline-color: rgb(var(--focus-ring));
     outline-offset: -0.1rem;
     outline-style: solid;
-    outline-width: 0.3rem;
+    outline-width: 0.19rem;
 }
 
 /* --- Text-Input Clear button --- */
@@ -7094,7 +7094,7 @@ button.clearable-text-field-clear.btn.btn-secondary:focus-visible {
     box-shadow: none;
     outline-color: rgb(var(--focus-ring));
     outline-style: solid;
-    outline-width: 0.3rem;
+    outline-width: 0.19rem;
     outline-offset: -0.1rem;
 }
 /* Switch */
@@ -7406,7 +7406,7 @@ button:is(.text-success, .text-danger).include-exclude-button:focus-visible {
     outline-color: rgb(var(--focus-ring));
     outline-offset: -0.1rem;
     outline-style: solid;
-    outline-width: 0.3rem;
+    outline-width: 0.19rem;
     box-shadow: none;
 }
 
@@ -7674,7 +7674,7 @@ div.original-scene-details button.minimal.collapse-button.btn.btn-primary.btn-lg
     box-shadow: none;
     outline-color: rgb(var(--focus-ring));
     outline-style: solid;
-    outline-width: 0.3rem;
+    outline-width: 0.19rem;
     outline-offset: -0.1rem;
 }
 /* --- */
@@ -8079,7 +8079,7 @@ a#new-performer-filter {
 .o-counter.btn-group > button[title="O-Counter"].minimal.btn.btn-secondary:has(+ .dropdown > .dropdown-toggle.btn-secondary):focus-visible,
 .o-counter.btn-group > button[title="O-Counter"].minimal.btn.btn-secondary + .dropdown > .dropdown-toggle.btn-secondary:focus-visible {
     outline-color: rgb(var(--focus-ring));
-    outline-width: 0.3rem;
+    outline-width: 0.19rem;
     outline-style: solid;
     outline-offset: -0.1rem;
     box-shadow: none;
@@ -10929,7 +10929,7 @@ button#parser-field-select.dropdown-toggle.btn.btn-primary {
     outline-color: rgb(var(--focus-ring));
     outline-offset: -0.1rem;
     outline-style: solid;
-    outline-width: 0.3rem;
+    outline-width: 0.19rem;
     box-shadow: none;
 }
 
@@ -10974,7 +10974,7 @@ button#parser-field-select.dropdown-toggle.btn.btn-primary {
     outline-color: rgb(var(--focus-ring));
     outline-offset: -0.1rem;
     outline-style: solid;
-    outline-width: 0.3rem;
+    outline-width: 0.19rem;
     box-shadow: none;
 }
 /* * */
@@ -11186,13 +11186,13 @@ button.btn.btn-primary.btn-sm:last-child {
 .form-check > input[type="radio"]:focus-visible::before {
     background-color: rgba(var(--pry-container));
     border: 2px solid rgb(var(--on-tertiary-container));
-    outline-width: 0.3rem;
+    outline-width: 0.19rem;
     outline-style: solid;
     outline-color: rgb(var(--focus-ring));
     outline-offset: 0.1rem;
 }
 .form-check > input[type="radio"]:focus-visible:checked::before {
-    outline-width: 0.3rem;
+    outline-width: 0.19rem;
     outline-style: solid;
     outline-color: rgb(var(--focus-ring));
     outline-offset: 0.1rem;
@@ -11876,7 +11876,7 @@ span.stash-id-pill {
     outline-color: rgb(var(--focus-ring));
     outline-offset: -0.10rem;
     outline-style: solid;
-    outline-width: 0.30rem;
+    outline-width: 0.19rem;
     /*
     * Background and Foreground Colors *
     background-color: rgba(var( --pry-container));
@@ -11885,11 +11885,11 @@ span.stash-id-pill {
     /**/
     box-shadow: none;
     text-shadow: none;
-    animation: focus-ring-width-bounce 0.55s ease-in-out 0.15s forwards;
+    animation: focus-ring-width-bounce 0.45s cubic-bezier(0.25, 1, 0.5, 1) 0.15s forwards;
 }
 @keyframes focus-ring-width-bounce {
     0% {
-        outline-width: 0.30rem;
+        outline-width: 0.19rem;
     }
     50% {
         outline-width: 0.55rem;
