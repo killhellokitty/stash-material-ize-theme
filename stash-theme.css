@@ -669,7 +669,6 @@ input[type=range].zoom-slider {
     height: 100%;
     overflow: hidden;
     padding: 20px 9px 20px 9px;
-    margin-top: 8px;
 }
 input[type=range].filter-slider {
     max-width: 200px;
@@ -7919,7 +7918,6 @@ button#scene-scrape,
     border-color: rgb(var(--outline));
     border-width: 1px;
     border-style: solid;
-    border-radius: 5rem;
     color: rgb(var(--on-surface));
     font-weight: 500;
     gap: 8px;
