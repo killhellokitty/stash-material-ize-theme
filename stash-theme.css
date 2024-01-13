@@ -319,7 +319,6 @@ h6,
     */
     /**/
     box-shadow: none;
-    text-shadow: none;
     animation: focus-ring-width-bounce-outer 0.45s cubic-bezier(0.25, 1, 0.5, 1) 0.15s forwards;
 }
 @keyframes focus-ring-width-bounce-outer {
@@ -7876,6 +7875,7 @@ svg.svg-inline--fa.fa-circle-question.fa-icon {
     margin-bottom: 16px;
 }
 
+/* **************************************** */
 .btn-secondary:not(.form-control),
 .dropdown-toggle.btn.btn-secondary,
 .btn-toolbar select.btn-secondary.form-control,
