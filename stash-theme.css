@@ -10671,10 +10671,14 @@ button.sprite-button.btn.btn-link > svg.fa-image {
 
 .collapse.show > .col > div > .performer-tag-container > a.performer-tag.col {
     display: flex;
-    flex: 0 0 30%;
-    align-items: center;
-    justify-content: center;
+    flex: 0 0 20%;
+    align-items: stretch;
     flex-wrap: nowrap;
+    position: relative;
+    top: 0px;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 0;
 }
 
 /* Tagger Configuration Card */
