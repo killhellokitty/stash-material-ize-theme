@@ -7879,7 +7879,6 @@ svg.svg-inline--fa.fa-circle-question.fa-icon {
     border-color: rgb(var(--outline));
     border-width: 1px;
     border-style: solid;
-    border-radius: 5rem;
     color: rgb(var(--on-surface));
     font-size: 24px; /* make 14px for buttons with text */
     font-weight: 500;
