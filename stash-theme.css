@@ -2856,20 +2856,6 @@ div#crop-btn-container {
 }
 /* */
 
-/* Performer-Tag */
-span.tag-item.d-block.badge.badge-secondary {
-    padding: 7px 8px 0 8px;
-    font-size: 12px;
-    letter-spacing: 0.85px;
-    border: 0;
-    font-weight: 500;
-    text-shadow: var(--really-light-box-shadow) !important;
-    position: relative;
-    top: 2%;
-    line-height: 16px;
-    background-blend-mode: luminosity;
-}
-
 /* Loading Spinner */
 .spinner-border {
     color: rgb(var(--pry-color)) !important;
@@ -10648,22 +10634,19 @@ button.sprite-button.btn.btn-link > svg.fa-image {
     margin: 4px;
     border: 0;
     background-color: rgb(var(--sec-container));
-    border-radius: 12px;
+    border-radius: 4px;
     padding: 8px;
     display: flex;
-    flex: 1 1 20%;
-    max-width: 20%;
+    flex: 1 1 30%;
+    max-width: 33%;
     flex-direction: column;
+    justify-content: flex-end;
     align-items: stretch;
-    align-content: space-around;
-    z-index: -5;
+    align-content: center;
 }
 :is(.performer-tag, .movie-tag) > img.image-thumbnail {
-    min-width: 110px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 8px;
-    z-index: -1;
+    min-width: 75px;
+    width: 75px;
 }
 :is(.performer-tag, .movie-tag) > img.image-thumbnail:hover {
     filter: brightness(1.05);
@@ -10672,14 +10655,10 @@ button.sprite-button.btn.btn-link > svg.fa-image {
 
 .collapse.show > .col > div > .performer-tag-container > a.performer-tag.col {
     display: flex;
-    flex: 0 0 20%;
-    align-items: stretch;
+    flex: 0 0 30%;
+    align-items: center;
+    justify-content: center;
     flex-wrap: nowrap;
-    position: relative;
-    top: 0px;
-    margin-top: auto;
-    margin-bottom: auto;
-    padding: 0;
 }
 
 /* Tagger Configuration Card */
