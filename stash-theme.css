@@ -2867,6 +2867,7 @@ span.tag-item.d-block.badge.badge-secondary {
     position: relative;
     top: 2%;
     line-height: 16px;
+    background-blend-mode: luminosity;
 }
 
 /* Loading Spinner */
