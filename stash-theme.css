@@ -315,11 +315,23 @@ h6,
     /*
     * Background and Foreground Colors *
     background-color: rgba(var( --pry-container));
-    color: rgb(var(--on-tertiary-container));
+    color: rgb(var(--on-tertiary-container))
     */
     /**/
     box-shadow: none;
     text-shadow: none;
+    animation: focus-ring-width-bounce-outer 0.45s cubic-bezier(0.25, 1, 0.5, 1) 0.15s forwards;
+}
+@keyframes focus-ring-width-bounce-outer {
+    0% {
+        outline-width: 0.19rem;
+    }
+    50% {
+        outline-width: 0.55rem;
+    }
+    100% {
+        outline-width: 0.30rem;
+    }
 }
 /* - */
 
@@ -11862,40 +11874,5 @@ span.stash-id-pill {
 .toast-container .toast-header .close{color: rgb(var(--on-surface));text-shadow:none}
 /* *** */
 
-/* Focus is NOT the same as Focus-Visible */
-*:focus:not(:focus-visible), 
-*.focus:not(:focus-visible) {
-    outline-color: transparent;
-    outline-offset: 0;
-    outline-style: none;
-    outline-width: 0;
-    /**/
-    box-shadow: none;
-}
-*:is(:focus-visible) {
-    outline-color: rgb(var(--focus-ring));
-    outline-offset: -0.10rem;
-    outline-style: solid;
-    outline-width: 0.19rem;
-    /*
-    * Background and Foreground Colors *
-    background-color: rgba(var( --pry-container));
-    color: rgb(var(--on-tertiary-container))
-    */
-    /**/
-    box-shadow: none;
-    text-shadow: none;
-    animation: focus-ring-width-bounce 0.45s cubic-bezier(0.25, 1, 0.5, 1) 0.15s forwards;
-}
-@keyframes focus-ring-width-bounce {
-    0% {
-        outline-width: 0.19rem;
-    }
-    50% {
-        outline-width: 0.55rem;
-    }
-    100% {
-        outline-width: 0.30rem;
-    }
-}
+
 /* - */
