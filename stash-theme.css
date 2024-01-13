@@ -7874,11 +7874,36 @@ svg.svg-inline--fa.fa-circle-question.fa-icon {
     margin-top: 16px;
     margin-bottom: 16px;
 }
+/* ||Toolbar Buttons */
+.btn-toolbar .btn-group button.btn-secondary {
+    background-color: rgb(var(--body-color2));
+    border-color: rgb(var(--outline));
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5rem;
+    color: rgb(var(--on-surface));
+    font-size: 18px; /* make 14px for buttons with text */
+    font-weight: 500;
+    gap: 8px;
+    padding-left: 16px; 
+    padding-right: 16px;
+    height: 40px;
+    max-height: 40px;
+    width: auto;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: var(--elevation-0);
+    transition: var(--trans-0);
+    -webkit-transition: var(--trans-0);
+}
 
 /* **************************************** */
-.btn-secondary:not(.form-control),
-.dropdown-toggle.btn.btn-secondary,
-.btn-toolbar select.btn-secondary.form-control,
+.btn-secondary:not(.form-control):not(.btn-toolbar button.btn-secondary),
+.dropdown-toggle.btn.btn-secondary:not(.btn-toolbar button.btn-secondary),
+/*.btn-toolbar select.btn-secondary.form-control,*/
 .modal-body .btn-secondary.form-control,
 button#scene-scrape,
 .scrape-url-button:not(:disabled) {
@@ -7904,7 +7929,6 @@ button#scene-scrape,
     position: relative;
     transition: background-color 0.55s ease, background-image 0.55s ease, box-shadow 0.4s ease-in, color 0.3s ease-in-out;
     -webkit-transition: background-color 0.55s ease, background-image 0.55s ease, box-shadow 0.4s ease-in, color 0.3s ease-in-out;
-    -moz-transition: background-color 0.55s ease, background-image 0.55s ease, box-shadow 0.4s ease-in, color 0.3s ease-in-out;
 }
 .setting-section .btn-secondary:not(.form-control) {
     background-image: none;
@@ -7912,7 +7936,7 @@ button#scene-scrape,
     border: 0;
     color: rgb(var(--on-sec-container));
 }
-.btn-toolbar .btn-secondary:not(.form-control),
+/*.btn-toolbar .btn-secondary:not(.form-control),
 .btn-toolbar .btn-secondary:not(.form-control):focus:not(:focus-visible), 
 .btn-toolbar .dropdown-toggle.btn.btn-secondary {
     height: 36px;
@@ -7922,7 +7946,7 @@ button#scene-scrape,
     padding-left: 16px; 
     padding-right: 16px;
     background-color: rgb(var(--body-color2));
-}
+}*/
 .btn-toolbar .btn-group >.dropdown >.dropdown-toggle.btn.btn-secondary:first-of-type {
     margin-right: -1px;
     border-radius: 5rem 0 0 5rem;
