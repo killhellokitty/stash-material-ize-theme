@@ -2856,6 +2856,19 @@ div#crop-btn-container {
 }
 /* */
 
+/* Performer-Tag */
+span.tag-item.d-block.badge.badge-secondary {
+    padding: 7px 8px 0 8px;
+    font-size: 12px;
+    letter-spacing: 0.85px;
+    border: 0;
+    font-weight: 500;
+    text-shadow: var(--really-light-box-shadow) !important;
+    position: relative;
+    top: 2%;
+    line-height: 16px;
+}
+
 /* Loading Spinner */
 .spinner-border {
     color: rgb(var(--pry-color)) !important;
