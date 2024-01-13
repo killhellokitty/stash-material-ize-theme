@@ -7917,6 +7917,7 @@ button#scene-scrape,
     border-color: rgb(var(--outline));
     border-width: 1px;
     border-style: solid;
+    border-radius: 5rem;
     color: rgb(var(--on-surface));
     font-weight: 500;
     gap: 8px;
@@ -8292,12 +8293,12 @@ div.mb-2.btn-group:not(.mr-2):not(.mx-2):not(.ml-2) > button.btn.btn-secondary:n
     color: rgba(var(--on-surface),0.38); 
 }
 
-div.mb-2.btn-group:not(.mr-2):not(.mx-2):not(.ml-2) > button.btn.btn-secondary:not(.form-control) {
+/*div.mb-2.btn-group:not(.mr-2):not(.mx-2):not(.ml-2) > button.btn.btn-secondary:not(.form-control) {
     background-color: rgb(var(--background));
     color: rgb(var(--on-surface));
     border-color: rgb(var(--outline));
     box-shadow: none;
-}
+}*/
 div.mb-2.btn-group:not(.mr-2):not(.mx-2):not(.ml-2) > button.btn.btn-secondary:not(.form-control):not(:disabled):not(.disabled):hover,
 div.mb-2.btn-group:not(.mr-2):not(.mx-2):not(.ml-2) > button.btn.btn-secondary:not(.form-control):not(:disabled):not(.disabled):focus,
 div.mb-2.btn-group:not(.mr-2):not(.mx-2):not(.ml-2) > button.btn.btn-secondary:not(.form-control):not(:disabled):not(.disabled):focus-visible {
