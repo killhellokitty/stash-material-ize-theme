@@ -7875,14 +7875,14 @@ svg.svg-inline--fa.fa-circle-question.fa-icon {
     margin-bottom: 16px;
 }
 /* ||Toolbar Buttons */
-.btn-toolbar .btn-group button.btn-secondary {
+.btn-toolbar .btn-group:not(.pagination) button.btn-secondary {
     background-color: rgb(var(--body-color2));
     border-color: rgb(var(--outline));
     border-width: 1px;
     border-style: solid;
     border-radius: 5rem;
     color: rgb(var(--on-surface));
-    font-size: 18px; /* make 14px for buttons with text */
+    font-size: 24px; /* make 14px for buttons with text */
     font-weight: 500;
     gap: 8px;
     padding-left: 16px; 
@@ -7899,10 +7899,18 @@ svg.svg-inline--fa.fa-circle-question.fa-icon {
     transition: var(--trans-0);
     -webkit-transition: var(--trans-0);
 }
+.btn-toolbar .btn-group:not(.pagination) button.btn-secondary:first-of-type:not(:only-of-type) {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+.btn-toolbar .btn-group:not(.pagination) button.btn-secondary:last-of-type:not(:only-of-type) {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
 
 /* **************************************** */
-.btn-secondary:not(.form-control):not(.btn-toolbar button.btn-secondary),
-.dropdown-toggle.btn.btn-secondary:not(.btn-toolbar button.btn-secondary),
+.btn-secondary,
+/*.dropdown-toggle.btn.btn-secondary:not(.btn-toolbar button.btn-secondary),*/
 /*.btn-toolbar select.btn-secondary.form-control,*/
 .modal-body .btn-secondary.form-control,
 button#scene-scrape,
@@ -7947,10 +7955,10 @@ button#scene-scrape,
     padding-right: 16px;
     background-color: rgb(var(--body-color2));
 }*/
-.btn-toolbar .btn-group >.dropdown >.dropdown-toggle.btn.btn-secondary:first-of-type {
+/*.btn-toolbar .btn-group >.dropdown >.dropdown-toggle.btn.btn-secondary:first-of-type {
     margin-right: -1px;
     border-radius: 5rem 0 0 5rem;
-}
+}*/
 
 svg.svg-inline--fa.fa-caret-down.fa-icon,
 svg.svg-inline--fa.fa-caret-up.fa-icon {
@@ -7960,7 +7968,7 @@ svg.svg-inline--fa.fa-caret-up.fa-icon {
 }
 
 /* date dropdown-button */
-.dropdown > .input-group-prepend > button.dropdown-toggle.btn.btn-secondary {
+/*.dropdown > .input-group-prepend > button.dropdown-toggle.btn.btn-secondary {
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
     padding-left: 24px;
@@ -7980,9 +7988,9 @@ svg.svg-inline--fa.fa-caret-up.fa-icon {
 
 .mb-2.btn-group > .btn:not(:last-child):nth-of-type(1) {
     margin-right: -1px;
-}
+}*/
 
-.btn-toolbar > div.mb-2.btn-group > button.btn.btn-secondary:last-child {
+/*.btn-toolbar > div.mb-2.btn-group > button.btn.btn-secondary:last-child {
     border-radius: 0 5rem 5rem 0;
 }
 
@@ -8001,7 +8009,7 @@ svg.svg-inline--fa.fa-caret-up.fa-icon {
     border-color: rgb(var(--outline));
     border-width: 1px;
     border-style: solid;
-}
+}*/
 
 button#scene-scrape {
     border-top-right-radius: 0;
@@ -8023,19 +8031,19 @@ svg.svg-inline--fa.fa-magnifying-glass.fa-icon {
     border-bottom-left-radius: 0;
     padding-left: 12px;
 }
-button.filter-button.btn.btn-secondary {
+/*button.filter-button.btn.btn-secondary {
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
-}
+}*/
 
 .modal-body .btn-secondary.form-control {
     background-color: transparent;
 }
 
 /**********************/
-.mr-2.mb-2.btn-group {
+/*.mr-2.mb-2.btn-group {
     margin-top: 8px;
-}
+}*/
 /* Transform property as a fix for the Toolbar-Filter-Button's "Badge" not being visible because of overflow to contain the Active Button state Wave. */
 .mr-2.mb-2:not(.show):not(.dropdown).btn-group:not(:has(>*.show)) {
     transform: translateZ(0); /* If the parent does have position attribute, the—although not "proper"—alternative is to use a transform with any value other than none on the wrapper and position: fixed; on the overflowing child This occurs because the transform overrides the position: fixed; element's containing block—it's reference—which is usually the viewport itself. */
@@ -8049,13 +8057,13 @@ button.filter-button.btn.btn-secondary {
 }
 /**********************/
 
-button#more-menu {
+/*button#more-menu {
     margin-top: 7px;
 }
 
 .mb-2.btn-group {
     margin-top: 8px;
-}
+}*/
 
 a#new-performer-filter {
     margin-top: 5px;
