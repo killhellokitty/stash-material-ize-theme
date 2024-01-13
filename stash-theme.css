@@ -7880,7 +7880,7 @@ svg.svg-inline--fa.fa-circle-question.fa-icon {
     border-width: 1px;
     border-style: solid;
     color: rgb(var(--on-surface));
-    font-size: 24px; /* make 14px for buttons with text */
+    font-size: 20px; /* make 14px for buttons with text */
     font-weight: 500;
     gap: 8px;
     padding-left: 16px; 
