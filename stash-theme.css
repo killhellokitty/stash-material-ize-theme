@@ -8137,10 +8137,6 @@ a#new-performer-filter {
     padding: 0 16px 0 20px;
     border: 0;
 }
-.btn-group>.btn:not(:first-child), 
-.btn-group>.btn-group:not(:first-child) {
-    margin-left: 0;
-}
 /* *** */
 
 .btn-secondary:not(.form-control):hover,
