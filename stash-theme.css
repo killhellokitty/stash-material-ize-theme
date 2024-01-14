@@ -7966,12 +7966,12 @@ button#scene-scrape,
     border-radius: 5rem 0 0 5rem;
 }*/
 
-svg.svg-inline--fa.fa-caret-down.fa-icon,
+/*svg.svg-inline--fa.fa-caret-down.fa-icon,
 svg.svg-inline--fa.fa-caret-up.fa-icon {
     height: 18px;
     width: 18px;
     line-height: 20px;
-}
+}*/
 
 /* date dropdown-button */
 /*.dropdown > .input-group-prepend > button.dropdown-toggle.btn.btn-secondary {
