@@ -7874,16 +7874,18 @@ svg.svg-inline--fa.fa-circle-question.fa-icon {
     margin-top: 16px;
     margin-bottom: 16px;
 }
+
 /* ||Toolbar-Button's */
 .btn-toolbar .btn-group:not(.pagination) .btn-secondary,
-.btn-toolbar .btn-secondary,
+.btn-toolbar:has(:not(.btn-group)) .btn-secondary,
 .btn-toolbar button#more-menu {
     background-color: rgb(var(--body-color2));
     border-color: rgb(var(--outline));
     border-width: 1px;
     border-style: solid;
+    border-radius: 5rem;
     color: rgb(var(--on-surface));
-    font-size: 20px; /* make 14px for buttons with text */
+    font-size: 18px; /* make 16px for buttons with text */
     font-weight: 500;
     gap: 8px;
     padding-left: 16px; 
@@ -7900,11 +7902,15 @@ svg.svg-inline--fa.fa-circle-question.fa-icon {
     transition: var(--trans-0);
     -webkit-transition: var(--trans-0);
 }
-.btn-toolbar .btn-group:not(.pagination) button.btn-secondary:first-of-type:not(:only-of-type) {
+
+.btn-toolbar .btn-group>.btn.btn-secondary:not(:last-child):not(.dropdown-toggle), 
+.btn-toolbar .btn-group:not(.pagination)>:is(.btn-group, .dropdown):not(:last-child)>.btn.btn-secondary {
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
 }
-.btn-toolbar .btn-group:not(.pagination) button.btn-secondary:last-of-type:not(:only-of-type) {
+
+.btn-toolbar .btn-group:not(.pagination)>.btn.btn-secondary:not(:first-child), 
+.btn-toolbar .btn-group:not(.pagination)>.btn-group:not(:first-child)>.btn.btn-secondary {
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
 }
@@ -7915,6 +7921,8 @@ svg.svg-inline--fa.fa-circle-question.fa-icon {
     letter-spacing: 0.0357em;
     padding-left: 24px;
     padding-right: 12px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
 }
     /* ||Descending and Ascending Toolbar-Button */
 .btn-toolbar .dropdown.btn-group > .input-group-prepend + button.btn.btn-secondary {
@@ -7954,7 +7962,7 @@ svg.svg-inline--fa.fa-circle-question.fa-icon {
 }
 
 /* **************************************** */
-.btn-secondary,
+.btn-secondary:not(.btn-toolbar .btn-secondary),
 /*.dropdown-toggle.btn.btn-secondary:not(.btn-toolbar button.btn-secondary),*/
 /*.btn-toolbar select.btn-secondary.form-control,*/
 .modal-body .btn-secondary.form-control,
