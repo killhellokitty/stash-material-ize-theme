@@ -7908,11 +7908,18 @@ svg.svg-inline--fa.fa-circle-question.fa-icon {
     border-top-left-radius: 0;
 }
 
+.btn-toolbar .btn-group .input-group-prepend > button.dropdown-toggle.btn.btn-secondary {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.0357em;
+    padding-left: 24px;
+    padding-right: 12px;
+}
+
 .btn-toolbar select.btn-secondary.form-control {
     font-size: 16px;
     line-height: 24px;
-    letter-spacing: 0.5px;
-    font-weight: 400;
+    letter-spacing: 0.0357em;
 }
 /* **************************************** */
 .btn-secondary,
