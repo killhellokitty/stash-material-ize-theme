@@ -7875,7 +7875,8 @@ svg.svg-inline--fa.fa-circle-question.fa-icon {
     margin-bottom: 16px;
 }
 /* ||Toolbar Buttons */
-.btn-toolbar .btn-group:not(.pagination) button.btn-secondary {
+.btn-toolbar .btn-group:not(.pagination) button.btn-secondary,
+.btn-toolbar button#more-menu {
     background-color: rgb(var(--body-color2));
     border-color: rgb(var(--outline));
     border-width: 1px;
@@ -7924,6 +7925,7 @@ svg.svg-inline--fa.fa-circle-question.fa-icon {
     line-height: 24px;
     letter-spacing: 0.0357em;
 }
+
 /* **************************************** */
 .btn-secondary,
 /*.dropdown-toggle.btn.btn-secondary:not(.btn-toolbar button.btn-secondary),*/
