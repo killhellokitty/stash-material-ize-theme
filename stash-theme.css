@@ -463,9 +463,8 @@ select {
     background:transparent;
     background-image: url("data:image/svg+xml;utf8,<svg fill='%23e2e2e5' width='16' height='16' viewBox='0 0 16 16' class='bi bi-caret-down-fill' xmlns='http://www.w3.org/2000/svg'><path d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/></svg>");
     background-repeat: no-repeat;
-    background-position: calc( 100% - 16px ) 50%;
-    background-size: 18px;
-    vertical-align: -0.125em;
+    background-position: calc( 100% - 16px ) calc(50% + 0.065em);
+    background-size: 20px;
 }
 /*select:hover {
     background-image: url("data:image/svg+xml;utf8,<svg fill='%23e2e2e5' height='30' viewBox='0 0 24 22' width='28' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
@@ -8176,10 +8175,9 @@ button#scene-scrape:hover,
 .btn-toolbar select.btn-secondary.form-control:hover {
     background-image: url("data:image/svg+xml;utf8,<svg fill='%23e2e2e5' width='16' height='16' viewBox='0 0 16 16' class='bi bi-caret-down-fill' xmlns='http://www.w3.org/2000/svg'><path d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/></svg>"), linear-gradient(to right, rgba(var( --on-surface),var(--btn-hover)), rgba(var(--on-surface),var(--btn-hover)));
     background-repeat: no-repeat, repeat;
-    background-position: calc( 100% - 16px ) 50%, center left;
+    background-position: calc( 100% - 16px ) calc(50% + 0.065em), center left;
     background-color: rgb(var(--body-color2));
-    background-size: 18px;
-    vertical-align: -.125em;
+    background-size: 20px;
     border-color: rgb(var(--outline));
     box-shadow: none;
     color: rgb(var(--on-surface));
@@ -8212,10 +8210,9 @@ button#scene-scrape:focus-visible,
 .btn-toolbar select.btn-secondary.form-control:focus-visible {
     background-image: url("data:image/svg+xml;utf8,<svg fill='%23e2e2e5' width='16' height='16' viewBox='0 0 16 16' class='bi bi-caret-down-fill' xmlns='http://www.w3.org/2000/svg'><path d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/></svg>");
     background-repeat: no-repeat, repeat;
-    background-position: calc( 100% - 16px ) 50%, center left;
+    background-position: calc( 100% - 16px ) calc(50% + 0.065em), center left;
     background-color: rgb(var(--pry-container));
-    background-size: 18px;
-    vertical-align: -.125em;
+    background-size: 20px;
     border-color: transparent;
     color: rgb(var(--on-tertiary-container));
     box-shadow: none;
