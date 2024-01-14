@@ -7876,8 +7876,8 @@ svg.svg-inline--fa.fa-circle-question.fa-icon {
 }
 
 /* ||Toolbar-Button's */
-.btn-toolbar .btn-group:not(.pagination) .btn-secondary,
-.btn-toolbar:has(:not(.btn-group)) .btn-secondary,
+.btn-toolbar .btn-group:not(.pagination) .btn-secondary:not(.btn-sm),
+.btn-toolbar:has(:not(.btn-group)) .btn-secondary:not(.btn-sm),
 .btn-toolbar button#more-menu {
     background-color: rgb(var(--body-color2));
     border-color: rgb(var(--outline));
@@ -7942,12 +7942,12 @@ svg.svg-inline--fa.fa-circle-question.fa-icon {
     letter-spacing: 0.0357em;
 }
 /* ||Toolbar-Button Hover */
-.btn-toolbar .btn-group:not(.pagination):not(.show):not(:has(>.show)):not(:has(>.input-group-prepend+.show)) .btn-secondary:hover,
-.btn-toolbar:not(:has(.btn-group)) .btn-secondary:not(.form-control),
+.btn-toolbar .btn-group:not(.pagination):not(.show):not(:has(>.show)):not(:has(>.input-group-prepend+.show)) .btn-secondary:not(.active):hover,
+.btn-toolbar:not(:has(.btn-group)) .btn-secondary:not(.form-control):hover,
 .btn-toolbar button#more-menu:not(.show>button):hover {
     background-image: linear-gradient(to right, rgba(var( --on-surface),var(--btn-hover)), rgba(var(--on-surface),var(--btn-hover)));
     background-color: rgb(var(--body-color2));
-    box-shadow: none;
+    box-shadow: var(--elevation-0);
 }
     /* ||Form-Control Toolbar-Button Hover */
 .btn-toolbar select.btn-secondary.form-control:hover {
@@ -7957,8 +7957,20 @@ svg.svg-inline--fa.fa-circle-question.fa-icon {
     background-color: rgb(var(--body-color2));
     background-size: 20px;
     border-color: rgb(var(--outline));
-    box-shadow: none;
+    box-shadow: var(--elevation-0);
     color: rgb(var(--on-surface));
+}
+/* ||Toolbar-Button Hover Selected */
+.btn-toolbar .btn-group:not(.pagination).show .btn-secondary:hover,
+.btn-toolbar .btn-group:not(.pagination):not(.show) > .show .btn-secondary:hover,
+.btn-toolbar .btn-group:not(.pagination):not(.show):not(:has(>.show)) > .input-group-prepend + .show .btn-secondary:hover,
+.btn-toolbar .btn-group:not(.pagination):not(.show):not(:has(>.show)):not(:has(>.input-group-prepend+.show)) .btn-secondary.active:hover
+.btn-toolbar .show > button#more-menu:hover {
+    background-image: linear-gradient(to right, rgba(var( --on-sec-container),var(--btn-hover)), rgba(var(--on-sec-container),var(--btn-hover)));
+    background-color: rgb(var(--body-color2));
+    background-blend-mode: screen;
+    color: rgb(var(--on-sec-container));
+    box-shadow: var(--elevation-0);
 }
 
 /* **************************************** */
@@ -8287,13 +8299,13 @@ button#scene-scrape:not(:disabled):not(.disabled).active,
     color: rgb(var(--on-sec-container));
     border-color: rgb(var(--outline));
 }*/
-div.mb-2.btn-group:not(.mr-2):not(.mx-2):not(.ml-2) > button.btn.btn-secondary:not(.form-control):not(:disabled):not(.disabled).active:hover,
+/*div.mb-2.btn-group:not(.mr-2):not(.mx-2):not(.ml-2) > button.btn.btn-secondary:not(.form-control):not(:disabled):not(.disabled).active:hover,
 .btn-toolbar select.btn-secondary.form-control:where(:active:hover, :focus:hover, :active:focus:hover),
 .btn-toolbar .show.dropdown .dropdown-toggle.btn.btn-secondary:hover {
     background-color: rgb(var(--sec-cntnr-select-hover));
     box-shadow: none;
     border-color: rgb(var(--on-surface-variant));
-}
+}*/
 /*.btn-toolbar select.btn-secondary.form-control:focus:not(:focus-visible),
 .btn-toolbar .show.dropdown .dropdown-toggle.btn.btn-secondary:focus:not(:focus-visible) {
     background-color: rgba(var(--sec-container),var(--btn-active-rev));
