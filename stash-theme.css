@@ -7954,7 +7954,7 @@ svg.svg-inline--fa.fa-circle-question.fa-icon {
 }
 
 /* **************************************** */
-.btn-secondary:not(.btn-toolbar .btn-secondary),
+.btn-secondary,
 /*.dropdown-toggle.btn.btn-secondary:not(.btn-toolbar button.btn-secondary),*/
 /*.btn-toolbar select.btn-secondary.form-control,*/
 .modal-body .btn-secondary.form-control,
