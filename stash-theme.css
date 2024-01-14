@@ -7935,7 +7935,7 @@ svg.svg-inline--fa.fa-circle-question.fa-icon {
 }
 /* ||Toolbar-Button Hover */
 .btn-toolbar .btn-group:not(.pagination):not(.show):not(:has(>.show)):not(:has(>.input-group-prepend+.show)) .btn-secondary:hover,
-.btn-toolbar .btn-secondary:not(.form-control),
+.btn-toolbar:not(:has(.btn-group)) .btn-secondary:not(.form-control),
 .btn-toolbar button#more-menu:not(.show>button):hover {
     background-image: linear-gradient(to right, rgba(var( --on-surface),var(--btn-hover)), rgba(var(--on-surface),var(--btn-hover)));
     background-color: rgb(var(--body-color2));
