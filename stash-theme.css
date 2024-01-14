@@ -7874,8 +7874,8 @@ svg.svg-inline--fa.fa-circle-question.fa-icon {
     margin-top: 16px;
     margin-bottom: 16px;
 }
-/* ||Toolbar Buttons */
-.btn-toolbar .btn-group:not(.pagination) button.btn-secondary,
+/* ||Toolbar-Button's */
+.btn-toolbar .btn-group:not(.pagination) .btn-secondary,
 .btn-toolbar button#more-menu {
     background-color: rgb(var(--body-color2));
     border-color: rgb(var(--outline));
@@ -7907,7 +7907,7 @@ svg.svg-inline--fa.fa-circle-question.fa-icon {
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
 }
-
+    /* ||Dropdown-Menu Toggler Toolbar-Button */ 
 .btn-toolbar .btn-group .input-group-prepend > button.dropdown-toggle.btn.btn-secondary {
     font-size: 16px;
     line-height: 24px;
@@ -7915,19 +7915,44 @@ svg.svg-inline--fa.fa-circle-question.fa-icon {
     padding-left: 24px;
     padding-right: 12px;
 }
+    /* ||Descending and Ascending Toolbar-Button */
 .btn-toolbar .dropdown.btn-group > .input-group-prepend + button.btn.btn-secondary {
     font-size: 24px;
     padding-left: 12px;
 }
-
+.btn-toolbar .dropdown.btn-group > .input-group-prepend + button.btn.btn-secondary > svg.fa-caret-down {
+    vertical-align: -0.065em;
+}
+.btn-toolbar .dropdown.btn-group > .input-group-prepend + button.btn.btn-secondary > svg.fa-caret-up {
+    vertical-align: 0.065em;
+}
+    /* ||Form-control Toolbar-Button */
 .btn-toolbar select.btn-secondary.form-control {
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.0357em;
 }
+/* ||Toolbar-Button Hover */
+.btn-toolbar .btn-group:not(.pagination):not(.show):not(:has(>.show)):not(:has(>.input-group-prepend+.show)) .btn-secondary:not(.form-control):hover,
+.btn-toolbar button#more-menu:not(.show>button):hover {
+    background-image: linear-gradient(to right, rgba(var( --on-surface),var(--btn-hover)), rgba(var(--on-surface),var(--btn-hover)));
+    background-color: rgb(var(--body-color2));
+    box-shadow: none;
+}
+    /* ||Form-Control Toolbar-Button Hover */
+.btn-toolbar select.btn-secondary.form-control:hover {
+    background-image: url("data:image/svg+xml;utf8,<svg fill='%23e2e2e5' width='16' height='16' viewBox='0 0 16 16' class='bi bi-caret-down-fill' xmlns='http://www.w3.org/2000/svg'><path d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/></svg>"), linear-gradient(to right, rgba(var( --on-surface),var(--btn-hover)), rgba(var(--on-surface),var(--btn-hover)));
+    background-repeat: no-repeat, repeat;
+    background-position: calc( 100% - 16px ) calc(50% + 0.065em), center left;
+    background-color: rgb(var(--body-color2));
+    background-size: 20px;
+    border-color: rgb(var(--outline));
+    box-shadow: none;
+    color: rgb(var(--on-surface));
+}
 
 /* **************************************** */
-.btn-secondary,
+:is(:not(.btn-toolbar)) .btn-secondary,
 /*.dropdown-toggle.btn.btn-secondary:not(.btn-toolbar button.btn-secondary),*/
 /*.btn-toolbar select.btn-secondary.form-control,*/
 .modal-body .btn-secondary.form-control,
@@ -8159,8 +8184,7 @@ a#new-performer-filter {
 }
 /* *** */
 
-.btn-secondary:not(.form-control):hover,
-.btn-toolbar .dropdown:not(.show) .dropdown-toggle.btn.btn-secondary:hover,
+:is(:not(.btn-toolbar)) .btn-secondary:hover,
 .modal-body .btn-secondary.form-control:hover,
 button#scene-scrape:hover,
 .scrape-url-button:hover {
@@ -8178,16 +8202,7 @@ button#scene-scrape:hover,
     color: rgb(var(--on-sec-container));
     box-shadow: var(--elevation-1);
 }
-.btn-toolbar select.btn-secondary.form-control:hover {
-    background-image: url("data:image/svg+xml;utf8,<svg fill='%23e2e2e5' width='16' height='16' viewBox='0 0 16 16' class='bi bi-caret-down-fill' xmlns='http://www.w3.org/2000/svg'><path d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/></svg>"), linear-gradient(to right, rgba(var( --on-surface),var(--btn-hover)), rgba(var(--on-surface),var(--btn-hover)));
-    background-repeat: no-repeat, repeat;
-    background-position: calc( 100% - 16px ) calc(50% + 0.065em), center left;
-    background-color: rgb(var(--body-color2));
-    background-size: 20px;
-    border-color: rgb(var(--outline));
-    box-shadow: none;
-    color: rgb(var(--on-surface));
-}
+
 
 .btn-secondary:not(.form-control):not(.dropdown-toggle):focus,
 /*.btn-toolbar .dropdown:not(.show) .dropdown-toggle.btn.btn-secondary:focus:not(:focus-visible),*/
