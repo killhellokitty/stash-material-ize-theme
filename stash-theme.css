@@ -464,7 +464,7 @@ select {
     background-image: url("data:image/svg+xml;utf8,<svg fill='%23e2e2e5' width='16' height='16' viewBox='0 0 16 16' class='bi bi-caret-down-fill' xmlns='http://www.w3.org/2000/svg'><path d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/></svg>");
     background-repeat: no-repeat;
     background-position: calc( 100% - 16px ) 50%;
-    background-size: 20px;
+    background-size: 18px;
     vertical-align: -0.125em;
 }
 /*select:hover {
