@@ -6723,7 +6723,7 @@ nav.top-nav.navbar .navbar-collapse.collapse.show>.navbar-nav {
     right: 0;
     bottom: 0;
 }
-@media (max-width: 575.98px) {
+@media (max-width: 576px) {
     .top-nav .navbar-collapse.show {
         will-change: transform, transition, margin, bottom;
         display: flex;
@@ -6893,6 +6893,13 @@ svg.svg-inline--fa.fa-xmark.fa-icon {
 button[title=Statistics].minimal.btn.btn-primary {
     margin-left: 12px;
 }
+
+@media (max-width: 576px) {
+    button[title=Statistics].minimal.btn.btn-primary {
+        margin-left: 0;
+    }
+}
+
 .top-nav .navbar-buttons .btn.donate svg.svg-inline--fa.fa-heart.fa-icon {
     color: rgb(var(--red));
     padding-bottom: 2px;
