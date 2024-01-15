@@ -6377,7 +6377,7 @@ nav.nav.nav-tabs {
     justify-content: space-evenly;
     display: flex;
 }
-@media (max-width: 575.98px) {
+@media (max-width: 576px) {
     .navbar-dark .navbar-nav:not(:nth-of-type(2)):nth-of-type(1) .nav-link:not(*.donate) {
         flex-grow: 0;
         flex-shrink: 1;
@@ -6400,7 +6400,7 @@ nav.nav.nav-tabs {
     width: 80px;
     align-items: center;
 }
-@media (max-width: 575.98px) {
+@media (max-width: 576px) {
     .top-nav .navbar-collapse .navbar-nav:not(:nth-of-type(2)):nth-of-type(1) {
         display: flex;
         position: relative;
@@ -6429,7 +6429,7 @@ nav.top-nav.navbar .navbar-collapse.collapse:not(.show) > .navbar-nav:last-child
 nav.top-nav.navbar .navbar-collapse.collapse.show > .navbar-nav:last-child {
     display: none;
 }
-@media (max-width: 575.98px) {
+@media (max-width: 576px) {
     nav.top-nav.navbar .navbar-collapse.collapse.show > .navbar-nav:last-child {
             display: grid;
             grid-auto-flow: column;
