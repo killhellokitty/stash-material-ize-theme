@@ -7964,20 +7964,36 @@ svg.svg-inline--fa.fa-circle-question.fa-icon {
 }
 /* ||Toolbar-Button Active/Show/Selected */
 .btn-toolbar .btn-group:not(.pagination).show .btn-secondary,
+.btn-toolbar .btn-group:not(.pagination).show .btn-secondary:focus,
 .btn-toolbar .btn-group:not(.pagination):not(.show) > .show .btn-secondary,
+.btn-toolbar .btn-group:not(.pagination):not(.show) > .show .btn-secondary:focus,
 .btn-toolbar .btn-group:not(.pagination):not(.show):not(:has(>.show)) > .input-group-prepend + .show .btn-secondary,
+.btn-toolbar .btn-group:not(.pagination):not(.show):not(:has(>.show)) > .input-group-prepend + .show .btn-secondary:focus,
 .btn-toolbar .btn-group:not(.pagination):not(.show):not(:has(>.show)):not(:has(>.input-group-prepend+.show)) .btn-secondary.active,
-.btn-toolbar .show > button#more-menu {
+.btn-toolbar .btn-group:not(.pagination):not(.show):not(:has(>.show)):not(:has(>.input-group-prepend+.show)) .btn-secondary.active:focus,
+.btn-toolbar .show > button#more-menu,
+.btn-toolbar .show > button#more-menu:focus {
     background-image: var(--btn-dummy-highlight);
     background-color: rgba(var( --sec-container));
     background-blend-mode: normal;
     color: rgb(var(--on-sec-container));
     box-shadow: var(--elevation-0);
 }
-.btn-toolbar:has(:not(.btn-group)) .btn-secondary:not(.form-control):not(.btn-sm):active {
+.btn-toolbar:has(:not(.btn-group)) .btn-secondary:not(.form-control):not(.btn-sm):where(:active, :focus, :active:focus) {
     background-image: linear-gradient(to right, rgba(var( --sec-container),var(--btn-active)), rgba(var(--sec-container),var(--btn-active)));
     background-color: rgb(var(--body-color2));
     background-blend-mode: screen;
+    color: rgb(var(--on-sec-container));
+    box-shadow: var(--elevation-0);
+}
+    /* ||Form-Control Toolbar-Button Focus */
+.btn-toolbar select.btn-secondary.form-control:focus {
+    background-image: url("data:image/svg+xml;utf8,<svg fill='%23e2e2e5' width='16' height='16' viewBox='0 0 16 16' class='bi bi-caret-down-fill' xmlns='http://www.w3.org/2000/svg'><path d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/></svg>"), var(--btn-dummy-highlight);
+    background-repeat: no-repeat, repeat;
+    background-position: calc( 100% - 16px ) calc(50% + 0.065em), center left;
+    background-color: rgba(var( --sec-container));
+    background-size: 20px;
+    border-color: rgb(var(--outline));
     color: rgb(var(--on-sec-container));
     box-shadow: var(--elevation-0);
 }
@@ -7993,6 +8009,8 @@ svg.svg-inline--fa.fa-circle-question.fa-icon {
     color: rgb(var(--on-sec-container));
     box-shadow: var(--elevation-0);
 }
+/* ||Toolbar-Button Focus-Visible */
+
 
 /* **************************************** */
 .btn-secondary:not(.btn-toolbar .btn-secondary),
@@ -8269,16 +8287,7 @@ button#scene-scrape:focus-visible,
     z-index: 20;
 }
 /* */
-.btn-toolbar select.btn-secondary.form-control:focus-visible {
-    background-image: url("data:image/svg+xml;utf8,<svg fill='%23e2e2e5' width='16' height='16' viewBox='0 0 16 16' class='bi bi-caret-down-fill' xmlns='http://www.w3.org/2000/svg'><path d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/></svg>");
-    background-repeat: no-repeat, repeat;
-    background-position: calc( 100% - 16px ) calc(50% + 0.065em), center left;
-    background-color: rgb(var(--pry-container));
-    background-size: 20px;
-    border-color: transparent;
-    color: rgb(var(--on-tertiary-container));
-    box-shadow: none;
-}
+
 /*div.mb-2.btn-group:not(.mr-2):not(.mx-2):not(.ml-2) > button.btn.btn-secondary:not(.form-control):not(.dropdown-toggle):not(:disabled):not(.disabled).active,
 .btn-toolbar select.btn-secondary.form-control:not(.disabled):not(:disabled):where(:active, :focus, :active:focus),
 .btn-toolbar .show.dropdown .dropdown-toggle.btn.btn-secondary {
@@ -8332,12 +8341,12 @@ button#scene-scrape:not(:disabled):not(.disabled).active,
     border-color: rgb(var(--outline));
     box-shadow: none;
 }*/
-div.mb-2.btn-group:not(.mr-2):not(.mx-2):not(.ml-2) > button.btn.btn-secondary:not(.form-control):not(:disabled):not(.disabled).active:is(:focus, :focus-visible),
+/*div.mb-2.btn-group:not(.mr-2):not(.mx-2):not(.ml-2) > button.btn.btn-secondary:not(.form-control):not(:disabled):not(.disabled).active:is(:focus, :focus-visible),
 .btn-toolbar .show.dropdown .dropdown-toggle.btn.btn-secondary:is(:focus, :focus-visible) {
     background-color: rgb(var(--sec-cntnr-select-active));
     box-shadow: none;
     border-color: rgb(var(--on-surface-variant));
-}
+}*/
 .btn-toolbar select.btn-secondary.form-control:active:focus-visible:not(:focus) {
     background-color: rgb(var(--sec-cntnr-select-active));
     box-shadow: none;
@@ -8348,13 +8357,13 @@ div.mb-2.btn-group:not(.mr-2):not(.mx-2):not(.ml-2) > button.btn.btn-secondary:n
     outline-style: solid;
     outline-offset: -1px;
 }
-div.mb-2.btn-group:not(.mr-2):not(.mx-2):not(.ml-2) > button.btn.btn-secondary:not(.form-control):focus-visible,
+/*div.mb-2.btn-group:not(.mr-2):not(.mx-2):not(.ml-2) > button.btn.btn-secondary:not(.form-control):focus-visible,
 .btn-toolbar .show.dropdown .dropdown-toggle.btn.btn-secondary:focus-visible {
     background-image: none;
     background-color: rgba(var(--pry-container));
     color: rgb(var(--on-tertiary-container));
     border-color: transparent;
-}
+}*/
 .btn-secondary:not(.form-control).disabled,
 .btn-secondary:not(.form-control):disabled,
 .btn-secondary.dropdown-toggle.disabled,
