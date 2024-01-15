@@ -8035,7 +8035,17 @@ svg.svg-inline--fa.fa-circle-question.fa-icon {
     box-shadow: var(--elevation-0) !important;
 }
 /* ||Toolbar-Button Focus-Visible */
-
+.btn-toolbar .btn-group:not(.pagination):not(.show):not(:has(>.show)):not(:has(>.input-group-prepend+.show)) .btn-secondary:not(.btn-sm):not(.active):focus-visible,
+.btn-toolbar:has(:not(.btn-group)) .btn-secondary:not(.form-control):not(.btn-sm):focus-visible,
+.btn-toolbar button#more-menu:not(.show>button):focus-visible {
+    outline-color: rgb(var(--focus-ring));
+    outline-offset: -0.10rem;
+    outline-style: solid;
+    outline-width: 0.19rem;
+    box-shadow: none;
+    animation: focus-ring-width-bounce-outer 0.45s cubic-bezier(0.25, 1, 0.5, 1) 0.15s forwards;
+    z-index: 5;
+}
 
 /* **************************************** */
 .btn-secondary:not(.btn-toolbar .btn-secondary),
