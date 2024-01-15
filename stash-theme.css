@@ -2555,7 +2555,8 @@ button.tag-list-button.btn.btn-secondary:not(:has(>.tag-list-anchor)):disabled {
     border-style: none;
     text-align: center;
     position: relative;
-    margin-right: 0;
+    margin-right: auto;
+    margin-left: auto;
     top: 0px;
     z-index: 1199;
 }
@@ -2720,7 +2721,7 @@ button:not([title=Help]).btn-primary:not(:disabled):not(.disabled):focus-visible
     outline-offset: -0.1rem;
 }
 button:not([title=Help]).btn-primary:not(:where(:disabled, .disabled)):is(:focus, .active, .active:focus, :active, :active:focus),
-.login .btn.btn-primary:where(:focus, .active, .active:focus, :active, :active:focus) {
+.login .btn.btn-primary:is(:focus, .active, .active:focus, :active, :active:focus) {
     color: rgb(var(--on-tertiary));
     background-image: var(--btn-active-highlight);
     background-color: rgba(var(--tertiary));
