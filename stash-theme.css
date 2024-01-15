@@ -7967,13 +7967,13 @@ svg.svg-inline--fa.fa-circle-question.fa-icon {
 .btn-toolbar .btn-group:not(.pagination):not(.show):not(:has(>.show)) > .input-group-prepend + .show .btn-secondary,
 .btn-toolbar .btn-group:not(.pagination):not(.show):not(:has(>.show)):not(:has(>.input-group-prepend+.show)) .btn-secondary.active,
 .btn-toolbar .show > button#more-menu {
-    background-image: linear-gradient(to right, rgba(var( --on-sec-container)), rgba(var(--on-sec-container)));
+    background-image: linear-gradient(to right, rgba(var( --sec-container)), rgba(var(--sec-container)));
     background-blend-mode: normal;
     color: rgb(var(--on-sec-container));
     box-shadow: var(--elevation-0);
 }
 .btn-toolbar:has(:not(.btn-group)) .btn-secondary:not(.form-control):not(.btn-sm):active {
-    background-image: linear-gradient(to right, rgba(var( --on-sec-container),var(--btn-active)), rgba(var(--on-sec-container),var(--btn-active)));
+    background-image: linear-gradient(to right, rgba(var( --sec-container),var(--btn-active)), rgba(var(--sec-container),var(--btn-active)));
     background-color: rgb(var(--body-color2));
     background-blend-mode: screen;
     color: rgb(var(--on-sec-container));
@@ -7985,7 +7985,7 @@ svg.svg-inline--fa.fa-circle-question.fa-icon {
 .btn-toolbar .btn-group:not(.pagination):not(.show):not(:has(>.show)) > .input-group-prepend + .show .btn-secondary:hover,
 .btn-toolbar .btn-group:not(.pagination):not(.show):not(:has(>.show)):not(:has(>.input-group-prepend+.show)) .btn-secondary.active:hover,
 .btn-toolbar .show > button#more-menu:hover {
-    background-image: linear-gradient(to right, rgba(var( --on-sec-container),var(--btn-hover)), rgba(var(--on-sec-container),var(--btn-hover)));
+    background-image: linear-gradient(to right, rgba(var( --sec-container),var(--btn-hover)), rgba(var(--sec-container),var(--btn-hover)));
     background-color: rgb(var(--body-color2));
     background-blend-mode: screen;
     color: rgb(var(--on-sec-container));
@@ -8245,8 +8245,7 @@ button#scene-scrape:hover,
 }
 
 
-.btn-secondary:not(.form-control):not(.dropdown-toggle):focus,
-/*.btn-toolbar .dropdown:not(.show) .dropdown-toggle.btn.btn-secondary:focus:not(:focus-visible),*/
+.btn-secondary:not(.btn-toolbar .btn-secondary):focus,
 .modal-body .btn-secondary.form-control:focus,
 button#scene-scrape:focus,
 .scrape-url-button:not(:disabled):focus {
@@ -8256,8 +8255,7 @@ button#scene-scrape:focus,
     border-color: rgb(var(--outline));
 }
 
-.btn-secondary:not(.form-control):focus-visible,
-.btn-toolbar .dropdown:not(.show) .dropdown-toggle.btn.btn-secondary:focus-visible,
+.btn-secondary:not(.btn-toolbar .btn-secondary):focus-visible,
 .modal-body .btn-secondary.form-control:focus-visible:not(:focus),
 button#scene-scrape:focus-visible,
 .scrape-url-button:not(:disabled):focus-visible {
@@ -8279,7 +8277,7 @@ button#scene-scrape:focus-visible,
     color: rgb(var(--on-tertiary-container));
     box-shadow: none;
 }
-div.mb-2.btn-group:not(.mr-2):not(.mx-2):not(.ml-2) > button.btn.btn-secondary:not(.form-control):not(.dropdown-toggle):not(:disabled):not(.disabled).active,
+/*div.mb-2.btn-group:not(.mr-2):not(.mx-2):not(.ml-2) > button.btn.btn-secondary:not(.form-control):not(.dropdown-toggle):not(:disabled):not(.disabled).active,
 .btn-toolbar select.btn-secondary.form-control:not(.disabled):not(:disabled):where(:active, :focus, :active:focus),
 .btn-toolbar .show.dropdown .dropdown-toggle.btn.btn-secondary {
     background-color: rgb(var(--sec-container));
@@ -8287,11 +8285,11 @@ div.mb-2.btn-group:not(.mr-2):not(.mx-2):not(.ml-2) > button.btn.btn-secondary:n
     border-color: rgb(var(--on-surface-variant));
     outline: none;
     box-shadow: none;
-}
-.btn-secondary:not(.form-control):not(.dropdown-toggle):not(.disabled):not(:disabled):active:focus {
+}*/
+.btn-secondary:not(.btn-toolbar .btn-secondary):not(.disabled):not(:disabled):active:focus {
     box-shadow: none;
 }
-.btn-secondary:not(.form-control):not(.dropdown-toggle):not(:disabled):not(.disabled):active,
+.btn-secondary:not(.btn-toolbar .btn-secondary):not(:disabled):not(.disabled):active,
 button#scene-scrape:not(:disabled):not(.disabled):active,
 button#scene-scrape:not(:disabled):not(.disabled).active,
 .scrape-url-button:not(:disabled):active,
@@ -8373,23 +8371,23 @@ div.mb-2.btn-group:not(.mr-2):not(.mx-2):not(.ml-2) > button.btn.btn-secondary:n
     border-color: rgb(var(--outline));
     box-shadow: none;
 }*/
-div.mb-2.btn-group:not(.mr-2):not(.mx-2):not(.ml-2) > button.btn.btn-secondary:not(.form-control):not(:disabled):not(.disabled):hover,
+/*div.mb-2.btn-group:not(.mr-2):not(.mx-2):not(.ml-2) > button.btn.btn-secondary:not(.form-control):not(:disabled):not(.disabled):hover,
 div.mb-2.btn-group:not(.mr-2):not(.mx-2):not(.ml-2) > button.btn.btn-secondary:not(.form-control):not(:disabled):not(.disabled):focus,
 div.mb-2.btn-group:not(.mr-2):not(.mx-2):not(.ml-2) > button.btn.btn-secondary:not(.form-control):not(:disabled):not(.disabled):focus-visible {
     background-color: rgba(var(--background-select-hover));
-}
-div.mb-2.btn-group:not(.mr-2):not(.mx-2):not(.ml-2) > button.btn.btn-secondary:not(.form-control):not(:disabled):not(.disabled).active,
+}*/
+/*div.mb-2.btn-group:not(.mr-2):not(.mx-2):not(.ml-2) > button.btn.btn-secondary:not(.form-control):not(:disabled):not(.disabled).active,
 div.mb-2.btn-group:not(.mr-2):not(.mx-2):not(.ml-2) > button.btn.btn-secondary:not(.form-control):not(:disabled):not(.disabled).active:focus-visible:not(:focus) {
     background-color: rgb(var(--sec-container));
     color: rgb(var(--on-sec-container));
     box-shadow: none;
-}
-div.mb-2.btn-group:not(.mr-2):not(.mx-2):not(.ml-2) > button.btn.btn-secondary:not(.form-control):not(:disabled):not(.disabled).active:hover {
+}*/
+/*div.mb-2.btn-group:not(.mr-2):not(.mx-2):not(.ml-2) > button.btn.btn-secondary:not(.form-control):not(:disabled):not(.disabled).active:hover {
     background-color: rgba(var(--sec-cntnr-select-hover));
-}
-div.mb-2.btn-group:not(.mr-2):not(.mx-2):not(.ml-2) > button.btn.btn-secondary:not(.form-control):not(:disabled):not(.disabled).active:focus:not(:focus-visible) {
+}*/
+/*div.mb-2.btn-group:not(.mr-2):not(.mx-2):not(.ml-2) > button.btn.btn-secondary:not(.form-control):not(:disabled):not(.disabled).active:focus:not(:focus-visible) {
     background-color: rgba(var(--sec-cntnr-select-active));
-}
+}*/
 /* *** */
 
 
