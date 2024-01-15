@@ -2602,22 +2602,24 @@ button.tag-list-button.btn.btn-secondary:not(:has(>.tag-list-anchor)):disabled {
         display: revert;
     }
 }
-.navbar-expand-xl .navbar-collapse.collapse:not(.show) {
-    display: flex;
-    overflow-y: auto;
-    max-height: 100%;
-    max-width: 88px;
-    position: fixed;
-    z-index: 10;
-    padding: 73px 2px 0 2px;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    will-change: transform;
-    transition: all 0s;
+@media (min-width: var(--breakpoint-md)) {
+    .navbar-expand-xl .navbar-collapse.collapse:not(.show) {
+        display: flex;
+        overflow-y: auto;
+        max-height: 100%;
+        max-width: 88px;
+        position: fixed;
+        z-index: 10;
+        padding: 73px 2px 0 2px;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        will-change: transform;
+        transition: all 0s;
+    }
 }
 @media (max-width: 575.98px) {
     .navbar-expand-xl .navbar-collapse.collapse:not(.show) {
