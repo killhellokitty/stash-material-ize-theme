@@ -268,6 +268,7 @@ h6,
     --btn-active: 0.12;
     --btn-active-rev: 0.88;
     --btn-active-highlight: linear-gradient(to right, rgb(255,255,255,0.11), rgb(255,255,255,0.11));
+    --btn-dummy-highlight: linear-gradient(to right, transparent, transparent);
     --disabled: 0.38;
     --btn-background-disabled: 0.12;
     --text-field-tint: 0.06;
@@ -7967,8 +7968,8 @@ svg.svg-inline--fa.fa-circle-question.fa-icon {
 .btn-toolbar .btn-group:not(.pagination):not(.show):not(:has(>.show)) > .input-group-prepend + .show .btn-secondary,
 .btn-toolbar .btn-group:not(.pagination):not(.show):not(:has(>.show)):not(:has(>.input-group-prepend+.show)) .btn-secondary.active,
 .btn-toolbar .show > button#more-menu {
-    background-image: linear-gradient(to right, rgba(var( --sec-container)), rgba(var(--sec-container)));
-    background-blend-mode: normal;
+    background-image: linear-gradient(to right, transparent, transparent);
+    background-color: rgba(var( --sec-container));
     color: rgb(var(--on-sec-container));
     box-shadow: var(--elevation-0);
 }
@@ -7985,8 +7986,8 @@ svg.svg-inline--fa.fa-circle-question.fa-icon {
 .btn-toolbar .btn-group:not(.pagination):not(.show):not(:has(>.show)) > .input-group-prepend + .show .btn-secondary:hover,
 .btn-toolbar .btn-group:not(.pagination):not(.show):not(:has(>.show)):not(:has(>.input-group-prepend+.show)) .btn-secondary.active:hover,
 .btn-toolbar .show > button#more-menu:hover {
-    background-image: linear-gradient(to right, rgba(var( --sec-container),var(--btn-hover)), rgba(var(--sec-container),var(--btn-hover)));
-    background-color: rgb(var(--body-color2));
+    background-image: var(--btn-hover-highlight);
+    background-color: rgb(var(--sec-container));
     background-blend-mode: screen;
     color: rgb(var(--on-sec-container));
     box-shadow: var(--elevation-0);
