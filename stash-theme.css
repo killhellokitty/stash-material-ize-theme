@@ -2503,39 +2503,52 @@ button.tag-list-button.btn.btn-secondary:not(:has(>.tag-list-anchor)):disabled {
 
 .top-nav > .navbar-brand > a > button.minimal.brand-link.btn.btn-primary:where(:only-of-type, :hover, :focus, :active, :active:focus, :focus-visible) {
     font-weight: 400;
-    color: rgb(var(--nav-white));
+    color: transparent;
     font-size: 32px;
     font-family: var(--LogoFont);
-    line-height: 40px;
+    /* line-height: 40px; */
     letter-spacing: 0.85px;
-    height: 64px;
+    /* height: 64px; */
     position: relative;
     background-color: transparent;
     background-image: var(--StashLogo);
-    background-position: 24px 19px;
+    background-position: 0% 50%;
     background-repeat: no-repeat;
-    background-size: 36px 36px;
-    padding: 0 24px 0 68px;
+    background-size: 60px 60px;
+    /* padding: 0 24px 0 68px; */
     box-shadow: none !important;
-    text-decoration: underline;
-    text-decoration-color: rgb(var(--nav-color2));
-    text-decoration-thickness: from-font;
-    text-underline-offset: 0.11em;
+    /* text-decoration: underline; */
+    /* text-decoration-color: rgb(var(--nav-color2)); */
+    /* text-decoration-thickness: from-font; */
+    /* text-underline-offset: 0.11em; */
     overflow: visible;
     outline: none;
     will-change: text-decoration, color, animation, transition;
-    top: 0%;
-    margin-left: -19%;
-    left: 0%;
+    /* top: 0%; */
+    /* margin-left: -19%; */
+    /* left: 0%; */
     z-index: 1200;
     opacity: 1;
-    transition: outline 0.2s ease-in-out, color 0.5s ease-in 0.2s, text-decoration 0.4s ease-in-out 0.15s;
+    transition: var(--trans-0);
 }
-@media (max-width: 575.98px) {
+@media (max-width: 768px) {
     .top-nav > .navbar-brand > a > button.minimal.brand-link.btn.btn-primary, 
     .top-nav > .navbar-brand > a > button.minimal.brand-link.btn.btn-primary:is(:hover, :focus, :active, :active:focus, :focus-visible) {
-        left: 34px;
-        margin-left: 12px;
+    font-weight: 400;
+    color: transparent;
+    position: relative;
+    background-color: transparent;
+    background-image: var(--StashLogo);
+    background-position: 0% 50%;
+    background-repeat: no-repeat;
+    background-size: 60px 60px;
+    box-shadow: none !important;
+    overflow: visible;
+    outline: 0;
+    will-change: background-image, transition;
+    z-index: 1200;
+    opacity: 1;
+    transition: var(--trans-0);
     }
 }
 .top-nav > .navbar-brand > a > button.minimal.brand-link.btn.btn-primary:is(:hover, :focus-visible) {
