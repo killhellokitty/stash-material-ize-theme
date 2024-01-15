@@ -5388,9 +5388,16 @@ div[draggable="true"] .recommendation-row:not(.scene-recommendations):not(.studi
     padding: 24px;
 }
 .recommendation-row-head a {
-    background-color: rgb(var(--body-color2));
+        background-color: rgb(var(--body-color2));
     border-radius: 5rem;
     border: 1px solid rgb(var(--outline));
+    max-height: 40px;
+    height: 40px;
+    overflow-wrap: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-wrap: nowrap;
     text-shadow: none;
     text-decoration: none;
     overflow: hidden;
