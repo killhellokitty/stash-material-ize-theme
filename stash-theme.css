@@ -6431,12 +6431,9 @@ nav.top-nav.navbar .navbar-collapse.collapse.show > .navbar-nav:last-child {
 }
 @media (max-width: 576px) {
     nav.top-nav.navbar .navbar-collapse.collapse.show > .navbar-nav:last-child {
-            display: grid;
-            grid-auto-flow: column;
-            justify-items: center;
-            align-items: baseline;
-            justify-content: center;
-            align-content: space-evenly;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     }
 }
 
