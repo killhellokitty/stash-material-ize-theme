@@ -6433,6 +6433,17 @@ nav.nav.nav-tabs {
     }
 }
 
+@media (max-width: 576px) {
+    a.nav-utility button.btn-primary {
+        padding-left: 12px;
+        padding-right: 12px;
+        width: auto;
+        height: 100%;
+        border-radius: 0;
+        background-color: transparent;
+    }
+}
+
 /* Hide second navbar-nav bar from showing*/
 nav.top-nav.navbar .navbar-collapse.collapse:not(.show) > .navbar-nav:last-child,
 nav.top-nav.navbar .navbar-collapse.collapse.show > .navbar-nav:last-child {
