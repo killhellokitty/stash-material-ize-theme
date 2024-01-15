@@ -7942,11 +7942,12 @@ svg.svg-inline--fa.fa-circle-question.fa-icon {
     letter-spacing: 0.0357em;
 }
 /* ||Toolbar-Button Hover */
-.btn-toolbar .btn-group:not(.pagination):not(.show):not(:has(>.show)):not(:has(>.input-group-prepend+.show)) .btn-secondary:not(.active):hover,
-.btn-toolbar:not(:has(.btn-group)) .btn-secondary:not(.form-control):hover,
+.btn-toolbar .btn-group:not(.pagination):not(.show):not(:has(>.show)):not(:has(>.input-group-prepend+.show)) .btn-secondary:not(.btn-sm):not(.active):hover,
+.btn-toolbar:has(:not(.btn-group)) .btn-secondary:not(.form-control):not(.btn-sm):hover,
 .btn-toolbar button#more-menu:not(.show>button):hover {
     background-image: linear-gradient(to right, rgba(var( --on-surface),var(--btn-hover)), rgba(var(--on-surface),var(--btn-hover)));
     background-color: rgb(var(--body-color2));
+    background-blend-mode: screen;
     box-shadow: var(--elevation-0);
 }
     /* ||Form-Control Toolbar-Button Hover */
@@ -7960,11 +7961,29 @@ svg.svg-inline--fa.fa-circle-question.fa-icon {
     box-shadow: var(--elevation-0);
     color: rgb(var(--on-surface));
 }
+/* ||Toolbar-Button Active/Show/Selected */
+.btn-toolbar .btn-group:not(.pagination).show .btn-secondary,
+.btn-toolbar .btn-group:not(.pagination):not(.show) > .show .btn-secondary,
+.btn-toolbar .btn-group:not(.pagination):not(.show):not(:has(>.show)) > .input-group-prepend + .show .btn-secondary,
+.btn-toolbar .btn-group:not(.pagination):not(.show):not(:has(>.show)):not(:has(>.input-group-prepend+.show)) .btn-secondary.active,
+.btn-toolbar .show > button#more-menu {
+    background-image: linear-gradient(to right, rgba(var( --on-sec-container)), rgba(var(--on-sec-container)));
+    background-blend-mode: normal;
+    color: rgb(var(--on-sec-container));
+    box-shadow: var(--elevation-0);
+}
+.btn-toolbar:has(:not(.btn-group)) .btn-secondary:not(.form-control):not(.btn-sm):active {
+    background-image: linear-gradient(to right, rgba(var( --on-sec-container),var(--btn-active)), rgba(var(--on-sec-container),var(--btn-active)));
+    background-color: rgb(var(--body-color2));
+    background-blend-mode: screen;
+    color: rgb(var(--on-sec-container));
+    box-shadow: var(--elevation-0);
+}
 /* ||Toolbar-Button Hover Selected */
 .btn-toolbar .btn-group:not(.pagination).show .btn-secondary:hover,
 .btn-toolbar .btn-group:not(.pagination):not(.show) > .show .btn-secondary:hover,
 .btn-toolbar .btn-group:not(.pagination):not(.show):not(:has(>.show)) > .input-group-prepend + .show .btn-secondary:hover,
-.btn-toolbar .btn-group:not(.pagination):not(.show):not(:has(>.show)):not(:has(>.input-group-prepend+.show)) .btn-secondary.active:hover
+.btn-toolbar .btn-group:not(.pagination):not(.show):not(:has(>.show)):not(:has(>.input-group-prepend+.show)) .btn-secondary.active:hover,
 .btn-toolbar .show > button#more-menu:hover {
     background-image: linear-gradient(to right, rgba(var( --on-sec-container),var(--btn-hover)), rgba(var(--on-sec-container),var(--btn-hover)));
     background-color: rgb(var(--body-color2));
