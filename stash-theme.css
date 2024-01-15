@@ -8049,7 +8049,7 @@ svg.svg-inline--fa.fa-circle-question.fa-icon {
     animation: focus-ring-width-bounce-outer 0.45s cubic-bezier(0.25, 1, 0.5, 1) 0.15s forwards;
     z-index: 5;
 }
-/* ||Toolbar-Button Active/Show/Selected Focus-Visible */
+    /* ||Toolbar-Button Active/Show/Selected Focus-Visible */
 .btn-toolbar .btn-group:not(.pagination).show .btn-secondary:focus-visible,
 .btn-toolbar .btn-group:not(.pagination):not(.show) > .show .btn-secondary:focus-visible,
 .btn-toolbar .btn-group:not(.pagination):not(.show):not(:has(>.show)) > .input-group-prepend + .show .btn-secondary:focus-visible,
@@ -8064,6 +8064,12 @@ svg.svg-inline--fa.fa-circle-question.fa-icon {
     box-shadow: none;
     animation: focus-ring-width-bounce-outer 0.45s cubic-bezier(0.25, 1, 0.5, 1) 0.15s forwards;
     z-index: 5;
+}
+/* ||Toolbar-Button Checked */
+.btn-toolbar > .btn-group > button.btn-danger {
+    border: 1px solid rgb(var(--outline));
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 /* **************************************** */
