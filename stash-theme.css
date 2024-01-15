@@ -300,7 +300,7 @@ h6,
 }
 
 /* Focus is NOT the same as Focus-Visible */
-*:focus:not(:focus-visible), 
+/**:focus:not(:focus-visible), */
 *.focus:not(:focus-visible) {
     outline-color: transparent;
     outline-offset: 0;
