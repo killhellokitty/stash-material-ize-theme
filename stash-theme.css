@@ -7957,6 +7957,7 @@ svg.svg-inline--fa.fa-circle-question.fa-icon {
     background-repeat: no-repeat, repeat;
     background-position: calc( 100% - 16px ) calc(50% + 0.065em), center left;
     background-color: rgb(var(--body-color2));
+    background-blend-mode: screen;
     background-size: 20px;
     border-color: rgb(var(--outline));
     box-shadow: var(--elevation-0);
@@ -7986,12 +7987,25 @@ svg.svg-inline--fa.fa-circle-question.fa-icon {
     color: rgb(var(--on-sec-container));
     box-shadow: var(--elevation-0);
 }
+    /* ||Form-Control Toolbar-Button Hover Selected */
+.btn-toolbar select.btn-secondary.form-control:where(:active:hover, :focus:hover, :active:focus:hover) {
+    background-image: url("data:image/svg+xml;utf8,<svg fill='%23e2e2e5' width='16' height='16' viewBox='0 0 16 16' class='bi bi-caret-down-fill' xmlns='http://www.w3.org/2000/svg'><path d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/></svg>"), var(--btn-hover-highlight);
+    background-repeat: no-repeat, repeat;
+    background-position: calc( 100% - 16px ) calc(50% + 0.065em), center left;
+    background-color: rgba(var( --sec-container));
+    background-blend-mode: screen;
+    background-size: 20px;
+    border-color: rgb(var(--outline));
+    color: rgb(var(--on-sec-container));
+    box-shadow: var(--elevation-0) !important;
+}
     /* ||Form-Control Toolbar-Button Focus */
 .btn-toolbar select.btn-secondary.form-control:where(:active, :focus, :active:focus) {
     background-image: url("data:image/svg+xml;utf8,<svg fill='%23e2e2e5' width='16' height='16' viewBox='0 0 16 16' class='bi bi-caret-down-fill' xmlns='http://www.w3.org/2000/svg'><path d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/></svg>"), var(--btn-dummy-highlight);
     background-repeat: no-repeat, repeat;
     background-position: calc( 100% - 16px ) calc(50% + 0.065em), center left;
     background-color: rgba(var( --sec-container));
+    background-blend-mode: normal;
     background-size: 20px;
     border-color: rgb(var(--outline));
     color: rgb(var(--on-sec-container));
@@ -8011,7 +8025,7 @@ svg.svg-inline--fa.fa-circle-question.fa-icon {
 }
     /* ||Form-Control Toolbar-Button Hover Selected */
 .btn-toolbar select.btn-secondary.form-control:where(:active:hover, :focus:hover, :active:focus:hover) {
-    background-image: url("data:image/svg+xml;utf8,<svg fill='%23e2e2e5' width='16' height='16' viewBox='0 0 16 16' class='bi bi-caret-down-fill' xmlns='http://www.w3.org/2000/svg'><path d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/></svg>"), var(--btn-dummy-highlight);
+    background-image: url("data:image/svg+xml;utf8,<svg fill='%23e2e2e5' width='16' height='16' viewBox='0 0 16 16' class='bi bi-caret-down-fill' xmlns='http://www.w3.org/2000/svg'><path d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/></svg>"), var(--btn-hover-highlight);
     background-repeat: no-repeat, repeat;
     background-position: calc( 100% - 16px ) calc(50% + 0.065em), center left;
     background-color: rgba(var( --sec-container));
