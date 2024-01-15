@@ -8039,7 +8039,8 @@ svg.svg-inline--fa.fa-circle-question.fa-icon {
 .btn-toolbar .btn-group:not(.pagination):not(.show):not(:has(>.show)):not(:has(>.input-group-prepend+.show)) .btn-secondary:not(.btn-sm):not(.active):focus-visible,
 .btn-toolbar:has(:not(.btn-group)) .btn-secondary:not(.form-control):not(.btn-sm):focus-visible,
 .btn-toolbar button#more-menu:not(.show>button):focus-visible,
-.btn-toolbar select.btn-secondary.form-control:focus-visible {
+.btn-toolbar select.btn-secondary.form-control:focus-visible,
+.btn-toolbar:has(:not(.btn-group)) .btn-secondary:not(.form-control):not(.btn-sm):focus-visible {
     outline-color: rgb(var(--focus-ring));
     outline-offset: -0.10rem;
     outline-style: solid;
@@ -8048,11 +8049,14 @@ svg.svg-inline--fa.fa-circle-question.fa-icon {
     animation: focus-ring-width-bounce-outer 0.45s cubic-bezier(0.25, 1, 0.5, 1) 0.15s forwards;
     z-index: 5;
 }
+/* ||Toolbar-Button Active/Show/Selected Focus-Visible */
 .btn-toolbar .btn-group:not(.pagination).show .btn-secondary:focus-visible,
 .btn-toolbar .btn-group:not(.pagination):not(.show) > .show .btn-secondary:focus-visible,
 .btn-toolbar .btn-group:not(.pagination):not(.show):not(:has(>.show)) > .input-group-prepend + .show .btn-secondary:focus-visible,
 .btn-toolbar .btn-group:not(.pagination):not(.show):not(:has(>.show)):not(:has(>.input-group-prepend+.show)) .btn-secondary.active:focus-visible,
-.btn-toolbar .show > button#more-menu:focus-visible {
+.btn-toolbar .show > button#more-menu:focus-visible,
+.btn-toolbar select.btn-secondary.form-control:is(:active:focus-visible, :active:hover:focus-visible),
+.btn-toolbar:has(:not(.btn-group)) .btn-secondary:not(.form-control):not(.btn-sm):active:focus-visible {
     outline-color: rgb(var(--focus-ring-active));
     outline-offset: -0.10rem;
     outline-style: solid;
@@ -8061,6 +8065,7 @@ svg.svg-inline--fa.fa-circle-question.fa-icon {
     animation: focus-ring-width-bounce-outer 0.45s cubic-bezier(0.25, 1, 0.5, 1) 0.15s forwards;
     z-index: 5;
 }
+
 /* **************************************** */
 .btn-secondary:not(.btn-toolbar .btn-secondary),
 /*.dropdown-toggle.btn.btn-secondary:not(.btn-toolbar button.btn-secondary),*/
@@ -8396,16 +8401,7 @@ button#scene-scrape:not(:disabled):not(.disabled).active,
     box-shadow: none;
     border-color: rgb(var(--on-surface-variant));
 }*/
-.btn-toolbar select.btn-secondary.form-control:active:focus-visible:not(:focus) {
-    background-color: rgb(var(--sec-cntnr-select-active));
-    box-shadow: none;
-    border-color: rgb(var(--on-surface-variant));
-    box-shadow: none;
-    outline-color: rgb(var(--focus-ring));
-    outline-width: 0.25rem;
-    outline-style: solid;
-    outline-offset: -1px;
-}
+
 /*div.mb-2.btn-group:not(.mr-2):not(.mx-2):not(.ml-2) > button.btn.btn-secondary:not(.form-control):focus-visible,
 .btn-toolbar .show.dropdown .dropdown-toggle.btn.btn-secondary:focus-visible {
     background-image: none;
