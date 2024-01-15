@@ -8065,7 +8065,7 @@ svg.svg-inline--fa.fa-circle-question.fa-icon {
     animation: focus-ring-width-bounce-outer 0.45s cubic-bezier(0.25, 1, 0.5, 1) 0.15s forwards;
     z-index: 5;
 }
-/* ||Toolbar-Button Checked */
+/* ||Toolbar-Button Danger-Button */
 .btn-toolbar > .btn-group > button.btn-danger {
     border: 1px solid rgb(var(--outline));
     padding-left: 16px;
