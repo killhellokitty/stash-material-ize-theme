@@ -2582,7 +2582,7 @@ button.tag-list-button.btn.btn-secondary:not(:has(>.tag-list-anchor)):disabled {
         justify-content: flex-start !important;
     }
 }*/
-@media (max-width: var(--breakpoint-sm)) {
+@media (max-width: 576px) {
     .top-nav {
          bottom: unset;
          top: auto;
@@ -2591,24 +2591,24 @@ button.tag-list-button.btn.btn-secondary:not(:has(>.tag-list-anchor)):disabled {
 
 
 /* part of fix for collapsing navbar */
-@media (min-width: var(--breakpoint-xl)) {
+@media (min-width: 576px) {
     .navbar-expand-xl .navbar-collapse {
         display: initial;
         flex-basis: 100%;
     }
 }
-@media (min-width: var(--breakpoint-xl)) {
+@media (min-width: 576px) {
     .navbar-expand-xl {
         flex-flow: row wrap;
         justify-content: flex-start;
     }
 }
-@media (min-width: var(--breakpoint-xl)) {
+@media (min-width: 576px) {
     .navbar-expand-xl .navbar-toggler {
         display: revert;
     }
 }
-@media (min-width: var(--breakpoint-md)) {
+@media (min-width: 576px) {
     .navbar-expand-xl .navbar-collapse.collapse:not(.show) {
         display: flex;
         overflow-y: auto;
@@ -2627,7 +2627,7 @@ button.tag-list-button.btn.btn-secondary:not(:has(>.tag-list-anchor)):disabled {
         transition: all 0s;
     }
 }
-@media (max-width: 575.98px) {
+@media (max-width: 576px) {
     .navbar-expand-xl .navbar-collapse.collapse:not(.show) {
         overflow-x: auto;
         max-height: 0;
