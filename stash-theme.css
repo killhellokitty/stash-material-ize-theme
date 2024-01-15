@@ -6378,6 +6378,15 @@ nav.nav.nav-tabs {
     display: flex;
 }
 @media (max-width: 576px) {
+    .navbar-dark .navbar-nav .nav-link {
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: auto;
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+@media (max-width: 576px) {
     .navbar-dark .navbar-nav:not(:nth-of-type(2)):nth-of-type(1) .nav-link:not(*.donate) {
         flex-grow: 0;
         flex-shrink: 1;
@@ -6431,6 +6440,7 @@ nav.top-nav.navbar .navbar-collapse.collapse.show > .navbar-nav:last-child {
 }
 @media (max-width: 576px) {
     nav.top-nav.navbar .navbar-collapse.collapse.show > .navbar-nav:last-child {
+        display: flex;
         align-items: center;
         justify-content: flex-start;
         flex-direction: row;
@@ -6738,11 +6748,15 @@ nav.top-nav.navbar .navbar-collapse.collapse.show>.navbar-nav {
         padding: 0 2px 0 2px;
         top: 0;
         left: 0;
-        right: 0;
-        bottom: 0;
-        justify-self: flex-start;
-        align-content: center;
+        /* right: 0; */
+        /* bottom: 0; */
+        /* justify-self: flex-start; */
         transition: transform 0s linear 0s, margin 0s linear 0s, bottom 0s linear 0s;
+        justify-content: flex-start;
+        align-items: stretch;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: flex-start;
     }
 }
 /* Collapsable Navbar Margin so buttons dont overlap */
