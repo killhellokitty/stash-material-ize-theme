@@ -5470,11 +5470,6 @@ div[draggable="true"] .recommendation-row:not(.scene-recommendations):not(.studi
     outline-width: 0.19rem;
     outline-offset: -0.1rem;
     border-color: transparent;
-    text-shadow: none;
-    /*background-color: rgba(var(--pry-color),0.5);
-    color: rgb(var(--on-pry));*/
-    background-color: rgba(var( --pry-container));
-    color: rgb(var(--on-tertiary-container));
     box-shadow: none;
     z-index: 2;
 }
@@ -5500,12 +5495,10 @@ div[draggable="true"] .recommendation-row:not(.scene-recommendations):not(.studi
     padding-right: 24px;
 }
 .pagination button.btn.btn-secondary:not(:disabled):not(.disabled).active:focus-visible {
-    outline-color: rgb(var(--focus-ring));
-    outline-offset: -1px;
+    outline-color: rgb(var(--focus-ring-active));
+    outline-offset: -0.10rem;
     outline-style: solid;
-    outline-width: 0.25rem;
-    color: rgba(var( --pry-container));
-    background-color: rgb(var(--on-tertiary-container));
+    outline-width: 0.19rem;
     box-shadow: none;
     z-index: 2;
 }
