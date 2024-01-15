@@ -2720,7 +2720,7 @@ button:not([title=Help]).btn-primary:not(:disabled):not(.disabled):focus-visible
     outline-offset: -0.1rem;
 }
 button:not([title=Help]).btn-primary:not(:where(:disabled, .disabled)):is(:focus, .active, .active:focus, :active, :active:focus),
-.login .btn.btn-primary:where(.active, :active) {
+.login .btn.btn-primary:where(:focus, .active, .active:focus, :active, :active:focus) {
     color: rgb(var(--on-tertiary));
     background-image: var(--btn-active-highlight);
     background-color: rgba(var(--tertiary));
