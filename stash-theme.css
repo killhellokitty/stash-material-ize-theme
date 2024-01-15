@@ -2576,20 +2576,28 @@ button.tag-list-button.btn.btn-secondary:not(:has(>.tag-list-anchor)):disabled {
         justify-content: flex-start !important;
     }
 }*/
+@media (max-width: var(--breakpoint-sm)) {
+    .top-nav {
+         bottom: unset;
+         top: auto;
+    }
+}
+
+
 /* part of fix for collapsing navbar */
-@media (min-width: 1200px) {
+@media (min-width: var(--breakpoint-xl)) {
     .navbar-expand-xl .navbar-collapse {
         display: initial;
         flex-basis: 100%;
     }
 }
-@media (min-width: 1200px) {
+@media (min-width: var(--breakpoint-xl)) {
     .navbar-expand-xl {
         flex-flow: row wrap;
         justify-content: flex-start;
     }
 }
-@media (min-width: 1200px) {
+@media (min-width: var(--breakpoint-xl)) {
     .navbar-expand-xl .navbar-toggler {
         display: revert;
     }
@@ -4970,10 +4978,6 @@ textarea.text-input.code.form-control {
     }
      .stats {
          margin-left: 0px;
-    }
-     .top-nav {
-         bottom: 0;
-         top: auto;
     }
      div[data-rb-event-key="/images"] {
          display: none;
