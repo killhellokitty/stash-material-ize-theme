@@ -7968,8 +7968,9 @@ svg.svg-inline--fa.fa-circle-question.fa-icon {
 .btn-toolbar .btn-group:not(.pagination):not(.show):not(:has(>.show)) > .input-group-prepend + .show .btn-secondary,
 .btn-toolbar .btn-group:not(.pagination):not(.show):not(:has(>.show)):not(:has(>.input-group-prepend+.show)) .btn-secondary.active,
 .btn-toolbar .show > button#more-menu {
-    background-image: linear-gradient(to right, transparent, transparent);
+    background-image: var(--btn-dummy-highlight);
     background-color: rgba(var( --sec-container));
+    background-blend-mode: normal;
     color: rgb(var(--on-sec-container));
     box-shadow: var(--elevation-0);
 }
