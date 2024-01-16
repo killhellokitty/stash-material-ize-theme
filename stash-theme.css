@@ -2546,7 +2546,7 @@ button.tag-list-button.btn.btn-secondary:not(:has(>.tag-list-anchor)):disabled {
     overflow: visible;
     outline: 0;
     will-change: background-image, transition;
-    z-index: 1200;
+    z-index: 1;
     opacity: 1;
     transition: var(--trans-0);
     }
