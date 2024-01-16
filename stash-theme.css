@@ -6923,11 +6923,11 @@ button[title=Statistics].minimal.btn.btn-primary {
         margin-left: 0;
     }
 }
-@media (max-width: 576px) {
+/*@media (max-width: 576px) {
     .navbar-nav:last-child button.minimal.donate.btn.btn-primary {
         display: none;
     }
-}
+}*/
 
 .top-nav .navbar-buttons .btn.donate svg.svg-inline--fa.fa-heart.fa-icon {
     color: rgb(var(--red));
