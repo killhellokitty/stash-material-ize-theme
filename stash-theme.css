@@ -9065,7 +9065,7 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
 #scene-edit-details > form > .form-container + .form-container .form-group.row:nth-of-type(3) .string-list-input > .form-group > .input-group > input[placeholder="URL"].text-input.form-control + .input-group-append > button.scrape-url-button.text-input.btn.btn-secondary {
     padding: unset;
     top: 0%;
-    left: 0%;
+    left: -15%;
     width: 40px;
     height: 40px;
     font-size: 24px;
