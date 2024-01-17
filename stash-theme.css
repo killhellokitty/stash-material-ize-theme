@@ -2576,7 +2576,6 @@ button.tag-list-button.btn.btn-secondary:not(:has(>.tag-list-anchor)):disabled {
     text-align: center;
     position: relative;
     margin-right: auto;
-    margin-left: auto;
     top: 0px;
     z-index: 1199;
 }
