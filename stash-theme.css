@@ -7005,6 +7005,7 @@ button.clearable-text-field-clear.btn.btn-secondary>svg.svg-inline--fa.fa-xmark.
 button.query-text-field-clear.btn.btn-secondary,
 button.clearable-text-field-clear.btn.btn-secondary {
     color: rgb(var(--on-surface-variant));
+    background-image: none;
     background-color: transparent;
     border-style: none;
     border-radius: 5rem;
@@ -7020,9 +7021,10 @@ button.clearable-text-field-clear.btn.btn-secondary {
     margin-top: auto;
     margin-bottom: auto;
     outline: none;
+    opacity: 1;
     transition: background-color 0.55s ease;
     -webkit-transition: background-color 0.55s ease;
-    -moz-tranzition: background-color 0.55s ease;
+    -moz-transition: background-color 0.55s ease;
 }
 button.clearable-text-field-clear.btn.btn-secondary {
     height: 40px;
