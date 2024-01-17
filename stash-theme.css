@@ -2515,13 +2515,13 @@ button.tag-list-button.btn.btn-secondary:not(:has(>.tag-list-anchor)):disabled {
     font-family: var(--LogoFont);
     /* line-height: 40px; */
     letter-spacing: 0.85px;
-    /* height: 64px; */
+    text-indent: 22px;
     position: relative;
     background-color: transparent;
     background-image: var(--StashLogo);
     background-position: 0% 50%;
     background-repeat: no-repeat;
-    background-size: 60px 60px;
+    background-size: 62px 62px;
     /* padding: 0 24px 0 68px; */
     box-shadow: none !important;
     /* text-decoration: underline; */
@@ -2573,11 +2573,10 @@ button.tag-list-button.btn.btn-secondary:not(:has(>.tag-list-anchor)):disabled {
 .top-nav:not(:has(>.show)) > .navbar-brand {
     color: transparent;
     border-style: none;
-    text-align: center;
     position: relative;
     margin-right: auto;
     top: 0px;
-    z-index: 1199;
+    z-index: 19;
 }
 .top-nav:has(.navbar-buttons a[href*="/new"]):not(:has(>.show)) > .navbar-brand {
     top: unset;
