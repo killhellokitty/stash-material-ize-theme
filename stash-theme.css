@@ -9077,7 +9077,8 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
     align-items: center;
     justify-content: center;
     position: relative;
-    margin-left: 0%;
+    margin-left: -15%;
+    margin-right: 15%;
     width: 40px;
     height: 40px;
     font-size: 24px;
