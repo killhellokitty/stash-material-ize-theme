@@ -2561,8 +2561,11 @@ button.tag-list-button.btn.btn-secondary:not(:has(>.tag-list-anchor)):disabled {
 .top-nav > .navbar-brand > a > button.minimal.brand-link.btn.btn-primary:is(:hover, :focus-visible) {
     color: rgb(var(--btn-min-primary));
 }
-.top-nav > .navbar-brand > a > button.minimal.brand-link.btn.btn-primary:is(:focus-visible) {
-    text-decoration-color: rgb(var(--btn-min-primary)) !important;
+.top-nav > .navbar-brand > a > button.minimal.brand-link.btn.btn-primary:focus-visible {
+    text-decoration-color: rgb(var(--btn-min-primary));
+    text-decoration: underline;
+    text-decoration-thickness: 0.07em;
+    text-underline-offset: 0.15em;
 }
 .top-nav > .navbar-brand > a > button.minimal.brand-link.btn.btn-primary:is(:active, :focus, :active:focus) {
     color: rgb(var(--pry-color));
