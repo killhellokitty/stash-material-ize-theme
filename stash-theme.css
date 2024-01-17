@@ -1833,6 +1833,13 @@ li#vjs-menu-text:first-of-type {
     flex-wrap: wrap;
     transition: color 1.5s ease-in, filter 2s ease-in-out;
 }
+.performer-card.grid-card a > .card-section-title {
+    min-height: 2rem;
+    min-height: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
 .grid-card a > .card-section-title:active,
 .grid-card a > .card-section-title:active:focus,
 .grid-card a > .card-section-title:active:hover,
@@ -2966,6 +2973,10 @@ div#crop-btn-container {
     color: rgb(var(--mars));
     font-size: 24px;
 }
+svg.gender-icon {
+    display: flex;
+    margin-bottom: auto;
+}
 
 .text-danger {
     color: rgb(var(--error))!important;
@@ -3851,151 +3862,19 @@ li.search-result.selected-result.active {
     }
 }
 
-/* --- The name of the Performer. Different font, less space to the left & to the top, Text-Shadow --- */
-.text-truncate, 
-.card.performer-card .TruncatedText {
-    text-shadow: none;
+img.performer-card-image {
+    scale: 100%;
+}
+.performer-card-image, 
+.performer-card, .card-image {  
+    min-width: 180px;
+    width: 15.26vw;
+    max-width: 236px;
+    max-height: 746px;
 }
 
-.performer-card .card-popovers .movie-count,
-.performer-card .card-popovers .image-count,
-.performer-card .card-popovers .gallery-count {
-    z-index:300;
-    position:absolute;
-    top:-270%;
-    opacity:0.0;
-}
-
-/* --- Moves the Flag icon from the right side of the card to the left and makes the Flag image a little bit bigger --- */
-.performer-card .flag-icon {
-    height: 2rem;
-    left: 0.6rem;
-    bottom: 0.10rem;
-    width: 28px; 
-}
-
-/* --- Age and # of Scenes move from the left side to the right of the card --- */
-.performer-card .text-muted {
-    text-align:right;
-    margin-top:-2px;
-    margin-bottom:1px;
-    width:44%;
-    margin-left:56%
-}
-
-/* --- Minimum height for the section in case Age and Nationality is missing and elements would overlap --- */
-.performer-card .card-section {
-    min-height: 130px;
-    height: auto;
-}
-
-/*.card.performer-card {
-    padding: 0;
-    margin-bottom: -6px;
-}*/
-
-/* --- Text Shadow for the "Stars in x scenes" link --- */
-div.card.performer-card div.text-muted a {
-    text-shadow: 1px 2px 2px #333
-}
-/* --- Changes regarding the Favorite <3 --- */
-.performer-card .favorite {
-    color: #FF898A;
-    -webkit-filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, .95));
-    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, .95));
-    right: 3px;
-    top: 5px;
-}
-
-@media (max-width: 1700px) {
-div.card.performer-card .text-muted {
-    text-align:right;
-    margin-top:-2px;
-    margin-bottom:1px;
-    margin-right:-33px; 
-    height:20px; 
-    max-height:20px; 
-    overflow: hidden;
-    }
-}
-
-.performer-card .btn {
-    padding: .375rem .013rem;
-}
-.performer-card .btn {
-    padding: .34rem .25rem;
-}
-.performer-card .fa-icon {
-    margin: 0 2px;
-}
-.performer-card .card-popovers .fa-icon {
-    margin-right: 4px;
-}
-.performer-card .svg-inline--fa.fa-w-18, .performer-card .svg-inline--fa.fa-w-16 {
-    height: 0.88em;
-}
-.performer-card .favorite .svg-inline--fa.fa-w-16 {
-    height:1.5rem;
-}
-
-.performer-card .card-popovers .btn-primary {
-    margin: 0 0 0 6px;
-}
-
-.performer-card-image, .performer-card, .card-image {  
-    min-width: 160px; 
-    width: calc(100px + 11.2vw / 1.92);
-    max-width: 230px;
-} 
-
-.performer-card-image, .justify-content-center .card-image { 
-    min-height:240px; 
-    height: calc((112px + 19vw / 3.6) * 1.5); 
-    max-height: 345px;
-} 
-.performer-card-image, .justify-content-center .card-image { 
-    min-height:240px; 
-    height: calc((100px + 11.2vw / 1.92) * 1.5); 
-    max-height: 345px;
-} 
-
-@media (max-width: 575px), (min-width: 1200px) {
-.scene-performers .performer-card-image { 
-    height: auto; 
-}
-.scene-performers .performer-card { 
-    width: 11rem; 
-    }
-}
-
-@media (max-width: 576px) {
-    .slick-list .movie-card.card, .slick-list .performer-card.card {
-        width: 10rem;
-    }
-}
-
-#performer-page .performer-image-container .performer {
-    background-color: rgba(0, 0, 0, .48);
-    box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12);
-    border-radius: 12px !important;
-}
-#performer-page .performer-image-container .performer:hover {
-    background-color: rgba(0, 0, 0, .48);
-    box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2), 0px 8px 10px 1px rgba(0,0,0,0.14), 0px 3px 14px 2px rgba(0,0,0,0.12);
-}
-
-.performer-image-container {
-    padding-bottom: 11px;
-}
 .image-section { 
     display: cover;
-}
-
-.performer-card .card-popovers .btn-primary {
-    margin: 0 0px 0 6px;
-}
-#performer-page .performer-head .name-icons {
-    margin-left: 22px;
 }
 
 .gallery-card.card {
@@ -4017,6 +3896,7 @@ div.card.performer-card .text-muted {
     justify-content: space-between;
     align-items: flex-start;
 }
+.image-card .card-section,
 .gallery-card .card-section {
     min-height: 60px;
     height: auto;
@@ -4025,11 +3905,12 @@ div.card.performer-card .text-muted {
     min-height: 170px;
     height: auto;
 }
-.image-card .card-section {
-    min-height: 60px;
-    height: auto;
+.performer-card .card-section {
+    min-height: 116px;
+    display: block;
+    padding-top: 12px;
+    padding-bottom: 0.01px;
 }
-
 .card-section span {
     padding-bottom: 4px;
     font-size:11px;
@@ -4080,9 +3961,7 @@ div.card.performer-card .text-muted {
     letter-spacing: 0.25px;
     color: rgb(var(--description-color));
 }
-.performer-card a {
-    display: flex;
-}
+
 .performer-card__age {
     color: rgb(var(--date-color));
 }
@@ -4099,12 +3978,6 @@ div.card.performer-card .text-muted {
 h5.card-section-title, .scene-tabs .scene-header {  
     font-family: var(--HeaderFont);
     text-shadow: none;
-}
-/* --- Makes the Performer Name smaller when the screen is too small --- */
-@media (max-width: 1200px) { 
-    .card.performer-card .TruncatedText { 
-        font-size: 104%; 
-    } 
 }
 
 .scene-tabs .scene-header { 
@@ -4193,19 +4066,24 @@ h5.card-section-title, .scene-tabs .scene-header {
 }
 
 .card.performer-card {
-    padding: 0;
+    padding: 0.01px;
+    max-height: 800px;
 }
 
 .scene-popovers, 
 .card-popovers { 
-    max-height: 40px;
-    height: 40px;
-    margin-bottom: 16px;
-    margin-right: 16px;
-    margin-left: 16px;
-    padding: 0;
-    flex-basis: content;
-    justify-content: flex-start;
+    max-height: 56px;
+    height: 56px;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 16px;
+    padding-top: 4px;
+    padding-right: 16px;
+    padding-left: 16px;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    align-content: flex-end;
 }
 .scene-card__details, 
 .gallery-card__details {
@@ -4611,6 +4489,7 @@ div.tagger-container .btn-link {
 }
 .modal.fade .modal-dialog {
     transform: translateY(1.5%);
+    margin-top: 0;
 }
 .modal.show div#settings-dialog.modal-dialog {
     transition: all 0.8s ease-in;
@@ -4643,7 +4522,7 @@ div.tagger-container .btn-link {
     font-weight: 400;
 }
 .modal-header {
-    border-bottom: 1px solid #14181c;
+    border: 0;
     border-radius: 28px 28px 0 0;
     color: #cae9e3;
     font-weight: 200;
@@ -5690,7 +5569,7 @@ button:not([title=Statistics], [title=Settings]).minimal:not(.nav-utility, .bran
     transition: font-size 0.2 ease-in-out;
 }
 .performer-card button.btn.favorite-button.not-favorite {
-    color: rgb(var(--on-split-comp-container),0.5) !important;
+    color: rgb(var(--on-split-comp-container),0.7) !important;
     filter: drop-shadow(0 0 0.2rem rgba(0,0,0,.65));
 }
 .performer-card button.btn.favorite-button.favorite {
@@ -5821,7 +5700,7 @@ button:not([title=Statistics], [title=Settings]).minimal:not(.nav-utility, .bran
 }
 
 :where(.o-count, .o-counter) > button.minimal.btn-primary > span.fa-icon > span > svg {
-    color: lch(67.951% 33.172 253.332) !important;
+    color: lch(63.951% 35.172 253.332) !important;
 }
 
 a.minimal:not(.logout-button), 
@@ -6200,11 +6079,11 @@ nav.nav.nav-tabs {
 .o-counter.btn-group > button[title="O-Counter"].minimal.btn.btn-secondary > span > svg,
 .nav-item > button[title="Organized"].minimal.organized-button.not-organized.btn.btn-secondary > svg,
 .nav-item > button[title="Organized"].minimal.organized-button.organized.btn.btn-secondary > svg {
-    font-size: 18px;
+    font-size: 20px;
 }
 .o-counter.btn-group > button[title="O-Counter"].minimal.btn.btn-secondary {
     min-width: 40px;
-    padding-left: 12px;
+    padding-left: 16px;
     padding-right: 16px !important;
 }
 .o-counter.btn-group > button[title="O-Counter"].minimal.btn.btn-secondary > span.ml-2 {
@@ -7985,6 +7864,10 @@ svg.svg-inline--fa.fa-circle-question.fa-icon {
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
 }
+.btn-toolbar:has(:not(.btn-group))  select.btn-secondary.form-control {
+    border-bottom-right-radius: 5rem;
+    border-top-right-radius: 5rem;
+}
     /* ||Descending and Ascending Toolbar-Button */
 .btn-toolbar .dropdown.btn-group > .input-group-prepend + button.btn.btn-secondary {
     font-size: 24px;
@@ -8125,7 +8008,8 @@ svg.svg-inline--fa.fa-circle-question.fa-icon {
     z-index: 5;
 }
 /* ||Toolbar-Button Danger-Button */
-.btn-toolbar > .btn-group > button.btn-danger {
+.btn-toolbar > .btn-group > button.btn-danger,
+.btn-toolbar > .btn-group > button.btn-danger:not(.disabled):not(:disabled):where(:active, :focus, :active:focus) {
     border: 1px solid rgb(var(--outline));
     padding-left: 16px;
     padding-right: 16px;
@@ -8289,7 +8173,6 @@ svg.svg-inline--fa.fa-magnifying-glass.fa-icon {
 }*/
 
 a#new-performer-filter {
-    margin-top: 5px;
     padding-left: 24px;
     padding-right: 24px;
 }
@@ -8302,7 +8185,7 @@ a#new-performer-filter {
 .o-counter.btn-group > button[title="O-Counter"].minimal.btn.btn-secondary:has(+ .dropdown > .dropdown-toggle.btn-secondary) {
     background-color: rgb(var(--pry-color));
     color: rgb(var(--on-pry));
-    padding-right: 6px !important;
+    padding-right: 8px !important;
     box-shadow: var(--elevation-0);
     transition: background-image 0.55s ease, color 0.2s ease-in-out, outline 0.4s ease-in-out 0.2s;
 }
@@ -8321,26 +8204,29 @@ a#new-performer-filter {
 /* O-Counter sibling Dropdown Toggle */
 .o-counter.btn-group > button[title="O-Counter"].minimal.btn.btn-secondary + .dropdown > .dropdown-toggle.btn-secondary,
 .o-counter.btn-group > .dropdown > .dropdown-toggle.btn-secondary {
-    background-color: rgb(var(--pry-color));
     border: 0;
     color: rgb(var(--on-pry));
-    padding: 0 16px 0 20px;
+    padding: 0 16px 0 28px;
     margin-right: 6px;
     box-shadow: var(--elevation-0);
-    background-image: url("data:image/svg+xml;utf8,<svg fill='%2300344d' height='30' viewBox='0 0 24 22' width='28' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
-    background-repeat: no-repeat;
-    background-position: calc( 100% - 8px ) calc(50% - 2px);
-    transition: background-image 0.55s ease, color 0.2s ease-in-out, outline 0.4s ease-in-out 0.2s;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='%2300344d' width='16' height='16' viewBox='0 0 16 16' class='bi bi-caret-down-fill' xmlns='http://www.w3.org/2000/svg'><path d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/></svg>"), var(--btn-dummy-highlight);
+    background-color: rgb(var(--pry-color));
+    background-blend-mode: normal;
+    background-repeat: no-repeat, repeat;
+    background-position: calc( 100% - 16px ) calc(50% + 0.065em), center left;
+    background-size: 20px;
+    transition: var(--trans-0);
 }
 .o-counter.btn-group > button[title="O-Counter"].minimal.btn.btn-secondary + .dropdown > .dropdown-toggle.btn-secondary:hover,
 .o-counter.btn-group > .dropdown > .dropdown-toggle.btn-secondary:hover {
-    background-image: url("data:image/svg+xml;utf8,<svg fill='%2300344d' height='30' viewBox='0 0 24 22' width='28' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>"), var(--btn-hover-highlight);
+    background-image: url("data:image/svg+xml;utf8,<svg fill='%2300344d' width='16' height='16' viewBox='0 0 16 16' class='bi bi-caret-down-fill' xmlns='http://www.w3.org/2000/svg'><path d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/></svg>"), var(--btn-hover-highlight);
     background-color: rgb(var(--pry-color));
-    background-blend-mode: overlay;
+    background-blend-mode: normal;
     box-shadow: var(--elevation-1);
-    background-repeat: no-repeat repeat;
-    background-position: calc( 100% - 8px ) calc(50% - 2px), center center;
-    padding: 0 16px 0 20px;
+    background-repeat: no-repeat, repeat;
+    background-position: calc( 100% - 16px ) calc(50% + 0.065em), center left;
+    background-size: 20px;
+    padding: 0 16px 0 28px;
     border: 0;
 }
 .o-counter.btn-group > button[title="O-Counter"].minimal.btn.btn-secondary:has(+ .dropdown > .dropdown-toggle.btn-secondary):focus-visible,
@@ -8353,13 +8239,14 @@ a#new-performer-filter {
 }
 .o-counter.btn-group > button[title="O-Counter"].minimal.btn.btn-secondary + .dropdown > .dropdown-toggle.btn-secondary:is(:focus:not(:focus-visible), :active),
 .o-counter.btn-group > .dropdown > .dropdown-toggle.btn-secondary:where(:focus:not(:focus-visible), :active) {
-    background-image: url("data:image/svg+xml;utf8,<svg fill='%2300344d' height='30' viewBox='0 0 24 22' width='28' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>"), var(--btn-active-highlight);
+    background-image: url("data:image/svg+xml;utf8,<svg fill='%2300344d' width='16' height='16' viewBox='0 0 16 16' class='bi bi-caret-down-fill' xmlns='http://www.w3.org/2000/svg'><path d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/></svg>"), var(--btn-active-highlight);
     background-color: rgb(var(--pry-color));
-    background-blend-mode: overlay;
+    background-blend-mode: normal;
     box-shadow: var(--elevation-0);
-    background-repeat: no-repeat repeat;
-    background-position: calc( 100% - 8px ) calc(50% - 2px), center center;
-    padding: 0 16px 0 20px;
+    background-repeat: no-repeat, repeat;
+    background-position: calc( 100% - 16px ) calc(50% + 0.065em), center left;
+    background-size: 20px;
+    padding: 0 16px 0 28px;
     border: 0;
 }
 /* *** */
@@ -12008,8 +11895,8 @@ button:is(.favorite, .not-favorite).minimal.favorite-button.btn.btn-primary:hove
 
 /* Has StashId - Perfomer Card */
 .peformer-stashid-icon {
-    left: 0.5rem;
-    top: 245px;
+    margin-top: 204.5%;
+    margin-right: 78%;
 }
 
 /* The scene card Popover for Performer-tag-container to align left to right in a row*/
@@ -12089,7 +11976,7 @@ span.stash-id-pill {
     text-decoration-thickness: 0.12em;
 }
 /* --- */
-
+.toast-container { z-index: 59000 }
 .toast-container .success{background-color: rgb(var(--green))}
 .toast-container .danger{background-color: rgb(var(--error))}
 .toast-container .warning{background-color: rgb(var(--warning))}
