@@ -9886,13 +9886,10 @@ form#studio-edit {
     left: -88px;
 }
 .scene-tabs .duration-input>.input-group>.input-group-append>.btn-group-vertical>button.duration-button.btn.btn-secondary {
-    flex: 1 1 28px;
-    max-height: 26px;
+    flex: 0 0 28px;
+    max-height: 27px;
     border-radius: 5rem;
-    left: -88px;
-    top: 4px;
     border: 0;
-    border-style: none;
 }
 .scene-tabs .duration-input>.input-group:not(.has-validation)>.duration-control.form-control:not(:last-child) {
     border-top-right-radius: 4px;
