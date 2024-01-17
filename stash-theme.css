@@ -7029,19 +7029,19 @@ button.clearable-text-field-clear.btn.btn-secondary {
     height: 40px;
     top: 11px;
 }
-.btn-toolbar button.query-text-field-clear.btn.btn-secondary:hover,
+.btn-toolbar input.query-text-field.bg-secondary.text-white.border-secondary.form-control + button.query-text-field-clear.btn.btn-secondary:hover, 
 button.clearable-text-field-clear.btn.btn-secondary:hover {
     background-color: rgb(var(--on-surface-variant),var(--btn-hover));
     box-shadow: var(--elevation-0);
 }
 /* Text-Input Clear button ACTIVE */
-.btn-toolbar button.query-text-field-clear.btn.btn-secondary:not(:disabled):not(.disabled):is(:active, :focus, :focus:active),
+.btn-toolbar input.query-text-field.bg-secondary.text-white.border-secondary.form-control + button.query-text-field-clear.btn.btn-secondary:not(:disabled):not(.disabled):is(:active, :focus, :focus:active),
 button.clearable-text-field-clear.btn.btn-secondary:not(:disabled):not(.disabled):is(:active, :focus, :focus:active) {
     background-color: rgb(var(--on-surface-variant),var(--btn-active));
     box-shadow: none;
     outline: none;
 }
-.btn-toolbar button.query-text-field-clear.btn.btn-secondary:focus-visible,
+.btn-toolbar input.query-text-field.bg-secondary.text-white.border-secondary.form-control + button.query-text-field-clear.btn.btn-secondary:focus-visible,
 button.clearable-text-field-clear.btn.btn-secondary:focus-visible {
     box-shadow: none;
     outline-color: rgb(var(--focus-ring));
