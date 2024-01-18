@@ -5578,7 +5578,7 @@ button:not([title=Statistics], [title=Settings]).minimal:not(.nav-utility, .bran
 }
 #performer-page .performer-head .name-icons button.favorite {
     color: rgb(var(--on-split-comp-container)) !important;
-    filter: drop-shadow(0 0 0.22rem rgba(0,0,0,.65));
+    filter: drop-shadow(0 0 0.22rem rgba(0,0,0,.45));
 }
 .performer-card button.btn.favorite-button.favorite {
     color: rgb(var(--on-split-comp-container)) !important;
