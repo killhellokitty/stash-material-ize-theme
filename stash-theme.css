@@ -8023,28 +8023,26 @@ svg.svg-inline--fa.fa-circle-question.fa-icon {
 .modal-body .btn-secondary.form-control,
 button#scene-scrape,
 .scrape-url-button:not(:disabled) {
-    background-color: rgb(var(--body-color2));
-    border-color: rgb(var(--outline));
-    border-width: 1px;
-    border-style: solid;
+    background-color: rgb(var(--sec-container));
+    /* border-color: rgb(var(--outline)); */
+    border: 0;
+    /* border-style: solid; */
     border-radius: 5rem;
-    color: rgb(var(--on-surface));
+    color: rgb(var(--on-sec-container));
     font-weight: 500;
     gap: 8px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
     box-shadow: var(--elevation-0);
-    line-height: 20px;  
+    line-height: 20px;
     letter-spacing: 0.1px;
     height: 40px;
     max-height: 40px;
-    padding-left: 24px; 
+    padding-left: 24px;
     padding-right: 24px;
     overflow: hidden;
     position: relative;
-    transition: background-color 0.55s ease, background-image 0.55s ease, box-shadow 0.4s ease-in, color 0.3s ease-in-out;
-    -webkit-transition: background-color 0.55s ease, background-image 0.55s ease, box-shadow 0.4s ease-in, color 0.3s ease-in-out;
 }
 .setting-section .btn-secondary:not(.form-control) {
     background-image: none;
@@ -11481,6 +11479,15 @@ button.btn.btn-primary.btn-sm:last-child {
     left: 2px;
 }*/
 
+/* Performer Page Background-Image-Container's Elevated Buttons */
+.background-image-container + .detail-container .details-edit button,
+.background-image-container + .detail-container .details-edit button:not(.disabled):not(:disabled):is(:focus, :active, :active:focus) {
+    box-shadow: var(--elevation-1);
+}
+.detail-header .background-image-container + .detail-container .performer-head div.details-edit button:is(:not(.disabled), :not(:disabled)):hover {
+    box-shadow: var(--elevation-2)
+}
+
 /*** Button Ripple ***/
 body :is(:not(.collapse.show.card .input-group):has(> .input-group-append)) button:not(.navbar-buttons a[href$="/new"] > button).btn.btn-primary:not(.scrubber-button):not(.minimal):not([title="Search"])::after {
     content: "";
@@ -11978,6 +11985,15 @@ span.stash-id-pill {
     text-decoration-style: solid;
     text-underline-offset: 0.25em;
     text-decoration-thickness: 0.12em;
+}
+.background-image-container + .detail-container .stash-id-pill > span {
+    background-color:transparent;
+    color: rgb(var(--on-surface-variant));
+    padding: 0.4em 4px 0.4em 0;
+}
+.background-image-container + .detail-container .stash-id-pill a {
+    background-color:transparent;
+    color: rgb(var(--on-surface));
 }
 /* --- */
 .toast-container { z-index: 59000 }
