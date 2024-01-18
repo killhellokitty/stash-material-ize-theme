@@ -5572,10 +5572,12 @@ button:not([title=Statistics], [title=Settings]).minimal:not(.nav-utility, .bran
     color: rgb(var(--on-split-comp-container),0.7) !important;
     filter: drop-shadow(0 0 0.2rem rgba(0,0,0,.65));
 }
+#performer-page .performer-head .name-icons button.favorite,
 .performer-card button.btn.favorite-button.favorite {
     color: rgb(var(--on-split-comp-container)) !important;
     filter: drop-shadow(0 0 0.22rem rgba(0,0,0,.82));
 }
+#performer-page .performer-head .name-icons button.favorite.btn-primary,
 button:is(.favorite, .not-favorite).minimal.mousetrap.favorite-button.btn.btn-primary {
     padding: 0;
     width: 40px;
@@ -5586,20 +5588,18 @@ button:is(.favorite, .not-favorite).minimal.mousetrap.favorite-button.btn.btn-pr
     background-image: none;
     background-color: transparent;
     box-shadow: none;
-    transition: background-color 0.55s ease, box-shadow 0.35s ease-in, filter 0.25s;
+    transition: box-shadow 0.35s ease-in, filter 0.25s, var(--trans-0);
 }
+#performer-page .performer-head .name-icons button.favorite.btn-primary:is(:hover, :focus-visible),
 button:is(.favorite, .not-favorite).minimal.mousetrap.favorite-button.btn.btn-primary:hover {
-    /*background-image: var(--btn-hover-highlight);
-    background-color: rgb(var(--split-comp-container));
-    background-blend-mode: overlay;
-    box-shadow: var(--elevation-1);*/
     filter: none;
     opacity: 1;
 }
+#performer-page .performer-head .name-icons button.favorite.btn-primary:is(:focus, :active, :active:focus),
 button:is(.favorite, .not-favorite).minimal.mousetrap.favorite-button.btn.btn-primary:is(:focus, :active, :focus:active) {
     background-image: var(--btn-active-highlight);
     background-color: rgb(var(--split-comp-container));
-    background-blend-mode: overlay;
+    background-blend-mode: screen;
     box-shadow: var(--elevation-0);
     filter: none;
     opacity: 1;
@@ -11488,6 +11488,28 @@ button.btn.btn-primary.btn-sm:last-child {
     box-shadow: var(--elevation-2)
 }
 
+
+#performer-page span.detail-expand-collapse > button.minimal.expand-collapse.btn.btn-primary {
+    font-size: 24px;
+    color: rgb(var(--on-surface-variant));
+    min-width: 40px;
+    width: 40px;
+    height: 40px;
+    border-radius: 5rem;
+    background-color: transparent;
+    border: 0;
+    box-shadow: none;
+}
+#performer-page span.detail-expand-collapse > button.minimal.expand-collapse.btn.btn-primary:hover {
+    background-color: rgb(var(--on-surface-variant),var(--btn-hover));
+    box-shadow: var(--elevation-1);
+}
+#performer-page span.detail-expand-collapse > button.minimal.expand-collapse.btn.btn-primary:not(.disabled):not(:disabled):is(:active, :focus, :active:focus) {
+    background-color: rgb(var(--on-surface-variant),var(--btn-active));
+    box-shadow: var(--elevation-0);
+    outline: none;
+}
+
 /*** Button Ripple ***/
 body :is(:not(.collapse.show.card .input-group):has(> .input-group-append)) button:not(.navbar-buttons a[href$="/new"] > button).btn.btn-primary:not(.scrubber-button):not(.minimal):not([title="Search"])::after {
     content: "";
@@ -11985,6 +12007,9 @@ span.stash-id-pill {
     text-decoration-style: solid;
     text-underline-offset: 0.25em;
     text-decoration-thickness: 0.12em;
+}
+.background-image-container + .detail-container span.stash-id-pill {
+    margin-top: -6px;
 }
 .background-image-container + .detail-container .stash-id-pill > span {
     background-color:transparent;
