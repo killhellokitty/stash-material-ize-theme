@@ -5598,8 +5598,8 @@ button:is(.favorite, .not-favorite).minimal.mousetrap.favorite-button.btn.btn-pr
     transition: box-shadow 0.35s ease-in, filter 0.25s, var(--trans-0);
 }
 #performer-page .performer-head .name-icons button.favorite.btn-primary {
-    width: 36;
-    min-width: 36;
+    width: 36px;
+    min-width: 36px;
     right: 0;
     top: 0;
 }
@@ -11841,7 +11841,7 @@ button:is(.favorite, .not-favorite).minimal.favorite-button.btn.btn-primary::bef
     background-image: radial-gradient(circle at center, rgb(255,255,255,0.08) 0%, rgb(255,255,255,0.08) 100%);
     background-color: rgb(var(--split-comp-container));
     background-blend-mode: screen;
-    border-radius: 50%;
+    border-radius: 5rem;
     opacity: 1;
     transform: scale(0);
 }
@@ -11879,20 +11879,20 @@ button[title=Help].nav-utility.minimal.btn.btn-primary:has(>svg.svg-inline--fa.f
     max-width: 48px;
     min-width: 2px;
 }
-#performer-page .performer-head .name-icons button.favorite.btn-primary:hover::before {
-    animation: bubble 0.35s ease-in forwards;
-    will-change: animation;
-    max-height: 36px;
-    min-height: 2px;
-    max-width: 36px;
-    min-width: 2px;
-}
 button:is(.favorite, .not-favorite).minimal.favorite-button.btn.btn-primary:hover::before {
     animation: bubble 0.35s ease-in forwards;
     will-change: animation;
     max-height: 40px;
     min-height: 2px;
     max-width: 40px;
+    min-width: 2px;
+}
+#performer-page .performer-head .name-icons button.favorite.btn-primary:hover::before {
+    animation: bubble 0.35s ease-in forwards;
+    will-change: animation;
+    max-height: 36px;
+    min-height: 2px;
+    max-width: 36px;
     min-width: 2px;
 }
 .navbar-dark .navbar-toggler.collapsed::before, 
