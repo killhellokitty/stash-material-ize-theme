@@ -1165,6 +1165,10 @@ p.heading {
     margin-right: auto;
     margin-left: 88px;
 }
+.container-fluid:has(*.background-image-container) {
+    padding-right: 1px;
+    padding-left: 1px;
+}
 .container, 
 .container-xl, 
 .container-lg, 
