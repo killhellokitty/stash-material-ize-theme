@@ -3148,7 +3148,7 @@ div.react-select__control .react-select__multi-value {
     border-radius: 4px;
     color: rgb(var(--on-pry-container));
     height: 56px;
-    margin-right: 16px;
+    margin-right: 26px; /* This margin is the space between the text and arrow. */
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.5px;
@@ -3160,6 +3160,7 @@ div.react-select__control .react-select__multi-value {
     background-image: url("data:image/svg+xml;utf8,<svg fill='%23c1c7ce' height='24' viewBox='0 0 20 22' width='32' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
     background-repeat: no-repeat;
     background-position: calc( 100% - 8px ) center;
+    background-size: 24px;
     transition: color 0.2s ease-in-out, border-radius 0.2s ease-in-out, box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.55s ease;
     min-width: 160px;
 }
