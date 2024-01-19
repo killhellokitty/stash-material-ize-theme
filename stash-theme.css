@@ -8112,106 +8112,79 @@ svg.svg-inline--fa.fa-circle-question.fa-icon {
     padding-right: 16px;
 }
 
-/* **************************************** */
+/* ||Button-Secondary */
 .btn-secondary:not(.btn-toolbar .btn-secondary),
-/*.dropdown-toggle.btn.btn-secondary:not(.btn-toolbar button.btn-secondary),*/
-/*.btn-toolbar select.btn-secondary.form-control,*/
 .modal-body .btn-secondary.form-control,
 button#scene-scrape,
 .scrape-url-button:not(:disabled) {
-    background-color: rgb(var(--sec-container));
-    /* border-color: rgb(var(--outline)); */
-    border: 0;
-    /* border-style: solid; */
-    border-radius: 5rem;
     color: rgb(var(--on-sec-container));
+    background-image: none;
+    background-color: rgb(var(--sec-container));
+    border: 0;
+    border-radius: 5rem;
     font-weight: 500;
     gap: 8px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    box-shadow: var(--elevation-0);
-    line-height: 20px;
-    letter-spacing: 0.1px;
     height: 40px;
     max-height: 40px;
+    width: auto;
     padding-left: 24px;
     padding-right: 24px;
     overflow: hidden;
-    position: relative;
+    box-shadow: var(--elevation-0);
 }
-.setting-section .btn-secondary:not(.form-control) {
-    background-image: none;
+.btn-secondary:not(.btn-toolbar .btn-secondary):hover,
+.modal-body .btn-secondary.form-control:hover,
+button#scene-scrape:hover,
+.scrape-url-button:hover {
+    background-image: var(--btn-hover-highlight);
     background-color: rgb(var(--sec-container));
-    border: 0;
     color: rgb(var(--on-sec-container));
+    box-shadow: var(--elevation-1);
 }
-/*.btn-toolbar .btn-secondary:not(.form-control),
-.btn-toolbar .btn-secondary:not(.form-control):focus:not(:focus-visible), 
-.btn-toolbar .dropdown-toggle.btn.btn-secondary {
-    height: 36px;
-    max-height: 36px;
-    min-height: 36px;
-    font-weight: 500;
-    padding-left: 16px; 
-    padding-right: 16px;
-    background-color: rgb(var(--body-color2));
-}*/
-/*.btn-toolbar .btn-group >.dropdown >.dropdown-toggle.btn.btn-secondary:first-of-type {
-    margin-right: -1px;
-    border-radius: 5rem 0 0 5rem;
-}*/
-
-/*svg.svg-inline--fa.fa-caret-down.fa-icon,
-svg.svg-inline--fa.fa-caret-up.fa-icon {
-    height: 18px;
-    width: 18px;
-    line-height: 20px;
-}*/
-
-/* date dropdown-button */
-/*.dropdown > .input-group-prepend > button.dropdown-toggle.btn.btn-secondary {
-    border-bottom-right-radius: 0;
-    border-top-right-radius: 0;
-    padding-left: 24px;
-    padding-right: 12px;
+.btn-secondary:not(.btn-toolbar .btn-secondary):focus,
+.modal-body .btn-secondary.form-control:focus,
+button#scene-scrape:focus,
+.scrape-url-button:not(:disabled):focus {
+    color: rgb(var(--on-sec-container));
+    background-image: var(--btn-active-highlight);
+    background-color: rgb(var(--sec-container));
+    box-shadow: var(--elevation-0);
 }
-.btn-toolbar .mr-2.mb-2.dropdown.btn-group > button.btn-secondary {
-    border-bottom-left-radius: 0;
-    border-top-left-radius: 0;
-    padding-left: 12px;
-    padding-right: 12px;
+.btn-secondary:not(.btn-toolbar .btn-secondary):focus-visible,
+.modal-body .btn-secondary.form-control:focus-visible:not(:focus),
+button#scene-scrape:focus-visible,
+.scrape-url-button:not(:disabled):focus-visible {
+    background-image: none;
+    background-color: rgba(var(--pry-container));
+    color: rgb(var(--on-tertiary-container));
+    box-shadow: none;
+    z-index: 20;
 }
-
-.btn-toolbar > .mb-2.btn-group > button.btn-secondary:not(:nth-of-type(1)):not(:nth-of-type(4)) {
-    border-radius: 0;
-    margin-right: -1px;
+.btn-secondary:not(.btn-toolbar .btn-secondary):not(.disabled):not(:disabled):active:focus {
+    box-shadow: none;
 }
-
-.mb-2.btn-group > .btn:not(:last-child):nth-of-type(1) {
-    margin-right: -1px;
-}*/
-
-/*.btn-toolbar > div.mb-2.btn-group > button.btn.btn-secondary:last-child {
-    border-radius: 0 5rem 5rem 0;
+.btn-secondary:not(.btn-toolbar .btn-secondary):not(:disabled):not(.disabled):active,
+button#scene-scrape:not(:disabled):not(.disabled):active,
+button#scene-scrape:not(:disabled):not(.disabled).active,
+.scrape-url-button:not(:disabled):active,
+.scrape-url-button:not(:disabled).active {
+     color: rgb(var(--on-sec-container));
+     background-image: var(--btn-active-highlight);
+     background-color: rgb(var(--sec-container));
+     box-shadow: var(--elevation-0);
+     outline: 0;
 }
-
-.btn-toolbar select.btn-secondary.form-control {
-    padding-left: 24px;
-    padding-right: 0;
-    margin-top: 8px;
-    max-height: 36px;
-    height: 36px;
-    font-weight: 600;
+.btn-secondary:not(.btn-toolbar .btn-secondary).disabled,
+.btn-secondary:not(.btn-toolbar .btn-secondary):disabled {
+    color: rgba(var(--on-sec-container),var(--disabled));
+    background-image: none;
+    background-color: rgb(var(--sec-container),var(--disabled));
+    box-shadow: none; 
+    outline: 0;
 }
-.btn-toolbar > .ml-2.mb-2.btn-group > button.btn.btn-danger {
-    height: 36px;
-    max-height: 36px;
-    padding: 8px 16px;
-    border-color: rgb(var(--outline));
-    border-width: 1px;
-    border-style: solid;
-}*/
 
 button#scene-scrape {
     border-top-right-radius: 0;
@@ -8233,19 +8206,15 @@ svg.svg-inline--fa.fa-magnifying-glass.fa-icon {
     border-bottom-left-radius: 0;
     padding-left: 12px;
 }
-/*button.filter-button.btn.btn-secondary {
-    border-bottom-left-radius: 0;
-    border-top-left-radius: 0;
-}*/
 
 .modal-body .btn-secondary.form-control {
     background-color: transparent;
 }
+.modal-body .form-label {
+    font-size: 1.20rem;
+}
 
 /**********************/
-/*.mr-2.mb-2.btn-group {
-    margin-top: 8px;
-}*/
 /* Transform property as a fix for the Toolbar-Filter-Button's "Badge" not being visible because of overflow to contain the Active Button state Wave. */
 .mr-2.mb-2:not(.show):not(.dropdown).btn-group:not(:has(>*.show)) {
     transform: translateZ(0); /* If the parent does have position attribute, the—although not "proper"—alternative is to use a transform with any value other than none on the wrapper and position: fixed; on the overflowing child This occurs because the transform overrides the position: fixed; element's containing block—it's reference—which is usually the viewport itself. */
@@ -8259,21 +8228,9 @@ svg.svg-inline--fa.fa-magnifying-glass.fa-icon {
 }
 /**********************/
 
-/*button#more-menu {
-    margin-top: 7px;
-}
-
-.mb-2.btn-group {
-    margin-top: 8px;
-}*/
-
 a#new-performer-filter {
     padding-left: 24px;
     padding-right: 24px;
-}
-
-.modal-body .form-label {
-    font-size: 1.20rem;
 }
 
 /* O-Counter with right dropdown toggle in nav-items tabs, O-Counter toggled On*/
@@ -8344,153 +8301,6 @@ a#new-performer-filter {
     padding: 0 16px 0 28px;
     border: 0;
 }
-/* *** */
-
-.btn-secondary:not(.btn-toolbar .btn-secondary):hover,
-.modal-body .btn-secondary.form-control:hover,
-button#scene-scrape:hover,
-.scrape-url-button:hover {
-    background-image: linear-gradient(to right, rgba(var( --on-surface),var(--btn-hover)), rgba(var(--on-surface),var(--btn-hover)));
-    background-color: rgb(var(--body-color2));
-    border-color: rgb(var(--outline));
-    color: rgb(var(--on-surface));
-    box-shadow: none;
-}
-.setting-section .btn-secondary:not(.form-control):hover {
-    background-image: var(--btn-hover-highlight);
-    background-color: rgb(var(--sec-container));
-    background-blend-mode: screen;
-    border-color: none;
-    color: rgb(var(--on-sec-container));
-    box-shadow: var(--elevation-1);
-}
-
-
-.btn-secondary:not(.btn-toolbar .btn-secondary):focus,
-.modal-body .btn-secondary.form-control:focus,
-button#scene-scrape:focus,
-.scrape-url-button:not(:disabled):focus {
-    color: rgb(var(--on-surface));
-    background-image: linear-gradient(to right, rgba(var( --on-surface),var(--btn-active)), rgba(var(--on-surface),var(--btn-active)));
-    background-color: rgb(var(--body-color2));
-    border-color: rgb(var(--outline));
-}
-
-.btn-secondary:not(.btn-toolbar .btn-secondary):focus-visible,
-.modal-body .btn-secondary.form-control:focus-visible:not(:focus),
-button#scene-scrape:focus-visible,
-.scrape-url-button:not(:disabled):focus-visible {
-    background-image: none;
-    background-color: rgba(var(--pry-container));
-    color: rgb(var(--on-tertiary-container));
-    border-color: transparent;
-    box-shadow: none;
-    z-index: 20;
-}
-/* */
-
-/*div.mb-2.btn-group:not(.mr-2):not(.mx-2):not(.ml-2) > button.btn.btn-secondary:not(.form-control):not(.dropdown-toggle):not(:disabled):not(.disabled).active,
-.btn-toolbar select.btn-secondary.form-control:not(.disabled):not(:disabled):where(:active, :focus, :active:focus),
-.btn-toolbar .show.dropdown .dropdown-toggle.btn.btn-secondary {
-    background-color: rgb(var(--sec-container));
-    color: rgb(var(--on-sec-container));
-    border-color: rgb(var(--on-surface-variant));
-    outline: none;
-    box-shadow: none;
-}*/
-.btn-secondary:not(.btn-toolbar .btn-secondary):not(.disabled):not(:disabled):active:focus {
-    box-shadow: none;
-}
-.btn-secondary:not(.btn-toolbar .btn-secondary):not(:disabled):not(.disabled):active,
-button#scene-scrape:not(:disabled):not(.disabled):active,
-button#scene-scrape:not(:disabled):not(.disabled).active,
-.scrape-url-button:not(:disabled):active,
-.scrape-url-button:not(:disabled).active {
-     color: rgb(var(--on-surface));
-     background-image: linear-gradient(to right, rgba(var( --on-surface),var(--btn-active)), rgba(var(--on-surface),var(--btn-active)));
-     background-color: rgb(var(--body-color2));
-     border-color: rgb(var(--outline));
-     box-shadow: none;
-     text-shadow: none;
-     outline: none;
-}
-.setting-section .btn-secondary:not(.form-control):not(.dropdown-toggle):not(:disabled):not(.disabled):where(:focus, :active, :active:focus) {
-    background-image: var(--btn-active-highlight);
-    background-color: rgb(var(--sec-container));
-    background-blend-mode: screen;
-    border-color: none;
-    color: rgb(var(--on-sec-container));
-    box-shadow: var(--elevation-0);
-}
-/*.btn-toolbar select.btn-secondary.form-control:is(:active:hover, :active:focus-visible),
-.btn-toolbar .btn-group > .show.dropdown .dropdown-toggle.btn.btn-secondary:is(:hover, :focus-visible) {
-    background-color: rgba(var(--sec-container),var(--btn-hover-rev));
-    color: rgb(var(--on-sec-container));
-    border-color: rgb(var(--outline));
-}*/
-/*div.mb-2.btn-group:not(.mr-2):not(.mx-2):not(.ml-2) > button.btn.btn-secondary:not(.form-control):not(:disabled):not(.disabled).active:hover,
-.btn-toolbar select.btn-secondary.form-control:where(:active:hover, :focus:hover, :active:focus:hover),
-.btn-toolbar .show.dropdown .dropdown-toggle.btn.btn-secondary:hover {
-    background-color: rgb(var(--sec-cntnr-select-hover));
-    box-shadow: none;
-    border-color: rgb(var(--on-surface-variant));
-}*/
-/*.btn-toolbar select.btn-secondary.form-control:focus:not(:focus-visible),
-.btn-toolbar .show.dropdown .dropdown-toggle.btn.btn-secondary:focus:not(:focus-visible) {
-    background-color: rgba(var(--sec-container),var(--btn-active-rev));
-    color: rgb(var(--on-sec-container));
-    border-color: rgb(var(--outline));
-    box-shadow: none;
-}*/
-/*div.mb-2.btn-group:not(.mr-2):not(.mx-2):not(.ml-2) > button.btn.btn-secondary:not(.form-control):not(:disabled):not(.disabled).active:is(:focus, :focus-visible),
-.btn-toolbar .show.dropdown .dropdown-toggle.btn.btn-secondary:is(:focus, :focus-visible) {
-    background-color: rgb(var(--sec-cntnr-select-active));
-    box-shadow: none;
-    border-color: rgb(var(--on-surface-variant));
-}*/
-
-/*div.mb-2.btn-group:not(.mr-2):not(.mx-2):not(.ml-2) > button.btn.btn-secondary:not(.form-control):focus-visible,
-.btn-toolbar .show.dropdown .dropdown-toggle.btn.btn-secondary:focus-visible {
-    background-image: none;
-    background-color: rgba(var(--pry-container));
-    color: rgb(var(--on-tertiary-container));
-    border-color: transparent;
-}*/
-.btn-secondary:not(.form-control).disabled,
-.btn-secondary:not(.form-control):disabled,
-.btn-secondary.dropdown-toggle.disabled,
-.btn-secondary.dropdown-toggle:disabled {
-    background-color: transparent;
-    border-color: rgba(var(--on-surface),0.12);
-    border-width: 1px;
-    border-radius: 5rem;
-    border-style: solid;
-    color: rgba(var(--on-surface),0.38); 
-}
-
-/*div.mb-2.btn-group:not(.mr-2):not(.mx-2):not(.ml-2) > button.btn.btn-secondary:not(.form-control) {
-    background-color: rgb(var(--background));
-    color: rgb(var(--on-surface));
-    border-color: rgb(var(--outline));
-    box-shadow: none;
-}*/
-/*div.mb-2.btn-group:not(.mr-2):not(.mx-2):not(.ml-2) > button.btn.btn-secondary:not(.form-control):not(:disabled):not(.disabled):hover,
-div.mb-2.btn-group:not(.mr-2):not(.mx-2):not(.ml-2) > button.btn.btn-secondary:not(.form-control):not(:disabled):not(.disabled):focus,
-div.mb-2.btn-group:not(.mr-2):not(.mx-2):not(.ml-2) > button.btn.btn-secondary:not(.form-control):not(:disabled):not(.disabled):focus-visible {
-    background-color: rgba(var(--background-select-hover));
-}*/
-/*div.mb-2.btn-group:not(.mr-2):not(.mx-2):not(.ml-2) > button.btn.btn-secondary:not(.form-control):not(:disabled):not(.disabled).active,
-div.mb-2.btn-group:not(.mr-2):not(.mx-2):not(.ml-2) > button.btn.btn-secondary:not(.form-control):not(:disabled):not(.disabled).active:focus-visible:not(:focus) {
-    background-color: rgb(var(--sec-container));
-    color: rgb(var(--on-sec-container));
-    box-shadow: none;
-}*/
-/*div.mb-2.btn-group:not(.mr-2):not(.mx-2):not(.ml-2) > button.btn.btn-secondary:not(.form-control):not(:disabled):not(.disabled).active:hover {
-    background-color: rgba(var(--sec-cntnr-select-hover));
-}*/
-/*div.mb-2.btn-group:not(.mr-2):not(.mx-2):not(.ml-2) > button.btn.btn-secondary:not(.form-control):not(:disabled):not(.disabled).active:focus:not(:focus-visible) {
-    background-color: rgba(var(--sec-cntnr-select-active));
-}*/
 
 /* Star Outline */
 button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-fill-70, .star-fill-60, .star-fill-50, .star-fill-40, .star-fill-30, .star-fill-30, .star-fill-25, .star-fill-20, .star-fill-10, .star-fill-0).minimal.btn.btn-secondary:not(:disabled):not(.disabled) {
