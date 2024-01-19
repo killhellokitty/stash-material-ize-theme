@@ -5680,6 +5680,14 @@ button:is(.favorite, .not-favorite).minimal.favorite-button.btn.btn-primary:is(:
     opacity: 1;
 }
 
+/* Page Headers Detail-Items */
+.detail-item-title {
+    color: rgb(var(--outline-variant-lighter));
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.031em;
+}
 /*a:not([href="/scenes"], [href="/images"], [href="/movies"], [href="/scenes/markers"], [href="/galleries"], [href="/performers"], [href="/studios"], [href="/tags"]).minimal:not(.logout-button):not(:disabled):not(.disabled):focus,
 button:not([title=Statistics], [title=Settings]).minimal:not(.nav-utility, .brand-link, .donate, .dropdown-toggle):not(:disabled):not(.disabled):focus,
 .dropdown:not(.show) > button#operation-menu.minimal.dropdown-toggle.btn-secondary:not(:disabled):not(.disabled):focus {
