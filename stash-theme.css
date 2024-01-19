@@ -8500,6 +8500,10 @@ button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-
     box-shadow: var(--elevation-0);
     filter: none;
 }
+.detail-header.edit button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-fill-70, .star-fill-60, .star-fill-50, .star-fill-40, .star-fill-30, .star-fill-30, .star-fill-25, .star-fill-20, .star-fill-10, .star-fill-0).minimal.btn.btn-secondary:not(:disabled):not(.disabled):is(:focus, :active, :active:focus, .active, .active:focus) {
+    background-image: linear-gradient(to right, rgb(var(--body-color2)), rgb(var(--body-color2)));
+    background-blend-mode: screen;
+}
 button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-fill-70, .star-fill-60, .star-fill-50, .star-fill-40, .star-fill-30, .star-fill-30, .star-fill-25, .star-fill-20, .star-fill-10, .star-fill-0).minimal.btn.btn-secondary:is(.diabled, :disabled) {
     border: 0;
     box-shadow: none;
@@ -11903,6 +11907,22 @@ button:is(.favorite, .not-favorite).minimal.favorite-button.btn.btn-primary::bef
     height: 2px;
     background-image: radial-gradient(circle at center, rgb(255,255,255,0.08) 0%, rgb(255,255,255,0.08) 100%);
     background-color: rgb(var(--twitter-secondary));
+    background-blend-mode: screen;
+    border-radius: 5rem;
+    opacity: 1;
+    transform: scale(0);
+}
+
+.detail-header.edit button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-fill-70, .star-fill-60, .star-fill-50, .star-fill-40, .star-fill-30, .star-fill-30, .star-fill-25, .star-fill-20, .star-fill-10, .star-fill-0).minimal.btn.btn-secondary::before {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    width: 2px;
+    height: 2px;
+    background-image: radial-gradient(circle at center, rgb(var(--body-color2)) 0%, rgb(var(--body-color2)) 100%);
+    background-color: rgb(var(--star-color),var(--btn-hover));
     background-blend-mode: screen;
     border-radius: 5rem;
     opacity: 1;
