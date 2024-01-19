@@ -2689,12 +2689,17 @@ svg.svg-inline--fa.fa-right-from-bracket.fa-icon {
     font-size: 24px;
 }
 
+/* ||Detail and Edit Pages */
 .detail-body {
     margin-left: 1px;
     margin-right: 1px;
 }
+.tab-content {
+    padding-right: 16px;
+    padding-left: 16px;
+}
 
-/* Primary Button */
+/* ||Primary Button */
 button:not([title=Help]).btn-primary,
 .login .btn.btn-primary {
      color: rgb(var(--on-tertiary));
