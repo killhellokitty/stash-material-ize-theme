@@ -11372,7 +11372,8 @@ button.btn.btn-primary.btn-sm:last-child {
 .background-image-container + .detail-container .details-edit button:not(.disabled):not(:disabled):is(:focus, :active, :active:focus) {
     box-shadow: var(--elevation-1);
 }
-.detail-header .background-image-container + .detail-container .performer-head div.details-edit button:not(.disabled):not(:disabled):hover {
+div.detail-header div.background-image-container + div.detail-container div.details-edit button:not(.disabled):not(:disabled):hover,
+div.detail-header div.background-image-container + div.detail-container div.details-edit button.btn.btn-secondary:not(.disabled):not(:disabled):hover {
     box-shadow: var(--elevation-2);
 }
 
