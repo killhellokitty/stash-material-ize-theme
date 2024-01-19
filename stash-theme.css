@@ -11372,10 +11372,9 @@ button.btn.btn-primary.btn-sm:last-child {
 .background-image-container + .detail-container .details-edit button:not(.disabled):not(:disabled):is(:focus, :active, :active:focus) {
     box-shadow: var(--elevation-1);
 }
-.detail-header .background-image-container + .detail-container .performer-head div.details-edit button:is(:not(.disabled), :not(:disabled)):hover {
-    box-shadow: var(--elevation-2)
+.detail-header .background-image-container + .detail-container .performer-head div.details-edit button:not(.disabled):not(:disabled):hover {
+    box-shadow: var(--elevation-2);
 }
-
 
 #performer-page span.detail-expand-collapse > button.minimal.expand-collapse.btn.btn-primary {
     font-size: 24px;
