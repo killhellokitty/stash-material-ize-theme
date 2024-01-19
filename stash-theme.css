@@ -2689,6 +2689,11 @@ svg.svg-inline--fa.fa-right-from-bracket.fa-icon {
     font-size: 24px;
 }
 
+.detail-body {
+    margin-left: 1px;
+    margin-right: 1px;
+}
+
 /* Primary Button */
 button:not([title=Help]).btn-primary,
 .login .btn.btn-primary {
