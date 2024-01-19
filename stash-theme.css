@@ -6009,7 +6009,7 @@ button:not([title=Statistics], [title=Settings]).minimal:not(.nav-utility, .bran
 /* Tabs on Pages */
 nav.nav.nav-tabs {
     background-color: rgba(0,0,0,0.50);
-    /*padding-bottom: 3px;*/
+    padding: 0 0;
 }
 .nav-tabs {
     /*margin-left: 0.2rem;*/
