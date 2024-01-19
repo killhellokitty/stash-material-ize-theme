@@ -241,6 +241,7 @@ h6,
     --on-surface-variant: 193, 199, 206; /*#c1c7ce*/
     --outline: 139, 145, 152; /*#8b9198*/
     --outline-variant: 69, 71, 73; /*#454749*/
+    --outline-variant-lighter: 109, 116, 123; /*#6d747b*/
     /* Link Colors */
     --link-color: 217, 234, 249; /*#d9eaf9 very light primary*/
     --link-hover: 136, 206, 255; /* --pry-color; */
