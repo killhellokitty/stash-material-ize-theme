@@ -4450,6 +4450,7 @@ div.scene-file-info .TruncatedText, div.scene-file-info .text-truncate {
     padding-left: 10px!important;
 }
 
+/* ||FIXME -- make the below happen correctly */
 /* --- Shrink the Player Height just a little bit to avoid the scroll bar --- */
 #jwplayer-container {    
     height: calc(99.5vh - 4rem);
