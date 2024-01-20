@@ -4698,7 +4698,7 @@ textarea.text-input.code.form-control {
 .modal-body textarea.text-input.code.form-control:active {
     background-image: linear-gradient(to right, rgba(var(--pry-color),var(--text-field-tint)), rgba(var(--pry-color),var(--text-field-tint))),linear-gradient(to right, rgb(var(--body-color2)), rgb(var(--body-color2))) !important;
     background-color: rgb(var(--body-color2)) !important;
-    background-blend-mode: screen;
+    background-blend-mode: overlay;
     border: 0;
     box-shadow: none;
 }
