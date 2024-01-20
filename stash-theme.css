@@ -4642,20 +4642,6 @@ button.remove-criterion-button.btn.btn-minimal > svg.svg-inline--fa.fa-xmark.fa-
     color: rgb(var(--outline));
 }
 
-/* Modal Secondary Button */
-.modal-footer button.btn.btn-secondary:not(.form-control):not(.dropdown-toggle) {
-    background-color: rgb(var(--modal-color));
-}
-.modal-dialog button.btn-secondary:not(.form-control):not(.dropdown-toggle):focus-visible {
-    background-image: linear-gradient(to right, rgba(var(--pry-container)), rgba(var(--pry-container)));
-    outline-color: rgb(var(--focus-ring));
-    outline-offset: -0.10rem;
-    outline-style: solid;
-    outline-width: 0.19rem;
-    box-shadow: none;
-    text-shadow: none;
-}
-
 #settings-dailog .modal-content .sub-heading {
     background-color: rgba(0,0,0,0.12);
     padding: 0.5rem;
