@@ -4551,6 +4551,7 @@ div.tagger-container .btn-link {
     letter-spacing: 0.031em;
     line-height: 24px;
     font-weight: 400;
+    padding: 16px 24px 24px;
 }
 .modal-header {
     border: 0;
