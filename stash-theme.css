@@ -4665,7 +4665,7 @@ button.remove-criterion-button.btn.btn-minimal > svg.svg-inline--fa.fa-xmark.fa-
 
 .modal-body .col-6 strong {
     font-weight: 500;
-    font-size:14px;
+    font-size: 14px;
     line-height: 20px;
     letter-spacing: 0.016em;
 }
@@ -4696,7 +4696,9 @@ textarea.text-input.code.form-control {
 .modal-body textarea.text-input.code.form-control:hover,
 .modal-body textarea.text-input.code.form-control:focus,
 .modal-body textarea.text-input.code.form-control:active {
-    /*background-color: #3f4946 !important;*/
+    background-image: linear-gradient(to right, rgba(var(--pry-color),var(--text-field-tint)), rgba(var(--pry-color),var(--text-field-tint))),linear-gradient(to right, rgb(var(--body-color2)), rgb(var(--body-color2))) !important;
+    background-color: rgb(var(--body-color2)) !important;
+    background-blend-mode: screen;
     border: 0;
     box-shadow: none;
 }
