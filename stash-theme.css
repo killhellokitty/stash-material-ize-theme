@@ -4521,12 +4521,12 @@ div.tagger-container .btn-link {
 .modal-content, .modal-lg, .modal-xl {
     max-width: 1400px;
     width: 100%;
-    box-shadow: 0 0 12px rgba(0,0,0,0.60);
+    box-shadow: var(--elevation-3);
     max-height: 900px !important;
     height: 100%;
 }
 .modal-footer {
-    border-top: 0;
+    border: 0;
     border-radius: 0 0 28px 28px;
 }
 .modal-footer>* {
@@ -4535,6 +4535,8 @@ div.tagger-container .btn-link {
 .modal-body, .modal-footer, .modal-header {
     background-color: rgba(var(--modal-color));
     color: rgb(var(--on-surface));
+    border: 0;
+    border-color: transparent;
     font-size: 16px;
     letter-spacing: 0.031em;
     line-height: 24px;
@@ -4547,7 +4549,7 @@ div.tagger-container .btn-link {
     font-weight: 200;
     font-size: 57px;
     line-height: 64px;
-    letter-spacing: -0.25px;
+    letter-spacing: -0.016em;
     font-family: var(--HeaderFont);
     display: flex;
     justify-content: space-around;
@@ -4557,7 +4559,6 @@ div.tagger-container .btn-link {
 .dialog-content .criterion-list.accordion {
     margin-right: -2%;
     margin-left: auto;
-    /*max-height: 380px;*/
 }
 .dialog-content .criterion-list.accordion .card {
     background-color: rgb(var(--card-color));
@@ -4650,7 +4651,7 @@ button.remove-criterion-button.btn.btn-minimal > svg.svg-inline--fa.fa-xmark.fa-
 #setting-dialog .sub-heading {
     font-size: 11px;
     line-height: 16px;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.031em;
     font-weight: 500;
 }
 
@@ -4663,8 +4664,10 @@ button.remove-criterion-button.btn.btn-minimal > svg.svg-inline--fa.fa-xmark.fa-
 }
 
 .modal-body .col-6 strong {
-    font-weight: normal;
+    font-weight: 500;
     font-size:14px;
+    line-height: 20px;
+    letter-spacing: 0.016em;
 }
 .modal-body .no-gutters {
     margin-bottom: 8px;
@@ -4673,7 +4676,6 @@ button.remove-criterion-button.btn.btn-minimal > svg.svg-inline--fa.fa-xmark.fa-
 .modal-body .dialog-container .col-lg-3 {
     flex: 0 0 12%;
     max-width: 12%;
-    text-shadow: none;
 }
 
 .modal-body .dialog-container .offset-lg-3{
@@ -4688,14 +4690,14 @@ textarea.text-input.code.form-control {
     font-size: 12px;
     font-weight: 200;
     line-height: 16px;
-    letter-spacing: 0.031em;
+    letter-spacing: 0.028em;
 }
 .modal-body textarea.text-input.code.form-control,
 .modal-body textarea.text-input.code.form-control:hover,
 .modal-body textarea.text-input.code.form-control:focus,
 .modal-body textarea.text-input.code.form-control:active {
-    background-color: #3f4946 !important;
-    border: 1px solid #899390;
+    /*background-color: #3f4946 !important;*/
+    border: 0;
     box-shadow: none;
 }
 
