@@ -12039,6 +12039,16 @@ span.stash-id-pill {
     background-color:transparent;
     color: rgb(var(--on-surface));
 }
+
+/* ||Package Manager */
+.package-manager .package-manager-toolbar {
+    align-items: flex-end;
+}
+
+.package-manager-toolbar input.clearable-text-field.form-control {
+    margin: 0;
+}
+
 /* --- */
 .toast-container { z-index: 59000 }
 .toast-container .success{background-color: rgb(var(--green))}
