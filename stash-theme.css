@@ -4553,6 +4553,9 @@ div.tagger-container .btn-link {
     font-weight: 400;
     padding: 16px 24px 24px;
 }
+.modal-body input.text-input.form-control {
+    background-color: rgba(var(--modal-color)) !important;
+}
 .modal-header {
     border: 0;
     border-radius: 28px 28px 0 0;
