@@ -261,6 +261,7 @@ h6,
     --muted-text: 213, 229, 242; /*#d5e5f2*/
     --interactive-input: 239, 239, 241; /*#efeff1 --- lch 94.498 1.035 290.078*/
     --star-color: 255, 243, 111; /* #fff36f --- lch 94.53 64.926 100.665 */
+    --link-icon: 39, 143, 215; /*#278fd7*/
     /* Select Toggle Colors */
     --sec-cntnr-select-hover: 66, 86, 101; /*#425665*/
     --sec-cntnr-select-active: 76, 99, 117; /*#4c6375*/
@@ -5665,11 +5666,11 @@ button:is(.favorite, .not-favorite).minimal.favorite-button.btn.btn-primary:is(:
     z-index: 10;
     color: rgb(var(--twitter-blue));
 }
-#performer-page .performer-head .name-icons button.icon-link {
+#performer-page .performer-head .name-icons button.icon-link:has(>a.twitter) {
     color: rgb(var(--twitter-blue));
     filter: drop-shadow(0 0 0.2rem rgba(0,0,0,.45));
 }
-#performer-page .performer-head .name-icons button.icon-link.btn-primary {
+#performer-page .performer-head .name-icons button.icon-link.btn-primary:has(>a.twitter) {
     width: 36px;
     min-width: 36px;
     height: 36px;
@@ -5681,13 +5682,47 @@ button:is(.favorite, .not-favorite).minimal.favorite-button.btn.btn-primary:is(:
     box-shadow: none;
     transition: box-shadow 0.35s ease-in, filter 0.25s, var(--trans-0);
 }
-#performer-page .performer-head .name-icons button.icon-link.btn-primary:hover {
+#performer-page .performer-head .name-icons button.icon-link.btn-primary:has(>a.twitter):hover {
     filter: none;
     opacity: 1;
 }
-#performer-page .performer-head .name-icons button.icon-link.btn-primary:is(:focus, :active, :active:focus) {
+#performer-page .performer-head .name-icons button.icon-link.btn-primary:has(>a.twitter):is(:focus, :active, :active:focus) {
     background-image: var(--btn-active-highlight);
     background-color: rgb(var(--twitter-secondary)); /* Twitter Secondary Black Color */
+    background-blend-mode: screen;
+    box-shadow: var(--elevation-0);
+    filter: none;
+    opacity: 1;
+}
+
+/* Link Icon */
+.detail-header .name-icons button.minimal.icon-link.btn.btn-primary > a.link:has(>svg.fa-link) {
+    z-index: 10;
+    color: rgb(var(--link-icon));
+}
+.detail-header .name-icons button.minimal.icon-link.btn.btn-primary:has(>a.link>svg.fa-link) {
+    color: rgb(var(--link-icon));
+    filter: drop-shadow(0 0 0.2rem rgba(0,0,0,.45));
+}
+.detail-header .name-icons button.minimal.icon-link.btn.btn-primary:has(>a.link>svg.fa-link) {
+    width: 36px;
+    min-width: 36px;
+    height: 36px;
+    min-height: 36px;
+    max-height: 36px;
+    border: 0;
+    background-image: none;
+    background-color: transparent;
+    box-shadow: none;
+    transition: box-shadow 0.35s ease-in, filter 0.25s, var(--trans-0);
+}
+.detail-header .name-icons button.minimal.icon-link.btn.btn-primary:has(>a.link>svg.fa-link):hover {
+    filter: none;
+    opacity: 1;
+}
+.detail-header .name-icons button.minimal.icon-link.btn.btn-primary:has(>a.link>svg.fa-link):is(:focus, :active, :active:focus) {
+    background-image: var(--btn-active-highlight);
+    background-color: rgb(var(--link-icon)); 
     background-blend-mode: screen;
     box-shadow: var(--elevation-0);
     filter: none;
@@ -11377,7 +11412,7 @@ div.detail-header div.background-image-container + div.detail-container div.deta
     box-shadow: var(--elevation-2);
 }
 
-#performer-page span.detail-expand-collapse > button.minimal.expand-collapse.btn.btn-primary {
+span.detail-expand-collapse > button.minimal.expand-collapse.btn.btn-primary {
     font-size: 24px;
     color: rgb(var(--on-surface-variant));
     min-width: 40px;
@@ -11388,11 +11423,13 @@ div.detail-header div.background-image-container + div.detail-container div.deta
     border: 0;
     box-shadow: none;
 }
-#performer-page span.detail-expand-collapse > button.minimal.expand-collapse.btn.btn-primary:hover {
+span.detail-expand-collapse > button.minimal.expand-collapse.btn.btn-primary:hover {
+    color: rgb(var(--on-surface-variant));
     background-color: rgb(var(--on-surface-variant),var(--btn-hover));
     box-shadow: var(--elevation-1);
 }
-#performer-page span.detail-expand-collapse > button.minimal.expand-collapse.btn.btn-primary:not(.disabled):not(:disabled):is(:active, :focus, :active:focus) {
+span.detail-expand-collapse > button.minimal.expand-collapse.btn.btn-primary:not(.disabled):not(:disabled):is(:active, :focus, :active:focus) {
+    color: rgb(var(--on-surface-variant));
     background-color: rgb(var(--on-surface-variant),var(--btn-active));
     box-shadow: var(--elevation-0);
     outline: none;
@@ -11721,7 +11758,7 @@ button:is(.favorite, .not-favorite).minimal.favorite-button.btn.btn-primary::bef
     transform: scale(0);
     z-index: -1;
 }
-#performer-page .performer-head .name-icons button.icon-link.btn-primary::before {
+#performer-page .performer-head .name-icons button.icon-link.btn-primary:has(>a.twitter)::before {
     content: "";
     display: block;
     position: absolute;
@@ -11762,6 +11799,21 @@ button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-
     height: 2px;
     background-image: none;
     background-color: rgb(var(--star-color),var(--btn-hover));
+    background-blend-mode: screen;
+    border-radius: 5rem;
+    opacity: 1;
+    transform: scale(0);
+}
+.detail-header .name-icons button.minimal.icon-link.btn.btn-primary:has(>a.link>svg.fa-link)::before {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    width: 2px;
+    height: 2px;
+    background-image: radial-gradient(circle at center, rgb(255,255,255,0.08) 0%, rgb(255,255,255,0.08) 100%);
+    background-color: #092131;
     background-blend-mode: screen;
     border-radius: 5rem;
     opacity: 1;
@@ -11810,8 +11862,9 @@ button:is(.favorite, .not-favorite).minimal.favorite-button.btn.btn-primary:hove
     max-width: 40px;
     min-width: 2px;
 }
+.detail-header .name-icons button.minimal.icon-link.btn.btn-primary:has(>a.link>svg.fa-link):hover::before,
 button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-fill-70, .star-fill-60, .star-fill-50, .star-fill-40, .star-fill-30, .star-fill-30, .star-fill-25, .star-fill-20, .star-fill-10, .star-fill-0).minimal.btn.btn-secondary:hover::before,
-#performer-page .performer-head .name-icons button.icon-link.btn-primary:hover::before,
+#performer-page .performer-head .name-icons button.icon-link.btn-primary:has(>a.twitter):hover::before,
 #performer-page .performer-head .name-icons button.not-favorite.btn-primary:hover::before,
 #performer-page .performer-head .name-icons button.favorite.btn-primary:hover::before {
     animation: bubble 0.35s ease-in forwards;
@@ -11827,8 +11880,9 @@ button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-
 .top-nav .navbar-buttons a.nav-utility button.minimal.btn.btn-primary:not(.donate)::before,
 button[title=Help].nav-utility.minimal.btn.btn-primary:has(>svg.svg-inline--fa.fa-circle-question.fa-icon)::before,
 .top-nav .navbar-buttons a.minimal.logout-button.btn.btn-primary::before,
+.detail-header .name-icons button.minimal.icon-link.btn.btn-primary:has(>a.link>svg.fa-link)::before,
 button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-fill-70, .star-fill-60, .star-fill-50, .star-fill-40, .star-fill-30, .star-fill-30, .star-fill-25, .star-fill-20, .star-fill-10, .star-fill-0).minimal.btn.btn-secondary::before,
-#performer-page .performer-head .name-icons button.icon-link.btn-primary::before,
+#performer-page .performer-head .name-icons button.icon-link.btn-primary:has(>a.twitter)::before,
 #performer-page .performer-head .name-icons button.not-favorite.btn-primary::before,
 #performer-page .performer-head .name-icons button.favorite.btn-primary::before,
 button:is(.favorite, .not-favorite).minimal.favorite-button.btn.btn-primary::before {
@@ -11840,8 +11894,9 @@ button:is(.favorite, .not-favorite).minimal.favorite-button.btn.btn-primary::bef
 .top-nav .navbar-buttons a.nav-utility button.minimal.btn.btn-primary:not(.donate):hover::before,
 button[title=Help].nav-utility.minimal.btn.btn-primary:has(>svg.svg-inline--fa.fa-circle-question.fa-icon):hover::before,
 .top-nav .navbar-buttons a.minimal.logout-button.btn.btn-primary:hover::before,
+.detail-header .name-icons button.minimal.icon-link.btn.btn-primary:has(>a.link>svg.fa-link):hover::before,
 button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-fill-70, .star-fill-60, .star-fill-50, .star-fill-40, .star-fill-30, .star-fill-30, .star-fill-25, .star-fill-20, .star-fill-10, .star-fill-0).minimal.btn.btn-secondary:hover::before,
-#performer-page .performer-head .name-icons button.icon-link.btn-primary:hover::before,
+#performer-page .performer-head .name-icons button.icon-link.btn-primary:has(>a.twitter):hover::before,
 #performer-page .performer-head .name-icons button.not-favorite.btn-primary:hover::before,
 #performer-page .performer-head .name-icons button.favorite.btn-primary:hover::before,
 button:is(.favorite, .not-favorite).minimal.favorite-button.btn.btn-primary:hover::before {
