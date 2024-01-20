@@ -3834,16 +3834,26 @@ li.search-result.selected-result.active {
 .modal-header .close {
     border-radius: 5rem;
     background-color: transparent;
-    max-height: 35px;
-    max-width: 35px;
-    padding-top: 6px;
-    padding-left: 12px;
+    color: rgb(var(--on-surface-variant));
+    font-size: 30px;
+    line-height: 0;
+    font-weight: 700;
+    height: 40px;
+    max-height: 40px;
+    min-width: 40px;
+    width: 40px;
     position: relative;
-    overflow: hidden;
-    top: 12px;
-    left: -15px;
     display: inline-block;
-    transition: background-color 0.55s ease, color 0.2s ease-in-out;
+    padding: 0;
+    margin: 0;
+    margin-top: -43%;
+    margin-left: auto;
+    margin-right: 0%;
+    margin-bottom: 0%;
+    text-shadow: var(--light-txt-shadow);
+    opacity: 1;
+    overflow: hidden;
+    transition: var(--trans-0);
 }
 .modal-header .close:hover,
 .modal-header .close:focus,
