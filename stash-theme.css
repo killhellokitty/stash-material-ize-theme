@@ -571,7 +571,7 @@ input[type=checkbox] {
     box-shadow: inset 0 0 0 2px rgb(var(--pry-color)), inset 0 0 0 5rem transparent;
 }
 .scene-table label input[type=checkbox].form-control,
-.check-cell input[type=checkbox].form-check-input.position-static {
+input[type=checkbox].form-check-input.position-static {
     margin: 0 auto;
     width: auto;
     height: auto;
@@ -581,6 +581,10 @@ input[type=checkbox] {
     outline-offset: 0.16rem;
     outline-width: 0.11rem;
 }
+input[type=checkbox].form-check-input.position-static {
+    box-shadow: 0 0 0 0.11rem rgb(var(--on-surface)), inset 0 0 0 5rem rgb(var(--card-color));
+}
+
 .scene-table label input[type=checkbox].form-control:nth-of-type(odd) {
     box-shadow: 0 0 0 0.11rem rgb(var(--on-surface)), inset 0 0 0 5rem rgb(var(--tables-odd));
 }
@@ -590,15 +594,15 @@ input[type=checkbox] {
 .scene-table label input[type=checkbox].form-control:nth-of-type(odd):hover {
     box-shadow: 0 0 0 0.11rem rgb(var(--on-surface)), inset 0 0 0 5rem rgb(var(--tables-hover));
 }
-.check-cell input[type=checkbox].form-check-input.position-static:hover {
-    box-shadow: 0 0 0 0.11rem rgb(var(--on-surface)), inset 0 0 0 5rem rgb(var(--card-color2));
+input[type=checkbox].form-check-input.position-static:hover {
+    box-shadow: 0 0 0 0.11rem rgb(var(--on-surface)), inset 0 0 0 5rem rgb(var(--card-color));
 }
 .scene-table label input[type="checkbox"].form-control:checked,
 .scene-table label input[type="checkbox"].form-control:checked:hover,
 .scene-table label input[type="checkbox"].form-control:checked:focus,
-.check-cell input[type=checkbox].form-check-input.position-static:checked,
-.check-cell input[type=checkbox].form-check-input.position-static:checked:hover,
-.check-cell input[type=checkbox].form-check-input.position-static:checked:focus {
+input[type=checkbox].form-check-input.position-static:checked,
+input[type=checkbox].form-check-input.position-static:checked:hover,
+input[type=checkbox].form-check-input.position-static:checked:focus {
     box-shadow: 0 0 0 0.11rem rgb(var(--pry-color)), inset 0 0 0 5rem transparent;
 }
 table.table.table-striped.table-bordered>tbody>tr:hover>td label input[type="checkbox"].form-control:focus-visible,
