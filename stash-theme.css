@@ -8129,6 +8129,7 @@ button#scene-scrape,
     background-color: rgb(var(--sec-container));
     border: 0;
     border-radius: 5rem;
+    font-size: 14px;
     font-weight: 500;
     gap: 8px;
     display: inline-flex;
