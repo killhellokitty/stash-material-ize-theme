@@ -7481,10 +7481,10 @@ li.active .optional-field.excluded .scene-link {
 
 /* Progress Bars*/
 .progress {
-    background-color: #dfeefa;
+    background-color: rgb(var(--pry-color));
 }
 .progress-bar {
-    color: #001b18;
+    color: rgb(var(--on-pry));
 }
 .progress-bar {
      background-color: rgba(148, 161, 157,0.22);
@@ -7511,6 +7511,10 @@ li.active .optional-field.excluded .scene-link {
 }
 
 /* */
+#tasks-panel .tasks-panel-queue {
+    background-color: transparent;
+}
+
 #queue-viewer .current {
      background-color: var(--card-color2);
 }
@@ -7614,15 +7618,13 @@ div.modal-body b,
     box-shadow: var(--elevation-5);
 }
 .empty-queue-message {
-    color: #668398;
-    font-style: oblique;
-    text-decoration: underline;
+    color: rgb(var(--muted-text),0.5);
 }
 .job-table.card .running .fa-icon {
-    color: #00dfc6;
+    color: rgb(var(--pry-color));
 }
 .job-table.card .finished .fa-icon {
-    color: #71da69;
+    color: rgb(var(--green));
 }
 .fa-spin {
     color: #00dfc6;
