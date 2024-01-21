@@ -8483,7 +8483,7 @@ button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-
 #configuration-tabs-tabpane-metadata-providers h3,
 #configuration-tabs-tabpane-services h3,
 #configuration-tabs-tabpane-system h3 {
-    color: #b1c3c1;
+    color: rgb(var(--on-surface),0.93);
 }
 
 #wall-preview .input-control {
