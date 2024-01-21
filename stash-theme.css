@@ -7199,7 +7199,7 @@ button.clearable-text-field-clear.btn.btn-secondary:focus-visible {
     height: 16px;
     border-radius: 5rem;
     top: 3px;
-    left: -24px;
+    left: -28px;
     box-shadow: var(--elevation-1);
 }
 .custom-switch .custom-control-label:hover::after {
