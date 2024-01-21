@@ -12049,12 +12049,26 @@ span.stash-id-pill {
 }
 
 /* Toast-Container */
-.toast-container { z-index: 59000 }
-.toast-container .success{background-color: rgb(var(--green))}
-.toast-container .danger{background-color: rgb(var(--error))}
-.toast-container .warning{background-color: rgb(var(--warning))}
-.toast-container .toast-header{background-color:transparent;border:none;color: rgb(var(--on-surface))}
-.toast-container .toast-header .close{color: rgb(var(--on-surface));text-shadow:none}
+.toast-container { 
+    z-index: 59000 
+}
+.toast-container .success{
+    background-color: rgb(var(--green));
+}
+.toast-container .danger{
+    background-color: rgb(var(--error));
+}
+.toast-container .warning{
+    background-color: rgb(var(--warning));
+}
+.toast-container .toast-header{
+    background-color: transparent;
+    border: 0;
+    color: rgb(var(--surface));
+}
+.toast-container .toast-header .close{
+    color: rgb(var(--surface));
+}
 /* *** */
 
 
