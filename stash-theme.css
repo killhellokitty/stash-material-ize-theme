@@ -12044,6 +12044,9 @@ span.stash-id-pill {
 }
 
 /* Plugins Package-Manager */
+.package-manager table thead {
+    background-color: rgb(var(--card-color2));
+}
 .package-manager .package-manager-toolbar input.clearable-text-field.form-control {
     margin: 0;
 }
