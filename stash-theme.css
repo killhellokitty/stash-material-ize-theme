@@ -348,8 +348,7 @@ h6,
 /* - */
 
 code, 
-.code,
-.setting-section .setting .value {
+.code {
     font-family: var(--MonoFont);
     font-size: 12px;
     font-weight: 200;
@@ -7876,13 +7875,15 @@ svg.svg-inline--fa.fa-circle-question.fa-icon {
 }
 .setting-section .sub-heading {
     font-size: 11px;
-    margin-top: 0.15rem;
-    margin-bottom: 3rem;
+    margin-top: 0.571rem;
+    margin-bottom: 1rem;
+    margin-left: 16px;
+    margin-right: 0%;
     font-weight: 200;
-    text-shadow: var(--light-txt-shadow);
-    letter-spacing: 0.5px;
+    text-shadow: var(--really-light-txt-shadow);
+    letter-spacing: 0.094em;
     line-height: 16px;
-    color: #fafdfc;
+    color: rgb(var(--on-surface-variant),0.85);
     text-rendering: optimizeLegibility;
 }
 .setting-section .sub-heading code {
