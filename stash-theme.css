@@ -5986,6 +5986,7 @@ button:not([title=Statistics], [title=Settings]).minimal:not(.nav-utility, .bran
     max-width: 10%;
 }
 
+/* Setting-Section / Interface / Editing ... "Disable dropdown create" */
 #language .setting-section:nth-last-of-type(5) h3:has(+.sub-heading) {
     margin-top: 2rem !important;
 }
