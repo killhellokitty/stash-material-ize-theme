@@ -7199,7 +7199,7 @@ button.clearable-text-field-clear.btn.btn-secondary:focus-visible {
     height: 16px;
     border-radius: 5rem;
     top: 3px;
-    left: -28px;
+    left: -24px;
     box-shadow: var(--elevation-1);
 }
 .custom-switch .custom-control-label:hover::after {
@@ -7242,7 +7242,7 @@ button.clearable-text-field-clear.btn.btn-secondary:focus-visible {
     transform: translate(22px);
     display: flex;
     top: -0.5px;
-    left: -34px;
+    left: -30px;
     transition: background-image 0.55s ease, background-color 0.55s ease, box-shadow 0.4s ease-in, transform 0s linear;
     align-items: center;
     justify-content: center;
