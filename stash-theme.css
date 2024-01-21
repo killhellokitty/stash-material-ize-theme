@@ -5987,6 +5987,30 @@ button:not([title=Statistics], [title=Settings]).minimal:not(.nav-utility, .bran
     max-width: 10%;
 }
 
+.stash-row.align-items-center.row .dropdown>button.minimal.dropdown-toggle.btn.btn-minimal {
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    max-height: 40px;
+    font-size: 20px;
+    border-radius: 5rem;
+    color: rgb(var(--on-surface-variant));
+}
+.stash-row.align-items-center.row .dropdown>button.minimal.dropdown-toggle.btn.btn-minimal:hover {
+    background-color: rgb(var(--on-surface-variant),var(--btn-hover));
+    box-shadow: var(--elevation-0);
+}
+.stash-row.align-items-center.row .dropdown>button.minimal.dropdown-toggle.btn.btn-minimal:is(:active, :focus, :active:focus) {
+    background-color: rgb(var(--on-surface-variant),var(--btn-active));
+    outline: 0;
+    box-shadow: none;
+}
+
+#stash-table .d-none.d-md-flex.row {
+    border-bottom: 1px solid rgb(var(--card-fold));
+    margin-bottom: 12px;
+}
+
 .nav-pills .nav-link {
     color: rgb(var(--on-surface));
     text-shadow: var(--light-txt-shadow);
@@ -7755,15 +7779,22 @@ div.original-scene-details button.minimal.collapse-button.btn.btn-primary.btn-lg
 #configuration-tabs-tabpane-tasks .tasks-panel-tasks .setting-section:nth-child(3) {
     margin-top:5em;
 }
-#settings-container .col-form-label {
-    padding-top: calc(.55rem);
-    padding-bottom: calc(.55rem);
+#settings-container .col-form-label:first-of-type {
     font-family: var(--MonoFont);
     font-size: 12px;
     font-weight: 400;
     line-height: 16px;
-    letter-spacing: 0.4px;
-    color: #fff;
+    letter-spacing: 0.078em;
+    color: rgb(var(--on-surface));
+    padding: 16px 22px;
+    background-image: linear-gradient(to right, rgba(var(--pry-color),var(--text-field-tint)), rgba(var(--pry-color),var(--text-field-tint)));
+    background-color: rgb(var(--card-color));
+    background-blend-mode: screen;
+    border-radius: 4px;
+    font-variant: tabular-nums slashed-zero;
+    margin: 4px 0;
+    text-rendering: optimizeLegibility;
+    box-shadow: inset 0 0 0px 1px rgb(0,0,0,0);
 }
 .setting-section .setting .value {
     padding: 12px 8px;
@@ -8621,7 +8652,8 @@ div#settings-container div#configuration-tabs-tabpane-about .card .setting div b
 }
 
 .stash-row.align-items-center.row {
-    padding: 6px 12px 6px 12px;
+    padding: 4px 8px 4px 8px;
+    background-color: transparent !important;
 }
 
 .stash-row.align-items-center.row .dropdown>button.minimal.dropdown-toggle.btn.btn-minimal {
