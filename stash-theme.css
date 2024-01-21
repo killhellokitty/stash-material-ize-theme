@@ -7779,10 +7779,12 @@ div.original-scene-details button.minimal.collapse-button.btn.btn-primary.btn-lg
 #configuration-tabs-tabpane-tasks .tasks-panel-tasks .setting-section:nth-child(3) {
     margin-top:5em;
 }
+
+.setting-section .setting .value,
 #settings-container .col-form-label:first-of-type {
     font-family: var(--MonoFont);
     font-size: 12px;
-    font-weight: 400;
+    font-weight: 200;
     line-height: 16px;
     letter-spacing: 0.078em;
     color: rgb(var(--on-surface));
@@ -7790,6 +7792,7 @@ div.original-scene-details button.minimal.collapse-button.btn.btn-primary.btn-lg
     background-image: linear-gradient(to right, rgba(var(--pry-color),var(--text-field-tint)), rgba(var(--pry-color),var(--text-field-tint)));
     background-color: rgb(var(--card-color));
     background-blend-mode: screen;
+    border: 0;
     border-radius: 4px;
     font-variant: tabular-nums slashed-zero;
     margin: 4px 0;
@@ -7797,12 +7800,11 @@ div.original-scene-details button.minimal.collapse-button.btn.btn-primary.btn-lg
     box-shadow: inset 0 0 0px 1px rgb(0,0,0,0);
 }
 .setting-section .setting .value {
-    padding: 12px 8px;
-    border: 0;
-    border-radius: 4px;
-    margin-bottom: 8px;
-    margin-top: 8px;
+    margin: 10px 0%;
+    width: 100%;
+    margin-left: 2.5%;
 }
+
 .setting-section .setting .value:empty {
     display: none;
 }
@@ -7813,7 +7815,7 @@ div.original-scene-details button.minimal.collapse-button.btn.btn-primary.btn-lg
     display: none;
 }
 
-.setting-section .setting-group>.setting:not(:first-child), 
+.setting-section .setting-group >.setting:not(:first-child), 
 .setting-section .setting-group .collapsible-section .setting {
     margin-left: 4rem; 
 }
