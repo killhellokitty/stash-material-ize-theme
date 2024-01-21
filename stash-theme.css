@@ -12023,7 +12023,7 @@ span.stash-id-pill {
     margin: 0;
 }
 .package-manager .package-manager-toolbar {
-    align-items: flex-start;
+    align-items: center;
 }
 .package-manager .package-manager-table-container > table {
     color: rgb(var(--description-color));
