@@ -4020,6 +4020,7 @@ h5.card-section-title, .scene-tabs .scene-header {
 
 .scene-tabs .scene-header { 
     margin-bottom: 12px;
+    margin-top: 8px;
     color: rgb(var(--white-color));
     text-shadow: var(--really-light-txt-shadow);
 }
@@ -7481,15 +7482,15 @@ li.active .optional-field.excluded .scene-link {
 
 /* Progress Bars*/
 .progress {
-    background-color: rgb(var(--pry-color));
+    background-color: rgb(var(--muted-text),0.5);
 }
 .progress-bar {
-    color: rgb(var(--on-pry));
+    color: rgb(var(--on-tertiary));
 }
 .progress-bar {
-     background-color: rgba(148, 161, 157,0.22);
-     height: 14px;
-     border-radius: 0.25rem;
+     background-color: rgb(var(--tertiary));
+     height: 12px;
+     border-radius: 5rem;
 }
 .grid-card .progress-bar {
      background-color: rgba(var(--white-color),0.2);
@@ -7507,7 +7508,7 @@ li.active .optional-field.excluded .scene-link {
     height: 7px;
 }
 .progress-bar.progress-bar-animated.progress-bar-striped {
-    background-color: #83cfff;
+    background-color: transparent;
 }
 
 /* */
