@@ -7312,12 +7312,11 @@ button.clearable-text-field-clear.btn.btn-secondary:focus-visible {
 /* Danger Button */
 .btn-danger,
 .addresses .btn-danger.btn-sm {
-    font-size: 14px;
      color: rgb(var(--on-error-container));
+     background-image: var(--btn-dummy-highlight);
      background-color: rgb(var(--error-container));
+     font-size: 14px;
      font-weight: 500;
-     border-style: none;
-     border-color: transparent;
      border-width: 0;
      border-radius: 5rem;
      gap: 8px;
@@ -7325,68 +7324,48 @@ button.clearable-text-field-clear.btn.btn-secondary:focus-visible {
      justify-content: center;
      align-items: center;
      height: 40px;
+     max-height: 40px;
+     width: auto;
      line-height: 20px;
-     letter-spacing: 0.1px;
+     letter-spacing: 0.025em;
      padding: 0 24px 0 24px;
-     outline: none;
-     box-shadow: none;
-     text-shadow: none;
+     outline: 0;
      overflow: hidden;
-     position: relative;
-     transition: background-color 0.55s ease, color 0.15s ease-in-out, outline 0.2s ease-in-out;
+     box-shadow: var(--elevation-0);
+     transition: var(--trans-0);
+     -webkit-transition: var(--trans-0);
 }
 .addresses button.btn.btn-danger.btn-sm {
     padding: 0 16px 0 16px;
 }
-.btn-danger:not(.disabled):not(:disabled):hover,
-.btn-danger:not(.disabled):not(:disabled):hover:focus,
-.btn-danger:not(.disabled):not(:disabled):focus:not(:focus-visible),
-.btn-danger:not(.disabled):not(:disabled):focus-visible,
-.addresses .btn-danger.btn-sm:not(.disabled):not(:disabled):hover,
-.addresses .btn-danger.btn-sm:not(.disabled):not(:disabled):hover:focus,
-.addresses .btn-danger.btn-sm:not(.disabled):not(:disabled):focus:not(:focus-visible),
-.addresses .btn-danger.btn-sm:not(.disabled):not(:disabled):focus-visible {
+.btn-danger:not(.disabled):not(:disabled):is(:hover, :focus-visible),
+.addresses .btn-danger.btn-sm:not(.disabled):not(:disabled):is(:hover, :focus-visible) {
      color: rgb(var(--on-error-container));
-     background-color: rgba(var(--error-container-sel),var(--btn-hover-rev));
+     background-image: var(--btn-hover-highlight);
+     background-color: rgba(var(--error-container));
+     background-blend-mode: screen;
      box-shadow: var(--elevation-1);
-     outline: none;
-     text-shadow: none;
 }
 .btn-danger:focus-visible,
 .addresses .btn-danger.btn-sm:focus-visible {
-     box-shadow: none;
      outline-color: rgb(var(--focus-ring));
-     outline-style: solid;
-     outline-width: 0.25rem;
-     outline-offset: -1px;
 }
-.btn-danger:not(:disabled):not(.disabled).active, 
-.btn-danger:not(:disabled):not(.disabled):active,
-.btn-danger:not(:disabled):not(.disabled).active:hover, 
-.btn-danger:not(:disabled):not(.disabled):active:hover,
-.btn-danger:not(:disabled):not(.disabled).active:focus,  
-.btn-danger:not(:disabled):not(.disabled):active:focus,
-.addresses .btn-danger.btn-sm:not(:disabled):not(.disabled).active,
-.addresses .btn-danger.btn-sm:not(:disabled):not(.disabled):active,
-.addresses .btn-danger.btn-sm:not(:disabled):not(.disabled).active:hover,
-.addresses .btn-danger.btn-sm:not(:disabled):not(.disabled):active:hover,
-.addresses .btn-danger.btn-sm:not(:disabled):not(.disabled).active:focus,
-.addresses .btn-danger.btn-sm:not(:disabled):not(.disabled):active:focus {
+.btn-danger:not(:disabled):not(.disabled):is(.active, :active, :focus, :active:focus, .active:focus),
+.addresses .btn-danger.btn-sm:not(:disabled):not(.disabled):is(.active, :active, :focus, :active:focus, .active:focus) {
      color: rgb(var(--on-error-container));
-     background-color: rgba(var(--error-container-sel),var(--btn-active-rev));
-     border-style: none;
+     background-image: var(--btn-active-highlight);
+     background-color: rgba(var(--error-container));
+     background-blend-mode: screen;
      border: 0;
-     outline: none;
-     box-shadow: none;
-     text-shadow: none;
+     outline: 0;
+     box-shadow: var(--elevation-0);
 }
-.btn-danger.disabled,
-.btn-danger:disabled,
-.addresses .btn-danger.btn-sm.disabled,
-.addresses .btn-danger.btn-sm:disabled {
+.btn-danger:is(.disabled, :disabled),
+.addresses .btn-danger.btn-sm:is(.disabled, :disabled) {
     color: rgb(var(--on-error-container));
     background-color: rgb(var(--error-container));
-    opacity: 0.4;
+    opacity: var(--disabled);
+    box-shadow: none;
 }
 
 /* Success Button */
@@ -7394,7 +7373,6 @@ button.clearable-text-field-clear.btn.btn-secondary:focus-visible {
      color: rgb(var(--tertiary-container));
      background-image: var(--btn-dummy-highlight);
      background-color: rgb(var(--on-tertiary-container));
-     background-blend-mode: screen;
      font-size: 14px;
      font-weight: 500;
      border: 0;
@@ -7407,17 +7385,19 @@ button.clearable-text-field-clear.btn.btn-secondary:focus-visible {
      max-height: 40px;
      width: auto;
      line-height: 20px;
-     letter-spacing: 0.025px;
+     letter-spacing: 0.025em;
      padding: 0 24px 0 24px;
      outline: 0;
      overflow: hidden;
      box-shadow: var(--elevation-0);
      transition: var(--trans-0);
+     -webkit-transition: var(--trans-0);
 }
 .btn-success:not(:disabled):not(.disabled):is(:hover, :focus-visible) {
      color: rgb(var(--tertiary-container));
      background-image: var(--btn-hover-highlight);
      background-color: rgb(var(--on-tertiary-container));
+     background-blend-mode: screen;
      box-shadow: var(--elevation-1);
 }
 .btn-success:not(:disabled):not(.disabled):focus-visible {
@@ -7427,6 +7407,7 @@ button.clearable-text-field-clear.btn.btn-secondary:focus-visible {
      color: rgb(var(--tertiary-container));
      background-image: var(--btn-active-highlight);
      background-color: rgb(var(--on-tertiary-container));
+     background-blend-mode: screen;
      outline: 0;
      box-shadow: var(--elevation-0);
 }
