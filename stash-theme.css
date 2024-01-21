@@ -5986,6 +5986,10 @@ button:not([title=Statistics], [title=Settings]).minimal:not(.nav-utility, .bran
     max-width: 10%;
 }
 
+.setting-section:nth-last-of-type(5) h3:has(+.sub-heading) {
+    margin-top: 2rem !important;
+}
+
 .stash-row.align-items-center.row .dropdown>button.minimal.dropdown-toggle.btn.btn-minimal {
     padding: 0;
     width: 40px;
@@ -7846,7 +7850,7 @@ svg.svg-inline--fa.fa-circle-question.fa-icon {
 /* --- */
 
 .setting-section .setting.sub-setting h3 {
-    color: #dee5e4dd;
+    color: rgb(var(--on-tertiary),0.94);
 }
 .setting-section .setting-group>.setting:not(:first-child) h3, 
 .setting-section .setting-group .collapsible-section .setting h3 {
@@ -7942,7 +7946,7 @@ svg.svg-inline--fa.fa-circle-question.fa-icon {
 #configuration-tabs-tabpane-library .setting-section:nth-of-type(3)>.card>.setting h3,
 #configuration-tabs-tabpane-library .setting-section:nth-of-type(4)>.card>.setting h3,
 #configuration-tabs-tabpane-library .setting-section:nth-of-type(5)>.card>.setting h3 {
-    color: rgb(var(--on-surface),0.93);
+    color: rgb(var(--on-tertiary),0.94);
 }
 #configuration-tabs-tabpane-library .setting-section:nth-of-type(4)>.card>.setting .custom-control,
 #configuration-tabs-tabpane-library .setting-section:nth-of-type(5)>.card>.setting .custom-control {
@@ -8483,7 +8487,7 @@ button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-
 #configuration-tabs-tabpane-metadata-providers h3,
 #configuration-tabs-tabpane-services h3,
 #configuration-tabs-tabpane-system h3 {
-    color: rgb(var(--on-surface),0.93);
+    color: rgb(var(--on-tertiary),0.94);
 }
 
 #wall-preview .input-control {
