@@ -8487,7 +8487,7 @@ button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-
 }
 
 #wall-preview .input-control {
-    width:160px
+    width: 160px
 }
 
 .setting-section .setting-group>.setting:not(:first-child), 
