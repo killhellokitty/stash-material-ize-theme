@@ -7242,7 +7242,7 @@ button.clearable-text-field-clear.btn.btn-secondary:focus-visible {
     transform: translate(22px);
     display: flex;
     top: -0.5px;
-    left: -30px;
+    left: -34px;
     transition: background-image 0.55s ease, background-color 0.55s ease, box-shadow 0.4s ease-in, transform 0s linear;
     align-items: center;
     justify-content: center;
