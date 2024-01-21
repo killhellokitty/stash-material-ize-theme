@@ -7414,8 +7414,7 @@ button.clearable-text-field-clear.btn.btn-secondary:focus-visible {
      box-shadow: var(--elevation-0);
      transition: var(--trans-0);
 }
-.btn-success:not(:disabled):not(.disabled):hover,
-.btn-success:not(:disabled):not(.disabled):focus-visible {
+.btn-success:not(:disabled):not(.disabled):is(:hover, :focus-visible) {
      color: rgb(var(--tertiary-container));
      background-image: var(--btn-hover-highlight);
      background-color: rgb(var(--on-tertiary-container));
@@ -7424,19 +7423,14 @@ button.clearable-text-field-clear.btn.btn-secondary:focus-visible {
 .btn-success:not(:disabled):not(.disabled):focus-visible {
      outline-color: rgb(var(--focus-ring));
 }
-.btn-success:not(:disabled):not(.disabled).active, 
-.btn-success:not(:disabled):not(.disabled):active, 
-.btn-success:not(:disabled):not(.disabled):focus,
-.btn-success:not(:disabled):not(.disabled):active:focus, 
-.btn-success:not(:disabled):not(.disabled).active:focus {
+.btn-success:not(:disabled):not(.disabled):is(.active, :active, :focus, :active:focus, .active:focus) {
      color: rgb(var(--tertiary-container));
      background-image: var(--btn-active-highlight);
      background-color: rgb(var(--on-tertiary-container));
      outline: 0;
      box-shadow: var(--elevation-0);
 }
-.btn-success.disabled,
-.btn-success:disabled {
+.btn-success:is(.disabled, :disabled) {
     color: rgb(var(--tertiary-container));
     background-color: rgb(var(--on-tertiary-container));
     box-shadow: none;
