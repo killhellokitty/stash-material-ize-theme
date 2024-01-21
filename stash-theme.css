@@ -14,12 +14,13 @@ GITHUB: https://github.com/killhellokitty/stash-material-ize-theme
 
 Full licensing information is included in the repository. A copy of the licence is also included in the repository.
 */
-
-/* *** */
 html {
     font-size: 16px;
 }
-body {
+
+/* *** */
+
+ body {
     font-family: -apple-system, BlinkMacSystemFont, "Roboto Flex", Roboto, "Segoe UI", Oxygen-Sans, Ubuntu, Cantarell, "Liberation Sans", "Helvetica Neue","Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", emoji, math, serif, ui-serif;
     width: 100%;
     height: 100%;
@@ -101,6 +102,69 @@ body ::-webkit-scrollbar-corner {
 }
 body ::-webkit-resizer {
     background-color: rgba(0,0,0,0.12);
+}
+
+.row {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+[type=number]::-webkit-inner-spin-button {
+    height: 46px;
+    background: rgb(var(--on-surface-variant)) url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAKUlEQVQYlWNgwAT/sYhhKPiPT+F/LJgEsHv37v+EMGkmkuImoh2NoQAANlcun/q4OoYAAAAASUVORK5CYII=) no-repeat center center;
+    position: absolute;
+    right: 0.037em;
+    top: 0.1em;
+    width: 2em;
+    padding: 0.25em;
+    border-radius: 0 3px 3px 0;
+    opacity: 1;
+} 
+[type=number]::-webkit-outer-spin-button {
+    height: 28px;
+}
+
+h1,
+.markdown h1 {
+    font-weight: 200;
+    font-size: 57px;
+    line-height: 64px;
+    letter-spacing: -0.25px;
+}
+h2,
+.markdown h2 { 
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 52px;
+    letter-spacing: 0;
+}
+h3,
+.markdown h3 {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: 0;
+}
+h4,
+.markdown h4 { 
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: 0;
+}
+h5,
+.markdown h5 { 
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: 0;
+}
+h6,
+.markdown h6 { 
+    font-weight: 500; /* Medium */
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.016em;
 }
 
 /* RGBA color space var() with HEX after.  Ex. background-color: rgba(var(--color),var(--alpha));*/
@@ -246,56 +310,6 @@ body ::-webkit-resizer {
     --breakpoint-xl: 1200px;
 }
 
-.row {
-    margin-right: auto;
-    margin-left: auto;
-}
-
-h1,
-.markdown h1 {
-    font-weight: 200;
-    font-size: 57px;
-    line-height: 64px;
-    letter-spacing: -0.25px;
-}
-
-h2,
-.markdown h2 { 
-    font-weight: 400;
-    font-size: 45px;
-    line-height: 52px;
-    letter-spacing: 0;
-}
-h3,
-.markdown h3 {
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 44px;
-    letter-spacing: 0;
-}
-h4,
-.markdown h4 { 
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 36px;
-    letter-spacing: 0;
-}
-
-h5,
-.markdown h5 { 
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 28px;
-    letter-spacing: 0;
-}
-h6,
-.markdown h6 { 
-    font-weight: 500; /* Medium */
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0.15000000596046448px;
-}
-
 /* Focus is NOT the same as Focus-Visible */
 /**:focus:not(:focus-visible), */
 *.focus:not(:focus-visible) {
@@ -331,22 +345,6 @@ h6,
         outline-width: 0.30rem;
     }
 }
-
-[type=number]::-webkit-inner-spin-button {
-    height: 46px;
-    background: rgb(var(--on-surface-variant)) url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAKUlEQVQYlWNgwAT/sYhhKPiPT+F/LJgEsHv37v+EMGkmkuImoh2NoQAANlcun/q4OoYAAAAASUVORK5CYII=) no-repeat center center;
-    position: absolute;
-    right: 0.037em;
-    top: 0.1em;
-    width: 2em;
-    padding: 0.25em;
-    border-radius: 0 3px 3px 0;
-    opacity: 1;
-} 
-[type=number]::-webkit-outer-spin-button {
-    height: 28px;
-}
-
 /* - */
 
 code, 
@@ -2708,6 +2706,7 @@ button:not([title=Help]).btn-primary,
 .login .btn.btn-primary {
      color: rgb(var(--on-tertiary));
      background-color: rgb(var(--tertiary));
+     font-size: 14px;
      font-weight: 500;
      border: 0;
      border-radius: 5rem;
@@ -3177,7 +3176,7 @@ div.react-select__control .react-select__multi-value {
     background-image: url("data:image/svg+xml;utf8,<svg fill='%23c1c7ce' height='24' viewBox='0 0 20 22' width='32' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
     background-repeat: no-repeat;
     background-position: calc( 100% - 8px ) center;
-    background-size: 24px;
+    background-size: 50px;
     transition: color 0.2s ease-in-out, border-radius 0.2s ease-in-out, box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.55s ease;
     min-width: 160px;
 }
@@ -3632,8 +3631,7 @@ li.search-result.selected-result.active {
 
 .popover-body, 
 .popover-body .btn, 
-.modal, 
-.modal .close {
+.modal {
     color: currentColor;
 }
 .popover-body .image-input.form-label>button.btn.btn-secondary {
@@ -4676,7 +4674,10 @@ button.remove-criterion-button.btn.btn-minimal > svg.svg-inline--fa.fa-xmark.fa-
     max-width:1300px;
 }
 
-.modal-body .col-form-label, .modal-body .col-6, .modal-footer, .modal-header .col-form-label {
+.modal-body .col-form-label, 
+.modal-body .col-6, 
+.modal-footer, 
+.modal-header .col-form-label {
     text-shadow: none;
 }
 
@@ -4696,11 +4697,11 @@ button.remove-criterion-button.btn.btn-minimal > svg.svg-inline--fa.fa-xmark.fa-
 }
 
 .modal-body .dialog-container .offset-lg-3{
-    margin-left:12%;
+    margin-left: 12%;
 } 
 .modal-body .dialog-container .col-lg-9{
-    flex:0 0 88%; 
-    max-width:88%;
+    flex: 0 0 88%; 
+    max-width: 88%;
 }
 textarea.text-input.code.form-control {
     font-family: var(--MonoFont);
@@ -4713,7 +4714,7 @@ textarea.text-input.code.form-control {
 .modal-body textarea.text-input.code.form-control:hover,
 .modal-body textarea.text-input.code.form-control:focus,
 .modal-body textarea.text-input.code.form-control:active {
-    background-image: linear-gradient(to right, rgba(var(--pry-color),var(--text-field-tint)), rgba(var(--pry-color),var(--text-field-tint))),linear-gradient(to right, rgb(var(--body-color2)), rgb(var(--body-color2))) !important;
+    background-image: linear-gradient(to right, rgba(var(--pry-color),var(--text-field-tint)), rgba(var(--pry-color),var(--text-field-tint))), linear-gradient(to right, rgb(var(--body-color2)), rgb(var(--body-color2))) !important;
     background-color: rgb(var(--body-color2)) !important;
     background-blend-mode: overlay;
     border: 0;
@@ -5307,7 +5308,7 @@ div[draggable="true"] .recommendation-row:not(.scene-recommendations):not(.studi
     padding: 24px;
 }
 .recommendation-row-head a {
-        background-color: rgb(var(--body-color2));
+    background-color: rgb(var(--body-color2));
     border-radius: 5rem;
     border: 1px solid rgb(var(--outline));
     max-height: 40px;
@@ -7311,6 +7312,7 @@ button.clearable-text-field-clear.btn.btn-secondary:focus-visible {
 /* Danger Button */
 .btn-danger,
 .addresses .btn-danger.btn-sm {
+    font-size: 14px;
      color: rgb(var(--on-error-container));
      background-color: rgb(var(--error-container));
      font-weight: 500;
@@ -7336,14 +7338,14 @@ button.clearable-text-field-clear.btn.btn-secondary:focus-visible {
 .addresses button.btn.btn-danger.btn-sm {
     padding: 0 16px 0 16px;
 }
-.btn-danger:hover,
-.btn-danger:hover:focus,
-.btn-danger:focus:not(:focus-visible),
-.btn-danger:focus-visible,
-.addresses .btn-danger.btn-sm:hover,
-.addresses .btn-danger.btn-sm:hover:focus,
-.addresses .btn-danger.btn-sm:focus:not(:focus-visible),
-.addresses .btn-danger.btn-sm:focus-visible {
+.btn-danger:not(.disabled):not(:disabled):hover,
+.btn-danger:not(.disabled):not(:disabled):hover:focus,
+.btn-danger:not(.disabled):not(:disabled):focus:not(:focus-visible),
+.btn-danger:not(.disabled):not(:disabled):focus-visible,
+.addresses .btn-danger.btn-sm:not(.disabled):not(:disabled):hover,
+.addresses .btn-danger.btn-sm:not(.disabled):not(:disabled):hover:focus,
+.addresses .btn-danger.btn-sm:not(.disabled):not(:disabled):focus:not(:focus-visible),
+.addresses .btn-danger.btn-sm:not(.disabled):not(:disabled):focus-visible {
      color: rgb(var(--on-error-container));
      background-color: rgba(var(--error-container-sel),var(--btn-hover-rev));
      box-shadow: var(--elevation-1);
@@ -7389,6 +7391,7 @@ button.clearable-text-field-clear.btn.btn-secondary:focus-visible {
 
 /* Success Button */
 .btn-success {
+    font-size: 14px;
      color: #1c3530;
      background-color: #b1ccc5;
      font-weight: 500;
@@ -12040,15 +12043,26 @@ span.stash-id-pill {
     color: rgb(var(--on-surface));
 }
 
-/* ||Package Manager */
-.package-manager .package-manager-toolbar {
-    align-items: flex-end;
-}
-
-.package-manager-toolbar input.clearable-text-field.form-control {
+/* Plugins Package-Manager */
+.package-manager .package-manager-toolbar input.clearable-text-field.form-control {
     margin: 0;
 }
-
+.package-manager .package-manager-toolbar {
+    align-items: center;
+}
+.package-manager .package-manager-table-container > table {
+    color: rgb(var(--description-color));
+    border-style: solid;
+    border: 2px solid rgb(var(--card-color2));
+    margin-bottom: 16px;
+    margin-top: 8px;
+}
+.package-manager .package-manager-table-container .table td {
+    border: 0;
+}
+.package-manager .package-manager-table-container td:first-child {
+    display: revert;
+}
 /* --- */
 .toast-container { z-index: 59000 }
 .toast-container .success{background-color: rgb(var(--green))}
