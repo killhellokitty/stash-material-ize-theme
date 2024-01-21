@@ -570,7 +570,8 @@ input[type=checkbox] {
 :is(.scene-card, .performer-card, .studio-card, .tag-card) input[type=checkbox].card-check.form-control:checked:focus-visible {
     box-shadow: inset 0 0 0 2px rgb(var(--pry-color)), inset 0 0 0 5rem transparent;
 }
-.scene-table label input[type=checkbox].form-control {
+.scene-table label input[type=checkbox].form-control,
+.check-cell input[type=checkbox].form-check-input.position-static {
     margin: 0 auto;
     width: auto;
     height: auto;
@@ -589,9 +590,15 @@ input[type=checkbox] {
 .scene-table label input[type=checkbox].form-control:nth-of-type(odd):hover {
     box-shadow: 0 0 0 0.11rem rgb(var(--on-surface)), inset 0 0 0 5rem rgb(var(--tables-hover));
 }
+.check-cell input[type=checkbox].form-check-input.position-static:hover {
+    box-shadow: 0 0 0 0.11rem rgb(var(--on-surface)), inset 0 0 0 5rem rgb(var(--card-color2));
+}
 .scene-table label input[type="checkbox"].form-control:checked,
 .scene-table label input[type="checkbox"].form-control:checked:hover,
-.scene-table label input[type="checkbox"].form-control:checked:focus {
+.scene-table label input[type="checkbox"].form-control:checked:focus,
+.check-cell input[type=checkbox].form-check-input.position-static:checked,
+.check-cell input[type=checkbox].form-check-input.position-static:checked:hover,
+.check-cell input[type=checkbox].form-check-input.position-static:checked:focus {
     box-shadow: 0 0 0 0.11rem rgb(var(--pry-color)), inset 0 0 0 5rem transparent;
 }
 table.table.table-striped.table-bordered>tbody>tr:hover>td label input[type="checkbox"].form-control:focus-visible,
