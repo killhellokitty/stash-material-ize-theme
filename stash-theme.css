@@ -7942,7 +7942,7 @@ svg.svg-inline--fa.fa-circle-question.fa-icon {
 #configuration-tabs-tabpane-library .setting-section:nth-of-type(3)>.card>.setting h3,
 #configuration-tabs-tabpane-library .setting-section:nth-of-type(4)>.card>.setting h3,
 #configuration-tabs-tabpane-library .setting-section:nth-of-type(5)>.card>.setting h3 {
-    color: #b1c3c1;
+    color: rgb(var(--on-surface),0.93);
 }
 #configuration-tabs-tabpane-library .setting-section:nth-of-type(4)>.card>.setting .custom-control,
 #configuration-tabs-tabpane-library .setting-section:nth-of-type(5)>.card>.setting .custom-control {
