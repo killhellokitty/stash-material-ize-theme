@@ -12033,6 +12033,7 @@ span.stash-id-pill {
 }
 .package-manager .package-manager-table-container td:first-child {
     display: revert;
+    text-align: center;
 }
 /* --- */
 .toast-container { z-index: 59000 }
