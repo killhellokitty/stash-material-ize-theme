@@ -5987,8 +5987,8 @@ button:not([title=Statistics], [title=Settings]).minimal:not(.nav-utility, .bran
 }
 
 /* Setting-Section / Interface / Editing ... "Disable dropdown create" */
-#language .setting-section:nth-last-of-type(5) h3:has(+.sub-heading) {
-    margin-top: 2rem !important;
+.setting-section:nth-last-of-type(5) h3:has(+.sub-heading) {
+    margin-top: 1rem !important;
 }
 
 .stash-row.align-items-center.row .dropdown>button.minimal.dropdown-toggle.btn.btn-minimal {
