@@ -12058,9 +12058,11 @@ span.stash-id-pill {
 }
 .toast-container .danger{
     background-color: rgb(var(--error));
+    color: rgb(var(--on-error));
 }
 .toast-container .warning{
     background-color: rgb(var(--warning));
+    color: #743000;
 }
 .toast-container .toast-header{
     background-color: transparent;
