@@ -12039,7 +12039,27 @@ span.stash-id-pill {
     display: revert;
     text-align: center;
 }
-/* --- */
+
+/* Logs */
+.logs {
+    font-family: var(--MonoFont);
+    font-size: 12px;
+    font-weight: 200;
+    line-height: 16px;
+    letter-spacing: 0.078em;
+    padding-top: 1rem;
+    padding: 16px 22px;
+    background-image: linear-gradient(to right, rgba(var(--pry-color),var(--text-field-tint)), rgba(var(--pry-color),var(--text-field-tint)));
+    background-color: rgb(var(--body-color2));
+    background-blend-mode: screen;
+    border-radius: 4px;
+    margin: 16px;
+    font-variant: tabular-nums slashed-zero;
+    text-rendering: optimizeLegibility;
+    box-shadow: inset 0 0 0 1px rgb(0,0,0,0);
+}
+
+/* Toast-Container */
 .toast-container { z-index: 59000 }
 .toast-container .success{background-color: rgb(var(--green))}
 .toast-container .danger{background-color: rgb(var(--error))}
