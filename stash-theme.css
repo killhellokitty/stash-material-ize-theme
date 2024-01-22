@@ -2504,7 +2504,7 @@ button.tag-list-button.btn.btn-secondary:not(:has(>.tag-list-anchor)):disabled {
     letter-spacing: 0.5px;
 }
 
-/* Button-Small thoughout */
+/* Button-Small */
 .btn-sm,
 .btn-group-sm>.btn {
     font-size: 11px;
@@ -2728,7 +2728,6 @@ button:not([title=Help]).btn-primary,
      padding-left: 24px;
      padding-right: 24px;
      box-shadow: var(--elevation-0);
-     text-shadow: none;
      outline: 0;
      position: relative;
      overflow: hidden;
@@ -7516,10 +7515,10 @@ li.active .optional-field.excluded .scene-link {
     background-color: rgb(var(--pry-color));
 }
 .progress-bar {
-    color: rgb(var(--on-pry-color));
-    text-shadow: var(--light-txt-shadow);
+    color: transparent;
+    text-shadow: none;
     background-color: white;
-    height: 4px;
+    height: 0.25rem;
     border-radius: 2.5rem;
 }
 .progress-bar-animated {
@@ -7530,8 +7529,8 @@ li.active .optional-field.excluded .scene-link {
     background-size: 0rem 0rem;
 }
 .progress {
-    height: 4px;
-    font-size: 0.786rem;
+    height: 0.25rem;
+    font-size: 0.75rem;
     background-color: rgb(var(--pry-container));
     border-radius: 2.5rem;
 }
@@ -7552,7 +7551,76 @@ li.active .optional-field.excluded .scene-link {
     height: 7px;
 }
 
+/* Terminal */
+.job-table.card {
+    margin: 0%;
+    padding: 0.5rem 1rem;
+    height: 12.469rem;
+    border-radius: 0.25rem;
+    background-color: rgb(var(--body-color2));
+    border: 1px solid rgb(var(--outline-variant));
+    box-shadow: var(--elevation-5);
+}
+.empty-queue-message {
+    color: rgb(var(--muted-text),0.75);
+}
+.job-table.card .progress {
+    margin-top: 0.25rem;
+    margin-bottom: 0.5rem;
+}
+.job-table.card .finished .fa-icon {
+    color: rgb(var(--green));
+}
+
+.job-table.card .stop, .job-table.card .stop:not(:disabled), .job-table.card .stopping .fa-icon, .job-table.card .cancelled .fa-icon {
+    color: rgb(var(--on-surface-variant));
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 1rem;
+}
+.job-table.card button.minimal.stop.btn.btn-primary.btn-sm,
+.job-table.card button.minimal.stop:not(:disabled).btn.btn-primary.btn-sm {
+    background-image: none;
+    background-color: transparent;
+    color: rgb(var(--on-surface-variant));
+    padding: 0;
+    width: 32px;
+    min-width: 32px;
+    height: 32px;
+    max-height: 32px;
+    box-shadow: none;
+}
+.job-table.card button.minimal.stop:not(:disabled).btn.btn-primary.btn-sm:hover {
+    color: rgb(var(--on-surface-variant));
+    background-image: var(--btn-dummy-highlight);
+    background-color: rgb(var(--on-surface-variant),var(--btn-hover));
+    background-blend-mode: normal;
+    box-shadow: var(--elevation-0);
+}
+.job-table.card button.minimal.stop:not(:disabled).btn.btn-primary.btn-sm:is(:active, :focus, :active:focus) {
+    color: rgb(var(--on-surface-variant));
+    background-image: var(--btn-dummy-highlight);
+    background-color: rgb(var(--on-surface-variant),var(--btn-active));
+    background-blend-mode: normal;
+    box-shadow: none;
+}
+
+.job-status {
+    color: rgb(var(--on-surface));
+}
+
+/* Progress Spin-Grean and "Scanning" */
+.job-table.card .job-status .fa-icon.fa-spin {
+    color: transparent;
+}
+.job-status > div > svg.fa-spin {
+    display: none;
+}
+.job-status > div > svg.fa-spin + span {
+    margin-left: -1rem;
+}
 /* */
+
 #tasks-panel .tasks-panel-queue {
     background-color: transparent;
 }
@@ -7561,8 +7629,8 @@ li.active .optional-field.excluded .scene-link {
      background-color: var(--card-color2);
 }
 .tab-content .card-popovers .btn {
-     padding-left: .4rem;
-     padding-right: .4rem;
+     padding-left: .5rem;
+     padding-right: .5rem;
 }
 
 /* */
@@ -7648,38 +7716,6 @@ div.modal-body b,
 }
 .scene-parser-row .parser-field-title {
     width: 62ch;
-}
-
-.job-table.card {
-    margin: 0%;
-    padding: 8px 16px;
-    height: 14.25em;
-    border-radius: 0.286rem;
-    background-color: rgb(var(--body-color2));
-    border: 1px solid rgb(var(--outline-variant));
-    box-shadow: var(--elevation-5);
-}
-.empty-queue-message {
-    color: rgb(var(--muted-text),0.75);
-}
-.job-table.card .running .fa-icon {
-    color: transparent;
-}
-.job-table.card .finished .fa-icon {
-    color: rgb(var(--green));
-}
-.fa-spin {
-    color: #00dfc6;
-}
-.job-table.card .stop:not(:disabled), .job-table.card .stopping .fa-icon, .job-table.card .cancelled .fa-icon {
-    color: rgb(var(--on-surface-variant));
-}
-.job-status {
-    color: rgb(var(--on-surface));
-}
-/* Progress "Scanning" */
-.job-status.running >div>svg.fa-spin +span {
-    margin-left: -16px;
 }
 
 .mx-auto.card .row .col-md-2 .flex-column { 
