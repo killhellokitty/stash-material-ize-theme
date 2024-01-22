@@ -7653,7 +7653,7 @@ div.modal-body b,
 .job-table.card {
     margin: 0%;
     padding: 8px 16px;
-    height: 13.75em;
+    height: 14.25em;
     border-radius: 0.286rem;
     background-color: rgb(var(--body-color2));
     border: 1px solid rgb(var(--outline-variant));
@@ -7677,7 +7677,10 @@ div.modal-body b,
 .job-status {
     color: rgb(var(--on-surface));
 }
-
+/* Progress "Scanning" */
+.job-status.running >div>svg.fa-spin +span {
+    margin-left: -16px;
+}
 
 .mx-auto.card .row .col-md-2 .flex-column { 
     position:fixed;
