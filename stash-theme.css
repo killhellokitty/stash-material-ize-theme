@@ -7506,24 +7506,36 @@ li.active .optional-field.excluded .scene-link {
 
 /* */
 .hover-popover-content {
-     /*max-width: 32rem;*/
      max-width: 32rem;
      text-align: center;
      background: var(--nav-color);
 }
 
 /* Progress Bars*/
+.progress-bar.progress-bar-animated.progress-bar-striped {
+    background-color: rgb(var(--pry-color));
+}
+.progress-bar {
+    color: rgb(var(--on-pry-color));
+    text-shadow: var(--light-txt-shadow);
+    background-color: white;
+    height: 4px;
+    border-radius: 2.5rem;
+}
+.progress-bar-animated {
+    animation: none;
+}
+.progress-bar-striped {
+    background-image: none;
+    background-size: 0rem 0rem;
+}
 .progress {
-    background-color: rgb(var(--muted-text),0.5);
+    height: 4px;
+    font-size: 0.786rem;
+    background-color: rgb(var(--pry-container));
+    border-radius: 2.5rem;
 }
-.progress-bar {
-    color: rgb(var(--on-tertiary));
-}
-.progress-bar {
-     background-color: rgb(var(--tertiary));
-     height: 12px;
-     border-radius: 5rem;
-}
+
 .grid-card .progress-bar {
      background-color: rgba(var(--white-color),0.2);
      backdrop-filter: blur(6px);
@@ -7538,9 +7550,6 @@ li.active .optional-field.excluded .scene-link {
 .grid-card .progress-indicator {
     background-color: rgb(var(--pry-color));
     height: 7px;
-}
-.progress-bar.progress-bar-animated.progress-bar-striped {
-    background-color: transparent;
 }
 
 /* */
@@ -7651,10 +7660,10 @@ div.modal-body b,
     box-shadow: var(--elevation-5);
 }
 .empty-queue-message {
-    color: rgb(var(--muted-text),0.5);
+    color: rgb(var(--muted-text),0.75);
 }
 .job-table.card .running .fa-icon {
-    color: rgb(var(--pry-color));
+    color: transparent;
 }
 .job-table.card .finished .fa-icon {
     color: rgb(var(--green));
@@ -7662,6 +7671,13 @@ div.modal-body b,
 .fa-spin {
     color: #00dfc6;
 }
+.job-table.card .stop:not(:disabled), .job-table.card .stopping .fa-icon, .job-table.card .cancelled .fa-icon {
+    color: rgb(var(--on-surface-variant));
+}
+.job-status {
+    color: rgb(var(--on-surface));
+}
+
 
 .mx-auto.card .row .col-md-2 .flex-column { 
     position:fixed;
@@ -7902,9 +7918,7 @@ svg.svg-inline--fa.fa-circle-question.fa-icon {
 .setting-dialog .sub-heading {
     color: #879390;
 }
-.job-status {
-    color: #dfeefa;
-}
+
 
 /* ||Changelog */
 .changelog >h1 {
