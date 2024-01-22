@@ -7748,6 +7748,11 @@ div.modal-body b,
     opacity:0.8; 
     zoom:2;
 }
+
+/* Setting-Section */
+.setting-section .setting {
+    padding: 1rem 1.25rem;
+}
 .setting-section h1, #tasks-panel h1 {
     font-size: 57px; 
     color: #aadeff;
@@ -7957,13 +7962,13 @@ svg.svg-inline--fa.fa-circle-question.fa-icon {
 }
 .setting-section .sub-heading {
     font-size: 11px;
-    margin-top: 0.571rem;
+    margin-top: 0.25rem;
     margin-bottom: 1rem;
-    margin-left: 16px;
+    margin-left: 0%;
     margin-right: 0%;
     font-weight: 200;
     text-shadow: var(--really-light-txt-shadow);
-    letter-spacing: 0.094em;
+    letter-spacing: 0.107em;
     line-height: 16px;
     color: rgb(var(--on-surface-variant),0.85);
     text-rendering: optimizeLegibility;
