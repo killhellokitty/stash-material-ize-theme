@@ -7779,6 +7779,7 @@ div.modal-body b,
 .setting-section .setting-group>.setting:not(:first-child) h3,
 .setting-section .setting-group .collapsible-section {
     color: #dee5e4;
+    text-shadow: var(--really-light-txt-shadow);
 }
 .setting-section .setting h3[title] {
     text-decoration: none !important;
@@ -7935,11 +7936,12 @@ svg.svg-inline--fa.fa-circle-question.fa-icon {
 }
 .setting-section .setting-group>.setting:not(:first-child) h3, 
 .setting-section .setting-group .collapsible-section .setting h3 {
-    font-size: 16px;
-    font-weight: 500;
-    letter-spacing: 0.15px;
+    color: rgb(var(--on-tertiary),0.93);
+    font-size: 1.094rem;
+    font-weight: 400;
+    letter-spacing: 0.049em;
     line-height: 20px;
-    padding: 12px 0 6px 0;
+    padding: 10px 0 6px 0;
 }
 .setting-section .setting.disabled .custom-switch, 
 .setting-section .setting.disabled h3 {
