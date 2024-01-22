@@ -7779,7 +7779,6 @@ div.modal-body b,
 .setting-section .setting-group>.setting:not(:first-child) h3,
 .setting-section .setting-group .collapsible-section {
     color: #dee5e4;
-    /*font-family: Verdana, Arial, "Segoe UI", 'Liberation Sans', NotoSans, FiraCode, sans-serif, system-ui, 'FiraCode Mono', 'Liberation Mono', Meslo, Menlo, Monaco, Consolas, SFMono-Regular, "Courier New", monospace;*/
 }
 .setting-section .setting h3[title] {
     text-decoration: none !important;
