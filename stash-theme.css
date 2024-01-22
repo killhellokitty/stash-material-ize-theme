@@ -263,7 +263,7 @@ h6,
     --interactive-input: 239, 239, 241; /*#efeff1 --- lch 94.498 1.035 290.078*/
     --star-color: 255, 243, 111; /* #fff36f --- lch 94.53 64.926 100.665 */
     --link-icon: 39, 143, 215; /*#278fd7*/
-    --setting-section-h1
+    --setting-h1: 162, 217, 255; /*#a2d9ff*/
     /* Select Toggle Colors */
     --sec-cntnr-select-hover: 66, 86, 101; /*#425665*/
     --sec-cntnr-select-active: 76, 99, 117; /*#4c6375*/
@@ -7757,7 +7757,7 @@ div.modal-body b,
 .setting-section h1, 
 #tasks-panel h1 {
     font-size: 57px;
-    color: var(--setting-h1);
+    color: rgb(var(--setting-h1));
     margin-bottom: 1.25rem;
     margin-top: 2.75rem;
 }
