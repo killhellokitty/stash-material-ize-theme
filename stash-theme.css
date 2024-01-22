@@ -7754,7 +7754,8 @@ div.modal-body b,
 .setting-section .setting {
     padding: 1rem 1.25rem;
 }
-.setting-section h1, #tasks-panel h1 {
+.setting-section h1, 
+#tasks-panel h1 {
     font-size: 57px;
     color: var(--setting-h1);
     margin-bottom: 1.25rem;
