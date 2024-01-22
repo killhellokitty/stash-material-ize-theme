@@ -5986,9 +5986,13 @@ button:not([title=Statistics], [title=Settings]).minimal:not(.nav-utility, .bran
     max-width: 10%;
 }
 
-/* Setting-Section / Interface  */
-.setting-section .card {
-    padding: 16px 20px;
+/* Setting-Section / Interface / Editing ... "Disable dropdown create" */
+.setting-section:nth-last-of-type(5) h3:has(+.sub-heading) {
+    margin-top: 1rem !important;
+}
+/* Setting-Section / Interface "Show AB loop plugin control" */
+.setting#max-loop-duration + .setting > div > h3 {
+    margin-bottom: 1rem;
 }
 
 .stash-row.align-items-center.row .dropdown>button.minimal.dropdown-toggle.btn.btn-minimal {
