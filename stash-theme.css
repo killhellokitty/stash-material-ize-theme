@@ -8801,6 +8801,7 @@ a .TruncatedText:focus-visible {
     outline: none;
     text-decoration: solid underline;
 }
+
 /* Check for new version & Download buttons on About in Settings */
 div#settings-container div#configuration-tabs-tabpane-about .card .setting div a button.btn-primary,
 div#settings-container div#configuration-tabs-tabpane-about .card .setting div button.btn-primary,
