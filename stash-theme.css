@@ -8016,9 +8016,8 @@ svg.svg-inline--fa.fa-circle-question.fa-icon {
 
 #configuration-tabs-tabpane-library>#stashes.setting-section:first-child>.sub-heading {
     position: relative;
-    top: -4em;
-    margin-bottom: 1em;
-    color: #d1edffdf;
+    top: -0.75rem;
+    color: rgb(var(--on-surface-variant));
 }
 #configuration-tabs-tabpane-library .setting-section:not(#stashes)>h1 {
     margin-top: 1em;
