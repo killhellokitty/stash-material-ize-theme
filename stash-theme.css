@@ -8708,6 +8708,14 @@ button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-
     margin-bottom: 1.2rem
 }
 
+#configuration-tabs-tabpane-library .setting-section > .card > .setting > div > h3 {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: 0.005em;
+    font-family: var(--HeaderFont);
+}
+
 a .TruncatedText:focus-visible {
     box-shadow: none;
     outline: none;
