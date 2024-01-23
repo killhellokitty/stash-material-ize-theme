@@ -8682,6 +8682,9 @@ button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-
 #configuration-tabs-tabpane-tasks .setting-section .setting>div:has(>.custom-control>#clean-dryrun) {
     height: 0;
 }
+.setting-section .setting:has(>div+div>button#import.btn-danger) {
+    padding: 0 1.25rem;
+}
 #configuration-tabs-tabpane-system .setting-section .sub-heading {
     margin-bottom: 1.2rem
 }
