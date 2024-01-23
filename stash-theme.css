@@ -8689,11 +8689,17 @@ button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-
 #configuration-tabs-tabpane-tasks .setting-section .setting:has(>div+div>button#backup.btn-secondary),
 #configuration-tabs-tabpane-tasks .setting-section .setting:has(>div+div>button#anonymise.btn-secondary),
 #configuration-tabs-tabpane-tasks .setting-section .setting:has(>div+div>button#migrateHashNaming.btn-danger),
-#configuration-tabs-tabpane-library .setting-section .setting#video-extensions {
+#configuration-tabs-tabpane-library .setting-section .setting#video-extensions,
+#configuration-tabs-tabpane-library .setting-section .setting#excluded-video-patterns,
+#configuration-tabs-tabpane-library .setting-section .setting:has(>div+div>.custom-control>input#create-galleries-from-folders) {
     padding: 1rem 1.25rem 0;
 }
 #configuration-tabs-tabpane-library .setting-section .setting#image-extensions {
     padding: 0 1.25rem 0 1.25rem;
+}
+#configuration-tabs-tabpane-library .setting-section .setting#gallery-extensions,
+#configuration-tabs-tabpane-library .setting-section .setting#excluded-image-gallery-patterns {
+    padding: 0 1.25rem 1rem 1.25rem;
 }
 #configuration-tabs-tabpane-system .setting-section .sub-heading {
     margin-bottom: 1.2rem
