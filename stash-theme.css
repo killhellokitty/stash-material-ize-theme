@@ -8681,7 +8681,6 @@ button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-
 }
 #configuration-tabs-tabpane-tasks .setting-section .setting>div:has(>.custom-control>#clean-dryrun) {
     height: 0;
-    width: 0;
 }
 #configuration-tabs-tabpane-system .setting-section .sub-heading {
     margin-bottom: 1.2rem
