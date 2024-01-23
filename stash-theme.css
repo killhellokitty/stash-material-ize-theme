@@ -8037,6 +8037,8 @@ svg.svg-inline--fa.fa-circle-question.fa-icon {
 #configuration-tabs-tabpane-interface .setting-section:first-child>.card>.setting select.input-control.form-control {
     margin-top: 16px;
     margin-bottom: 16px;
+    margin-right: 38px;
+    margin-left: -16px;
 }
 
 /* ||Toolbar-Button's */
@@ -8587,19 +8589,6 @@ button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-
     color: rgb(var(--on-tertiary),0.94);
 }
 
-#configuration-tabs-tabpane-interface .setting-section>.card>.setting#language+.setting-group {
-    border: 1px solid rgb(var(--card-fold));
-    border-right: 0;
-    border-left: 0;
-    padding: 1rem 0 1rem 0;
-    margin-left: 1.375rem;
-    width: calc(100% - 2.75rem);
-}
-#configuration-tabs-tabpane-interface .setting-section>.card>.setting#language+.setting-group > .setting {
-    padding-left: 0;
-    padding-right: 0;
-}
-
 #wall-preview .input-control {
     width: 160px
 }
@@ -8757,6 +8746,19 @@ button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-
     font-size: 17.5px;
     line-height: 26px;
     letter-spacing: 0.026em;
+}
+
+#configuration-tabs-tabpane-interface .setting-section > .card > .setting#language + .setting-group {
+    border: 1px solid rgb(var(--card-fold));
+    border-right: 0;
+    border-left: 0;
+    padding: 1rem 0 1rem 0;
+    margin-left: 1.375rem;
+    width: calc(100% - 2.75rem);
+}
+#configuration-tabs-tabpane-interface .setting-section >.card >.setting#language +.setting-group > .setting {
+    padding-left: 0;
+    padding-right: 0;
 }
 
 a .TruncatedText:focus-visible {
