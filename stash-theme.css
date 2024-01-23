@@ -5987,7 +5987,7 @@ button:not([title=Statistics], [title=Settings]).minimal:not(.nav-utility, .bran
 }
 
 /* Setting-Section / Interface / Editing ... "Disable dropdown create" */
-.setting-section:nth-last-of-type(5) h3:has(+.sub-heading) {
+.setting-section:nth-last-of-type(5) h3:has(+.sub-heading):has(:not(>a[type="/help/Tasks.md"])):has(:not(*button#optimiseDatabase)) {
     margin-top: 1rem !important;
 }
 /* Setting-Section / Interface "Show AB loop plugin control" */
@@ -8556,8 +8556,13 @@ button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-
 }
 .setting-section .setting-group:not(:last-child) {
     border-bottom: 0;
+    padding-bottom: 0;
+}
+.setting-section:not(#configuration-tabs-tabpane-tasks .setting-section) .setting-group:not(:last-child) {
+    border-bottom: 0;
     padding-bottom: 20px;
 }
+
 
 #configuration-tabs-tabpane-interface .setting-section .setting>div:last-child {
     min-width: 20px;
@@ -8673,6 +8678,9 @@ button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-
     min-width: 20px;
     text-align: right;
     width:auto;
+}
+#configuration-tabs-tabpane-tasks .setting-section .setting>div:has(>.custom-control>#clean-dryrun) {
+    height: 0;
 }
 #configuration-tabs-tabpane-system .setting-section .sub-heading {
     margin-bottom: 1.2rem
