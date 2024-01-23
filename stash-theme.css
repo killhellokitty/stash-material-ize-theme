@@ -8018,6 +8018,7 @@ svg.svg-inline--fa.fa-circle-question.fa-icon {
     position: relative;
     top: -0.75rem;
     color: rgb(var(--on-surface-variant));
+    text-shadow: var(--light-txt-shadow);
 }
 #configuration-tabs-tabpane-library .setting-section:not(#stashes)>h1 {
     margin-top: 1em;
@@ -8700,26 +8701,37 @@ button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-
 }
 #configuration-tabs-tabpane-library .setting-section .setting#gallery-extensions,
 #configuration-tabs-tabpane-library .setting-section .setting#excluded-image-gallery-patterns,
-#configuration-tabs-tabpane-library .setting-section .setting#gallery-cover-regex,
 #configuration-tabs-tabpane-library .setting-section .setting:has(>div+div>.custom-control>input#delete-generated-default) {
     padding: 0 1.25rem 1rem 1.25rem;
+}
+#configuration-tabs-tabpane-library .setting-section .setting#gallery-cover-regex {
+    border-top: 1px solid rgb(var(--card-fold));
+    padding-top: 1rem;
+    margin-left: 22px;
+    padding: 1rem 0 1rem 0;
+    width: calc(100% - 44px);
 }
 #configuration-tabs-tabpane-system .setting-section .sub-heading {
     margin-bottom: 1.2rem
 }
 
+#configuration-tabs-tabpane-library #stash-table .d-none.d-md-flex.row,
 #configuration-tabs-tabpane-library .setting-section > .card > .setting > div > h3 {
     font-weight: 400;
-    font-size: 28px;
-    line-height: 36px;
-    letter-spacing: 0.005em;
+    font-size: 22px;
+    line-height: 30px;
+    letter-spacing: 0.016em;
     font-family: var(--HeaderFont);
 }
 
-#configuration-tabs-tabpane-library .setting-section > .card > .setting>div:has(+div>.custom-control>input#create-galleries-from-folders) h3 {
+#configuration-tabs-tabpane-library .setting-section > .card > .setting>div:has(+div>.custom-control>input#create-galleries-from-folders) h3,
+#configuration-tabs-tabpane-library .setting-section > .card > .setting>div:has(+div>.custom-control>input#write-image-thumbnails) h3,
+#configuration-tabs-tabpane-library .setting-section > .card > .setting>div:has(+div>.custom-control>input#create-image-clips-from-videos) h3,
+#configuration-tabs-tabpane-library .setting-section > .card > .setting>div:has(+div>.custom-control>input#delete-file-default) h3,
+#configuration-tabs-tabpane-library .setting-section > .card > .setting>div:has(+div>.custom-control>input#delete-generated-default) h3 {
     font-size: 17.5px;
     line-height: 26px;
-    letter-spacing: 0.023em;
+    letter-spacing: 0.026em;
 }
 
 a .TruncatedText:focus-visible {
