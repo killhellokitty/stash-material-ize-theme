@@ -7906,9 +7906,10 @@ div.original-scene-details button.minimal.collapse-button.btn.btn-primary.btn-lg
 }
 .setting-section .setting h3 {
     font-weight: 400;
-    font-size: 36px;
-    line-height: 44px;
-    letter-spacing: 0; 
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: 0.013em;
+    font-family: var(--HeaderFont); 
     color: rgb(var(--on-tertiary));
 }
 
