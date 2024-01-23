@@ -8522,7 +8522,7 @@ button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-
     padding-top:0; 
     padding-bottom:0
 }
-#configuration-tabs-tabpane-interface .setting-section .setting-group>.setting:not(:first-child) h3 {
+#configuration-tabs-tabpane-interface .setting-section .setting-group > .setting:not(:first-child) h3 {
     font-size: 16px;
     margin-left: 60px;
     color: #dee5e4;
@@ -8533,29 +8533,29 @@ button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-
     margin-left:0px;
     margin-top:-32px;
 }
-#configuration-tabs-tabpane-interface .setting-section>.card>.setting {
+#configuration-tabs-tabpane-interface .setting-section > .card > .setting {
     padding-top: 16px;
 }
-#configuration-tabs-tabpane-interface .setting-section:nth-of-type(4)>.card>.setting {
-    padding-bottom: 30px;
+#configuration-tabs-tabpane-interface .setting-section:nth-of-type(4) > .card > .setting {
+    padding-bottom: 1rem;
 }
-#configuration-tabs-tabpane-interface .setting-section>.card>#wall-preview.setting {
-    padding-top: 16px;
+#configuration-tabs-tabpane-interface .setting-section > .card > #wall-preview.setting {
+    padding-top: 1rem;
 }
-#configuration-tabs-tabpane-interface .setting-section>.card>.setting .custom-control,
-#configuration-tabs-tabpane-metadata-providers .setting-section>.card>.setting .custom-control,
-#configuration-tabs-tabpane-services .setting-section>.card>.setting .custom-control,
-#configuration-tabs-tabpane-system .setting-section>.card>.setting .custom-control {
+#configuration-tabs-tabpane-interface .setting-section > .card > .setting .custom-control,
+#configuration-tabs-tabpane-metadata-providers .setting-section > .card > .setting .custom-control,
+#configuration-tabs-tabpane-services .setting-section > .card > .setting .custom-control,
+#configuration-tabs-tabpane-system .setting-section > .card > .setting .custom-control {
     margin-right: 30px;
 }
-#configuration-tabs-tabpane-interface .setting-section>.card>#lightbox_display_mode.setting {
+#configuration-tabs-tabpane-interface .setting-section > .card > #lightbox_display_mode.setting {
     padding-bottom: 16px;
 }
-#configuration-tabs-tabpane-interface .setting-section>.card>#rating_system_star_precision.setting {
+#configuration-tabs-tabpane-interface .setting-section > .card > #rating_system_star_precision.setting {
     padding-bottom: 30px;
 }
-.setting-section .setting>div:first-child {
-    max-width:415px
+.setting-section .setting > div:first-child {
+    max-width: 415px
 }
 .setting-section .setting-group:not(:last-child) {
     border-bottom: 0;
@@ -8568,7 +8568,7 @@ button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-
 }
 #configuration-tabs-tabpane-tasks .setting-section .setting-group:not(:last-child) {
     border-bottom: 1px solid rgb(var(--card-fold));
-    margin-left: 22px;
+    margin-left: 1.375rem;
     width: calc(100% - 2.75rem);
 }
 #configuration-tabs-tabpane-tasks .setting-section .setting-group>.setting:has(>div+div>button.btn-danger+button.btn-danger):first-child,
@@ -8577,7 +8577,7 @@ button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-
     padding-right: 0;
 }
 
-#configuration-tabs-tabpane-interface .setting-section .setting>div:last-child {
+#configuration-tabs-tabpane-interface .setting-section .setting > div:last-child {
     min-width: 20px;
     text-align: left;
     width:38%; 
@@ -8593,22 +8593,22 @@ button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-
     width: 160px
 }
 
-.setting-section .setting-group>.setting:not(:first-child), 
+.setting-section .setting-group > .setting:not(:first-child), 
 .setting-section .setting-group .collapsible-section .setting {
     margin-right: 3rem;
-    line-height:100%;
+    line-height: 100%;
 }
 .setting-section .setting:not(:last-child) {
     border-bottom: 1px solid transparent;
 }
 #configuration-tabs-tabpane-interface .setting-section:nth-child(7) .setting {
-    margin-left:15px !important
+    margin-left: 15px !important
 }
 #configuration-tabs-tabpane-interface .setting-section:nth-child(7) .setting:nth-child(1) {
     margin-left: 0px !important;
 }
 
-#configuration-tabs-tabpane-interface .setting-section:nth-child(10)>.card {
+#configuration-tabs-tabpane-interface .setting-section:nth-child(10) > .card {
     padding-top: 16px;
     padding-bottom: 30px;
 }
@@ -8626,15 +8626,15 @@ button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-
     font-style: normal;
     color: #e5f5ffcd;
 }
-#configuration-tabs-tabpane-metadata-providers #stash-boxes.setting-section>.card>.setting,
-#configuration-tabs-tabpane-metadata-providers .setting-section>.card>#scraperUserAgent.setting {
+#configuration-tabs-tabpane-metadata-providers #stash-boxes.setting-section > .card > .setting,
+#configuration-tabs-tabpane-metadata-providers .setting-section > .card > #scraperUserAgent.setting {
     padding-top:16px;
 }
-#configuration-tabs-tabpane-metadata-providers #stash-boxes.setting-section>.card>.setting:nth-of-type(2) {
+#configuration-tabs-tabpane-metadata-providers #stash-boxes.setting-section > .card > .setting:nth-of-type(2) {
     padding-top: 0;
     padding-bottom: 30px;
 }
-#configuration-tabs-tabpane-metadata-providers .setting-section>.card>.content button.minimal.collapse-button {
+#configuration-tabs-tabpane-metadata-providers .setting-section > .card > .content button.minimal.collapse-button {
     margin-top: 4px;
     margin-bottom: 4px;
     padding-left: 24px;
@@ -8649,16 +8649,16 @@ button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-
     padding: 0 14px;
     margin-left: 12px;
 }
-#configuration-tabs-tabpane-services .value>div>div {
+#configuration-tabs-tabpane-services .value > div > div {
     color: #fff;
 }
-#configuration-tabs-tabpane-system .setting-section>.card>.setting:first-child {
+#configuration-tabs-tabpane-system .setting-section > .card > .setting:first-child {
     padding-top: 16px;
 }
-#configuration-tabs-tabpane-system .setting-section>.card>.setting:last-child {
+#configuration-tabs-tabpane-system .setting-section > .card > .setting:last-child {
     padding-bottom: 30px;
 }
-#confguration-tabs-tabpane-tools .setting-section>.card>.setting:last-child {
+#confguration-tabs-tabpane-tools .setting-section > .card > .setting:last-child {
     padding-bottom: 30px;
 }
 
@@ -8681,19 +8681,19 @@ button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-
     max-width:810px;
 }
 
-#configuration-tabs-tabpane-security .setting-section .setting>div:last-child,
-#configuration-tabs-tabpane-metadata-providers .setting-section .setting>div:last-child,
-#configuration-tabs-tabpane-services .setting-section .setting>div:last-child,
-#configuration-tabs-tabpane-system .setting-section .setting>div:last-child,
-#configuration-tabs-tabpane-library .setting-section .setting>div:last-child,
-#configuration-tabs-tabpane-interface .setting-section .setting>div:last-child,
-#configuration-tabs-tabpane-tasks .setting-section .setting>div:last-child {
+#configuration-tabs-tabpane-security .setting-section .setting > div:last-child,
+#configuration-tabs-tabpane-metadata-providers .setting-section .setting > div:last-child,
+#configuration-tabs-tabpane-services .setting-section .setting > div:last-child,
+#configuration-tabs-tabpane-system .setting-section .setting > div:last-child,
+#configuration-tabs-tabpane-library .setting-section .setting > div:last-child,
+#configuration-tabs-tabpane-interface .setting-section .setting > div:last-child,
+#configuration-tabs-tabpane-tasks .setting-section .setting > div:last-child {
     min-width: 20px;
     text-align: right;
     width:auto;
 }
-#configuration-tabs-tabpane-tasks .setting-section .setting>div+div:has(>.custom-control>#clean-dryrun),
-#configuration-tabs-tabpane-tasks .setting-section .setting>div+div:has(>.custom-control>#migrate-blobs-delete-old) {
+#configuration-tabs-tabpane-tasks .setting-section .setting > div + div:has(>.custom-control>#clean-dryrun),
+#configuration-tabs-tabpane-tasks .setting-section .setting > div + div:has(>.custom-control>#migrate-blobs-delete-old) {
     height: 0;
 }
 #configuration-tabs-tabpane-tasks .setting-section .setting:has(>div+div>button#import.btn-danger) {
@@ -8738,20 +8738,18 @@ button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-
     font-family: var(--HeaderFont);
 }
 
-#configuration-tabs-tabpane-library .setting-section > .card > .setting>div:has(+div>.custom-control>input#create-galleries-from-folders) h3,
-#configuration-tabs-tabpane-library .setting-section > .card > .setting>div:has(+div>.custom-control>input#write-image-thumbnails) h3,
-#configuration-tabs-tabpane-library .setting-section > .card > .setting>div:has(+div>.custom-control>input#create-image-clips-from-videos) h3,
-#configuration-tabs-tabpane-library .setting-section > .card > .setting>div:has(+div>.custom-control>input#delete-file-default) h3,
-#configuration-tabs-tabpane-library .setting-section > .card > .setting>div:has(+div>.custom-control>input#delete-generated-default) h3 {
+#configuration-tabs-tabpane-library .setting-section > .card > .setting > div:has(+div>.custom-control>input#create-galleries-from-folders) h3,
+#configuration-tabs-tabpane-library .setting-section > .card > .setting > div:has(+div>.custom-control>input#write-image-thumbnails) h3,
+#configuration-tabs-tabpane-library .setting-section > .card > .setting > div:has(+div>.custom-control>input#create-image-clips-from-videos) h3,
+#configuration-tabs-tabpane-library .setting-section > .card > .setting > div:has(+div>.custom-control>input#delete-file-default) h3,
+#configuration-tabs-tabpane-library .setting-section > .card > .setting > div:has(+div>.custom-control>input#delete-generated-default) h3 {
     font-size: 17.5px;
     line-height: 26px;
     letter-spacing: 0.026em;
 }
 
 #configuration-tabs-tabpane-interface .setting-section > .card > .setting#language + .setting-group {
-    border: 1px solid rgb(var(--card-fold));
-    border-right: 0;
-    border-left: 0;
+    border-bottom: 1px solid rgb(var(--card-fold));
     padding: 1rem 0 1rem 0;
     margin-left: 1.375rem;
     width: calc(100% - 2.75rem);
@@ -8759,6 +8757,43 @@ button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-
 #configuration-tabs-tabpane-interface .setting-section >.card >.setting#language +.setting-group > .setting {
     padding-left: 0;
     padding-right: 0;
+}
+#configuration-tabs-tabpane-interface .setting-section > .card > .setting:has(+ .setting + .setting#wall-preview),
+#configuration-tabs-tabpane-interface .setting-section > .card .setting:has(+ .setting#wall-preview) {
+    font-size: 17.5px;
+    line-height: 26px;
+    letter-spacing: 0.026em;
+}
+#configuration-tabs-tabpane-interface .setting-section > .card .setting:has(+ .setting#wall-preview),
+#configuration-tabs-tabpane-interface .setting-section > .card .setting#ignore-interval {
+    border-bottom: 1px solid rgb(var(--card-fold));
+    padding: 1rem 0 1rem 0;
+    margin-left: 1.375rem;
+    width: calc(100% - 2.75rem);
+}
+#configuration-tabs-tabpane-interface .setting-section .setting#vr-tag {
+    border: 1px solid rgb(var(--card-fold));
+    border-left: 0;
+    border-right: 0;
+    padding: 1rem 0 1rem 0;
+    margin-left: 1.375rem;
+    width: calc(100% - 2.75rem);
+}
+#configuration-tabs-tabpane-interface .setting-section > .card .setting:has(+.setting#vr-tag) {
+    padding-bottom: 1rem;
+}
+#configuration-tabs-tabpane-interface .setting-section > .card .setting#ignore-interval + .setting {
+    border-bottom: 1px solid rgb(var(--card-fold));
+    margin-left: 1.375rem;
+    width: calc(100% - 44px);
+    padding: 1rem 0;
+}
+#configuration-tabs-tabpane-interface .setting-section > .card .setting#max-loop-duration,
+#configuration-tabs-tabpane-interface .setting-section > .card .setting:has(+.setting#max-loop-duration) {
+    border-top: 1px solid rgb(var(--card-fold));
+    margin-left: 1.375rem;
+    width: calc(100% - 44px);
+    padding: 1rem 0;
 }
 
 a .TruncatedText:focus-visible {
