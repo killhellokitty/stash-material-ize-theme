@@ -8706,6 +8706,7 @@ button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-
 }
 #configuration-tabs-tabpane-library .setting-section .setting#gallery-cover-regex {
     border-top: 1px solid rgb(var(--card-fold));
+    color: rgb(var(--on-tertiary));
     padding-top: 1rem;
     margin-left: 1.375rem;
     padding: 1rem 0 1rem 0;
