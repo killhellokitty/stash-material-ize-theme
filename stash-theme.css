@@ -8569,7 +8569,7 @@ button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-
     margin-left: 22px;
     width: calc(100% - 2.75rem);
 }
-#configuration-tabs-tabpane-tasks .setting-section .setting-group>.setting:first-child {
+#configuration-tabs-tabpane-tasks .setting-section .setting-group>.setting:has(>div+div>button.btn-danger+button.btn-danger):first-child {
     padding-left: 0;
     padding-right: 0;
 }
