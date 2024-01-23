@@ -7771,9 +7771,9 @@ div.modal-body b,
 #maxSessionAge h3 {
     color: rgb(var(--on-tertiary));
     font-weight: 400;
-    font-size: 36px;
-    line-height: 44px;
-    letter-spacing: 0;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: 0.013em;
     font-family: var(--HeaderFont);
 }
 .setting-section .setting-group>.setting:not(:first-child) h3,
