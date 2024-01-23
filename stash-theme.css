@@ -8679,11 +8679,17 @@ button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-
     text-align: right;
     width:auto;
 }
-#configuration-tabs-tabpane-tasks .setting-section .setting>div:has(>.custom-control>#clean-dryrun) {
+#configuration-tabs-tabpane-tasks .setting-section .setting>div+div:has(>.custom-control>#clean-dryrun),
+#configuration-tabs-tabpane-tasks .setting-section .setting>div+div:has(>.custom-control>#migrate-blobs-delete-old) {
     height: 0;
 }
 .setting-section .setting:has(>div+div>button#import.btn-danger) {
     padding: 0 1.25rem;
+}
+.setting-section .setting:has(>div+div>button#backup.btn-secondary),
+.setting-section .setting:has(>div+div>button#anonymise.btn-secondary),
+.setting-section .setting:has(>div+div>button#migrateHashNaming.btn-danger) {
+    padding: 1rem 1.25rem 0;
 }
 #configuration-tabs-tabpane-system .setting-section .sub-heading {
     margin-bottom: 1.2rem
