@@ -8559,11 +8559,16 @@ button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-
     border-bottom: 0;
     padding-bottom: 0;
 }
+.setting-section .setting-group:not(:last-child),
 .setting-section:not(#configuration-tabs-tabpane-tasks .setting-section) .setting-group:not(:last-child) {
     border-bottom: 0;
     padding-bottom: 20px;
 }
-
+#configuration-tabs-tabpane-tasks .setting-section .setting-group:not(:last-child) {
+    border-bottom: 1px solid rgb(var(--card-fold));
+    margin-left: 22px;
+    width: calc(100% - 2.75rem);
+}
 
 #configuration-tabs-tabpane-interface .setting-section .setting>div:last-child {
     min-width: 20px;
