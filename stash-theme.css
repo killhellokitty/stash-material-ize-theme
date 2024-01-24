@@ -8758,8 +8758,8 @@ button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-
     padding-left: 0;
     padding-right: 0;
 }
-#configuration-tabs-tabpane-interface .setting-section > .card > .setting:has(+ .setting + .setting#wall-preview),
-#configuration-tabs-tabpane-interface .setting-section > .card .setting:has(+ .setting#wall-preview) {
+#configuration-tabs-tabpane-interface .setting-section > .card > .setting:has(+ .setting + .setting#wall-preview) h3,
+#configuration-tabs-tabpane-interface .setting-section > .card .setting:has(+ .setting#wall-preview) h3 {
     font-size: 17.5px;
     line-height: 26px;
     letter-spacing: 0.026em;
@@ -8782,7 +8782,8 @@ button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-
 #configuration-tabs-tabpane-interface .setting-section > .card .setting:has(+.setting#vr-tag) {
     padding-bottom: 1rem;
 }
-#configuration-tabs-tabpane-interface .setting-section > .card .setting#ignore-interval + .setting {
+#configuration-tabs-tabpane-interface .setting-section > .card .setting#ignore-interval + .setting,
+#configuration-tabs-tabpane-interface .setting-section > .card > .setting:has(input#lightbox_reset_zoom_on_nav) {
     border-bottom: 1px solid rgb(var(--card-fold));
     margin-left: 1.375rem;
     width: calc(100% - 44px);
@@ -8795,7 +8796,26 @@ button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-
     width: calc(100% - 44px);
     padding: 1rem 0;
 }
-
+#configuration-tabs-tabpane-interface .setting-section > .card > .setting:has(input#enable-chromecast) h3,
+#configuration-tabs-tabpane-interface .setting-section > .card > .setting:has(input#show-scrubber) h3,
+#configuration-tabs-tabpane-interface .setting-section > .card > .setting:has(input#always-start-from-beginning) h3,
+#configuration-tabs-tabpane-interface .setting-section > .card > .setting:has(input#track-activity) h3,
+#configuration-tabs-tabpane-interface .setting-section > .card > .setting:has(input#auto-start-video) h3,
+#configuration-tabs-tabpane-interface .setting-section > .card > .setting:has(input#auto-start-video-on-play-selected) h3,
+#configuration-tabs-tabpane-interface .setting-section > .card > .setting:has(input#continue-playlist-default) h3,
+#configuration-tabs-tabpane-interface .setting-section > .card > .setting:has(input#show-ab-loop) h3,
+#configuration-tabs-tabpane-interface .setting-section > .card > .setting:has(input#show-tag-card-on-hover) h3,
+#configuration-tabs-tabpane-interface .setting-section > .card > .setting:has(input#show-child-tagged-content) h3,
+#configuration-tabs-tabpane-interface .setting-section > .card > .setting:has(input#show-child-studio-content) h3,
+#configuration-tabs-tabpane-interface .setting-section > .card > .setting:has(input#lightbox_scale_up) h3,
+#configuration-tabs-tabpane-interface .setting-section > .card > .setting:has(input#lightbox_reset_zoom_on_nav) h3 {
+    font-size: 17.5px;
+    line-height: 26px;
+    letter-spacing: 0.026em;
+}
+#configuration-tabs-tabpane-interface .setting-section > .card > div#image_wall_direction.setting {
+    padding-bottom: 16px;
+}
 a .TruncatedText:focus-visible {
     box-shadow: none;
     outline: none;
