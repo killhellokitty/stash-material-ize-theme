@@ -3528,36 +3528,56 @@ span.filter-container.text-muted.paginationIndex.center-text:last-of-type {
 
 /* Link-Button */
 .btn-link:not(:has(>*.performer)) {
-    font-size: 1rem;
-    font-weight: 500;
-    color: rgb(var(--on-surface-variant));
+    color: rgb(var(--link-color));
     text-decoration: none;
+    text-decoration-color: transparent;
     display: inline-block;
-    padding-left: 8px;
-    padding-right: 8px;
-    min-height: 40px;
-    letter-spacing: 0.1px;
+    padding-left: 12px;
+    padding-right: 12px;
+    min-height: 32px;
+    height: 32px;
+    font-size: 14px;
+    letter-spacing: 0.025em;
     line-height: 20px;
-    background-color: rgb(var(--surface-variant));
+    font-weight: 500;
+    background-image: var(--btn-dummy-highlight);
+    background-color: rgb(var(--link-icon));
+    background-blend-mode: normal;
     border: 0;
-    box-shadow: none;
+    outline: 0;
+    box-shadow: var(--elevation-0);
     border-radius: 5rem;
+    transition: var(--trans-0);
+    -webkit-transition: var(--trans-0);
 }
 .btn-link:not(:has(>*.performer)):is(:hover, :focus-visible) {
-    color: rgb(var(--on-surface-variant));
-    text-decoration: none;
-    box-shadow: var(--elevation-2);
-    outline: none;
-    background-color: rgba(var(--surface-variant),var(--btn-hover-rev));
+    color: rgb(var(--link-color));
+    text-decoration: underline;
+    text-decoration-color: currentColor;
+    text-decoration-thickness: from-font;
+    text-underline-offset: 0.17em;
+    box-shadow: var(--elevation-1);
+    background-image: var(--btn-hover-highlight);
+    background-color: rgb(var(--link-icon));
+    background-blend-mode: screen;
 }
 .btn-link:not(:has(>*.performer)):not(:disabled):not(.disabled):is(.active, .active:focus, :focus, :active, :active:focus) {
-    color: rgb(var(--on-surface-variant))
-    text-decoration: none;
-    outline: none;
+    color: rgb(var(--link-color))
+    text-decoration: underline;
+    text-decoration-color: currentColor;
+    text-decoration-thickness: from-font;
+    text-underline-offset: 0.17em;
+    outline: 0;
     box-shadow: var(--elevation-0);
-    background-color: rgba(var(--surface-variant),var(--btn-active-rev));
+    background-image: var(--btn-active-highlight);
+    background-color: rgb(var(--link-icon));
+    background-blend-mode: screen;
 }
 .btn-link:not(:has(>*.performer)):focus-visible {
+    text-decoration: underline;
+    text-decoration-color: currentColor;
+    text-decoration-thickness: from-font;
+    text-underline-offset: 0.17em;
     outline-color: rgb(var(--focus-ring));
     outline-width: 0.25rem;
     outline-style: solid;
@@ -3566,7 +3586,7 @@ span.filter-container.text-muted.paginationIndex.center-text:last-of-type {
 }
 .btn-link:not(:has(>*.performer)):disabled,
 .btn-link.disabled:not(:has(>*.performer)) {
-    opacity: 0.38;
+    opacity: var(--disabled);
 }
 
 button.minimal.brand-link.d-none.d-md-inline-block.btn.btn-primary {
