@@ -8777,6 +8777,7 @@ div:is(#generated-path, #cache-path, #scrapers-path, #plugins-path, #metadata-pa
     width: calc(100% - 2.75rem);
     padding: 1rem 0;
 }
+.setting:has(+#generated_file_naming_hash) h3,
 .setting:has(>div+div>.custom-control>input#dlna-enabled-by-default) h3,
 .setting:has(+div#excluded-tag-patterns.setting) h3,
 div#stash-boxes.setting-section h3,
@@ -8873,6 +8874,8 @@ button.collapse-button > svg:is(.fa-chevron-right, .fa-chevron-down).fa-icon {
 #configuration-tabs-tabpane-services #settings-dlna ul.addresses li div.address > input.text-input.form-control:focus {
     background-color: transparent !important;
 }
+
+
 
 a .TruncatedText:focus-visible {
     box-shadow: none;
