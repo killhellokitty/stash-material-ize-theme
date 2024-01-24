@@ -8817,6 +8817,9 @@ div#stash-boxes.setting-section h3,
     line-height: 26px;
     letter-spacing: 0.026em;
 }
+.setting:has(>div+div>.custom-control>input#dlna-enabled-by-default) h3 {
+    padding-bottom: 0.5rem;
+}
 #configuration-tabs-tabpane-interface .setting:has(+div#rating_system),
 #configuration-tabs-tabpane-interface .setting-section > .card > .setting:has(input#show-ab-loop),
 #configuration-tabs-tabpane-interface .setting-section > .card > div#image_wall_direction.setting {
