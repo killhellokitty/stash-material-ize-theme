@@ -8594,24 +8594,25 @@ button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-
 }
 
 /* Settings Page Scrapers-Buttons */
-#configuration-tabs-tabpane-metadata-providers .setting-section > .card > .content button.minimal.collapse-button {
+#configuration-tabs-tabpane-metadata-providers .setting-section > .card > .content button.minimal.collapse-button,
+#configuration-tabs-tabpane-metadata-providers .setting-section > .card > .content button.minimal.collapse-button:focus {
     margin-top: 8px;
     margin-bottom: 8px;
-    color: rgb(var(--on-tertiary));
+    color: rgb(var(--on-pry-container));
     background-image: none;
     background-color: transparent;
     box-shadow: none;
 }
 #configuration-tabs-tabpane-metadata-providers .setting-section > .card > .content button.minimal.collapse-button:hover {
-    color: rgb(var(--on-tertiary));
+    color: rgb(var(--on-pry-container));
     background-image: var(--btn-hover-highlight);
-    background-color: rgb(var(--tertiary));
+    background-color: rgb(var(--pry-container));
     box-shadow: var(--elevation-0);
 }
-#configuration-tabs-tabpane-metadata-providers .setting-section > .card > .content button.minimal.collapse-button:is(:active, :focus, :active:focus) {
-    color: rgb(var(--on-tertiary));
+#configuration-tabs-tabpane-metadata-providers .setting-section > .card > .content button.minimal.collapse-button:is(:active, :active:focus) {
+    color: rgb(var(--on-pry-container));
     background-image: var(--btn-active-highlight);
-    background-color: rgb(var(--tertiary));
+    background-color: rgb(var(--pry-container));
     box-shadow: none;
     outline: 0;
 }
