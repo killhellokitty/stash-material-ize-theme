@@ -8634,10 +8634,9 @@ button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-
     padding-bottom: 30px;
 }
 #configuration-tabs-tabpane-metadata-providers .setting-section > .card > .content button.minimal.collapse-button {
-    margin-top: 4px;
-    margin-bottom: 4px;
-    padding-left: 24px;
-    padding-right: 24px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    color: rgb(var(--on-tertiary));
 }
 #configuration-tabs-tabpane-services #settings-dlna .form-group h5 {
     position: relative;
@@ -8846,6 +8845,13 @@ div#excluded-tag-patterns.setting {
     padding: 1rem 0;
     margin-left: 1.25rem;
     width: calc(100% - 2.75rem);
+}
+/* Buttons and Icons within Metadata Page */
+.btn-primary > span.fa-icon > svg.fa-rotate {
+    font-size: 22px;
+}
+button.collapse-button > svg:is(.fa-chevron-right, .fa-chevron-down).fa-icon {
+    font-size: 20px;
 }
 
 a .TruncatedText:focus-visible {
