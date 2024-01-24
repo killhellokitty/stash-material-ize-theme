@@ -8645,6 +8645,11 @@ button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-
     padding-bottom: 30px;
 }
 
+.setting:has(+.setting input#dlna-enabled-by-default) {
+    padding-top: 1rem;
+}
+
+
 /* --- Library ---*/
 .stash-row .col-md-2 {
     padding-left:4%
@@ -8782,6 +8787,7 @@ button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-
     width: calc(100% - 44px);
     padding: 1rem 0;
 }
+.setting:has(>div+div>.custom-control>input#dlna-enabled-by-default) h3,
 .setting:has(+div#excluded-tag-patterns.setting) h3,
 div#stash-boxes.setting-section h3,
 #configuration-tabs-tabpane-interface .setting-section > .card > .setting:has(input#skip-browser) h3,
