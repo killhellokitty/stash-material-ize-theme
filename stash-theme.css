@@ -8573,13 +8573,6 @@ button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-
     padding-top: 16px;
     padding-bottom: 30px;
 }
-#settings-dlna h5 {
-    margin-bottom:70px
-}
-#settings-dlna .form-group h5{
-    margin-left:255px;
-    margin-top:-30px;
-}
 
 #configuration-tabs-tabpane-metadata-providers #stash-boxes .sub-heading {
     text-shadow: var(--light-txt-shadow);
@@ -8619,10 +8612,6 @@ button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-
     outline: 0;
 }
 
-#configuration-tabs-tabpane-services #settings-dlna .form-group h5 {
-    position: relative;
-    top: -8px;
-}
 #configuration-tabs-tabpane-services #settings-dlna .setting-section .form-group .addresses .buttons button.btn.btn-primary {
     padding: 0;
     max-height: 48px;
