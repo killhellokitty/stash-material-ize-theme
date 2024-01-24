@@ -8840,6 +8840,9 @@ div#excluded-tag-patterns.setting {
     margin-left: 1.25rem;
     width: calc(100% - 2.75rem);
 }
+#settings-dlna div#video-sort-order.setting {
+    padding-bottom: 1rem;
+}
 /* Buttons and Icons within Metadata Page */
 .btn-primary > span.fa-icon > svg.fa-rotate {
     font-size: 22px;
