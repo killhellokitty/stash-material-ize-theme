@@ -8784,8 +8784,7 @@ button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-
 }
 #configuration-tabs-tabpane-interface .setting-section > .card #ignore-interval.setting + .setting,
 #configuration-tabs-tabpane-interface .setting-section > .card > .setting:has(input#lightbox_reset_zoom_on_nav),
-#configuration-tabs-tabpane-interface .setting-section > .card > .setting:has(input#disableDropdownCreate_movie),
-#configuration-tabs-tabpane-interface .setting-section > .card > #rating_system.setting {
+#configuration-tabs-tabpane-interface .setting-section > .card > .setting:has(input#disableDropdownCreate_movie) {
     border-bottom: 1px solid rgb(var(--card-fold));
     margin-left: 1.375rem;
     width: calc(100% - 44px);
@@ -8793,7 +8792,8 @@ button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-
 }
 #configuration-tabs-tabpane-interface .setting-section > .card .setting#max-loop-duration,
 #configuration-tabs-tabpane-interface .setting-section > .card .setting:has(+.setting#max-loop-duration),
-#configuration-tabs-tabpane-interface .setting-section > .card .setting:has(input#show_all_details) {
+#configuration-tabs-tabpane-interface .setting-section > .card .setting:has(input#show_all_details),
+#configuration-tabs-tabpane-interface .setting-section > .card > #rating_system.setting {
     border-top: 1px solid rgb(var(--card-fold));
     margin-left: 1.375rem;
     width: calc(100% - 44px);
