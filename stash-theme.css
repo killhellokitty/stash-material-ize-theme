@@ -5772,11 +5772,6 @@ button:not([title=Statistics], [title=Settings]).minimal:not(.nav-utility, .bran
     background-image: linear-gradient(to right, rgba(var(--pry-color),var(--btn-active)), rgba(var(--pry-color),var(--btn-active))),linear-gradient(to right, rgb(var(--body-color2)), rgb(var(--body-color2)));
 }*/
 
-/*.card-popovers a:is(.pwPlayer_button):focus {
-    background-color: rgba(var(--pry-color),var(--btn-active));
-    box-shadow: none;
-}*/
-
 .card-popovers>.organized button.minimal.btn.btn-primary:hover,
 .card-popovers:has(>.organized):has(>.tag-count):has(>.performer-count) button.minimal.btn.btn-primary:not(:disabled):not(.disabled):focus {
     background: none !important;
@@ -5790,16 +5785,9 @@ button:not([title=Statistics], [title=Settings]).minimal:not(.nav-utility, .bran
     box-shadow: var(--elevation-0);
     text-shadow: none;
     border-color: transparent;
-    background-image: linear-gradient(to right, rgba(var(--pry-color),var(--btn-active)), rgba(var(--pry-color),var(--btn-active))),linear-gradient(to right, rgb(var(--body-color2)), rgb(var(--body-color2)));
-    outline: none;
-}
-
-.card-popovers a:is(.pwPlayer_button):is(:active, :focus, :active:focus) {
-    color: rgb(var(--pry-color));
-    box-shadow: none;
-    text-shadow: none;
-    border-color: transparent;
-    background-color: rgba(var(--pry-color),var(--btn-active));
+    background-image: linear-gradient(to right, rgba(var(--pry-color),var(--btn-active)), rgba(var(--pry-color),var(--btn-active)));
+    background-color: rgb(var(--body-color2));
+    background-blend-mode: normal;
     outline: none;
 }
 
@@ -5811,14 +5799,6 @@ button:not([title=Statistics], [title=Settings]).minimal:not(.nav-utility, .bran
 a.minimal:not(.logout-button):focus-visible, 
 button:not([title=Statistics], [title=Settings]).minimal:not(.nav-utility, .brand-link, .donate, .dropdown-toggle):focus-visible,
 .dropdown > button#operation-menu.minimal.dropdown-toggle.btn-secondary:focus-visible {
-    box-shadow: none;
-    outline-color: rgb(var(--focus-ring));
-    outline-style: solid;
-    outline-width: 0.25rem;
-    outline-offset: -1px;
-}
-
-.card-popovers a:is(.pwPlayer_button):focus-visible {
     box-shadow: none;
     outline-color: rgb(var(--focus-ring));
     outline-style: solid;
@@ -5867,27 +5847,24 @@ a.minimal:not(.logout-button),
 button:not([title=Statistics], [title=Settings]).minimal:not(.nav-utility, .brand-link, .donate, .dropdown-toggle), 
 .dropdown > button#operation-menu.minimal.dropdown-toggle.btn-secondary {
      color: rgb(var(--pry-color));
-     background: none;
-     box-shadow: none;
-     outline: none;
+     background-image: none;
+     background-color: transparent;
      gap: 8px;
      display: flex;
-     flex-direction: row;
      justify-content: center;
      align-items: center;
-     border-color: transparent;
-     border-style: none;
+     border-radius: 5rem;
      border-width: 0;
-     text-shadow: none;
      padding: 0 12px 0 12px;
      height: 40px;
      max-height: 40px;
-     min-height: 40px;
-     min-width: auto;
+     width: auto;
      contain: content;
      overflow: hidden;
-     border-radius: 5rem;
-     transition: background-image 0.55s ease, box-shadow 0.4s ease-in, outline 0.4s ease-in-out 0.2s, color 0.2s ease-in-out;
+     box-shadow: none;
+     outline: 0;
+     transition: var(--trans-0);
+     -webkit-transition: var(--trans-0);
 }
 .dropdown.show > button#operation-menu.minimal.dropdown-toggle.btn-secondary {
     background-image: none;
@@ -5896,38 +5873,15 @@ button:not([title=Statistics], [title=Settings]).minimal:not(.nav-utility, .bran
     box-shadow: var(--elevation-0);
 }
 
-.card-popovers a:is(.pwPlayer_button) {
-     color: rgb(var(--btn-min-primary)) !important;
-     background: none;
-     box-shadow: none;
-     outline: none;
-     gap: 8px;
-     display: flex;
-     flex-direction: row;
-     justify-content: center;
-     align-items: center;
-     border-color: transparent;
-     border-style: none;
-     border-width: 0;
-     text-shadow: none;
-     padding: 0 12px 0 12px;
-     height: 40px;
-     max-height: 40px;
-     min-height: 40px;
-     min-width: 40px;
-     contain: content;
-     overflow: hidden;
-     border-radius: 5rem;
-     transition: background 0.55s ease, box-shadow 0.4s ease-in;
-}
-
 .card-popovers button.minimal.btn.btn-primary {
     color: rgb(var(--btn-min-primary)) !important;
 }
 
 .card-popovers>.organized button.minimal.btn.btn-primary {
     color: lch(68.921% 45.12 186.214) !important;
-    background: none;
+    background-image: none;
+    background-color: transparent;
+    border: 0;
     box-shadow: none;
 }
 
