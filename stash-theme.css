@@ -8768,7 +8768,6 @@ div:is(#generated-path, #cache-path, #scrapers-path, #plugins-path, #metadata-pa
     width: calc(100% - 2.75rem);
     padding: 1rem 0;
 }
-.setting:has(>div+div>.custom-control>input#hardware-encoding),
 #configuration-tabs-tabpane-system div#blobs-storage,
 #configuration-tabs-tabpane-interface .setting-section > .card .setting#max-loop-duration,
 #configuration-tabs-tabpane-interface .setting-section > .card .setting:has(+.setting#max-loop-duration),
@@ -8779,6 +8778,7 @@ div:is(#generated-path, #cache-path, #scrapers-path, #plugins-path, #metadata-pa
     width: calc(100% - 2.75rem);
     padding: 1rem 0;
 }
+div:is(#transcode-input-args, #transcode-output-args, #live-transcode-input-args, #live-transcode-output-args).setting h3,
 #configuration-tabs-tabpane-system div#blobs-path h3,
 #configuration-tabs-tabpane-system div#blobs-storage h3,
 .setting:has(+#generated_file_naming_hash) h3,
@@ -8839,6 +8839,14 @@ div#excluded-tag-patterns.setting {
 #settings-dlna div#video-sort-order.setting {
     padding-bottom: 1rem;
 }
+.setting:has(>div+div>.custom-control>input#hardware-encoding) {
+    border: 1px solid rgb(var(--card-fold));
+    border-width: 1px 0;
+    padding: 1rem 0 0.25rem;
+    margin-left: 1.25rem;
+    width: calc(100% - 2.75rem);
+}
+
 /* Buttons and Icons within Metadata Page */
 .btn-primary > span.fa-icon > svg.fa-rotate {
     font-size: 22px;
