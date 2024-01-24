@@ -8844,6 +8844,7 @@ button.collapse-button > svg:is(.fa-chevron-right, .fa-chevron-down).fa-icon {
     max-height: 32px;
     height: 32px;
     width: 32px;
+    padding: 0;
     box-shadow: none;
     outline: 0;
     transition: var(--trans-0);
