@@ -8624,9 +8624,13 @@ button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-
     top: -8px;
 }
 #configuration-tabs-tabpane-services #settings-dlna .setting-section .form-group .addresses .buttons button.btn.btn-primary {
+    padding: 0;
+    max-height: 48px;
+    height: 48px;
+    width: 48px;
+    margin-left: 16px;
     border-radius: 5rem;
-    padding: 0 14px;
-    margin-left: 12px;
+    font-size: 20px;
 }
 #configuration-tabs-tabpane-services .value > div > div {
     color: #fff;
@@ -8862,9 +8866,9 @@ button.collapse-button > svg:is(.fa-chevron-right, .fa-chevron-down).fa-icon {
     outline: 0;
 }
 
-#configuration-tabs-tabpane-services #settings-dlna .addresses li .address > input.text-input.form-control, 
-#configuration-tabs-tabpane-services #settings-dlna .addresses li .address > input.text-input.form-control:is(:active, :focus) {
-    background-color: transparent;
+#configuration-tabs-tabpane-services #settings-dlna ul.addresses li div.address > input.text-input.form-control, 
+#configuration-tabs-tabpane-services #settings-dlna ul.addresses li div.address > input.text-input.form-control:focus {
+    background-color: transparent !important;
 }
 
 a .TruncatedText:focus-visible {
