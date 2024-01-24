@@ -3587,6 +3587,10 @@ span.filter-container.text-muted.paginationIndex.center-text:last-of-type {
 }
 .btn-link:not(:has(>*.performer)):disabled,
 .btn-link.disabled:not(:has(>*.performer)) {
+    text-decoration: none;
+    text-decoration-color: transparent;
+    box-shadow: none;
+    outline: 0;
     opacity: var(--disabled);
 }
 
