@@ -8768,6 +8768,8 @@ div:is(#generated-path, #cache-path, #scrapers-path, #plugins-path, #metadata-pa
     width: calc(100% - 2.75rem);
     padding: 1rem 0;
 }
+.setting:has(>div+div>.custom-control>input#hardware-encoding),
+#configuration-tabs-tabpane-system div#blobs-storage,
 #configuration-tabs-tabpane-interface .setting-section > .card .setting#max-loop-duration,
 #configuration-tabs-tabpane-interface .setting-section > .card .setting:has(+.setting#max-loop-duration),
 #configuration-tabs-tabpane-interface .setting-section > .card .setting:has(input#show_all_details),
@@ -8777,6 +8779,8 @@ div:is(#generated-path, #cache-path, #scrapers-path, #plugins-path, #metadata-pa
     width: calc(100% - 2.75rem);
     padding: 1rem 0;
 }
+#configuration-tabs-tabpane-system div#blobs-path h3,
+#configuration-tabs-tabpane-system div#blobs-storage h3,
 .setting:has(+#generated_file_naming_hash) h3,
 .setting:has(>div+div>.custom-control>input#dlna-enabled-by-default) h3,
 .setting:has(+div#excluded-tag-patterns.setting) h3,
