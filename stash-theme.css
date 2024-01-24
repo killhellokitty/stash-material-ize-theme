@@ -5717,44 +5717,45 @@ button:is(.favorite, .not-favorite).minimal.favorite-button.btn.btn-primary:is(:
     letter-spacing: 0.031em;
 }
 
-/* Minimal Button */
 
-a:not([href="/scenes"], [href="/images"], [href="/movies"], [href="/scenes/markers"], [href="/galleries"], [href="/performers"], [href="/studios"], [href="/tags"]).minimal:not(.logout-button):where(:hover, :focus-visible),
-button:not([title=Statistics], [title=Settings]).minimal:not(.nav-utility, .brand-link, .donate, .dropdown-toggle):is(:hover, :focus-visible),
-.dropdown:not(.show) > button#operation-menu.minimal.dropdown-toggle.btn-secondary:is(:hover, :focus-visible) {
-    background: none;
-    background-image: linear-gradient(to right, rgba(var(--pry-color),var(--btn-hover)), rgba(var(--pry-color),var(--btn-hover))),linear-gradient(to right, rgb(var(--body-color2)), rgb(var(--body-color2)));
-    color: rgb(var(--pry-color));
-    box-shadow: var(--elevation-0);
-    border-color: transparent;
-    border-style: solid;
-    border-width: 0;
-    text-shadow: none;
-    outline: none;
-}
-
+/* Dropdown #Operation-Menu Button */
 .dropdown.show > button#operation-menu.minimal.dropdown-toggle.btn-secondary:is(:hover, :focus-visible) {
-    background-image: linear-gradient(to right, rgba(var(--pry-color),var(--btn-hover-rev)), rgba(var(--pry-color),var(--btn-hover-rev)));
-    background-color: rgb(var(--body-color2));
+    background-image: var(--btn-hover-highlight);
+    background-color: rgb(var(--pry-color));
+    background-blend-mode: screen;
     color: rgb(var(--on-pry));
     box-shadow: var(--elevation-1);
-    border-color: transparent;
-    border-style: solid;
     border-width: 0;
-    text-shadow: none;
-    outline: none;
+    outline: 0;
 }
 .dropdown.show > button#operation-menu.minimal.dropdown-toggle.btn-secondary:is(:focus:not(:focus-visible), :active, :active:focus) {
-    background-image: linear-gradient(to right, rgba(var(--pry-color),var(--btn-active-rev)), rgba(var(--pry-color),var(--btn-active-rev)));
-    background-color: rgb(var(--body-color2));
+    background-image: var(--btn-active-highlight);
+    background-color: rgb(var(--pry-color));
+    background-blend-mode: screen;
     color: rgb(var(--on-pry));
     box-shadow: var(--elevation-0);
+    outline: 0;
 }
 .dropdown.show > button#operation-menu.minimal.dropdown-toggle.btn-secondary {
     background-image: none;
     background-color: rgb(var(--pry-color));
     color: rgb(var(--on-pry));
     box-shadow: var(--elevation-0);
+}
+
+/* Minimal Button */
+
+a:not([href="/scenes"], [href="/images"], [href="/movies"], [href="/scenes/markers"], [href="/galleries"], [href="/performers"], [href="/studios"], [href="/tags"]).minimal:not(.logout-button):where(:hover, :focus-visible),
+button:not([title=Statistics], [title=Settings]).minimal:not(.nav-utility, .brand-link, .donate, .dropdown-toggle):is(:hover, :focus-visible),
+.dropdown:not(.show) > button#operation-menu.minimal.dropdown-toggle.btn-secondary:is(:hover, :focus-visible) {
+    background: none;
+    background-image: linear-gradient(to right, rgba(var(--pry-color),var(--btn-hover)), rgba(var(--pry-color),var(--btn-hover)));
+    background-color: rgb(var(--body-color2));
+    background-blend-mode: normal;
+    color: rgb(var(--pry-color));
+    box-shadow: var(--elevation-1);
+    border-width: 0;
+    outline: 0;
 }
 
 .card-popovers>.organized button.minimal.btn.btn-primary:hover,
@@ -5850,12 +5851,6 @@ button:not([title=Statistics], [title=Settings]).minimal:not(.nav-utility, .bran
      outline: 0;
      transition: var(--trans-0);
      -webkit-transition: var(--trans-0);
-}
-.dropdown.show > button#operation-menu.minimal.dropdown-toggle.btn-secondary {
-    background-image: none;
-    background-color: rgb(var(--pry-color));
-    color: rgb(var(--on-pry));
-    box-shadow: var(--elevation-0);
 }
 
 .card-popovers button.minimal.btn.btn-primary {
