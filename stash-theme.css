@@ -8862,8 +8862,8 @@ button.collapse-button > svg:is(.fa-chevron-right, .fa-chevron-down).fa-icon {
     outline: 0;
 }
 
-#settings-dlna .addresses li .address > input.text-input.form-control,
-#settings-dlna .addresses li .address > input.text-input.form-control:focus {
+#configuration-tabs-tabpane-services #settings-dlna .addresses li .address > input.text-input.form-control, 
+#configuration-tabs-tabpane-services #settings-dlna .addresses li .address > input.text-input.form-control:is(:active, :focus) {
     background-color: transparent;
 }
 
