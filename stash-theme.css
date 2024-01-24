@@ -8801,7 +8801,7 @@ button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-
 }
 #configuration-tabs-tabpane-interface .setting-section > .card > .setting:has(input#skip-browser) h3,
 #configuration-tabs-tabpane-interface .setting-section > .card > .setting:has(input#notifications-enabled) h3,
-#configuration-tabs-tabpane-interface .setting-section > .card > .setting:has(input#abreviate-counters) h3,
+#configuration-tabs-tabpane-interface .setting-section > .card > .setting:has(input#abbreviate-counters) h3,
 #configuration-tabs-tabpane-interface .setting-section > .card > .setting:has(input#enable-chromecast) h3,
 #configuration-tabs-tabpane-interface .setting-section > .card > .setting:has(input#show-scrubber) h3,
 #configuration-tabs-tabpane-interface .setting-section > .card > .setting:has(input#always-start-from-beginning) h3,
