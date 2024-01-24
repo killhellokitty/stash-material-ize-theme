@@ -8826,6 +8826,7 @@ div#stash-boxes.setting-section h3,
 #configuration-tabs-tabpane-interface .setting-section > .card > div#image_wall_direction.setting {
     padding-bottom: 1rem;
 }
+#settings-dlna div#dlna-network-interfaces.setting,
 #configuration-tabs-tabpane-security div#authentication-settings.setting,
 #configuration-tabs-tabpane-interface .setting-section > .card .setting:has(+.setting>div+div>.custom-control>input#disableDropdownCreate_performer) {
     padding-top: 1rem;
