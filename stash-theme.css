@@ -2746,6 +2746,7 @@ button:not([title=Help]).btn-primary,
 button:not([title=Help]).btn.btn-primary:where(.disabled, :disabled, .disabled:hover, :disabled:hover) {
     color: rgb(var(--on-tertiary),var(--disabled));
     /*background-image: linear-gradient(to right, rgb(var(--body-color2)), rgb(var(--body-color2)));*/
+    background-image: none;
     background-color: rgb(var(--tertiary),var(--btn-background-disabled));
     /*background-blend-mode: screen;*/
     box-shadow: none;
