@@ -8778,6 +8778,7 @@ div:is(#generated-path, #cache-path, #scrapers-path, #plugins-path, #metadata-pa
     width: calc(100% - 2.75rem);
     padding: 1rem 0;
 }
+.setting:has(>div+div>.custom-control>input#hardware-encoding) h3,
 div:is(#transcode-input-args, #transcode-output-args, #live-transcode-input-args, #live-transcode-output-args).setting h3,
 #configuration-tabs-tabpane-system div#blobs-path h3,
 #configuration-tabs-tabpane-system div#blobs-storage h3,
@@ -8820,6 +8821,7 @@ div#stash-boxes.setting-section h3,
 #configuration-tabs-tabpane-interface .setting-section > .card > div#image_wall_direction.setting {
     padding-bottom: 1rem;
 }
+#configuration-tabs-tabpane-system div#transcode-input-args.setting,
 #settings-dlna div#dlna-network-interfaces.setting,
 #configuration-tabs-tabpane-security div#authentication-settings.setting,
 #configuration-tabs-tabpane-interface .setting-section > .card .setting:has(+.setting>div+div>.custom-control>input#disableDropdownCreate_performer) {
