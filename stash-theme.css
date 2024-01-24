@@ -8884,7 +8884,21 @@ button.collapse-button > svg:is(.fa-chevron-right, .fa-chevron-down).fa-icon {
 }
 .package-manager .package-source .source-collapse .btn {
     color: rgb(var(--description-color));
+    background-color: transparent;
     font-size: 20px;
+    box-shadow: none;
+    outline: 0;
+    transition: var(--trans-0);
+    -webkit-transition: var(--trans-0);
+}
+.package-manager .package-source .source-collapse .btn:hover {
+    background-color: rgb(var(--description-color),var(--btn-hover));
+    box-shadow: var(--elevation-0);
+}
+.package-manager .package-source .source-collapse .btn:where(:active, :focus, :active:focus) {
+    background-color: rgb(var(--description-color),var(--btn-active));
+    box-shadow: none;
+    outline: 0;
 }
 
 a .TruncatedText:focus-visible {
