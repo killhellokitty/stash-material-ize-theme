@@ -8770,12 +8770,13 @@ button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-
 #configuration-tabs-tabpane-interface .setting-section > .card .setting:has(+.setting#vr-tag) {
     padding-bottom: 1rem;
 }
+.setting:has(>div+div>.custom-control>input#dlna-enabled-by-default),
 #configuration-tabs-tabpane-interface .setting-section > .card #ignore-interval.setting + .setting,
 #configuration-tabs-tabpane-interface .setting-section > .card > .setting:has(input#lightbox_reset_zoom_on_nav),
 #configuration-tabs-tabpane-interface .setting-section > .card > .setting:has(input#disableDropdownCreate_movie) {
     border-bottom: 1px solid rgb(var(--card-fold));
     margin-left: 1.375rem;
-    width: calc(100% - 44px);
+    width: calc(100% - 2.75rem);
     padding: 1rem 0;
 }
 #configuration-tabs-tabpane-interface .setting-section > .card .setting#max-loop-duration,
@@ -8784,7 +8785,7 @@ button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-
 #configuration-tabs-tabpane-interface .setting-section > .card > #rating_system.setting {
     border-top: 1px solid rgb(var(--card-fold));
     margin-left: 1.375rem;
-    width: calc(100% - 44px);
+    width: calc(100% - 2.75rem);
     padding: 1rem 0;
 }
 .setting:has(>div+div>.custom-control>input#dlna-enabled-by-default) h3,
@@ -8851,8 +8852,8 @@ button.collapse-button > svg:is(.fa-chevron-right, .fa-chevron-down).fa-icon {
     font-size: 20px;
 }
 .scraper-table button.btn.btn-link {
-    margin-top: 4px;
-    margin-bottom: 4px;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
 }
 .package-manager .package-source .source-collapse .btn {
     color: rgb(var(--description-color));
