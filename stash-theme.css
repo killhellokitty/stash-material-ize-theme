@@ -8878,6 +8878,10 @@ div#excluded-tag-patterns.setting {
 button.collapse-button > svg:is(.fa-chevron-right, .fa-chevron-down).fa-icon {
     font-size: 20px;
 }
+.scraper-table button.btn.btn-link {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
 
 a .TruncatedText:focus-visible {
     box-shadow: none;
