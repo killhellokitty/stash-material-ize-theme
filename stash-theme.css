@@ -262,7 +262,8 @@ h6,
     --muted-text: 213, 229, 242; /*#d5e5f2*/
     --interactive-input: 239, 239, 241; /*#efeff1 --- lch 94.498 1.035 290.078*/
     --star-color: 255, 243, 111; /* #fff36f --- lch 94.53 64.926 100.665 */
-    --link-icon: 39, 143, 215; /*#278fd7*/
+    --link-icon: 10, 148, 244; /*#0a94f4*/
+    --link: 10, 148, 244; /*#0a94f4*/
     --setting-h1: 162, 217, 255; /*#a2d9ff*/
     /* Select Toggle Colors */
     --sec-cntnr-select-hover: 66, 86, 101; /*#425665*/
@@ -374,7 +375,7 @@ a,
 a.link,
 p > a,
 dd > a:link {
-    color: #278fd7;
+    color: rgb(var(--link));
     background-color: transparent;
     text-decoration: none;             
     font-style: normal;
@@ -3548,7 +3549,7 @@ span.filter-container.text-muted.paginationIndex.center-text:last-of-type {
     box-shadow: var(--elevation-0);
     border-radius: 5rem;
     transition: var(--trans-0);
-    -webkit-transition: var(--trans-0);
+    -webkit-transition: text-decoaration-color 0.25s ease-in-out, var(--trans-0);
 }
 .btn-link:not(:has(>*.performer)):is(:hover, :focus-visible) {
     color: rgb(var(--link-color));
