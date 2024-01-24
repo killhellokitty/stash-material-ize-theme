@@ -8782,15 +8782,18 @@ button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-
 #configuration-tabs-tabpane-interface .setting-section > .card .setting:has(+.setting#vr-tag) {
     padding-bottom: 1rem;
 }
-#configuration-tabs-tabpane-interface .setting-section > .card .setting#ignore-interval + .setting,
-#configuration-tabs-tabpane-interface .setting-section > .card > .setting:has(input#lightbox_reset_zoom_on_nav) {
+#configuration-tabs-tabpane-interface .setting-section > .card #ignore-interval.setting + .setting,
+#configuration-tabs-tabpane-interface .setting-section > .card > .setting:has(input#lightbox_reset_zoom_on_nav),
+#configuration-tabs-tabpane-interface .setting-section > .card > .setting:has(input#disableDropdownCreate_movie),
+#configuration-tabs-tabpane-interface .setting-section > .card > #rating-system.setting {
     border-bottom: 1px solid rgb(var(--card-fold));
     margin-left: 1.375rem;
     width: calc(100% - 44px);
     padding: 1rem 0;
 }
 #configuration-tabs-tabpane-interface .setting-section > .card .setting#max-loop-duration,
-#configuration-tabs-tabpane-interface .setting-section > .card .setting:has(+.setting#max-loop-duration) {
+#configuration-tabs-tabpane-interface .setting-section > .card .setting:has(+.setting#max-loop-duration),
+#configuration-tabs-tabpane-interface .setting-section > .card .setting:has(input#show-all-details) {
     border-top: 1px solid rgb(var(--card-fold));
     margin-left: 1.375rem;
     width: calc(100% - 44px);
@@ -8808,7 +8811,8 @@ button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-
 #configuration-tabs-tabpane-interface .setting-section > .card > .setting:has(input#show-child-tagged-content) h3,
 #configuration-tabs-tabpane-interface .setting-section > .card > .setting:has(input#show-child-studio-content) h3,
 #configuration-tabs-tabpane-interface .setting-section > .card > .setting:has(input#lightbox_scale_up) h3,
-#configuration-tabs-tabpane-interface .setting-section > .card > .setting:has(input#lightbox_reset_zoom_on_nav) h3 {
+#configuration-tabs-tabpane-interface .setting-section > .card > .setting:has(input#lightbox_reset_zoom_on_nav) h3,
+#configuration-tabs-tabpane-interface .setting-section > .card > .setting:has(input#show-text-studios) h3 {
     font-size: 17.5px;
     line-height: 26px;
     letter-spacing: 0.026em;
@@ -8817,6 +8821,10 @@ button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-
 #configuration-tabs-tabpane-interface .setting-section > .card > div#image_wall_direction.setting {
     padding-bottom: 1rem;
 }
+#configuration-tabs-tabpane-interface .setting-section > .card > .setting:has(+.setting>div+div>.custom-control>input#disableDropdownCreate_performer) {
+    padding-top: 1rem;
+}
+
 a .TruncatedText:focus-visible {
     box-shadow: none;
     outline: none;
