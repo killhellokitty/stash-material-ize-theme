@@ -8882,6 +8882,10 @@ button.collapse-button > svg:is(.fa-chevron-right, .fa-chevron-down).fa-icon {
     margin-top: 4px;
     margin-bottom: 4px;
 }
+.package-manager .package-source .source-collapse .btn {
+    color: rgb(var(--description-color));
+    font-size: 20px;
+}
 
 a .TruncatedText:focus-visible {
     box-shadow: none;
