@@ -8815,7 +8815,7 @@ button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-
 #configuration-tabs-tabpane-interface .setting-section > .card > .setting:has(input#show-text-studios) h3,
 #configuration-tabs-tabpane-interface .setting-section > .card > .setting:has(input#custom-css-enabled) h3,
 #configuration-tabs-tabpane-interface .setting-section > .card > .setting:has(input#custom-javascript-enabled) h3,
-#configuration-tabs-tabpane-interface .setting-section > .card > .setting:has(input#custom-localization-enabled) h3,
+#configuration-tabs-tabpane-interface .setting-section > .card > .setting:has(input#custom-locales-enabled) h3,
 #configuration-tabs-tabpane-interface .setting-section > .card > .setting:has(input#use-stash-hosted-funscript) h3 {
     font-size: 17.5px;
     line-height: 26px;
