@@ -366,9 +366,9 @@ code,
 small,
 .small {
     font-size: 11px;
-    font-weight: 500;
+    font-weight: 200;
     line-height: 16px;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.048em;
 }
 
 a,
@@ -377,21 +377,21 @@ p > a,
 dd > a:link {
     color: rgb(var(--link));
     background-color: transparent;
-    text-decoration: none;             
+    text-decoration: none;  
+    text-decoration-color: transparent;           
     font-style: normal;
-    transition: color .2s ease, text-decoration .2s ease-in-out, text-shadow .2s ease-in-out;
-    outline: none;
+    transition: color .2s ease-in-out, text-decoration-color .2s ease-in-out, text-shadow .25s ease-in;
+    outline: 0;
 }
-a:hover {
-    color: #00f9dd;
-    text-shadow: none;
-    text-decoration: none;
-    outline: none;
-} 
+a:hover,
 a.link:hover,
 p > a:hover {
+    color: rgb(var(--link));
     text-decoration: solid underline;
-}
+    text-decoration-color: currentColor;
+    text-decoration-thickness: 10%;
+    text-underline-offset: 0.17em;
+} 
 dd > a:hover,
 dd > a:focus,
 dd > a:focus:hover {
