@@ -8862,6 +8862,11 @@ button.collapse-button > svg:is(.fa-chevron-right, .fa-chevron-down).fa-icon {
     outline: 0;
 }
 
+#settings-dlna .addresses li .address > input.text-input.form-control,
+#settings-dlna .addresses li .address > input.text-input.form-control:focus {
+    background-color: transparent;
+}
+
 a .TruncatedText:focus-visible {
     box-shadow: none;
     outline: none;
