@@ -8813,8 +8813,9 @@ button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-
     line-height: 26px;
     letter-spacing: 0.026em;
 }
+#configuration-tabs-tabpane-interface .setting-section > .card > .setting:has(input#show-ab-loop),
 #configuration-tabs-tabpane-interface .setting-section > .card > div#image_wall_direction.setting {
-    padding-bottom: 16px;
+    padding-bottom: 1rem;
 }
 a .TruncatedText:focus-visible {
     box-shadow: none;
