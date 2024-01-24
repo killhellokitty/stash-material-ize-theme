@@ -8830,7 +8830,7 @@ button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-
 #configuration-tabs-tabpane-interface .setting-section > .card > div#image_wall_direction.setting {
     padding-bottom: 1rem;
 }
-#configuration-tabs-tabpane-interface .setting-section > .card > .setting:has(+.setting>div+div>.custom-control>input#disableDropdownCreate_performer) {
+#configuration-tabs-tabpane-interface .setting-section > .card .setting:has(+.setting>div+div>.custom-control>input#disableDropdownCreate_performer) {
     padding-top: 1rem;
 }
 
