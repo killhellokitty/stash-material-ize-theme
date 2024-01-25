@@ -8706,17 +8706,6 @@ button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-
     font-family: var(--HeaderFont);
 }
 
-div:is(#generated-path, #cache-path, #scrapers-path, #plugins-path, #metadata-path, #custom-performer-image-location, #python-path, #backup-directory-path).setting h3,
-#configuration-tabs-tabpane-library .setting-section > .card > .setting > div:has(+div>.custom-control>input#create-galleries-from-folders) h3,
-#configuration-tabs-tabpane-library .setting-section > .card > .setting > div:has(+div>.custom-control>input#write-image-thumbnails) h3,
-#configuration-tabs-tabpane-library .setting-section > .card > .setting > div:has(+div>.custom-control>input#create-image-clips-from-videos) h3,
-#configuration-tabs-tabpane-library .setting-section > .card > .setting > div:has(+div>.custom-control>input#delete-file-default) h3,
-#configuration-tabs-tabpane-library .setting-section > .card > .setting > div:has(+div>.custom-control>input#delete-generated-default) h3 {
-    font-size: 17.5px;
-    line-height: 26px;
-    letter-spacing: 0.026em;
-}
-
 #configuration-tabs-tabpane-interface .setting-section > .card > .setting#language + .setting-group {
     border-bottom: 1px solid rgb(var(--card-fold));
     padding: 1rem 0 1rem 0;
@@ -8727,12 +8716,7 @@ div:is(#generated-path, #cache-path, #scrapers-path, #plugins-path, #metadata-pa
     padding-left: 0;
     padding-right: 0;
 }
-#configuration-tabs-tabpane-interface .setting-section > .card > .setting:has(+ .setting + .setting#wall-preview) h3,
-#configuration-tabs-tabpane-interface .setting-section > .card .setting:has(+ .setting#wall-preview) h3 {
-    font-size: 17.5px;
-    line-height: 26px;
-    letter-spacing: 0.026em;
-}
+
 #configuration-tabs-tabpane-interface .setting-section > .card .setting:has(+ .setting#wall-preview),
 #configuration-tabs-tabpane-interface .setting-section > .card .setting#ignore-interval {
     border-bottom: 1px solid rgb(var(--card-fold));
@@ -8771,56 +8755,21 @@ div:is(#generated-path, #cache-path, #scrapers-path, #plugins-path, #metadata-pa
     width: calc(100% - 2.75rem);
     padding: 1rem 0;
 }
-#configuration-tabs-tabpane-interface .setting-section > .card .setting#max-loop-duration h3,
-#configuration-tabs-tabpane-interface .setting-section > .card > .setting:has(+.setting>div+div>.custom-control>input#auto-start-video) h3,
-#configuration-tabs-tabpane-interface .setting-section > .card .setting#ignore-interval h3,
-#configuration-tabs-tabpane-interface .setting-section .setting#vr-tag h3,
-#configuration-tabs-tabpane-interface .setting-section > .card > #wall-preview.setting h3,
-.setting:has(>div+div>button#migrateBlobs.btn-danger) h3,
-.setting:has(>div+div>button#migrateHashNaming.btn-danger) h3,
-.setting:has(>div+div>button#anonymiseDownload.btn-secondary) h3,
-.setting:has(>div+div>button#anonymise.btn-secondary) h3,
-.setting:has(>div+div>button#backup.btn-secondary) h3,
-.setting:has(>div+div>button#backupDownload.btn-secondary) h3,
-.setting:has(>div+div>button#partial-import.btn-danger) h3,
-.setting:has(>div+div>button#import.btn-danger) h3,
-.setting:has(>div+div>button#export.btn-secondary) h3,
-
-.setting:has(>div+div>.custom-control>input#hardware-encoding) h3,
-div:is(#transcode-input-args, #transcode-output-args, #live-transcode-input-args, #live-transcode-output-args).setting h3,
-#configuration-tabs-tabpane-system div#blobs-path h3,
-#configuration-tabs-tabpane-system div#blobs-storage h3,
-.setting:has(+#generated_file_naming_hash) h3,
-.setting:has(>div+div>.custom-control>input#dlna-enabled-by-default) h3,
-.setting:has(+div#excluded-tag-patterns.setting) h3,
-div#stash-boxes.setting-section h3,
-#configuration-tabs-tabpane-interface .setting-section > .card > .setting:has(input#skip-browser) h3,
-#configuration-tabs-tabpane-interface .setting-section > .card > .setting:has(input#notifications-enabled) h3,
-#configuration-tabs-tabpane-interface .setting-section > .card > .setting:has(input#abbreviate-counters) h3,
-#configuration-tabs-tabpane-interface .setting-section > .card > .setting:has(input#enable-chromecast) h3,
-#configuration-tabs-tabpane-interface .setting-section > .card > .setting:has(input#show-scrubber) h3,
-#configuration-tabs-tabpane-interface .setting-section > .card > .setting:has(input#always-start-from-beginning) h3,
-#configuration-tabs-tabpane-interface .setting-section > .card > .setting:has(input#track-activity) h3,
-#configuration-tabs-tabpane-interface .setting-section > .card > .setting:has(input#auto-start-video) h3,
-#configuration-tabs-tabpane-interface .setting-section > .card > .setting:has(input#auto-start-video-on-play-selected) h3,
-#configuration-tabs-tabpane-interface .setting-section > .card > .setting:has(input#continue-playlist-default) h3,
-#configuration-tabs-tabpane-interface .setting-section > .card > .setting:has(input#show-ab-loop) h3,
-#configuration-tabs-tabpane-interface .setting-section > .card > .setting:has(input#show-tag-card-on-hover) h3,
-#configuration-tabs-tabpane-interface .setting-section > .card > .setting:has(input#show-child-tagged-content) h3,
-#configuration-tabs-tabpane-interface .setting-section > .card > .setting:has(input#show-child-studio-content) h3,
-#configuration-tabs-tabpane-interface .setting-section > .card > .setting:has(input#lightbox_scale_up) h3,
-#configuration-tabs-tabpane-interface .setting-section > .card > .setting:has(input#lightbox_reset_zoom_on_nav) h3,
-#configuration-tabs-tabpane-interface .setting-section > .card > .setting:has(input#show-text-studios) h3,
-#configuration-tabs-tabpane-interface .setting-section > .card > .setting:has(input#custom-css-enabled) h3,
-#configuration-tabs-tabpane-interface .setting-section > .card > .setting:has(input#custom-javascript-enabled) h3,
-#configuration-tabs-tabpane-interface .setting-section > .card > .setting:has(input#custom-locales-enabled) h3,
-#configuration-tabs-tabpane-interface .setting-section > .card > .setting:has(input#use-stash-hosted-funscript) h3,
-#configuration-tabs-tabpane-interface .setting-section > .card > .setting:has(input#show_all_details) h3,
-#configuration-tabs-tabpane-interface .setting-section > .card > .setting:has(input#compact_expanded_details) h3 {
-    font-size: 17.5px;
-    line-height: 26px;
-    letter-spacing: 0.026em;
+#configuration-tabs-tabpane-library .setting-section > .card .setting > div > h3,
+#configuration-tabs-tabpane-interface .setting-section > .card .setting > div > h3 {
+    font-size: 18.5px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0.033em;
 }
+
+#configuration-tabs-tabpane-library .setting-section > .card > div:is(#video-extensions, #image-extensions, #gallery-extensions, #excluded-video-patterns, #excluded-image-gallery-patterns).setting h3 {
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 32px;
+    letter-spacing: 0.02em;
+}
+
 .setting:has(>div+div>.custom-control>input#dlna-enabled-by-default) h3 {
     padding-bottom: 0.5rem;
 }
