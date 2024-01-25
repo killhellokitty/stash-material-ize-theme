@@ -8755,6 +8755,7 @@ button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-
     width: calc(100% - 2.75rem);
     padding: 1rem 0;
 }
+#configuration-tabs-tabpane-services .setting-section > .card .setting > div > h3,
 #configuration-tabs-tabpane-metadata-providers .setting-section > .card .setting > div > h3,
 #configuration-tabs-tabpane-tasks .setting-section > .card .setting > div > h3,
 #configuration-tabs-tabpane-library .setting-section > .card .setting > div > h3,
