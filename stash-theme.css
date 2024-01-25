@@ -8762,7 +8762,7 @@ button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-
 #configuration-tabs-tabpane-library .setting-section > .card .setting > div > h3,
 #configuration-tabs-tabpane-interface .setting-section > .card .setting > div > h3,
 #configuration-tabs-tabpane-library #stash-table .d-none.d-md-flex.row h6 {
-    color: rgb(var(--on-tertiary)0.94);
+    color: rgb(var(--card-color2-text));
     font-size: 18.5px;
     font-weight: 400;
     line-height: 27px;
@@ -8779,7 +8779,7 @@ button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-
 .setting:has(+.setting>div+div>.custom-control>input#enableMovieBackgroundImage) h3,
 .setting:has(+.setting>div+div>.custom-control>input#disableDropdownCreate_performer) h3,
 #configuration-tabs-tabpane-library .setting-section > .card > div:is(#video-extensions, #image-extensions, #gallery-extensions, #excluded-video-patterns, #excluded-image-gallery-patterns).setting h3 {
-    color: rgb(var(--card-color2-text));
+    color: #e5fefc;
     font-weight: 500;
     font-size: 26px;
     line-height: 32px;
