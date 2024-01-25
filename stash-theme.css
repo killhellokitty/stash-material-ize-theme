@@ -8755,6 +8755,7 @@ button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-
     width: calc(100% - 2.75rem);
     padding: 1rem 0;
 }
+#configuration-tabs-tabpane-tasks .setting-section > .card .setting > div > h3,
 #configuration-tabs-tabpane-library .setting-section > .card .setting > div > h3,
 #configuration-tabs-tabpane-interface .setting-section > .card .setting > div > h3,
 #configuration-tabs-tabpane-library #stash-table .d-none.d-md-flex.row h6 {
@@ -8763,6 +8764,12 @@ button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-
     line-height: 27px;
     letter-spacing: 0.033em;
 }
+#configuration-tabs-tabpane-tasks .setting-section > .card .setting:has(>div+div>button#optimiseDatabase) h3,
+.setting:has(+.setting>div+div>.custom-control>input#clean-dryrun) h3,
+.setting-group>.setting:has(+.collapsible-section>.setting>div+div>.custom-control>input#covers-task)>div>h3,
+.setting-group>.setting:has(+ .collapsible-section>.setting>div+div>.custom-control>input#autotag-performers)>div>h3,
+.setting-section:has(+.setting-section .setting-group>.setting+.collapsible-section>.setting>div+div>.custom-control>input#autotag-performers) .setting>div>h3,
+.setting-group>.setting:has(+.collapsible-section>.setting>div+div>.custom-control>input#scan-generate-covers)>div>h3,
 #configuration-tabs-tabpane-interface .setting-section > .card > div#language h3,
 .setting:has(+.setting>div+div>.custom-control>input#menu-items-scenes) h3,
 .setting:has(+.setting>div+div>.custom-control>input#enableMovieBackgroundImage) h3,
@@ -8773,7 +8780,9 @@ button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-
     line-height: 32px;
     letter-spacing: 0.02em;
 }
-
+#configuration-tabs-tabpane-tasks .setting-section .setting-group>.setting:has(>div+div>button#migrateBlobs) {
+    border-top: 1px solid rgb(var(--card-fold));
+}
 .setting:has(>div+div>.custom-control>input#dlna-enabled-by-default) h3 {
     padding-bottom: 0.5rem;
 }
