@@ -179,6 +179,7 @@ h6,
     --card-color-collaps-show: 30, 43, 52; /*#1e2a34*/
     --card-color-collaps-show-hover: 39, 57, 68; /*#273844*/
     --card-color2: 41, 56, 67; /*#293943*/
+    --card-color2-text: 225, 232, 236; /*#e1e8ec*/
     --card-color2-hover: 51, 69, 83; /*#334453*/
     --card-color-sel: 48, 63, 77; /*#30384D*/
     --card-fold: 59, 76, 92; /*#3b4b5c*/
@@ -8485,9 +8486,7 @@ button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-
     padding-bottom:0
 }
 #configuration-tabs-tabpane-interface .setting-section .setting-group > .setting:not(:first-child) h3 {
-    font-size: 16px;
     margin-left: 60px;
-    color: #dee5e4;
 }
 
 #configuration-tabs-tabpane-interface .setting-section .setting-group .setting>div:last-child {
@@ -8780,7 +8779,7 @@ button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-
 .setting:has(+.setting>div+div>.custom-control>input#enableMovieBackgroundImage) h3,
 .setting:has(+.setting>div+div>.custom-control>input#disableDropdownCreate_performer) h3,
 #configuration-tabs-tabpane-library .setting-section > .card > div:is(#video-extensions, #image-extensions, #gallery-extensions, #excluded-video-patterns, #excluded-image-gallery-patterns).setting h3 {
-    color: rgb(var(--on-sec-container),0.94);
+    color: rgb(var(--card-color2-text));
     font-weight: 500;
     font-size: 26px;
     line-height: 32px;
