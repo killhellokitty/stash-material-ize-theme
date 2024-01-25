@@ -4737,11 +4737,11 @@ textarea.text-input.code.form-control {
 .modal-body textarea.text-input.code.form-control:hover,
 .modal-body textarea.text-input.code.form-control:focus,
 .modal-body textarea.text-input.code.form-control:active {
-    background-image: linear-gradient(to right, rgba(var(--pry-color),var(--text-field-tint)), rgba(var(--pry-color),var(--text-field-tint))), linear-gradient(to right, rgb(var(--body-color2)), rgb(var(--body-color2))) !important;
-    background-color: rgb(var(--body-color2)) !important;
-    background-blend-mode: overlay;
+    background-image: linear-gradient(to right, rgba(var(--pry-color),var(--text-field-tint)), rgba(var(--pry-color),var(--text-field-tint))) !important;
+    background-color: rgba(var(--modal-color)) !important;
+    background-blend-mode: screen;
     border: 0;
-    box-shadow: none;
+    box-shadow: var(--elevation-0-inverse);
 }
 
 .edit-filter-dialog .modal-header {
@@ -8756,6 +8756,7 @@ button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-
     width: calc(100% - 2.75rem);
     padding: 1rem 0;
 }
+#configuration-tabs-tabpane-system .setting-section > .card .setting > div > h3,
 #configuration-tabs-tabpane-services .setting-section > .card .setting > div > h3,
 #configuration-tabs-tabpane-metadata-providers .setting-section > .card .setting > div > h3,
 #configuration-tabs-tabpane-tasks .setting-section > .card .setting > div > h3,
