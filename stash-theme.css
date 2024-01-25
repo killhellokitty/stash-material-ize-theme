@@ -8771,6 +8771,16 @@ div:is(#generated-path, #cache-path, #scrapers-path, #plugins-path, #metadata-pa
     width: calc(100% - 2.75rem);
     padding: 1rem 0;
 }
+.setting:has(>div+div>button#migrateBlobs.btn-danger) h3,
+.setting:has(>div+div>button#migrateHashNaming.btn-danger) h3,
+.setting:has(>div+div>button#anonymiseDownload.btn-secondary) h3,
+.setting:has(>div+div>button#anonymise.btn-secondary) h3,
+.setting:has(>div+div>button#backup.btn-secondary) h3,
+.setting:has(>div+div>button#backupDownload.btn-secondary) h3,
+.setting:has(>div+div>button#partial-import.btn-danger) h3,
+.setting:has(>div+div>button#import.btn-danger) h3,
+.setting:has(>div+div>button#export.btn-secondary) h3,
+
 .setting:has(>div+div>.custom-control>input#hardware-encoding) h3,
 div:is(#transcode-input-args, #transcode-output-args, #live-transcode-input-args, #live-transcode-output-args).setting h3,
 #configuration-tabs-tabpane-system div#blobs-path h3,
