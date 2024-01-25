@@ -8771,6 +8771,11 @@ div:is(#generated-path, #cache-path, #scrapers-path, #plugins-path, #metadata-pa
     width: calc(100% - 2.75rem);
     padding: 1rem 0;
 }
+#configuration-tabs-tabpane-interface .setting-section > .card .setting#max-loop-duration h3,
+#configuration-tabs-tabpane-interface .setting-section > .card > .setting:has(+.setting>div+div>.custom-control>input#auto-start-video) h3,
+#configuration-tabs-tabpane-interface .setting-section > .card .setting#ignore-interval h3,
+#configuration-tabs-tabpane-interface .setting-section .setting#vr-tag h3,
+#configuration-tabs-tabpane-interface .setting-section > .card > #wall-preview.setting h3,
 .setting:has(>div+div>button#migrateBlobs.btn-danger) h3,
 .setting:has(>div+div>button#migrateHashNaming.btn-danger) h3,
 .setting:has(>div+div>button#anonymiseDownload.btn-secondary) h3,
