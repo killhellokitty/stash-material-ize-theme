@@ -8755,6 +8755,7 @@ button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-
     width: calc(100% - 2.75rem);
     padding: 1rem 0;
 }
+#configuration-tabs-tabpane-plugins .setting-section > .card .setting > div > h3,
 #configuration-tabs-tabpane-system .setting-section > .card .setting > div > h3,
 #configuration-tabs-tabpane-services .setting-section > .card .setting > div > h3,
 #configuration-tabs-tabpane-metadata-providers .setting-section > .card .setting > div > h3,
@@ -8823,7 +8824,10 @@ div#excluded-tag-patterns.setting {
     margin-left: 1.25rem;
     width: calc(100% - 2.75rem);
 }
-
+div#configuration-tabs-tabpane-logs>h2 {
+    color: rgb(var(--setting-h1));
+    
+}
 /* Buttons and Icons within Metadata Page */
 .btn-primary > span.fa-icon > svg.fa-rotate {
     font-size: 22px;
