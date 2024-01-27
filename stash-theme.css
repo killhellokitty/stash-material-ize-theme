@@ -2599,7 +2599,8 @@ button.tag-list-button.btn.btn-secondary:not(:has(>.tag-list-anchor)):disabled {
         color: transparent;
         border-style: none;
         position: relative;
-        margin-right: auto;
+        margin-right: 2%;
+        margin-left: 0.15%;
         top: 0px;
         z-index: 19;
     }
