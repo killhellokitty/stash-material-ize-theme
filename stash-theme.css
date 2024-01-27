@@ -2547,9 +2547,9 @@ button.tag-list-button.btn.btn-secondary:not(:has(>.tag-list-anchor)):disabled {
     /* text-decoration-color: rgb(var(--nav-color2)); */
     /* text-decoration-thickness: from-font; */
     /* text-underline-offset: 0.11em; */
-    overflow: visible;
-    outline: none;
-    will-change: text-decoration, color, animation, transition;
+    overflow: hidden;
+    outline: 0;
+    will-change: text-decoration, color, animation, transition, background-image;
     /* top: 0%; */
     /* margin-left: -19%; */
     /* left: 0%; */
@@ -2571,7 +2571,7 @@ button.tag-list-button.btn.btn-secondary:not(:has(>.tag-list-anchor)):disabled {
     background-repeat: no-repeat;
     background-size: 60px 60px;
     box-shadow: none !important;
-    overflow: visible;
+    overflow: hidden;
     outline: 0;
     will-change: background-image, transition;
     z-index: 1;
