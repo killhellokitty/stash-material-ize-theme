@@ -5117,6 +5117,7 @@ div.card.studio-card .TruncatedText {
     border-radius: 0 0 12px 0;
     width: 39.25vw;
     max-width: 59.78vh;
+    font-weight: 500;
 }
 
 /* doesn't except variables??? --white-color used for background. And darkened text shadow. */
