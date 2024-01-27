@@ -249,6 +249,8 @@ h6,
     --link-hover: 136, 206, 255; /* --pry-color; */
     --link-active: 60, 175, 255; /*#3cafff* richer primary color. */
     --link-visited: 136, 147, 255; /*#8893ff primary's Analogous Color. */
+    --link-icon: 10, 148, 244; /*#0a94f4*/
+    --link: 10, 148, 244; /* #0a94f4 --- lch 59.684 56.934 272.643 */
     /* Misc Colors */
     --red: 255, 136, 147; /*#ff8893*/
     --green: 7, 255, 227; /*#07ffe3*/
@@ -263,8 +265,6 @@ h6,
     --muted-text: 213, 229, 242; /*#d5e5f2*/
     --interactive-input: 239, 239, 241; /*#efeff1 --- lch 94.498 1.035 290.078*/
     --star-color: 255, 243, 111; /* #fff36f --- lch 94.53 64.926 100.665 */
-    --link-icon: 10, 148, 244; /*#0a94f4*/
-    --link: 10, 148, 244; /*#0a94f4*/
     --setting-h1: 162, 217, 255; /*#a2d9ff*/
     /* Select Toggle Colors */
     --sec-cntnr-select-hover: 66, 86, 101; /*#425665*/
@@ -349,7 +349,6 @@ h6,
     }
 }
 /* - */
-
 code, 
 .code {
     font-family: var(--MonoFont);
@@ -359,7 +358,7 @@ code,
     letter-spacing: 0.078em;
     font-variant: tabular-nums slashed-zero;
     color: rgb(var(--on-background));
-    background-color: rgb(var(--body-color2));
+    background-color: rgb(var(--body-color2),0.35);
     border-radius: 3px;
     padding: 0.2em 0.4em;
     text-rendering: optimizeLegibility;
@@ -2527,7 +2526,7 @@ button.tag-list-button.btn.btn-secondary:not(:has(>.tag-list-anchor)):disabled {
 .navbar-brand > a:focus-visible {
     outline: none;
 }
-
+@media (min-width: 769px) {
 .top-nav > .navbar-brand > a > button.minimal.brand-link.btn.btn-primary:where(:only-of-type, :hover, :focus, :active, :active:focus, :focus-visible) {
     font-weight: 400;
     color: transparent;
@@ -2554,9 +2553,10 @@ button.tag-list-button.btn.btn-secondary:not(:has(>.tag-list-anchor)):disabled {
     /* top: 0%; */
     /* margin-left: -19%; */
     /* left: 0%; */
-    z-index: 1200;
+    z-index: 1;
     opacity: 1;
     transition: var(--trans-0);
+    }
 }
 @media (max-width: 768px) {
     .top-nav > .navbar-brand > a > button.minimal.brand-link.btn.btn-primary, 
@@ -2582,7 +2582,7 @@ button.tag-list-button.btn.btn-secondary:not(:has(>.tag-list-anchor)):disabled {
     color: rgb(var(--btn-min-primary));
 }
 .top-nav > .navbar-brand > a > button.minimal.brand-link.btn.btn-primary:focus-visible {
-    text-decoration-color: rgb(var(--btn-min-primary));
+    text-decoration-color: rgb(var(--btn-min-primary))!important;
     text-decoration: underline;
     text-decoration-thickness: 0.07em;
     text-underline-offset: 0.15em;
@@ -4959,7 +4959,7 @@ textarea.text-input.code.form-control {
     color: #87a6bd;
 }
 .markdown h3 {
-    color: #7595ab;
+    color: #85a3bf; /*variant of the secondary color */
 }
 .markdown h4 {
     color: #6589a1;
@@ -4970,8 +4970,9 @@ textarea.text-input.code.form-control {
     border: 1px solid transparent;
 }
 .markdown code {
-    background-color: #293e3d;
-    color: white;
+    background-color: #222f37;
+    color: #eaf0f4;
+    border-radius: 3px;
     text-decoration: none !important;
     text-decoration-color: white !important;
 }
@@ -6380,6 +6381,7 @@ nav.nav.nav-tabs {
 }
 .top-nav .navbar-buttons {
     margin: auto -4px;
+
 }
 .navbar-dark .navbar-nav .nav-link {
     flex-grow: 1;
@@ -7717,12 +7719,14 @@ div.modal-body b,
 .setting-section .setting {
     padding: 1rem 1.25rem;
 }
+.changelog >h1,
 .setting-section h1, 
 #tasks-panel h1 {
     font-size: 57px;
     color: rgb(var(--setting-h1));
     margin-bottom: 1.25rem;
     margin-top: 2.75rem;
+    text-shadow: var(--light-txt-shadow);
 }
 
 .setting-section .setting-group>.setting:first-child h3,
@@ -7746,15 +7750,16 @@ div.modal-body b,
 }
 .setting-section .setting h3[title] {
     text-decoration: none !important;
+    text-decoration-color: transparent !important;
 }
 .setting-section .setting h3[title]:hover {
     text-decoration: underline dotted !important;
+    text-decoration-thickness: 0.13em !important;
+    text-decoration-color: rgb(var(--link)) !important;
+    text-underline-offset: 0.24em;
 }
 .settings-section .setting .value {
     font-family: var(--MonoFont);
-}
-.setting-section .setting>div:last-child button {
-    margin-left: 6px;
 }
 
 
@@ -7807,7 +7812,6 @@ div.original-scene-details button.minimal.collapse-button.btn.btn-primary.btn-lg
     outline-offset: -0.1rem;
 }
 /* --- */
-
 #tasks-panel h1 {
     margin-top: 0.8em;
     /*margin-left: 4px;*/
@@ -7928,7 +7932,7 @@ svg.svg-inline--fa.fa-circle-question.fa-icon {
     font-size: 11px;
     margin-top: 0.25rem;
     margin-bottom: 1rem;
-    margin-left: 3%;
+    margin-left: 0%;
     margin-right: 0%;
     font-weight: 200;
     text-shadow: var(--really-light-txt-shadow);
@@ -7947,35 +7951,39 @@ svg.svg-inline--fa.fa-circle-question.fa-icon {
 
 
 /* ||Changelog */
-.changelog >h1 {
-    color: #ccd2d9;
-}
-
 .changelog-version svg:is(.fa-angle-up, .fa-angle-down).svg-inline--fa.fa-icon.mr-3 {
-    font-size: 32px;
-    vertical-align: middle;
+    font-size: 24px;
     margin-right: 8px !important;
     color: rgb(var(--on-surface-variant));
 }
-.changelog-version .btn.btn-link:not(:disabled):not(.disabled):is(:only-of-type, :hover, :active, :focus, :active:focus, :focus-visible) {
-    font-weight: 400;
+.changelog-version-header .btn-link {
+    font-weight: 200;
     font-size: 28px;
-    line-height: 36px;
-    letter-spacing: 0;
+    line-height: 32px;
+    letter-spacing: 0.012em;
     color: rgb(var(--on-surface));
+    text-decoration-thickness: 1% !important;
     background-color: transparent;
-    padding: 0;
+    padding: 0 24px;
+    height: 48px;
+    min-height: 48px;
     box-shadow: none;
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+    align-items: center;
 }
-.changelog-version .btn.btn-link:focus-visible {
-    outline: 0;
-    text-decoration: underline;
-    text-decoration-color: currentColor;
-    text-underline-offset: 0.35em;
-    text-decoration-thickness: 10%;
-    text-decoration-style: solid;
-    transition: text-decoration-color 0.15s ease-in-out;
+.card-header:first-child {
+    border-radius: 12px 12px 0 0;
 }
+.card-header {
+    border-bottom: 1px solid rgb(var(--card-fold));
+    background-color: rgb(var(--card-color));
+    padding: 1rem 1.25rem;
+    margin-bottom: -2px;
+}
+
+
 /* --- */
 
 #configuration-tabs-tabpane-library>#stashes.setting-section:first-child>.sub-heading {
@@ -8712,7 +8720,7 @@ button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-
     margin-left: 1.375rem;
     width: calc(100% - 2.75rem);
 }
-#configuration-tabs-tabpane-interface .setting-section >.card >.setting#language +.setting-group > .setting {
+#configuration-tabs-tabpane-interface .setting-section >.card >.setting#language + .setting-group > .setting {
     padding-left: 0;
     padding-right: 0;
 }
@@ -8771,10 +8779,10 @@ button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-
 }
 #configuration-tabs-tabpane-tasks .setting-section > .card .setting:has(>div+div>button#optimiseDatabase) h3,
 .setting:has(+.setting>div+div>.custom-control>input#clean-dryrun) h3,
-.setting-group>.setting:has(+.collapsible-section>.setting>div+div>.custom-control>input#covers-task)>div>h3,
-.setting-group>.setting:has(+ .collapsible-section>.setting>div+div>.custom-control>input#autotag-performers)>div>h3,
-.setting-section:has(+.setting-section .setting-group>.setting+.collapsible-section>.setting>div+div>.custom-control>input#autotag-performers) .setting>div>h3,
-.setting-group>.setting:has(+.collapsible-section>.setting>div+div>.custom-control>input#scan-generate-covers)>div>h3,
+.setting-group > .setting:has(+.collapsible-section>.setting>div+div>.custom-control>input#covers-task) > div > h3,
+.setting-group > .setting:has(+ .collapsible-section>.setting>div+div>.custom-control>input#autotag-performers) > div > h3,
+.setting-section:has(+.setting-section .setting-group>.setting+.collapsible-section>.setting>div+div>.custom-control>input#autotag-performers) .setting > div > h3,
+.setting-group > .setting:has(+.collapsible-section>.setting>div+div>.custom-control>input#scan-generate-covers) > div > h3,
 #configuration-tabs-tabpane-interface .setting-section > .card > div#language h3,
 .setting:has(+.setting>div+div>.custom-control>input#menu-items-scenes) h3,
 .setting:has(+.setting>div+div>.custom-control>input#enableMovieBackgroundImage) h3,
@@ -8786,7 +8794,7 @@ button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-
     line-height: 32px;
     letter-spacing: 0.02em;
 }
-#configuration-tabs-tabpane-tasks .setting-section .setting-group>.setting:has(>div+div>button#migrateBlobs) {
+#configuration-tabs-tabpane-tasks .setting-section .setting-group > .setting:has(>div+div>button#migrateBlobs) {
     border-top: 1px solid rgb(var(--card-fold));
 }
 .setting:has(>div+div>.custom-control>input#dlna-enabled-by-default) h3 {
@@ -8824,10 +8832,34 @@ div#excluded-tag-patterns.setting {
     margin-left: 1.25rem;
     width: calc(100% - 2.75rem);
 }
-div#configuration-tabs-tabpane-logs>h2 {
-    color: rgb(var(--setting-h1));
-
+div#configuration-tabs-tabpane-logs > h2 {
+    color: #6fb0dd;
+    text-shadow: var(--light-txt-shadow);
 }
+
+.setting>div+div>button.minimal.btn.btn-primary > a.link {
+    color: rgb(var(--on-surface-variant));
+}
+.setting>div+div>button.minimal.btn.btn-primary > a.link:where(:hover, :active, :focus, :active:focus) {
+    color: rgb(var(--link));
+}
+#configuration-tabs-tabpane-plugins .setting>div+div>button.minimal.btn.btn-primary:not(.disabled):not(:disabled):is(:hover, :focus-visible) {
+    background-image: none;
+    background-color: rgb(var(--link),var(--btn-hover));
+    box-shadow: var(--elevation-0);
+}
+.#configuration-tabs-tabpane-plugins setting>div+div>button.minimal.btn.btn-primary:not(.disabled):not(:disabled):is(:active, :focus, :active:focus) {
+    background-image: none;
+    background-color: rgb(var(--link),var(--btn-active));
+    box-shadow: none;
+}
+#configuration-tabs-tabpane-changelog .markdown li {
+    color: rgb(var(--on-surface));
+}
+#configuration-tabs-tabpane-changelog .strong {
+    color: #d7e4e4;
+}
+
 /* Buttons and Icons within Metadata Page */
 .btn-primary > span.fa-icon > svg.fa-rotate {
     font-size: 22px;
