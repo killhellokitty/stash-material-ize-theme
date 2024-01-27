@@ -2526,7 +2526,7 @@ button.tag-list-button.btn.btn-secondary:not(:has(>.tag-list-anchor)):disabled {
 .navbar-brand > a:focus-visible {
     outline: none;
 }
-@media (min-width: 769px) {
+@media (min-width: 577px) {
 .top-nav > .navbar-brand > a > button.minimal.brand-link.btn.btn-primary:where(:only-of-type, :hover, :focus, :active, :active:focus, :focus-visible) {
     font-weight: 400;
     color: transparent;
@@ -2558,10 +2558,11 @@ button.tag-list-button.btn.btn-secondary:not(:has(>.tag-list-anchor)):disabled {
     transition: var(--trans-0);
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 576px) {
     .top-nav > .navbar-brand > a > button.minimal.brand-link.btn.btn-primary, 
     .top-nav > .navbar-brand > a > button.minimal.brand-link.btn.btn-primary:is(:hover, :focus, :active, :active:focus, :focus-visible) {
     font-weight: 400;
+    font-size: 32px;
     color: transparent;
     position: relative;
     background-color: transparent;
@@ -2592,14 +2593,29 @@ button.tag-list-button.btn.btn-secondary:not(:has(>.tag-list-anchor)):disabled {
     outline: none;
 }
 
-.top-nav > .navbar-brand,
-.top-nav:not(:has(>.show)) > .navbar-brand {
-    color: transparent;
-    border-style: none;
-    position: relative;
-    margin-right: auto;
-    top: 0px;
-    z-index: 19;
+@media (min-width: 577px) {
+    .top-nav > .navbar-brand,
+    .top-nav:not(:has(>.show)) > .navbar-brand {
+        color: transparent;
+        border-style: none;
+        position: relative;
+        margin-right: auto;
+        top: 0px;
+        z-index: 19;
+    }
+}
+@media (max-width: 576px) {
+    .top-nav > .navbar-brand,
+    .top-nav:not(:has(>.show)) > .navbar-brand {
+        margin-right: 2%;
+        margin-left: 11%;
+        color: transparent;
+        order-style: none;
+        position: relative;
+        top: 0px;
+        z-index: 19;
+        will-change: margin-right, margin-left;
+    }
 }
 .top-nav:has(.navbar-buttons a[href*="/new"]):not(:has(>.show)) > .navbar-brand {
     top: unset;
