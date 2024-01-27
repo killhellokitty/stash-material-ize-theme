@@ -6964,11 +6964,10 @@ button[title=Statistics].minimal.btn.btn-primary {
 .top-nav .navbar-buttons a.nav-utility button.minimal.btn.btn-primary:not(.donate),
 button[title=Help].nav-utility.minimal.btn.btn-primary:has(>svg.svg-inline--fa.fa-circle-question.fa-icon) {
     color: rgb(var(--nav-white));
-    border: none;
+    border: 0;
     border-radius: 5rem;
-    background: none;
+    background-image: none;
     background-color: transparent;
-    text-shadow: none;
     text-decoration: none !important;
     text-decoration-color: transparent !important;
     position: relative;
@@ -6976,7 +6975,10 @@ button[title=Help].nav-utility.minimal.btn.btn-primary:has(>svg.svg-inline--fa.f
     padding: 12px;
     box-shadow: none;
     opacity: 1;
-    transition: color .25s ease-in-out, box-shadow .2s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: var(--trans-0);
 }
 button[title="Help"].nav-utility.btn-primary > svg.fa-circle-question {
     background-color: transparent;
