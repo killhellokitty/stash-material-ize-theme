@@ -6999,7 +6999,6 @@ svg.svg-inline--fa.fa-chart-column.fa-icon {
 
 .top-nav .navbar-buttons > a.nav-utility.nav-link > button.minimal.donate.btn.btn-primary {
     border-radius: 5rem;
-    padding: 8px 24px !important;
     background-color: rgb(var(--sec-container));
     text-decoration: none !important;
     text-decoration-color: transparent !important;
@@ -7007,6 +7006,10 @@ svg.svg-inline--fa.fa-chart-column.fa-icon {
     box-shadow: var(--elevation-0);
     color: rgb(var(--on-sec-container));
     font-weight: 500;
+    width: auto;
+    height: 32px;
+    max-height: 32px;
+    padding: 0 12px !important;
 }
 .top-nav .navbar-buttons .btn:not(.donate):not(:disabled):not(.disabled):hover,
 .top-nav .navbar-buttons .btn:not(.donate):not(:disabled):not(.disabled):focus:hover {
