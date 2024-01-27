@@ -2716,10 +2716,6 @@ button.tag-list-button.btn.btn-secondary:not(:has(>.tag-list-anchor)):disabled {
     }
 }
 
-svg.svg-inline--fa.fa-right-from-bracket.fa-icon {
-    font-size: 24px;
-}
-
 /* ||Detail and Edit Pages */
 .detail-body {
     margin-left: 1px;
@@ -6988,13 +6984,16 @@ button[title="Help"].nav-utility.btn-primary > svg.fa-circle-question {
 }
 button[title=Help].nav-utility.minimal.btn.btn-primary > svg.svg-inline--fa.fa-circle-question.fa-icon {
     color: rgb(var(--btn-toggler-color));
-    font-size: 24px;
+    font-size: 20px;
 }
 svg.svg-inline--fa.fa-gear {
-    font-size: 24px;
+    font-size: 20px;
 }
 svg.svg-inline--fa.fa-chart-column.fa-icon {
-    font-size: 24px;
+    font-size: 20px;
+}
+svg.svg-inline--fa.fa-right-from-bracket.fa-icon {
+    font-size: 20px;
 }
 
 .top-nav .navbar-buttons > a.nav-utility.nav-link > button.minimal.donate.btn.btn-primary {
