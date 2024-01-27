@@ -6483,6 +6483,10 @@ nav.top-nav.navbar .navbar-collapse.collapse.show > .navbar-nav:last-child {
     }
 }
 
+a.small.d-block {
+    color: lch(70.684 58.934 272.643); /* lighter --link text /*
+}
+
 /* For short underline of active button */
 /*.col-4.col-sm-3.col-md-2.col-lg-auto.nav-link.active::before,
 .col-4.col-sm-3.col-md-2.col-lg-auto.nav-link.active:hover::before,
