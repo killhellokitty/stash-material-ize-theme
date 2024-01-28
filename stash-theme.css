@@ -10805,25 +10805,27 @@ label[for="cover_image"].form-label {
 }
 .tagger-container .col-md-6.my-1 .input-group>.input-group-append>button.btn.btn-primary::before {
     content: " ";
-    background-image: none;
+    position: absolute;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24px' height='24px' fill='none' <path fill-rule='evenodd' clip-rule='evenodd' D='M15 10.5C15 12.9853 12.9853 15 10.5 15C8.01472 15 6 12.9853 6 10.5C6 8.01472 8.01472 6 10.5 6C12.9853 6 15 8.01472 15 10.5ZM14.1793 15.2399C13.1632 16.0297 11.8865 16.5 10.5 16.5C7.18629 16.5 4.5 13.8137 4.5 10.5C4.5 7.18629 7.18629 4.5 10.5 4.5C13.8137 4.5 16.5 7.18629 16.5 10.5C16.5 11.8865 16.0297 13.1632 15.2399 14.1792L20.0304 18.9697L18.9697 20.0303L14.1793 15.2399Z' fill='#080341'/></svg>");
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-position: 0% 50%;
     background-color: transparent;
     color: rgb(var(--on-surface-variant));
-    padding: 0;
     width: 40px;
-    max-width: 40px;
+    min-width: 40px;
+    padding: 0.01px;
     height: 40px;
     max-height: 40px;
-    border-radius: 5rem;
     box-shadow: none;
     z-index: 5;
     outline: 0;
     transition: var(--trans-0);
 }
 .tagger-container .col-md-6.my-1 .input-group>.input-group-append>button.btn.btn-primary {
-    /*background-image: url("data:image/svg+xml;utf8,<svg width='800px' height='800px' viewBox='0 0 24.00 24.00' fill='none' transform='matrix(-1, 0, 0, 1, 0, 0)rotate(0)' stroke='#000000' stroke-width='0' xmlns='http://www.w3.org/2000/svg' stroke-linecap='round' stroke-linejoin='round' stroke='#CCCCCC' stroke-width='0.048' <path opacity='0.1' d='M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z' fill='#41474d'/> <path d='M15 15L21 21' stroke='#41474d' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/> <path d='M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z' stroke='#41474d' stroke-width='2.4'/></svg>");*/
     text-indent: 100%;
     white-space: nowrap;
-    overflow: hidden;
+    overflow: visible;
     width: 40px;
     height: 40px;
     max-height: 40px;
