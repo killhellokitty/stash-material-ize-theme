@@ -2798,6 +2798,7 @@ button:not([title=Help]).btn-primary:not(:where(:disabled, .disabled)):is(:focus
 /* Shrink Margin between Unmatched and Batch-buttons */
 .tagger-container .d-flex > .w-auto + .d-flex > button.btn.btn-primary {
     margin-right: -4px;
+    margin-left: 16px !important;
 }
 
 /* Tagger-Container Settings Button */
