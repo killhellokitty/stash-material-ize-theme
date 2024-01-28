@@ -10825,9 +10825,9 @@ label[for="cover_image"].form-label {
     white-space: nowrap;
     overflow: hidden;
     width: 40px;
-    max-width: 40px;
     height: 40px;
     max-height: 40px;
+    padding: 0;
 }
 
 .tagger-container .collapse.show.card .input-group>.input-group-append>button.btn.btn-primary {
