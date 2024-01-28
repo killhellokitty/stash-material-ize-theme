@@ -7012,15 +7012,10 @@ svg.svg-inline--fa.fa-right-from-bracket.fa-icon {
     box-shadow: var(--elevation-0);
     color: rgb(var(--on-sec-container));
     font-weight: 500;
-    width: auto;
-    height: 32px;
-    max-height: 32px;
     padding: 12px !important;
-    width: 40px;
-    min-width: 40px;
+    width: auto;
     height: 40px !important;
     max-height: 40px;
-    margin-right: 24px;
 }
 .top-nav .navbar-buttons .btn:not(.donate):not(:disabled):not(.disabled):hover,
 .top-nav .navbar-buttons .btn:not(.donate):not(:disabled):not(.disabled):focus:hover {
