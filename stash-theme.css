@@ -10803,9 +10803,16 @@ label[for="cover_image"].form-label {
     border-radius: 5rem;
     margin-left: 6px;
 }
-.tagger-container .collapse.show.card .input-group>.input-group-append>button.btn.btn-primary::before {
+.tagger-container .col-md-6.my-1 .input-group>.input-group-append>button.btn.btn-primary::before {
     content: "url('data:image/svg+xml;utf8,<svg width='800px' height='800px' viewBox='0 0 24.00 24.00' fill='none' transform='matrix(-1, 0, 0, 1, 0, 0)rotate(0)' stroke='#000000' stroke-width='0' xmlns='http://www.w3.org/2000/svg' stroke-linecap='round' stroke-linejoin='round' stroke='#CCCCCC' stroke-width='0.048' <path opacity='0.1' d='M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z' fill='#41474d'/> <path d='M15 15L21 21' stroke='#41474d' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/> <path d='M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z' stroke='#41474d' stroke-width='2.4'/></svg>')";
 }
+.tagger-container .col-md-6.my-1 .input-group>.input-group-append>button.btn.btn-primary {
+    /*background-image: url("data:image/svg+xml;utf8,<svg width='800px' height='800px' viewBox='0 0 24.00 24.00' fill='none' transform='matrix(-1, 0, 0, 1, 0, 0)rotate(0)' stroke='#000000' stroke-width='0' xmlns='http://www.w3.org/2000/svg' stroke-linecap='round' stroke-linejoin='round' stroke='#CCCCCC' stroke-width='0.048' <path opacity='0.1' d='M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z' fill='#41474d'/> <path d='M15 15L21 21' stroke='#41474d' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/> <path d='M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z' stroke='#41474d' stroke-width='2.4'/></svg>");*/
+    width: 1px;
+    height: 1px;
+    clip: rect(0,0,0,0);
+}
+
 .tagger-container .collapse.show.card .input-group>.input-group-append>button.btn.btn-primary {
     border-radius: 5rem;
     padding: 0;
@@ -10813,6 +10820,7 @@ label[for="cover_image"].form-label {
     width: 40px;
     max-width: 40px;
     height: 40px;
+    max-height: 40px;
     background: none;
     color: transparent;
     box-shadow: none;
@@ -10820,10 +10828,6 @@ label[for="cover_image"].form-label {
     transform: translate(0%, 0%);
     transition: all 0s;
     will-change: auto;
-}
-.tagger-container .collapse.show.card .input-group>.input-group-append>button.btn.btn-primary {
-    /*background-image: url("data:image/svg+xml;utf8,<svg width='800px' height='800px' viewBox='0 0 24.00 24.00' fill='none' transform='matrix(-1, 0, 0, 1, 0, 0)rotate(0)' stroke='#000000' stroke-width='0' xmlns='http://www.w3.org/2000/svg' stroke-linecap='round' stroke-linejoin='round' stroke='#CCCCCC' stroke-width='0.048' <path opacity='0.1' d='M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z' fill='#41474d'/> <path d='M15 15L21 21' stroke='#41474d' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/> <path d='M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z' stroke='#41474d' stroke-width='2.4'/></svg>");*/
-    width: 1px;
 }
 
 .tagger-container .collapse.show.card .input-group > .input-group-append > button.btn.btn-primary:hover {
