@@ -11518,14 +11518,18 @@ button.btn.btn-primary.btn-sm:last-child {
     margin: auto .5rem 2rem .5rem;
 }
 
-/* Spacing for Tagger-Container top buttons */
-.tagger-container .d-flex.align-items-center .d-flex > button + button.ml-1.btn.btn-primary {
+.tagger-container .d-flex.align-items-center .d-flex > button + button.ml-1.btn.btn-primary /* Spacing for Tagger-Container top buttons */ {
     margin-left: 1rem !important;
 }
-.tagger-container .d-flex.align-items-center .d-flex:last-of-type > button + button.ml-1.btn.btn-primary {
+.tagger-container .d-flex.align-items-center .d-flex:last-of-type > button + button.ml-1.btn.btn-primary /* * */ {
     margin-right: -0.25rem;
 }
-/* *** */
+
+.tagger-container .d-flex > .w-auto + .d-flex button.btn.btn-primary:is(:disabled, .disabled) /* Disabled Tagger-Conatainer top buttons */ {
+    background-image: linear-gradient(to right, rgb(var(--tertiary),var(--disabled)) rgb(var(--tertiary),var(--disabled)));
+    background-color: rgb(var(--body-color2));
+    background-blend-mode: normal;
+}
 
 .row:has(>:is(label[for="batch-search-delay"], label[for="colorize-color-green"], label[for="colorize-color-yellow"], label[for="colorize-color-red"])) {
     flex-wrap: nowrap;
