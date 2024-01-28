@@ -4533,6 +4533,7 @@ div.tagger-container .btn-link {
     filter: none;
     min-height: 40px;
     height: 40px;
+    top: -1%;
 }
 
 .scene-tabs h1.text-center {
