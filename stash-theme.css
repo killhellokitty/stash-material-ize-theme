@@ -2796,8 +2796,8 @@ button:not([title=Help]).btn-primary:not(:where(:disabled, .disabled)):is(:focus
 /* * */
 
 /* Shrink Margin between Unmatched and Batch-buttons */
-.tagger-container .d-flex > .w-auto + .d-flex:first-of-type > button.btn.btn-primary {
-    margin-right: -0.25rem;
+.tagger-container-header > .d-flex > .w-auto + .d-flex .ml-1 {
+    margin-left: 0%;
 }
 .tagger-container .d-flex > .w-auto + .d-flex > button.btn.btn-primary {
     margin-left: 1rem !important;
@@ -10791,10 +10791,10 @@ label[for="cover_image"].form-label {
 .mt-2, .my-2 {
     margin-top: 12px !important;
 }
-.tagger-container .col-md-6 .input-group {
+.tagger-container div .input-group {
     align-items: center;
 }
-.tagger-container .col-md-6.my-1 .input-group>.input-group-append>button.btn.btn-primary,
+.tagger-container div.my-1 .input-group>.input-group-append>button.btn.btn-primary,
 .PerformerTagger-box-link.input-group>.input-group-append>button.btn.btn-primary,
 .PerformerTagger-details>.input-group>.input-group-append>button.btn.btn-primary {
     align-items: center;
@@ -10803,10 +10803,10 @@ label[for="cover_image"].form-label {
     border-radius: 5rem;
     margin-left: 6px;
 }
-.tagger-container .col-md-6.my-1 .input-group>.input-group-append {
+.tagger-container div.my-1 .input-group > .input-group-append {
     margin-left: -48px;
 }
-.tagger-container .col-md-6.my-1 .input-group>.input-group-append>button.btn.btn-primary::before {
+.tagger-container div.my-1 .input-group > .input-group-append > button.btn.btn-primary::before {
     content: "";
     position: absolute;
     background-image: url("data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KDTwhLS0gVXBsb2FkZWQgdG86IFNWRyBSZXBvLCB3d3cuc3ZncmVwby5jb20sIFRyYW5zZm9ybWVkIGJ5OiBTVkcgUmVwbyBNaXhlciBUb29scyAtLT4KPHN2ZyB3aWR0aD0iNjRweCIgaGVpZ2h0PSI2NHB4IiB2aWV3Qm94PSIwIDAgMjQuMDAgMjQuMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgc3Ryb2tlPSIjYzFjN2NlIiBzdHJva2Utd2lkdGg9IjAuODY0MDAwMDAwMDAwMDAwMSI+Cg08ZyBpZD0iU1ZHUmVwb19iZ0NhcnJpZXIiIHN0cm9rZS13aWR0aD0iMCIvPgoNPGcgaWQ9IlNWR1JlcG9fdHJhY2VyQ2FycmllciIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+Cg08ZyBpZD0iU1ZHUmVwb19pY29uQ2FycmllciI+IDxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMTUgMTAuNUMxNSAxMi45ODUzIDEyLjk4NTMgMTUgMTAuNSAxNUM4LjAxNDcyIDE1IDYgMTIuOTg1MyA2IDEwLjVDNiA4LjAxNDcyIDguMDE0NzIgNiAxMC41IDZDMTIuOTg1MyA2IDE1IDguMDE0NzIgMTUgMTAuNVpNMTQuMTc5MyAxNS4yMzk5QzEzLjE2MzIgMTYuMDI5NyAxMS44ODY1IDE2LjUgMTAuNSAxNi41QzcuMTg2MjkgMTYuNSA0LjUgMTMuODEzNyA0LjUgMTAuNUM0LjUgNy4xODYyOSA3LjE4NjI5IDQuNSAxMC41IDQuNUMxMy44MTM3IDQuNSAxNi41IDcuMTg2MjkgMTYuNSAxMC41QzE2LjUgMTEuODg2NSAxNi4wMjk3IDEzLjE2MzIgMTUuMjM5OSAxNC4xNzkyTDIwLjAzMDQgMTguOTY5N0wxOC45Njk3IDIwLjAzMDNMMTQuMTc5MyAxNS4yMzk5WiIgZmlsbD0iI2MxYzdjZSIvPiA8L2c+Cg08L3N2Zz4=");
@@ -10818,10 +10818,10 @@ label[for="cover_image"].form-label {
     height: 40px;
     max-height: 40px;
     padding: 0;
-    padding-right: 64px;
+    padding-right: 40px;
     z-index: 5;
 }
-.tagger-container .col-md-6.my-1 .input-group>.input-group-append>button.btn.btn-primary {
+.tagger-container div.my-1 .input-group > .input-group-append > button.btn.btn-primary {
     background-color: transparent;
     width: 40px;
     color: rgb(0,0,0,0);
@@ -10833,17 +10833,76 @@ label[for="cover_image"].form-label {
     left: -31%;
     box-shadow: none;
 }
-.tagger-container .col-md-6.my-1 .input-group>.input-group-append>button.btn.btn-primary:is(:hover, :focus-visible) {
+.tagger-container div.my-1 .input-group > .input-group-append > button.btn.btn-primary:is(:hover, :focus-visible) {
     background-color: rgb(var(--on-surface),var(--btn-hover));
     box-shadow: var(--elevation-0);
 }
-.tagger-container .col-md-6.my-1 .input-group>.input-group-append>button.btn.btn-primary:is(:active, :focus, :active:focus) {
+.tagger-container div.my-1 .input-group > .input-group-append > button.btn.btn-primary:is(:active, :focus, :active:focus) {
     background-color: rgb(var(--on-surface),var(--btn-active));
     box-shadow: none;
     outline: 0;
 }
+.tagger-container div.my-1 .input-group > .input-group-append > button.btn.btn-primary:is(:disabled, .disabled) {
+    background-color: transparent;
+    color: transparent;
+    box-shadow: none;
+}
+.tagger-container div.my-1 .input-group > .input-group-append > button.btn.btn-primary >span.mr-2>.LoadingIndicator.inline.small>.spinner-border.spinner-border-sm>.sr-only{
+    color: transparent;
+}
+.tagger-container div.my-1 .input-group > .input-group-append > button.btn.btn-primary:has(>span.mr-2>.LoadingIndicator.inline.small)::before {
+    background-image: none;
+    transition: 0.25s ease-in-out;
+}
+.tagger-container div.my-1 .input-group > .input-group-append > button.btn.btn-primary:has(>span.mr-2>.LoadingIndicator.inline.small) {
+    background-color: transparent;
+    color: transparent;
+    box-shadow: none;
+    transition: background-color 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
+}
+.tagger-container div.my-1 .input-group > .input-group-append > button.btn.btn-primary >span.mr-2>.LoadingIndicator.inline.small {
+    display: flex;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    left: 27px;
+}
+.tagger-container div.my-1 .input-group > .input-group-append > button.btn.btn-primary >span.mr-2>.LoadingIndicator.inline.small>.spinner-border.spinner-border-sm {
+    display: flex;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin: 8px;
+    border: 3px solid rgb(var(--pry-color));
+    border-radius: 5rem;
+    animation: loading-indicator-small 1.2s cubic-bezier(0.5,0,0.5,1) infinite;
+    border-color: rgb(var(--pry-color)) rgb(var(--pry-color)) rgb(var(--pry-color)) transparent;
+}
+.tagger-container div.my-1 .input-group > .input-group-append > button.btn.btn-primary >span.mr-2>.LoadingIndicator.inline.small>.spinner-border.spinner-border-sm:nth-child(1) {
+    animation-delay: -0.47s;
+}
+.tagger-container div.my-1 .input-group > .input-group-append > button.btn.btn-primary >span.mr-2>.LoadingIndicator.inline.small>.spinner-border.spinner-border-sm:nth-child(2) {
+    animation-delay: -0.28s;
+}
+.tagger-container div.my-1 .input-group > .input-group-append > button.btn.btn-primary >span.mr-2>.LoadingIndicator.inline.small>.spinner-border.spinner-border-sm:nth-child(3) {
+    animation-delay: -0.13s;
+}
+@keyframes loading-indicator-small {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform:rotate(360deg);
+    }
+}
 
-.tagger-container .collapse.show.card .input-group>.input-group-append>button.btn.btn-primary {
+.tagger-container div.my-1 .input-group > .input-group-append > button.btn.btn-primary > span.mr-2 > div.LoadingIndicator.inline.small > div.spinner-border.spinner-border-sm,
+.tagger-container div.my-1 .input-group > .input-group-append > button.btn.btn-primary > span.mr-2 > div.LoadingIndicator.inline.small > div.spinner-border.spinner-border-sm > span.sr-only {
+    color: transparent !important;
+}
+
+
+.tagger-container .collapse.show.card .input-group > .input-group-append > button.btn.btn-primary {
     border-radius: 5rem;
     padding: 0;
     margin-right: 4px;
