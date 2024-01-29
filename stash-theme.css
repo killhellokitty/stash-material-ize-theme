@@ -3928,7 +3928,7 @@ li.search-result.selected-result.active {
      background-color: hsla(0, 0%, 39.2%, .4);
 }
  #scene-edit-details .edit-buttons-container {
-    margin: 0 16px;
+    margin: 0;
     background-color: rgb(var(--body-color2));
     background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPgo8cmVjdCB3aWR0aD0iNSIgaGVpZ2h0PSI1IiBmaWxsPSIjMWEyMDI1Ij48L3JlY3Q+CjxwYXRoIGQ9Ik0wIDVMNSAwWk02IDRMNCA2Wk0tMSAxTDEgLTFaIiBzdHJva2U9IiMxMDE0MTciIHN0cm9rZS13aWR0aD0iMSI+PC9wYXRoPgo8L3N2Zz4=");
     padding: 16px 0 !important;
