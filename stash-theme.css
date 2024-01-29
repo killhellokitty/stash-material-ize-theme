@@ -8335,6 +8335,7 @@ svg.svg-inline--fa.fa-magnifying-glass.fa-icon {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     padding-left: 12px;
+    border-left: 1px solid rgb(var(--body-color2));
 }
 
 .modal-body .btn-secondary.form-control {
