@@ -3942,6 +3942,9 @@ li.search-result.selected-result.active {
         background-color: rgb(var(--body-color2));
     }
 }
+.form-container.edit-buttons-container.px-3.pt-3.row {
+    border-bottom: 1px solid rgb(var(--outline-variant)) !important;
+}
 
 img.performer-card-image {
     scale: 100%;
