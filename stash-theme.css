@@ -9150,6 +9150,7 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
     border: 0 !important;
     color: rgb(var(--on-surface-variant));
     width: 40px;
+    min-width: 40px;
     height: 40px;
     max-height: 40px;
     font-size: 24px;
