@@ -3662,6 +3662,15 @@ h5.card-section-title, .scene-tabs .scene-header {
     margin-bottom: unset;
 }
 
+/* ||Thumbnail Card Preview Images */
+.scene-card-preview, 
+.gallery-card-image, 
+.tag-card-image, 
+.image-card-preview {
+    margin-top: -1%;
+    margin-bottom: -1%;
+}
+
 .scene-card a, 
 .gallery-card a {
     color: rgb(var(--white-color));
@@ -3675,7 +3684,6 @@ h5.card-section-title, .scene-tabs .scene-header {
     margin: auto;
     object-fit: contain;
 }
-
 .tag-card {
     padding: 0;
 }
@@ -3707,15 +3715,6 @@ h5.card-section-title, .scene-tabs .scene-header {
 }
 .rating-1 {
     background: #4e615ddd;
-}
-
-/* ||Thumbnail Card Preview Images */
-.scene-card-preview, 
-.gallery-card-image, 
-.tag-card-image, 
-.image-card-preview {
-    margin-top: -1%;
-    margin-bottom: -1%;
 }
 
 /*scenes List View */
