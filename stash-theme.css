@@ -3662,15 +3662,6 @@ h5.card-section-title, .scene-tabs .scene-header {
     margin-bottom: unset;
 }
 
-/* ||Thumbnail Card Preview Images */
-.scene-card-preview, 
-.gallery-card-image, 
-.tag-card-image, 
-.image-card-preview {
-    margin-top: -1%;
-    margin-bottom: -1%;
-}
-
 .scene-card a, 
 .gallery-card a {
     color: rgb(var(--white-color));
@@ -3697,25 +3688,16 @@ h5.card-section-title, .scene-tabs .scene-header {
     transition: filter 0.25s ease-in-out 0.35s;
 }
 
-.rating-banner {
-    color: #fff;
-    text-shadow: none;
+
+.scene-card-preview, /* ||Thumbnail Card Preview Images */
+.gallery-card-image, 
+.tag-card-image, 
+.image-card-preview { 
+    margin-top: -1%;
+    margin-bottom: -1%;
 }
-.rating-5 {
-    background: #ff3d3edd;
-}
-.rating-4 {
-    background: #eb0002dd;
-}
-.rating-3 {
-    background: #a24000dd;
-}
-.rating-2 {
-    background: #743e1cdd;
-}
-.rating-1 {
-    background: #4e615ddd;
-}
+
+
 
 /*scenes List View */
 .table {
@@ -7869,6 +7851,27 @@ a#new-performer-filter {
     background-size: 20px;
     padding: 0 16px 0 28px;
     border: 0;
+}
+
+/* Rating Banner */
+.rating-banner {
+    color: rgb(var(--white-color));
+}
+.rating-5 {
+    background: #ff8893dd;
+}
+.rating-4 {
+    background: #eb0002dd;
+}
+.rating-100-12,
+.rating-3 {
+    background: #a24000dd;
+}
+.rating-2 {
+    background: #743e1cdd;
+}
+.rating-1 {
+    background: #4e615ddd;
 }
 
 /* Star Outline */
