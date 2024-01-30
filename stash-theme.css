@@ -2306,6 +2306,9 @@ button:not([title=Help]).btn-primary:not(:where(:disabled, .disabled)):is(:focus
     background-blend-mode: screen;
     box-shadow: var(--elevation-0);
 }
+.login .btn.btn-primary { 
+    margin: 0;
+}
 /* * */
 
 /* Shrink Margin between Unmatched and Batch-buttons */
@@ -3415,9 +3418,6 @@ li.search-result.selected-result.active {
     opacity: 1;
 }
 
-.performer-select-active .react-select__control, .studio-select-active .react-select__control {
-     background-color: hsla(0, 0%, 39.2%, .4);
-}
  #scene-edit-details .edit-buttons-container {
     margin: 0;
     background-color: rgb(var(--body-color2));
@@ -3497,9 +3497,9 @@ img.performer-card-image {
 }
 
 .alert-danger {
-    color: #690005;
-    background-color: #ffb4ab;
-    border-color: #93000a;
+    color: rgb(var(--on-error-container));
+    background-color: rgb(var(--error-container));
+    border-color: transparent;
 }
 .delete-dialog .form-check {
     padding-top: 0.75rem;
@@ -3569,7 +3569,7 @@ h5.card-section-title, .scene-tabs .scene-header {
     top: 0.5rem;
 }
 .extra-scene-info {
-    display: none; /* inline-block */
+    display: none;
     padding-left: 12px;
 }
 
@@ -3604,20 +3604,15 @@ h5.card-section-title, .scene-tabs .scene-header {
     border-radius: 5rem 0 0 5rem;
     padding: 4px 8px 4px 12px;
 }
-/* Remove Box-Shadow from SceneCards on Home Screen(carosel) */
+
 .slick-slide .card {
     height: 96%;
 }
 
 .card-popovers .btn {
     padding: 8px 12px;
-    /*margin-top: 0.9rem;*/
     margin-right: 8px;
 }
-
-/*a.pwPlayer_button {
-    margin-top: 0.9rem;
-}*/
 
 .scene-details h6 {
     color: rgb(var(--date-color));
@@ -3627,9 +3622,6 @@ h5.card-section-title, .scene-tabs .scene-header {
 
 .show>.buttons-container.row .btn.btn.primary { 
     margin: 0; 
-}
-.login .btn.btn-primary { 
-    margin: 0 0 0 0;
 }
 
 .card hr {
