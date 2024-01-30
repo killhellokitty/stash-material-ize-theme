@@ -3659,7 +3659,8 @@ h5.card-section-title, .scene-tabs .scene-header {
     margin-bottom: unset;
 }
 
-.scene-card a, .gallery-card a {
+.scene-card a, 
+.gallery-card a {
     color: rgb(var(--white-color));
     display: flex;
     outline: 0;
