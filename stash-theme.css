@@ -3654,6 +3654,9 @@ h5.card-section-title, .scene-tabs .scene-header {
     align-items: flex-end;
     align-content: flex-end;
 }
+.gallery-card .card-popovers {
+    margin-bottom: 16px;
+}
 .scene-card__details, 
 .gallery-card__details {
     margin-bottom: unset;
@@ -3666,9 +3669,6 @@ h5.card-section-title, .scene-tabs .scene-header {
     outline: 0;
 }
 
-.gallery-card .card-popovers {
-    margin-bottom: 16px;
-}
 .zoom-1 .gallery-card-image, .zoom-1 .tag-card-image {
     max-height: 220px;
     max-width: 100%;
