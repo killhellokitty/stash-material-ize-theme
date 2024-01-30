@@ -313,6 +313,33 @@ h6,
     --breakpoint-xl: 1200px;
 }
 
+/* Toast-Container */
+.toast-container { 
+    left: 74%;
+    top: 1rem;
+    z-index: 59000 
+}
+.toast-container .success{
+    background-color: rgb(var(--green));
+    color: #001b18;
+}
+.toast-container .danger{
+    background-color: rgb(var(--error));
+    color: rgb(var(--on-error));
+}
+.toast-container .warning{
+    background-color: rgb(var(--warning));
+    color: #743000;
+}
+.toast-container .toast-header{
+    background-color: transparent;
+    border: 0;
+    color: rgb(var(--surface));
+}
+.toast-container .toast-header .close{
+    color: rgb(var(--surface));
+}
+
 /* Focus is NOT the same as Focus-Visible */
 /**:focus:not(:focus-visible), */
 *.focus:not(:focus-visible) {
@@ -1136,11 +1163,6 @@ input[type=range]::-ms-tooltip {
      width: 100%;
      height: 100%;
      z-index: 2;
-}
-
-.toast-container {
-    left: 74%;
-    top: 1rem;
 }
 
 /* || Stats Page */
@@ -3377,11 +3399,11 @@ div.react-select__control .react-select__multi-value:focus:active {
 }
 /* Button Indicators in Combobox */
 div.react-select__indicator {
-    color: rgb(var(--on-surface-variant));
+    color: rgb(var(--surface-variant));
     opacity: 1;
 }
 div.react-select__control:hover div.react-select__indicator:hover {
-    color: rgb(var(--on-surface-variant));
+    color: rgb(var(--surface-variant));
     opacity: 1;
 }
 div.react-select__control.react-select__control--is-focused div.react-select__indicator:focus,
@@ -12540,32 +12562,6 @@ span.stash-id-pill {
     text-rendering: optimizeLegibility;
     box-shadow: inset 0 0 0 1px rgb(0,0,0,0);
 }
-
-/* Toast-Container */
-.toast-container { 
-    z-index: 59000 
-}
-.toast-container .success{
-    background-color: rgb(var(--green));
-    color: #001b18;
-}
-.toast-container .danger{
-    background-color: rgb(var(--error));
-    color: rgb(var(--on-error));
-}
-.toast-container .warning{
-    background-color: rgb(var(--warning));
-    color: #743000;
-}
-.toast-container .toast-header{
-    background-color: transparent;
-    border: 0;
-    color: rgb(var(--surface));
-}
-.toast-container .toast-header .close{
-    color: rgb(var(--surface));
-}
-/* *** */
 
 
 /* - */
