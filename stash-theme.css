@@ -3573,7 +3573,7 @@ h5.card-section-title, .scene-tabs .scene-header {
     padding-left: 12px;
 }
 
-/* --- The Resolution and the Time/Length of the video in the bottom right corner to make it easier to read --- */
+/* --- The Resolution and the Time/Length of the video --- */
 .scene-specs-overlay, 
 .scene-interactive-speed-overlay {
     font-family: FiraCode, Verdana,'DejaVu Sans', Arimo, NotoSans, Arial, "Segoe UI", sans-serif, system-ui, serif, math;
@@ -3609,11 +3609,6 @@ h5.card-section-title, .scene-tabs .scene-header {
     height: 96%;
 }
 
-.card-popovers .btn {
-    padding: 8px 12px;
-    margin-right: 8px;
-}
-
 .scene-details h6 {
     color: rgb(var(--date-color));
     text-shadow: var(--light-txt-shadow);
@@ -3637,7 +3632,13 @@ h5.card-section-title, .scene-tabs .scene-header {
     padding: 0.01px;
     max-height: 800px;
 }
-
+.card-popovers .btn {
+    padding: 8px 12px;
+    margin-right: 8px;
+}
+.scene-popovers .fa-icon {
+    margin-right: 2px;
+}
 .scene-popovers, 
 .card-popovers { 
     max-height: 56px;
@@ -3658,13 +3659,6 @@ h5.card-section-title, .scene-tabs .scene-header {
     margin-bottom: unset;
 }
 
-.card-section p:after {
-    font-size: 1px;
-    color: rgba(0,0,0, .01);
-    padding-right: 3.2vw; 
-    margin-right: 2.8vw; 
-    content: " ";
-}
 .scene-card a, .gallery-card a {
     color: rgb(var(--white-color));
     display: flex;
@@ -3687,11 +3681,11 @@ h5.card-section-title, .scene-tabs .scene-header {
 
 /* --- Thumbnail images slightly darkened and brightened --- */
 .scene-card-preview-image {
-    filter: brightness(88%) contrast(1.2) saturate(0.93);
+    filter: brightness(92%) contrast(1.2) saturate(0.93);
 }
 .scene-card-preview-image:hover {
     filter: brightness(100%);
-    transition: filter 0.25s ease 0.2s;
+    transition: filter 0.25s ease-in-out 0.35s;
 }
 
 .rating-banner {
@@ -3714,47 +3708,13 @@ h5.card-section-title, .scene-tabs .scene-header {
     background: #4e615ddd;
 }
 
-/*.zoom-1 .scene-card-preview-image, 
-.zoom-1 .scene-card-preview { 
-    height:98%; 
-    max-height: 260px
-}*/
-
-/*.zoom-1 .scene-card-preview, .zoom-1 .scene-card-preview-video, .zoom-1 .scene-card-video {
-    min-width: 300px; */
-    /*width: calc(228px + 17vw / 1.92);*/
-    /*max-width: 470px;
-    height:calc((234px + 26vw / 3.84)/1.63);
-    max-height: 265px;
-}*/
-
 /* ||Thumbnail Card Preview Images */
-    /* Holds the thumbnail in place. Vertically */
 .scene-card-preview, 
 .gallery-card-image, 
 .tag-card-image, 
 .image-card-preview {
     margin-top: -1%;
     margin-bottom: -1%;
-}
-/* --- */
-
-.zoom-0 .video-section, 
-.zoom-1 .video-section, 
-.zoom-2 .video-section, 
-.zoom-3 .video-section {
-    object-fit: cover !important;
-    overflow:hidden;
-}
-
-.zoom-0 .scene-card-preview, .zoom-0 .scene-card-preview-video, .zoom-0 .scene-card-video,
-.zoom-1 .scene-card-preview, .zoom-1 .scene-card-preview-video, .zoom-1 .scene-card-video, 
-.zoom-2 .scene-card-preview, .zoom-2 .scene-card-preview-video, .zoom-2 .scene-card-video,
-.zoom-3 .scene-card-preview, .zoom-3 .scene-card-preview-video, .zoom-3 .scene-card-video {
-    object-fit: cover !important;
-    /*margin-top:-2%;
-    margin-left:-6px;
-    transform: scale(1.04);*/
 }
 
 /*scenes List View */
@@ -3951,11 +3911,7 @@ div:has(>*.filter-tags)>table:not(.table-striped):not(.table-bordered).table>tbo
     border-bottom: 0;
 }
 
-.btn-link {
-    color: #dcf6f0;
-}
-
-/* --- Improves how the Preview Videos in the Wall View are displayed --- */
+/* --- Wall View --- */
 .wall-item-container {
     width: 100%; 
     background-color: rgba(0, 0, 0, .10); 
@@ -3978,10 +3934,6 @@ div:has(>*.filter-tags)>table:not(.table-striped):not(.table-bordered).table>tbo
     backdrop-filter: blur(2px);
     font-weight: 500;
     font-size: 16px;
-}
-
-.scene-popovers .fa-icon {
-    margin-right: 2px;
 }
 
 /* --- Changes the font in the File Info section --- */
