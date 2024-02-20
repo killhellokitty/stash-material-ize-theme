@@ -3492,7 +3492,7 @@ li.search-result.selected-result.active {
     }
 }
 .form-container.edit-buttons-container.px-3.pt-3.row {
-    border-bottom: 1px solid rgb(var(--outline-variant)) !important;
+    border-bottom: 1px solid rgb(255,255,255,0.085) !important;
 }
 
 /*img.performer-card-image {
