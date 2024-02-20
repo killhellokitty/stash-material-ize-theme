@@ -625,6 +625,15 @@ input[type=checkbox].form-check-input.position-static {
     box-shadow: 0 0 0 0.11rem rgb(var(--on-surface)), inset 0 0 0 5rem rgb(var(--card-color));
 }
 
+#queue-viewer > .queue-controls input[type="checkbox"]#continue-checkbox.form-check-input {
+    width: 22px;
+    height: 22px;
+    margin-top: 0%;
+}
+#queue-viewer > .queue-controls label[for="continue-checkbox"].form-check-label {
+    line-height: 22px;
+}
+
 .scene-table label input[type=checkbox].form-control:nth-of-type(odd) {
     box-shadow: 0 0 0 0.11rem rgb(var(--on-surface)), inset 0 0 0 5rem rgb(var(--tables-odd));
 }
@@ -2630,7 +2639,7 @@ div#queue-content {
     display: flex;
 }
 #queue-viewer > .queue-controls button.minimal.btn.btn-secondary {
-    font-size: 18px;
+    font-size: 22px;
     width: 40px;
 }
 #queue-viewer .queue-controls + div#queue-content {
