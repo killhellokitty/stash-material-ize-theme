@@ -5199,6 +5199,9 @@ div.mb-2 select.btn-secondary.form-control.focus option {
     .gallery-tabs + .gallery-divider {
         background-color: rgb(var(--body-color2));
     }
+    .gallery-tabs {
+        background-color: rgb(var(--body-color));
+    }
 }
 
 .scrubber-wrapper {
@@ -5738,7 +5741,7 @@ nav.nav.nav-tabs {
     margin-bottom: 0;
 }
 .nav.nav-tabs:has(> .nav-item:nth-of-type(2) > a.active) {
-    border-bottom: 1px solid rgb(255,255,255,0.13);
+    border-bottom: 1px solid rgb(255,255,255,0.085);
 }
 .nav-tabs>.nav-item:has(>*:not(.btn-secondary):not(.dropdown):not(.o-counter)),
 .nav.nav-tabs>.nav-item.nav-link {
