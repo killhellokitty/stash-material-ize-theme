@@ -5196,6 +5196,9 @@ div.mb-2 select.btn-secondary.form-control.focus option {
         background-blend-mode: screen;
         box-shadow: var(--elevation-1);
     }
+    .gallery-tabs + .gallery-divider {
+        background-color: rgb(var(--body-color2));
+    }
 }
 
 .scrubber-wrapper {
