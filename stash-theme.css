@@ -8160,10 +8160,8 @@ button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-
     outline: 0;
     color: rgb(var(--outline));
     max-height: 36px;
-    height: unset;
     min-height: 2px;
     max-width: 36px;
-    width: unset;
     min-width: 2px;
     filter: drop-shadow(0 0 0.22rem rgba(0,0,0,.45));
     transition: filter 0.25s, var(--trans-0);
