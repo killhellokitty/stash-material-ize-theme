@@ -12253,15 +12253,15 @@ button:is(.favorite, .not-favorite).minimal.favorite-button.btn.btn-primary:hove
     max-width: 40px;
     min-width: 2px;
 }
-.rating-stars button:is(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-fill-70, .star-fill-60, .star-fill-50, .star-fill-40, .star-fill-30, .star-fill-30, .star-fill-25, .star-fill-20, .star-fill-10, .star-fill-0).minimal.btn.btn-secondary:hover::before {
+.rating-stars button:is(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-fill-70, .star-fill-60, .star-fill-50, .star-fill-40, .star-fill-30, .star-fill-30, .star-fill-25, .star-fill-20, .star-fill-10, .star-fill-0).minimal.btn.btn-secondary:not(.disabled):not(:disabled):hover::before {
     animation: bubble 0.35s ease-in forwards;
     will-change: animation;
-    max-height: 36px !important;
+    max-height: 36px;
     height: unset;
-    min-height: 2px !important;
-    max-width: 36px !important;
+    min-height: 2px;
+    max-width: 36px;
     width: unset;
-    min-width: 2px !important;
+    min-width: 2px;
 }
 
 .detail-header .name-icons a.minimal.link.btn.btn-primary:has(>svg.fa-link):hover::before,
@@ -12299,7 +12299,7 @@ button[title=Help].nav-utility.minimal.btn.btn-primary:has(>svg.svg-inline--fa.f
 .top-nav .navbar-buttons a.minimal.logout-button.btn.btn-primary:hover::before,
 .detail-header .name-icons a.minimal.link.btn.btn-primary:has(>svg.fa-link):hover::before,
 button.minimal.btn.btn-primary:has(>a.link>svg.fa-link):hover::before,
-button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-fill-70, .star-fill-60, .star-fill-50, .star-fill-40, .star-fill-30, .star-fill-30, .star-fill-25, .star-fill-20, .star-fill-10, .star-fill-0).minimal.btn.btn-secondary:hover::before,
+button:is(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-fill-70, .star-fill-60, .star-fill-50, .star-fill-40, .star-fill-30, .star-fill-30, .star-fill-25, .star-fill-20, .star-fill-10, .star-fill-0).minimal.btn.btn-secondary:not(.disabled):not(:disabled):hover::before,
 #performer-page .performer-head .name-icons a.minimal.link.twitter.btn.btn-primary:hover::before,
 #performer-page .performer-head .name-icons button.not-favorite.btn-primary:hover::before,
 #performer-page .performer-head .name-icons button.favorite.btn-primary:hover::before,
