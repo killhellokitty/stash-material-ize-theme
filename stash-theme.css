@@ -3707,10 +3707,6 @@ h5.card-section-title, .scene-tabs .scene-header {
     padding: 4px 8px 4px 12px;
 }
 
-.slick-slide .card {
-    height: 96%;
-}
-
 .scene-details h6 {
     color: rgb(var(--date-color));
     text-shadow: var(--light-txt-shadow);
@@ -3728,6 +3724,7 @@ h5.card-section-title, .scene-tabs .scene-header {
     margin-bottom: 12px;
     background-color: rgb(var(--card-fold));
     height: 1px;
+    min-height: 1px;
 }
 
 .card.performer-card {
@@ -3756,9 +3753,9 @@ h5.card-section-title, .scene-tabs .scene-header {
     align-items: flex-end;
     align-content: flex-end;
 }
-.gallery-card .card-popovers {
+/*.gallery-card .card-popovers {
     margin-bottom: 16px;
-}
+}*/
 .scene-card__details, 
 .gallery-card__details {
     margin-bottom: unset;
