@@ -3478,19 +3478,14 @@ li.search-result.selected-result.active {
 
  #scene-edit-details .edit-buttons-container {
     margin: 0;
-    background-color: rgb(var(--body-color2));
-    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPgo8cmVjdCB3aWR0aD0iNSIgaGVpZ2h0PSI1IiBmaWxsPSIjMWEyMDI1Ij48L3JlY3Q+CjxwYXRoIGQ9Ik0wIDVMNSAwWk02IDRMNCA2Wk0tMSAxTDEgLTFaIiBzdHJva2U9IiMxMDE0MTciIHN0cm9rZS13aWR0aD0iMSI+PC9wYXRoPgo8L3N2Zz4=");
+    background-color: rgb(var(--body-color));
+    background-image: none;
     padding: 16px 0 !important;
     align-items: center;
     border: 0;
     z-index: 20901;
 }
-@media (max-width: 575.98px) {
-    #scene-edit-details .edit-buttons-container {
-        background-image: none;
-        background-color: rgb(var(--body-color2));
-    }
-}
+
 .form-container.edit-buttons-container.px-3.pt-3.row {
     border-bottom: 1px solid rgb(255,255,255,0.085) !important;
 }
