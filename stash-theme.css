@@ -2937,8 +2937,7 @@ div.react-select__control .react-select__multi-value {
     background-color: rgb(var(--secondary));
     border: 0;
     border-radius: 8px;
-    align-content: center;
-    flex-flow: wrap;
+    align-items: center;
     font-weight: 500;
     margin: 4px 4px;
     padding: 0 8px 0 12px;
@@ -3064,24 +3063,24 @@ div.dropdown-menu .dropdown-item:hover {
     background-color: transparent;
     border-radius: 5rem;
     border: 0;
-    color: rgb(var(--on-surface-variant));
+    color: rgb(var(--on-sec));
     box-shadow: none;
     outline: none;
-    min-width: 30px;
-    width: 30px;
-    height: 30px;
+    min-width: 28px;
+    width: 28px;
+    height: 28px;
     transition: var(--trans-0);
     -webkit-transition: var(--trans-0);
 }
 .react-select__multi-value__remove:hover {
-    background-color: rgba(var(--on-surface-variant),var(--btn-hover));
+    background-color: rgba(var(--sec-container),var(--btn-hover));
     box-shadow: var(--elevation-0);
-    color: rgb(var(--on-surface-variant));
+    color: rgb(var(--on-sec));
 }
 .react-select__multi-value__remove:active,
 .react-select__multi-value__remove.active {
-    background-color: rgba(var(--on-surface-variant),var(--btn-active));
-    color: rgb(var(--on-surface-variant));
+    background-color: rgba(var(--sec-container),var(--btn-active));
+    color: rgb(var(--on-sec));
     box-shadow: none;
     outline: none;
 }
@@ -12421,7 +12420,7 @@ button[title="Delete Stash ID"].btn-danger {
     width: 32px;
     min-width: 32px;
     height: 32px;
-    font-size: 14px;
+    font-size: 16px;
     margin-top: 5%;
     margin-bottom: -2px;
     margin-left: 20.5%;
@@ -12470,6 +12469,57 @@ span.stash-id-pill {
 .background-image-container + .detail-container .stash-id-pill a {
     background-color:transparent;
     color: rgb(var(--on-surface));
+}
+@media (min-width: 1200px) {
+    button[title="Delete Stash ID"].btn-danger {
+        padding: 0;
+        width: 32px;
+        min-width: 32px;
+        height: 32px;
+        font-size: 16px;
+        margin-top: 1%;
+        margin-bottom: -2px;
+        margin-left: 85%;
+        margin-right: auto !important;
+        position: relative;
+        top: 25px;
+    }
+    span.stash-id-pill {
+        font-family: var(--MonoFont);
+        font-size: 11px;
+        font-weight: 500;
+        text-shadow: var(--really-light-txt-shadow);
+        line-height: 14px;
+        letter-spacing: 0.045em;
+        vertical-align: middle;
+        margin-top: 8px;
+        dispaly: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: stretch;
+    }
+    .stash-id-pill > span {
+        background-color: rgb(var(--on-tertiary));
+        color: rgb(var(--tertiary));
+        border-radius: 8px 8px 0 0;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+    .stash-id-pill a {
+        color: rgb(var(--on-tertiary-container));
+        background-color: rgb(var(--tertiary-container));
+        border-radius: 0 0 8px 8px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+    .stash-id-pill a:is(:hover, :focus-visible) {
+        text-decoration: underline;
+        text-decoration-color: currentColor;
+        text-decoration-style: solid;
+        text-underline-offset: 0.25em;
+        text-decoration-thickness: 0.12em;
+    }
 }
 
 /* Plugins Package-Manager */
