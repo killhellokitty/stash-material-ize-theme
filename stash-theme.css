@@ -2649,10 +2649,10 @@ div#queue-content {
     align-content: flex-start;
     justify-content: center;
 }
-#queue-viewer #queue-content > div.d-flex > button.btn.btn-primary:is(:only-of-type, :hover, :active, :focus, :active:focus) {
+#queue-viewer #queue-content button.btn.btn-primary {
     background-image: var(--btn-dummy-highlight);
     background-color: transparent;
-    background-blend-mode: normal;
+    background-blend-mode: screen;
     font-size: 27.45px;
     color: rgb(var(--on-surface-variant));
     font-weight: 900;
@@ -2664,6 +2664,15 @@ div#queue-content {
     height: 40px;
     width: 40px;
 }
+#queue-viewer #queue-content button.btn.btn-primary:is(:hover, :focus-visible) {
+    background-color: rgb(var(--on-surface),var(--btn-hover));
+    box-shadow: var(--elevation-1);
+}
+#queue-viewer #queue-content button.btn.btn-primary:is(:active, :focus, :active:focus) {
+    background-color: rgb(var(--on-surface),var(--btn-active));
+    box-shadow: var(--elevation-0);
+}
+
 #queue-viewer a {
     color: rgb(var(--on-surface-variant));
     font-size: 16px;
