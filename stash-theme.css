@@ -12495,8 +12495,6 @@ span.stash-id-pill {
         margin-top: 8px;
         dispaly: flex;
         flex-direction: column;
-        flex-wrap: wrap;
-        align-content: center;
         align-items: stretch;
     }
     .stash-id-pill > span {
