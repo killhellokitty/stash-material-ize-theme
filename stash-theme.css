@@ -6599,6 +6599,9 @@ svg.svg-inline--fa.fa-xmark.fa-icon {
 button[title=Statistics].minimal.btn.btn-primary {
     margin-left: 12px;
 }
+a.minimal.logout-button.btn.btn-primary {
+    font-size: 22px;
+}
 
 @media (max-width: 576px) {
     button[title=Statistics].minimal.btn.btn-primary {
@@ -8169,7 +8172,7 @@ button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-
 button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-fill-70, .star-fill-60, .star-fill-50, .star-fill-40, .star-fill-30, .star-fill-30, .star-fill-25, .star-fill-20, .star-fill-10, .star-fill-0).minimal.btn.btn-secondary:not(:disabled):not(.disabled):is(:focus, :active, :active:focus, .active, .active:focus) {
     color: rgb(var(--outline));
     background-image: none;
-    background-color: rgb(var(--star-color),var(--btn-hover));
+    background-color: rgb(var(--star-color),var(--btn-active));
     box-shadow: var(--elevation-0);
     height: 36px;
     max-height: 36px;
@@ -8186,8 +8189,9 @@ button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-
     border: 0;
     box-shadow: none;
     outline: 0;
-    color: rgb(var(--outline));
-    opacity: var(--disabled);
+    color: rgb(var(--outline),var(--disabled));
+    background-image: none;
+    background-color: transparent;
 }
 
 button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-fill-70, .star-fill-60, .star-fill-50, .star-fill-40, .star-fill-30, .star-fill-30, .star-fill-25, .star-fill-20, .star-fill-10, .star-fill-0).minimal.btn.btn-secondary:not(:focus):not(:disabled):not(.disabled):focus-visible {
@@ -12247,9 +12251,11 @@ button:is(.favorite, .not-favorite).minimal.favorite-button.btn.btn-primary:hove
 button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-fill-70, .star-fill-60, .star-fill-50, .star-fill-40, .star-fill-30, .star-fill-30, .star-fill-25, .star-fill-20, .star-fill-10, .star-fill-0).minimal.btn.btn-secondary:hover::before {
     animation: bubble 0.35s ease-in forwards;
     will-change: animation;
-    max-height: 36px;
+    max-height: 36px !important;
+    height: unset;
     min-height: 2px;
-    max-width: 36px;
+    max-width: 36px !important;
+    width: unset;
     min-width: 2px;
 }
 
