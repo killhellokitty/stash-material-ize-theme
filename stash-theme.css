@@ -9837,6 +9837,18 @@ form#studio-edit {
         max-width: 55%;
     }
 }
+
+@media (min-width: 1200px) {
+    .scene-tabs {
+        background-image: none;
+        background-color: rgb(var(--body-color));
+    }
+    .scene-divider {
+        background-image: none;
+        background-color: rgb(var(--body-color2));
+    }
+}
+
 .scene-markers-panel .primary-card-body.card-body>div>hr {
     border: 1px solid #3f4946;
 }
