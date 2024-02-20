@@ -5157,13 +5157,14 @@ div.mb-2 select.btn-secondary.form-control.focus option {
         border-radius: 13px;
         opacity: 1;
         margin-top: 12px;
-        transition: background-color 0.55s ease, color 0.2s ease-in, box-shadow 0.4s ease-in-out, margin-left 0.35s ease;
-        -webkit-transition: background-color 0.55s ease, color 0.2s ease-in, box-shadow 0.4s ease-in-out, margin-left 0.35s ease;
-        -moz-transition: background-color 0.55s ease, color 0.2s ease-in, box-shadow 0.4s ease-in-out, margin-left 0.35s ease;
+        transition: margin-left 0.35s ease, var(--trans-0);
+        -webkit-transition: margin-left 0.35s ease, var(--trans-0);
     }
     .scene-divider:has(+.scene-player-container.expanded) > button.btn.btn-primary,
     .gallery-tabs.collapsed + .gallery-divider > button.btn.btn-primary {
         margin-left: -4px;
+        transition: margin-left 0.35s ease;
+        -webkit-transition: margin-left 0.35s ease;
     }
     .scene-divider:has(+.scene-player-container) > button.btn.btn-primary:hover,
     .gallery-tabs + .gallery-divider > button.btn.btn-primary:hover {
