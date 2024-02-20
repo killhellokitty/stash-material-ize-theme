@@ -1025,6 +1025,7 @@ input.btn-secondary.search-input.form-control {
     padding-right: 46px;
     padding-left: 16px;
     height: 56px;
+    min-height: 56px;
     margin: 4px 8px;
     font-size: 16px;
     font-weight: 400;
@@ -11773,7 +11774,9 @@ span.detail-expand-collapse > button.minimal.expand-collapse.btn.btn-primary {
     width: 40px;
     height: 40px;
     border-radius: 5rem;
+    background-image: var(--btn-dummy-highlight);
     background-color: transparent;
+    background-blend-mode: normal;
     border: 0;
     box-shadow: none;
     transition: var(--trans-0);
@@ -11781,18 +11784,17 @@ span.detail-expand-collapse > button.minimal.expand-collapse.btn.btn-primary {
 }
 span.detail-expand-collapse > button.minimal.expand-collapse.btn.btn-primary:hover {
     color: rgb(var(--on-surface-variant));
+    background-image: var(--btn-dummy-highlight);
     background-color: rgb(var(--on-surface-variant),var(--btn-hover));
+    background-blend-mode: screen;
     box-shadow: var(--elevation-1);
 }
-span.detail-expand-collapse > button.minimal.expand-collapse.btn.btn-primary:not(.disabled):not(:disabled):active {
+span.detail-expand-collapse > button.minimal.expand-collapse.btn.btn-primary:not(.disabled):not(:disabled):where(:active, :focus, :active:focus) {
     color: rgb(var(--on-surface-variant));
+    background-image: var(--btn-dummy-highlight);
+    background-blend-mode: screen;
     background-color: rgb(var(--on-surface-variant),var(--btn-active));
     box-shadow: var(--elevation-0);
-    outline: 0;
-}
-span.detail-expand-collapse > button.minimal.expand-collapse.btn.btn-primary:not(.disabled):not(:disabled):focus:not(:focus-visible) {
-    background-color: transparent;
-    box-shadow: none;
     outline: 0;
 }
 
