@@ -2649,14 +2649,20 @@ div#queue-content {
     align-content: flex-start;
     justify-content: center;
 }
-#queue-viewer #queue-content > .d-flex > .btn.btn-primary:is(:only-of-type, :hover, :active, :focus, :active:focus) {
+#queue-viewer #queue-content > div.d-flex > button.btn.btn-primary:is(:only-of-type, :hover, :active, :focus, :active:focus) {
+    background-image: var(--btn-dummy-highlight);
     background-color: transparent;
-    background-image: none;
+    background-blend-mode: normal;
     font-size: 27.45px;
     color: rgb(var(--on-surface-variant));
     font-weight: 900;
     box-shadow: none;
-    padding: 0 0 16px 0;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 12px;
+    max-height: 40px;
+    height: 40px;
+    width: 40px;
 }
 #queue-viewer a {
     color: rgb(var(--on-surface-variant));
