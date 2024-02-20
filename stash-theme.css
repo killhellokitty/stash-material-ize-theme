@@ -6599,9 +6599,6 @@ svg.svg-inline--fa.fa-xmark.fa-icon {
 button[title=Statistics].minimal.btn.btn-primary {
     margin-left: 12px;
 }
-a.minimal.logout-button.btn.btn-primary {
-    font-size: 22px;
-}
 
 @media (max-width: 576px) {
     button[title=Statistics].minimal.btn.btn-primary {
@@ -6651,7 +6648,9 @@ button[title=Help].nav-utility.minimal.btn.btn-primary > svg.svg-inline--fa.fa-c
 svg.svg-inline--fa.fa-gear {
     font-size: 22px;
 }
-
+a.minimal.logout-button.btn.btn-primary {
+    font-size: 22px;
+}
 /*svg.svg-inline--fa.fa-right-from-bracket.fa-icon {
     font-size: 22px;
 }*/
