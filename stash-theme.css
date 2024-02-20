@@ -4627,7 +4627,7 @@ a[href*="/tags"]:has(>h5.card-section-title>.TruncatedText):hover {
 }
 :is(.StudioTagger-box-link, .PerformerTagger-box-link) button.btn.btn-primary {
     border-radius: 5rem;
-    margin-left: -7.5rem;
+    margin-left: 1rem;
 }
 
 .StudioTagger-details {
@@ -10495,7 +10495,6 @@ label[for="cover_image"].form-label {
     align-items: center;
 }
 .tagger-container div.my-1 .input-group>.input-group-append>button.btn.btn-primary,
-.PerformerTagger-box-link.input-group>.input-group-append>button.btn.btn-primary,
 .PerformerTagger-details>.input-group>.input-group-append>button.btn.btn-primary {
     align-items: center;
     padding-left: 24px;
