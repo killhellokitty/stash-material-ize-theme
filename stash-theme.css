@@ -8159,6 +8159,12 @@ button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-
     box-shadow: none;
     outline: 0;
     color: rgb(var(--outline));
+    max-height: 36px;
+    height: unset;
+    min-height: 2px;
+    max-width: 36px;
+    width: unset;
+    min-width: 2px;
     filter: drop-shadow(0 0 0.22rem rgba(0,0,0,.45));
     transition: filter 0.25s, var(--trans-0);
 }
@@ -12247,15 +12253,15 @@ button:is(.favorite, .not-favorite).minimal.favorite-button.btn.btn-primary:hove
     max-width: 40px;
     min-width: 2px;
 }
-button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-fill-70, .star-fill-60, .star-fill-50, .star-fill-40, .star-fill-30, .star-fill-30, .star-fill-25, .star-fill-20, .star-fill-10, .star-fill-0).minimal.btn.btn-secondary:hover::before {
+.rating-stars button:is(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-fill-70, .star-fill-60, .star-fill-50, .star-fill-40, .star-fill-30, .star-fill-30, .star-fill-25, .star-fill-20, .star-fill-10, .star-fill-0).minimal.btn.btn-secondary:hover::before {
     animation: bubble 0.35s ease-in forwards;
     will-change: animation;
     max-height: 36px !important;
     height: unset;
-    min-height: 2px;
+    min-height: 2px !important;
     max-width: 36px !important;
     width: unset;
-    min-width: 2px;
+    min-width: 2px !important;
 }
 
 .detail-header .name-icons a.minimal.link.btn.btn-primary:has(>svg.fa-link):hover::before,
