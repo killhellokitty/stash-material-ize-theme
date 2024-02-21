@@ -836,7 +836,6 @@ button.bg-secondary:focus {
 input:is(#batch-search-delay, #colorize-color-green, #colorize-color-yellow, #colorize-color-red).query-text-field.bg-secondary.text-white.border-secondary.form-control {
      background-color: rgb(var(--body-color2));
      border: 0;
-     border-style: none;
      transition: box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1), border 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 input:is(#batch-search-delay, #colorize-color-green, #colorize-color-yellow, #colorize-color-red).query-text-field.bg-secondary.text-white.border-secondary.form-control {
@@ -4083,8 +4082,9 @@ div.scene-file-info .text-truncate {
 }
 
 .scene-card-preview + button.sprite-button.btn.btn-link {
-    margin-left: -7.5%;
     box-shadow: var(--elevation-1);
+    position: absolute;
+    width: 40px;
 }
 div.tagger-container .btn-link {    
     font-family: var(--UnicodeFont); 
@@ -8971,7 +8971,7 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
 #scene-edit-details .form-container .form-group input[placeholder="URL"].form-control {
     border-radius: 4px;
     padding-right: 120px;
-    /*margin-top: -4.5%;*/
+    transition: padding-right 0.25s ease-in-out, var(--trans-0);
 } 
 #scene-edit-details .form-container .form-group:nth-of-type(4) input.form-control {
     border-radius: 4px;
@@ -8979,8 +8979,8 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
     padding-right: 64px;
 }
 
-#scene-edit-details .form-container .form-group input[placeholder="URL"].form-control:focus {
-    padding-right: 120px;
+#scene-edit-details .form-container .form-group input[placeholder="URL"].form-control:focus { /* Reduce padding when focused */
+    padding-right: 16px; 
 }
 
 #scene-edit-details .form-container .form-group:nth-of-type(-n+5) input.form-control::placeholder {
@@ -10375,12 +10375,13 @@ div#create-scene-page {
     position: relative;
     display: block;
     margin-left: 28px;
-    margin-bottom: -2.5%;
+    /*margin-bottom: -2.5%;*/
+    top: 9px;
     z-index: 4;
     padding: 0;
     padding-left: 4px;
     padding-right: 4px;
-    background-color: rgb(var(--body-color2));
+    background-color: rgb(var(--body-color));
     margin-right: auto;
     width: unset;
     max-width: unset;
