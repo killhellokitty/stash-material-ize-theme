@@ -3831,7 +3831,12 @@ h5.card-section-title, .scene-tabs .scene-header {
     margin-bottom: -1%;
 }
 
-
+.scene-card-preview-image, 
+.scene-card-preview-video, 
+.gallery-card-preview-image, 
+.gallery-card-preview-video {
+    object-fit: contain;
+}
 
 /*scenes List View */
 .table {
@@ -10716,6 +10721,7 @@ label[for="cover_image"].form-label {
 .tagger-container .scene-card-preview {
     border-radius: 12px 0;
     margin-bottom: 0;
+    margin-top: auto;
     overflow: hidden;
     min-width: 150px;
     flex: 1 1 100%;
@@ -10751,9 +10757,12 @@ label[for="cover_image"].form-label {
 }
 
 @media (max-width: 576px) { /* Removes Padding from sides of thumbnails in Tagger-Containers */
-    .tagger-container .col {
+    .tagger-container > .tagger-container-header + div > .search-item > div.row > .col {
         padding-left: 0.1px;
         padding-right: 0.1px;
+    }
+    .tagger-container .scene-card-preview {
+        border-radius: 0.75rem 0.75rem 0 0;
     }
 }
 
