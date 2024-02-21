@@ -3841,7 +3841,7 @@ h5.card-section-title, .scene-tabs .scene-header {
 
 .scene-card-preview-image, 
 .gallery-card-preview-image {
-    object-fit: cover;
+    object-fit: scale-down;
 }
 .scene-card-preview-video, 
 .gallery-card-preview-video {
