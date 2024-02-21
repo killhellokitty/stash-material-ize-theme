@@ -10756,13 +10756,16 @@ label[for="cover_image"].form-label {
     }
 }
 
-@media (max-width: 576px) { /* Removes Padding from sides of thumbnails in Tagger-Containers */
-    .tagger-container > .tagger-container-header + div > .search-item > div.row > .col {
+@media (max-width: 576px) { 
+    .tagger-container > .tagger-container-header + div > .search-item > div.row > .col { /* Removes Padding from sides of thumbnails in Tagger-Containers */
         padding-left: 0.1px;
         padding-right: 0.1px;
     }
-    .tagger-container .scene-card-preview {
+    .tagger-container .scene-card-preview { /* Top border-radius for thumbnails */
         border-radius: 0.75rem 0.75rem 0 0;
+    }
+    .original-scene-details > .collapse.show > .col > div:is(:has(.performer-tag-container)) { /* Moves Performer-Tags inside div */
+        justify-content: flex-start;
     }
 }
 
