@@ -10542,18 +10542,18 @@ label[for="cover_image"].form-label {
 
 /* Tagger-Container */
 .tagger-container .search-item > .row > div:nth-child(2) {
-    padding: 16px;
+    padding: 1rem;
 }
 .tagger-container .search-item {
     background-color: rgb(var(--card-color));
-    border-radius: 12px;
+    border-radius: 0.75rem;
     padding: 0;
 }
 .mt-3, .my-3 {
-    margin-top: 16px !important;
+    margin-top: 0.5rem !important;
 }
 .mt-2, .my-2 {
-    margin-top: 12px !important;
+    margin-top: 0.75rem !important;
 }
 .tagger-container div .input-group {
     align-items: center;
@@ -10561,13 +10561,13 @@ label[for="cover_image"].form-label {
 .tagger-container div.my-1 .input-group>.input-group-append>button.btn.btn-primary,
 .PerformerTagger-details>.input-group>.input-group-append>button.btn.btn-primary {
     align-items: center;
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-left: 2rem;
+    padding-right: 2rem;
     border-radius: 5rem;
     margin-left: 6px;
 }
 .tagger-container div.my-1 .input-group > .input-group-append {
-    margin-left: -48px;
+    margin-left: -4rem;
 }
 .tagger-container div.my-1 .input-group > .input-group-append > button.btn.btn-primary::before {
     content: "";
@@ -10747,6 +10747,13 @@ label[for="cover_image"].form-label {
         margin-bottom: 16px;
         border-radius: 12px 0;
         align-items: flex-start !important;
+    }
+}
+
+@media (max-width: 576px) { /* Removes Padding from sides of thumbnails in Tagger-Containers */
+    .tagger-container .col {
+        padding-left: 0.1px;
+        padding-right: 0.1px;
     }
 }
 
