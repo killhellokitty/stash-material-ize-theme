@@ -12377,6 +12377,12 @@ button:is(.favorite, .not-favorite).minimal.favorite-button.btn.btn-primary:hove
     flex-wrap: wrap;
 }
 
+.scene-tabs > div +div + .tab-content {
+    background-image: var(--btn-dummy-highlight);
+    background-color: rgb(var(--body-color));
+    background-blend-mode: screen;
+}
+
 /*#root:has(.recommendations-container) nav.top-nav.navbar.navbar-dark.bg-dark.fixed-top .navbar-nav .nav-link.active > .btn.btn-primary {
     color: rgb(var(--on-surface-variant));
 }
@@ -12421,10 +12427,12 @@ button[title="Delete Stash ID"].btn-danger {
     min-width: 32px;
     height: 32px;
     font-size: 16px;
-    margin-top: 5%;
+    margin-top: 1%;
     margin-bottom: -2px;
-    margin-left: 20.5%;
+    margin-left: 85%;
     margin-right: auto !important;
+    position: relative;
+    top: 65px;
 }
 span.stash-id-pill {
     font-family: var(--MonoFont);
@@ -12434,22 +12442,26 @@ span.stash-id-pill {
     line-height: 14px;
     letter-spacing: 0.045em;
     vertical-align: middle;
-    margin-top: 8px;
+    margin-top: 3.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
 }
 .stash-id-pill > span {
     background-color: rgb(var(--on-tertiary));
     color: rgb(var(--tertiary));
-    border-radius: 8px 0 0 8px;
-    padding: 0.4em 4px 0.4em 6px;
+    border-radius: 8px 8px 0 0;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 .stash-id-pill a {
     color: rgb(var(--on-tertiary-container));
     background-color: rgb(var(--tertiary-container));
-    border-radius: 0 8px 8px 0;
-    padding-right: 6px;
-    padding-left: 4px;
-    padding-top: 0.4em;
-    padding-bottom: 0.4em;
+    border-radius: 0 0 8px 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 100%;
 }
 .stash-id-pill a:is(:hover, :focus-visible) {
     text-decoration: underline;
