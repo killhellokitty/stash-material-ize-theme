@@ -765,7 +765,7 @@ p.heading {
     .container-fluid {
     margin-left: 0%;
     width: 100vw;
-    margin-top: 64px;
+    margin-top: 6rem;
     }
 }
 .container-fluid:has(*.background-image-container) {
@@ -3836,11 +3836,14 @@ h5.card-section-title, .scene-tabs .scene-header {
 .image-card-preview { 
     margin-top: -1%;
     margin-bottom: -1%;
+    overflow: hidden;
 }
 
 .scene-card-preview-image, 
+.gallery-card-preview-image {
+    object-fit: cover;
+}
 .scene-card-preview-video, 
-.gallery-card-preview-image, 
 .gallery-card-preview-video {
     object-fit: contain;
 }
