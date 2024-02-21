@@ -10713,9 +10713,9 @@ label[for="cover_image"].form-label {
     border-radius: 12px 0;
     margin-bottom: 0;
     overflow: hidden;
-    /* min-width: 42.3vw; */
+    min-width: 150px;
     flex: 1 1 100%;
-    width: 39.25vw;
+    width: 100%;
     max-width: 59.78vh;
     max-height: unset;
     aspect-ratio: 16/9;
