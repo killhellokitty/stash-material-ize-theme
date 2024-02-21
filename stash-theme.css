@@ -2334,6 +2334,10 @@ button:not([title=Help]).btn-primary:not(:where(:disabled, .disabled)):is(:focus
 .tagger-container .d-flex > .w-auto + .d-flex > button.btn.btn-primary {
     margin-left: 1rem !important;
 }
+.tagger-container-header > .d-flex > .w-auto + .d-flex .ml-1 button.btn-primary.ml-3 {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
 
 /* Tagger-Container Settings Button */
 .tagger-container > .tagger-container-header > div > div.d-flex > div.ml-2 > button.btn.btn-primary {
