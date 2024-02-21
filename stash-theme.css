@@ -755,8 +755,8 @@ p.heading {
 /* --- The space between the Navigation Bar and the rest of the page --- */
 .container-fluid {
     margin-top: 73px;
-    padding-right: 16px;
-    padding-left: 16px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     width: calc(100% - 88px);
     margin-right: auto;
     margin-left: 88px;
