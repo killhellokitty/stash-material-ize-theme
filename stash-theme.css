@@ -9811,10 +9811,10 @@ form#studio-edit {
     padding-bottom: 2px;
     top: 10px;
 }
-#gallery-edit-details .form-container:nth-of-type(2) .form-group:nth-of-type(3) .col-form-label {
+/*#gallery-edit-details .form-container:nth-of-type(2) .form-group:nth-of-type(3) .col-form-label {
     left: 28px;
     max-width: 35px;
-}
+}*/
 #gallery-edit-details .form-container:nth-of-type(2) .form-group:nth-of-type(4) .col-form-label {
     left: 16px;
     top: 10px;
