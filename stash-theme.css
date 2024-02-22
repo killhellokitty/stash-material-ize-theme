@@ -9341,7 +9341,7 @@ input#update-stashids::placeholder {
         max-width: 100%;
     }
 }
-#performer-edit .form-group .col-form-label,
+/*#performer-edit .form-group .col-form-label,
 #tag-edit .form-group .col-form-label,
 #studio-edit .form-group .col-form-label,
 #gallery-edit-details .form-group .col-form-label {
@@ -9352,7 +9352,7 @@ input#update-stashids::placeholder {
     line-height: 1.1428571428571428rem;
     letter-spacing: 0.028571428571428574rem;
     transition: color 0.15s ease-in-out;
-} 
+} */
 #performer-edit .form-group:nth-of-type(-n+23):not(:nth-of-type(4)):not(:nth-of-type(7)):not(:nth-of-type(14)) .col-form-label {
     visibility: hidden;
     padding: 0 0.2857142857142857rem 0 0.2857142857142857rem;
