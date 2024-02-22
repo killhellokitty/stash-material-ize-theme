@@ -3822,11 +3822,12 @@ h5.card-section-title, .scene-tabs .scene-header {
 
 /* --- Thumbnail images slightly darkened and brightened --- */
 .scene-card-preview-image {
-    filter: brightness(92%) contrast(1.2) saturate(0.93);
+    filter: brightness(96%) contrast(1.2) saturate(0.93);
+    transition: filter 0.35s ease-in-out 0.25s;
+    -webkit-transition: filter 0.35s ease-in-out 0.25s;
 }
 .scene-card-preview-image:hover {
     filter: brightness(100%);
-    transition: filter 0.25s ease-in-out 0.35s;
 }
 
 .scene-card-preview, /* ||Thumbnail Card Preview Images */
@@ -6155,12 +6156,11 @@ nav.nav.nav-tabs {
         display: flex;
         position: relative;
         left: 0%;
-        top: 0;align-items: stretch;
+        top: 0%;
+        align-items: stretch;
         justify-content: space-around;
-        align-content: space-around;
         width: 100%;
         min-width: 342px;
-        flex-wrap: wrap;
         flex-direction: row;
         margin-left: 16px;
     /* padding-left: 16px; */
