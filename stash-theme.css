@@ -10165,7 +10165,12 @@ div#create-scene-page {
     border-top-left-radius: 1.5rem;
     border-top-right-radius: 1.5rem;
 }
-#create-scene-page.new-view #scene-edit-details>form>.form-container.edit-buttons-container {
+#create-scene-page.new-view .edit-buttons-container + .form-container.px-3.row {
+    background-image: var(--btn-dummy-highlight);
+    background-color: rgb(var(--body-color));
+    border-radius: 1rem;
+}
+#create-scene-page.new-view #scene-edit-details > form > .form-container.edit-buttons-container {
     /*background-color: #373d3b;*/
     padding: 16px;
     border-bottom-left-radius: 1.5rem;
