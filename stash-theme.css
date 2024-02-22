@@ -7353,6 +7353,7 @@ li.active .optional-field.excluded .scene-link {
 :is(#scene-edit-details, #gallery-edit-details) .col-sm-9 {
     flex: 0 0 100%;
     max-width: 100%;
+    height: 56px;
 }
 
 /* --- Cuts the name of Performers, Movies and Tags short if they go longer than the length of the field --- */
