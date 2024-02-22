@@ -9816,19 +9816,19 @@ form#studio-edit {
     left: 28px;
     max-width: 35px;
 }*/
-#gallery-edit-details .form-container:nth-of-type(2) .form-group:nth-of-type(4) .col-form-label {
+/*#gallery-edit-details .form-container:nth-of-type(2) .form-group:nth-of-type(4) .col-form-label {
     left: 16px;
     top: 10px;
     color: #c0ebe2;
-}
-#gallery-edit-details .form-container:nth-of-type(2) .form-group:nth-of-type(5) .col-form-label,
+}*/
+/*#gallery-edit-details .form-container:nth-of-type(2) .form-group:nth-of-type(5) .col-form-label,
 #gallery-edit-details .form-container:nth-of-type(2) .form-group:nth-of-type(6) .col-form-label,
 #gallery-edit-details .form-container:nth-of-type(2) .form-group:nth-of-type(7) .col-form-label,
 #gallery-edit-details .form-container:nth-of-type(2) .form-group:nth-of-type(8) .col-form-label {
     left: 16px;
     top: 6px;
     color: #c0ebe2;
-}
+}*/
 #gallery-edit-details .form-container:nth-of-type(2) .form-group:not(.row) .form-label {
     color: #c0ebe2;
     font-size: 0.8571428571428571rem;
