@@ -3512,7 +3512,7 @@ li.search-result.selected-result.active {
     opacity: 1;
 }
 
- #scene-edit-details .edit-buttons-container {
+.scene-tabs #scene-edit-details .edit-buttons-container {
     margin: 0;
     background-color: rgb(var(--body-color));
     background-image: none;
@@ -10169,13 +10169,6 @@ div#create-scene-page {
     background-image: var(--btn-dummy-highlight);
     background-color: rgb(var(--body-color));
     border-radius: 1rem;
-}
-#create-scene-page.new-view #scene-edit-details > form > .form-container.edit-buttons-container {
-    /*background-color: #373d3b;*/
-    padding: 16px;
-    border-bottom-left-radius: 1.5rem;
-    border-bottom-right-radius: 1.5rem;
-    position: relative;
 }
 #create-scene-page.new-view #scene-edit-details .edit-buttons-container>.edit-buttons.mb-3.pl-0 {
     padding-left: 16px !important;
