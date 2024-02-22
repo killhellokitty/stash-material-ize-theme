@@ -12485,7 +12485,7 @@ button:is(.favorite, .not-favorite).minimal.favorite-button.btn.btn-primary:hove
     visibility: visible;
     margin-left: 4px;
     margin-left: 2px;
-    margin-bottom: -5%;
+    margin-bottom: -9%;
     margin-top: auto;
 }
 button[title="Delete Stash ID"].btn-danger {
