@@ -2932,6 +2932,7 @@ div.react-select__control .react-select__input-container {
 }
 div.react-select__control.react-select__control--is-focused .react-select__placeholder {
     position: relative;
+    color: rgb(var(--pry-color));
     top: -30%;
     font-size: 12px;
     font-weight: 500;
@@ -9795,10 +9796,10 @@ form#studio-edit {
     background-color: rgb(var(--body-color2));
     z-index: 3999;
 }*/
-#gallery-edit-details .form-container:nth-of-type(2) .form-group:focus-within:nth-of-type(-n+3) .col-form-label {
+/*#gallery-edit-details .form-container:nth-of-type(2) .form-group:focus-within:nth-of-type(-n+3) .col-form-label {
     color: #00dfc6;
     visibility: visible;
-}
+}*/
 /*#gallery-edit-details .form-container:nth-of-type(2) .form-group:nth-of-type(1) .col-form-label {
     max-width: 34px;
 }*/
@@ -9828,7 +9829,7 @@ form#studio-edit {
     top: 6px;
     color: #c0ebe2;
 }*/
-#gallery-edit-details .form-container:nth-of-type(2) .form-group:not(.row) .form-label {
+/*#gallery-edit-details .form-container:nth-of-type(2) .form-group:not(.row) .form-label {
     color: #c0ebe2;
     font-size: 0.8571428571428571rem;
     font-weight: 400;
@@ -9840,9 +9841,9 @@ form#studio-edit {
     background-color: rgb(var(--body-color2));
     padding-left: 4px;
     padding-right: 4px;
-}
+}*/
 #gallery-edit-details .form-container:nth-of-type(2) .form-group:not(.row):focus-within .form-label {
-    color: #00dfc6;
+    color: rgb(var(--pry-color));
 }
 
 /* Image Edit Tab */
