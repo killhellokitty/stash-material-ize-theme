@@ -3522,7 +3522,7 @@ li.search-result.selected-result.active {
     z-index: 20901;
 }
 
-.form-container.edit-buttons-container.px-3.pt-3.row {
+.scene-tabs .form-container.edit-buttons-container.px-3.pt-3.row {
     border-bottom: 1px solid rgb(255,255,255,0.085) !important;
 }
 
