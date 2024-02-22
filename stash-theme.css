@@ -8998,7 +8998,7 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
     padding-right: 120px;
     transition: padding-right 0.25s ease-in-out, var(--trans-0);
 } 
-#scene-edit-details .form-container .form-group:nth-of-type(4) input.form-control {
+:is(#scene-edit-details, #gallery-edit-details) .form-container .form-group:nth-of-type(4) input.form-control {
     border-radius: 4px;
     margin-right: -11%;
     padding-right: 64px;
@@ -10567,12 +10567,12 @@ label[for="cover_image"].form-label {
     margin-bottom: 12px;
 }
     /* Rating Stars */
-#scene-edit-details .form-group.row > label.form-label.col-form-label:has(+ div > .rating-stars) {
+:is(#scene-edit-details, #gallery-edit-details) .form-group.row > label.form-label.col-form-label:has(+ div > .rating-stars) {
     visibility: visible;
     color: rgb(var(--on-surface-variant));
     margin-left: 16px;
 }
-#scene-edit-details .rating-stars {
+:is(#scene-edit-details, #gallery-edit-details) .rating-stars {
     height: 56px;
     align-items: flex-end;
 }
@@ -10580,6 +10580,9 @@ label[for="cover_image"].form-label {
 .rating-stars .setting, 
 .rating-stars .set {
     color: rgb(var(--star-color));
+}
+.star-rating-number {
+    margin-bottom: 1.5%;
 }
 /* * */
 
