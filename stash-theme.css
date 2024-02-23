@@ -5788,7 +5788,7 @@ nav.nav.nav-tabs {
     padding-bottom: 16px;
     margin-bottom: 0;
 }
-.row > :is(:not(.scene-tabs):not(.gallery-tabs)) .nav.nav-tabs:has(> .nav-item:nth-of-type(2) > a.active) {
+.row > :is(:not(.scene-tabs):not(.gallery-tabs):not(.image-tabs)) .nav.nav-tabs:has(> .nav-item:nth-of-type(2) > a.active) {
     border-bottom: 1px solid rgb(255,255,255,0.085);
 }
 .nav-tabs>.nav-item:has(>*:not(.btn-secondary):not(.dropdown):not(.o-counter)),
