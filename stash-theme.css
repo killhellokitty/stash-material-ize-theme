@@ -3280,12 +3280,29 @@ li.search-result.selected-result.active {
 .popover:not(.popover ~ .popover):not(.popover + .popover) {
     background-color: rgb(var(--popover-color)) !important;
 }
-
 .popover ~ .popover,
 .popover + .popover {
     background-color: rgb(var(--popover-color2)) !important;
 }
-input[type="checkbox"]:is(#scaleUp, #resetZoomOnNav) {
+.popover-header {
+    background-color: rgb(var(--popover-color));
+    border-bottom: 1px solid rgb(var(--popover-color2));
+    margin: -0.25rem 0.05rem 1rem;
+    padding: 0.75rem 0.5rem 0.5rem;
+    line-height: 24px;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    color: rgb(var(--on-surface)) !important;
+    transition: var(--trans-0);
+    -webkit-transition: var(--trans-0);
+}
+.popover-body {
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+.popover-body input[type="checkbox"]:is(#scaleUp, #resetZoomOnNav) {
     height: 20px;
     width: 20px;
 }
@@ -3297,7 +3314,8 @@ input[type="checkbox"]:is(#scaleUp, #resetZoomOnNav) {
 .popover-body .form-group.row {
     align-items: center;
 }
-.popover-body .text-input {
+.popover-body .text-input,
+.popover-body .text-input:focus {
     background-color: transparent;
 }
 .popover-body .image-input.form-label>button.btn.btn-secondary {
@@ -3320,9 +3338,18 @@ input[type="checkbox"]:is(#scaleUp, #resetZoomOnNav) {
     background-size: 20px;
     box-shadow: var(--elevation-0);
 }
-.popover-body select.btn-secondary.mx-1.mb-1.form-control:hover {
-    background-image: url("data:image/svg+xml;utf8,<svg fill='%23d3e7f3' width='16' height='16' viewBox='0 0 16 16' class='bi bi-caret-down-fill' xmlns='http://www.w3.org/2000/svg'><path d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/></svg>"), var(--btn-hover-highlight);
-    background-color: rgb(var(--sec-container));
+.popover-body select.btn-secondary.mx-1.mb-1.form-control:is(:hover, :focus-visible) {
+    background-color: rgb(var(--sec-container),var(--btn-hover-rev));
+    box-shadow: var(--elevation-1);
+}
+.popover-body select.btn-secondary.mx-1.mb-1.form-control:is(:active, :focus, :active:focus) {
+    background-image: url("data:image/svg+xml;utf8,<svg fill='%23d3e7f3' width='16' height='16' viewBox='0 0 16 16' class='bi bi-caret-down-fill' xmlns='http://www.w3.org/2000/svg'><path d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/></svg>");
+    background-color: rgb(var(--sec-container),var(--btn-active-rev));
+    box-shadow: none;
+    outline: 0;
+}
+.popover-body select.btn-secondary.mx-1.mb-1.form-control:focus-visible {
+    box-shadow: none;
 }
 .popover-body label.col-form-label.form-label {
     padding-top: 0.25rem;
@@ -3330,27 +3357,9 @@ input[type="checkbox"]:is(#scaleUp, #resetZoomOnNav) {
     line-height: 24px;
     width: max-content;
 }
-.popover-header {
-    background-color: rgb(var(--popover-color));
-    border-bottom: 1px solid rgb(var(--popover-color2));
-    margin: -0.25rem 0.05rem 1rem;
-    padding: 0.75rem 0.5rem 0.5rem;
-    line-height: 24px;
-    font-size: 1rem;
-    font-weight: 700;
-    letter-spacing: 0.025em;
-    color: rgb(var(--on-surface)) !important;
-    transition: var(--trans-0);
-    -webkit-transition: var(--trans-0);
-}
 .popover .text-muted {
     color: #e0e3e1 !important;
     padding-left: 1rem;
-}
-.popover-body {
-    background-color: transparent;
-    padding: 0;
-    margin: 0;
 }
 .popover-body:has(>div .image-input):has(>div .minimal.btn) {
     justify-content: center;
@@ -3360,6 +3369,9 @@ input[type="checkbox"]:is(#scaleUp, #resetZoomOnNav) {
 .image-input {
     margin-bottom: 8px;
     color: inherit;
+}
+.popover.show .popover-body *:focus-visible {
+    outline-color: rgb(var(--complement));
 }
 .bs-popover-top:not(.bs-popover-top ~ .bs-popover-top):not(.bs-popover-top + .bs-popover-top):not(.bs-popover-bottom ~ .bs-popover-top):not(.bs-popover-bottom + .bs-popover-top):not(.bs-popover-right ~ .bs-popover-top):not(.bs-popover-right + .bs-popover-top):not(.bs-popover-left ~ .bs-popover-top):not(.bs-popover-left + .bs-popover-top) > .arrow:after, 
 .bs-popover-auto[x-placement^=top]:not(.bs-popover-auto[x-placement^=top] ~ .bs-popover-auto[x-placement^=top]):not(.bs-popover-auto[x-placement^=top] + .bs-popover-auto[x-placement^=top]):not(.bs-popover-auto[x-placement^=bottom] ~ .bs-popover-auto[x-placement^=top]):not(.bs-popover-auto[x-placement^=bottom] + .bs-popover-auto[x-placement^=top]):not(.bs-popover-auto[x-placement^=right] ~ .bs-popover-auto[x-placement^=top]):not(.bs-popover-auto[x-placement^=right] + .bs-popover-auto[x-placement^=top]):not(.bs-popover-auto[x-placement^=left] ~ .bs-popover-auto[x-placement^=top]):not(.bs-popover-auto[x-placement^=left] + .bs-popover-auto[x-placement^=top]) > .arrow:after {
