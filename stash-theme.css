@@ -3523,7 +3523,7 @@ li.search-result.selected-result.active {
     z-index: 20901;
 }
 
-.form-container.edit-buttons-container.px-3.pt-3.row {
+.tab-pane.active.show .form-container.edit-buttons-container.px-3.pt-3.row {
     border-bottom: 1px solid rgb(255,255,255,0.085) !important;
 }
 
@@ -9133,6 +9133,14 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
     background-color: transparent;
     z-index: 12009;
 }
+
+.new-view {
+    justify-content: center;
+    margin: 1.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
 #create-scene-page .col-form-label[for="urls"] {
     top: 10px;
 }
