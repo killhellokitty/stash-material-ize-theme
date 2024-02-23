@@ -110,6 +110,10 @@ body ::-webkit-resizer {
 }
 
 [type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
     height: 46px;
     background: rgb(var(--on-surface-variant)) url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAKUlEQVQYlWNgwAT/sYhhKPiPT+F/LJgEsHv37v+EMGkmkuImoh2NoQAANlcun/q4OoYAAAAASUVORK5CYII=) no-repeat center center;
     position: absolute;
@@ -3314,9 +3318,13 @@ li.search-result.selected-result.active {
 .popover-body .form-group.row {
     align-items: center;
 }
-.popover-body .text-input,
-.popover-body .text-input:is(:focus, :active, :active:focus, :focus-visible) {
-    background-color: transparent;
+.popover-body input.text-input.form-control-sm,
+.popover-body input.text-input.form-control-sm:focus-visible {
+    background-color: transparent !important;
+}
+.popover-body input.text-input.form-control-sm:focus-visible {
+    border: 1px solid rgb(var(--complement));
+    box-shadow: var(--elevation-0), 0 0 0 1px rgb(var(--complement));
 }
 .popover-body .image-input.form-label>button.btn.btn-secondary {
     color: rgb(var(--on-pry-container));
