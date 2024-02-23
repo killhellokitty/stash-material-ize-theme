@@ -10183,16 +10183,16 @@ div#create-scene-page {
     background-color: rgb(var(--body-color));
     border-radius: 1rem;
 }*/
-#create-scene-page.new-view #scene-edit-details > form > .form-container.edit-buttons-container {
+.new-view :is(#scene-edit-details, #gallery-edit-details) > form > .form-container.edit-buttons-container {
     background-color: transparent;
     margin-bottom: 2.5rem;
 }
-#create-scene-page.new-view #scene-edit-details > form > .edit-buttons-container.px-3.row + .form-container.px-3.row > div {
+.new-view :is(#scene-edit-details, #gallery-edit-details) > form > .edit-buttons-container.px-3.row + .form-container.px-3.row > div {
     background-image: var(--btn-dummy-highlight);
     background-color: rgb(var(--body-color));
     border-radius: 1rem 1rem 0 0;
 }
-#create-scene-page.new-view #scene-edit-details > form > .edit-buttons-container.px-3.row + .form-container.px-3.row > div + div {
+.new-view :is(#scene-edit-details, #gallery-edit-details) > form > .edit-buttons-container.px-3.row + .form-container.px-3.row > div + div {
     background-image: var(--btn-dummy-highlight);
     background-color: rgb(var(--body-color));
     border-radius: 0 0 1rem 1rem;
@@ -10353,34 +10353,13 @@ div#create-scene-page {
 }
 
 /* Galleries */
-@media (min-width: 768px) {
-    .new-view>.col-md-6:has(>*#gallery-edit-details) {
-        position: relative;
-        width: 100%;
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-top: 15px;
-        border-radius: 1.65rem;
-        /*background-color: #41384a;*/
-    }
+.row.new-view > div > h2 {
+    color: rgb(var(--setting-h1));
 }
-.new-view>.col-md-6:has(>*#gallery-edit-details)>h2 {
-    position: relative;
-    padding: 16px;
-    background-color: #373d3b;
-    margin-bottom: 0;
-    border-top-left-radius: 1.5rem;
-    border-top-right-radius: 1.5rem;
+.new-view .edit-buttons-container.px-3.pt-3.row {
+    margin-bottom: 1.5rem;
 }
-.new-view>.col-md-6>#gallery-edit-details>form>.form-container:first-of-type {
-    background-color: #373d3b;
-    padding: 16px;
-    border-bottom-left-radius: 1.5rem;
-    border-bottom-right-radius: 1.5rem;
-    position: relative;
-    margin-left: 0;
-    margin-right: 0;
-}
+
 /* Performer */
 #performer-page.row.new-view:has(>*.performer-image-container) {
     position: relative;
