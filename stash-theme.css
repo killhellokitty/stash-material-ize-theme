@@ -9080,13 +9080,13 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
     padding-right: 120px;
     transition: padding-right 0.25s ease-in-out, var(--trans-0);
 } 
-:is(#scene-edit-details, #gallery-edit-details) .form-container .form-group:nth-of-type(4) input.form-control {
+:is(#scene-edit-details, #image-edit-details, #gallery-edit-details) .form-container .form-group:nth-of-type(4) input.form-control {
     border-radius: 4px;
     margin-right: -11%;
     padding-right: 64px;
 }
 
-#scene-edit-details .form-container .form-group input[placeholder="URL"].form-control:focus { /* Reduce padding when focused */
+:is(#scene-edit-details, #image-edit-details, #gallery-edit-details) .form-container .form-group input[placeholder="URL"].form-control:focus { /* Reduce padding when focused */
     padding-right: 16px; 
 }
 
@@ -9190,7 +9190,7 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
     height: 40px;
     font-size: 24px;
 }
-:is(#scene-edit-details, #gallery-edit-details) > form > .form-container + .form-container .form-group.row:nth-of-type(3) .string-list-input > .form-group > .input-group > input[placeholder="URL"].text-input.form-control + .input-group-append > button.scrape-url-button.text-input.btn.btn-secondary + button.btn.btn-danger {
+:is(#scene-edit-details, #image-edit-details, #gallery-edit-details) > form > .form-container + .form-container .form-group.row:nth-of-type(3) .string-list-input > .form-group > .input-group > input[placeholder="URL"].text-input.form-control + .input-group-append > button.scrape-url-button.text-input.btn.btn-secondary + button.btn.btn-danger {
     padding: unset;
     border-radius: 5rem;
     display: flex;
@@ -9757,7 +9757,7 @@ form#tag-edit {
 #tag-edit .form-group:has(>.col-9 .is-invalid) .col-form-label {
     color: #93000a;
 }
-#image-edit-details .form-group .col-form-label,
+/*#image-edit-details .form-group .col-form-label,*/
 #tag-edit .form-group:nth-of-type(n+4) .col-form-label,
 #studio-edit>.row:not(.form-group)>.col-form-label,
 .studio-details>.form-group>.col-form-label {
@@ -9939,32 +9939,32 @@ form#studio-edit {
 #image-edit-details>form>.form-container>.edit-buttons {
     margin-bottom: 12px !important;
 }
-#image-edit-details .form-container:nth-of-type(2) .form-group:nth-of-type(-n+3) .col-form-label {
+/*#image-edit-details .form-container:nth-of-type(2) .form-group:nth-of-type(-n+3) .col-form-label {
     visibility: hidden;
     padding: 0 0.2857142857142857rem 0 0.2857142857142857rem;
     left: 2.0714285714285716rem;
     top: 0.5714285714285714rem;
     background-color: rgb(var(--body-color2));
     z-index: 3999;
-}
-#image-edit-details .form-container:nth-of-type(2) .form-group:nth-of-type(1) .col-form-label {
+}*/
+/*#image-edit-details .form-container:nth-of-type(2) .form-group:nth-of-type(1) .col-form-label {
     max-width: 32px;
-}
-#image-edit-details .form-container:nth-of-type(2) .form-group:nth-of-type(2) .col-form-label {
+}*/
+/*#image-edit-details .form-container:nth-of-type(2) .form-group:nth-of-type(2) .col-form-label {
     position: relative;
     left: 14px;
     max-width: 30px;
-}
-#image-edit-details .form-container:nth-of-type(2) .form-group:nth-of-type(3) .col-form-label {
+}*/
+/*#image-edit-details .form-container:nth-of-type(2) .form-group:nth-of-type(3) .col-form-label {
     max-width: 34px;
-}
+}*/
 #image-edit-details .form-container:nth-of-type(2) .form-group:focus-within:nth-of-type(-n+3) .col-form-label {
     color: #00dfc6;
     visibility: visible;
 }
-#image-edit-details .form-container:nth-of-type(2) .form-group:nth-of-type(n+4) .col-form-label {
+/*#image-edit-details .form-container:nth-of-type(2) .form-group:nth-of-type(n+4) .col-form-label {
 
-}
+}*/
 
 /* Scene-Markers-Panel */
 @media (min-width: 1200px) {
