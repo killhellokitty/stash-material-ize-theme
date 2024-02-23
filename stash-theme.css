@@ -3327,6 +3327,7 @@ input[type="checkbox"]:is(#scaleUp, #resetZoomOnNav) {
 }
 .popover .text-muted {
     color: #e0e3e1 !important;
+    padding-left: 1rem;
 }
 .popover-body {
     background-color: transparent;
@@ -11204,7 +11205,7 @@ small.form-text {
     line-height: 16px;
     letter-spacing: 0.5px;
     color: rgb(var(--on-surface));
-    filter: brightness(0.7);
+    filter: brightness(0.8);
 }
 #batch-search-config small.form-text {
     word-break: keep-all;
