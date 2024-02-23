@@ -3308,6 +3308,10 @@ input[type="checkbox"]:is(#scaleUp, #resetZoomOnNav) {
     color: rgb(var(--on-pry-container));
     padding: 0 24px;
 }
+.popover-body select.btn-secondary.mx-1.mb-1.form-control {
+    background-color: rgb(var(--sec-container));
+    padding: 0 40px 0 24px;
+}
 .popover-header {
     background-color: rgb(var(--popover-color));
     border-bottom: 1px solid rgb(var(--on-surface-variant));
