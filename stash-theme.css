@@ -3315,7 +3315,7 @@ li.search-result.selected-result.active {
     align-items: center;
 }
 .popover-body .text-input,
-.popover-body .text-input:focus {
+.popover-body .text-input:is(:focus, :active, :active:focus, :focus-visible) {
     background-color: transparent;
 }
 .popover-body .image-input.form-label>button.btn.btn-secondary {
@@ -3338,18 +3338,22 @@ li.search-result.selected-result.active {
     background-size: 20px;
     box-shadow: var(--elevation-0);
 }
-.popover-body select.btn-secondary.mx-1.mb-1.form-control:is(:hover, :focus-visible) {
+.popover-body select.btn-secondary.mx-1.mb-1.form-control:is(:hover, :focus) {
     background-color: rgb(var(--sec-container),var(--btn-hover-rev));
     box-shadow: var(--elevation-1);
 }
-.popover-body select.btn-secondary.mx-1.mb-1.form-control:is(:active, :focus, :active:focus) {
+.popover-body select.btn-secondary.mx-1.mb-1.form-control:active {
     background-image: url("data:image/svg+xml;utf8,<svg fill='%23d3e7f3' width='16' height='16' viewBox='0 0 16 16' class='bi bi-caret-down-fill' xmlns='http://www.w3.org/2000/svg'><path d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/></svg>");
     background-color: rgb(var(--sec-container),var(--btn-active-rev));
     box-shadow: none;
     outline: 0;
 }
-.popover-body select.btn-secondary.mx-1.mb-1.form-control:focus-visible {
+.popover-body select.btn-secondary.mx-1.mb-1.form-control:focus {
+    outline-color: rgb(var(--complement));
+    outline-offset: -0.1rem;
+    outline-style: solid;
     box-shadow: none;
+    animation: focus-ring-width-bounce-outer 0.45s cubic-bezier(0.25, 1, 0.5, 1) 0.15s forwards;
 }
 .popover-body label.col-form-label.form-label {
     padding-top: 0.25rem;
