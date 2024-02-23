@@ -810,7 +810,7 @@ p.heading {
 .fixed-top {
     position: fixed !important; 
     box-shadow: var(--elevation-0);
-    z-index: 35001;
+    z-index: 1001;
 }
 
 .text-muted {
