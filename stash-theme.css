@@ -5302,7 +5302,7 @@ div.mb-2 select.btn-secondary.form-control.focus option {
     .gallery-tabs {
         background-color: rgb(var(--body-color));
     }
-    .gallery-tabs .tab-pane.active.show > #gallery-edit-details > form > .edit-buttons-container + .form-container.px-3.row > div { /* Removes Padding from div to expand the lenght of text entries */
+    :is(.image-tabs, .gallery-tabs) .tab-pane.active.show > :is(#image-edit-details, #gallery-edit-details) > form > .edit-buttons-container + .form-container.px-3.row > div { /* Removes Padding from div to expand the lenght of text entries */
         padding-left: 0;
         padding-right: 0;
     }
@@ -7432,7 +7432,7 @@ li.active .optional-field.excluded .scene-link {
 }
 
 /* --- Adjust the lengths of the Performer, Movies and Tags fields while editing a scene while the scene plays --- */
-:is(#scene-edit-details, #gallery-edit-details) .col-sm-9 {
+:is(#scene-edit-details, #image-edit-details, #gallery-edit-details) .col-sm-9 {
     flex: 0 0 100%;
     max-width: 100%;
 }
@@ -9075,7 +9075,7 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
     padding-left: 1.1428571428571428rem;
     padding-right: 1.1428571428571428rem;
 }*/
-:is(#scene-edit-details, #gallery-edit-details) .form-container .form-group input[placeholder="URL"].form-control {
+:is(#scene-edit-details, #image-edit-details, #gallery-edit-details) .form-container .form-group input[placeholder="URL"].form-control {
     border-radius: 4px;
     padding-right: 120px;
     transition: padding-right 0.25s ease-in-out, var(--trans-0);
@@ -9169,7 +9169,7 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
 }
 
 /* Scene-Edit-Details URL's Input-Append */
-:is(#scene-edit-details, #gallery-edit-details) > form > .form-container + .form-container .form-group.row:nth-of-type(3) .string-list-input > .form-group > .input-group > input[placeholder="URL"].text-input.form-control + .input-group-append {
+:is(#scene-edit-details, #image-edit-details, #gallery-edit-details) > form > .form-container + .form-container .form-group.row:nth-of-type(3) .string-list-input > .form-group > .input-group > input[placeholder="URL"].text-input.form-control + .input-group-append {
     display: flex;
     margin-left: unset;
     margin-left: 70%;
@@ -10476,19 +10476,19 @@ div#create-scene-page {
     flex-wrap: nowrap;
 }
 /* Scene Editor --- top spacing filler */
-:is(#scene-edit-details, #gallery-edit-details) .form-group.row {
+:is(#scene-edit-details, #image-edit-details, #gallery-edit-details) .form-group.row {
     padding-top: 1ex;
 }
 /* Text-Input Column-Form-Label */
-:is(#scene-edit-details, #gallery-edit-details) .form-container .form-group.row > label.col-form-label.form-label,
-:is(#scene-edit-details, #gallery-edit-details) .form-label[for="details"] {
+:is(#scene-edit-details, #image-edit-details, #gallery-edit-details) .form-container .form-group.row > label.col-form-label.form-label,
+:is(#scene-edit-details, #image-edit-details, #gallery-edit-details) .form-label[for="details"] {
     font-size: 12px;
     line-height: 16px;
     letter-spacing: 1.0px;
     font-weight: 500;
     color: rgb(var(--pry-color));
 }
-:is(#scene-edit-details, #gallery-edit-details) .form-container .form-group.row > label.form-label.col-form-label {
+:is(#scene-edit-details, #image-edit-details, #gallery-edit-details) .form-container .form-group.row > label.form-label.col-form-label {
     position: relative;
     display: block;
     margin-left: 28px;
@@ -10534,7 +10534,7 @@ div#create-scene-page {
 }
 
     /* Title */
-:is(#scene-edit-details, #gallery-edit-details) .form-container .form-group.row > label[for="title"].form-label.col-form-label {
+:is(#scene-edit-details, #image-edit-details, #gallery-edit-details) .form-container .form-group.row > label[for="title"].form-label.col-form-label {
     padding-top: 8px;
 }
 
