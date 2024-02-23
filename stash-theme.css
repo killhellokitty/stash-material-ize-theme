@@ -279,9 +279,11 @@ h6,
     --btn-hover-highlight: linear-gradient(to right, rgb(255,255,255,0.08), rgb(255,255,255,0.08));
     --btn-active: 0.12;
     --btn-active-rev: 0.88;
-    --btn-active-highlight: linear-gradient(to right, rgb(255,255,255,0.11), rgb(255,255,255,0.11));
+    --btn-active-highlight: linear-gradient(to right, rgb(255,255,255,0.12), rgb(255,255,255,0.12));
     --btn-dummy-highlight: linear-gradient(to right, transparent, transparent);
     --disabled: 0.38;
+    --disabled-rev: 0.62;
+    --btn-background-disabled-rev: 0.88;
     --btn-background-disabled: 0.12;
     --text-field-tint: 0.06;
     --text-field-text: 0.87;
@@ -7222,7 +7224,7 @@ button.clearable-text-field-clear.btn.btn-secondary:focus-visible {
 }
 .btn-success:is(.disabled, :disabled) {
     color: rgb(var(--tertiary-container),var(--disabled));
-    background-image: linear-gradient(to right, rgb(var(--on-tertiary-container),var(--btn-background-disabled)));
+    background-image: linear-gradient(to right, rgb(var(--on-tertiary-container),var(--btn-background-disabled)), rgb(var(--on-tertiary-container),var(--btn-background-disabled)));
     background-color: rgb(var(--body-color2));
     background-blend-mode: screen;
     box-shadow: none;
