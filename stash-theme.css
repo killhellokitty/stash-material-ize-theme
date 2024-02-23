@@ -7174,8 +7174,8 @@ button.clearable-text-field-clear.btn.btn-secondary:focus-visible {
 }
 .btn-danger:is(.disabled, :disabled),
 .addresses .btn-danger.btn-sm:is(.disabled, :disabled) {
-    color: rgb(var(--on-error-container),var(--disabled));
-    background-image: linear-gradient(to right, rgb(var(--error-container),var(--btn-background-disabled)));
+    color: rgb(var(--on-error-container),var(--disabled-rev));
+    background-image: linear-gradient(to right, rgb(var(--error-container),var(--btn-background-disabled-rev)), rgb(var(--error-container),var(--btn-background-disabled-rev)));
     background-color: rgb(var(--body-color2));
     background-blend-mode: screen;
     box-shadow: none;
@@ -7223,8 +7223,8 @@ button.clearable-text-field-clear.btn.btn-secondary:focus-visible {
      box-shadow: var(--elevation-0);
 }
 .btn-success:is(.disabled, :disabled) {
-    color: rgb(var(--tertiary-container),var(--disabled));
-    background-image: linear-gradient(to right, rgb(var(--on-tertiary-container),var(--btn-background-disabled)), rgb(var(--on-tertiary-container),var(--btn-background-disabled)));
+    color: rgb(var(--tertiary-container),var(--disabled-rev));
+    background-image: linear-gradient(to right, rgb(var(--on-tertiary-container),var(--btn-background-disabled-rev)), rgb(var(--on-tertiary-container),var(--btn-background-disabled-rev)));
     background-color: rgb(var(--body-color2));
     background-blend-mode: screen;
     box-shadow: none;
