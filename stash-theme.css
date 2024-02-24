@@ -9678,7 +9678,7 @@ input#update-stashids::placeholder {
 #performer-edit .form-group:nth-of-type(5) .input-group.has-validation>#birthdate.form-control,
 #performer-edit .form-group:nth-of-type(6) .input-group.has-validation>#death_date.form-control,
 #gallery-edit-details .form-group:nth-of-type(3) .input-group.has-validation>#date.form-control,
-#movie-edit .form-group:nth-of-type(4) .input-group.has-validation>#date.form-control,
+/*#movie-edit .form-group:nth-of-type(4) .input-group.has-validation>#date.form-control,*/
 #image-edit-details .form-group:nth-of-type(3) .input-group.has-validation>#date.form-control {
     border-radius: 4px;
     margin-right: -40px;
@@ -10296,37 +10296,44 @@ div#create-scene-page {
 }
 
 /* Movie */
-.movie-details.mb-3.col > .logo.w-100 + div:has(>h2) {
+#movie-edit {
     background-image: var(--btn-dummy-highlight);
     background-color: rgb(var(--body-color));
     border-radius: 1rem;
-    padding: 0 1rem 1rem;
+    padding: 0.5rem 1rem 1rem;
 }
 
 @media (min-width: 768px) {
-    .movie-details.mb-3.col>div {
+    .movie-details.mb-3.col > div {
         flex: 0 0 66.66666667%;
         max-width: 66.66666667%;
         position: relative;
         width: 100%;
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 }
 .movie-details.mb-3.col {
-    margin: 24px;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    margin: 1.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-.movie-details.mb-3.col>div>h2 {
+.movie-details.mb-3.col > div > h2 {
     color: rgb(var(--setting-h1));
     padding: 1rem 1rem 2rem;
 }
 
-#movie-edit .form-group .col-form-label {
+#movie-edit > .form-group > label[for="name"].form-label.col-form-label {
+    padding-top: 0.5rem;
+}
+
+#movie-edit > .form-group.row > label[for="name"].form-label.col-form-label:has(+div>input.text-input.is-invalid) {
+    color: rgb(var(--error-container));
+}
+/*#movie-edit .form-group .col-form-label {
     color: transparent;
     display: flex;
     padding-bottom: 0.2857142857142857rem;
@@ -10336,8 +10343,8 @@ div#create-scene-page {
     font-weight: 400;
     line-height: 1.1428571428571428rem;
     letter-spacing: 0.028571428571428574rem;
-}
-#movie-edit .form-group:nth-of-type(-n+4) .col-form-label,
+}*/
+/*#movie-edit .form-group:nth-of-type(-n+4) .col-form-label,
 #movie-edit .form-group:nth-of-type(6) .col-form-label,
 #movie-edit .form-group:nth-of-type(n+8) .col-form-label {
     top: 11px;
@@ -10346,7 +10353,7 @@ div#create-scene-page {
     color: #00dfc6;
     visibility: hidden;
     transition: all 0.15s ease-in-out;
-}
+}*/
 #movie-edit .form-group:nth-of-type(7) .col-form-label[for="url"] {
     color: #00dfc6;
 }
@@ -10355,9 +10362,9 @@ div#create-scene-page {
 #movie-edit .form-group:focus-within:nth-of-type(n+8) .col-form-label {
     visibility: visible;
 }
-#movie-edit .form-group:nth-of-type(1) .col-form-label {
+/*#movie-edit .form-group:nth-of-type(1) .col-form-label {
     max-width: 42px;
-}
+}*/
 #movie-edit .form-group:has(>.col-9 .is-invalid) .col-form-label {
     color: #93000a;
 }
@@ -10389,45 +10396,53 @@ div#create-scene-page {
 }
 #movie-edit .duration-input>.input-group>.input-group-append>.btn-group-vertical {
     flex-direction: row;
-    align-items: flex-end;
+    align-items: center;
+    column-gap: 12px;
 }
 #movie-edit .duration-input>.input-group>.input-group-append>.btn-group-vertical>button.duration-button.btn.btn-secondary {
+    color: rgb(var(--on-surface-variant));
     left: -12px;
-    padding: 0 14px;
-    border-radius: 5rem;
+    box-shadow: none;
     border: 0;
-    border-style: none;
+    background-color: transparent;
+    border-radius: 5rem;
+    padding: 0;
+    z-index: 3;
+    font-size: 24px;
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    justify-content: center;
+}
+#movie-edit .duration-input>.input-group>.input-group-append>.btn-group-vertical>button.duration-button.btn.btn-secondary:not(:disabled):not(.disabled):is(:hover, :focus-visible) {
+    background-color: rgba(var(--on-surface),var(--btn-hover));
+    box-shadow: var(--elevation-0);
+}
+#movie-edit .duration-input>.input-group>.input-group-append>.btn-group-vertical>button.duration-button.btn.btn-secondary:not(:disabled):not(.disabled):is(:active, :focus, :active:focus) {
+    background-color: rgba(var(--on-surface),var(--btn-active));
     box-shadow: none;
 }
-#movie-edit .duration-input>.input-group>.input-group-append>.btn-group-vertical>button.duration-button.btn.btn-secondary:hover:not(:disabled):not(.disabled),
-#movie-edit .duration-input>.input-group>.input-group-append>.btn-group-vertical>button.duration-button.btn.btn-secondary:focus:not(:disabled):not(.disabled),
-#movie-edit .duration-input>.input-group>.input-group-append>.btn-group-vertical>button.duration-button.btn.btn-secondary:focus-visible:not(:focus):not(:disabled):not(.disabled) {
-    background-color: rgba(255,255,255,0.08);
-    box-shadow: none;
-}
-#movie-edit .duration-input>.input-group>.input-group-append>.btn-group-vertical>button.duration-button.btn.btn-secondary:active:not(:disabled):not(.disabled),
-#movie-edit .duration-input>.input-group>.input-group-append>.btn-group-vertical>button.duration-button.btn.btn-secondary:active:hover:not(:disabled):not(.disabled),
-#movie-edit .duration-input>.input-group>.input-group-append>.btn-group-vertical>button.duration-button.btn.btn-secondary:active:focus:not(:disabled):not(.disabled),
-#movie-edit .duration-input>.input-group>.input-group-append>.btn-group-vertical>button.duration-button.btn.btn-secondary.active:not(:disabled):not(.disabled),
-#movie-edit .duration-input>.input-group>.input-group-append>.btn-group-vertical>button.duration-button.btn.btn-secondary.active:hover:not(:disabled):not(.disabled),
-#movie-edit .duration-input>.input-group>.input-group-append>.btn-group-vertical>button.duration-button.btn.btn-secondary.active:focus:not(:disabled):not(.disabled) {
-    background-color: rgba(255,255,255,0.16);
-    box-shadow: none;
-}
-#movie-edit .duration-input>.input-group>.input-group-append>.btn-group-vertical>button.duration-button.btn.btn-secondary:focus-visible:not(:focus):not(:disabled):not(.disabled) {
-    outline-color: #dffffb;
-    outline-style: solid;
-    outline-width: 3px;
-    outline-offset: 0;
-}
+
 #movie-edit .duration-input>.input-group:not(.has-validation)>.duration-control.form-control:not(:last-child) {
-    border-radius: 0.5rem;
-    margin-right: -80px;
+    border-radius: 4px;
+    margin-right: -90px;
     padding-right: 104px;
 }
 #movie-edit .duration-input>.input-group:not(.has-validation)>.duration-control.form-control:focus:placeholder,
 #movie-edit .duration-input>.input-group:not(.has-validation)>.duration-control.form-control:active:placeholder {
     visibility: visible;
+}
+
+#movie-edit .form-group input#date.date-input.text-input.form-control {
+    border-radius: 4px;
+    margin-right: -11%;
+    padding-right: 4rem;
+}
+
+#movie-edit .form-group:has(* div.react-select__control) > label.form-label.col-form-label {
+    visibility: visible;
+    color: rgb(var(--on-surface-variant));
+    margin-left: 1rem;
 }
 
 /* ImageCard */
@@ -10487,10 +10502,12 @@ div#create-scene-page {
     flex-wrap: nowrap;
 }
 /* Scene Editor --- top spacing filler */
+#movie-edit .form-group.row,
 :is(#scene-edit-details, #image-edit-details, #gallery-edit-details) .form-group.row {
     padding-top: 1ex;
 }
 /* Text-Input Column-Form-Label */
+#movie-edit .form-group.row > label.form-label.col-form-label,
 :is(#scene-edit-details, #image-edit-details, #gallery-edit-details) .form-container .form-group.row > label.col-form-label.form-label,
 :is(#scene-edit-details, #image-edit-details, #gallery-edit-details) .form-label[for="details"] {
     font-size: 12px;
@@ -10499,6 +10516,7 @@ div#create-scene-page {
     font-weight: 500;
     color: rgb(var(--pry-color));
 }
+#movie-edit .form-group.row > label.form-label.col-form-label,
 :is(#scene-edit-details, #image-edit-details, #gallery-edit-details) .form-container .form-group.row > label.form-label.col-form-label {
     position: relative;
     display: block;
@@ -10519,6 +10537,7 @@ div#create-scene-page {
     /*opacity: 1;*/
     /*transition: margin-bottom 0.2s ease-in, opacity 0.2s, background-color 0.2s;*/
 }
+#movie-edit .form-group.row:focus-within > label.form-label.col-form-label,
 :is(#scene-edit-details, #gallery-edit-details) .form-container .form-group.row:focus-within > label.form-label.col-form-label,
 :is(#scene-edit-details, #gallery-edit-details) .form-group:focus-within .form-label[for="details"] {
     animation: opacityname 0.3s linear forwards;
