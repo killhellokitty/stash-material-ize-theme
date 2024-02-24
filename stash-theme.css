@@ -9212,7 +9212,7 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
 }
 /*#scene-edit-details .form-container .form-group:nth-of-type(3) .col-form-label,*/
 /*#scene-edit-details .col-form-label[for="urls"],*/
-#movie-edit .col-form-label[for="url"] {
+/*#movie-edit .col-form-label[for="url"] {
     visibility: hidden;
     left: 12px;
     top: 8px;
@@ -9220,7 +9220,7 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
     position: relative;
     background-color: transparent;
     z-index: 12009;
-}
+}*/
 
 .new-view {
     justify-content: center;
@@ -9238,11 +9238,11 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
     max-width: 37px;
     width: 37px;
 }*/
-#movie-edit .col-form-label[for="url"],
+/*#movie-edit .col-form-label[for="url"],
 #movie-edit .col-form-label[for="url"]::before {
     max-width: 31px;
     width: 31px;
-}
+}*/
 /*#scene-edit-details .form-container .form-group:nth-of-type(4) .col-form-label,*/
 #scene-edit-details .col-form-label[for="date"],
 #scene-edit-details .col-form-label[for="date"]::before {
@@ -10354,9 +10354,9 @@ div#create-scene-page {
     visibility: hidden;
     transition: all 0.15s ease-in-out;
 }*/
-#movie-edit .form-group:nth-of-type(7) .col-form-label[for="url"] {
+/*#movie-edit .form-group:nth-of-type(7) .col-form-label[for="url"] {
     color: #00dfc6;
-}
+}*/
 #movie-edit .form-group:focus-within:nth-of-type(-n+4) .col-form-label,
 #movie-edit .form-group:focus-within:nth-of-type(6) .col-form-label,
 #movie-edit .form-group:focus-within:nth-of-type(n+8) .col-form-label {
@@ -10365,7 +10365,7 @@ div#create-scene-page {
 /*#movie-edit .form-group:nth-of-type(1) .col-form-label {
     max-width: 42px;
 }*/
-#movie-edit .form-group:has(>.col-9 .is-invalid) .col-form-label {
+/*#movie-edit .form-group:has(>.col-9 .is-invalid) .col-form-label {
     color: #93000a;
 }
 #movie-edit .form-group:nth-of-type(2) .col-form-label {
@@ -10382,18 +10382,18 @@ div#create-scene-page {
 }
 #movie-edit .form-group:nth-of-type(6) .col-form-label {
     max-width: 54px;
-}
+}*/
 /*#movie-edit .form-group:nth-of-type(7) .col-form-label {
     top: 6px;
 }*/
-#movie-edit .form-group:nth-of-type(8) .col-form-label {
+/*#movie-edit .form-group:nth-of-type(8) .col-form-label {
     max-width: 60px;
 }
 #movie-edit .form-group:nth-of-type(9) .col-form-label {
     padding-bottom: 0;
     top: 7px;
     max-width: 60px;
-}
+}*/
 #movie-edit .duration-input>.input-group>.input-group-append>.btn-group-vertical {
     flex-direction: row;
     align-items: center;
@@ -10443,6 +10443,7 @@ div#create-scene-page {
     visibility: visible;
     color: rgb(var(--on-surface-variant));
     margin-left: 1rem;
+    margin-bottom: 2%;
 }
 
 /* ImageCard */
