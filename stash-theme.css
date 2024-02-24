@@ -5299,7 +5299,7 @@ div.mb-2 select.btn-secondary.form-control.focus option {
     .gallery-tabs + .gallery-divider {
         background-color: rgb(var(--body-color2));
     }
-    .gallery-tabs {
+    :is(.image-tabs, .gallery-tabs) {
         background-color: rgb(var(--body-color));
     }
     :is(.image-tabs, .gallery-tabs) .tab-pane.active.show > :is(#image-edit-details, #gallery-edit-details) > form > .edit-buttons-container + .form-container.px-3.row > div { /* Removes Padding from div to expand the lenght of text entries */
@@ -9965,7 +9965,7 @@ form#studio-edit {
 /*#image-edit-details .form-container:nth-of-type(2) .form-group:nth-of-type(3) .col-form-label {
     max-width: 34px;
 }*/
-#image-edit-details .form-container:nth-of-type(2) .form-group:focus-within:nth-of-type(-n+3) .col-form-label {
+#image-edit-details .form-container:nth-of-type(2) .form-group:focus-within:nth-of-type(-n+5) .col-form-label {
     color: rgb(var(--pry-color));
     visibility: visible;
 }
@@ -10294,7 +10294,15 @@ div#create-scene-page {
 #create-scene-page.new-view #scene-edit-details .form-container:nth-of-type(2) .col-12:nth-of-type(2) .form-group:last-of-type>.form-label {
     margin-bottom: 16px;
 }
+
 /* Movie */
+.movie-details.mb-3.col > .logo.w-100 + div:has(>h2) {
+    background-image: var(--btn-dummy-highlight);
+    background-color: rgb(var(--body-color));
+    border-radius: 1rem;
+    padding: 0 1rem 1rem;
+}
+
 @media (min-width: 768px) {
     .movie-details.mb-3.col>div {
         flex: 0 0 66.66666667%;
@@ -10307,19 +10315,15 @@ div#create-scene-page {
 }
 .movie-details.mb-3.col {
     margin: 24px;
-    /*background-color: #414846;*/
     padding-top: 24px;
     padding-bottom: 24px;
-    border-radius: 1.65rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 .movie-details.mb-3.col>div>h2 {
-    position: relative;
-    padding: 16px;
-    background-color: #373d3b;
-    border-radius: 1.5rem;
+    color: rgb(var(--setting-h1));
+    padding: 1rem 1rem 2rem;
 }
 
 #movie-edit .form-group .col-form-label {
@@ -10643,12 +10647,12 @@ label[for="cover_image"].form-label {
     margin-bottom: 12px;
 }
     /* Rating Stars */
-:is(#scene-edit-details, #gallery-edit-details) .form-group.row > label.form-label.col-form-label:has(+ div > .rating-stars) {
+:is(#scene-edit-details, #image-edit-details, #gallery-edit-details) .form-group.row > label.form-label.col-form-label:has(+ div > .rating-stars) {
     visibility: visible;
     color: rgb(var(--on-surface-variant));
     margin-left: 16px;
 }
-:is(#scene-edit-details, #gallery-edit-details) .rating-stars {
+:is(#scene-edit-details, #image-edit-details, #gallery-edit-details) .rating-stars {
     height: 56px;
     align-items: flex-end;
 }
