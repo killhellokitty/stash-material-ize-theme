@@ -9075,6 +9075,13 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
     padding-left: 1.1428571428571428rem;
     padding-right: 1.1428571428571428rem;
 }*/
+
+.input-group-append > button.btn.btn-danger { 
+    border-radius: 5rem;
+    width: 40px;
+    padding: 0;
+}
+
 :is(#scene-edit-details, #image-edit-details, #gallery-edit-details) .form-container .form-group input[placeholder="URL"].form-control {
     border-radius: 4px;
     padding-right: 120px;
@@ -9315,11 +9322,11 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
 }
 
 /* Scene Editor React-Select Input */
-:is(#scene-edit-details, #gallery-edit-details) .form-container .form-group:nth-last-of-type(-n + 6) div.react-select__control {
+:is(#scene-edit-details, #image-edit-details, #gallery-edit-details) .form-container .form-group:nth-last-of-type(-n + 6) div.react-select__control {
     margin-top: 13px;
 }
     /* label */
-:is(#scene-edit-details, #gallery-edit-details) .form-container .form-group:nth-last-of-type(-n +6):has(* div.react-select__control) label.form-label.col-form-label {
+:is(#scene-edit-details, #image-edit-details, #gallery-edit-details) .form-container .form-group:nth-last-of-type(-n +6):has(* div.react-select__control) label.form-label.col-form-label {
     visibility: visible;
     color: rgb(var(--on-surface-variant));
     margin-left: 16px;
@@ -9959,7 +9966,7 @@ form#studio-edit {
     max-width: 34px;
 }*/
 #image-edit-details .form-container:nth-of-type(2) .form-group:focus-within:nth-of-type(-n+3) .col-form-label {
-    color: #00dfc6;
+    color: rgb(var(--pry-color));
     visibility: visible;
 }
 /*#image-edit-details .form-container:nth-of-type(2) .form-group:nth-of-type(n+4) .col-form-label {
