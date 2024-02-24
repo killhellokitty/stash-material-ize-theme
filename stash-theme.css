@@ -9009,67 +9009,44 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
     padding: 0;
 }
 .form-group .input-group>.input-group-append:last-child > button.scrape-url-button.btn:not(:last-child):not(.dropdown-toggle),
-.form-group .input-group>.input-group-append > button.scrape-url-button.btn:not(.dropdown-toggle),
-.form-group button.scrape-url-button:not(:disabled):not(.disabled):hover,
-.form-group button.scrape-url-button:not(:disabled):not(.disabled):focus,
-.form-group button.scrape-url-button:not(:disabled):not(.disabled):active,
-.form-group button.scrape-url-button.active:not(:disabled):not(.disabled),
-.form-group button.scrape-url-button:not(:disabled):not(.disabled):active:hover,
-.form-group button.scrape-url-button.active:not(:disabled):not(.disabled):hover,
-.form-group button.scrape-url-button:not(:disabled):not(.disabled):focus-visible {
-    background: transparent;
+.form-group .input-group>.input-group-append > button.scrape-url-button.btn:not(.dropdown-toggle) {
+    background-color: transparent;
     outline: none;
     box-shadow: none;
     top: 7px;
     left: -12px;
-    padding: 0 14px;
+    padding: 0;
     border-radius: 5rem;
-    border-style: none;
     border: 0;
-    color: #c0ebe2;
+    color: rgb(var(--on-surface-variant));
+    font-size: 24px;
+    align-items: center;
+    z-index: 5;
+    width: 40px;
+    height: 40px;
 }
-.form-group .input-group>.input-group-append .react-datepicker__input-container > button.btn.btn-secondary:hover,
-.form-group .input-group>.input-group-append .react-datepicker__input-container > button.btn.btn-secondary:focus-visible,
-.form-group .input-group>.input-group-append:last-child > button.scrape-url-button.btn:not(:last-child):not(.dropdown-toggle):not(:disabled):not(.disabled):hover,
-.form-group .input-group>.input-group-append:last-child > button.scrape-url-button.btn:not(:last-child):not(.dropdown-toggle):not(:disabled):not(.disabled):focus,
-.form-group .input-group>.input-group-append:last-child > button.scrape-url-button.btn:not(:last-child):not(.dropdown-toggle):not(:disabled):not(.disabled):focus-visible,
-.form-group button.scrape-url-button.text-input.btn.btn-secondary:not(:disabled):not(.disabled):hover,
-.form-group button.scrape-url-button.text-input.btn.btn-secondary:not(:disabled):not(.disabled):focus,
-.form-group button.scrape-url-button.text-input.btn.btn-secondary:not(:disabled):not(.disabled):focus-visible {
-    background-color: rgba(255,255,255, 0.08);
-    box-shadow: none;
-    text-shadow: none;
-    outline: none;
+.form-group .input-group>.input-group-append .react-datepicker__input-container > button.btn.btn-secondary:is(:hover, :focus-visible),
+.form-group .input-group>.input-group-append:last-child > button.scrape-url-button.btn:not(:last-child):not(.dropdown-toggle):not(:disabled):not(.disabled):is(:hover, :focus-visible),
+.form-group button.scrape-url-button.text-input.btn.btn-secondary:not(:disabled):not(.disabled):is(:hover, :focus-visible) {
+    background-color: rgb(var(--on-surface),var(--btn-hover));
+    box-shadow: var(--elevation-0);
 }
-.form-group .input-group>.input-group-append .react-datepicker__input-container > button.btn.btn-secondary:active,
-.form-group .input-group>.input-group-append .react-datepicker__input-container > button.btn.btn-secondary.active,
-.form-group .input-group>.input-group-append .react-datepicker__input-container > button.btn.btn-secondary:active:hover,
-.form-group .input-group>.input-group-append .react-datepicker__input-container > button.btn.btn-secondary.active:hover,
-.form-group .input-group>.input-group-append .react-datepicker__input-container > button.btn.btn-secondary:focus,
-.form-group .input-group>.input-group-append:last-child > button.scrape-url-button.btn:not(:last-child):not(.dropdown-toggle):not(:disabled):not(.disabled):active,
-.form-group .input-group>.input-group-append:last-child > button.scrape-url-button.btn:not(:last-child):not(.dropdown-toggle).active:not(:disabled):not(.disabled),
-.form-group .input-group>.input-group-append:last-child > button.scrape-url-button.btn:not(:last-child):not(.dropdown-toggle):not(:disabled):not(.disabled):active:hover,
-.form-group .input-group>.input-group-append:last-child > button.scrape-url-button.btn:not(:last-child):not(.dropdown-toggle):not(:disabled):not(.disabled):hover,
-.form-group button.scrape-url-button.text-input.btn.btn-secondary:not(:disabled):not(.disabled):active,
-.form-group button.scrape-url-button.text-input.btn.btn-secondary.active:not(:disabled):not(.disabled),
-.form-group button.scrape-url-button.text-input.btn.btn-secondary:not(:disabled):not(.disabled):active:hover,
-.form-group button.scrape-url-button.text-input.btn.btn-secondary:not(:disabled):not(.disabled):hover {
-    background-color: rgba(255,255,255, 0.16);
+.form-group .input-group>.input-group-append .react-datepicker__input-container > button.btn.btn-secondary:is(:active, :focus, :active:focus),
+.form-group .input-group>.input-group-append:last-child > button.scrape-url-button.btn:not(:last-child):not(.dropdown-toggle):not(:disabled):not(.disabled):is(:active, :focus, :active:focus),
+.form-group button.scrape-url-button.text-input.btn.btn-secondary:not(:disabled):not(.disabled):is(:active, :focus, :active:focus) {
+    background-color: rgb(var(--on-surface),var(--btn-active));
     box-shadow: none;
-    text-shadow: none;
     outline: none;
 }
 .form-group button.scrape-url-button.text-input.btn.btn-secondary:not(:disabled):not(.disabled):focus-visible,
 .form-group .input-group>.input-group-append .react-datepicker__input-container > button.btn.btn-secondary:focus-visible {
-    outline-color: #dffffb;
-    outline-width: 0.14285714285714285rem;
-    outline-style: solid;
-    outline-offset: 0.21428571428571427rem;
+    box-shadow: none;
 }
 .form-group button.scrape-url-button.text-input.btn.btn-secondary:disabled {
-    background: transparent;
-    color: #c0ebe2;
-    opacity: 0.4;
+    background-color: transparent;
+    color: rgb(var(--on-surface-variant));
+    box-shadow: none;
+    opacity: 0.38;
 }
 /*#scene-edit-details .form-container .form-group:nth-of-type(-n+5) input.form-control {
     padding-left: 1.1428571428571428rem;
@@ -9697,8 +9674,7 @@ input#update-stashids::placeholder {
     visibility: visible;
 }
 #performer-edit .form-group:nth-of-type(20) .input-group:not(.has-validation)>#url.form-control:not(:last-child),
-#gallery-edit-details .form-group:nth-of-type(2) .input-group:not(.has-validation)>#url.form-control:not(:last-child),
-#movie-edit .form-group:nth-of-type(n+1) .input-group:not(.has-validation)>#url.form-control:not(:last-child) {
+#gallery-edit-details .form-group:nth-of-type(2) .input-group:not(.has-validation)>#url.form-control:not(:last-child) {
     border-radius: 4px;
     margin-right: -40px;
     padding-right: 64px;
@@ -9974,12 +9950,12 @@ form#studio-edit {
 }*/
 
 /* Scene-Markers-Panel */
-@media (min-width: 1200px) {
+/*@media (min-width: 1200px) {
     .col-xl-6 {
         flex: 0 0 55%;
         max-width: 55%;
     }
-}
+}*/
 
 @media (min-width: 1200px) {
     .scene-tabs {
@@ -9991,10 +9967,35 @@ form#studio-edit {
         background-color: rgb(var(--body-color2));
     }
 }
-
-.scene-markers-panel .primary-card-body.card-body>div>hr {
-    border: 1px solid #3f4946;
+.scene-markers-panel .primary-card .card-section.centered {
+    min-height: 1px;
+    padding-bottom: 0;
 }
+.primary-card-body.card-body {
+    padding: 0;
+}
+.scene-markers-panel .primary-card-body.card-body>div>hr {
+    border: 0;
+    margin-left: unset;
+    margin-right: unset;
+}
+.primary-card-body > div > hr + .row + div {
+    margin-top: 8px;
+    font-style: var(--MonoFont);
+    font-size: 1rem;
+    letter-spacing: 0.04em;
+}
+.scene-markers-panel span.tag-item.badge.badge-secondary {
+    margin-bottom: 4px !important;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0.025em;
+    padding-bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
 .scene-tabs .tab-content>.fade.tab-pane.active.show {
     padding: 0;
 }
@@ -10443,6 +10444,12 @@ form#movie-edit + .details-edit {
     border-radius: 4px;
     margin-right: -11%;
     padding-right: 4rem;
+}
+
+#movie-edit .form-group .input-group:not(.has-validation)>#url.text-input.form-control:not(:last-child) {
+    border-radius: 4px;
+    margin-right: -5%;
+    padding-right: 64px;
 }
 
 #movie-edit .form-group:has(* div.react-select__control) > label.form-label.col-form-label {
