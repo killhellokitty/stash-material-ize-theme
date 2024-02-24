@@ -10301,6 +10301,12 @@ div#create-scene-page {
     background-color: rgb(var(--body-color));
     border-radius: 1rem;
     padding: 0.5rem 1rem 1rem;
+    padding-bottom: 18.5%;
+}
+form#movie-edit + .details-edit {
+    margin-top: -15%;
+    padding-top: 0.5rem;
+    margin-left: 2.5%;
 }
 
 @media (min-width: 768px) {
