@@ -4901,8 +4901,13 @@ input.form-control-plaintext {
 
 .details-edit {
     align-items: center;
-    margin-top: 16px;
-    margin-bottom: 32px;
+    margin-top: 1rem;
+}
+#performer-page .details-edit {
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem !important;
+    column-gap: 0.75rem;
 }
 .input-group-append {
     position: relative;
@@ -9081,6 +9086,7 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
     padding-right: 120px;
     transition: padding-right 0.25s ease-in-out, var(--trans-0);
 } 
+#performer-edit .form-group.row input:is(#birthdate, #death_date).date-input.text-input.form-control,
 :is(#scene-edit-details, #image-edit-details, #gallery-edit-details) .form-container .form-group:nth-of-type(4) input.form-control {
     border-radius: 4px;
     margin-right: -11%;
@@ -9170,6 +9176,7 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
 }
 
 /* Scene-Edit-Details URL's Input-Append */
+#performer-edit .form-group.row .string-list-input > .form-group > .input-group > input.text-input.form-control + .input-group-append,
 :is(#scene-edit-details, #image-edit-details, #gallery-edit-details) > form > .form-container + .form-container .form-group.row:nth-of-type(3) .string-list-input > .form-group > .input-group > input[placeholder="URL"].text-input.form-control + .input-group-append {
     display: flex;
     margin-left: unset;
@@ -9191,6 +9198,7 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
     height: 40px;
     font-size: 24px;
 }
+
 :is(#scene-edit-details, #image-edit-details, #gallery-edit-details) > form > .form-container + .form-container .form-group.row:nth-of-type(3) .string-list-input > .form-group > .input-group > input[placeholder="URL"].text-input.form-control + .input-group-append > button.scrape-url-button.text-input.btn.btn-secondary + button.btn.btn-danger {
     padding: unset;
     border-radius: 5rem;
@@ -9443,15 +9451,15 @@ input#update-stashids::placeholder {
     letter-spacing: 0.028571428571428574rem;
     transition: color 0.15s ease-in-out;
 } */
-#performer-edit .form-group:nth-of-type(-n+23):not(:nth-of-type(4)):not(:nth-of-type(7)):not(:nth-of-type(14)) .col-form-label {
+/*#performer-edit .form-group:nth-of-type(-n+23):not(:nth-of-type(4)):not(:nth-of-type(7)):not(:nth-of-type(14)) .col-form-label {
     visibility: hidden;
     padding: 0 0.2857142857142857rem 0 0.2857142857142857rem;
     left: 2.0714285714285716rem;
     top: 0.5714285714285714rem;
     background-color: transparent;
     z-index: 33;
-}
-#performer-edit .form-group:nth-of-type(-n+23):not(:nth-of-type(4)):not(:nth-of-type(7)):not(:nth-of-type(14)) .col-form-label::before {
+}*/
+/*#performer-edit .form-group:nth-of-type(-n+23):not(:nth-of-type(4)):not(:nth-of-type(7)):not(:nth-of-type(14)) .col-form-label::before {
     content: "";
     background-color: rgb(var(--body-color2));
     height: 4px;
@@ -9459,127 +9467,134 @@ input#update-stashids::placeholder {
     left: 0;
     position: absolute;
     z-index: -1;
-}
+}*/
 #performer-edit .form-group:nth-of-type(4) select.input-control.form-control[name="gender"] {
     background-position: calc( 100% - 18px ) center;
 }
 
-.new-view#performer-page #performer-edit .form-group:nth-of-type(-n+23):not(:nth-of-type(4)):not(:nth-of-type(7)):not(:nth-of-type(14)) .col-form-label::before {
+/*.new-view#performer-page #performer-edit .form-group:nth-of-type(-n+23):not(:nth-of-type(4)):not(:nth-of-type(7)):not(:nth-of-type(14)) .col-form-label::before {
     background-color: rgb(var(--body-color2));
-}
-#performer-edit .form-group:nth-of-type(1) .col-form-label,
+}*/
+/*#performer-edit .form-group:nth-of-type(1) .col-form-label,
 #performer-edit .col-form-label[for="name"]::before {
     max-width: 3rem;
     width: 3rem;
-}
-#performer-edit .form-group:nth-of-type(2) .col-form-label,
+}*/
+/*#performer-edit .form-group:nth-of-type(2) .col-form-label,
 #performer-edit .col-form-label[for="disambiguation"]::before {
     max-width: 7rem;
     width: 7rem;
-}
-#performer-edit .row.form-group:nth-of-type(3):not(:nth-of-type(4)):not(:nth-of-type(7)):not(:nth-of-type(14)) .col-form-label,
-#performer-edit .col-form-label[for="aliases"]::before {
-    color: #c0ebe2;
-    max-width: 3.4285714285714284rem;
-    width: 3.4285714285714284rem;
+}*/
+#performer-edit .row.form-group label[for="alias_list"].form-label.col-form-label,
+#performer-edit .col-form-label[for="alias_list"]::before {
+    color: rgb(var(--on-surface-variant));
     visibility: visible;
 }
-#performer-edit .row.form-group:nth-of-type(5):not(:nth-of-type(4)):not(:nth-of-type(7)):not(:nth-of-type(14)) .col-form-label,
+#performer-edit .row.form-group label[for="gender"].form-label.col-form-label {
+    color: rgb(var(--on-surface-variant));
+    margin-left: 1rem;
+    margin-bottom: 2%;
+    visibility: visible;
+}
+#performer-edit .row.form-group label[for="birthdate"].form-label.col-form-label,
 #performer-edit .col-form-label[for="birthdate"]::before {
-    color: #c0ebe2;
-    max-width: 4.285714285714286rem;
-    width: 4.285714285714286rem;
+    color: rgb(var(--on-surface-variant));
     visibility: visible;
 }
-#performer-edit .row.form-group:nth-of-type(6):not(:nth-of-type(4)):not(:nth-of-type(7)):not(:nth-of-type(14)) .col-form-label,
+#performer-edit .row.form-group label[for="death_date"].form-label.col-form-label,
 #performer-edit .col-form-label[for="death_date"]::before {
-    color: #c0ebe2;
-    max-width: 5.142857142857143rem;
-    width: 5.142857142857143rem;
+    color: rgb(var(--on-surface-variant));
     visibility: visible;
 }
-#performer-edit .form-group:nth-of-type(8) .col-form-label,
+#performer-edit .form-group.row > label[for="ignore_auto_tag"].form-label.col-form-label {
+    color: rgb(var(--on-surface-variant));
+    margin-bottom: 2%;
+    margin-left: 1rem;
+    visibility: visible;
+}
+/*#performer-edit .form-group:nth-of-type(8) .col-form-label,
 #performer-edit .col-form-label[for="ethnicity"]::before {
     max-width: 4.142857142857143rem;
     width: 4.142857142857143rem;
-}
-#performer-edit .form-group:nth-of-type(9) .col-form-label,
+}*/
+/*#performer-edit .form-group:nth-of-type(9) .col-form-label,
 #performer-edit .col-form-label[for="hair_color"]::before {
     max-width: 4.714285714285714rem;
     width: 4.714285714285714rem;
-}
-#performer-edit .form-group:nth-of-type(10) .col-form-label,
+}*/
+/*#performer-edit .form-group:nth-of-type(10) .col-form-label,
 #performer-edit .col-form-label[for="eye_color"]::before {
     max-width: 4.428571428571429rem;
     width: 4.428571428571429rem;
-}
-#performer-edit .form-group:nth-of-type(11) .col-form-label,
+}*/
+/*#performer-edit .form-group:nth-of-type(11) .col-form-label,
 #performer-edit .col-form-label[for="height_cm"]::before {
     max-width: 5.428571428571429rem;
     width: 5.428571428571429rem;
-}
-#performer-edit .form-group:nth-of-type(12) .col-form-label,
+}*/
+/*#performer-edit .form-group:nth-of-type(12) .col-form-label,
 #performer-edit .col-form-label[for="weight"]::before {
     max-width: 5.285714285714286rem;
     width: 5.285714285714286rem;
-}
-#performer-edit .form-group:nth-of-type(13) .col-form-label,
+}*/
+/*#performer-edit .form-group:nth-of-type(13) .col-form-label,
 #performer-edit .col-form-label[for="penis_length"]::before {
     max-width: 112px;
     width: 112px;
-}
-#performer-edit .form-group:nth-of-type(15) .col-form-label,
+}*/
+/*#performer-edit .form-group:nth-of-type(15) .col-form-label,
 #performer-edit .col-form-label[for="measurements"]::before {
     max-width: 6.571428571428571rem;
     width: 6.571428571428571rem;
-}
-#performer-edit .form-group:nth-of-type(16) .col-form-label,
+}*/
+/*#performer-edit .form-group:nth-of-type(16) .col-form-label,
 #performer-edit .col-form-label[for="fake_tits"]::before {
     max-width: 4.285714285714286rem;
     width: 4.285714285714286rem;
-}
-#performer-edit .form-group:nth-of-type(17) .col-form-label,
+}*/
+/*#performer-edit .form-group:nth-of-type(17) .col-form-label,
 #performer-edit .col-form-label[for="tattoos"]::before {
     max-width: 3.5714285714285716rem;
     width: 3.5714285714285716rem;
-}
-#performer-edit .form-group:nth-of-type(18) .col-form-label,
+}*/
+/*#performer-edit .form-group:nth-of-type(18) .col-form-label,
 #performer-edit .col-form-label[for="piercings"]::before {
     max-width: 4.285714285714286rem;
     width: 4.285714285714286rem;
-}
-#performer-edit .form-group:nth-of-type(19) .col-form-label,
+}*/
+/*#performer-edit .form-group:nth-of-type(19) .col-form-label,
 #performer-edit .col-form-label[for="career_length"]::before {
     max-width: 6.357142857142857rem;
     width: 6.357142857142857rem;
-}
-#performer-edit .form-group:nth-of-type(20) .col-form-label,
+}*/
+/*#performer-edit .form-group:nth-of-type(20) .col-form-label,
 #performer-edit .col-form-label[for="url"]::before {
     max-width: 2.2142857142857144rem;
     width: 2.2142857142857144rem;
-}
-#performer-edit .form-group:nth-of-type(21) .col-form-label,
+}*/
+/*#performer-edit .form-group:nth-of-type(21) .col-form-label,
 #performer-edit .col-form-label[for="twitter"]::before {
     max-width: 3.357142857142857rem;
     width: 3.357142857142857rem;
-}
-#performer-edit .form-group:nth-of-type(22) .col-form-label,
+}*/
+/*#performer-edit .form-group:nth-of-type(22) .col-form-label,
 #performer-edit .col-form-label[for="instagram"]::before {
     max-width: 4.642857142857143rem;
     width: 4.642857142857143rem;
-}
-#performer-edit .form-group:nth-of-type(23) .col-form-label,
+}*/
+/*#performer-edit .form-group:nth-of-type(23) .col-form-label,
 #performer-edit .col-form-label[for="details"]::before {
     max-width: 3.357142857142857rem;
     width: 3.357142857142857rem;
-}
+}*/
 #performer-edit .form-group:focus-within:nth-of-type(-n+23):not(:nth-of-type(4)):not(:nth-of-type(7)):not(:nth-of-type(14)) .col-form-label {
-    color: #00dfc6;
+    color: rgb(var(--pry-color));
     visibility: visible;
 }
-.new-view#performer-page #performer-edit .form-group:nth-of-type(1):has(.is-invalid) label.form-label.col-form-label {
+
+/*.new-view#performer-page #performer-edit .form-group:nth-of-type(1):has(.is-invalid) label.form-label.col-form-label {
     color: #93000a;
-}
+}*/
 
 /* Labels of React-Combo-Boxs */
 #performer-edit .form-group:nth-of-type(4) .col-form-label,
@@ -9604,7 +9619,7 @@ input#update-stashids::placeholder {
 #performer-edit .form-group .col-auto {
     width: 100%;
 }
-#performer-edit .form-group:nth-of-type(3) .string-list-input .input-group button.btn.btn-danger,
+/*#performer-edit .form-group:nth-of-type(3) .string-list-input .input-group button.btn.btn-danger,*/
 #tag-edit .form-group:nth-of-type(2) .string-list-input .input-group button.btn.btn-danger,
 #studio-edit .form-group .string-list-input .input-group .input-group-append button.btn.btn-danger {
     top: 1.1071428571428572rem;
@@ -9662,15 +9677,14 @@ input#update-stashids::placeholder {
 #studio-edit .form-group .string-list-input .input-group:not(.has-validation)>.form-control:not(:last-child) {
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
-    margin-right: -1.7142857142857142rem;
     padding-right: 3.7142857142857144rem;
 }
 .studio-details #studio-edit .form-group:nth-of-type(2) .string-list-input .input-group:not(.has-validation)>.form-control:not(:last-child) {
     margin-right: -34px;
     margin-left: -10px;
 }
-#performer-edit .form-group:nth-of-type(5) .input-group.has-validation>#birthdate.form-control,
-#performer-edit .form-group:nth-of-type(6) .input-group.has-validation>#death_date.form-control,
+/*#performer-edit .form-group:nth-of-type(5) .input-group.has-validation>#birthdate.form-control,
+#performer-edit .form-group:nth-of-type(6) .input-group.has-validation>#death_date.form-control,*/
 #gallery-edit-details .form-group:nth-of-type(3) .input-group.has-validation>#date.form-control,
 /*#movie-edit .form-group:nth-of-type(4) .input-group.has-validation>#date.form-control,*/
 #image-edit-details .form-group:nth-of-type(3) .input-group.has-validation>#date.form-control {
@@ -10543,26 +10557,23 @@ form#movie-edit + .details-edit {
 
 /* Performer */
 #performer-page.row.new-view:has(>*.performer-image-container) {
-    position: relative;
-    width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 15px;
-    border-radius: 1.65rem;
-    /*background-color: #414846;*/
+    justify-content: center;
+    margin: 1.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
 }
+
+.new-view button.mr-2.btn.btn-secondary {
+    margin-right: 0% !important;
+}
+
 @media (min-width: 1200px) {
-    #performer-page.row.new-view:has(>*.performer-image-container) .details-edit.col-xl-9.mb-3:has(>*.dropup) {
+    #performer-page.row.new-view:has(>.performer-image-container) .details-edit.col-xl-9.mb-3:has(>*.dropup) {
         max-width: 100%;
     }
 }
-#performer-page.row.new-view:has(>*.performer-image-container)>.col-md-8:has(>*#performer-edit)>h2 {
-    position: relative;
-    padding: 16px;
-    background-color: #373d3b;
-    margin-bottom: 0;
-    border-top-left-radius: 1.5rem;
-    border-top-right-radius: 1.5rem;
+#performer-page.row.new-view:has(>*.performer-image-container) h2 {
+    padding: 0 0 1rem;
 }
 #performer-page.row.new-view:has(>*.performer-image-container) .details-edit.col-xl-9.mb-3:has(>*.dropup) {
     background-color: #373d3b;
