@@ -9490,7 +9490,7 @@ input#update-stashids::placeholder {
     color: rgb(var(--on-surface-variant));
     visibility: visible;
 }
-#performer-edit .row.form-group label[for="gender"].form-label.col-form-label {
+#performer-edit .row.form-group label:is([for="gender"], [for="circumcised"]).form-label.col-form-label {
     color: rgb(var(--on-surface-variant));
     margin-left: 1rem;
     margin-bottom: 2%;
@@ -10377,6 +10377,9 @@ div#create-scene-page {
     border-radius: 1rem;
     padding: 0.5rem 1rem 1rem;
     padding-bottom: 18.5%;
+}
+#performer-edit {
+    padding-bottom: 0.5rem;
 }
 form#movie-edit + .details-edit {
     margin-top: -15%;
