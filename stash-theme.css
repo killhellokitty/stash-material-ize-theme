@@ -7240,8 +7240,8 @@ button.clearable-text-field-clear.btn.btn-secondary:focus-visible {
      box-shadow: var(--elevation-0);
 }
 .btn-success:is(.disabled, :disabled) {
-    color: rgb(var(--tertiary-container),var(--disabled-rev));
-    background-image: linear-gradient(to right, rgb(var(--on-tertiary-container),var(--btn-background-disabled)), rgb(var(--on-tertiary-container),var(--btn-background-disabled)));
+    color: #777777;
+    background-image: linear-gradient(to right, rgb(var(--on-surface),var(--btn-background-disabled)), rgb(var(--on-surface),var(--btn-background-disabled)));
     background-color: rgb(var(--body-color2));
     background-blend-mode: screen;
     box-shadow: none;
