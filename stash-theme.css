@@ -3217,7 +3217,24 @@ span.filter-container.text-muted.paginationIndex.center-text:last-of-type {
     box-shadow: none;
     outline: 0;
 }
-
+button.btn.btn-link:has(>img.performer) {
+    color: rgb(var(--link));
+}
+button.btn.btn-link:has(>img.performer):focus:not(:focus-visible) {
+    box-shadow: none;
+    outline-color: rgb(var(--focus-ring-active));
+    outline-offset: -0.10rem;
+    outline-style: solid;
+    outline-width: 0.19rem;    
+}
+button.btn.btn-link:has(>img.performer):focus-visible {
+    outline-color: rgb(var(--focus-ring));
+    outline-offset: -0.10rem;
+    outline-style: solid;
+    outline-width: 0.19rem;
+    box-shadow: none;
+    animation: focus-ring-width-bounce-outer 0.45s cubic-bezier(0.25, 1, 0.5, 1) 0.15s forwards;
+}
 button.minimal.brand-link.d-none.d-md-inline-block.btn.btn-primary {
      text-transform: uppercase;
      font-weight: bold;
@@ -3225,7 +3242,7 @@ button.minimal.brand-link.d-none.d-md-inline-block.btn.btn-primary {
 }
 
 .folder-list .btn-link {
-     color: #dcf6f0;
+     color: rgb(var(--link));
 }
 .folder-list-parent.folder-list-item {
     font-weight: 700;
@@ -12656,6 +12673,9 @@ button[title="Delete Stash ID"].btn-danger {
     position: relative;
     top: 65px;
 }
+form#performer-edit button[title="Delete Stash ID"].btn-danger {
+    top: -4px;
+}
 span.stash-id-pill {
     font-family: var(--MonoFont);
     font-size: 11px;
@@ -12670,6 +12690,9 @@ span.stash-id-pill {
     align-items: stretch;
     width: 100%;
     transition: align-items 0.3s ease-in-out, flex-direction 0.45s ease, column-gap 0.25s ease-in, var(--trans-0);
+}
+#performer-edit span.stash-id-pill {
+    margin-top: 9.5%;
 }
 .stash-id-pill > span {
     background-color: rgb(var(--on-tertiary));
