@@ -10039,6 +10039,7 @@ form#studio-edit {
     background-color: transparent;
     box-shadow: none;
     color: rgb(var(--on-surface-variant));
+    z-index: 5;
 }
 .scene-tabs .duration-input > .input-group > .input-group-append>button.btn.btn-secondary:is(:hover, :focus-visible) {
     background-image: var(--btn-dummy-highlight);
@@ -10070,6 +10071,7 @@ form#studio-edit {
     color: rgb(var(--on-surface-variant));
     background-color: transparent;
     box-shadow: none;
+    z-index: 5;
 }
 .scene-tabs .duration-input>.input-group>.input-group-append>.btn-group-vertical>button.duration-button.btn.btn-secondary:is(:hover, :focus-visible) {
     background-image: var(--btn-dummy-highlight);
