@@ -4907,7 +4907,7 @@ input.form-control-plaintext {
     align-items: center;
     margin-top: 1rem;
     margin-bottom: 2rem !important;
-    column-gap: 0.75rem;
+    gap: 0.75rem;
 }
 .input-group-append {
     position: relative;
@@ -5680,6 +5680,10 @@ button.minimal.btn.btn-primary:has(>a.link>svg.fa-link):is(:focus, :active, :act
     box-shadow: var(--elevation-0);
     filter: none;
     opacity: 1;
+}
+
+#performer-page button.mr-2.btn:is(.btn-primary, .btn-secondary) {
+    margin-right: 0% !important;
 }
 
 /* Lightbox */
@@ -9508,8 +9512,9 @@ input#update-stashids::placeholder {
 }
 #performer-edit .form-group.row > label[for="ignore_auto_tag"].form-label.col-form-label {
     color: rgb(var(--on-surface-variant));
-    margin-bottom: 2%;
+    margin-bottom: 2.5%;
     margin-left: 1rem;
+    margin-top: -0.5%;
     visibility: visible;
 }
 /*#performer-edit .form-group:nth-of-type(8) .col-form-label,
@@ -12675,6 +12680,21 @@ button:is(.favorite, .not-favorite).minimal.favorite-button.btn.btn-primary:hove
     margin-bottom: -9%;
     margin-top: auto;
 }
+#performer-edit .form-group.row > label[for="stash_ids"].form-label.col-form-label {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.85px;
+    text-shadow: var(--light-text-shadow);
+    font-weight: 500;
+    color: rgb(var(--on-surface-variant));
+    position: relative;
+    display: block;
+    background-color: transparent;
+    visibility: visible;
+    margin-left: 1rem;
+    margin-bottom: 2%;
+    margin-top: auto;
+}
 button[title="Delete Stash ID"].btn-danger {
     padding: 0;
     width: 32px;
@@ -12689,7 +12709,10 @@ button[title="Delete Stash ID"].btn-danger {
     top: 65px;
 }
 form#performer-edit button[title="Delete Stash ID"].btn-danger {
-    top: -4px;
+    top: 110px;
+    margin-left: 91%;
+    margin-top: -20%;
+    transform: translate(0%,0%);
 }
 span.stash-id-pill {
     font-family: var(--MonoFont);
@@ -12707,7 +12730,7 @@ span.stash-id-pill {
     transition: align-items 0.3s ease-in-out, flex-direction 0.45s ease, column-gap 0.25s ease-in, var(--trans-0);
 }
 #performer-edit span.stash-id-pill {
-    margin-top: 9.5%;
+    margin-top: 0%;
 }
 .stash-id-pill > span {
     background-color: rgb(var(--on-tertiary));
@@ -12795,7 +12818,8 @@ span.stash-id-pill {
     }
     form#performer-edit button[title="Delete Stash ID"].btn-danger {
         margin-top: -25%;
-        top: 237px;
+        top: 245px;
+        margin-left: 95.5%;
     }
     span.stash-id-pill {
         font-family: var(--MonoFont);
