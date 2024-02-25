@@ -12669,6 +12669,7 @@ span.stash-id-pill {
     flex-direction: column;
     align-items: stretch;
     width: 100%;
+    transition: align-items 0.3s ease-in-out, flex-direction 0.45s ease, column-gap 0.25s ease-in, var(--trans-0);
 }
 .stash-id-pill > span {
     background-color: rgb(var(--on-tertiary));
@@ -12680,29 +12681,65 @@ span.stash-id-pill {
 .stash-id-pill a {
     color: rgb(var(--on-tertiary-container));
     background-color: rgb(var(--tertiary-container));
+    text-decoration: none !important;
+    text-decoration-color: transparent;
+    text-decoration-style: none;
+    text-underline-offset: 0.25em;
+    text-decoration-thickness: 0.12em;
     border-radius: 0 0 8px 8px;
     padding-top: 8px;
     padding-bottom: 8px;
     width: 100%;
-}
-.stash-id-pill a:is(:hover, :focus-visible) {
-    text-decoration: underline;
-    text-decoration-color: currentColor;
-    text-decoration-style: solid;
-    text-underline-offset: 0.25em;
-    text-decoration-thickness: 0.12em;
+    transition: text-decoration-color 0.25s ease-in-out, var(--trans-0);
 }
 .background-image-container + .detail-container span.stash-id-pill {
     margin-top: -6px;
+    flex-direction: column;
+    gap: 0%;
+    align-items: flex-start;
+    transition: align-items 0.3s ease-in-out, flex-direction 0.45s ease, column-gap 0.25s ease-in, var(--trans-0);
 }
 .background-image-container + .detail-container .stash-id-pill > span {
     background-color:transparent;
     color: rgb(var(--on-surface-variant));
-    padding: 0.4em 4px 0.4em 0;
+    padding: 0.4em 4px 4px 0;
 }
 .background-image-container + .detail-container .stash-id-pill a {
     background-color:transparent;
+    text-decoration-color: transparent;
     color: rgb(var(--on-surface));
+    padding: 4px 0 4px;
+}
+.stash-id-pill a:visited {
+    text-decoration: none !important;
+    text-decoration-color: transparent;
+    color: rgb(var(--link-visited));
+    text-decoration-style: none;
+    
+}
+.stash-id-pill a:visited:hover {
+    text-decoration: underline !important;
+    text-decoration-color: rgb(var(--link-visited));
+    color: rgb(var(--link-visited));
+    text-decoration-style: solid;
+}
+..stash-id-pill a:hover {
+    text-decoration-color: rgb(var(--link));
+    color: rgb(var(--link));
+    text-decoration: underline !important;
+    text-decoration-style: solid;
+}
+.stash-id-pill a:where(:active, :active:hover, :active:focus) {
+    text-decoration-color: rgb(var(--link-active));
+    color: rgb(var(--link-active));
+    text-decoration: underline !important;
+    text-decoration-style: solid;
+}
+.stash-id-pill a:not(:active):where(:focus, :focus-visible) {
+    text-decoration-color: rgb(var(--link));
+    color: rgb(var(--link));
+    text-decoration: underline !important;
+    text-decoration-style: solid;
 }
 @media (min-width: 1200px) {
     button[title="Delete Stash ID"].btn-danger {
@@ -12730,6 +12767,14 @@ span.stash-id-pill {
         display: flex;
         flex-direction: column;
         align-items: stretch;
+        transition: align-items 0.3s ease-in-out, flex-direction 0.45s ease, column-gap 0.25s ease-in, var(--trans-0);
+    }
+    .background-image-container + .detail-container span.stash-id-pill {
+        margin-top: -8px;
+        flex-direction: row;
+        align-items: center;
+        column-gap: 12px;
+        transition: align-items 0.3s ease-in-out, flex-direction 0.45s ease, column-gap 0.25s ease-in, var(--trans-0);
     }
     .stash-id-pill > span {
         background-color: rgb(var(--on-tertiary));
@@ -12745,12 +12790,8 @@ span.stash-id-pill {
         padding-top: 8px;
         padding-bottom: 8px;
     }
-    .stash-id-pill a:is(:hover, :focus-visible) {
-        text-decoration: underline;
-        text-decoration-color: currentColor;
-        text-decoration-style: solid;
-        text-underline-offset: 0.25em;
-        text-decoration-thickness: 0.12em;
+    .background-image-container + .detail-container .stash-id-pill a {
+        padding: 0.4em 0 4px 4px;
     }
 }
 
