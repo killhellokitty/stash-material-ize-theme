@@ -10091,7 +10091,7 @@ form#studio-edit {
     margin-right: -39.5%;
 }
 .scene-tabs .duration-input>.input-group:not(.has-validation)>.duration-control.form-control:focus-within:not(:last-child) {
-    box-shadow: 0 0 0 0.07142857142857142rem rgb(var(--pry-color)), inset 0 0 0 0.07142857142857142rem rgb(var(--pry-color));
+    box-shadow: 0 0 0 1px rgb(var(--pry-color)), inset 0 0 0 1px rgb(var(--pry-color));
 }
 
 /*Modal Edit-filter-dialog */
