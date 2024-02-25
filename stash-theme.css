@@ -10027,25 +10027,66 @@ form#studio-edit {
 .scene-tabs .tab-content .fade.tab-pane.active.show .form-group:focus-within .row label.col-form-label {
     color: #00dfc6;
 }
-.scene-tabs .duration-input>.input-group>.input-group-append>button.btn.btn-secondary {
-    border-style: none;
+.scene-tabs .duration-input > .input-group > .input-group-append>button.btn.btn-secondary {
     border: 0;
     border-radius: 5rem;
-    top: 7px;
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 0;
+    padding-right: 0;
+    width: 40px;
+    height: 40px;
+    left: -8px;
+    font-size: 22px;
+    background-color: transparent;
+    box-shadow: none;
+    color: rgb(var(--on-surface-variant));
+}
+.scene-tabs .duration-input > .input-group > .input-group-append>button.btn.btn-secondary:is(:hover, :focus-visible) {
+    background-image: var(--btn-dummy-highlight);
+    background-color: rgb(var(--on-surface),var(--btn-hover));
+    box-shadow: var(--elevation-0);
+}
+.scene-tabs .duration-input > .input-group > .input-group-append>button.btn.btn-secondary:is(:active, :focus, :active:focus) {
+    background-image: var(--btn-dummy-highlight);
+    background-color: rgb(var(--on-surface),var(--btn-active));
+    box-shadow: none;
+    outline: 0;
+}
+.scene-tabs .duration-input>.input-group>.input-group-append {
+    align-items: center;
+}
+.scene-tabs .duration-input>.input-group>.input-group-append>.btn-group-vertical {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 0.25rem;
+    margin-right: 0.75rem;
 }
 .scene-tabs .duration-input>.input-group>.input-group-append>.btn-group-vertical>button.duration-button.btn.btn-secondary {
-    flex: 0 0 28px;
-    max-height: 27px;
     border-radius: 5rem;
     border: 0;
+    width: 40px;
+    padding: 0;
+    font-size: 24px;
+    color: rgb(var(--on-surface-variant));
+    background-color: transparent;
+    box-shadow: none;
+}
+.scene-tabs .duration-input>.input-group>.input-group-append>.btn-group-vertical>button.duration-button.btn.btn-secondary:is(:hover, :focus-visible) {
+    background-image: var(--btn-dummy-highlight);
+    background-color: rgb(var(--on-surface),var(--btn-hover));
+    box-shadow: var(--elevation-0);
+}
+.scene-tabs .duration-input>.input-group>.input-group-append>.btn-group-vertical>button.duration-button.btn.btn-secondary:is(:active, :focus, :active:focus) {
+    background-image: var(--btn-dummy-highlight);
+    background-color: rgb(var(--on-surface),var(--btn-active));
+    box-shadow: none;
+    outline: 0;
 }
 .scene-tabs .duration-input>.input-group:not(.has-validation)>.duration-control.form-control:not(:last-child) {
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
     height: 58px;
-    margin-right: -25%;
+    margin-right: -39.5%;
 }
 .scene-tabs .duration-input>.input-group:not(.has-validation)>.duration-control.form-control:focus-within:not(:last-child) {
     box-shadow: 0 0 0 0.07142857142857142rem #00dfc6, inset 0 0 0 0.07142857142857142rem #00dfc6;
