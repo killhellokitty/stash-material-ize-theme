@@ -12755,6 +12755,10 @@ span.stash-id-pill {
         position: relative;
         top: 25px;
     }
+    form#performer-edit button[title="Delete Stash ID"].btn-danger {
+        margin-top: -25%;
+        top: 237px;
+    }
     span.stash-id-pill {
         font-family: var(--MonoFont);
         font-size: 11px;
@@ -12768,6 +12772,9 @@ span.stash-id-pill {
         flex-direction: column;
         align-items: stretch;
         transition: align-items 0.3s ease-in-out, flex-direction 0.45s ease, column-gap 0.25s ease-in, var(--trans-0);
+    }
+    #performer-edit span.stash-id-pill {
+        margin-top: -1.5%;
     }
     .background-image-container + .detail-container span.stash-id-pill {
         margin-top: -8px;
