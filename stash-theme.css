@@ -4906,7 +4906,7 @@ input.form-control-plaintext {
 #performer-page .details-edit {
     align-items: center;
     margin-top: 1rem;
-    margin-bottom: 2rem !important;
+    margin-bottom: 1.5rem !important;
     gap: 0.75rem;
 }
 .input-group-append {
