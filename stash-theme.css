@@ -9824,7 +9824,7 @@ form#studio-edit {
     padding: 0 1rem 1rem;
 }
 
-#studio-edit .form-group:nth-of-type(-n+3) .col-form-label,
+/*#studio-edit .form-group:nth-of-type(-n+3) .col-form-label,
 #studio-edit .form-group label[for="aliases"].col-form-label {
     visibility: hidden;
     padding: 0 0.2857142857142857rem 0 0.2857142857142857rem;
@@ -9832,7 +9832,7 @@ form#studio-edit {
     top: 0.5714285714285714rem;
     background-color: rgb(var(--body-color2));
     z-index: 3999;
-}
+}*/
 /*#studio-edit .form-group:nth-of-type(1) .col-form-label {
     max-width: 2.857142857142857rem;
     visibility: visible;
