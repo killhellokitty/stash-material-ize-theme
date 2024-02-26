@@ -4718,7 +4718,8 @@ a[href*="/tags"]:has(>h5.card-section-title>.TruncatedText):hover {
     background: none; 
     border:0;
 }
-.studio-details .form-group, .studio-details td { 
+/*.studio-details .form-group, */
+.studio-details td { 
     padding: 8px; 
 }
 .studio-details table td:nth-child(1) {
@@ -4894,7 +4895,7 @@ input.form-control-plaintext {
     border-radius: 10px; 
     margin-bottom:20px;
 }
-.studio-details .form-group,
+/*.studio-details .form-group,*/
 .tag-details form#tag-edit {
     margin:0;
 }
@@ -4933,7 +4934,8 @@ input.form-control-plaintext {
     padding:0px; 
 }
 
-.studio-details .form-group, .movie-details td { 
+/*.studio-details .form-group, */
+.movie-details td { 
     padding: 8px; 
 }
 .studio-details .form-group td:nth-child(1),
@@ -4944,7 +4946,7 @@ input.form-control-plaintext {
     background-color: rgba(16,22,26,0.1); 
 }
 
-.studio-details .form-group, 
+/*.studio-details .form-group, */
 .studio-details table td:nth-child(1) {
     color:#Fff; 
     text-shadow: 0 1px 2px rgba(0,0,0,0.40);
@@ -9819,7 +9821,7 @@ form#studio-edit {
     background-color: rgb(var(--body-color));
     background-blend-mode: screen;
     border-radius: 1rem;
-    padding: 1rem 1rem 0.5rem;
+    padding: 0 1rem 1rem;
 }
 
 #studio-edit .form-group:nth-of-type(-n+3) .col-form-label,
@@ -10627,12 +10629,12 @@ form#movie-edit + .details-edit > button.save.btn.btn-success {
     flex-wrap: nowrap;
 }
 /* Scene Editor --- top spacing filler */
-:is(#movie-edit, #performer-edit) .form-group.row,
+:is(#movie-edit, #performer-edit, #studio-edit) .form-group.row,
 :is(#scene-edit-details, #image-edit-details, #gallery-edit-details) .form-group.row {
     padding-top: 1ex;
 }
 /* Text-Input Column-Form-Label */
-:is(#movie-edit, #performer-edit) .form-group.row > label.form-label.col-form-label,
+:is(#movie-edit, #performer-edit, #studio-edit) .form-group.row > label.form-label.col-form-label,
 :is(#scene-edit-details, #image-edit-details, #gallery-edit-details) .form-container .form-group.row > label.col-form-label.form-label,
 :is(#scene-edit-details, #image-edit-details, #gallery-edit-details) .form-label[for="details"] {
     font-size: 12px;
@@ -10641,7 +10643,7 @@ form#movie-edit + .details-edit > button.save.btn.btn-success {
     font-weight: 500;
     color: rgb(var(--pry-color));
 }
-:is(#movie-edit, #performer-edit) .form-group.row > label.form-label.col-form-label,
+:is(#movie-edit, #performer-edit, #studio-edit) .form-group.row > label.form-label.col-form-label,
 :is(#scene-edit-details, #image-edit-details, #gallery-edit-details) .form-container .form-group.row > label.form-label.col-form-label {
     position: relative;
     display: block;
@@ -10662,7 +10664,7 @@ form#movie-edit + .details-edit > button.save.btn.btn-success {
     /*opacity: 1;*/
     /*transition: margin-bottom 0.2s ease-in, opacity 0.2s, background-color 0.2s;*/
 }
-:is(#movie-edit, #performer-edit) .form-group.row:focus-within > label.form-label.col-form-label,
+:is(#movie-edit, #performer-edit, #studio-edit) .form-group.row:focus-within > label.form-label.col-form-label,
 :is(#scene-edit-details, #gallery-edit-details) .form-container .form-group.row:focus-within > label.form-label.col-form-label,
 :is(#scene-edit-details, #gallery-edit-details) .form-group:focus-within .form-label[for="details"] {
     animation: opacityname 0.3s linear forwards;
@@ -10689,7 +10691,7 @@ form#movie-edit + .details-edit > button.save.btn.btn-success {
 }
 
     /* Title */
-#performer-edit > .form-group.row > label[for="name"].form-label.col-form-label,
+:is(#performer-edit, #studio-edit) > .form-group.row > label[for="name"].form-label.col-form-label,
 :is(#scene-edit-details, #image-edit-details, #gallery-edit-details) .form-container .form-group.row > label[for="title"].form-label.col-form-label {
     padding-top: 8px;
 }
