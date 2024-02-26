@@ -5686,7 +5686,7 @@ button.minimal.btn.btn-primary:has(>a.link>svg.fa-link):is(:focus, :active, :act
     opacity: 1;
 }
 
-#performer-page button.mr-2.btn:is(.btn-primary, .btn-secondary) {
+:is(#performer-page, .studio-details) button.mr-2.btn:is(.btn-primary, .btn-secondary) {
     margin-right: 0% !important;
 }
 
