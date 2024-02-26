@@ -10527,11 +10527,25 @@ form#movie-edit + .details-edit {
     margin-right: -11%;
     padding-right: 4rem;
 }
-
-:is(#movie-edit, #performer-edit) .form-group .input-group:not(.has-validation)>#url.text-input.form-control:not(:last-child) {
+#movie-edit .form-group .input-group:not(.has-validation):has(>input#url.text-input.form-control) {
+    justify-content: flex-end;
+    width: 100%;
+}
+#movie-edit .form-group .input-group:not(.has-validation)>#url.text-input.form-control:not(:last-child) {
     border-radius: 4px;
-    margin-right: -5%;
+    margin-right: auto;
     padding-right: 64px;
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: stretch;
+}
+#movie-edit .form-group .input-group:not(.has-validation) > input#url.text-input.form-control + .input-group-append {
+    position: absolute;
+}
+#performer-edit .form-group .input-group:not(.has-validation)>#url.text-input.form-control:not(:last-child) {
+    border-radius: 4px;
+    padding-right: 64px;
+    margin-right: 0%;
 }
 
 :is(#movie-edit, #performer-edit) .form-group:has(* div.react-select__control) > label.form-label.col-form-label {
