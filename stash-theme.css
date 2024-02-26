@@ -9823,7 +9823,9 @@ form#studio-edit {
     border-radius: 1rem;
     padding: 0 1rem 1rem;
 }
-
+#studio-edit .form-group.row {
+    display: flex;
+}
 /*#studio-edit .form-group:nth-of-type(-n+3) .col-form-label,
 #studio-edit .form-group label[for="aliases"].col-form-label {
     visibility: hidden;
