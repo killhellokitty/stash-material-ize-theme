@@ -9629,8 +9629,8 @@ input#update-stashids::placeholder {
     width: 100%;
 }
 /*#performer-edit .form-group:nth-of-type(3) .string-list-input .input-group button.btn.btn-danger,*/
-#tag-edit .form-group:nth-of-type(2) .string-list-input .input-group button.btn.btn-danger,
-#studio-edit .form-group .string-list-input .input-group .input-group-append button.btn.btn-danger {
+#tag-edit .form-group:nth-of-type(2) .string-list-input .input-group button.btn.btn-danger/*,
+#studio-edit .form-group .string-list-input .input-group .input-group-append button.btn.btn-danger*/ {
     top: 1.1071428571428572rem;
     right: 18px;
     width: 1.7142857142857142rem;
@@ -9645,9 +9645,9 @@ input#update-stashids::placeholder {
 #performer-edit .form-group:nth-of-type(3) .string-list-input .input-group button.btn.btn-danger:not(:disabled):not(.disabled):hover,
 #performer-edit .form-group:nth-of-type(3) .string-list-input .input-group button.btn.btn-danger:not(:disabled):not(.disabled):focus,
 #tag-edit .form-group:nth-of-type(2) .string-list-input .input-group button.btn.btn-danger:not(:disabled):not(.disabled):hover,
-#tag-edit .form-group:nth-of-type(2) .string-list-input .input-group button.btn.btn-danger:not(:disabled):not(.disabled):focus,
+#tag-edit .form-group:nth-of-type(2) .string-list-input .input-group button.btn.btn-danger:not(:disabled):not(.disabled):focus/*,
 #studio-edit .form-group .string-list-input .input-group .input-group-append button.btn.btn-danger:not(:disabled):not(.disabled):hover,
-#studio-edit .form-group .string-list-input .input-group .input-group-append button.btn.btn-danger:not(:disabled):not(.disabled):focus {
+#studio-edit .form-group .string-list-input .input-group .input-group-append button.btn.btn-danger:not(:disabled):not(.disabled):focus*/ {
     border-color: #c0ebe2;
     color: #c0ebe2;
     background-color: rgba(255,255,255,0.15);
@@ -9663,34 +9663,44 @@ input#update-stashids::placeholder {
 #tag-edit .form-group:nth-of-type(2) .string-list-input .input-group button.btn.btn-danger:not(:disabled):not(.disabled):active:hover,
 #tag-edit .form-group:nth-of-type(2) .string-list-input .input-group button.btn.btn-danger:not(:disabled):not(.disabled).active:hover,
 #tag-edit .form-group:nth-of-type(2) .string-list-input .input-group button.btn.btn-danger:not(:disabled):not(.disabled):active:focus,
-#tag-edit .form-group:nth-of-type(2) .string-list-input .input-group button.btn.btn-danger:not(:disabled):not(.disabled).active:focus,
+#tag-edit .form-group:nth-of-type(2) .string-list-input .input-group button.btn.btn-danger:not(:disabled):not(.disabled).active:focus/*,
 #studio-edit .form-group .string-list-input .input-group .input-group-append button.btn.btn-danger:not(:disabled):not(.disabled):active,
 #studio-edit .form-group .string-list-input .input-group .input-group-append button.btn.btn-danger:not(:disabled):not(.disabled).active,
 #studio-edit .form-group .string-list-input .input-group .input-group-append button.btn.btn-danger:not(:disabled):not(.disabled):active:hover,
 #studio-edit .form-group .string-list-input .input-group .input-group-append button.btn.btn-danger:not(:disabled):not(.disabled).active:hover,
 #studio-edit .form-group .string-list-input .input-group .input-group-append button.btn.btn-danger:not(:disabled):not(.disabled):active:focus,
-#studio-edit .form-group .string-list-input .input-group .input-group-append button.btn.btn-danger:not(:disabled):not(.disabled).active:focus {
+#studio-edit .form-group .string-list-input .input-group .input-group-append button.btn.btn-danger:not(:disabled):not(.disabled).active:focus*/ {
     border-color: #c0ebe2;
     color: #c0ebe2;
     background-color: rgba(255,255,255,0.23);
 }
 #performer-edit .form-group:nth-of-type(3) .string-list-input .input-group button.btn.btn-danger:not(:disabled):not(.disabled):focus-visible,
 #tag-edit .form-group:nth-of-type(2) .string-list-input .input-group button.btn.btn-danger:not(:disabled):not(.disabled):focus-visible,
-#studio-edit .form-group .string-list-input .input-group .input-group-append button.btn.btn-danger:not(:disabled):not(.disabled):focus-visible {
+/*#studio-edit .form-group .string-list-input .input-group .input-group-append button.btn.btn-danger:not(:disabled):not(.disabled):focus-visible*/ {
     border-color: #c0ebe2;
     color: #c0ebe2;
     background-color: rgba(255,255,255,0.15);
 }
 #performer-edit .form-group:nth-of-type(3) .string-list-input .input-group:not(.has-validation)>.form-control:not(:last-child),
-#tag-edit .form-group:nth-of-type(2) .string-list-input .input-group:not(.has-validation)>.form-control:not(:last-child),
-#studio-edit .form-group .string-list-input .input-group:not(.has-validation)>.form-control:not(:last-child) {
+#tag-edit .form-group:nth-of-type(2) .string-list-input .input-group:not(.has-validation)>.form-control:not(:last-child)/*,
+#studio-edit .form-group .string-list-input .input-group:not(.has-validation)>.form-control:not(:last-child)*/ {
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
     padding-right: 3.7142857142857144rem;
 }
-.studio-details #studio-edit .form-group:nth-of-type(2) .string-list-input .input-group:not(.has-validation)>.form-control:not(:last-child) {
-    margin-right: -34px;
-    margin-left: -10px;
+#studio-edit .form-group.row:has(>label[for="aliases"]) input.text-input.form-control {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    border-radius: 4px;
+    padding-right: 64px;
+}
+#studio-edit .form-group.row:has(>label[for="aliases"]) input + .input-group-append {
+    display: inline-flex;
+    margin-left: 92%;
+    position: absolute;
+    margin-top: 1%;
+    z-index: 5;
 }
 /*#performer-edit .form-group:nth-of-type(5) .input-group.has-validation>#birthdate.form-control,
 #performer-edit .form-group:nth-of-type(6) .input-group.has-validation>#death_date.form-control,*/
@@ -9826,6 +9836,13 @@ form#studio-edit {
 #studio-edit .form-group.row {
     display: flex;
 }
+#studio-edit .form-group.row > label[for="aliases"].form-label.col-form-label {
+    visibility: visible;
+    color: rgb(var(--on-surface-variant));
+}
+#studio-edit .form-group.row:focus-within > label[for="aliases"].form-label.col-form-label {
+    color: rgb(var(--pry-color));
+}
 /*#studio-edit .form-group:nth-of-type(-n+3) .col-form-label,
 #studio-edit .form-group label[for="aliases"].col-form-label {
     visibility: hidden;
@@ -9840,22 +9857,22 @@ form#studio-edit {
     visibility: visible;
     color: #c0ebe2;
 }*/
-#studio-edit .form-group:nth-of-type(2) .col-form-label {
+/*#studio-edit .form-group:nth-of-type(2) .col-form-label {
     max-width: 2.142857142857143rem;
     visibility: visible;
     color: #c0ebe2;
-}
+}*/
 #studio-edit .form-group:nth-of-type(3) .col-form-label {
     max-width: 31px;
     visibility: visible;
     color: #c0ebe2;
 }
-#studio-edit .form-group label[for="aliases"].col-form-label {
+/*#studio-edit .form-group label[for="aliases"].col-form-label {*/
     /*top: 1.0714285714285714rem;*/
-    max-width: 3.4285714285714284rem;
+    /*max-width: 3.4285714285714284rem;
     visibility: visible;
     color: #c0ebe2;
-}
+}*/
 #studio-edit .form-group:nth-of-type(4) .col-form-label {
     max-width: 9.857142857142858rem;
     flex-basis: 9.857142857142858rem;
@@ -9894,11 +9911,11 @@ form#studio-edit {
 .studio-head .form-group:has(input#ignore-auto-tag[value="true"]) .form-label.col-form-label[for="ignore-auto-tag"] {
     color: #00dfc6;
 }
-#studio-edit .form-group:focus-within:nth-of-type(-n+3) .col-form-label,
+/*#studio-edit .form-group:focus-within:nth-of-type(-n+3) .col-form-label,
 #studio-edit .form-group:focus-within label[for="aliases"].col-form-label {
     color: #00dfc6;
     visibility: visible;
-}
+}*/
 #studio-edit .form-group:has(>.col-9 .is-invalid) .col-form-label {
     color: #93000a;
 }
