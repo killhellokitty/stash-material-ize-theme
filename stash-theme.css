@@ -11385,7 +11385,7 @@ button.sprite-button.btn.btn-link > svg.fa-image {
 
 .studio-tabs select#stash-box-endpoint {
     background-position: calc(100% - 1px) center;
-    margin-right: 120px;
+    margin-right: 420px;
 }
 @media (min-width 760px) {
     .studio-tabs select#stash-box-endpoint {
