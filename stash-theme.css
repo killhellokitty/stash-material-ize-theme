@@ -4906,9 +4906,9 @@ input.form-control-plaintext {
     gap: 0.75rem;
     margin-bottom: 0.5rem;
 }
-#performer-page .details-edit {
+:is(#performer-page, .studio-details) .details-edit {
     align-items: center;
-    margin-top: 1rem;
+    margin-top: 1rem !important;
     margin-bottom: 1.5rem !important;
     gap: 0.75rem;
 }
