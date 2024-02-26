@@ -10383,9 +10383,17 @@ div#create-scene-page {
     padding: 0.5rem 1rem 1rem;
 }
 
-form#movie-edit + .details-edit {
+form#movie-edit + .details-edit.mt-3 {
     padding-top: 0.5rem;
     margin-left: 2.5%;
+    column-gap: 0.75rem;
+}
+form#movie-edit + .details-edit.mt-3 .mr-2 {
+    margin-right: 0% !important;
+}
+form#movie-edit + .details-edit > button.save.btn.btn-success {
+    margin-right: auto;
+    margin-left: auto;
 }
 
 @media (min-width: 768px) {
@@ -12749,6 +12757,7 @@ span.stash-id-pill {
     padding-top: 8px;
     padding-bottom: 8px;
     display: flex;
+    width: 100%;
 }
 .stash-id-pill a {
     color: rgb(var(--on-tertiary-container));
@@ -12763,6 +12772,7 @@ span.stash-id-pill {
     padding-bottom: 8px;
     width: 100%;
     display: flex;
+    justify-content: flex-end;
     transition: text-decoration-color 0.25s ease-in-out, var(--trans-0);
 }
 .background-image-container + .detail-container span.stash-id-pill {
@@ -12773,9 +12783,9 @@ span.stash-id-pill {
     transition: align-items 0.3s ease-in-out, flex-direction 0.45s ease, column-gap 0.25s ease-in, var(--trans-0);
 }
 .background-image-container + .detail-container .stash-id-pill > span {
-    background-color:transparent;
+    background-color: transparent;
     color: rgb(var(--on-surface-variant));
-    padding: 0.4em 4px 4px 0;
+    padding: 4px 0;
 }
 .background-image-container + .detail-container .stash-id-pill a {
     background-color:transparent;
@@ -12839,7 +12849,7 @@ span.stash-id-pill {
         font-weight: 500;
         text-shadow: var(--really-light-txt-shadow);
         line-height: 14px;
-        letter-spacing: 0.045em;
+        letter-spacing: 0.075em;
         vertical-align: middle;
         margin-top: 8px;
         display: flex;
@@ -12851,7 +12861,7 @@ span.stash-id-pill {
         margin-top: -1.5%;
     }
     .background-image-container + .detail-container span.stash-id-pill {
-        margin-top: -8px;
+        margin-top: -5px;
         flex-direction: row;
         align-items: center;
         column-gap: 12px;
@@ -12872,7 +12882,7 @@ span.stash-id-pill {
         padding-bottom: 8px;
     }
     .background-image-container + .detail-container .stash-id-pill a {
-        padding: 0.4em 0 4px 4px;
+        padding: 4px 0;
     }
 }
 
