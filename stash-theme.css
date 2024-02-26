@@ -9697,7 +9697,7 @@ input#update-stashids::placeholder {
 }
 #studio-edit .form-group.row:has(>label[for="aliases"]) input + .input-group-append {
     display: inline-flex;
-    margin-left: 92%;
+    margin-left: 93%;
     position: absolute;
     margin-top: 1%;
     z-index: 5;
