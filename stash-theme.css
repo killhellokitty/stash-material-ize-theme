@@ -9514,7 +9514,7 @@ input#update-stashids::placeholder {
     color: rgb(var(--on-surface-variant));
     visibility: visible;
 }
-#performer-edit .form-group.row > label[for="ignore_auto_tag"].form-label.col-form-label {
+:is(#performer-edit, #studio-edit) .form-group.row > label[for="ignore_auto_tag"].form-label.col-form-label {
     color: rgb(var(--on-surface-variant));
     margin-bottom: 2.5%;
     margin-left: 1rem;
@@ -9862,29 +9862,29 @@ form#studio-edit {
     visibility: visible;
     color: #c0ebe2;
 }*/
-#studio-edit .form-group:nth-of-type(3) .col-form-label {
+/*#studio-edit .form-group:nth-of-type(3) .col-form-label {
     max-width: 31px;
     visibility: visible;
     color: #c0ebe2;
-}
+}*/
 /*#studio-edit .form-group label[for="aliases"].col-form-label {*/
     /*top: 1.0714285714285714rem;*/
     /*max-width: 3.4285714285714284rem;
     visibility: visible;
     color: #c0ebe2;
 }*/
-#studio-edit .form-group:nth-of-type(4) .col-form-label {
+/*#studio-edit .form-group:nth-of-type(4) .col-form-label {
     max-width: 9.857142857142858rem;
     flex-basis: 9.857142857142858rem;
     padding-bottom: 0.2857142857142857rem;
     padding-left: 2.357142857142857rem;
     color: #c0ebe2;
-}
-#studio-edit .form-group:nth-of-type(5) .col-form-label {
+}*/
+/*#studio-edit .form-group:nth-of-type(5) .col-form-label {
     padding-bottom: 0.2857142857142857rem;
     padding-left: 2.357142857142857rem;
     color: #c0ebe2;
-}
+}*/
 #studio-edit>.row:not(.form-group)>.col-form-label {
     padding-left: 4rem;
     color: #c0ebe2;
@@ -10587,7 +10587,7 @@ form#movie-edit + .details-edit > button.save.btn.btn-success {
     margin-right: -40px;
 }
 
-:is(#movie-edit, #performer-edit) .form-group:has(* div.react-select__control) > label.form-label.col-form-label {
+:is(#movie-edit, #performer-edit, #studio-edit) .form-group:has(* div.react-select__control) > label.form-label.col-form-label {
     visibility: visible;
     color: rgb(var(--on-surface-variant));
     margin-left: 1rem;
