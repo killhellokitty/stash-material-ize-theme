@@ -9473,7 +9473,7 @@ input#update-stashids::placeholder {
     z-index: -1;
 }*/
 #performer-edit .form-group:nth-of-type(4) select.input-control.form-control[name="gender"] {
-    background-position: calc( 100% - 18px ) center;
+    background-position: calc( 100% - 11px ) center;
 }
 
 /*.new-view#performer-page #performer-edit .form-group:nth-of-type(-n+23):not(:nth-of-type(4)):not(:nth-of-type(7)):not(:nth-of-type(14)) .col-form-label::before {
@@ -9709,7 +9709,7 @@ input#update-stashids::placeholder {
 #image-edit-details .form-group:nth-of-type(3) .input-group.has-validation>#date.form-control:active:placeholder {
     visibility: visible;
 }
-#performer-edit .form-group:nth-of-type(20) .input-group:not(.has-validation)>#url.form-control:not(:last-child),
+/*#performer-edit .form-group:nth-of-type(20) .input-group:not(.has-validation)>#url.form-control:not(:last-child),*/
 #gallery-edit-details .form-group:nth-of-type(2) .input-group:not(.has-validation)>#url.form-control:not(:last-child) {
     border-radius: 4px;
     margin-right: -40px;
@@ -10549,7 +10549,7 @@ form#movie-edit + .details-edit > button.save.btn.btn-success {
 #performer-edit .form-group .input-group:not(.has-validation)>#url.text-input.form-control:not(:last-child) {
     border-radius: 4px;
     padding-right: 64px;
-    margin-right: 0%;
+    margin-right: -40px;
 }
 
 :is(#movie-edit, #performer-edit) .form-group:has(* div.react-select__control) > label.form-label.col-form-label {
