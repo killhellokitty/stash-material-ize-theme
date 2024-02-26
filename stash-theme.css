@@ -9805,9 +9805,12 @@ form#tag-edit {
 
 /* Studio Editor */
 form#studio-edit {
-    margin-top: 24px;
-    /*background-color: #414846;*/
+    margin-top: 2rem;
+    background-image: var(--btn-dummy-highlight);
+    background-color: rgb(var(--body-color));
+    background-blend-mode: screen;
     border-radius: 1rem;
+    padding: 1rem 1rem 0.5rem;
 }
 
 #studio-edit .form-group:nth-of-type(-n+3) .col-form-label,
