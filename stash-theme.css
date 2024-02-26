@@ -9804,6 +9804,15 @@ form#tag-edit {
 
 
 /* Studio Editor */
+.studio-details {
+    padding-top: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.studio-details > h2 {
+    color: rgb(var(--setting-h1));
+}
+
 form#studio-edit {
     margin-top: 2rem;
     background-image: var(--btn-dummy-highlight);
@@ -9822,11 +9831,11 @@ form#studio-edit {
     background-color: rgb(var(--body-color2));
     z-index: 3999;
 }
-#studio-edit .form-group:nth-of-type(1) .col-form-label {
+/*#studio-edit .form-group:nth-of-type(1) .col-form-label {
     max-width: 2.857142857142857rem;
     visibility: visible;
     color: #c0ebe2;
-}
+}*/
 #studio-edit .form-group:nth-of-type(2) .col-form-label {
     max-width: 2.142857142857143rem;
     visibility: visible;
@@ -10428,7 +10437,7 @@ form#movie-edit + .details-edit > button.save.btn.btn-success {
     padding-top: 0.5rem;
 }
 
-:is(#movie-edit, #performer-edit) > .form-group.row > label[for="name"].form-label.col-form-label:has(+div>input.text-input.is-invalid) {
+:is(#movie-edit, #performer-edit, #studio-edit) > .form-group.row > label[for="name"].form-label.col-form-label:has(+div>input.text-input.is-invalid) {
     color: rgb(var(--error-container));
 }
 /*#movie-edit .form-group .col-form-label {
