@@ -568,9 +568,7 @@ input:not(.login input)::-webkit-autofill:focus {
 
 #root {
      position: absolute;
-     width: 100%;
-     height: 100%;
-     z-index: 2;
+     z-index: 1;
 }
 
 /* ||Check-Boxes & Radio */
