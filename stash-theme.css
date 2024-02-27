@@ -10443,7 +10443,6 @@ div#create-scene-page {
 
 form#movie-edit + .details-edit.mt-3 {
     padding-top: 0.5rem;
-    margin-left: 2.5%;
     column-gap: 0.75rem;
 }
 form#movie-edit + .details-edit.mt-3 .mr-2 {
@@ -11336,8 +11335,7 @@ button.sprite-button.btn.btn-link > svg.fa-image {
     border-radius: 0;
 }
 
-.search-result .performer-select .react-select__control, 
-.search-result .studio-select .react-select__control {
+.search-result :is(.performer-select, .studio-select) .react-select__control {
     background-image: var(--btn-dummy-highlight);
     background-color: rgb(var(--sec-container));
     background-blend-mode: normal;
@@ -11354,65 +11352,54 @@ button.sprite-button.btn.btn-link > svg.fa-image {
     transition: var(--trans-0);
     -webkit-transition: var(--trans-0);
 }
-.search-result .performer-select .react-select__control:is(:hover, :focus-visible), 
-.search-result .studio-select .react-select__control:is(:hover, :focus-visible) {
+.search-result :is(.performer-select, .studio-select) .react-select__control:is(:hover, :focus-visible) {
     background-image: var(--btn-hover-highlight);
     background-color: rgb(var(--sec-container));
     background-blend-mode: screen;
     box-shadow: none;
 }
-.search-result .performer-select .react-select__control.react-select__control--is-focused, 
-.search-result .studio-select .react-select__control.react-select__control--is-focused,
-.search-result .performer-select .react-select__control.react-select__control--is-focused:hover, 
-.search-result .studio-select .react-select__control.react-select__control--is-focused:hover {
+.search-result :is(.performer-select, .studio-select) .react-select__control.react-select__control--is-focused,
+.search-result :is(.performer-select, .studio-select) .react-select__control.react-select__control--is-focused:hover {
     background-image: var(--btn-active-highlight);
     background-color: rgb(var(--sec-container));
     background-blend-mode: screen;
     box-shadow: none;
     outline: 0;
 }
-.search-result .performer-select-active .react-select__control, 
-.search-result .studio-select-active .react-select__control {
+.search-result :is(.performer-select-active, .studio-select-active) .react-select__control {
     background-image: var(--btn-dummy-highlight);
     background-color: rgb(var(--pry-container));
     background-blend-mode: normal;
     box-shadow: none;
 }
-.search-result .performer-select-active .react-select__control:is(:hover, :focus-visible), 
-.search-result .studio-select-active .react-select__control:is(:hover, :focus-visible) {
+.search-result :is(.performer-select-active, .studio-select-active) .react-select__control:is(:hover, :focus-visible) {
     background-image: var(--btn-hover-highlight);
     background-color: rgb(var(--pry-container));
     background-blend-mode: screen;
     box-shadow: none;
 }
-.search-result .performer-select-active  .react-select__control.react-select__control--is-focused, 
-.search-result .studio-select-active  .react-select__control.react-select__control--is-focused,
-.search-result .performer-select-active  .react-select__control.react-select__control--is-focused:hover, 
-.search-result .studio-select-active  .react-select__control.react-select__control--is-focused:hover {
+.search-result :is(.performer-select-active, .studio-select-active)  .react-select__control.react-select__control--is-focused,
+.search-result :is(.performer-select-active, .studio-select-active)  .react-select__control.react-select__control--is-focused:hover {
     background-image: var(--btn-active-highlight);
     background-color: rgb(var(--pry-container));
     background-blend-mode: screen;
     box-shadow: none;
     outline: 0;
 }
-.search-result .performer-select .react-select__control > .react-select__value-container, 
-.search-result .studio-select .react-select__control > .react-select__value-container {
+.search-result :is(.performer-select, .studio-select) .react-select__control > .react-select__value-container {
     min-height: 40px;
 }
-.search-result .performer-select .react-select__control > .react-select__value-container > .react-select__placeholder, 
-.search-result .studio-select .react-select__control > .react-select__value-container > .react-select__placeholder {
+.search-result :is(.performer-select, .studio-select) .react-select__control > .react-select__value-container > .react-select__placeholder {
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
     letter-spacing: 0.25px;
     color: rgb(var(--on-sec-container));
 }
-.search-result .performer-select .react-select__control.react-select__control--is-focused > .react-select__value-container > .react-select__placeholder, 
-.search-result .studio-select .react-select__control.react-select__control--is-focused > .react-select__value-container > .react-select__placeholder {
+.search-result :is(.performer-select, .studio-select) .react-select__control.react-select__control--is-focused > .react-select__value-container > .react-select__placeholder {
     visibility: hidden;
 }
-.search-result .performer-select .react-select__control > .react-select__value-container + .react-select__indicators > .react-select__indicator.react-select__dropdown-indicator:is(:hover, :focus, :active, :active:focus), 
-.search-result .studio-select .react-select__control > .react-select__value-container + .react-select__indicators > .react-select__indicator.react-select__dropdown-indicator:is(:hover, :focus, :active, :active:focus) {
+.search-result :is(.performer-select, .studio-select) .react-select__control > .react-select__value-container + .react-select__indicators > .react-select__indicator.react-select__dropdown-indicator:is(:hover, :focus, :active, :active:focus) {
     background-color: transparent;
     color: rgb(var(--on-surface-variant));
 }
