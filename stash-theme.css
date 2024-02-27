@@ -9447,7 +9447,7 @@ input#update-stashids::placeholder {
         max-width: 100%;
     }
 }
-@media (min-width: 1200) {
+@media (min-width: 1200px) {
     .details-edit.col-xl-9.mt-3 {
         max-width: 100%;
     }
