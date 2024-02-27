@@ -9516,9 +9516,10 @@ input#update-stashids::placeholder {
 }
 :is(#performer-edit, #studio-edit) .form-group.row > label[for="ignore_auto_tag"].form-label.col-form-label {
     color: rgb(var(--on-surface-variant));
-    margin-bottom: 2.5%;
+    margin-bottom: auto;
     margin-left: 1rem;
-    margin-top: -0.5%;
+    margin-top: 2%;
+    top: -10px;
     visibility: visible;
 }
 /*#performer-edit .form-group:nth-of-type(8) .col-form-label,
