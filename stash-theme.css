@@ -2037,7 +2037,7 @@ button.tag-list-button.btn.btn-secondary:not(:has(>.tag-list-anchor)):disabled {
 }
 
 .invalid-feedback {
-    color: #ffb4ab;
+    color: rgb(var(--error-container-sel));
     margin-top: 4px;
     font-size: 11px;
     padding-left: 16px;
