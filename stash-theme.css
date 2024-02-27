@@ -9688,6 +9688,10 @@ input#update-stashids::placeholder {
     border-bottom-right-radius: 4px;
     padding-right: 3.7142857142857144rem;
 }
+
+#studio-edit .form-group.row:has(>label[for="aliases"]) .form-group {
+    margin-bottom: -1%;
+}
 #studio-edit .form-group.row:has(>label[for="aliases"]) input.text-input.form-control {
     margin-left: auto;
     margin-right: auto;
