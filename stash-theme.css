@@ -857,9 +857,7 @@ input:is(#batch-search-delay, #colorize-color-green, #colorize-color-yellow, #co
 
 .text-input:hover,
 input:is(#batch-search-delay, #colorize-color-green, #colorize-color-yellow, #colorize-color-red).query-text-field.bg-secondary.text-white.border-secondary.form-control:hover {
-    border: 0;
-    border-style: none;
-    box-shadow: inset 0 0 0 1px transparent;
+    box-shadow: var(--elevation-0), var(--elevation-0-inverse);
     border: 1px solid rgb(var(--on-surface));
 }
 input:is(#batch-search-delay, #colorize-color-green, #colorize-color-yellow, #colorize-color-red).query-text-field.bg-secondary.text-white.border-secondary.form-control:hover {
@@ -869,7 +867,7 @@ input:is(#batch-search-delay, #colorize-color-green, #colorize-color-yellow, #co
 .text-input:active,
 input:is(#batch-search-delay, #colorize-color-green, #colorize-color-yellow, #colorize-color-red).query-text-field.bg-secondary.text-white.border-secondary.form-control:is(:active, :focus) {
     background-color: rgb(var(--body-color2)) !important; 
-    box-shadow: inset 0 0 0 1px rgb(var(--pry-color));
+    box-shadow: inset 0 0 0 1px rgb(var(--pry-color)), var(--elevation-0), var(--elevation-0-inverse);
     border: 1px solid rgb(var(--pry-color));
     outline: none;
 }
@@ -922,25 +920,21 @@ input:is(#batch-search-delay, #colorize-color-green, #colorize-color-yellow, #co
 
 .was-validated .form-control:invalid,
 .form-control.is-invalid {
-   border: 0;
+   border: 1px solid rgb(var(--error-container));
    background-image: none;
-   border-style: none;
-   caret-color: rgb(var(--error-container));
-   box-shadow: 0 0 0 1px rgb(var(--error-container)), inset 0 0 0 1px transparent;
-   transition: box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1); 
+   caret-color: rgb(var(--interactive-input));
+   box-shadow: var(--elevation-0), var(--elevation-0-inverse);
+   transition: var(--trans-0); 
 }
 .was-validated .form-control:invalid:hover,
 .form-control.is-invalid:hover {
-    border: 0;
-    border-style: none;
-    box-shadow: 0 0 0 1px rgb(var(--on-error-container)), inset 0 0 0 1px transparent;
+    border: 1px solid rgb(var(--error-container-sel));
 }
 .was-validated .form-control:invalid:focus,
 .form-control.is-invalid:focus,
 .form-container .string-list-input.is-invalid > .form-group:focus-within .input-group > input.is-invalid.form-control {
-    border: 0;
-    border-style: none;
-    box-shadow: 0 0 0 1px rgb(var(--error-container)), inset 0 0 0 1px rgb(var(--error-container));
+    border: 1px solid rgb(var(--on-error));
+    box-shadow: var(--elevation-0), inset 0 0 0 1px rgb(var(--on-error)), var(--elevation-0-inverse);
 }
 .was-validated .form-control:invalid:not(:focus):focus-visible,
 .form-control.is-invalid:not(:focus):focus-visible {
@@ -2039,11 +2033,12 @@ button.tag-list-button.btn.btn-secondary:not(:has(>.tag-list-anchor)):disabled {
 .invalid-feedback {
     color: rgb(var(--error));
     margin-top: 4px;
+    margin-bottom: -20px;
     font-size: 11px;
     padding-left: 16px;
     font-weight: 500;
     line-height: 16px;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.065em;
 }
 
 /* Button-Small */
@@ -4915,15 +4910,16 @@ input.form-control-plaintext {
 .input-group-append {
     position: relative;
 }
-.input-control, .text-input {
+.input-control, 
+.text-input {
     color: rgb(var(--interactive-input));
-    box-shadow: inset 0 0 0 1px transparent;
+    box-shadow: var(--elevation-0), var(--elevation-0-inverse);
     border: 1px solid rgb(var(--outline));
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
     letter-spacing: 0.15px;
-    caret-color: rgb(var(--pry-color));
+    caret-color: rgb(var(--interactive-input));
 }
 .studio-details table div.react-select__control {
     background: none; 
@@ -9441,11 +9437,26 @@ input#update-stashids::placeholder {
     padding: 0.5714285714285714rem 1.0714285714285714rem;
 }
 /* Performer Labels */
+@media (max-width: 720px) {
+    .detail-header-image {
+        float: unset;
+        padding: 0;
+    }
+}
 @media (min-width: 576px) {
     .col-sm-9 {
         flex: 0 0 100%;
         max-width: 100%;
     }
+}
+@media (min-width: 1200) {
+    .details-edit.col-xl-9.mt-3 {
+        max-width: 100%;
+    }
+}
+
+.details-edit .btn {
+    margin-right: 0% !important;
 }
 /*#performer-edit .form-group .col-form-label,
 #tag-edit .form-group .col-form-label,
@@ -9476,7 +9487,7 @@ input#update-stashids::placeholder {
     position: absolute;
     z-index: -1;
 }*/
-#performer-edit .form-group:nth-of-type(4) select.input-control.form-control[name="gender"] {
+#performer-edit .form-group:nth-of-type(4) select.input-control.form-control[name="gender"] { /* Select's Down-Arrow placement */
     background-position: calc( 100% - 11px ) center;
 }
 
@@ -9493,28 +9504,35 @@ input#update-stashids::placeholder {
     max-width: 7rem;
     width: 7rem;
 }*/
-#performer-edit .row.form-group label[for="alias_list"].form-label.col-form-label,
-#performer-edit .col-form-label[for="alias_list"]::before {
+#performer-edit .row.form-group label[for="alias_list"].form-label.col-form-label { /* Keeps Input title visible */
     color: rgb(var(--on-surface-variant));
     visibility: visible;
 }
-#performer-edit .row.form-group label:is([for="gender"], [for="circumcised"]).form-label.col-form-label {
+
+#performer-edit .row.form-group label:is([for="gender"], [for="circumcised"]).form-label.col-form-label { /* Title's placement and visiblity */
+        color: rgb(var(--on-surface-variant));
+        margin-left: 1rem;
+        margin-bottom: 6%;
+        margin-top: -2%;
+        bottom: 0%;
+        visibility: visible;
+}
+@media (min-width: 1200px) {
+    #performer-edit .row.form-group label:is([for="gender"], [for="circumcised"]).form-label.col-form-label { /* Title's placement and visiblity */
+        margin-left: 1rem;
+        margin-bottom: 2%;
+    }
+}
+
+#performer-edit .row.form-group label[for="birthdate"].form-label.col-form-label { /* Keeps Input title visible */
     color: rgb(var(--on-surface-variant));
-    margin-left: 1rem;
-    margin-bottom: 2%;
     visibility: visible;
 }
-#performer-edit .row.form-group label[for="birthdate"].form-label.col-form-label,
-#performer-edit .col-form-label[for="birthdate"]::before {
+#performer-edit .row.form-group label[for="death_date"].form-label.col-form-label { /* Keeps Input title visible */
     color: rgb(var(--on-surface-variant));
     visibility: visible;
 }
-#performer-edit .row.form-group label[for="death_date"].form-label.col-form-label,
-#performer-edit .col-form-label[for="death_date"]::before {
-    color: rgb(var(--on-surface-variant));
-    visibility: visible;
-}
-:is(#performer-edit, #studio-edit) .form-group.row > label[for="ignore_auto_tag"].form-label.col-form-label {
+:is(#performer-edit, #studio-edit) .form-group.row > label[for="ignore_auto_tag"].form-label.col-form-label { /* Title's placement and visiblity */
     color: rgb(var(--on-surface-variant));
     margin-bottom: auto;
     margin-left: 1rem;
@@ -9597,7 +9615,7 @@ input#update-stashids::placeholder {
     max-width: 3.357142857142857rem;
     width: 3.357142857142857rem;
 }*/
-#performer-edit .form-group:focus-within:nth-of-type(-n+23):not(:nth-of-type(4)):not(:nth-of-type(7)):not(:nth-of-type(14)) .col-form-label {
+#performer-edit .form-group:focus-within:nth-of-type(-n+23):not(:nth-of-type(4)):not(:nth-of-type(7)):not(:nth-of-type(14)) .col-form-label { /* Input focused Title's color and visibility */
     color: rgb(var(--pry-color));
     visibility: visible;
 }
@@ -9607,7 +9625,7 @@ input#update-stashids::placeholder {
 }*/
 
 /* Labels of React-Combo-Boxs */
-#performer-edit .form-group:nth-of-type(4) .col-form-label,
+/*#performer-edit .form-group:nth-of-type(4) .col-form-label,
 #performer-edit .form-group:nth-of-type(7) .col-form-label,
 #performer-edit .form-group:nth-of-type(14) .col-form-label,
 #performer-edit .col-form-label[for="tags"],
@@ -9621,11 +9639,11 @@ input#update-stashids::placeholder {
     font-weight: 400;
     line-height: 1.1428571428571428rem;
     letter-spacing: 0.028571428571428574rem;
-}
-#performer-edit .col-form-label[for="ignore-auto-tag"] {
+}*/
+/*#performer-edit .col-form-label[for="ignore-auto-tag"] {
     left: 24px;
     top: 23px;
-}
+}*/
 #performer-edit .form-group .col-auto {
     width: 100%;
 }
@@ -9643,10 +9661,10 @@ input#update-stashids::placeholder {
     background-color: transparent;
     color: rgb(var(--error));
 }
-#performer-edit .form-group:nth-of-type(3) .string-list-input .input-group button.btn.btn-danger:not(:disabled):not(.disabled):hover,
+/*#performer-edit .form-group:nth-of-type(3) .string-list-input .input-group button.btn.btn-danger:not(:disabled):not(.disabled):hover,
 #performer-edit .form-group:nth-of-type(3) .string-list-input .input-group button.btn.btn-danger:not(:disabled):not(.disabled):focus,
 #tag-edit .form-group:nth-of-type(2) .string-list-input .input-group button.btn.btn-danger:not(:disabled):not(.disabled):hover,
-#tag-edit .form-group:nth-of-type(2) .string-list-input .input-group button.btn.btn-danger:not(:disabled):not(.disabled):focus/*,
+#tag-edit .form-group:nth-of-type(2) .string-list-input .input-group button.btn.btn-danger:not(:disabled):not(.disabled):focus*//*,
 #studio-edit .form-group .string-list-input .input-group .input-group-append button.btn.btn-danger:not(:disabled):not(.disabled):hover,
 #studio-edit .form-group .string-list-input .input-group .input-group-append button.btn.btn-danger:not(:disabled):not(.disabled):focus*/ {
     border-color: #c0ebe2;
@@ -12780,7 +12798,7 @@ form:is(#performer-edit, #studio-edit) button[title="Delete Stash ID"].btn-dange
     margin-top: auto;
     margin-left: auto;
     margin-bottom: auto;
-    top: -15px;
+    top: -12px;
     right: 8.5%;
     bottom: 0%;
     margin-right: 0% !important;
@@ -12884,9 +12902,13 @@ span.stash-id-pill {
         margin-left: 85%;
     }
     form:is(#performer-edit, #studio-edit) button[title="Delete Stash ID"].btn-danger {
-        margin-top: -2.75%;
-        margin-left: 90%;
+        margin-top: auto;
+        margin-left: 0;
         margin-bottom: auto;
+        margin-right: 32px !important;
+        top: 2px;
+        right: 0%;
+        bottom: 0%;
     }
     span.stash-id-pill {
         font-family: var(--MonoFont);
@@ -12906,7 +12928,7 @@ span.stash-id-pill {
         margin-top: -1.5%;
     }
     #studio-edit span.stash-id-pill {
-        margin-top: 2.5%;
+        margin-top: -1%;
     }
     .background-image-container + .detail-container span.stash-id-pill {
         margin-top: -5px;
