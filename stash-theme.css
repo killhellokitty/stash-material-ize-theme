@@ -5661,7 +5661,7 @@ button:is(.favorite, .not-favorite).minimal.favorite-button.btn.btn-primary:is(:
     line-height: 32px;
     letter-spacing: 0.018em;
 }
-.detail-header:has(#tag-edit) span.alias-head { /* EditPage Aliases Header */
+.detail-header:has(:is(#tag-edit, #studio-edit, #performer-edit, #movie-edit)) span.alias-head { /* EditPage Aliases Header */
     line-height: 42px;
     letter-spacing: 0.026em;
 }
@@ -5671,10 +5671,13 @@ button:is(.favorite, .not-favorite).minimal.favorite-button.btn.btn-primary:is(:
 }
 
 /* Page and Edit Header */
-span.tag-name { /* Page Header */
+span:is(.tag-name, .studio-name, .performer-name, .movie-name) { /* Page Header */
     color: rgb(var(--setting-h1));
 }
-.detail-header:has(#tag-edit) span.tag-name { /* Edit Header */
+.detail-header:has(#tag-edit) span.tag-name,
+.detail-header:has(#studio-edit) span.studio-name,
+.detail-header:has(#performer-edit) span.performer-name,
+.detail-header:has(#movie-edit) span.movie-name { /* Edit Header */
     color: rgb(var(--description-color),0.92);
 }
 
