@@ -5345,9 +5345,9 @@ div.mb-2 select.btn-secondary.form-control.focus option {
 
 /* Page Headers Detail-Items */
 .detail-item-title {
-    color: rgb(var(--outline-variant-lighter));
-    font-weight: 700;
-    font-size: 16px;
+    color: rgb(var(--on-surface-variant),0.56);
+    font-weight: 600;
+    font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.031em;
 }
@@ -5640,10 +5640,13 @@ button:is(.favorite, .not-favorite).minimal.favorite-button.btn.btn-primary:is(:
     filter: none;
     opacity: 1;
 }
-/* Performer Alias */
+/* Image-Background-Header Aliases */
 .detail-header span.alias-head {
-    color: rgb(var(--on-tertiary));
-    padding-left: 0.512rem;
+    color: rgb(var(--white-color), 0.73);
+    padding-left: 0.75rem;
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 0.018em;
 }
 /* Link Icon */
 button.minimal.btn.btn-primary > a.link > svg.fa-link.fa-icon {
