@@ -3631,43 +3631,11 @@ li.search-result.selected-result.active {
 }
 .sticky.detail-header .sticky.detail-header-group a:is(.movie-name, .performer-name, .studio-name, .tag-name) {
     color: rgb(var(--white-color));
-    text-decoration: none !important;
-    text-decoration-color: transparent;
+    text-decoration-color: rgb(var(--white-color)) !important;
     text-underline-offset: 0.16em;
     text-decoration-thickness: 12%;
     font-weight: 700;
     transition: text-decoration-color 0.25s ease-in, text-decoration-thickness 0.25s ease-in-out, font-weight 0.25s ease-in, color 0.25s ease-in-out;
-}
-.sticky.detail-header .sticky.detail-header-group a:is(.movie-name, .performer-name, .studio-name, .tag-name):visited {
-    text-decoration: none !important;
-    text-decoration-color: transparent;
-    color: rgb(var(--link-visited));
-    text-decoration-style: none;
-    
-}
-.sticky.detail-header .sticky.detail-header-group a:is(.movie-name, .performer-name, .studio-name, .tag-name):visited:hover {
-    text-decoration: underline !important;
-    text-decoration-color: rgb(var(--link-visited));
-    color: rgb(var(--link-visited));
-    text-decoration-style: solid;
-}
-.sticky.detail-header .sticky.detail-header-group a:is(.movie-name, .performer-name, .studio-name, .tag-name):hover {
-    text-decoration-color: rgb(var(--link));
-    color: rgb(var(--link));
-    text-decoration: underline !important;
-    text-decoration-style: solid;
-}
-.sticky.detail-header .sticky.detail-header-group a:is(.movie-name, .performer-name, .studio-name, .tag-name):where(:active, :active:hover, :active:focus) {
-    text-decoration-color: rgb(var(--link-active));
-    color: rgb(var(--link-active));
-    text-decoration: underline !important;
-    text-decoration-style: solid;
-}
-.sticky.detail-header .sticky.detail-header-group a:is(.movie-name, .performer-name, .studio-name, .tag-name):not(:active):where(:focus, :focus-visible) {
-    text-decoration-color: rgb(var(--link));
-    color: rgb(var(--link));
-    text-decoration: underline !important;
-    text-decoration-style: solid;
 }
 
 .image-section { 
