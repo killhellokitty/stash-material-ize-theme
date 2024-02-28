@@ -9785,6 +9785,16 @@ input#update-stashids::placeholder {
     color: #00dfc6;
 }*/
 
+/* Sticky Detail-Header */
+.sticky.detail-header {
+    top: 4.75%;
+}
+.sticky.detail-header > .sticky.detail-header-group {
+    position: fixed;
+    background-color: rgb(var(--body-color2));
+    text-align: justify;
+    padding: 1rem 2rem;
+}
 
 
 /* Studio Editor */
