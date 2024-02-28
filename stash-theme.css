@@ -5669,9 +5669,15 @@ button:is(.favorite, .not-favorite).minimal.favorite-button.btn.btn-primary:is(:
 .detail-item-value.description {
     color: rgb(var(--description-color),0.83);
 }
-span.tag-name {
+
+/* Page and Edit Header */
+span.tag-name { /* Page Header */
     color: rgb(var(--setting-h1));
 }
+.detail-header:has(#tag-edit) span.tag-name { /* Edit Header */
+    color: rgb(var(--description-color),0.92);
+}
+
 /* Link Icon */
 button.minimal.btn.btn-primary > a.link > svg.fa-link.fa-icon {
     position: relative;
