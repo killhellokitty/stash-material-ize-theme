@@ -3627,15 +3627,19 @@ li.search-result.selected-result.active {
 .sticky.detail-header .sticky.detail-header-group a, 
 .sticky.detail-header .sticky.detail-header-group span {
     color: rgb(var(--on-surface-variant));
-    font-weight: 500;
+    font-weight: 400;
 }
 .sticky.detail-header .sticky.detail-header-group a.movie-name, 
 .sticky.detail-header .sticky.detail-header-group a.performer-name, 
 .sticky.detail-header .sticky.detail-header-group a.studio-name, 
 .sticky.detail-header .sticky.detail-header-group a.tag-name {
     color: rgb(var(--white-color));
-    text-decoration-color: rgb(var(--white-color)) !important;
+    text-decoration: solid underline !important;
+    text-decoration-color: rgb(var(--white-color));
+    text-underline-offset: 0.16em;
+    text-decoration-thickness: 12%;
     font-weight: 700;
+    transition: text-decoration-color 0.25s ease-in, text-decoration-thickness 0.25s ease-in-out, font-weight 0.25s ease-in, color 0.25s ease-in-out;
 }
 
 .image-section { 
