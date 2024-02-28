@@ -9795,9 +9795,10 @@ input#update-stashids::placeholder {
 }
 .sticky.detail-header > .sticky.detail-header-group {
     position: fixed;
-    background-color: rgb(var(--body-color2));
+    background-color: rgb(var(--card-color));
     text-align: justify;
     padding: 1rem 2rem;
+    box-shadow: var(--elevation-1);
 }
 
 /* Studio Editor */
