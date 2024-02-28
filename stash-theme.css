@@ -2554,25 +2554,35 @@ div#crop-btn-container {
     box-shadow: none;
 }
 
-.badge-pill.badge-secondary {
-    color: #690005;
-    background-color: #ffb4ab;
+/* Badges */
+span.badge-pill.badge-secondary {
+    color: rgb(var(--on-error));
+    background-color: rgb(var(--error));
 }
 .badge-info {
     color: #690005;
     background-color: #ffb4ab;
 }
-.badge-pill {
+span.badge-pill {
     height: 1.357rem;
     min-width: 1.357rem;
     justify-content: center;
     display: flex;
     align-items: center;
     padding: 0;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
     font-size: 0.75rem;
-    font-weight: 500;
+    font-weight: 700;
+    border-radius: 0.75rem;
+    box-shadow: var(--elevation-1);
+    transition: var(--trans-0);
+}
+span.left-spacing.badge {
+    margin-left: 0.25rem;
 }
 
+/* Boy Girl Etc. */
 .fa-mars {
     color: rgb(var(--mars));
     font-size: 20px;
