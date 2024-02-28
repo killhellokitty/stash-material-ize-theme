@@ -3086,8 +3086,8 @@ div.dropdown-menu .dropdown-item:hover {
     box-shadow: none;
     outline: none;
     min-width: 28px;
-    width: 28px;
-    height: 28px;
+    width: 34px;
+    height: 34px;
     transition: var(--trans-0);
     -webkit-transition: var(--trans-0);
 }
@@ -5661,6 +5661,11 @@ button:is(.favorite, .not-favorite).minimal.favorite-button.btn.btn-primary:is(:
     line-height: 32px;
     letter-spacing: 0.018em;
 }
+.detail-header:has(#tag-edit) span.alias-head { /* EditPage Aliases Header */
+    line-height: 42px;
+    letter-spacing: 0.026em;
+}
+
 .detail-item-value.description {
     color: rgb(var(--description-color),0.83);
 }
