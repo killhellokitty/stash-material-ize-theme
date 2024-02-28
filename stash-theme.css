@@ -1013,7 +1013,7 @@ input:is(#batch-search-delay, #colorize-color-green, #colorize-color-yellow, #co
     background-color: rgb(var(--card-color));
     padding-left: 4px;
     padding-right: 4px;
-    z-index: 33;
+    z-index: 5;
 }
 
 .query-text-field-group {
@@ -5345,7 +5345,7 @@ div.mb-2 select.btn-secondary.form-control.focus option {
 
 /* Page Headers Detail-Items */
 .detail-item-title {
-    color: rgb(var(--on-surface-variant),0.56);
+    color: rgb(var(--description-color),0.43);
     font-weight: 600;
     font-size: 14px;
     line-height: 24px;
@@ -5642,11 +5642,17 @@ button:is(.favorite, .not-favorite).minimal.favorite-button.btn.btn-primary:is(:
 }
 /* Image-Background-Header Aliases */
 .detail-header span.alias-head {
-    color: rgb(var(--white-color), 0.73);
+    color: rgb(var(--description-color), 0.73);
     padding-left: 0.75rem;
     font-size: 22px;
     line-height: 32px;
     letter-spacing: 0.018em;
+}
+.detail-item-value.description {
+    color: rgb(var(--description-color),0.83);
+}
+span.tag-name {
+    color: rgb(var(--setting-h1));
 }
 /* Link Icon */
 button.minimal.btn.btn-primary > a.link > svg.fa-link.fa-icon {
