@@ -2423,13 +2423,12 @@ div#crop-btn-container {
 
 .tag-item, 
 .filter-tags>span.tag-item {
-    background-image: linear-gradient(to right, rgb(var(--surface)), rgb(var(--surface)));
-    background-color: rgba(var(--pry-color),0.55);
-    background-blend-mode: hard-light;
-    color: rgb(var(--on-surface-variant));
+    background-image: var(--btn-dummy-highlight);
+    background-color: rgb(var(--pry-container));
+    background-blend-mode: screen;
+    color: rgb(var(--on-pry-container));
     border: 1px solid rgb(var(--outline));
     border-radius: 8px;
-    text-shadow: none !important;
     letter-spacing: 0.1px;
     line-height: 28px;
     margin: 4px;
@@ -2439,34 +2438,30 @@ div#crop-btn-container {
     min-height: 32px;
     /*height: 32px;*/
     box-shadow: var(--elevation-0);
-    padding: 0 16px 0 16px;
+    padding: 0 1rem;
 }
 .tag-item:is(:hover, :focus-visible),
 .filter-tags>span.tag-item:is(:hover, :focus-visible) {
-    background-image: linear-gradient(to right, rgba(var(--surface),var(--btn-hover-rev)), rgba(var(--surface),var(--btn-hover-rev)));
-    background-color: rgba(var(--pry-color),0.55);
-    background-blend-mode: hard-light;
+    background-image: var(--btn-dummy-highlight);
+    background-color: rgb(var(--pry-container));
+    background-blend-mode: screen;
     box-shadow: var(--elevation-1);
 }
 .tag-item:is(:active, :focus),
 .filter-tags>span.tag-item:is(:active, :focus) {
-    background-image: linear-gradient(to right, rgba(var(--surface),var(--btn-active-rev)), rgba(var(--surface),var(--btn-active-rev)));
-    background-color: rgba(var(--pry-color),0.55);
-    background-blend-mode: hard-light;
+    background-image: var(--btn-active-highlight);
+    background-color: rgb(var(--pry-container));
+    background-blend-mode: screen;
     box-shadow: var(--elevation-0);
 }
 .tag-item:focus-visible,
 .filter-tags>span.tag-item:focus-visible {
-    outline-color: rgb(var(--focus-ring));
-    outline-style: solid;
-    outline-width: 0.25rem;
-    outline-offset: -1px;
-    box-shadow: none;
+
 }
 .tag-item .btn {
     bottom: 0.07143rem;
-    color: #cef1ff;
-    margin-left: 0;
+    color: rgb(var(--on-pry-container));
+    margin-left: 0%;
     font-size: 1.286rem;
     line-height: 1rem;
     padding: 0 0 0 0.12rem;
@@ -2526,29 +2521,32 @@ div#crop-btn-container {
 .wrap-tags.filter-tags>span.badge {
     align-items: center;
     display: flex;
-    padding: 0 12px 0 12px;
+    padding: 0 1rem;
     gap: 8px;
 }
 .tag-item > button.btn.btn-secondary {
+    background-image: var(--btn-dummy-highlight);
     background-color: transparent;
-    color: rgb(var(--on-surface-variant));
+    background-blend-mode: normal;
+    color: rgb(var(--on-pry-container));
     border: 0;
     width: 26px;
     max-width: 26px;
     height: 26px;
     max-height: 26px;
-    border-radius: 5rem;
     justify-content: center;
     padding: 0;
     display: flex;
 }
 .tag-item > button.btn.btn-secondary:hover {
-    background-image: none;
-    background-color: rgb(var(--on-surface-variant),var(--btn-hover));
+    background-image: var(--btn-dummy-highlight);
+    background-color: transparent;
+    color: rgb(var(--on-pry-container));
 }
 .tag-item > button.btn.btn-secondary:is(:focus, :active, :active:focus) {
-    background-image: none;
-    background-color: rgb(var(--on-surface-variant),var(--btn-active));
+    background-image: var(--btn-dummy-highlight);
+    background-color: transparent;
+    color: rgb(var(--on-pry-container));
 }
 
 .badge-pill.badge-secondary {
