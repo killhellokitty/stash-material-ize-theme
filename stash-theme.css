@@ -5895,8 +5895,8 @@ button.Lightbox-navbutton.btn.btn-link > svg:is(.fa-chevron-right, .fa-chevron-l
 }
 
 /* Tabs on Pages */
-nav.nav.nav-tabs {
-    background-color: rgba(0,0,0,0.50);
+nav.nav.nav-tabs { /* TabBar behind Nav-Item Tabs */
+    background-color: rgb(var(--body-color));
     padding: 0 0;
 }
 .nav-tabs {
@@ -5908,9 +5908,9 @@ nav.nav.nav-tabs {
 .row > :is(:not(.scene-tabs):not(.gallery-tabs):not(.image-tabs)) .nav.nav-tabs:has(> .nav-item:nth-of-type(2) > a.active) {
     border-bottom: 1px solid rgb(255,255,255,0.085);
 }
-.nav-tabs>.nav-item:has(>*:not(.btn-secondary):not(.dropdown):not(.o-counter)),
-.nav.nav-tabs>.nav-item.nav-link {
-    background-color: rgba(var(--surface));
+nav.nav-tabs > .nav-item:has(>*:not(.btn-secondary):not(.dropdown):not(.o-counter)):not(.nav-link),
+nav.nav-tabs > .nav-item.nav-link { /* Nav-Item Tabs */
+    background-color: rgba(var(--body-color));
     min-height: 48px;
     height: 48px;
     max-height: 48px;
@@ -5926,12 +5926,10 @@ nav.nav.nav-tabs {
     padding-right: 6px;
 }*/
 
-.nav-tabs .nav-item.nav-link,
-.nav-tabs .nav-link {
+nav.nav-tabs > .nav-item.nav-link,
+nav.nav-tabs .nav-link:not(.nav-item) {
     background-color: transparent;
     border: 0;
-    border-color: transparent;
-    border-style: solid;
     border-bottom: 1px solid rgb(var(--surface-variant));
     padding-bottom: 10px;
     border-radius: 0;
@@ -5939,21 +5937,28 @@ nav.nav.nav-tabs {
     font-weight: 500;
     font-size: 14px;
     line-height: 20px;
-    letter-spacing: 0.1px;
+    letter-spacing: 0.065em;
     text-decoration: none;
     outline-color: rgb(var(--focus-ring));
     box-shadow: var(--elevation-0);
-    transition: background-color .55s ease, border-color .4s ease-in-out, color .25s ease-in-out, outline .4s ease-in;
+    transition: border-bottom 0.4s ease-in-out, var(--trans-0);
 }
-.nav.nav-tabs>.nav-item.nav-link {
+nav.nav-tabs > .nav-item.nav-link { /* Nav-Item Tabs dimensions */
     display: flex;
-    flex: 1 1 calc((1/7)*90%);
-    justify-content: space-evenly;
+    /*flex: 1 1 calc((1/7)*90%);*/
+    justify-content: center;
     align-items: center;
     padding: 0;
-    margin: 0;
-    height: 40px; /*added jun 12 for firefox*/
+    margin: 0%;
+    /*height: 40px;*/ /*added jun 12 for firefox*/
 }
+.tag-tabs > nav.nav-tabs > .nav-item.nav-link { /* Nav-Item Tabs flex-basis for individual pages */
+    flex: 1 1 calc((1/5)*100%);
+    max-width: calc((1/5)*100%);
+}
+
+
+
 .gallery-container .mr-auto.nav.nav-tabs .nav-item {
     display: flex;
     flex: 1 1 calc((1/2)*90%);
@@ -6122,10 +6127,10 @@ nav.nav.nav-tabs {
     color: rgb(var(--pry-color));
     border-bottom: 2px solid transparent;
 }*/
-.nav-tabs .nav-link:hover,
-.nav-tabs .nav-link:focus, 
-.nav-tabs .nav-link:hover:focus, 
-.nav-tabs .nav-link:focus-visible {
+.nav-tabs .nav-link:not(.nav-item):hover,
+.nav-tabs .nav-link:not(.nav-item):focus, 
+.nav-tabs .nav-link:not(.nav-item):hover:focus, 
+.nav-tabs .nav-link:not(.nav-item):focus-visible {
     color: rgb(var(--on-surface));
     background-color: rgb(var(--surface));
     background-image: linear-gradient(to right, rgba(var(--on-surface),var(--btn-hover)), rgba(var(--on-surface),var(--btn-hover))),linear-gradient(to right, rgb(var(--surface)), rgb(var(--surface)));
@@ -6136,19 +6141,17 @@ nav.nav.nav-tabs {
     outline-color: rgb(var(--focus-ring));
     padding-bottom: 10px;
 }
-.nav-tabs .nav-link:focus, 
-.nav-tabs .nav-link:hover:focus {
+.nav-tabs .nav-link:not(.nav-item):focus, 
+.nav-tabs .nav-link:not(.nav-item):hover:focus {
     background-image: linear-gradient(to right, rgba(var(--on-surface),var(--btn-active)), rgba(var(--on-surface),var(--btn-active))),linear-gradient(to right, rgb(var(--surface)), rgb(var(--surface)));
     border-bottom: 1px solid rgb(var(--on-surface-variant));
 } 
-.nav-tabs .nav-link:hover:focus {
+.nav-tabs .nav-link:not(.nav-item):hover:focus {
     background-image: linear-gradient(to right, rgba(var(--pry-color),var(--btn-active)), rgba(var(--pry-color),var(--btn-active))),linear-gradient(to right, rgb(var(--surface)), rgb(var(--surface)));
 }
 
-.nav-tabs .nav-link.active, 
-.nav-tabs .nav-link:active,
-.nav-tabs .nav-link.active:focus,
-.nav-tabs .nav-link:active:focus {
+.nav-tabs .nav-link:not(.nav-item).active,
+.nav-tabs .nav-link:not(.nav-item).active:focus {
     color: rgb(var(--pry-color));
     background-color: rgba(var(--surface));
     border: 0;
@@ -6161,23 +6164,35 @@ nav.nav.nav-tabs {
     max-height: 48px;
     padding-bottom: 8px;
 }
-.nav-tabs .nav-link.active:focus,
-.nav-tabs .nav-link:active:focus {
+.nav-tabs .nav-link:not(.nav-item).active:focus {
     background-image: linear-gradient(to right, rgba(var(--pry-color),var(--btn-active)), rgba(var(--pry-color),var(--btn-active))),linear-gradient(to right, rgb(var(--surface)), rgb(var(--surface)));
 }
 
-.nav.nav-tabs>.nav-item.nav-link.active,
-.nav.nav-tabs>.nav-item.nav-link:active,
-.nav.nav-tabs>.nav-item.nav-link.active:focus,
-.nav.nav-tabs>.nav-item.nav-link:active:focus {
-    padding-bottom: 0;
+/* Enabled Nav-Item Tabs */
+nav.nav-tabs > .nav-item.nav-link.active:hover,
+nav.nav-tabs > .nav-item.nav-link.active:focus-visible {
+    background-image: linear-gradient(to right, rgb(var(--pry-color),var(--btn-hover)), rgb(var(--pry-color),var(--btn-hover)));
 }
-.nav-tabs .nav-link.active:hover, 
-.nav-tabs .nav-link:active:hover,
-.nav-tabs .nav-link.active:focus:hover,
-.nav-tabs .nav-link:active:focus:hover,
-.nav-tabs .nav-link.active:focus-visible,
-.nav-tabs .nav-link:active:focus-visible {
+nav.nav-tabs > .nav-item.nav-link.active:focus,
+nav.nav-tabs > .nav-item.nav-link.active:focus:hover {
+    background-image: linear-gradient(to right, rgba(var(--pry-color),var(--btn-active)), rgba(var(--pry-color),var(--btn-active)));
+}
+nav.nav-tabs > .nav-item.nav-link.active,
+nav.nav-tabs > .nav-item.nav-link.active:hover,
+nav.nav-tabs > .nav-item.nav-link.active:focus,
+nav.nav-tabs > .nav-item.nav-link.active:focus:hover,
+nav.nav-tabs > .nav-item.nav-link.active:focus-visible { /* Enabled Tabs underline */
+    padding-bottom: 0;
+    color: rgb(var(--pry-color));
+    border-bottom: 2px solid rgb(var(--pry-color));
+    background-color: rgb(var(--body-color));
+    background-blend-mode: screen;
+}
+
+
+.nav-tabs .nav-link:not(.nav-item).active:hover, 
+.nav-tabs .nav-link:not(.nav-item).active:focus:hover,
+.nav-tabs .nav-link:not(.nav-item).active:focus-visible {
     background-image: linear-gradient(to right, rgba(var(--pry-color),var(--btn-hover)), rgba(var(--pry-color),var(--btn-hover))),linear-gradient(to right, rgb(var(--surface)), rgb(var(--surface)));
     color: rgb(var(--pry-color));
     border-bottom: 3px solid rgb(var(--pry-color));
@@ -6186,15 +6201,15 @@ nav.nav.nav-tabs {
 }
 
 
-.nav-tabs .nav-link:focus-visible {
+.nav-tabs .nav-link:not(.nav-item):focus-visible {
     box-shadow: none;
     padding-bottom: 10px; /*this evens the height with the border width */
     outline-style: solid;
     outline-offset: -8px;
     outline-width: 0.25rem;
 }
-.nav-tabs .nav-link.active:focus-visible,
-.nav-tabs .nav-link:active:focus-visible {
+.nav-tabs .nav-link:not(.nav-item).active:focus-visible,
+.nav-tabs .nav-link:not(.nav-item):active:focus-visible {
     outline-style: solid;
     outline-offset: -8px;
     outline-width: 0.25rem;
