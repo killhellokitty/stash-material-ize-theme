@@ -6081,25 +6081,18 @@ nav.nav-tabs > .nav-item.nav-link { /* Nav-Item Tabs dimensions */
 }
 
 
-/* Nav-Tabs */
-.nav-tabs>.nav-item:has(>*:not(.btn-secondary):not(.dropdown):not(.o-counter)):hover,
-.nav-tabs>.nav-item:has(>*:not(.btn-secondary):not(.dropdown):not(.o-counter)):focus-visible,
-.nav-tabs .nav-item.nav-link:hover,  
-.nav-tabs .nav-item.nav-link:focus-visible {
+/* InActive Nav-Link Tabs */
+.nav-tabs>.nav-item:has(>*:not(.btn-secondary):not(.dropdown):not(.o-counter)):not(.nav-link):is(:hover, :focus, :focus:hover),
+.nav-tabs .nav-item.nav-link:not(.active):is(:hover, :focus, :focus:hover) {
     border: 0;
-    border-style: none;
-    border-color: transparent;
     border-bottom: 1px solid rgb(var(--outline));
 }
-.nav-tabs>.nav-item:has(>*:not(.btn-secondary):not(.dropdown):not(.o-counter)):focus,
-.nav-tabs>.nav-item:has(>*:not(.btn-secondary):not(.dropdown):not(.o-counter)):hover:focus,
-.nav-tabs .nav-item.nav-link:focus,
-.nav-tabs .nav-item.nav-link:hover:focus {
+.nav-tabs>.nav-item:has(>*:not(.btn-secondary):not(.dropdown):not(.o-counter)):not(.nav-link):focus-visible,
+.nav-tabs .nav-item.nav-link:not(.active):focus-visible {
     border: 0;
-    border-style: none;
-    border-color: transparent;
     border-bottom: 1px solid rgb(var(--on-surface-variant));
 }
+
 /*}
 .nav-tabs>.nav-item:has(>*:not(.btn-secondary):not(.dropdown):not(.o-counter)).active:hover,
 .nav-tabs>.nav-item:has(>*:not(.btn-secondary):not(.dropdown):not(.o-counter)):active:hover,
@@ -6169,26 +6162,24 @@ nav.nav-tabs > .nav-item.nav-link { /* Nav-Item Tabs dimensions */
 }
 
 /* Enabled Nav-Item Tabs */
-nav.nav-tabs > .nav-item.nav-link.active:hover,
-nav.nav-tabs > .nav-item.nav-link.active:focus-visible {
+nav.nav-tabs > .nav-item.nav-link:is(.active, :not(.active)):hover,
+nav.nav-tabs > .nav-item.nav-link:is(.active, :not(.active)):focus-visible {
     background-image: linear-gradient(to right, rgb(var(--pry-color),var(--btn-hover)), rgb(var(--pry-color),var(--btn-hover)));
 }
-nav.nav-tabs > .nav-item.nav-link.active:focus,
-nav.nav-tabs > .nav-item.nav-link.active:focus:hover {
+nav.nav-tabs > .nav-item.nav-link:is(.active, :not(.active)):focus,
+nav.nav-tabs > .nav-item.nav-link:is(.active, :not(.active)):focus:hover {
     background-image: linear-gradient(to right, rgba(var(--pry-color),var(--btn-active)), rgba(var(--pry-color),var(--btn-active)));
 }
 nav.nav-tabs > .nav-item.nav-link.active,
-nav.nav-tabs > .nav-item.nav-link.active:hover,
-nav.nav-tabs > .nav-item.nav-link.active:focus,
-nav.nav-tabs > .nav-item.nav-link.active:focus:hover,
-nav.nav-tabs > .nav-item.nav-link.active:focus-visible { /* Enabled Tabs underline */
+nav.nav-tabs > .nav-item.nav-link.active:is(:hover, :focus, :focus:hover, :focus-visible) { /* Enabled Tabs underline */
     padding-bottom: 0;
     color: rgb(var(--pry-color));
     border-bottom: 2px solid rgb(var(--pry-color));
+}
+nav.nav-tabs > .nav-item.nav-link:is(.active, :not(.active)) {
     background-color: rgb(var(--body-color));
     background-blend-mode: screen;
 }
-
 
 .nav-tabs .nav-link:not(.nav-item).active:hover, 
 .nav-tabs .nav-link:not(.nav-item).active:focus:hover,
