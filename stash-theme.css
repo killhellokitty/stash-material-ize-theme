@@ -2442,7 +2442,7 @@ div#crop-btn-container {
 }
 .tag-item:is(:hover, :focus-visible),
 .filter-tags>span.tag-item:is(:hover, :focus-visible) {
-    background-image: var(--btn-dummy-highlight);
+    background-image: var(--btn-hover-highlight);
     background-color: rgb(var(--pry-container));
     background-blend-mode: screen;
     box-shadow: var(--elevation-1);
@@ -2526,8 +2526,8 @@ div#crop-btn-container {
 }
 .tag-item > button.btn.btn-secondary {
     background-image: var(--btn-dummy-highlight);
-    background-color: transparent;
-    background-blend-mode: normal;
+    background-color: rgb(var(--pry-container));
+    background-blend-mode: screen;
     color: rgb(var(--on-pry-container));
     border: 0;
     width: 26px;
@@ -2537,16 +2537,21 @@ div#crop-btn-container {
     justify-content: center;
     padding: 0;
     display: flex;
+    box-shadow: none;
 }
 .tag-item > button.btn.btn-secondary:hover {
-    background-image: var(--btn-dummy-highlight);
-    background-color: transparent;
+    background-image: var(--btn-hover-highlight);
+    background-color: rgb(var(--pry-container));
+    background-blend-mode: screen;
     color: rgb(var(--on-pry-container));
+    box-shadow: none;
 }
 .tag-item > button.btn.btn-secondary:is(:focus, :active, :active:focus) {
-    background-image: var(--btn-dummy-highlight);
-    background-color: transparent;
+    background-image: var(--btn-active-highlight);
+    background-color: rgb(var(--pry-container));
+    background-blend-mode: screen;
     color: rgb(var(--on-pry-container));
+    box-shadow: none;
 }
 
 .badge-pill.badge-secondary {
