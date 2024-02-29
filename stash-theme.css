@@ -1026,10 +1026,9 @@ input:is(#batch-search-delay, #colorize-color-green, #colorize-color-yellow, #co
 input.query-text-field.bg-secondary.text-white.border-secondary.form-control,
 input.clearable-text-field.form-control,
 input.btn-secondary.search-input.form-control {
-    background: none;
-    background-color: rgb(var(--body-color2));
     background-image: linear-gradient(to right, rgba(var(--pry-color),var(--text-field-tint)), rgba(var(--pry-color),var(--text-field-tint))),linear-gradient(to right, rgb(var(--body-color2)), rgb(var(--body-color2))) !important;
-    border-style: none;
+    background-color: rgb(var(--body-color2));
+    background-blend-mode: screen;
     border: 0;
     border-radius: 5rem;
     padding-right: 46px;
@@ -1039,11 +1038,11 @@ input.btn-secondary.search-input.form-control {
     margin: 4px 8px;
     font-size: 16px;
     font-weight: 400;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.192em;
     line-height: 24px;
-    box-shadow: none;
-    caret-color: rgb(var(--pry-color)); 
-    transition: caret-color 0.25s ease-in, background-color 0.55s ease, background 0.55s ease, opacity 0.55s ease, outline 200ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: var(--elevation-0);
+    caret-color: rgb(var(--interactive-input)); 
+    transition: caret-color 0.25s ease-in, background-color 0.55s cubic-bezier(0.4, 0, 0.2, 1), background-image 0.55s ease, opacity 0.55s ease, outline 0.4s ease-in-out, box-shadow 0.45s ease-in-out;
 }
 input.btn-secondary.search-input.form-control {
     background-color: rgba(227,224,225,0.06)  !important;
@@ -1051,13 +1050,11 @@ input.btn-secondary.search-input.form-control {
 input.query-text-field.bg-secondary.text-white.border-secondary.form-control:hover,
 input.clearable-text-field.form-control:hover,
 input.btn-secondary.search-input.form-control:hover {
-    background-color: rgb(var(--body-color2)) !important;
     background-image: linear-gradient(to right, rgba(var(--pry-color),var(--btn-hover)), rgba(var(--pry-color),var(--btn-hover))),linear-gradient(to right, rgb(var(--body-color2)), rgb(var(--body-color2))) !important;
     box-shadow: none;
     opacity: 1;
 }
 input.btn-secondary.search-input.form-control:hover  {
-    background-color: rgb(var(--body-color2)) !important;
     background-image: linear-gradient(to right, rgba(var(--pry-color),var(--btn-hover)), rgba(var(--pry-color),var(--btn-hover))),linear-gradient(to right, rgb(var(--body-color2)), rgb(var(--body-color2))) !important;
     opacity: 1;
 }
@@ -1067,23 +1064,19 @@ input.clearable-text-field.form-control:focus,
 input.clearable-text-field.form-control:active,
 input.btn-secondary.search-input.form-control:focus,
 input.btn-secondary.search-input.form-control:active {
-    background-color: rgb(var(--body-color)) !important;
     background-image: linear-gradient(to right, rgba(var(--pry-color),var(--btn-active)), rgba(var(--pry-color),var(--btn-active))),linear-gradient(to right, rgb(var(--body-color2)), rgb(var(--body-color2))) !important;
-    box-shadow: 0 0 6px 0 rgb(var(--pry-color));
+    box-shadow: inset var(--elevation-0), var(--elevation-0), 0 0 0 2px rgb(var(--pry-color));
     opacity: 1;
     outline: none;
-    caret-color: rgb(var(--pry-color));
 }
 input.btn-secondary.search-input.form-control:focus,
 input.btn-secondary.search-input.form-control:active {
-    background-color: rgb(var(--body-color)) !important;
     background-image: linear-gradient(to right, rgba(var(--pry-color),var(--btn-active)), rgba(var(--pry-color),var(--btn-active))),linear-gradient(to right, rgb(var(--body-color2)), rgb(var(--body-color2))) !important;
     opacity: 1;
 }
 input.query-text-field.bg-secondary.text-white.border-secondary.form-control:focus-visible:not(:focus),
 input.clearable-text-field.form-control:focus-visible:not(:focus),
 input.btn-secondary.search-input.form-control:focus-visible:not(:focus) {
-    background-color: rgb(var(--body-color)) !important;
     background-image: linear-gradient(to right, rgba(var(--pry-color),var(--btn-hover)), rgba(var(--pry-color),var(--btn-hover))),linear-gradient(to right, rgb(var(--body-color2)), rgb(var(--body-color2))) !important;
     box-shadow: none;
     opacity: 1;
@@ -1101,10 +1094,10 @@ input.query-text-field.bg-secondary.text-white.border-secondary.form-control::pl
 input.clearable-text-field.form-control::placeholder,
 input.btn-secondary.search-input.form-control::palceholder {
     color: rgb(var(--on-surface-variant));
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 24px;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.192em;
 }
 
 .btn-toolbar .query-text-field-group input.query-text-field.bg-secondary.text-white.border-secondary.form-control {
@@ -1113,7 +1106,7 @@ input.btn-secondary.search-input.form-control::palceholder {
 }
 
 input#update-stashids.query-text-field.bg-secondary.text-white.border-secondary.form-control {
-    padding-right: 16px;
+    padding-right: 1rem;
 }
 
 .login input[type=text]#username.text-input,
@@ -2808,24 +2801,28 @@ div.react-select__control .react-select__multi-value {
     background-color: transparent;
 }
 .input-control:disabled,
-.input-control.form-control:disabled {
+.input-control.form-control:disabled,
+.tagger-container-header select#scraper:disabled {
     color: rgb(var(--on-pry-container),var(--disabled));
     box-shadow: 0 0 0 1px rgb(var(--outline),var(--disabled)), inset 0 0 0 1px transparent;
 }
-.input-control.form-control:hover {
+.input-control.form-control:hover,
+.tagger-container-header select#scraper:hover {
     background-color: rgb(var(--pry-container));
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     box-shadow: 0 1px 0 0 rgb(var(--on-surface)), inset 0 -1px 0 0 transparent;
 }
-.input-control.form-control:where(:focus, :focus:hover, :active) {
+.input-control.form-control:where(:focus, :focus:hover, :active),
+.tagger-container-header select#scraper:where(:focus, :focus:hover, :active) {
     background-color: rgb(var(--on-pry));
     color: rgb(var(--pry-color));
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     box-shadow: 0 1px 0 0 rgb(var(--pry-color)), inset 0 -2px 0 0 rgb(var(--pry-color));
 }
-.input-control.form-control:focus-visible {
+.input-control.form-control:focus-visible,
+.tagger-container-header select#scraper:focus-visible {
     background-color: rgba(var( --pry-container));
     color: rgb(var(--on-tertiary-container));
     box-shadow: 0 1px 0 0 rgb(var(--on-surface)), inset 0 -1px 0 0 rgb(var(--on-surface));
