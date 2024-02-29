@@ -6238,8 +6238,8 @@ div.mr-auto.nav.nav-tabs > .nav-item:not(.nav-link) > .nav-link:is(.active, :not
 nav.nav-tabs > .nav-item.nav-link:is(.active, :not(.active)):focus,
 nav.nav-tabs > .nav-item.nav-link:is(.active, :not(.active)):focus:hover,
 div.mr-auto.nav.nav-tabs > .nav-item:not(.nav-link) > .nav-link:is(.active, :not(.active)):focus,
-div.mr-auto.nav.nav-tabs > .nav-item:not(.nav-link) > .nav-link:is(.active, :not(.active)):focus-hover {
-    background-image: linear-gradient(to right, rgba(var(--pry-color),var(--btn-active)), rgba(var(--pry-color),var(--btn-active)));
+div.mr-auto.nav.nav-tabs > .nav-item:not(.nav-link) > .nav-link:is(.active, :not(.active)):focus:hover {
+    background-image: linear-gradient(to right, rgb(var(--pry-color),var(--btn-active)), rgb(var(--pry-color),var(--btn-active)));
 }
 nav.nav-tabs > .nav-item.nav-link.active,
 nav.nav-tabs > .nav-item.nav-link.active:is(:hover, :focus, :focus:hover, :focus-visible) { /* Enabled Tabs underline */
