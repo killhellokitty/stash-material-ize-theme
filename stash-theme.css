@@ -4185,14 +4185,21 @@ div.scene-file-info .text-truncate {
 }
 
 .scene-card-preview + button.sprite-button.btn.btn-link {
-    box-shadow: var(--elevation-1);
+    box-shadow: none;
     position: absolute;
     width: 40px;
+    filter: drop-shadow(2px 3px 5px black);
+}
+.scene-card-preview + button.sprite-button.btn.btn-link:hover {
+    filter: drop-shadow(2px 4px 6px rgb(0, 0, 0, 0.5));
+}
+.scene-card-preview + button.sprite-button.btn.btn-link:is(:active, :focus) {
+    filter: drop-shadow(2px 3px 5px rgb(0, 0, 0, 0.5));
 }
 div.tagger-container .btn-link {    
     font-family: var(--UnicodeFont); 
-    color: rgb(var(--on-surface-variant)); 
-    background-color: rgb(var(--surface-variant));
+    color: rgb(var(--link)); 
+    background-color: transparent;
     padding: 0 8px;
     margin: 16px; 
     box-shadow: var(--elevation-0);
