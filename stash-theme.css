@@ -172,6 +172,7 @@ h6,
     /* Widget Colors*/
     --nav-color: 56, 72, 87; /*#384857*/
     --nav-color2: 32, 41, 51; /*#202733*/
+    --inset-body-color: 18, 22, 24; /* #121618*/
     --body-color: 19, 26, 30; /*#1B252A*/
     --body-color2: 26, 31, 37; /*#1a2025*/
     --card-color: 37, 53, 64; /*#253240*/
@@ -5980,7 +5981,10 @@ nav.nav-tabs > .nav-item.nav-link { /* Nav-Item Tabs dimensions */
     flex: 1 1 calc((1/5)*100%);
     max-width: calc((1/5)*100%);
 }
-
+:is(.studio-tabs, .performer-tabs) > nav.nav-tabs > .nav-item.nav-link {
+    flex: 1 1 calc((1/6)*100%);
+    max-width: calc((1/6)*100%);
+}
 
 
 .gallery-container .mr-auto.nav.nav-tabs .nav-item {
