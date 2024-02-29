@@ -4788,7 +4788,8 @@ a[href*="/tags"]:has(>h5.card-section-title>.TruncatedText):hover {
     box-shadow: var(--elevation-0);
 }
 .tagger-container > .row.mb-2 + .collapse.card + .card:has(>.ml-auto.mb-3+:is(.StudioTagger, .PerformerTagger)) {
-    background-color: rgb(var(--body-color2));
+    background-color: rgb(var(--inset-body-color));
+    border-radius: 1.75rem;
 }
 .StudioTagger-studio .studio-card.card {
     margin-bottom: 12px;
