@@ -5979,6 +5979,8 @@ button.Lightbox-navbutton.btn.btn-link > svg:is(.fa-chevron-right, .fa-chevron-l
 nav.nav.nav-tabs { /* TabBar behind Nav-Item Tabs */
     background-color: rgb(var(--body-color));
     padding: 0;
+    border-bottom: none;
+    box-shadow: 0 1px 0 0 rgb(var(--surface-variant));
 }
 .nav-tabs {
     justify-content: space-evenly;
@@ -5998,7 +6000,7 @@ nav.nav-tabs > .nav-item.nav-link { /* Nav-Item Tabs */
     min-height: 48px;
     height: 48px;
     max-height: 48px;
-    border-bottom: 1px solid rgb(var(--surface-variant));
+    border-bottom: none;
     padding: 0;
     overflow: hidden;
     contain: content;
@@ -6013,8 +6015,7 @@ nav.nav-tabs > .nav-item.nav-link { /* Nav-Item Tabs */
 nav.nav-tabs > .nav-item.nav-link/*,
 nav.nav-tabs .nav-item:not(.nav-link)*/ {
     background-color: transparent;
-    border: 0;
-    border-bottom: 1px solid rgb(var(--surface-variant));
+    border-bottom: none;
     padding: 0;
     border-radius: 0;
     color: rgb(var(--on-surface-variant));
@@ -6024,7 +6025,7 @@ nav.nav-tabs .nav-item:not(.nav-link)*/ {
     letter-spacing: 0.065em;
     text-decoration: none;
     outline-color: rgb(var(--focus-ring));
-    box-shadow: var(--elevation-0);
+    box-shadow: none;
     transition: border-bottom 0.4s ease-in-out, var(--trans-0);
 }
 /*div.mr-auto.nav.nav-tabs > .nav-item:not(.nav-link) {
@@ -6210,7 +6211,8 @@ div.mr-auto.nav.nav-tabs > .nav-item:not(.nav-link) > .nav-link {
 /* !!! .nav-tabs>.nav-item:has(>*:not(.btn-secondary):not(.dropdown):not(.o-counter)):not(.nav-link):is(:hover, :focus, :focus:hover),*/
 .nav-tabs .nav-item.nav-link:not(.active):is(:hover, :focus, :focus:hover) {
     border: 0;
-    border-bottom: 1px solid rgb(var(--outline));
+    border-bottom: none;
+    box-shadow: 0 0.5px 0 0 rgb(var(--outline));
 }
 div.mr-auto.nav.nav-tabs > .nav-item:not(.nav-link) > .nav-link:not(.active):is(:hover, :focus, :focus:hover) {
     padding: 0;
@@ -6219,7 +6221,8 @@ div.mr-auto.nav.nav-tabs > .nav-item:not(.nav-link) > .nav-link:not(.active):is(
 /* !!! .nav-tabs>.nav-item:has(>*:not(.btn-secondary):not(.dropdown):not(.o-counter)):not(.nav-link):focus-visible,*/
 .nav-tabs .nav-item.nav-link:not(.active):focus-visible {
     border: 0;
-    border-bottom: 1px solid rgb(var(--on-surface-variant));
+    border-bottom: none;
+    box-shadow: 0 0.5px 0 0 rgb(var(--on-surface-variant));
 }
 div.mr-auto.nav.nav-tabs > .nav-item:not(.nav-link) > .nav-link:not(.active):focus-visible {
     border-bottom: 1px solid rgb(var(--on-surface-variant));
@@ -6309,11 +6312,12 @@ nav.nav-tabs > .nav-item.nav-link.active,
 nav.nav-tabs > .nav-item.nav-link.active:is(:hover, :focus, :focus:hover, :focus-visible) { /* Enabled Tabs underline */
     padding: 0;
     color: rgb(var(--pry-color));
-    border-bottom: 2px solid rgb(var(--pry-color));
+    box-shadow: 0 0.5px 0 0 rgb(var(--pry-color)), inset 0 -0.5px 0 0 rgb(var(--pry-color)), var(--elevation-0);
 }
 div.mr-auto.nav.nav-tabs > .nav-item:not(.nav-link) > .nav-link.active,
 div.mr-auto.nav.nav-tabs > .nav-item:not(.nav-link) > .nav-link.active:is(:hover, :focus, :focus:hover, :focus-visible) { /* Enabled Tabs underline */
     color: rgb(var(--pry-color));
+    border: none;
     border-bottom: 2px solid rgb(var(--pry-color));
 }
 nav.nav-tabs > .nav-item.nav-link:is(.active, :not(.active))/*,
