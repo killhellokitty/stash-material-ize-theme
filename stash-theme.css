@@ -11741,8 +11741,9 @@ button#parser-field-select.dropdown-toggle.btn.btn-primary {
 
 /* Chips/Tag-Items for the Filter Editor */ 
 .modifier-options button.modifier-option.btn-primary {
-    background-image: none;
+    background-image: var(--btn-dummy-highlight);
     background-color: rgb(var(--surface));
+    background-blend-mode: overlay;
     padding: 0 16px;
     border-radius: 8px;
     color: rgb(var(--on-surface-variant));
@@ -11757,18 +11758,19 @@ button#parser-field-select.dropdown-toggle.btn.btn-primary {
     min-height: 32px;
     width: auto;
     box-shadow: var(--elevation-0);
+    transition: var(--trans-0);
 }
 .modifier-options button.modifier-option.btn.btn-primary:not(.selected):hover {
     color: rgb(var(--on-surface-variant));
     box-shadow: var(--elevation-0);
     background-image: var(--btn-hover-highlight);
     background-color: rgb(var(--surface));
-    background-blend-mode: screen;
+    background-blend-mode: overlay;
     border: 1px solid rgb(var(--outline));
 }
-.modifier-options button.modifier-option.btn.btn-primary:is(:not(.selected)):focus-visible {
-    background-image: linear-gradient(to right, rgb(var(--pry-container)), rgb(var(--pry-container))) !important;
-    background-color: transparent;
+.modifier-options button.modifier-option.btn.btn-primary:not(.selected):focus-visible {
+    background-image: var(--btn-dummy-highlight);
+    background-color: rgb(var(--pry-container));
     color: rgb(var(--on-tertiary-container));
     outline-color: rgb(var(--focus-ring));
     outline-offset: -0.1rem;
@@ -11786,34 +11788,36 @@ button#parser-field-select.dropdown-toggle.btn.btn-primary {
     color: rgb(var(--green));
 }
 .modifier-options button.modifier-option.selected,
-.modifier-options button.modifier-option.btn.btn-primary:is(:not(.disabled, :disabled):not(.selected)):is(:focus) {
-    background-color: transparent;
-    background-image: linear-gradient(to right, rgb(var(--tertiary-container)), rgb(var(--tertiary-container)));
+.modifier-options button.modifier-option.btn.btn-primary:not(.disabled):not(:disabled).selected:focus {
+    background-image: var(--btn-dummy-highlight);
+    background-color: rgb(var(--tertiary-container));
+    background-blend-mode: screen;
     box-shadow: var(--elevation-0);
     color: rgb(var(--on-tertiary-container)) !important;
-    border: 1px solid rgb(var(--tertiary-container));
+    border: 1px solid rgb(var(--green));
     opacity: 1;
-    transition: background-image 0.55s ease, border 0.25s ease-in, box-shadow 0.4s ease-out, background-color 0.55s ease-in;
+    transition: var(--trans-0);
 }
-.modifier-options button.modifier-option.btn.btn-primary:is(:not(.disabled, :disabled).selected):is(:active, :active:focus) {
+.modifier-options button.modifier-option.btn.btn-primary:not(.disabled):not(:disabled).selected:is(:active, :active:focus) {
     color: rgb(var(--on-tertiary-container));
     box-shadow: var(--elevation-0);
     background-image: var(--btn-active-highlight);
     background-color: rgb(var(--tertiary-container));
     background-blend-mode: screen;
-    border: 1px solid rgb(var(--tertiary-container));
+    border: 1px solid rgb(var(--green));
 }
-.modifier-options button.modifier-option.btn.btn-primary:is(:not(.disabled, :disabled).selected):is(:hover) {
+.modifier-options button.modifier-option.btn.btn-primary:not(.disabled):not(:disabled).selected:hover {
     color: rgb(var(--on-tertiary-container));
     box-shadow: var(--elevation-1);
     background-image: var(--btn-hover-highlight);
     background-color: rgb(var(--tertiary-container));
     background-blend-mode: screen;
-    border: 1px solid rgb(var(--tertiary-container));
+    border: 1px solid rgb(var(--green));
 }
 .modifier-options button.modifier-option.selected.btn.btn-primary:focus-visible {
-    background-color: transparent;
-    background-image: linear-gradient(to right, rgb(var(--tertiary-container)), rgb(var(--tertiary-container)));
+    background-image: var(--btn-dummy-highlight);
+    background-color: rgb(var(--tertiary-container));
+    background-blend-mode: screen;
     color: rgb(var(--on-pry-container)) !important;
     outline-color: rgb(var(--focus-ring));
     outline-offset: -0.1rem;
