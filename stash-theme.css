@@ -6054,7 +6054,7 @@ div.mr-auto.nav.nav-tabs > .nav-item:not(.nav-link) { /* Nav-Item Tabs dimension
     padding: 0;
     margin: 0;
 }
-.image-tabs .mr-auto.nav.nav-tabs>.nav-item>.nav-link,
+/*.image-tabs .mr-auto.nav.nav-tabs>.nav-item>.nav-link,*/
 .scene-tabs .mr-auto.nav.nav-tabs>.nav-item>.nav-link,
 /*.gallery-tabs>div>.mr-auto.nav.nav-tabs>.nav-item>.nav-link,*/
 div.mr-auto.nav.nav-tabs > .nav-item:not(.nav-link) > .nav-link {
@@ -6086,8 +6086,8 @@ div.mr-auto.nav.nav-tabs > .nav-item:not(.nav-link) > .nav-link {
     align-items: center;
     padding-top: 0.75rem;
 }
-.image-tabs .mr-auto.nav.nav-tabs>.nav-item:has(>*:not(.nav-link)),
-.gallery-tabs>div>.mr-auto.nav.nav-tabs>.nav-item:has(>*:not(.nav-link)) {
+.image-tabs .mr-auto.nav.nav-tabs>.nav-item:has(>:not(.nav-link)),
+.gallery-tabs > div > .mr-auto.nav.nav-tabs>.nav-item:has(>:not(.nav-link)) {
     display: flex;
     flex: 1 1 15%;
     max-width: 15%;
