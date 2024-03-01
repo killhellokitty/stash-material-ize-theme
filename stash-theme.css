@@ -6011,6 +6011,8 @@ div.mr-auto.nav.nav-tabs > .nav-item:not(.nav-link) { /* Nav-Item Tabs dimension
 .image-tabs > div > div.mr-auto.nav.nav-tabs > .nav-item:has(>:not(.btn-group)):has(>:not(.organized-button)):has(>:not(.dropdown)) { /* Images Page Left-Side Tabs */
     flex: 1 1 calc((1/3)*100%);
     max-width: calc((1/3)*100%);
+    border-bottom: 1px solid rgb(var(--surface-variant));
+    background-color: rgb(var(--body-color));
 }
 /*.gallery-container .mr-auto.nav.nav-tabs .nav-item {
     display: flex;
@@ -6071,8 +6073,8 @@ div.mr-auto.nav.nav-tabs > .nav-item:not(.nav-link) > .nav-link {
     color: rgb(var(--on-surface-variant));
     text-decoration: none !important;
     background-color: rgb(var(--body-color));
-    border: 0;
-    border-bottom: 1px solid rgb(var(--surface-variant));
+    border: 1px solid transparent;
+    border-bottom: 2px solid transparent;
     font-weight: 500;
     letter-spacing: 0.065em;
     box-shadow: var(--elevation-0);
@@ -6094,6 +6096,8 @@ div.mr-auto.nav.nav-tabs > .nav-item:not(.nav-link) > .nav-link {
     justify-content: flex-end;
     align-items: center;
     padding-top: 0.75rem;
+    border: 0 !important;
+    background-color: transparent !important;
 }
 .scene-tabs .mr-auto.nav.nav-tabs>.ml-auto.btn-group>.nav-item {
     display: flex;
@@ -6153,7 +6157,7 @@ div.mr-auto.nav.nav-tabs > .nav-item:not(.nav-link) > .nav-link {
 }
 div.mr-auto.nav.nav-tabs > .nav-item:not(.nav-link) > .nav-link:not(.active):is(:hover, :focus, :focus:hover) {
     padding: 0;
-    border-bottom: 1px solid rgb(var(--outline));
+    /*border-bottom: 1px solid rgb(var(--outline));*/
 }
 /* !!! .nav-tabs>.nav-item:has(>*:not(.btn-secondary):not(.dropdown):not(.o-counter)):not(.nav-link):focus-visible,*/
 .nav-tabs .nav-item.nav-link:not(.active):focus-visible {
@@ -6255,12 +6259,14 @@ div.mr-auto.nav.nav-tabs > .nav-item:not(.nav-link) > .nav-link.active:is(:hover
     color: rgb(var(--pry-color));
     border-bottom: 2px solid rgb(var(--pry-color));
 }
-nav.nav-tabs > .nav-item.nav-link:is(.active, :not(.active)),
-div.mr-auto.nav.nav-tabs > .nav-item:not(.nav-link) > .nav-link:is(.active, :not(.active)) {
+nav.nav-tabs > .nav-item.nav-link:is(.active, :not(.active))/*,
+div.mr-auto.nav.nav-tabs > .nav-item:not(.nav-link) > .nav-link:is(.active, :not(.active))*/ {
     background-color: rgb(var(--body-color));
     background-blend-mode: screen;
 }
-
+div.mr-auto.nav.nav-tabs > .nav-item:not(.nav-link) > .nav-link:is(.active, :not(.active)) {
+    background-color: transparent;
+}
 /*.nav-tabs .nav-link:not(.nav-item).active:hover, 
 .nav-tabs .nav-link:not(.nav-item).active:focus:hover,
 .nav-tabs .nav-link:not(.nav-item).active:focus-visible {
