@@ -755,9 +755,9 @@ p.heading {
 }
 /* --- The space between the Navigation Bar and the rest of the page --- */
 .container-fluid {
-    margin-top: 73px;
-    padding-right: 1rem;
-    padding-left: 1rem;
+    margin-top: 64px;
+    padding-right: 0;
+    padding-left: 0;
     width: calc(100% - 88px);
     margin-right: auto;
     margin-left: 88px;
@@ -6003,6 +6003,8 @@ div.mr-auto.nav.nav-tabs > .nav-item:not(.nav-link) { /* Nav-Item Tabs dimension
 .gallery-container > div > div.mr-auto.nav.nav-tabs > .nav-item:not(.nav-link) { /* Gallery Page Right-Side Tabs */
     flex: 1 1 calc((1/2)*100%);
     max-width: calc((1/2)*100%);
+    border-bottom: 1px solid rgb(var(--surface-variant));
+    background-color: rgb(var(--body-color));
 }
 .gallery-tabs > div > div.mr-auto.nav.nav-tabs > .nav-item:has(>*:not(.btn-secondary):not(.dropdown)):not(.nav-link) { /* Gallery Page Left-Side Tabs */
     flex: 1 1 calc((1/4)*100%);
@@ -6048,13 +6050,13 @@ div.mr-auto.nav.nav-tabs > .nav-item:not(.nav-link) { /* Nav-Item Tabs dimension
 }
 .gallery-tabs>div>.mr-auto.nav.nav-tabs>.nav-item:has(>*:not(.btn-secondary):not(.dropdown)) {
     display: flex;
-    /*flex: 1 1 calc((1/4)*90%);
-    max-width: 90%;*/
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
     padding: 0;
     margin: 0;
+    border-bottom: 1px solid rgb(var(--surface-variant));
+    background-color: rgb(var(--body-color));
 }
 /*.image-tabs .mr-auto.nav.nav-tabs>.nav-item>.nav-link,*/
 .scene-tabs .mr-auto.nav.nav-tabs>.nav-item>.nav-link,
@@ -6072,7 +6074,7 @@ div.mr-auto.nav.nav-tabs > .nav-item:not(.nav-link) > .nav-link {
     padding: 0;
     color: rgb(var(--on-surface-variant));
     text-decoration: none !important;
-    background-color: rgb(var(--body-color));
+    background-color: transparent;
     border: 1px solid transparent;
     border-bottom: 2px solid transparent;
     font-weight: 500;
