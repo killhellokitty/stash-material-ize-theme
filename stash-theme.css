@@ -782,6 +782,12 @@ p.heading {
     padding-right: 1rem;
     padding-left: 1rem;
 }
+.container-fluid > .item-list-container {
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+} 
+
 /*@media (max-width: 575.98px) {
     .container, 
     .container-fluid, 
@@ -2248,8 +2254,8 @@ button.tag-list-button.btn.btn-secondary:not(:has(>.tag-list-anchor)):disabled {
     margin-right: 1px;
 }
 .tab-content {
-    padding-right: 16px;
-    padding-left: 16px;
+    padding-right: 5%;
+    padding-left: 5%;
 }
 
 /* ||Primary Button */
@@ -5283,7 +5289,9 @@ div.mb-2 select.btn-secondary.form-control.focus option {
     .gallery-tabs + .gallery-divider > button.btn.btn-primary {
         color: rgb(var(--secondary));
         border: 0;
+        background-image: var(--btn-dummy-highlight);
         background-color: rgb(var(--on-sec));
+        background-blend-mode: screen;
         font-size: 24px;
         font-weight: 900;
         box-shadow: var(--elevation-1);
@@ -5299,56 +5307,97 @@ div.mb-2 select.btn-secondary.form-control.focus option {
         transition: margin-left 0.35s ease, var(--trans-0);
         -webkit-transition: margin-left 0.35s ease, var(--trans-0);
     }
+    .gallery-tabs + .gallery-divider > button.btn.btn-primary {
+        background-color: rgb(var(--inset-body-color));
+        background-blend-mode: overlay;
+        color: rgb(var(--on-surface-variant));
+        box-shadow: var(--elevation-0) !important;
+        margin-right: 0%;
+        margin-left: 0%;
+    }
     .gallery-tabs:not(.collapsed) + .gallery-divider > button.btn.btn-primary {
-        right: -1.4rem;
+        margin-left: -34px;
     }
     /*.gallery-tabs.collapsed + .gallery-divider > button.btn.btn-primary {
         right: 1rem;
     }*/
-    .scene-divider:has(+.scene-player-container.expanded) > button.btn.btn-primary,
-    .gallery-tabs.collapsed + .gallery-divider > button.btn.btn-primary {
+    .scene-divider:has(+.scene-player-container.expanded) > button.btn.btn-primary {
         margin-left: -4px;
         transition: margin-left 0.35s ease;
         -webkit-transition: margin-left 0.35s ease;
     }
-    .scene-divider:has(+.scene-player-container) > button.btn.btn-primary:hover,
-    .gallery-tabs + .gallery-divider > button.btn.btn-primary:hover {
-        color: rgb(var(--secondary));
-        background-image: linear-gradient(45deg, rgb(255,255,255,0.08), rgb(255,255,255,0.08));
-        background-color: rgb(var(--on-sec));
-        background-blend-mode: screen;
+    .gallery-tabs.collapsed + .gallery-divider > button.btn.btn-primary {
+        margin-left: 4px;
+        transition: margin-left 0.35s ease;
+    }
+    .scene-divider:has(+.scene-player-container) > button.btn.btn-primary:where(:hover, :focus-visible),
+    .gallery-tabs + .gallery-divider > button.btn.btn-primary:where(:hover, :focus-visible) {
+        background-image: var(--btn-hover-highlight);
         box-shadow: var(--elevation-2);
     }
-    .scene-divider:has(+.scene-player-container) > button.btn.btn-primary:active,
-    .gallery-tabs + .gallery-divider > button.btn.btn-primary:active {
-        color: rgb(var(--secondary));
-        background-image: linear-gradient(45deg, rgb(255,255,255,0.12), rgb(255,255,255,0.12));
-        background-color: rgb(var(--on-sec));
-        background-blend-mode: screen;
+    .scene-divider:has(+.scene-player-container) > button.btn.btn-primary:where(:active, :focus),
+    .gallery-tabs + .gallery-divider > button.btn.btn-primary:where(:active, :focus) {
+        background-image: var(--btn-active-highlight);
         box-shadow: var(--elevation-1);
     }
-    .scene-divider:has(+.scene-player-container) > button.btn.btn-primary:focus,
-    .gallery-tabs + .gallery-divider > button.btn.btn-primary:focus {
-        color: rgb(var(--secondary));
-        background-image: linear-gradient(45deg, rgb(255,255,255,0.12), rgb(255,255,255,0.12));
-        background-color: rgb(var(--on-sec));
-        background-blend-mode: screen;
-        box-shadow: var(--elevation-1);
+    .gallery-divider {
+        background-color: transparent;
+        padding-top: 40%;
+        min-width: 1px;
+        flex: 1 1 1px;
+        max-width: 1px;
     }
-    .gallery-tabs + .gallery-divider {
-        background-color: rgb(var(--body-color2));
+    .gallery-tabs.collapsed + .gallery-divider {
+        position: absolute;
+    }
+    .gallery-tabs:not(.collapsed) + .gallery-divider {
+        position: relative;
+    }
+    .gallery-container {
+        flex: 1 1 calc(100% - 451px);
+        max-width: calc(100% - 451px);
+    }
+    .gallery-container.expanded {
+        flex: 0 0 calc(100% - 33px);
+        max-width: calc(100% - 33px);
+        padding-left: 1rem;
+        padding-right: 1rem;
+        position: absolute;
     }
     :is(.image-tabs, .gallery-tabs) {
         background-color: rgb(var(--inset-body-color));
         border-radius: 0 1.75rem 1.75rem 0;
         box-shadow: 1px 0 7px 0 rgb(0,0,0,0.05), 0 0 0 0 rgb(0,0,0,0);
+        flex: 0 0 auto;
+        max-width: 450px;
+        overflow: unset;
+    }
+    :is(.image-tabs, .gallery-tabs):not(.collapsed) {
+        transform: translate(0%,0%);
+    }
+    :is(.image-tabs, .gallery-tabs).collapsed {
+        height: calc(100vh - 4rem);
+        transform: translateX(-432px);
+        display: block;
     }
     :is(.image-tabs, .gallery-tabs) .tab-pane.active.show > :is(#image-edit-details, #gallery-edit-details) > form > .edit-buttons-container + .form-container.px-3.row > div { /* Removes Padding from div to expand the lenght of text entries */
         padding-left: 0;
         padding-right: 0;
     }
 }
-
+.gallery-tabs {
+    max-height: none;
+}
+.gallery-tabs,
+.gallery-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    position: relative;
+    width: unset; /* maybe mistake */
+}
+.gallery-container {
+    overflow: unset;
+}
 .scrubber-wrapper {
     background-color: black;
     border-style: none;
@@ -5935,6 +5984,10 @@ nav.nav.nav-tabs { /* TabBar behind Nav-Item Tabs */
     justify-content: space-evenly;
     padding-bottom: 1rem;
     margin-bottom: 0%;
+}
+.gallery-container .nav-tabs {
+    width: 96%;
+    margin-top: 2rem;
 }
 /* !!! .row > :is(:not(.scene-tabs):not(.gallery-tabs):not(.image-tabs)) .nav.nav-tabs:has(> .nav-item:nth-of-type(2) > a.active) {
     border-bottom: 1px solid rgb(255,255,255,0.085);
