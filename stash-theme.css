@@ -6046,8 +6046,8 @@ div.mr-auto.nav.nav-tabs > .nav-item:not(.nav-link) { /* Nav-Item Tabs dimension
 }
 .gallery-tabs>div>.mr-auto.nav.nav-tabs>.nav-item:has(>*:not(.btn-secondary):not(.dropdown)) {
     display: flex;
-    flex: 1 1 calc((1/4)*90%);
-    max-width: 90%;
+    /*flex: 1 1 calc((1/4)*90%);
+    max-width: 90%;*/
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
@@ -10007,6 +10007,7 @@ form#studio-edit {
 /* Galleries Editor */
 .gallery-tabs {
     max-height: none;
+    overflow: unset;
 }
 .tab-content>.tab-pane.active.show>#gallery-edit-details>form>.form-container:first-of-type>.col:has(>*.edit-button) {
     max-width: 50%;
