@@ -5339,7 +5339,9 @@ div.mb-2 select.btn-secondary.form-control.focus option {
         background-color: rgb(var(--body-color2));
     }
     :is(.image-tabs, .gallery-tabs) {
-        background-color: rgb(var(--body-color));
+        background-color: rgb(var(--inset-body-color));
+        border-radius: 0 1.75rem 1.75rem 0;
+        box-shadow: 1px 0 7px 0 rgb(0,0,0,0.05), 0 0 0 0 rgb(0,0,0,0);
     }
     :is(.image-tabs, .gallery-tabs) .tab-pane.active.show > :is(#image-edit-details, #gallery-edit-details) > form > .edit-buttons-container + .form-container.px-3.row > div { /* Removes Padding from div to expand the lenght of text entries */
         padding-left: 0;
@@ -10015,7 +10017,6 @@ form#studio-edit {
 /* Galleries Editor */
 .gallery-tabs {
     max-height: none;
-    overflow: unset;
 }
 .tab-content>.tab-pane.active.show>#gallery-edit-details>form>.form-container:first-of-type>.col:has(>*.edit-button) {
     max-width: 50%;
