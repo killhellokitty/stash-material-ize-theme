@@ -12982,7 +12982,7 @@ span.stash-id-pill {
     padding: 4px 0;
 }
 .background-image-container + .detail-container .stash-id-pill a {
-    background-color:transparent;
+    background-color: transparent;
     text-decoration-color: transparent;
     color: rgb(var(--on-surface));
     padding: 4px 0 4px;
