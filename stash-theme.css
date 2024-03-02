@@ -12957,9 +12957,8 @@ span.stash-id-pill {
 .stash-id-pill a {
     color: rgb(var(--on-tertiary-container));
     background-color: rgb(var(--tertiary-container));
-    text-decoration: none !important;
+    text-decoration: none;
     text-decoration-color: transparent;
-    text-decoration-style: none;
     text-underline-offset: 0.25em;
     text-decoration-thickness: 0.12em;
     border-radius: 0 0 8px 8px;
@@ -12988,32 +12987,36 @@ span.stash-id-pill {
     color: rgb(var(--on-surface));
     padding: 4px 0 4px;
 }
-.stash-id-pill a:visited {
+.stash-id-pill a:visited,
+.background-image-container + .detail-container .stash-id-pill a:visited {
     text-decoration: none !important;
     text-decoration-color: transparent;
     color: rgb(var(--link-visited));
-    text-decoration-style: none;
     
 }
-.stash-id-pill a:visited:hover {
+.stash-id-pill a:visited:hover,
+.background-image-container + .detail-container .stash-id-pill a:visited:hover {
     text-decoration: underline !important;
     text-decoration-color: rgb(var(--link-visited));
     color: rgb(var(--link-visited));
     text-decoration-style: solid;
 }
-..stash-id-pill a:hover {
+..stash-id-pill a:hover,
+.background-image-container + .detail-container .stash-id-pill a:hover {
     text-decoration-color: rgb(var(--link));
     color: rgb(var(--link));
     text-decoration: underline !important;
     text-decoration-style: solid;
 }
-.stash-id-pill a:where(:active, :active:hover, :active:focus) {
+.stash-id-pill a:where(:active, :active:hover, :active:focus),
+.background-image-container + .detail-container .stash-id-pill a:where(:active, :active:hover, :active:focus) {
     text-decoration-color: rgb(var(--link-active));
     color: rgb(var(--link-active));
     text-decoration: underline !important;
     text-decoration-style: solid;
 }
-.stash-id-pill a:not(:active):where(:focus, :focus-visible) {
+.stash-id-pill a:not(:active):where(:focus, :focus-visible),
+.background-image-container + .detail-container .stash-id-pill a:not(:active):where(:focus, :focus-visible) {
     text-decoration-color: rgb(var(--link));
     color: rgb(var(--link));
     text-decoration: underline !important;
