@@ -4543,9 +4543,7 @@ textarea.text-input.code.form-control {
          height: 56.25vw;
     }
      .gallery-container .tab-content {
-         top: 3rem;
-         position: fixed;
-         height: calc(100vh - 6.5rem);
+         position: static;
     }
      .gallery-tabs {
          display: none;
@@ -4582,6 +4580,8 @@ textarea.text-input.code.form-control {
      .tab-content {
          overflow-y: auto;
          overflow-x: hidden;
+         padding-right: 0;
+         padding-left: 0;
     }
      .studio-card {
          width: 100%;
