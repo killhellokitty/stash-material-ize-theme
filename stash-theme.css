@@ -5396,6 +5396,7 @@ div.mb-2 select.btn-secondary.form-control.focus option {
 }
 .gallery-tabs {
     max-height: none;
+    margin-top: 1.5rem;
 }
 .gallery-tabs,
 .gallery-container {
