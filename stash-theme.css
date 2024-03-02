@@ -4182,10 +4182,10 @@ div.scene-file-info .text-truncate {
 }
 
 #jwplayer-container {    
-    height: calc(99.5vh - 4rem);
+    height: calc(100vh - 4rem);
 }
 .scene-tabs {   
-    max-height: calc(99vh - 4rem); 
+    max-height: calc(100vh - 4rem); 
     padding-left: 0;
 }
 
@@ -6074,6 +6074,10 @@ div.mr-auto.nav.nav-tabs > .nav-item:not(.nav-link) { /* Nav-Item Tabs dimension
     border-bottom: 1px solid rgb(var(--surface-variant));
     background-color: rgb(var(--body-color));
 }
+.scene-tabs > div + div > div.mr-auto.nav.nav-tabs>.nav-item:has(>*:not(.btn-group)){
+    flex: 1 1 calc((1/6)*100%);
+    max-width: calc((1/6)*100%);
+}
 /*.gallery-container .mr-auto.nav.nav-tabs .nav-item {
     display: flex;
     flex: 1 1 calc((1/2)*90%);
@@ -6098,13 +6102,13 @@ div.mr-auto.nav.nav-tabs > .nav-item:not(.nav-link) { /* Nav-Item Tabs dimension
 }*/
 .scene-tabs .mr-auto.nav.nav-tabs>.nav-item:has(>*:not(.btn-group)) {
     display: flex;
-    flex: 1 1 calc((1/6)*90%);
-    max-width: 90%;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
     padding: 0;
     margin: 0;
+    border-bottom: 1px solid rgb(var(--surface-variant));
+    background-color: rgb(var(--body-color));
 }
 .gallery-tabs>div>.mr-auto.nav.nav-tabs>.nav-item:has(>*:not(.btn-secondary):not(.dropdown)) {
     display: flex;
@@ -6116,6 +6120,7 @@ div.mr-auto.nav.nav-tabs > .nav-item:not(.nav-link) { /* Nav-Item Tabs dimension
     border-bottom: 1px solid rgb(var(--surface-variant));
     background-color: rgb(var(--body-color));
 }
+
 /*.image-tabs .mr-auto.nav.nav-tabs>.nav-item>.nav-link,*/
 .scene-tabs .mr-auto.nav.nav-tabs>.nav-item>.nav-link,
 /*.gallery-tabs>div>.mr-auto.nav.nav-tabs>.nav-item>.nav-link,*/
@@ -6220,6 +6225,9 @@ div.mr-auto.nav.nav-tabs > .nav-item:not(.nav-link) > .nav-link:not(.active):is(
     padding: 0;
     /*border-bottom: 1px solid rgb(var(--outline));*/
 }
+:is(.scene-tabs, .gallery-tabs) > div + div > div.mr-auto.nav.nav-tabs > .nav-item:has(>*:not(.btn-group):not(.organized-button):not(.dropdown)):not(.nav-link):is(:hover, :focus, :focus:hover) {
+    border-bottom: 1px solid rgb(var(--outline));
+}
 /* !!! .nav-tabs>.nav-item:has(>*:not(.btn-secondary):not(.dropdown):not(.o-counter)):not(.nav-link):focus-visible,*/
 .nav-tabs .nav-item.nav-link:not(.active):focus-visible {
     border: 0;
@@ -6319,7 +6327,6 @@ nav.nav-tabs > .nav-item.nav-link.active:is(:hover, :focus, :focus:hover, :focus
 div.mr-auto.nav.nav-tabs > .nav-item:not(.nav-link) > .nav-link.active,
 div.mr-auto.nav.nav-tabs > .nav-item:not(.nav-link) > .nav-link.active:is(:hover, :focus, :focus:hover, :focus-visible) { /* Enabled Tabs underline */
     color: rgb(var(--pry-color));
-    border: none;
     border-bottom: 2px solid rgb(var(--pry-color));
 }
 nav.nav-tabs > .nav-item.nav-link:is(.active, :not(.active))/*,
@@ -10180,12 +10187,35 @@ form#studio-edit {
 
 @media (min-width: 1200px) {
     .scene-tabs {
-        background-image: none;
-        background-color: rgb(var(--body-color));
+        background-image: var(--btn-dummy-highlight);
+        background-color: rgb(var(--inset-body-color));
+        background-blend-mode: screen;
+        overflow: unset;
     }
     .scene-divider {
-        background-image: none;
-        background-color: rgb(var(--body-color2));
+        background-image: var(--btn-dummy-highlight);
+        background-color: rgb(var(--inset-body-color));
+        width: 1px;
+        max-width: 1px;
+    }
+    .scene-player-container {
+        flex: 0 0 calc(100% - 452px);
+        max-width: calc(100% - 452px);
+    }
+    .scene-tabs > div +div + .tab-content {
+        background-image: var(--btn-dummy-highlight);
+        background-color: rgb(var(--inset-body-color));
+        background-blend-mode: screen;
+    }
+    .scene-tabs > div +div + .tab-content:has( > .tab-pane.active.show:first-child) {
+        border-top: 1px solid rgb(255,255,255,0.085);
+        margin: 0 1rem 0.1rem;
+        padding-top: 0.75rem;
+    }
+}
+@media (max-width: 1199px) {
+    .scene-tabs {
+        padding-right: 0;
     }
 }
 .scene-markers-panel .primary-card .card-section.centered {
