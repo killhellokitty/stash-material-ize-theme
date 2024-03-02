@@ -3778,6 +3778,8 @@ h5.card-section-title, .scene-tabs .scene-header {
     margin-top: 8px;
     color: rgb(var(--white-color));
     text-shadow: var(--really-light-txt-shadow);
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
 }
 .scene-tabs .studio-logo {  
     margin-top: 0;
