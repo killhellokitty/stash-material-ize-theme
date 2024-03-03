@@ -378,15 +378,15 @@ h6,
 @keyframes focus-ring-width-bounce-inner {
     0% {
         outline-width: 0.19rem;
-        outline-offset: -0.10rem;
+        outline-offset: -0.19;
     }
     50% {
         outline-width: 0.55rem;
-        outline-offset: -0.30rem;
+        outline-offset: -0.55rem;
     }
     100% {
         outline-width: 0.30rem;
-        outline-offset: -0.15rem;
+        outline-offset: -0.30rem;
     }
 }
 /* - */
@@ -6028,8 +6028,6 @@ nav.nav-tabs > .nav-item.nav-link { /* Nav-Item Tabs */
     max-height: 48px;
     border-bottom: none;
     padding: 0;
-    overflow: hidden;
-    contain: content;
 }
 /*.nav-tabs>.nav-item:first-child {
     padding-left: 6px;
@@ -6070,6 +6068,8 @@ div.mr-auto.nav.nav-tabs > .nav-item:not(.nav-link) { /* Nav-Item Tabs dimension
     align-items: center;
     padding: 0;
     margin: 0%;
+    overflow: hidden;
+    contain: content;
     /*height: 40px;*/ /*added jun 12 for firefox*/
 }
 
@@ -6098,7 +6098,7 @@ div.mr-auto.nav.nav-tabs > .nav-item:not(.nav-link) { /* Nav-Item Tabs dimension
     border-bottom: 1px solid rgb(var(--surface-variant));
     background-color: rgb(var(--body-color));
 }
-.scene-tabs > div + div > div.mr-auto.nav.nav-tabs>.nav-item:has(>*:not(.btn-group)){
+.scene-tabs > div + div > div.mr-auto.nav.nav-tabs > .nav-item:has(>*:not(.btn-group)){
     flex: 1 1 calc((1/6)*100%);
     max-width: calc((1/6)*100%);
 }
@@ -6124,7 +6124,7 @@ div.mr-auto.nav.nav-tabs > .nav-item:not(.nav-link) { /* Nav-Item Tabs dimension
     padding: 0;
     margin: 0;
 }*/
-.scene-tabs .mr-auto.nav.nav-tabs>.nav-item:has(>*:not(.btn-group)) {
+.scene-tabs .mr-auto.nav.nav-tabs > .nav-item:has(>*:not(.btn-group)) {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -6134,7 +6134,7 @@ div.mr-auto.nav.nav-tabs > .nav-item:not(.nav-link) { /* Nav-Item Tabs dimension
     border-bottom: 1px solid rgb(var(--surface-variant));
     background-color: rgb(var(--body-color));
 }
-.gallery-tabs>div>.mr-auto.nav.nav-tabs>.nav-item:has(>*:not(.btn-secondary):not(.dropdown)) {
+.gallery-tabs > div > .mr-auto.nav.nav-tabs > .nav-item:has(>*:not(.btn-secondary):not(.dropdown)) {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -6146,7 +6146,7 @@ div.mr-auto.nav.nav-tabs > .nav-item:not(.nav-link) { /* Nav-Item Tabs dimension
 }
 
 /*.image-tabs .mr-auto.nav.nav-tabs>.nav-item>.nav-link,*/
-.scene-tabs .mr-auto.nav.nav-tabs>.nav-item>.nav-link,
+.scene-tabs .mr-auto.nav.nav-tabs > .nav-item > .nav-link,
 /*.gallery-tabs>div>.mr-auto.nav.nav-tabs>.nav-item>.nav-link,*/
 div.mr-auto.nav.nav-tabs > .nav-item:not(.nav-link) > .nav-link {
     display: flex;
@@ -6169,7 +6169,7 @@ div.mr-auto.nav.nav-tabs > .nav-item:not(.nav-link) > .nav-link {
     box-shadow: var(--elevation-0);
     transition: border-bottom 0.4s ease-in-out, var(--trans-0);
 }
-.scene-tabs .mr-auto.nav.nav-tabs>.ml-auto.btn-group {
+.scene-tabs .mr-auto.nav.nav-tabs > .ml-auto.btn-group {
     display: flex;
     flex: 1 1 60%;
     max-width: 60%;
@@ -6177,7 +6177,7 @@ div.mr-auto.nav.nav-tabs > .nav-item:not(.nav-link) > .nav-link {
     align-items: center;
     padding-top: 0.75rem;
 }
-.image-tabs .mr-auto.nav.nav-tabs>.nav-item:has(>:not(.nav-link)),
+.image-tabs .mr-auto.nav.nav-tabs > .nav-item:has(>:not(.nav-link)),
 .gallery-tabs > div > .mr-auto.nav.nav-tabs>.nav-item:has(>:not(.nav-link)) {
     display: flex;
     flex: 1 1 15%;
@@ -6188,7 +6188,7 @@ div.mr-auto.nav.nav-tabs > .nav-item:not(.nav-link) > .nav-link {
     border: 0 !important;
     background-color: transparent !important;
 }
-.scene-tabs .mr-auto.nav.nav-tabs>.ml-auto.btn-group>.nav-item {
+.scene-tabs .mr-auto.nav.nav-tabs > .ml-auto.btn-group > .nav-item {
     display: flex;
     flex: 1 1 60%;
     max-width: 60%;
@@ -8313,6 +8313,10 @@ button#scene-scrape:focus,
 .modal-body .btn-secondary.form-control:focus-visible:not(:focus),
 button#scene-scrape:focus-visible,
 .scrape-url-button:not(:disabled):focus-visible {
+    outline-color: rgb(var(--focus-ring));
+    outline-offset: -0.19rem; 
+    outline-style: solid;
+    outline-width: 0.19rem;
     box-shadow: none;
     z-index: 20;
     animation: focus-ring-width-bounce-inner 0.45s cubic-bezier(0.25, 1, 0.5, 1) 0.15s forwards;
@@ -12483,7 +12487,7 @@ button.tag-list-button.btn.btn-secondary:has(>.tag-list-anchor)::after {
     position: absolute;
     width: 92px;
     height: 92px;
-    background: radial-gradient(ellipse, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%) center/15000%;
+    background: radial-gradient(ellipse, rgb(255, 255, 255, 0.7) 0%, rgb(255, 255, 255, 0.001) 100%) center/15000%;
     border-radius: 5rem;
     opacity: 0.6;
     transform: scale(0);
@@ -12598,10 +12602,10 @@ button#operation-menu.minimal.dropdown-toggle.btn.btn-secondary:not(:active):not
 .pagination button.btn.btn-secondary:not(:hover)::after,
 .justify-content-center.btn-toolbar > .mb-2 > select.btn-secondary.form-control:not(:hover)::after,
 button.tag-list-button.btn.btn-secondary:not(:active):not(.active)::after,
-.nav-tabs>.nav-item:has(>*:not(.btn-secondary):not(.dropdown):not(.o-counter)):not(:hover)::after, 
-.nav-tabs>.nav-item:has(>*:not(.btn-secondary):not(.dropdown):not(.o-counter)):not(:hover:active)::after,
-.nav-tabs .nav-item.nav-link:not(:hover)::after,
-.nav-tabs .nav-link:not(:hover)::after,
+.nav-tabs>.nav-item:has(>*:not(.btn-secondary):not(.dropdown):not(.o-counter)):not(.active)::after, 
+.nav-tabs>.nav-item:has(>*:not(.btn-secondary):not(.dropdown):not(.o-counter)):not(.active)::after,
+.nav-tabs .nav-item.nav-link:not(.active)::after,
+.nav-tabs .nav-link:not(.active)::after,
 .show > .dropdown-menu.show .dropdown-item:not(:active)::after {
     animation: ripple 0.85s ease-in-out forwards;
     will-change: animation;
@@ -12652,12 +12656,12 @@ button#operation-menu.minimal.dropdown-toggle.btn.btn-secondary:focus:not(:focus
 .pagination button.btn.btn-secondary:focus:not(:focus-visible)::after,
 .justify-content-center.btn-toolbar > .mb-2 > select.btn-secondary.form-control:focus::after,
 button.tag-list-button.btn.btn-secondary:focus:not(:focus-visible)::after,
-.nav-tabs>.nav-item:has(>*:not(.btn-secondary):not(.dropdown):not(.o-counter)):focus::after, 
-.nav-tabs .nav-item.nav-link:focus::after,
-.nav-tabs .nav-link:focus::after,
-.nav-tabs>.nav-item:has(>*:not(.btn-secondary):not(.dropdown):not(.o-counter)).active:focus::after, 
-.nav-tabs .nav-item.nav-link.active:focus::after,
-.nav-tabs .nav-link.active:focus::after,
+.nav-tabs>.nav-item:has(>*:not(.btn-secondary):not(.dropdown):not(.o-counter)):focus:not(:focus-visible)::after, 
+.nav-tabs .nav-item.nav-link:focus:not(:focus-visible)::after,
+.nav-tabs .nav-link:focus:not(:focus-visible)::after,
+.nav-tabs>.nav-item:has(>*:not(.btn-secondary):not(.dropdown):not(.o-counter)).active:focus:not(:focus-visible)::after, 
+.nav-tabs .nav-item.nav-link.active:focus:not(:focus-visible)::after,
+.nav-tabs .nav-link.active:focus:not(:focus-visible)::after,
 .show > .dropdown-menu.show .dropdown-item:focus:not(:focus-visible)::after {
     visibility: visible;
 }
