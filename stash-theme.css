@@ -769,6 +769,11 @@ p.heading {
     margin-top: 64px;
     }
 }
+.container-fluid:has(>.recommendations-container) {
+    padding-right: 0.75rem;
+    padding-left: 1rem;
+
+}
 .container-fluid:has(*.background-image-container) {
     padding-right: 0.1px;
     padding-left: 0.1px;
@@ -2199,8 +2204,8 @@ button.tag-list-button.btn.btn-secondary:not(:has(>.tag-list-anchor)):disabled {
         display: revert;
     }
 }
-@media (min-width: 576px) {
-    .navbar-expand-xl .navbar-collapse.collapse:not(.show) {
+
+.navbar-expand-xl .navbar-collapse.collapse:not(.show) {
         display: flex;
         overflow-y: auto;
         max-height: 100%;
@@ -2216,26 +2221,27 @@ button.tag-list-button.btn.btn-secondary:not(:has(>.tag-list-anchor)):disabled {
         align-content: flex-start;
         will-change: transform;
         transition: all 0s;
-    }
 }
+
 @media (max-width: 576px) {
     .navbar-expand-xl .navbar-collapse.collapse:not(.show) {
-        overflow-x: auto;
-        max-height: 0;
-        height: 88px;
-        max-width: 100%;
-        display: grid;
-        place-items: center;
-        top: unset;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        margin: auto 0 0 0;
-        transform: translate(0%, 0%);
-        transition: all 0s;
-        will-change: transition;
-    }
+    overflow-x: auto;
+    max-height: 0;
+    height: 88px;
+    max-width: 100%;
+    display: flex;
+    /*place-items: center;*/
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto 0 0 0;
+    transform: translate(0%, 0%);
+    transition: all 0s;
+    will-change: transition;
 }
+}
+
 .top-nav .navbar-collapse {
     justify-content: space-evenly;
 }
@@ -6738,6 +6744,7 @@ nav.top-nav.navbar .navbar-collapse.collapse:not(.show)>.navbar-nav {
 nav.top-nav.navbar .navbar-collapse.collapse.show>.navbar-nav {
     padding-bottom: 0;
 }
+
 .top-nav .navbar-collapse.show {
     /*transform: translate(-100%);
     transition: transform 0.35s;*/
@@ -6759,30 +6766,33 @@ nav.top-nav.navbar .navbar-collapse.collapse.show>.navbar-nav {
     right: 0;
     bottom: 0;
 }
-@media (max-width: 576px) {
-    .top-nav .navbar-collapse.show {
-        will-change: transform, transition, margin, bottom;
-        display: flex;
-        transform: translate(0%, 0%);
-        max-height: 100%;
-        max-width: 320px;
-        width: 100%;
-        position: fixed;
-        margin: 0 auto 0 0;
-        padding: 0 2px 0 2px;
-        top: 64px;
-        left: 2px;
+
+@media (max-width:576px) {
+.top-nav .navbar-collapse.show {
+    will-change: transform, transition, margin, bottom;
+    display: flex;
+    transform: translate(0%, 0%);
+    max-height: 100%;
+    max-width: 320px;
+    width: 100%;
+    position: fixed;
+    margin: 0 auto 0 0;
+    padding: 0 2px 0 2px;
+    top: 64px;
+    left: 2px;
         /* right: 0; */
         /* bottom: 0; */
         /* justify-self: flex-start; */
-        transition: transform 0s linear 0s, margin 0s linear 0s, bottom 0s linear 0s;
-        justify-content: flex-start;
-        align-items: stretch;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-content: flex-start;
-    }
+    transition: transform 0s linear 0s, margin 0s linear 0s, bottom 0s linear 0s;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    overflow: unset;
 }
+}
+
 /* Collapsable Navbar Margin so buttons dont overlap */
 nav.top-nav.navbar .navbar-collapse.collapse.show .navbar-nav .nav-link a.minimal.p-4.btn.btn-primary {
     margin: 0;
