@@ -2297,6 +2297,7 @@ button:not([title=Help]).btn-primary,
      outline: 0;
      position: relative;
      overflow: hidden;
+     contain: content;
      opacity: 1;
      transition: background-color 0.55s cubic-bezier(0.4, 0, 0.2, 1), background-image 0.55s cubic-bezier(0.4, 0, 0.2, 1), outline 0.4s ease-in, box-shadow 0.4s ease-in, opacity 0s linear;
      -webkit-transition: background-color 0.55s cubic-bezier(0.4, 0, 0.2, 1), background-image 0.55s cubic-bezier(0.4, 0, 0.2, 1), outline 0.4s ease-in, box-shadow 0.4s ease-in, opacity 0s linear;
@@ -2770,6 +2771,7 @@ div.react-select__control .react-select__multi-value {
   max-width: 285px;
   white-space: nowrap;
   overflow: hidden;
+  contain: content;
   text-overflow: ellipsis;
 }
 
@@ -3597,6 +3599,7 @@ li.search-result.selected-result.active {
     margin-left: auto;
     margin-right: -1%;
     overflow: hidden;
+    contain: content;
     box-shadow: none;
     transition: var(--trans-0);
     -webkit-transition: var(--trans-0);
@@ -5156,6 +5159,7 @@ div[draggable="true"] .recommendation-row:not(.scene-recommendations):not(.studi
     text-shadow: none;
     text-decoration: none;
     overflow: hidden;
+    contain: content;
     padding: 8px 24px;
     color: rgb(var(--btn-primary));
     box-shadow: var(--elevation-0);
@@ -5214,6 +5218,7 @@ div[draggable="true"] .recommendation-row:not(.scene-recommendations):not(.studi
     padding-right: 24px;
     position: relative;
     overflow: hidden;
+    contain: content;
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: auto;
@@ -5593,6 +5598,7 @@ button:not([title=Statistics], [title=Settings]).minimal:not(.nav-utility, .bran
      width: auto;
      contain: content;
      overflow: hidden;
+     contain: content;
      box-shadow: none;
      outline: 0;
      transition: var(--trans-0);
@@ -6981,6 +6987,7 @@ button[title=Help].nav-utility.minimal.btn.btn-primary:has(>svg.svg-inline--fa.f
     text-decoration-color: transparent !important;
     position: relative;
     overflow: hidden;
+    contain: content;
     padding: 12px;
     box-shadow: none;
     opacity: 1;
@@ -7367,6 +7374,7 @@ button.clearable-text-field-clear.btn.btn-secondary:focus-visible {
      letter-spacing: 0.025em;
      padding: 0 24px 0 24px;
      overflow: hidden;
+     contain: content;
      box-shadow: var(--elevation-0);
      transition: var(--trans-0);
      -webkit-transition: var(--trans-0);
@@ -7427,6 +7435,7 @@ button.clearable-text-field-clear.btn.btn-secondary:focus-visible {
      letter-spacing: 0.025em;
      padding: 0 24px 0 24px;
      overflow: hidden;
+     contain: content;
      box-shadow: var(--elevation-0);
      transition: var(--trans-0);
      -webkit-transition: var(--trans-0);
@@ -7666,6 +7675,7 @@ div.react-select__control .react-select__multi-value {
   max-width: 285px;
   white-space: nowrap;
   overflow: hidden;
+  contain: content;
   text-overflow: ellipsis;
 }
 
@@ -8289,6 +8299,7 @@ button#scene-scrape,
     padding-left: 24px;
     padding-right: 24px;
     overflow: hidden;
+    contain: content;
     box-shadow: var(--elevation-0);
 }
 .btn-secondary:not(.btn-toolbar .btn-secondary):hover,
@@ -9127,6 +9138,7 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
     width: max-content;
     font-weight: 700;
     overflow: hidden;
+    contain: content;
     position: fixed;
     z-index: 995590 !important;
     display: flex;
@@ -12480,7 +12492,7 @@ button.tag-list-button.btn.btn-secondary:has(>.tag-list-anchor)::after {
 /* Nav-Tabs cented ripple */
 /*.nav-tabs>.nav-item:has(>*:not(.btn-secondary):not(.dropdown):not(.o-counter))::after, */
 /*.nav-tabs .nav-item.nav-link::after,*/
-.nav-tabs .nav-item:is(:not(.nav-link)>.nav-link, .nav-link:has(>:not(.nav-link)))::after,
+.nav-tabs .nav-item:not(.nav-link)::after,
 .nav-tabs .nav-link::after,
 .show > .dropdown-menu.show .dropdown-item::after {
     content: "";
@@ -12603,7 +12615,7 @@ button#operation-menu.minimal.dropdown-toggle.btn.btn-secondary:not(:active):not
 .pagination button.btn.btn-secondary:not(:hover)::after,
 .justify-content-center.btn-toolbar > .mb-2 > select.btn-secondary.form-control:not(:hover)::after,
 button.tag-list-button.btn.btn-secondary:not(:active):not(.active)::after,
-.nav-tabs .nav-item:is(:not(.nav-link)>.nav-link:not(.active), .nav-link:not(.active):has(>:not(.nav-link)))::after,
+.nav-tabs .nav-item:not(.nav-link):not(:active):not(.active)::after,
 /*.nav-tabs>.nav-item:has(>*:not(.btn-secondary):not(.dropdown):not(.o-counter)):not(.active)::after,*/
 /*.nav-tabs>.nav-item:has(>*:not(.btn-secondary):not(.dropdown):not(.o-counter)):not(.active)::after,*/
 /*.nav-tabs .nav-item.nav-link:not(.active)::after,*/
@@ -12634,7 +12646,7 @@ button#operation-menu.minimal.dropdown-toggle.btn.btn-secondary::after,
 .pagination button.btn.btn-secondary:not(.active):not(:active)::after,
 .justify-content-center.btn-toolbar > .mb-2 > select.btn-secondary.form-control::after,
 button.tag-list-button.btn.btn-secondary::after,
-.nav-tabs .nav-item:is(:not(.nav-link)>.nav-link, .nav-link:has(>:not(.nav-link)))::after,
+.nav-tabs .nav-item:not(.nav-link)::after,
 /*.nav-tabs>.nav-item:has(>*:not(.btn-secondary):not(.dropdown):not(.o-counter))::after,*/
 /*.nav-tabs .nav-item.nav-link::after,*/
 .nav-tabs .nav-link::after,
@@ -12660,7 +12672,7 @@ button#operation-menu.minimal.dropdown-toggle.btn.btn-secondary:focus:not(:focus
 .justify-content-center.btn-toolbar > .mb-2 > select.btn-secondary.form-control:focus::after,
 button.tag-list-button.btn.btn-secondary:focus:not(:focus-visible)::after,
 /*.nav-tabs>.nav-item:has(>*:not(.btn-secondary):not(.dropdown):not(.o-counter)):focus:not(:focus-visible)::after, */
-.nav-tabs .nav-item:is(:not(.nav-link)>.nav-link, .nav-link:has(>:not(.nav-link))):focus:not(:focus-visible)::after,
+.nav-tabs .nav-item:not(.nav-link):focus:not(:focus-visible)::after,
 /*.nav-tabs .nav-item.nav-link:focus:not(:focus-visible)::after,*/
 .nav-tabs .nav-link:focus:not(:focus-visible)::after,
 /*.nav-tabs>.nav-item:has(>*:not(.btn-secondary):not(.dropdown):not(.o-counter)).active:focus:not(:focus-visible)::after,*/ 
