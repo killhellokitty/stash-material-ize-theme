@@ -356,29 +356,37 @@ h6,
     /**/
     box-shadow: none;
 }
-*:is(:focus-visible) {
+*:is(:focus-visible, :focus-visible:not(:focus)) {
     outline-color: rgb(var(--focus-ring));
-    outline-offset: -0.10rem;
+    outline-offset: -0.10rem; /* 1.6px */
     outline-style: solid;
     outline-width: 0.19rem;
-    /*
-    * Background and Foreground Colors *
-    background-color: rgba(var( --pry-container));
-    color: rgb(var(--on-tertiary-container))
-    */
-    /**/
     box-shadow: none;
     animation: focus-ring-width-bounce-outer 0.45s cubic-bezier(0.25, 1, 0.5, 1) 0.15s forwards;
 }
 @keyframes focus-ring-width-bounce-outer {
     0% {
+        outline-width: 0.19rem; /* 3.04px */
+    }
+    50% {
+        outline-width: 0.55rem; /* 8.8px */
+    }
+    100% {
+        outline-width: 0.30rem; /* 4.8px */
+    }
+}
+@keyframes focus-ring-width-bounce-inner {
+    0% {
         outline-width: 0.19rem;
+        outline-offset: -0.10rem;
     }
     50% {
         outline-width: 0.55rem;
+        outline-offset: -0.30rem;
     }
     100% {
         outline-width: 0.30rem;
+        outline-offset: -0.15rem;
     }
 }
 /* - */
@@ -2278,9 +2286,11 @@ button:not([title=Help]).btn-primary,
      display: inline-flex;
      justify-content: center;
      align-items: center;
-     height: 40px;
+     min-height: 40px;
+     max-height: 56px;
      line-height: 20px;
      letter-spacing: 0.185px;
+     padding-block: 8px 8px;
      padding-left: 24px;
      padding-right: 24px;
      box-shadow: var(--elevation-0);
@@ -8272,9 +8282,10 @@ button#scene-scrape,
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    height: 40px;
-    max-height: 40px;
+    min-height: 40px;
+    max-height: 56px;
     width: auto;
+    padding-block: 8px 8px;
     padding-left: 24px;
     padding-right: 24px;
     overflow: hidden;
@@ -8302,11 +8313,9 @@ button#scene-scrape:focus,
 .modal-body .btn-secondary.form-control:focus-visible:not(:focus),
 button#scene-scrape:focus-visible,
 .scrape-url-button:not(:disabled):focus-visible {
-    background-image: none;
-    background-color: rgba(var(--pry-container));
-    color: rgb(var(--on-tertiary-container));
     box-shadow: none;
     z-index: 20;
+    animation: focus-ring-width-bounce-inner 0.45s cubic-bezier(0.25, 1, 0.5, 1) 0.15s forwards;
 }
 .btn-secondary:not(.btn-toolbar .btn-secondary):not(.disabled):not(:disabled):active:focus {
     box-shadow: none;
@@ -13629,5 +13638,13 @@ input[type=range]::-ms-tooltip {
     display: none;
 }
 /* *** */
-
+*:is(:focus-visible, :focus-visible:not(:focus)),
+*:focus-visible, 
+*:focus-visible:not(:focus)) {
+    outline-color: rgb(var(--focus-ring));
+    outline-offset: -0.10rem;
+    outline-style: solid;
+    outline-width: 0.19rem;
+    box-shadow: none;
+}
 /* - */
