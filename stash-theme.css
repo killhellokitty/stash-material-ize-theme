@@ -2551,7 +2551,9 @@ div#crop-btn-container {
     max-width: 26px;
     height: 26px;
     max-height: 26px;
+    min-height: 26px;
     justify-content: center;
+    align-items: center;
     padding: 0;
     display: flex;
     box-shadow: none;
