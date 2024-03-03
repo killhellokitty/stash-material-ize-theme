@@ -8324,13 +8324,8 @@ button#scene-scrape:focus,
 .modal-body .btn-secondary.form-control:focus-visible:not(:focus),
 button#scene-scrape:focus-visible,
 .scrape-url-button:not(:disabled):focus-visible {
-    outline-color: rgb(var(--focus-ring));
-    outline-offset: -0.19rem; 
-    outline-style: solid;
-    outline-width: 0.19rem;
     box-shadow: none;
     z-index: 20;
-    animation: focus-ring-width-bounce-inner 0.45s cubic-bezier(0.25, 1, 0.5, 1) 0.15s forwards;
 }
 .btn-secondary:not(.btn-toolbar .btn-secondary):not(.disabled):not(:disabled):active:focus {
     box-shadow: none;
