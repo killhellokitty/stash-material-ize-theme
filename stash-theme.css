@@ -12478,8 +12478,9 @@ button.tag-list-button.btn.btn-secondary:has(>.tag-list-anchor)::after {
     will-change: auto;
 }
 /* Nav-Tabs cented ripple */
-.nav-tabs>.nav-item:has(>*:not(.btn-secondary):not(.dropdown):not(.o-counter))::after, 
-.nav-tabs .nav-item.nav-link::after,
+/*.nav-tabs>.nav-item:has(>*:not(.btn-secondary):not(.dropdown):not(.o-counter))::after, */
+/*.nav-tabs .nav-item.nav-link::after,*/
+.nav-tabs .nav-item:is(:not(.nav-link)>.nav-link, .nav-link:has(>:not(.nav-link)))::after,
 .nav-tabs .nav-link::after,
 .show > .dropdown-menu.show .dropdown-item::after {
     content: "";
@@ -12487,7 +12488,7 @@ button.tag-list-button.btn.btn-secondary:has(>.tag-list-anchor)::after {
     position: absolute;
     width: 92px;
     height: 92px;
-    background: radial-gradient(ellipse, rgb(255, 255, 255, 0.7) 0%, rgb(255, 255, 255, 0.001) 100%) center/15000%;
+    background: radial-gradient(ellipse, rgb(255, 255, 255, 0.7) 0%, rgb(255, 255, 255, 0.01) 100%) center/15000%;
     border-radius: 5rem;
     opacity: 0.6;
     transform: scale(0);
@@ -12602,9 +12603,10 @@ button#operation-menu.minimal.dropdown-toggle.btn.btn-secondary:not(:active):not
 .pagination button.btn.btn-secondary:not(:hover)::after,
 .justify-content-center.btn-toolbar > .mb-2 > select.btn-secondary.form-control:not(:hover)::after,
 button.tag-list-button.btn.btn-secondary:not(:active):not(.active)::after,
-.nav-tabs>.nav-item:has(>*:not(.btn-secondary):not(.dropdown):not(.o-counter)):not(.active)::after, 
-.nav-tabs>.nav-item:has(>*:not(.btn-secondary):not(.dropdown):not(.o-counter)):not(.active)::after,
-.nav-tabs .nav-item.nav-link:not(.active)::after,
+.nav-tabs .nav-item:is(:not(.nav-link)>.nav-link:not(.active), .nav-link:not(.active):has(>:not(.nav-link)))::after,
+/*.nav-tabs>.nav-item:has(>*:not(.btn-secondary):not(.dropdown):not(.o-counter)):not(.active)::after,*/
+/*.nav-tabs>.nav-item:has(>*:not(.btn-secondary):not(.dropdown):not(.o-counter)):not(.active)::after,*/
+/*.nav-tabs .nav-item.nav-link:not(.active)::after,*/
 .nav-tabs .nav-link:not(.active)::after,
 .show > .dropdown-menu.show .dropdown-item:not(:active)::after {
     animation: ripple 0.85s ease-in-out forwards;
@@ -12632,8 +12634,9 @@ button#operation-menu.minimal.dropdown-toggle.btn.btn-secondary::after,
 .pagination button.btn.btn-secondary:not(.active):not(:active)::after,
 .justify-content-center.btn-toolbar > .mb-2 > select.btn-secondary.form-control::after,
 button.tag-list-button.btn.btn-secondary::after,
-.nav-tabs>.nav-item:has(>*:not(.btn-secondary):not(.dropdown):not(.o-counter))::after, 
-.nav-tabs .nav-item.nav-link::after,
+.nav-tabs .nav-item:is(:not(.nav-link)>.nav-link, .nav-link:has(>:not(.nav-link)))::after,
+/*.nav-tabs>.nav-item:has(>*:not(.btn-secondary):not(.dropdown):not(.o-counter))::after,*/
+/*.nav-tabs .nav-item.nav-link::after,*/
 .nav-tabs .nav-link::after,
 .show > .dropdown-menu.show .dropdown-item::after {
     visibility: hidden;
@@ -12656,12 +12659,13 @@ button#operation-menu.minimal.dropdown-toggle.btn.btn-secondary:focus:not(:focus
 .pagination button.btn.btn-secondary:focus:not(:focus-visible)::after,
 .justify-content-center.btn-toolbar > .mb-2 > select.btn-secondary.form-control:focus::after,
 button.tag-list-button.btn.btn-secondary:focus:not(:focus-visible)::after,
-.nav-tabs>.nav-item:has(>*:not(.btn-secondary):not(.dropdown):not(.o-counter)):focus:not(:focus-visible)::after, 
-.nav-tabs .nav-item.nav-link:focus:not(:focus-visible)::after,
+/*.nav-tabs>.nav-item:has(>*:not(.btn-secondary):not(.dropdown):not(.o-counter)):focus:not(:focus-visible)::after, */
+.nav-tabs .nav-item:is(:not(.nav-link)>.nav-link, .nav-link:has(>:not(.nav-link))):focus:not(:focus-visible)::after,
+/*.nav-tabs .nav-item.nav-link:focus:not(:focus-visible)::after,*/
 .nav-tabs .nav-link:focus:not(:focus-visible)::after,
-.nav-tabs>.nav-item:has(>*:not(.btn-secondary):not(.dropdown):not(.o-counter)).active:focus:not(:focus-visible)::after, 
-.nav-tabs .nav-item.nav-link.active:focus:not(:focus-visible)::after,
-.nav-tabs .nav-link.active:focus:not(:focus-visible)::after,
+/*.nav-tabs>.nav-item:has(>*:not(.btn-secondary):not(.dropdown):not(.o-counter)).active:focus:not(:focus-visible)::after,*/ 
+/*.nav-tabs .nav-item.nav-link.active:focus:not(:focus-visible)::after,*/
+/*.nav-tabs .nav-link.active:focus:not(:focus-visible)::after,*/
 .show > .dropdown-menu.show .dropdown-item:focus:not(:focus-visible)::after {
     visibility: visible;
 }
