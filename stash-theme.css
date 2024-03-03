@@ -9138,7 +9138,6 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
     width: max-content;
     font-weight: 700;
     overflow: hidden;
-    contain: content;
     position: fixed;
     z-index: 995590 !important;
     display: flex;
@@ -9186,7 +9185,7 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
     border-radius: 16px;
 }
 
-#create-scene-page,
+/*#create-scene-page,
 .movie-details.mb-3.col,
 .col-md-6:has(>*#gallery-edit-details),
 #performer-page,
@@ -9194,7 +9193,7 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
 .tag-details:has(*#tag-edit) {
     animation: fadein 0.35s linear 0s forwards;
     will-change: animation;
-}
+}*/
 
 @keyframes fadein {
     0% {
