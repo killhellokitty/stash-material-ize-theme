@@ -2651,7 +2651,7 @@ div#queue-content {
     padding-top: 8px;
 }
 #queue-viewer .queue-controls {
-    background-color: rgb(var(--body-color));
+    background-color: rgb(var(--inset-body-color));
     padding-left: 16px;
     padding-right: 16px;
     padding-top: 16px;
@@ -12903,7 +12903,7 @@ button:is(.favorite, .not-favorite).minimal.favorite-button.btn.btn-primary:hove
 
 .scene-tabs > div +div + .tab-content {
     background-image: var(--btn-dummy-highlight);
-    background-color: rgb(var(--body-color));
+    background-color: rgb(var(--inset-body-color));
     background-blend-mode: screen;
 }
 
