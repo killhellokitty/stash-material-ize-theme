@@ -2533,7 +2533,7 @@ div#crop-btn-container {
 
 .tag-item button.btn.btn-secondary > svg.svg-inline--fa.fa-xmark.fa-icon {
     min-height: 18px;
-    font-size: 24px;
+    font-size: 20px;
 }
 .wrap-tags.filter-tags>span.badge {
     align-items: center;
