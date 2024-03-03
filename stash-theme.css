@@ -8320,8 +8320,7 @@ button#scene-scrape:focus,
     background-color: rgb(var(--sec-container));
     box-shadow: var(--elevation-0);
 }
-.btn-secondary:not(.btn-toolbar .btn-secondary):focus-visible,
-.btn-secondary:not(.form-control):focus-visible,
+.btn-secondary:not(.btn-toolbar .btn-secondary):not(input[type="text"].btn-secondary.form-control):focus-visible,
 button#scene-scrape:focus-visible,
 .scrape-url-button:not(:disabled):focus-visible {
     box-shadow: none;
@@ -13649,13 +13648,5 @@ input[type=range]::-ms-tooltip {
     display: none;
 }
 /* *** */
-*:is(:focus-visible, :focus-visible:not(:focus)),
-*:focus-visible, 
-*:focus-visible:not(:focus)) {
-    outline-color: rgb(var(--focus-ring));
-    outline-offset: -0.10rem;
-    outline-style: solid;
-    outline-width: 0.19rem;
-    box-shadow: none;
-}
+
 /* - */
