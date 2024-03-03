@@ -4161,6 +4161,14 @@ div:has(>*.filter-tags)>table:not(.table-striped):not(.table-bordered).table>tbo
 }
 
 /* --- Wall View --- */
+.wall.w-100.row.justify-content-center:has(>.wall-item) {
+    margin: 32px;
+    padding-left: 0;
+    padding-right: 0;
+}
+.wall-item {
+    width: 25%;
+}
 .wall-item-container {
     width: 100%; 
     background-color: rgba(0, 0, 0, .10); 
@@ -4168,7 +4176,7 @@ div:has(>*.filter-tags)>table:not(.table-striped):not(.table-bordered).table>tbo
 }
 .wall-item-media { 
     height:100%; 
-    background-color: rgb(0, 0, 0);
+    background-color: transparent;
     overflow:hidden;
 }
 .wall-item-anchor { 
