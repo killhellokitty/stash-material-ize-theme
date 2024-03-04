@@ -6219,22 +6219,34 @@ div.mr-auto.nav.nav-tabs > .nav-item:not(.nav-link) > .nav-link {
 .nav-item > .dropdown > button[title="Operations"]#operation-menu.minimal.dropdown-toggle.btn.btn-secondary > svg {
     font-size: 24px;
 }
-
-.nav-item > button[title="Organized"].minimal.organized-button.not-organized.btn.btn-secondary:is(:only-of-type, :hover, :focus) {
+/* Organized Button under Edit Tabs */
+.nav-item > button[title="Organized"].minimal.organized-button.not-organized.btn.btn-secondary:is(:only-of-type, :hover, :focus, :active, :active:focus) {
     color: rgb(var(--pry-color)) !important;
+    background-image: var(--btn-dummy-highlight);
+    background-color: transparent;
+    background-blend-mode: screen;
 }
 .nav-item > button[title="Organized"].minimal.organized-button.not-organized.btn.btn-secondary:is(:hover, :focus) {
-    color: rgb(var(--pry-color)) !important;
-    background-image: linear-gradient(to right, rgba(var(--pry-color),var(--btn-hover)), rgba(var(--pry-color),var(--btn-hover))),linear-gradient(to right, rgb(var(--body-color2)), rgb(var(--body-color2))) !important;
+    background-image: linear-gradient(to right, rgba(var(--pry-color),var(--btn-hover)), rgba(var(--pry-color),var(--btn-hover)))!important;
+    background-color: rgb(var(--inset-body-color));
 }
-.nav-item > button[title="Organized"].minimal.organized-button.organized.btn.btn-secondary:is(:only-of-type, :hover, :focus) {
+.nav-item > button[title="Organized"].minimal.organized-button.not-organized.btn.btn-secondary:is(:active, :active:focus) {
+    background-image: linear-gradient(to right, rgba(var(--pry-color),var(--btn-active)), rgba(var(--pry-color),var(--btn-active)))!important;
+    background-color: rgb(var(--inset-body-color));
+}
+.nav-item > button[title="Organized"].minimal.organized-button.organized.btn.btn-secondary:is(:only-of-type, :hover, :focus, :active, :active:focus) {
     color: lch(63.921% 32.12 186.214) !important;
+    background-image: var(--btn-dummy-highlight);
     background-color: transparent;
+    background-blend-mode: screen;
 }
 .nav-item > button[title="Organized"].minimal.organized-button.organized.btn.btn-secondary:is(:hover, :focus) {
-    color: lch(63.921% 32.12 186.214) !important;
-    background-color: rgb(var(--body-color2));
-    background-image: linear-gradient(to right, lch(63.921% 32.12 186.214 / var(--btn-hover)), lch(63.921% 32.12 186.214 / var(--btn-hover))),linear-gradient(to right, rgb(var(--body-color2)), rgb(var(--body-color2))) !important;
+    background-image: linear-gradient(to right, lch(63.921% 32.12 186.214 / var(--btn-hover)), lch(63.921% 32.12 186.214 / var(--btn-hover))) !important;
+    background-color: rgb(var(--inset-body-color));
+}
+.nav-item > button[title="Organized"].minimal.organized-button.organized.btn.btn-secondary:is(:active, :active:focus) {
+    background-image: linear-gradient(to right, lch(63.921% 32.12 186.214 / var(--btn-active)), lch(63.921% 32.12 186.214 / var(--btn-active))) !important;
+    background-color: rgb(var(--inset-body-color));
 }
 
 .o-counter.btn-group > button[title="O-Counter"].minimal.btn.btn-secondary > span > svg,
