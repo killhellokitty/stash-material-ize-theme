@@ -4165,17 +4165,13 @@ div:has(>*.filter-tags)>table:not(.table-striped):not(.table-bordered).table>tbo
     margin: 32px;
     padding-left: 0;
     padding-right: 0;
+    border-radius: 0;
 }
 .wall-item {
     width: 25%;
 }
-.wall-item-container {
-    width: 100%; 
-    background-color: rgba(0, 0, 0, .10); 
-    overflow:hidden;
-}
 .wall-item-media { 
-    height:100%; 
+    height: 100%; 
     background-color: transparent;
     overflow:hidden;
 }
@@ -5957,6 +5953,9 @@ button.Lightbox-navbutton.btn.btn-link > svg:is(.fa-chevron-right, .fa-chevron-l
     margin-bottom: 12px;
 }
 
+div.nav.nav-pills {
+    margin-top: 38px;
+}
 .nav-pills .nav-link {
     color: rgb(var(--on-surface));
     text-shadow: var(--light-txt-shadow);
@@ -5972,10 +5971,10 @@ button.Lightbox-navbutton.btn.btn-link > svg:is(.fa-chevron-right, .fa-chevron-l
     padding-block-end: 10px;
     outline: none;
     box-shadow: none;
+    margin-left: -4px;
     text-decoration: none;
     text-decoration-color: transparent;
     vertical-align: middle;
-    margin-left: -16px;
     min-height: 40px;
     transition: var(--trans-0), text-decoration-color 0.2s ease-in, text-indent 0.15s ease-in-out;
 }
