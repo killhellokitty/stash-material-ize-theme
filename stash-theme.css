@@ -8318,9 +8318,9 @@ svg.svg-inline--fa.fa-circle-question.fa-icon {
 .modal-body .btn-secondary.form-control,
 button#scene-scrape,
 .scrape-url-button:not(:disabled) {
-    color: rgb(var(--on-sec-container));
+    color: rgb(var(--on-pry));
     background-image: none;
-    background-color: rgb(var(--sec-container));
+    background-color: rgb(var(--pry-color));
     border: 0;
     border-radius: 5rem;
     font-size: 14px;
@@ -8344,17 +8344,17 @@ button#scene-scrape,
 button#scene-scrape:hover,
 .scrape-url-button:hover {
     background-image: var(--btn-hover-highlight);
-    background-color: rgb(var(--sec-container));
-    color: rgb(var(--on-sec-container));
+    background-color: rgb(var(--pry-color));
+    color: rgb(var(--on-pry));
     box-shadow: var(--elevation-1);
 }
 .btn-secondary:not(.btn-toolbar .btn-secondary):focus,
 .modal-body .btn-secondary.form-control:focus,
 button#scene-scrape:focus,
 .scrape-url-button:not(:disabled):focus {
-    color: rgb(var(--on-sec-container));
+    color: rgb(var(--on-pry));
     background-image: var(--btn-active-highlight);
-    background-color: rgb(var(--sec-container));
+    background-color: rgb(var(--pry-color));
     box-shadow: var(--elevation-0);
 }
 .btn-secondary:not(.btn-toolbar .btn-secondary):not(input[type="text"].btn-secondary.form-control):focus-visible,
@@ -8371,17 +8371,17 @@ button#scene-scrape:not(:disabled):not(.disabled):active,
 button#scene-scrape:not(:disabled):not(.disabled).active,
 .scrape-url-button:not(:disabled):active,
 .scrape-url-button:not(:disabled).active {
-     color: rgb(var(--on-sec-container));
+     color: rgb(var(--on-pry));
      background-image: var(--btn-active-highlight);
-     background-color: rgb(var(--sec-container));
+     background-color: rgb(var(--pry-color));
      box-shadow: var(--elevation-0);
      outline: 0;
 }
 .btn-secondary:not(.btn-toolbar .btn-secondary).disabled,
 .btn-secondary:not(.btn-toolbar .btn-secondary):disabled {
-    color: rgba(var(--on-sec-container),var(--disabled));
+    color: rgba(var(--on-pry),var(--disabled));
     background-image: none;
-    background-color: rgb(var(--sec-container),var(--disabled));
+    background-color: rgb(var(--pry-color),var(--disabled));
     box-shadow: none; 
     outline: 0;
 }
@@ -12521,7 +12521,8 @@ button.tag-list-button.btn.btn-secondary:has(>.tag-list-anchor)::after {
     transform: scale(0);
     will-change: auto;
 }*/
-:is(:not(.collapse.show.card .input-group):has(> .input-group-append)) button:not(.navbar-buttons a[href$="/new"] > button).btn.btn-primary:not(.scrubber-button):not(.minimal):not([title="Search"])::after,
+
+:is(:has(:not(.collapse.show.card .input-group):has(> .input-group-append)), :not(.navbar-buttons>.mr-2>a[href$="/new"])) button.btn.btn-primary:not(.scrubber-button):not(.minimal):not([title="Search"])::after,
 a:not([href^="/scenes"]):not([href^="/images"]):not([href^="/movies"]):not([href^="/scenes/markers"]):not([href^="/galleries"]):not([href^="/performers"]):not([href^="/studios"]):not([href^="/tags"]).minimal::after, 
 button:not(.brand-link).minimal:not(.scene-count>button.minimal):not(:where(.o-counter,.o-count)>button.minimal):not(.image-count>button.minimal):not(.gallery-count>button.minimal):not(.organized>button.minimal):not(.tag-count>button.minimal):not(.performer-count>button.minimal):not(.organized-button)::after, 
 .navbar-brand button.minimal.brand-link.d-inline-block.btn.btn-primary::after,
@@ -12644,7 +12645,7 @@ nav.top-nav.navbar .navbar-buttons .mr-2 a[href^="/tags/new"]>button.btn.btn-pri
         opacity: 0;
     }
 }
-body :is(:not(.collapse.show.card .input-group):has(> .input-group-append)) button:not(.navbar-buttons a[href$="/new"] > button).btn.btn-primary:not(.scrubber-button):not(.minimal):not([title="Search"]):not(:active):not(.active)::after,
+:is(:has(:not(.collapse.show.card .input-group):has(> .input-group-append)), :not(.navbar-buttons>.mr-2>a[href$="/new"])) button.btn.btn-primary:not(.scrubber-button):not(.minimal):not([title="Search"]):not(:active):not(.active)::after,
 /*.top-nav .navbar-buttons:not(:has(a[href^="/scenes/new"])):not(:has(a[href^="/movies/new"])):not(:has(a[href^="/galleries/new"])):not(:has(a[href^="/performers/new"])):not(:has(a[href^="/studios/new"])):not(:has(a[href^="/tags/new"])) .btn:not(:active):not(.active):not(.donate)::after,
 .top-nav .navbar-buttons a.nav-utility button.minimal.btn.btn-primary:not(:active):not(.active):not(.donate)::after,*/
 .top-nav .navbar-buttons button.minimal.donate.btn.btn-primary:not(:active):not(.active)::after,
@@ -12674,7 +12675,7 @@ button.tag-list-button.btn.btn-secondary:not(:active):not(.active)::after,
     animation: nav-ripple 0.85s ease forwards;
     will-change: animation;
 }*/
-body :is(:not(.collapse.show.card .input-group):has(> .input-group-append)) button:not(.navbar-buttons a[href$="/new"] > button).btn.btn-primary:not(.scrubber-button):not(.minimal):not([title="Search"])::after,
+:is(:has(:not(.collapse.show.card .input-group):has(> .input-group-append)), :not(.navbar-buttons>.mr-2>a[href$="/new"])) button.btn.btn-primary:not(.scrubber-button):not(.minimal):not([title="Search"])::after,
 /*.top-nav .navbar-buttons:not(:has(a[href^="/scenes/new"])):not(:has(a[href^="/movies/new"])):not(:has(a[href^="/galleries/new"])):not(:has(a[href^="/performers/new"])):not(:has(a[href^="/studios/new"])):not(:has(a[href^="/tags/new"])) .btn::after,
 .top-nav .navbar-buttons a.nav-utility button.minimal.btn.btn-primary:not(.donate)::after,*/
 .top-nav .navbar-buttons button.minimal.donate.btn.btn-primary::after,
@@ -12699,7 +12700,7 @@ button.tag-list-button.btn.btn-secondary::after,
 .show > .dropdown-menu.show .dropdown-item::after {
     visibility: hidden;
 }
-body :is(:not(.collapse.show.card .input-group):has(> .input-group-append)) button:not(.navbar-buttons a[href$="/new"] > button).btn.btn-primary:not(.scrubber-button):not(.minimal):not([title="Search"]):focus:not(:focus-visible)::after,
+:is(:has(:not(.collapse.show.card .input-group):has(> .input-group-append)), :not(.navbar-buttons>.mr-2>a[href$="/new"])) button.btn.btn-primary:not(.scrubber-button):not(.minimal):not([title="Search"]):focus:not(:focus-visible)::after,
 /*.top-nav .navbar-buttons:not(:has(a[href^="/scenes/new"])):not(:has(a[href^="/movies/new"])):not(:has(a[href^="/galleries/new"])):not(:has(a[href^="/performers/new"])):not(:has(a[href^="/studios/new"])):not(:has(a[href^="/tags/new"])) .btn:focus:not(:focus-visible)::after,
 .top-nav .navbar-buttons a.nav-utility button.minimal.btn.btn-primary:not(.donate):focus:not(:focus-visible)::after,*/
 .top-nav .navbar-buttons button.minimal.donate.btn.btn-primary:focus:not(:focus-visible)::after,
