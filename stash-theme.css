@@ -7028,7 +7028,7 @@ button[title="Help"].nav-utility.btn-primary > svg.fa-circle-question {
     outline: 0;
 }
 button[title=Help].nav-utility.minimal.btn.btn-primary > svg.svg-inline--fa.fa-circle-question.fa-icon {
-    color: rgb(var(--btn-toggler-color));
+    color: rgb(var(--nav-white));
     font-size: 22px;
 }
 svg.svg-inline--fa.fa-gear {
@@ -7064,7 +7064,7 @@ a.minimal.logout-button.btn.btn-primary {
 button[title=Help].nav-utility.minimal.btn.btn-primary>svg.svg-inline--fa.fa-circle-question.fa-icon:not(:disabled):not(.disabled):hover,
 button[title=Help].nav-utility.minimal.btn.btn-primary>svg.svg-inline--fa.fa-circle-question.fa-icon:not(:disabled):not(.disabled):hover:focus,
 button[title=Help].nav-utility.minimal.btn.btn-primary>svg.svg-inline--fa.fa-circle-question.fa-icon:focus-visible {
-    color: rgb(var(--btn-toggler-color));
+    color: rgb(var(--nav-white));
 }
 .top-nav .navbar-buttons > a.nav-utility.nav-link > button.minimal.donate.btn.btn-primary:hover,
 .top-nav .navbar-buttons > a.nav-utility.nav-link > button.minimal.donate.btn.btn-primary:focus {
@@ -7084,7 +7084,7 @@ button[title=Settings].minimal.btn.btn-primary:not(:disabled):not(.disabled):foc
 button[title=Statistics].minimal.btn.btn-primary:not(:disabled):not(.disabled):hover,
 button[title=Statistics].minimal.btn.btn-primary:not(:disabled):not(.disabled):hover:focus,
 button[title=Statistics].minimal.btn.btn-primary:not(:disabled):not(.disabled):focus-visible {
-    color: rgb(var(--btn-toggler-color));
+    color: rgb(var(--nav-white));
     border: 0 solid transparent;
     background: none;
     border-radius: 50%;
@@ -7143,9 +7143,9 @@ button[title=Help].nav-utility.minimal.btn.btn-primary>svg.svg-inline--fa.fa-cir
     text-decoration: none !important;
     text-decoration-color: transparent !important;
 }
-.top-nav .navbar-buttons a.nav-utility.active button[title=Settings].minimal.btn.btn-primary:not(:disabled):not(.disabled):hover {
+/*.top-nav .navbar-buttons a.nav-utility.active button[title=Settings].minimal.btn.btn-primary:not(:disabled):not(.disabled):hover {
     background-color: rgb(var(--pry-container),var(--btn-hover));
-}
+}*/
 
 a.nav-utility:focus,
 a.nav-utility:focus-visible,
@@ -7263,12 +7263,19 @@ button.clearable-text-field-clear.btn.btn-secondary:focus-visible {
 .custom-switch {
     margin-left: -0.5rem;
 }
-.custom-control-label:is(:only-of-type, :hover, :active, :focus, :active:focus)::before {
+.custom-switch .custom-control-label:before {
+    width: 52px;
+    height: 32px;
+    border-radius: 5rem;
+}
+.custom-control-label::before {
+    content: "";
     background-color: rgb(var(--menu-color));
     border: 2px solid rgb(var(--outline));
     top: -4.5px;
 }
 .custom-switch .custom-control-label::after {
+    content: "";
     background-color: rgb(var(--outline));
     width: 16px;
     height: 16px;
@@ -7281,7 +7288,8 @@ button.clearable-text-field-clear.btn.btn-secondary:focus-visible {
     background-color: rgb(var(--on-surface-variant));
     box-shadow: 0 0 0 12px rgb(var(--on-surface-variant),0.3);
 }
-.custom-switch .custom-control-label:is(:active, :focus, :active:focus)::after {
+.custom-switch .custom-control-label:active::after,
+.custom-switch .custom-control-label:focus::after {
     width: 28px;
     height: 28px;
     background-color: rgb(var(--on-surface-variant));
@@ -7289,17 +7297,16 @@ button.clearable-text-field-clear.btn.btn-secondary:focus-visible {
     left: -30px;
     box-shadow: 0 0 0 6px rgb(var(--on-surface-variant),0.3);
 }
-.custom-control-input:checked~.custom-control-label::before,
-.custom-control-input:checked~.custom-control-label:is(:hover, :focus, :active)::before {
+
+.custom-control-input:not(:disabled):active ~ .custom-control-label:before {
+    background-color: rgb(var(--switch-button-on),0.75);
+    border: 2px solid rgb(var(--outline));
+}
+.custom-control-input:checked ~ .custom-control-label::before {
      border: 2px solid rgb(var(--outline));
      background-color: rgb(var(--switch-input-on));
 }
-.custom-switch .custom-control-label:before {
-    /*width: 1.85rem; Original*/
-    width: 52px;
-    height: 32px;
-    border-radius: 5rem;
-}
+
 .custom-switch .custom-control-input:checked~.custom-control-label::after {
     background-image: none;
     background-color: rgb(var(--switch-button-on));
@@ -7343,6 +7350,7 @@ button.clearable-text-field-clear.btn.btn-secondary:focus-visible {
 .custom-switch .custom-control-input:disabled:checked {
     opacity: 0;
 }
+
 .custom-switch .custom-control-input:disabled~.custom-control-label:before {
     background-color: rgb(var(--outline-variant));
     opacity: 0.4;
@@ -7357,7 +7365,7 @@ button.clearable-text-field-clear.btn.btn-secondary:focus-visible {
 }
 /* ***removing default borders and boxes*** */
 .custom-control-input:focus:not(:checked):not(:disabled)~.custom-control-label:before {
-    border-color: transparent;
+    border: 2px solid rgb(var(--outline));
 }
 .custom-control-input:focus:not(:disabled)~.custom-control-label:before {
     box-shadow: none;
@@ -12430,7 +12438,7 @@ span.detail-expand-collapse > button.minimal.expand-collapse.btn.btn-primary:not
 }
 
 /*** Button Ripple ***/
-body :is(:not(.collapse.show.card .input-group):has(> .input-group-append)) button:not(.navbar-buttons a[href$="/new"] > button).btn.btn-primary:not(.scrubber-button):not(.minimal):not([title="Search"])::after {
+/*body :is(:not(.collapse.show.card .input-group):has(> .input-group-append)) button:not(.navbar-buttons a[href$="/new"] > button).btn.btn-primary:not(.scrubber-button):not(.minimal):not([title="Search"])::after {
     content: "";
     display: block;
     position: absolute;
@@ -12445,12 +12453,11 @@ body :is(:not(.collapse.show.card .input-group):has(> .input-group-append)) butt
     opacity: 0.6;
     transform: scale(0);
     will-change: auto;
-}
-a:not([href^="/scenes"]):not([href^="/images"]):not([href^="/movies"]):not([href^="/scenes/markers"]):not([href^="/galleries"]):not([href^="/performers"]):not([href^="/studios"]):not([href^="/tags"]).minimal::after, 
+}*/
+/*a:not([href^="/scenes"]):not([href^="/images"]):not([href^="/movies"]):not([href^="/scenes/markers"]):not([href^="/galleries"]):not([href^="/performers"]):not([href^="/studios"]):not([href^="/tags"]).minimal::after, 
 button:not(.brand-link).minimal:not(.scene-count>button.minimal):not(:where(.o-counter,.o-count)>button.minimal):not(.image-count>button.minimal):not(.gallery-count>button.minimal):not(.organized>button.minimal):not(.tag-count>button.minimal):not(.performer-count>button.minimal):not(.organized-button)::after, 
 .navbar-brand button.minimal.brand-link.d-inline-block.btn.btn-primary::after,
-button#operation-menu.minimal.dropdown-toggle.btn.btn-secondary::after,
-.card-popovers a.pwPlayer_button::after {
+button#operation-menu.minimal.dropdown-toggle.btn.btn-secondary::after {
     content: "";
     display: block;
     position: absolute;
@@ -12465,21 +12472,21 @@ button#operation-menu.minimal.dropdown-toggle.btn.btn-secondary::after,
     opacity: 0.6;
     transform: scale(0);
     will-change: auto;
-}
-.navbar-brand button.minimal.brand-link.d-inline-block.btn.btn-primary::after {
+}*/
+/*.navbar-brand button.minimal.brand-link.d-inline-block.btn.btn-primary::after {
     background: radial-gradient(ellipse, #ffffffa9 0%, #dffffba9 35%, #202B33 100%);
     opacity: 0.5;
     top: 90%;
     transform: scale(0);
     transition: transform 0s;
     will-change: auto;
-}
+}*/
 
 
-.top-nav .navbar-buttons:not(:has(a[href^="/scenes/new"])):not(:has(a[href^="/movies/new"])):not(:has(a[href^="/galleries/new"])):not(:has(a[href^="/performers/new"])):not(:has(a[href^="/studios/new"])):not(:has(a[href^="/tags/new"])) .btn:not(.donate)::after,
+/*.top-nav .navbar-buttons:not(:has(a[href^="/scenes/new"])):not(:has(a[href^="/movies/new"])):not(:has(a[href^="/galleries/new"])):not(:has(a[href^="/performers/new"])):not(:has(a[href^="/studios/new"])):not(:has(a[href^="/tags/new"])) .btn:not(.donate)::after,
 .top-nav .navbar-buttons a.nav-utility button.minimal.btn.btn-primary:not(.donate)::after,
-.top-nav .navbar-buttons button.minimal.btn.btn-primary:not(.donate)::after,
-.modal-header .close::after {
+.top-nav .navbar-buttons button.minimal.btn.btn-primary:not(.donate)::after,*/
+/*.modal-header .close::after {
     content: "";
     display: block;
     position: absolute;
@@ -12494,8 +12501,8 @@ button#operation-menu.minimal.dropdown-toggle.btn.btn-secondary::after,
     opacity: 0.6;
     transform: scale(0);
     will-change: auto;
-}
-.top-nav .navbar-buttons a.nav-utility button[title="Donate"].minimal.donate.btn.btn-primary::after,
+}*/
+/*.top-nav .navbar-buttons a.nav-utility button[title="Donate"].minimal.donate.btn.btn-primary::after,
 button.minimal.collapse-button.btn-primary::after,
 button.tag-list-button.btn.btn-secondary:has(>.tag-list-anchor)::after {
     content: "";
@@ -12512,7 +12519,21 @@ button.tag-list-button.btn.btn-secondary:has(>.tag-list-anchor)::after {
     opacity: 0.6;
     transform: scale(0);
     will-change: auto;
-}
+}*/
+:is(:not(.collapse.show.card .input-group):has(> .input-group-append)) button:not(.navbar-buttons a[href$="/new"] > button).btn.btn-primary:not(.scrubber-button):not(.minimal):not([title="Search"])::after,
+a:not([href^="/scenes"]):not([href^="/images"]):not([href^="/movies"]):not([href^="/scenes/markers"]):not([href^="/galleries"]):not([href^="/performers"]):not([href^="/studios"]):not([href^="/tags"]).minimal::after, 
+button:not(.brand-link).minimal:not(.scene-count>button.minimal):not(:where(.o-counter,.o-count)>button.minimal):not(.image-count>button.minimal):not(.gallery-count>button.minimal):not(.organized>button.minimal):not(.tag-count>button.minimal):not(.performer-count>button.minimal):not(.organized-button)::after, 
+.navbar-brand button.minimal.brand-link.d-inline-block.btn.btn-primary::after,
+button#operation-menu.minimal.dropdown-toggle.btn.btn-secondary::after,
+.modal-header .close::after,
+.top-nav .navbar-buttons a.nav-utility button[title="Donate"].minimal.donate.btn.btn-primary::after,
+button.minimal.collapse-button.btn-primary::after,
+button.tag-list-button.btn.btn-secondary:has(>.tag-list-anchor)::after,
+div:not(.pagination)>button:not(.tag-list-button:has(>.tag-list-anchor)):not(.duration-button):not(.scrape-url-button):not(.percent-button).btn.btn-secondary:not(:has(>.fa-plus)):not(:has(>.fa-calendar))::after,
+.justify-content-center.btn-toolbar > .mb-2 > select.btn-secondary.form-control::after,
+.pagination button.btn.btn-secondary::after,
+.btn-danger:has(>:not(.fa-minus))::after,
+.btn-success::after,
 /* Nav-Tabs cented ripple */
 /*.nav-tabs>.nav-item:has(>*:not(.btn-secondary):not(.dropdown):not(.o-counter))::after, */
 /*.nav-tabs .nav-item.nav-link::after,*/
@@ -12530,7 +12551,7 @@ button.tag-list-button.btn.btn-secondary:has(>.tag-list-anchor)::after {
     transform: scale(0);
     will-change: auto;
 }
-div:not(.pagination)>button:not(.tag-list-button:has(>.tag-list-anchor)):not(.duration-button):not(.scrape-url-button):not(.percent-button).btn.btn-secondary:not(:has(>.fa-plus)):not(:has(>.fa-calendar))::after,
+/*div:not(.pagination)>button:not(.tag-list-button:has(>.tag-list-anchor)):not(.duration-button):not(.scrape-url-button):not(.percent-button).btn.btn-secondary:not(:has(>.fa-plus)):not(:has(>.fa-calendar))::after,
 .justify-content-center.btn-toolbar > .mb-2 > select.btn-secondary.form-control::after {
     content: "";
     display: block;
@@ -12546,14 +12567,14 @@ div:not(.pagination)>button:not(.tag-list-button:has(>.tag-list-anchor)):not(.du
     opacity: 0.4;
     transform: scale(0);
     will-change: auto;
-}
+}*/
 /*nav.top-nav.navbar .navbar-buttons .mr-2 a[href^="/scenes/new"]>button.btn.btn-primary::after, 
 nav.top-nav.navbar .navbar-buttons .mr-2 a[href^="/galleries/new"]>button.btn.btn-primary::after, 
 nav.top-nav.navbar .navbar-buttons .mr-2 a[href^="/movies/new"]>button.btn.btn-primary::after, 
 nav.top-nav.navbar .navbar-buttons .mr-2 a[href^="/performers/new"]>button.btn.btn-primary::after, 
 nav.top-nav.navbar .navbar-buttons .mr-2 a[href^="/studios/new"]>button.btn.btn-primary::after, 
 nav.top-nav.navbar .navbar-buttons .mr-2 a[href^="/tags/new"]>button.btn.btn-primary::after,*/
-.pagination button.btn.btn-secondary::after {
+/*.pagination button.btn.btn-secondary::after {
     content: "";
     display: block;
     position: absolute;
@@ -12568,8 +12589,8 @@ nav.top-nav.navbar .navbar-buttons .mr-2 a[href^="/tags/new"]>button.btn.btn-pri
     opacity: 0.6;
     transform: scale(0);
     will-change: auto;
-}
-.btn-danger:has(>:not(.fa-minus))::after {
+}*/
+/*.btn-danger:has(>:not(.fa-minus))::after {
     content: "";
     display: block;
     position: absolute;
@@ -12584,8 +12605,8 @@ nav.top-nav.navbar .navbar-buttons .mr-2 a[href^="/tags/new"]>button.btn.btn-pri
     opacity: 0.6;
     transform: scale(0);
     will-change: auto;
-}
-.btn-success::after {
+}*/
+/*.btn-success::after {
     content: "";
     display: block;
     position: absolute;
@@ -12600,7 +12621,7 @@ nav.top-nav.navbar .navbar-buttons .mr-2 a[href^="/tags/new"]>button.btn.btn-pri
     opacity: 0.6;
     transform: scale(0);
     will-change: auto;
-}
+}*/
 @keyframes ripple {
     0% {
         transform: scale(0);
@@ -12623,8 +12644,8 @@ nav.top-nav.navbar .navbar-buttons .mr-2 a[href^="/tags/new"]>button.btn.btn-pri
     }
 }
 body :is(:not(.collapse.show.card .input-group):has(> .input-group-append)) button:not(.navbar-buttons a[href$="/new"] > button).btn.btn-primary:not(.scrubber-button):not(.minimal):not([title="Search"]):not(:active):not(.active)::after,
-.top-nav .navbar-buttons:not(:has(a[href^="/scenes/new"])):not(:has(a[href^="/movies/new"])):not(:has(a[href^="/galleries/new"])):not(:has(a[href^="/performers/new"])):not(:has(a[href^="/studios/new"])):not(:has(a[href^="/tags/new"])) .btn:not(:active):not(.active):not(.donate)::after,
-.top-nav .navbar-buttons a.nav-utility button.minimal.btn.btn-primary:not(:active):not(.active):not(.donate)::after,
+/*.top-nav .navbar-buttons:not(:has(a[href^="/scenes/new"])):not(:has(a[href^="/movies/new"])):not(:has(a[href^="/galleries/new"])):not(:has(a[href^="/performers/new"])):not(:has(a[href^="/studios/new"])):not(:has(a[href^="/tags/new"])) .btn:not(:active):not(.active):not(.donate)::after,
+.top-nav .navbar-buttons a.nav-utility button.minimal.btn.btn-primary:not(:active):not(.active):not(.donate)::after,*/
 .top-nav .navbar-buttons button.minimal.donate.btn.btn-primary:not(:active):not(.active)::after,
 button.minimal.collapse-button.btn-primary:not(:active):not(.active)::after,
 .modal-header .close:not(:active):not(.active)::after,
@@ -12648,13 +12669,13 @@ button.tag-list-button.btn.btn-secondary:not(:active):not(.active)::after,
     animation: ripple 0.85s ease-in-out forwards;
     will-change: animation;
 }
-.navbar-brand button.minimal.brand-link.d-inline-block.btn.btn-primary:not(:active):not(.active)::after {
+/*.navbar-brand button.minimal.brand-link.d-inline-block.btn.btn-primary:not(:active):not(.active)::after {
     animation: nav-ripple 0.85s ease forwards;
     will-change: animation;
-}
+}*/
 body :is(:not(.collapse.show.card .input-group):has(> .input-group-append)) button:not(.navbar-buttons a[href$="/new"] > button).btn.btn-primary:not(.scrubber-button):not(.minimal):not([title="Search"])::after,
-.top-nav .navbar-buttons:not(:has(a[href^="/scenes/new"])):not(:has(a[href^="/movies/new"])):not(:has(a[href^="/galleries/new"])):not(:has(a[href^="/performers/new"])):not(:has(a[href^="/studios/new"])):not(:has(a[href^="/tags/new"])) .btn::after,
-.top-nav .navbar-buttons a.nav-utility button.minimal.btn.btn-primary:not(.donate)::after,
+/*.top-nav .navbar-buttons:not(:has(a[href^="/scenes/new"])):not(:has(a[href^="/movies/new"])):not(:has(a[href^="/galleries/new"])):not(:has(a[href^="/performers/new"])):not(:has(a[href^="/studios/new"])):not(:has(a[href^="/tags/new"])) .btn::after,
+.top-nav .navbar-buttons a.nav-utility button.minimal.btn.btn-primary:not(.donate)::after,*/
 .top-nav .navbar-buttons button.minimal.donate.btn.btn-primary::after,
 button.minimal.collapse-button.btn-primary::after,
 .modal-header .close::after,
@@ -12664,7 +12685,7 @@ div:not(.pagination)>button:not(.duration-button):not(.scrape-url-button):not(.p
 .btn-success::after,
 a:not([href^="/scenes"]):not([href^="/images"]):not([href^="/movies"]):not([href^="/scenes/markers"]):not([href^="/galleries"]):not([href^="/performers"]):not([href^="/studios"]):not([href^="/tags"]).minimal::after, 
 button:not(.brand-link).minimal:not(.scene-count>button.minimal):not(:where(.o-counter,.o-count)>button.minimal):not(.image-count>button.minimal):not(.gallery-count>button.minimal):not(.organized>button.minimal):not(.tag-count>button.minimal):not(.performer-count>button.minimal):not(.organized-button)::after, 
-.navbar-brand button.minimal.brand-link.d-inline-block.btn.btn-primary::after,
+/*.navbar-brand button.minimal.brand-link.d-inline-block.btn.btn-primary::after,*/
 button#operation-menu.minimal.dropdown-toggle.btn.btn-secondary::after,
 .card-popovers a.pwPlayer_button::after,
 .pagination button.btn.btn-secondary:not(.active):not(:active)::after,
@@ -12678,8 +12699,8 @@ button.tag-list-button.btn.btn-secondary::after,
     visibility: hidden;
 }
 body :is(:not(.collapse.show.card .input-group):has(> .input-group-append)) button:not(.navbar-buttons a[href$="/new"] > button).btn.btn-primary:not(.scrubber-button):not(.minimal):not([title="Search"]):focus:not(:focus-visible)::after,
-.top-nav .navbar-buttons:not(:has(a[href^="/scenes/new"])):not(:has(a[href^="/movies/new"])):not(:has(a[href^="/galleries/new"])):not(:has(a[href^="/performers/new"])):not(:has(a[href^="/studios/new"])):not(:has(a[href^="/tags/new"])) .btn:focus:not(:focus-visible)::after,
-.top-nav .navbar-buttons a.nav-utility button.minimal.btn.btn-primary:not(.donate):focus:not(:focus-visible)::after,
+/*.top-nav .navbar-buttons:not(:has(a[href^="/scenes/new"])):not(:has(a[href^="/movies/new"])):not(:has(a[href^="/galleries/new"])):not(:has(a[href^="/performers/new"])):not(:has(a[href^="/studios/new"])):not(:has(a[href^="/tags/new"])) .btn:focus:not(:focus-visible)::after,
+.top-nav .navbar-buttons a.nav-utility button.minimal.btn.btn-primary:not(.donate):focus:not(:focus-visible)::after,*/
 .top-nav .navbar-buttons button.minimal.donate.btn.btn-primary:focus:not(:focus-visible)::after,
 button.minimal.collapse-button.btn-primary:focus:not(:focus-visible)::after,
 .modal-header .close:focus:not(:focus-visible)::after,
@@ -12689,7 +12710,7 @@ div:not(.pagination)>button:not(.duration-button):not(.scrape-url-button):not(.p
 .btn-success:focus:not(:focus-visible)::after,
 a:not([href^="/scenes"]):not([href^="/images"]):not([href^="/movies"]):not([href^="/scenes/markers"]):not([href^="/galleries"]):not([href^="/performers"]):not([href^="/studios"]):not([href^="/tags"]).minimal:focus:not(:focus-visible)::after, 
 button:not(.brand-link).minimal:not(.scene-count>button.minimal):not(:where(.o-counter,.o-count)>button.minimal):not(.image-count>button.minimal):not(.gallery-count>button.minimal):not(.organized>button.minimal):not(.tag-count>button.minimal):not(.performer-count>button.minimal):not(.organized-button):focus:not(:focus-visible)::after, 
-.navbar-brand button.minimal.brand-link.d-inline-block.btn.btn-primary:focus:not(:focus-visible)::after,
+/*.navbar-brand button.minimal.brand-link.d-inline-block.btn.btn-primary:focus:not(:focus-visible)::after,*/
 button#operation-menu.minimal.dropdown-toggle.btn.btn-secondary:focus:not(:focus-visible)::after,
 .card-popovers a.pwPlayer_button:focus:not(:focus-visible)::after,
 .pagination button.btn.btn-secondary:focus:not(:focus-visible)::after,
@@ -12846,7 +12867,7 @@ button[title=Help].nav-utility.minimal.btn.btn-primary:has(>svg.svg-inline--fa.f
 .top-nav .navbar-buttons a.nav-utility button.minimal.btn.btn-primary:not(.donate):hover:not(:active):not(.active)::before,
 button[title=Help].nav-utility.minimal.btn.btn-primary:has(>svg.svg-inline--fa.fa-circle-question.fa-icon):hover:not(:active):not(.active)::before,
 .top-nav .navbar-buttons a.minimal.logout-button.btn.btn-primary:hover:not(:active):not(.active)::before {
-    animation: bubble 0.35s ease-in forwards;
+    animation: bubble 0.45s ease-in forwards;
     will-change: animation;
     max-height: 40px;
     min-height: 2px;
@@ -12854,7 +12875,7 @@ button[title=Help].nav-utility.minimal.btn.btn-primary:has(>svg.svg-inline--fa.f
     min-width: 2px;
 }
 button:is(.favorite, .not-favorite).minimal.favorite-button.btn.btn-primary:hover::before {
-    animation: bubble 0.35s ease-in forwards;
+    animation: bubble 0.45s ease-in forwards;
     will-change: animation;
     max-height: 40px;
     min-height: 2px;
@@ -12862,7 +12883,7 @@ button:is(.favorite, .not-favorite).minimal.favorite-button.btn.btn-primary:hove
     min-width: 2px;
 }
 .rating-stars button:is(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-fill-70, .star-fill-60, .star-fill-50, .star-fill-40, .star-fill-30, .star-fill-30, .star-fill-25, .star-fill-20, .star-fill-10, .star-fill-0).minimal.btn.btn-secondary:not(.disabled):not(:disabled):hover::before {
-    animation: bubble 0.35s ease-in forwards;
+    animation: bubble 0.45s ease-in forwards;
     will-change: animation;
     max-height: 36px;
     height: unset;
@@ -12877,7 +12898,7 @@ button.minimal.btn.btn-primary:has(>a.link>svg.fa-link):hover::before,
 #performer-page .performer-head .name-icons a.minimal.link.twitter.btn.btn-primary:hover::before,
 #performer-page .performer-head .name-icons button.not-favorite.btn-primary:hover::before,
 #performer-page .performer-head .name-icons button.favorite.btn-primary:hover::before {
-    animation: bubble 0.35s ease-in forwards;
+    animation: bubble 0.45s ease-in forwards;
     will-change: animation;
     max-height: 32px;
     min-height: 2px;
