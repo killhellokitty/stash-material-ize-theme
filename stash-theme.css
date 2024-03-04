@@ -12543,8 +12543,8 @@ div:not(.pagination)>button:not(.tag-list-button:has(>.tag-list-anchor)):not(.du
     content: "";
     display: block;
     position: absolute;
-    width: 92px;
-    height: 92px;
+    width: 51px;
+    height: 51px;
     background: radial-gradient(ellipse, rgb(255, 255, 255, 0.7) 0%, rgb(255, 255, 255, 0.01) 100%) center/15000%;
     border-radius: 5rem;
     opacity: 0.6;
