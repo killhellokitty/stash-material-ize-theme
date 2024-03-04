@@ -10016,15 +10016,19 @@ input#update-stashids::placeholder {
 
 /* Sticky Detail-Header */
 .sticky.detail-header {
-    top: 4.75%;
+    height: auto;
+    max-height: 200px;
+    min-height: 5%;
+    padding: 0.25rem 0 1.5rem;
+    box-sizing: content-box;
+    background-color: rgb(var(--nav-color));
+    box-shadow: var(--elevation-1);
 }
 .sticky.detail-header > .sticky.detail-header-group {
     position: fixed;
-    background-color: rgb(var(--card-color));
+    background-color: transparent;
     text-align: justify;
     padding: 1rem 2rem;
-    box-shadow: var(--elevation-1);
-    filter: brightness(1.1) saturate(1.1) contrast(0.7);
 }
 
 /* Studio Editor */
