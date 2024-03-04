@@ -5491,7 +5491,7 @@ a:not([href="/scenes"], [href="/images"], [href="/movies"], [href="/scenes/marke
 button:not([title=Statistics], [title=Settings]).minimal:not(.nav-utility, .brand-link, .donate, .dropdown-toggle):is(:hover, :focus-visible),
 .dropdown:not(.show) > button#operation-menu.minimal.dropdown-toggle.btn-secondary:is(:hover, :focus-visible) {
     background-image: linear-gradient(to right, rgba(var(--pry-color),var(--btn-hover)), rgba(var(--pry-color),var(--btn-hover)));
-    background-color: rgb(var(--body-color2));
+    background-color: rgb(var(--inset-body-color));
     background-blend-mode: screen;
     color: rgb(var(--pry-color));
     box-shadow: var(--elevation-1);
@@ -5515,7 +5515,7 @@ button:not([title=Statistics], [title=Settings]).minimal:not(.nav-utility, .bran
     text-shadow: none;
     border-color: transparent;
     background-image: linear-gradient(to right, rgba(var(--pry-color),var(--btn-active)), rgba(var(--pry-color),var(--btn-active)));
-    background-color: rgb(var(--body-color2));
+    background-color: rgb(var(--inset-body-color));
     background-blend-mode: screen;
     outline: none;
 }
