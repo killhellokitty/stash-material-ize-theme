@@ -2417,6 +2417,7 @@ button#batch-result-toggle-on.btn {
 
 .tagger-container > .tagger-container-header > .d-flex > .d-flex {
     margin-left: auto;
+    align-items: center;
 }
 
 div#crop-btn-container {
