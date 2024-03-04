@@ -289,6 +289,9 @@ h6,
     --text-field-tint: 0.06;
     --text-field-text: 0.87;
     --text-screen: 0.35;
+    --switch-input-on: 40, 143, 135; /* #288f87 */
+    --switch-outline-on: 157, 159, 162; /* #9d9fa2 */
+    --switch-button-on: 3, 82, 76; /* #03524c */
     /* Elevation Box-Shadows */
     --elevation-0: 0px 0px 0px 0px rgba(0,0,0,0.2), 0px 0px 0px 0px rgba(0,0,0,0.14), 0px 0px 0px 0px rgba(0,0,0,0.12);
     --elevation-1: 0px 3px 1px -2px rgba(0,0,0,0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 1px 5px 0px rgba(0,0,0,0.12);
@@ -7284,9 +7287,7 @@ button.clearable-text-field-clear.btn.btn-secondary:focus-visible {
     box-shadow: 0 0 0 6px rgb(var(--on-surface-variant),var(--btn-hover));
 }
 .custom-control-input:checked~.custom-control-label::before,
-.custom-control-input:checked~.custom-control-label:hover::before,
-.custom-control-input:checked~.custom-control-label:focus::before,
-.custom-control-input:checked~.custom-control-label:active::before {
+.custom-control-input:checked~.custom-control-label:is(:hover, :focus, :active)::before{
      border: 2px solid rgb(var(--outline));
      background-color: rgb(var(--tertiary));
      /*box-shadow: 0 0 3px 0.1rem rgba(0,0,0,0.25);*/
