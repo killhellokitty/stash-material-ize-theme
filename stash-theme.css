@@ -7923,6 +7923,7 @@ div.original-scene-details button.minimal.collapse-button.btn.btn-primary.btn-lg
     font-weight: 200;
     line-height: 16px;
     letter-spacing: 0.078em;
+    /*font-variant-caps: all-small-caps;*/
     color: rgb(var(--on-surface));
     padding: 16px 22px;
     background-image: linear-gradient(to right, rgba(var(--pry-color),var(--text-field-tint)), rgba(var(--pry-color),var(--text-field-tint)));
@@ -7988,10 +7989,10 @@ svg.svg-inline--fa.fa-circle-question.fa-icon {
 }
 .setting-section .setting-group>.setting:not(:first-child) h3, 
 .setting-section .setting-group .collapsible-section .setting h3 {
-    color: rgb(var(--on-tertiary),0.94);
+    color: rgb(var(--on-tertiary),0.85);
     font-size: 17.5px;
-    font-weight: 400;
-    letter-spacing: 0.026em;
+    font-weight: 500;
+    letter-spacing: 0.016em;
     line-height: 26px;
     padding: 10px 0 6px 0;
 }
@@ -9071,9 +9072,11 @@ div#settings-container div#configuration-tabs-tabpane-about .card .setting div b
 #configuration-tabs-tabpane-about .setting-section .setting .value,
 #configuration-tabs-tabpane-services .setting-section .setting .value,
 #configuration-tabs-tabpane-services #settings-dlna ul.addresses {
-    color: #cef1ff;
-    font-size: small;
+    color: rgb(var(--white-color));
+    font-size: 14px;
+    font-weight: 400;
     font-variant-caps: all-small-caps;
+    padding: 12px 18px;
 }
 
 #configuration-tabs-tabpane-tasks .tasks-panel-tasks .setting-section:nth-last-of-type(5) div h3:last-child {
