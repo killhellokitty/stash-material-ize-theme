@@ -292,6 +292,9 @@ h6,
     --switch-input-on: 40, 143, 135; /* #288f87 */
     --switch-outline-on: 157, 159, 162; /* #9d9fa2 */
     --switch-button-on: 3, 82, 76; /* #03524c */
+    --switch-button-on-hover: 4, 92, 85; /* #045c55 */
+    --switch-button-on-pressed: 4, 102, 95; /* #04665f */
+    --switch-button-on-disabled: 61, 83, 82; /* #3d5352 */
     /* Elevation Box-Shadows */
     --elevation-0: 0px 0px 0px 0px rgba(0,0,0,0.2), 0px 0px 0px 0px rgba(0,0,0,0.14), 0px 0px 0px 0px rgba(0,0,0,0.12);
     --elevation-1: 0px 3px 1px -2px rgba(0,0,0,0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 1px 5px 0px rgba(0,0,0,0.12);
@@ -7276,7 +7279,7 @@ button.clearable-text-field-clear.btn.btn-secondary:focus-visible {
 }
 .custom-switch .custom-control-label:hover::after {
     background-color: rgb(var(--on-surface-variant));
-    box-shadow: 0 0 0 12px rgb(var(--on-surface-variant),var(--btn-hover));
+    box-shadow: 0 0 0 12px rgb(var(--on-surface-variant),0.3);
 }
 .custom-switch .custom-control-label:is(:active, :focus, :active:focus)::after {
     width: 28px;
@@ -7284,13 +7287,12 @@ button.clearable-text-field-clear.btn.btn-secondary:focus-visible {
     background-color: rgb(var(--on-surface-variant));
     top: -2.5px;
     left: -30px;
-    box-shadow: 0 0 0 6px rgb(var(--on-surface-variant),var(--btn-hover));
+    box-shadow: 0 0 0 6px rgb(var(--on-surface-variant),0.3);
 }
 .custom-control-input:checked~.custom-control-label::before,
-.custom-control-input:checked~.custom-control-label:is(:hover, :focus, :active)::before{
+.custom-control-input:checked~.custom-control-label:is(:hover, :focus, :active)::before {
      border: 2px solid rgb(var(--outline));
-     background-color: rgb(var(--tertiary));
-     /*box-shadow: 0 0 3px 0.1rem rgba(0,0,0,0.25);*/
+     background-color: rgb(var(--switch-input-on));
 }
 .custom-switch .custom-control-label:before {
     /*width: 1.85rem; Original*/
@@ -7300,37 +7302,37 @@ button.clearable-text-field-clear.btn.btn-secondary:focus-visible {
 }
 .custom-switch .custom-control-input:checked~.custom-control-label::after {
     background-image: none;
-    background-color: rgb(var(--on-tertiary-container));
+    background-color: rgb(var(--switch-button-on));
     height: 24px;
     width: 24px;
     content: "\2714";
-    color: rgb(var(--tertiary));
+    color: rgb(var(--green));
     font-size: 20px;
     border:0;
     border-radius: 5rem;
     box-shadow: var(--elevation-1);
-    transform: translate(22px);
+    transform: translate(18px);
     display: flex;
     top: -0.5px;
     left: -30px;
-    transition: background-image 0.55s ease, background-color 0.55s ease, box-shadow 0.4s ease-in, transform 0s linear;
+    transition: background-color 0.55s ease, box-shadow 0.4s ease-in, transform 0s linear;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     align-content: center;
 }
 .custom-switch .custom-control-input:checked~.custom-control-label:hover::after {
-    background-image: var(--btn-hover-highlight);
-    background-color: rgb(var(--on-pry));
+    background-image: none;
+    background-color: rgb(var(--switch-button-on-hover));
     background-blend-mode: screen;
-    box-shadow: 0 0 0 9px rgb(var(--on-pry),var(--btn-hover));
+    box-shadow: 0 0 0 9px rgb(var(--on-surface-variant),0.3);
 }
 .custom-switch .custom-control-input:checked~.custom-control-label:focus::after,
 .custom-switch .custom-control-input:checked~.custom-control-label:active::after {
-    background-image: var(--btn-active-highlight);
-    background-color: rgb(var(--on-pry));
+    background-image: none;
+    background-color: rgb(var(--switch-button-on-pressed));
     background-blend-mode: screen;
-    box-shadow: 0 0 0 6px rgb(var(--on-pry),var(--btn-active));
+    box-shadow: 0 0 0 6px rgb(var(--on-surface-variant),0.3);
     top: -2.5px;
     width: 28px;
     height: 28px;
@@ -7342,15 +7344,16 @@ button.clearable-text-field-clear.btn.btn-secondary:focus-visible {
     opacity: 0;
 }
 .custom-switch .custom-control-input:disabled~.custom-control-label:before {
-    background-color: #373d3b;
+    background-color: rgb(var(--outline-variant));
     opacity: 0.4;
 }
 .custom-switch .custom-control-input:disabled:checked~.custom-control-label:before {
-     background-color: #00dfc6;
+     background-color: rgb(var(--switch-button-on-disabled));
+     color: rgb(--outline-variant);
 }
 /*.custom-switch .custom-control-input:focus + .custom-control-label,*/
 .custom-switch .custom-control-input:focus-visible:not(:disabled)~.custom-control-label:after {
-    background-color: #fff;
+    color: rgb(var(--focus-ring));
 }
 /* ***removing default borders and boxes*** */
 .custom-control-input:focus:not(:checked):not(:disabled)~.custom-control-label:before {
@@ -7362,18 +7365,20 @@ button.clearable-text-field-clear.btn.btn-secondary:focus-visible {
 /* *** *** */
 .custom-switch .custom-control-input:focus-visible:not(:disabled)~.custom-control-label::before,
 .custom-switch .custom-control-input:focus-visible:not(:checked):not(:disabled)~.custom-control-label:before {
-    outline-color: #899390;
+    outline-color: rgb(var(--focus-ring));
+    outline-offset: -0.10rem;
     outline-style: solid;
-    outline-width: 2px;
-    outline-offset: 3px;
+    outline-width: 0.19rem;
     box-shadow: none;
+    animation: focus-ring-width-bounce-outer 0.45s cubic-bezier(0.25, 1, 0.5, 1) 0.15s forwards;
 }
 .custom-switch .custom-control-input:focus-visible:checked:not(:disabled)~ .custom-control-label:before {
-    outline-color: #d0d4d2;
+    outline-color: rgb(var(--focus-ring-active));
+    outline-offset: -0.10rem;
     outline-style: solid;
-    outline-width: 2px;
-    outline-offset: 3px;
+    outline-width: 0.19rem;
     box-shadow: none;
+    animation: focus-ring-width-bounce-outer 0.45s cubic-bezier(0.25, 1, 0.5, 1) 0.15s forwards;
 }
 /* Danger Button */
 .btn-danger,
