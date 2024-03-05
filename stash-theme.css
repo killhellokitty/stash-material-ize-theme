@@ -7847,21 +7847,22 @@ div.modal-body b,
     background-color: rgb(var(--tables-even));
 }
 
-.setting-section .setting-group>.setting:first-child h3,
-.setting-section>.card>.setting:first-child h3,
-.form-group:nth-of-type(2) .setting-section:nth-child(2)>.card>.setting h3,
-.form-group:nth-of-type(2) .setting-section:nth-child(3)>.card>.setting h3,
-.form-group:nth-of-type(2) .setting-section:nth-child(4)>.card>.setting h3,
+.setting-section .setting-group > .setting:first-child h3,
+.setting-section > .card > .setting:first-child > div > h3,
+.form-group:nth-of-type(2) .setting-section:nth-child(2) > .card > .setting h3,
+.form-group:nth-of-type(2) .setting-section:nth-child(3) > .card > .setting div h3,
+.form-group:nth-of-type(2) .setting-section:nth-child(4) > .card > .setting h3,
 #apikey h3,
 #maxSessionAge h3 {
-    color: rgb(var(--on-tertiary));
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 36px;
-    letter-spacing: 0.013em;
+    color: rgb(var(--setting-sub-header));
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 32px;
+    letter-spacing: 0.028em;
     font-family: var(--HeaderFont);
+    text-shadow: var(--ultra-light-text-shadow);
 }
-.setting-section .setting-group>.setting:not(:first-child) h3,
+.setting-section .setting-group > .setting:not(:first-child) h3,
 .setting-section .setting-group .collapsible-section {
     color: #dee5e4;
     text-shadow: var(--really-light-txt-shadow);
