@@ -295,6 +295,9 @@ h6,
     --switch-button-on-hover: 4, 92, 85; /* #045c55 */
     --switch-button-on-pressed: 4, 102, 95; /* #04665f */
     --switch-button-on-disabled: 61, 83, 82; /* #3d5352 */
+    --setting-header: 139, 219, 213; /* #8bdbd5 lch(82.249 26.056 190.663) */
+    --setting-sub-header: 94, 207, 255; /* #5ecfff lch(79.269 42.239 251.169) */
+    --switch-header: 226, 232, 236; /* #e2e8ec lch(91.585 3.04 246.005) */
     /* Elevation Box-Shadows */
     --elevation-0: 0px 0px 0px 0px rgba(0,0,0,0.2), 0px 0px 0px 0px rgba(0,0,0,0.14), 0px 0px 0px 0px rgba(0,0,0,0.12);
     --elevation-1: 0px 3px 1px -2px rgba(0,0,0,0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 1px 5px 0px rgba(0,0,0,0.12);
@@ -7802,7 +7805,7 @@ div.modal-body b,
 .setting-section h1, 
 #tasks-panel h1 {
     font-size: 57px;
-    color: rgb(var(--setting-h1));
+    color: rgb(var(--setting-header));
     margin-bottom: 1.25rem;
     margin-top: 2.75rem;
     text-shadow: var(--light-txt-shadow);
@@ -8927,7 +8930,7 @@ button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-
 #configuration-tabs-tabpane-library .setting-section > .card .setting > div > h3,
 #configuration-tabs-tabpane-interface .setting-section > .card .setting > div > h3,
 #configuration-tabs-tabpane-library #stash-table .d-none.d-md-flex.row h6 {
-    color: rgb(var(--card-color2-text));
+    color: rgb(var(--switch-header));
     font-size: 18.5px;
     font-weight: 400;
     line-height: 27px;
@@ -8944,11 +8947,11 @@ button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-
 .setting:has(+.setting>div+div>.custom-control>input#enableMovieBackgroundImage) h3,
 .setting:has(+.setting>div+div>.custom-control>input#disableDropdownCreate_performer) h3,
 #configuration-tabs-tabpane-library .setting-section > .card > div:is(#video-extensions, #image-extensions, #gallery-extensions, #excluded-video-patterns, #excluded-image-gallery-patterns).setting h3 {
-    color: #e5fefc;
+    color: rgb(var(--setting-sub-header));
     font-weight: 500;
     font-size: 26px;
     line-height: 32px;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.028em;
 }
 #configuration-tabs-tabpane-tasks .setting-section .setting-group > .setting:has(>div+div>button#migrateBlobs) {
     border-top: 1px solid rgb(var(--card-fold));
@@ -9095,11 +9098,18 @@ div#settings-container div#configuration-tabs-tabpane-about .card .setting div b
 }
 
 #configuration-tabs-tabpane-tasks .tasks-panel-tasks .setting-section:nth-last-of-type(5) div h3:last-child {
-    color: #c0ebe2;
+    color: lch(65.467 26.913 251.021); /* #6ba6cc */
     font-size: small;
     font-variant-caps: all-small-caps;
     margin-left: 30px;
     margin-top: 10px;
+}
+#configuration-tabs-tabpane-tasks .card > .setting-group.collapsible:not(.collapsibe-section) > .setting >div > h3 { /* Plugin-Tasks Sub-Header's */
+    color: rgb(var(--setting-sub-header));
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 32px;
+    letter-spacing: 0.028em;
 }
 #configuration-tabs-tabpane-tasks .form-group:nth-of-type(2) .setting-section .setting>div:last-child .custom-control.custom-switch {
     margin-right: 70rem;
