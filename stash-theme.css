@@ -7310,6 +7310,7 @@ button.clearable-text-field-clear.btn.btn-secondary:focus-visible {
 .custom-control-input:checked ~ .custom-control-label::before {
      border: 2px solid rgb(var(--outline));
      background-color: rgb(var(--switch-input-on));
+     transition: background-color 0.35s cubic-bezier(0.47, 0, 0.75, 0.72), var(--trans-0);
 }
 
 .custom-switch .custom-control-input:checked~.custom-control-label::after {
@@ -7327,11 +7328,11 @@ button.clearable-text-field-clear.btn.btn-secondary:focus-visible {
     display: flex;
     top: -0.5px;
     left: -30px;
-    transition: background-color 0.55s ease, box-shadow 0.4s ease-in, transform 0s linear;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     align-content: center;
+    transition: var(--trans-0), transform 0.35s ease;
 }
 .custom-switch .custom-control-input:checked~.custom-control-label:hover::after {
     background-image: none;
