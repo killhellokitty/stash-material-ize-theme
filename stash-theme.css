@@ -2298,7 +2298,7 @@ button:not([title=Help]).btn-primary,
      min-height: 40px;
      max-height: 56px;
      line-height: 20px;
-     letter-spacing: 0.185px;
+     letter-spacing: 0.007em;
      padding-block: 8px 8px;
      padding-left: 24px;
      padding-right: 24px;
@@ -7406,12 +7406,13 @@ button.clearable-text-field-clear.btn.btn-secondary:focus-visible {
      display: inline-flex;
      justify-content: center;
      align-items: center;
-     height: 40px;
-     max-height: 40px;
-     width: auto;
+     min-height: 40px;
+     max-height: 56px;
      line-height: 20px;
-     letter-spacing: 0.025em;
+     letter-spacing: 0.007em;
      padding: 0 24px 0 24px;
+     padding-block: 8px 8px;
+     width: auto;
      overflow: hidden;
      contain: content;
      box-shadow: var(--elevation-0);
@@ -7467,12 +7468,13 @@ button.clearable-text-field-clear.btn.btn-secondary:focus-visible {
      display: inline-flex;
      justify-content: center;
      align-items: center;
-     height: 40px;
-     max-height: 40px;
      width: auto;
+     min-height: 40px;
+     max-height: 56px;
      line-height: 20px;
-     letter-spacing: 0.025em;
+     letter-spacing: 0.007em;
      padding: 0 24px 0 24px;
+     padding-block: 8px 8px;
      overflow: hidden;
      contain: content;
      box-shadow: var(--elevation-0);
@@ -8694,10 +8696,13 @@ button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-
     border-bottom: 0;
     padding-bottom: 20px;
 }
-#configuration-tabs-tabpane-tasks .setting-section .setting-group:not(:last-child) {
+#configuration-tabs-tabpane-tasks .setting-section .setting-group:not(.collapsible):not(:last-child) {
     border-bottom: 1px solid rgb(var(--card-fold));
-    margin-left: 1.375rem;
-    width: calc(100% - 2.75rem);
+    /*margin-left: 1.375rem;
+    width: calc(100% - 2.75rem);*/
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: calc(100% - 2rem);
 }
 #configuration-tabs-tabpane-tasks .setting-section .setting-group>.setting:has(>div+div>button.btn-danger+button.btn-danger):first-child,
 #configuration-tabs-tabpane-tasks .setting-section .setting-group>.setting:has(>div+div>button#migrateBlobs) {
