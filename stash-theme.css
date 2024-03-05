@@ -270,6 +270,7 @@ h6,
     --star-color: 255, 243, 111; /* #fff36f --- lch 94.53 64.926 100.665 */
     --setting-h1: 162, 217, 255; /*#a2d9ff*/
     --outline-pry-variant: 139, 171, 196;/* #646a71 */
+    --help-circle: 0, 86, 149; /* #005695  lch(32.836 46.65 255.888) */
     /* Select Toggle Colors */
     --sec-cntnr-select-hover: 66, 86, 101; /*#425665*/
     --sec-cntnr-select-active: 76, 99, 117; /*#4c6375*/
@@ -7871,8 +7872,8 @@ div.modal-body b,
 }
 .setting-section .setting h3[title]:hover {
     text-decoration: underline dotted !important;
-    text-decoration-thickness: 0.13em !important;
-    text-decoration-color: rgb(var(--link)) !important;
+    text-decoration-thickness: 0.06em !important;
+    text-decoration-color: rgb(var(--help-circle)) !important;
     text-underline-offset: 0.24em;
 }
 .settings-section .setting .value {
@@ -8002,21 +8003,48 @@ div.original-scene-details button.minimal.collapse-button.btn.btn-primary.btn-lg
 }
 
 /* ||Help Circles */
-.setting-section .setting h3>a>svg.svg-inline--fa.fa-circle-question.fa-icon {
-    font-size: 1.1rem;
+.setting-section .setting h3 > a > svg.svg-inline--fa.fa-circle-question.fa-icon {
+    font-size: 1.25rem;
 }
 svg.svg-inline--fa.fa-circle-question.fa-icon {
-    color: #005a82;
-    font-size: 1.1rem;
+    color: rgb(var(--help-circle));
+    font-size: 1.25rem;
     background-color: rgb(var(--on-pry-container));
-    margin-left: 8px;
     border-radius: 5rem;
-    border-width: 0;
-    outline-color: currentColor;
+    border: 0;
+    border-color: rgb(var(--help-circle));
+    outline-color: rgb(var(--help-circle)); /*#005a82 */
+    outline-style: solid;
+    outline-width: 3px;
+    outline-offset: -2px;
+    box-shadow: var(--elevation-1);
+    margin-top: 4px;
+}
+svg.svg-inline--fa.fa-circle-question.fa-icon:hover {
+    box-shadow: var(--elevation-2);
+}
+svg.svg-inline--fa.fa-circle-question.fa-icon:where(:active, :focus) {
+    box-shadow: var(--elevation-0);
+}
+.setting-section .setting h3 > a:has(>svg.svg-inline--fa.fa-circle-question.fa-icon) {
+    margin-left: 8px;
+    position: relative;
+    border-radius: 5rem;
+    width: 20px;
+    height: 20px;
+    display: inline-flex;
+    transition: box-shadow: 0.35s ease-in, var(--trans-0);
+}
+.setting-section .setting h3 > a:has(>svg.svg-inline--fa.fa-circle-question.fa-icon):focus-visible {
+    outline-color: rgb(var(--help-circle));
     outline-style: solid;
     outline-width: 2px;
-    outline-offset: -1px;
-    box-shadow: var(--elevation-0);
+    outline-offset: -4px;
+    box-shadow: var(--elevation-2);
+    width: 28px;
+    display: inline-flex;
+    height: 28px;
+    left: -4px;
 }
 /* --- */
 
