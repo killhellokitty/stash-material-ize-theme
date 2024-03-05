@@ -5958,7 +5958,7 @@ button.Lightbox-navbutton.btn.btn-link > svg:is(.fa-chevron-right, .fa-chevron-l
     background-color: transparent;
     box-shadow: none;
 }
-.stash-row.align-items-center.row .dropdown>button.minimal.dropdown-toggle.btn.btn-minimal:where(:active, :focus, :active:focus) {
+.stash-row.align-items-center.row .dropdown>button.minimal.dropdown-toggle.btn.btn-minimal:not(:disabled):is(:active, :focus, :active:focus) {
     background: none;
     background-color: rgb(var(--on-surface-variant),var(--btn-active));
     outline: 0;
@@ -12623,7 +12623,7 @@ button.tag-list-button.btn.btn-secondary:has(>.tag-list-anchor)::after,
 div:not(.pagination)>button:not(.tag-list-button:has(>.tag-list-anchor)):not(.duration-button):not(.scrape-url-button):not(.percent-button).btn.btn-secondary:not(:has(>.fa-plus)):not(:has(>.fa-calendar))::after,
 .justify-content-center.btn-toolbar > .mb-2 > select.btn-secondary.form-control::after,
 .pagination button.btn.btn-secondary::after,
-.btn-danger:has(>:not(.fa-minus))::after,
+.btn-danger:not(:has(>.fa-minus))::after,
 .btn-success::after,
 /* Nav-Tabs cented ripple */
 /*.nav-tabs>.nav-item:has(>*:not(.btn-secondary):not(.dropdown):not(.o-counter))::after, */
@@ -12742,7 +12742,7 @@ button.minimal.collapse-button.btn-primary:not(:active):not(.active)::after,
 .modal-header .close:not(:active):not(.active)::after,
 .recommendation-row-head>a:not(:active):not(.active)::after,
 div:not(.pagination)>button:not(.duration-button):not(.scrape-url-button):not(.percent-button).btn.btn-secondary:not(:has(>.fa-plus)):not(:has(>.fa-calendar)):not(:active):not(.active)::after,
-.btn-danger:has(>:not(.fa-minus)):not(:active):not(.active)::after,
+.btn-danger:not(:has(>.fa-minus)):not(:active):not(.active)::after,
 .btn-success:not(:active):not(.active)::after,
 a:not([href^="/scenes"]):not([href^="/images"]):not([href^="/movies"]):not([href^="/scenes/markers"]):not([href^="/galleries"]):not([href^="/performers"]):not([href^="/studios"]):not([href^="/tags"]).minimal:not(:active):not(.active)::after, 
 button:not(.brand-link):not(.dropdown-toggle).minimal:not(.scene-count>button.minimal):not(:where(.o-counter,.o-count)>button.minimal):not(.image-count>button.minimal):not(.gallery-count>button.minimal):not(.organized>button.minimal):not(.tag-count>button.minimal):not(.performer-count>button.minimal):not(.organized-button):not(:active):not(.active)::after, 
@@ -12772,7 +12772,7 @@ button.minimal.collapse-button.btn-primary::after,
 .modal-header .close::after,
 .recommendation-row-head>a::after,
 div:not(.pagination)>button:not(.duration-button):not(.scrape-url-button):not(.percent-button).btn.btn-secondary:not(:has(>.fa-plus)):not(:has(>.fa-calendar))::after,
-.btn-danger:has(>:not(.fa-minus))::after,
+.btn-danger:not(:has(>.fa-minus))::after,
 .btn-success::after,
 a:not([href^="/scenes"]):not([href^="/images"]):not([href^="/movies"]):not([href^="/scenes/markers"]):not([href^="/galleries"]):not([href^="/performers"]):not([href^="/studios"]):not([href^="/tags"]).minimal::after, 
 button:not(.brand-link):not(.dropdown-toggle).minimal:not(.scene-count>button.minimal):not(:where(.o-counter,.o-count)>button.minimal):not(.image-count>button.minimal):not(.gallery-count>button.minimal):not(.organized>button.minimal):not(.tag-count>button.minimal):not(.performer-count>button.minimal):not(.organized-button)::after, 
@@ -12797,7 +12797,7 @@ button.minimal.collapse-button.btn-primary:focus:not(:focus-visible)::after,
 .modal-header .close:focus:not(:focus-visible)::after,
 .recommendation-row-head>a:focus:not(:focus-visible)::after,
 div:not(.pagination)>button:not(.duration-button):not(.scrape-url-button):not(.percent-button).btn.btn-secondary:not(:has(>.fa-plus)):not(:has(>.fa-calendar)):focus:not(:focus-visible)::after,
-.btn-danger:has(>:not(.fa-minus)):focus:not(:focus-visible)::after,
+.btn-danger:not(:has(>.fa-minus)):focus:not(:focus-visible)::after,
 .btn-success:focus:not(:focus-visible)::after,
 a:not([href^="/scenes"]):not([href^="/images"]):not([href^="/movies"]):not([href^="/scenes/markers"]):not([href^="/galleries"]):not([href^="/performers"]):not([href^="/studios"]):not([href^="/tags"]).minimal:focus:not(:focus-visible)::after, 
 button:not(.brand-link):not(.dropdown-toggle).minimal:not(.scene-count>button.minimal):not(:where(.o-counter,.o-count)>button.minimal):not(.image-count>button.minimal):not(.gallery-count>button.minimal):not(.organized>button.minimal):not(.tag-count>button.minimal):not(.performer-count>button.minimal):not(.organized-button):focus:not(:focus-visible)::after, 
