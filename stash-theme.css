@@ -5953,11 +5953,13 @@ button.Lightbox-navbutton.btn.btn-link > svg:is(.fa-chevron-right, .fa-chevron-l
     contain: content;
     box-shadow: none;
 }
-.stash-row.align-items-center.row .dropdown>button.minimal.dropdown-toggle.btn.btn-minimal:hover {
-    background-color: rgb(var(--on-surface-variant),var(--btn-hover));
-    box-shadow: var(--elevation-1);
+.stash-row.align-items-center.row .dropdown>button.minimal.dropdown-toggle.btn.btn-minimal:hover:not(:disabled) {
+    background: none;
+    background-color: transparent;
+    box-shadow: none;
 }
 .stash-row.align-items-center.row .dropdown>button.minimal.dropdown-toggle.btn.btn-minimal:where(:active, :focus, :active:focus) {
+    background: none;
     background-color: rgb(var(--on-surface-variant),var(--btn-active));
     outline: 0;
     box-shadow: none;
@@ -12931,7 +12933,6 @@ button.minimal.btn.btn-primary:has(>a.link>svg.fa-link)::before {
 }
 
 .navbar-dark .navbar-toggler:not(.collapsed)::before, 
-button.dropdown-toggle::before,
 .top-nav .navbar-buttons:not(:has(a[href^="/scenes/new"])):not(:has(a[href^="/movies/new"])):not(:has(a[href^="/galleries/new"])):not(:has(a[href^="/performers/new"])):not(:has(a[href^="/studios/new"])):not(:has(a[href^="/tags/new"])) .btn:not(.donate)::before, 
 .top-nav .navbar-buttons a.nav-utility button.minimal.btn.btn-primary:not(.donate)::before,
 button[title=Help].nav-utility.minimal.btn.btn-primary:has(>svg.svg-inline--fa.fa-circle-question.fa-icon)::before,
