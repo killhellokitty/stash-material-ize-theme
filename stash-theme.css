@@ -7849,6 +7849,7 @@ div.modal-body b,
 
 .setting-section .setting-group > .setting:first-child h3,
 .setting-section > .card > .setting:first-child > div > h3,
+#configuration-tabs-tabpane-library .setting-section #gallery-cover-regex.setting > div > h3,
 .form-group:nth-of-type(2) .setting-section:nth-child(2) > .card > .setting h3,
 .form-group:nth-of-type(2) .setting-section:nth-child(3) > .card > .setting div h3,
 .form-group:nth-of-type(2) .setting-section:nth-child(4) > .card > .setting h3,
