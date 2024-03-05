@@ -297,6 +297,7 @@ h6,
     --switch-button-on-disabled: 61, 83, 82; /* #3d5352 */
     --setting-header: 139, 219, 213; /* #8bdbd5 lch(82.249 26.056 190.663) */
     --setting-sub-header: 94, 207, 255; /* #5ecfff lch(79.269 42.239 251.169) */
+    --setting-sub-text: 166, 171, 176; /* #a6abb0 */
     --switch-header: 226, 232, 236; /* #e2e8ec lch(91.585 3.04 246.005) */
     /* Elevation Box-Shadows */
     --elevation-0: 0px 0px 0px 0px rgba(0,0,0,0.2), 0px 0px 0px 0px rgba(0,0,0,0.14), 0px 0px 0px 0px rgba(0,0,0,0.12);
