@@ -5949,12 +5949,15 @@ button.Lightbox-navbutton.btn.btn-link > svg:is(.fa-chevron-right, .fa-chevron-l
     font-size: 20px;
     border-radius: 5rem;
     color: rgb(var(--on-surface-variant));
+    overflow: hidden;
+    contain: content;
+    box-shadow: none;
 }
 .stash-row.align-items-center.row .dropdown>button.minimal.dropdown-toggle.btn.btn-minimal:hover {
     background-color: rgb(var(--on-surface-variant),var(--btn-hover));
-    box-shadow: var(--elevation-0);
+    box-shadow: var(--elevation-1);
 }
-.stash-row.align-items-center.row .dropdown>button.minimal.dropdown-toggle.btn.btn-minimal:is(:active, :focus, :active:focus) {
+.stash-row.align-items-center.row .dropdown>button.minimal.dropdown-toggle.btn.btn-minimal:where(:active, :focus, :active:focus) {
     background-color: rgb(var(--on-surface-variant),var(--btn-active));
     outline: 0;
     box-shadow: none;
@@ -9194,9 +9197,9 @@ div#settings-container div#configuration-tabs-tabpane-about .card .setting div b
     background-color: transparent !important;
 }
 
-.stash-row.align-items-center.row .dropdown>button.minimal.dropdown-toggle.btn.btn-minimal {
+/*.stash-row.align-items-center.row .dropdown>button.minimal.dropdown-toggle.btn.btn-minimal {
     padding: 0 19px 0 19px;
-}
+}*/
 
 @media (min-width: 576px) and (min-height: 600px) {
 #tasks-panel .tasks-panel-queue {
@@ -12608,7 +12611,7 @@ button.tag-list-button.btn.btn-secondary:has(>.tag-list-anchor)::after {
 
 :is(:has(:not(.collapse.show.card .input-group):has(> .input-group-append)), :not(.navbar-buttons>.mr-2>a[href$="/new"])) button.btn.btn-primary:not(.scrubber-button):not(.minimal):not([title="Search"])::after,
 a:not([href^="/scenes"]):not([href^="/images"]):not([href^="/movies"]):not([href^="/scenes/markers"]):not([href^="/galleries"]):not([href^="/performers"]):not([href^="/studios"]):not([href^="/tags"]).minimal::after, 
-button:not(.brand-link).minimal:not(.scene-count>button.minimal):not(:where(.o-counter,.o-count)>button.minimal):not(.image-count>button.minimal):not(.gallery-count>button.minimal):not(.organized>button.minimal):not(.tag-count>button.minimal):not(.performer-count>button.minimal):not(.organized-button)::after, 
+button:not(.brand-link):not(.dropdown-toggle).minimal:not(.scene-count>button.minimal):not(:where(.o-counter,.o-count)>button.minimal):not(.image-count>button.minimal):not(.gallery-count>button.minimal):not(.organized>button.minimal):not(.tag-count>button.minimal):not(.performer-count>button.minimal):not(.organized-button)::after, 
 .navbar-brand button.minimal.brand-link.d-inline-block.btn.btn-primary::after,
 button#operation-menu.minimal.dropdown-toggle.btn.btn-secondary::after,
 .modal-header .close::after,
@@ -12740,7 +12743,7 @@ div:not(.pagination)>button:not(.duration-button):not(.scrape-url-button):not(.p
 .btn-danger:has(>:not(.fa-minus)):not(:active):not(.active)::after,
 .btn-success:not(:active):not(.active)::after,
 a:not([href^="/scenes"]):not([href^="/images"]):not([href^="/movies"]):not([href^="/scenes/markers"]):not([href^="/galleries"]):not([href^="/performers"]):not([href^="/studios"]):not([href^="/tags"]).minimal:not(:active):not(.active)::after, 
-button:not(.brand-link).minimal:not(.scene-count>button.minimal):not(:where(.o-counter,.o-count)>button.minimal):not(.image-count>button.minimal):not(.gallery-count>button.minimal):not(.organized>button.minimal):not(.tag-count>button.minimal):not(.performer-count>button.minimal):not(.organized-button):not(:active):not(.active)::after, 
+button:not(.brand-link):not(.dropdown-toggle).minimal:not(.scene-count>button.minimal):not(:where(.o-counter,.o-count)>button.minimal):not(.image-count>button.minimal):not(.gallery-count>button.minimal):not(.organized>button.minimal):not(.tag-count>button.minimal):not(.performer-count>button.minimal):not(.organized-button):not(:active):not(.active)::after, 
 button#operation-menu.minimal.dropdown-toggle.btn.btn-secondary:not(:active):not(.active)::after,
 .card-popovers a.pwPlayer_button:not(:active):not(.active)::after,
 .pagination button.btn.btn-secondary:not(:hover)::after,
@@ -12770,7 +12773,7 @@ div:not(.pagination)>button:not(.duration-button):not(.scrape-url-button):not(.p
 .btn-danger:has(>:not(.fa-minus))::after,
 .btn-success::after,
 a:not([href^="/scenes"]):not([href^="/images"]):not([href^="/movies"]):not([href^="/scenes/markers"]):not([href^="/galleries"]):not([href^="/performers"]):not([href^="/studios"]):not([href^="/tags"]).minimal::after, 
-button:not(.brand-link).minimal:not(.scene-count>button.minimal):not(:where(.o-counter,.o-count)>button.minimal):not(.image-count>button.minimal):not(.gallery-count>button.minimal):not(.organized>button.minimal):not(.tag-count>button.minimal):not(.performer-count>button.minimal):not(.organized-button)::after, 
+button:not(.brand-link):not(.dropdown-toggle).minimal:not(.scene-count>button.minimal):not(:where(.o-counter,.o-count)>button.minimal):not(.image-count>button.minimal):not(.gallery-count>button.minimal):not(.organized>button.minimal):not(.tag-count>button.minimal):not(.performer-count>button.minimal):not(.organized-button)::after, 
 /*.navbar-brand button.minimal.brand-link.d-inline-block.btn.btn-primary::after,*/
 button#operation-menu.minimal.dropdown-toggle.btn.btn-secondary::after,
 .card-popovers a.pwPlayer_button::after,
@@ -12795,7 +12798,7 @@ div:not(.pagination)>button:not(.duration-button):not(.scrape-url-button):not(.p
 .btn-danger:has(>:not(.fa-minus)):focus:not(:focus-visible)::after,
 .btn-success:focus:not(:focus-visible)::after,
 a:not([href^="/scenes"]):not([href^="/images"]):not([href^="/movies"]):not([href^="/scenes/markers"]):not([href^="/galleries"]):not([href^="/performers"]):not([href^="/studios"]):not([href^="/tags"]).minimal:focus:not(:focus-visible)::after, 
-button:not(.brand-link).minimal:not(.scene-count>button.minimal):not(:where(.o-counter,.o-count)>button.minimal):not(.image-count>button.minimal):not(.gallery-count>button.minimal):not(.organized>button.minimal):not(.tag-count>button.minimal):not(.performer-count>button.minimal):not(.organized-button):focus:not(:focus-visible)::after, 
+button:not(.brand-link):not(.dropdown-toggle).minimal:not(.scene-count>button.minimal):not(:where(.o-counter,.o-count)>button.minimal):not(.image-count>button.minimal):not(.gallery-count>button.minimal):not(.organized>button.minimal):not(.tag-count>button.minimal):not(.performer-count>button.minimal):not(.organized-button):focus:not(:focus-visible)::after, 
 /*.navbar-brand button.minimal.brand-link.d-inline-block.btn.btn-primary:focus:not(:focus-visible)::after,*/
 button#operation-menu.minimal.dropdown-toggle.btn.btn-secondary:focus:not(:focus-visible)::after,
 .card-popovers a.pwPlayer_button:focus:not(:focus-visible)::after,
@@ -12815,7 +12818,8 @@ button.tag-list-button.btn.btn-secondary:focus:not(:focus-visible)::after,
 
 /* *** ||Circle Buttons *** */
 .navbar-dark .navbar-toggler.collapsed::before,
-.navbar-dark .navbar-toggler:not(.collapsed)::before {
+.navbar-dark .navbar-toggler:not(.collapsed)::before,
+button.dropdown-toggle::before {
     content: "";
     display: block;
     position: absolute;
@@ -12927,6 +12931,7 @@ button.minimal.btn.btn-primary:has(>a.link>svg.fa-link)::before {
 }
 
 .navbar-dark .navbar-toggler:not(.collapsed)::before, 
+button.dropdown-toggle::before,
 .top-nav .navbar-buttons:not(:has(a[href^="/scenes/new"])):not(:has(a[href^="/movies/new"])):not(:has(a[href^="/galleries/new"])):not(:has(a[href^="/performers/new"])):not(:has(a[href^="/studios/new"])):not(:has(a[href^="/tags/new"])) .btn:not(.donate)::before, 
 .top-nav .navbar-buttons a.nav-utility button.minimal.btn.btn-primary:not(.donate)::before,
 button[title=Help].nav-utility.minimal.btn.btn-primary:has(>svg.svg-inline--fa.fa-circle-question.fa-icon)::before,
@@ -12948,7 +12953,8 @@ button[title=Help].nav-utility.minimal.btn.btn-primary:has(>svg.svg-inline--fa.f
     }
 }
 .navbar-dark .navbar-toggler.collapsed:hover:not(:active):not(.active)::before, 
-.navbar-dark .navbar-toggler:hover:not(.collapsed):not(:active):not(.active)::before, 
+.navbar-dark .navbar-toggler:hover:not(.collapsed):not(:active):not(.active)::before,
+button.dropdown-toggle:hover:not(:active)::before, 
 .top-nav .navbar-buttons:not(:has(a[href^="/scenes/new"])):not(:has(a[href^="/movies/new"])):not(:has(a[href^="/galleries/new"])):not(:has(a[href^="/performers/new"])):not(:has(a[href^="/studios/new"])):not(:has(a[href^="/tags/new"])) .btn:not(.donate):hover:not(:active):not(.active)::before, 
 .top-nav .navbar-buttons a.nav-utility button.minimal.btn.btn-primary:not(.donate):hover:not(:active):not(.active)::before,
 button[title=Help].nav-utility.minimal.btn.btn-primary:has(>svg.svg-inline--fa.fa-circle-question.fa-icon):hover:not(:active):not(.active)::before,
@@ -12993,6 +12999,7 @@ button.minimal.btn.btn-primary:has(>a.link>svg.fa-link):hover::before,
 }
 .navbar-dark .navbar-toggler.collapsed::before, 
 .navbar-dark .navbar-toggler:not(.collapsed)::before,
+button.dropdown-toggle::before,
 .top-nav .navbar-buttons:not(:has(a[href^="/scenes/new"])):not(:has(a[href^="/movies/new"])):not(:has(a[href^="/galleries/new"])):not(:has(a[href^="/performers/new"])):not(:has(a[href^="/studios/new"])):not(:has(a[href^="/tags/new"])) .btn:not(.donate)::before, 
 .top-nav .navbar-buttons a.nav-utility button.minimal.btn.btn-primary:not(.donate)::before,
 button[title=Help].nav-utility.minimal.btn.btn-primary:has(>svg.svg-inline--fa.fa-circle-question.fa-icon)::before,
@@ -13007,7 +13014,8 @@ button:is(.favorite, .not-favorite).minimal.favorite-button.btn.btn-primary::bef
     visibility: hidden;
 }
 .navbar-dark .navbar-toggler.collapsed:hover::before, 
-.navbar-dark .navbar-toggler:not(.collapsed):hover::before, 
+.navbar-dark .navbar-toggler:not(.collapsed):hover::before,
+button.dropdown-toggle:hover::before, 
 .top-nav .navbar-buttons:not(:has(a[href^="/scenes/new"])):not(:has(a[href^="/movies/new"])):not(:has(a[href^="/galleries/new"])):not(:has(a[href^="/performers/new"])):not(:has(a[href^="/studios/new"])):not(:has(a[href^="/tags/new"])) .btn:not(.donate):hover::before, 
 .top-nav .navbar-buttons a.nav-utility button.minimal.btn.btn-primary:not(.donate):hover::before,
 button[title=Help].nav-utility.minimal.btn.btn-primary:has(>svg.svg-inline--fa.fa-circle-question.fa-icon):hover::before,
