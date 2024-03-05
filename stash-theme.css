@@ -7879,7 +7879,9 @@ div.modal-body b,
 .settings-section .setting .value {
     font-family: var(--MonoFont);
 }
-
+.setting-section .setting-group.collapsible:has(>.setting+.collapse):not(:last-child) { /* Plugins taskds borders */
+    border-bottom: 1px solid rgb(var(--card-fold));
+}
 
 /* || Collapse Butons */
     /* fixes oddly scaled and un-centerd arrow svg */
