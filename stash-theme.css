@@ -861,7 +861,7 @@ button.bg-secondary:focus {
      color: unset !important;
 }
 .border-secondary {
-     border-color: #bec9c5 !important;
+     border-color: rgb(var(--outline)) !important;
 }
 
 .order-2 button {
@@ -9003,6 +9003,7 @@ button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-
     letter-spacing: 0.016em;
     color: rgb(var(--outline));
 }
+#configuration-tabs-tabpane-metadata-providers.active.show > #stash-boxes.setting-section >.card > .setting >div > h3,
 #configuration-tabs-tabpane-tasks .setting-section > .card .setting:has(>div+div>button#optimiseDatabase) h3,
 .setting:has(+.setting>div+div>.custom-control>input#clean-dryrun) h3,
 .setting-group > .setting:has(+.collapsible-section>.setting>div+div>.custom-control>input#covers-task) > div > h3,
