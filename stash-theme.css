@@ -7873,7 +7873,7 @@ div.modal-body b,
 .setting-section .setting h3[title]:hover {
     text-decoration: underline dotted !important;
     text-decoration-thickness: 0.06em !important;
-    text-decoration-color: rgb(var(--help-circle)) !important;
+    text-decoration-color: rgb(var(--switch-header)) !important;
     text-underline-offset: 0.24em;
 }
 .settings-section .setting .value {
