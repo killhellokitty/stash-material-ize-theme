@@ -9003,6 +9003,7 @@ button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-
     letter-spacing: 0.016em;
     color: rgb(var(--outline));
 }
+#configuration-tabs-tabpane-plugins.active.show > .setting-section:last-of-type >h1 +.card > .setting > div > h3:nth-of-type(1),
 #configuration-tabs-tabpane-metadata-providers.active.show > #stash-boxes.setting-section >.card > .setting >div > h3,
 #configuration-tabs-tabpane-tasks .setting-section > .card .setting:has(>div+div>button#optimiseDatabase) h3,
 .setting:has(+.setting>div+div>.custom-control>input#clean-dryrun) h3,
