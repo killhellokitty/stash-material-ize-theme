@@ -9066,6 +9066,7 @@ div#excluded-tag-patterns.setting {
 div#configuration-tabs-tabpane-logs > h2 {
     color: #6fb0dd;
     text-shadow: var(--light-txt-shadow);
+    margin-top: 0.75rem;
 }
 
 #configuration-tabs-tabpane-plugins .setting>div+div>button.minimal.btn.btn-primary:not(.disabled):not(:disabled):is(:hover, :focus-visible) {
