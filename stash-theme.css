@@ -7843,7 +7843,9 @@ div.modal-body b,
 }
 #configuration-tabs-tabpane-plugins .setting-section .setting-group .setting>div:last-child button.btn-primary.btn-sm { /* Plugins Tab, disable buttons size */
     max-height: 32px;
+    min-height: 32px;
     height: 32px;
+    padding-block: 0 0;
     padding-left: 12px;
     padding-right: 12px;
     margin-left: 12px;
