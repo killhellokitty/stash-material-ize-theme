@@ -5393,7 +5393,7 @@ div.mb-2 select.btn-secondary.form-control.focus option {
 
 @media (min-width: 1200px) {
     .scene-divider:has(+.scene-player-container) > button.btn.btn-primary,
-    .gallery-tabs + .gallery-divider > button.btn.btn-primary {
+    div.gallery-tabs + .gallery-divider.d-none.d-xl-block > button.btn.btn-primary {
         color: rgb(var(--secondary));
         border: 0;
         background-image: var(--btn-dummy-highlight);
@@ -5414,7 +5414,7 @@ div.mb-2 select.btn-secondary.form-control.focus option {
         transition: margin-left 0.35s ease, var(--trans-0);
         -webkit-transition: margin-left 0.35s ease, var(--trans-0);
     }
-    .gallery-tabs + .gallery-divider > button.btn.btn-primary {
+    div.gallery-tabs + .gallery-divider.d-none.d-xl-block > button.btn.btn-primary {
         background-color: rgb(var(--inset-body-color));
         background-blend-mode: overlay;
         color: rgb(var(--on-surface-variant));
@@ -5441,13 +5441,13 @@ div.mb-2 select.btn-secondary.form-control.focus option {
         margin-left: 4px;
         transition: margin-left 0.35s ease;
     }
-    .scene-divider:has(+.scene-player-container) > button.btn.btn-primary:where(:hover, :focus-visible),
-    .gallery-tabs + .gallery-divider > button.btn.btn-primary:where(:hover, :focus-visible) {
+    .scene-divider:has(+.scene-player-container) > button.btn.btn-primary:is(:hover, :focus-visible),
+    div.gallery-tabs + .gallery-divider.d-none.d-xl-block > button.btn.btn-primary:is(:hover, :focus-visible) {
         background-image: var(--btn-hover-highlight);
         box-shadow: var(--elevation-2);
     }
-    .scene-divider:has(+.scene-player-container) > button.btn.btn-primary:where(:active, :focus),
-    .gallery-tabs + .gallery-divider > button.btn.btn-primary:where(:active, :focus) {
+    .scene-divider:has(+.scene-player-container) > button.btn.btn-primary:is(:active, :focus, :active:focus),
+    div.gallery-tabs + .gallery-divider.d-none.d-xl-block > button.btn.btn-primary:is(:active, :focus, :active:focus) {
         background-image: var(--btn-active-highlight);
         box-shadow: var(--elevation-1);
     }
@@ -5498,6 +5498,11 @@ div.mb-2 select.btn-secondary.form-control.focus option {
         padding-left: 0;
         padding-right: 0;
     }
+    .gallery-tabs,
+    .gallery-container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 }
 .gallery-tabs {
     max-height: none;
@@ -5505,8 +5510,8 @@ div.mb-2 select.btn-secondary.form-control.focus option {
 }
 .gallery-tabs,
 .gallery-container {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 0;
+    padding-right: 0;
     position: static;
 }
 .gallery-container {
