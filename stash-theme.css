@@ -2328,7 +2328,7 @@ button.tag-list-button.btn.btn-secondary:not(:has(>.tag-list-anchor)):disabled {
 }
 
 /* ||Primary Button */
-button:not([title=Help]).btn-primary,
+button:not([title=Help]):not(.favorite):not(.not-favorite).btn-primary,
 .login .btn.btn-primary {
      color: rgb(var(--on-tertiary));
      background-image: none;
@@ -2362,14 +2362,14 @@ button:not([title=Help]).btn-primary,
         color: rgb(var(--on-tertiary));
     }
 }
-button:not([title=Help]):is(:not(.favorite), :not(.not-favorite)).btn.btn-primary:where(.disabled, :disabled, .disabled:hover, :disabled:hover) {
+button:not([title=Help]):not(.favorite):not(.not-favorite).btn.btn-primary:where(.disabled, :disabled, .disabled:hover, :disabled:hover) {
     color: rgb(var(--on-surface),var(--disabled));
     background-image: linear-gradient(to right, rgb(var(--body-color2)), rgb(var(--body-color2)));
     background-color: rgb(var(--on-surface),var(--btn-background-disabled));
     background-blend-mode: screen;
     box-shadow: var(--elevation-0);
 }
-button:not([title=Help]):is(:not(.favorite), :not(.not-favorite)).btn-primary:not(:disabled):not(.disabled):hover,
+button:not([title=Help]):not(.favorite):not(.not-favorite).btn-primary:not(:disabled):not(.disabled):hover,
 .login .btn.btn-primary:hover {
     color: rgb(var(--on-tertiary));
     background-image: var(--btn-hover-highlight);
@@ -2377,7 +2377,7 @@ button:not([title=Help]):is(:not(.favorite), :not(.not-favorite)).btn-primary:no
     background-blend-mode: screen;
     box-shadow: var(--elevation-1);
 }
-button:not([title=Help]):is(:not(.favorite), :not(.not-favorite)).btn-primary:not(:disabled):not(.disabled):focus-visible,
+button:not([title=Help]):not(.favorite):not(.not-favorite).btn-primary:not(:disabled):not(.disabled):focus-visible,
 .login .btn.btn-primary:focus-visible {
     background-image: none;
     background-color: rgba(var(--split-comp-container));
@@ -2388,7 +2388,7 @@ button:not([title=Help]):is(:not(.favorite), :not(.not-favorite)).btn-primary:no
     outline-width: 0.19rem;
     outline-offset: -0.1rem;
 }
-button:not([title=Help]):is(:not(.favorite), :not(.not-favorite)).btn-primary:not(:where(:disabled, .disabled)):is(:focus, .active, .active:focus, :active, :active:focus),
+button:not([title=Help]):not(.favorite):not(.not-favorite).btn-primary:not(:where(:disabled, .disabled)):is(:focus, .active, .active:focus, :active, :active:focus),
 .login .btn.btn-primary:is(:focus, .active, .active:focus, :active, :active:focus) {
     color: rgb(var(--on-tertiary));
     background-image: var(--btn-active-highlight);
