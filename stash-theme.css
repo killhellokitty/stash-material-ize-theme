@@ -5704,7 +5704,7 @@ button:not([title=Statistics], [title=Settings]).minimal:not(.nav-utility, .bran
 }
 
 /* ||Favorite / Not-Favorite Buttons */
-.performer-card button.minimal.btn.favorite-button.not-favorite.btn.btn-primary > svg.svg-inline--fa.fa-heart.fa-icon {
+.performer-card button.minimal.not-favorite.btn.btn-primary > svg.svg-inline--fa.fa-heart.fa-icon {
     color: unset;
     padding: 0;
     margin: 0;
@@ -5712,7 +5712,7 @@ button:not([title=Statistics], [title=Settings]).minimal:not(.nav-utility, .bran
     z-index: 5;
     transition: font-size 0.25 ease-in-out;
 }
-.performer-card button.minimal.btn.favorite-button.favorite.btn.btn-primary > svg.svg-inline--fa.fa-heart.fa-icon {
+.performer-card button.minimal.favorite.btn.btn-primary > svg.svg-inline--fa.fa-heart.fa-icon {
     color: unset;
     padding: 0;
     margin: 0;
@@ -5724,11 +5724,11 @@ button:not([title=Statistics], [title=Settings]).minimal:not(.nav-utility, .bran
     color: unset;
     z-index: 5;
 }
-.performer-card button.btn.favorite-button.not-favorite {
+.performer-card button.btn.minimal.not-favorite {
     color: rgb(var(--on-split-comp-container),0.7) !important;
     filter: drop-shadow(0 0 0.2rem rgba(0,0,0,.65));
 }
-.performer-card button.btn.favorite-button.favorite {
+.performer-card button.btn.minimal.favorite {
     color: rgb(var(--on-split-comp-container)) !important;
     filter: drop-shadow(0 0 0.22rem rgba(0,0,0,.82));
 }
@@ -5744,7 +5744,7 @@ button:not([title=Statistics], [title=Settings]).minimal:not(.nav-utility, .bran
     color: rgb(var(--on-split-comp-container),var(--btn-hover-rev));
     z-index: 10;
 }
-button:is(.favorite, .not-favorite).minimal.favorite-button.btn.btn-primary {
+.performer-card button:is(.favorite, .not-favorite).minimal.btn.btn-primary:has(>svg.fa-heart) {
     padding: 0;
     width: 40px;
     min-width: 40px;
@@ -5774,13 +5774,13 @@ button:is(.favorite, .not-favorite).minimal.favorite-button.btn.btn-primary {
     box-shadow: none;
     transition: box-shadow 0.35s ease-in, filter 0.25s, var(--trans-0);
 }
-#performer-page .performer-head .name-icons button:is(.favorite, .not-favorite).btn-primary:hover,
-button:is(.favorite, .not-favorite).minimal.favorite-button.btn.btn-primary:hover {
+#performer-page .performer-head .name-icons button:is(.favorite, .not-favorite).btn-primary:not(.disabled):not(:disabled):hover,
+.performer-card button:is(.favorite, .not-favorite).minimal.btn.btn-primary:has(>svg.fa-heart):not(.disabled):not(:disabled):hover {
     filter: none;
     opacity: 1;
 }
 #performer-page .performer-head .name-icons button:is(.favorite, .not-favorite).btn-primary:is(:focus, :active, :active:focus),
-button:is(.favorite, .not-favorite).minimal.favorite-button.btn.btn-primary:is(:focus, :active, :focus:active) {
+.performer-card button:is(.favorite, .not-favorite).minimal.btn.btn-primary:has(>svg.fa-heart):is(:focus, :active, :focus:active) {
     background-image: var(--btn-active-highlight);
     background-color: rgb(var(--split-comp-container));
     background-blend-mode: screen;
@@ -5790,11 +5790,11 @@ button:is(.favorite, .not-favorite).minimal.favorite-button.btn.btn-primary:is(:
 }
 
 /* Twitter Icon */
-.name-icons button.minimal.icon-link.btn.btn-primary > a.twitter > svg.fa-twitter.fa-icon {
+.name-icons a.minimal.link.twitter.btn.btn-primary > svg.fa-twitter.fa-icon {
     z-index: 10;
 }
 
-.name-icons button.minimal.icon-link.btn.btn-primary:has(>a.twitter):not(:disabled) {
+.name-icons a.minimal.link.twitter.btn.btn-primary:not(:disabled):not(.disabled) {
     color: rgb(var(--twitter-blue));
     filter: drop-shadow(0 0 0.2rem rgba(0,0,0,0.45));
     width: 32px;
@@ -5814,11 +5814,11 @@ button:is(.favorite, .not-favorite).minimal.favorite-button.btn.btn-primary:is(:
     text-decoration-color: transparent;
     transition: box-shadow 0.35s ease-in, filter 0.25s, var(--trans-0);
 }
-.name-icons button.minimal.icon-link.btn.btn-primary:has(>a.twitter):not(:disabled):is(:hover, :focus-visible) {
+.name-icons a.minimal.link.twitter.btn.btn-primary:not(:disabled):not(.disabled):is(:hover, :focus-visible) {
     filter: none;
     opacity: 1;
 }
-.name-icons button.minimal.icon-link.btn.btn-primary:has(>a.twitter):not(:disabled):is(:focus, :active, :active:focus) {
+.name-icons a.minimal.link.twitter.btn.btn-primary:not(:disabled):not(.disabled):is(:focus, :active, :active:focus) {
     background-image: var(--btn-active-highlight);
     background-color: rgb(var(--twitter-secondary)); /* Twitter Secondary Black Color */
     background-blend-mode: screen;
@@ -13100,7 +13100,7 @@ button[title=Help].nav-utility.minimal.btn.btn-primary:has(>svg.svg-inline--fa.f
     transform: scale(0);
 }
 #performer-page .performer-head .name-icons button:is(.favorite, .not-favorite).btn-primary::before,
-button:is(.favorite, .not-favorite).minimal.favorite-button.btn.btn-primary::before {
+.performer-card button:is(.favorite, .not-favorite).minimal.btn.btn-primary:has(>svg.fa-heart)::before {
     content: "";
     display: block;
     position: absolute;
@@ -13214,7 +13214,7 @@ button[title=Help].nav-utility.minimal.btn.btn-primary:has(>svg.svg-inline--fa.f
     max-width: 40px;
     min-width: 2px;
 }
-button:is(.favorite, .not-favorite).minimal.favorite-button.btn.btn-primary:hover::before {
+.performer-card button:is(.favorite, .not-favorite).minimal.btn.btn-primary:has(>svg.fa-heart):not(.disabled):not(:disabled):hover::before {
     animation: bubble 0.45s ease-in forwards;
     will-change: animation;
     max-height: 40px;
@@ -13258,7 +13258,7 @@ button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-
 #performer-page .performer-head .name-icons a.minimal.link.twitter.btn.btn-primary::before,
 #performer-page .performer-head .name-icons button.not-favorite.btn-primary::before,
 #performer-page .performer-head .name-icons button.favorite.btn-primary::before,
-button:is(.favorite, .not-favorite).minimal.favorite-button.btn.btn-primary::before {
+.performer-card button:is(.favorite, .not-favorite).minimal.btn.btn-primary:has(>svg.fa-heart)::before {
     visibility: hidden;
 }
 .navbar-dark .navbar-toggler.collapsed:hover::before, 
@@ -13274,7 +13274,7 @@ button:is(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-fil
 #performer-page .performer-head .name-icons a.minimal.link.twitter.btn.btn-primary:hover::before,
 #performer-page .performer-head .name-icons button.not-favorite.btn-primary:hover::before,
 #performer-page .performer-head .name-icons button.favorite.btn-primary:hover::before,
-button:is(.favorite, .not-favorite).minimal.favorite-button.btn.btn-primary:hover::before {
+.performer-card button:is(.favorite, .not-favorite).minimal.btn.btn-primary:has(>svg.fa-heart):hover::before {
     visibility: visible;
 }
 /* *** *** */
