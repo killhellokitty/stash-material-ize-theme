@@ -5498,11 +5498,6 @@ div.mb-2 select.btn-secondary.form-control.focus option {
         padding-left: 0;
         padding-right: 0;
     }
-    .gallery-tabs,
-    .gallery-container {
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
 }
 .gallery-tabs {
     max-height: none;
@@ -5513,6 +5508,13 @@ div.mb-2 select.btn-secondary.form-control.focus option {
     padding-left: 0;
     padding-right: 0;
     position: static;
+}
+@media (min-width: 1200px) {
+    .gallery-tabs,
+    .gallery-container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 }
 .gallery-container {
     overflow: unset;
@@ -6310,17 +6312,37 @@ div.mr-auto.nav.nav-tabs > .nav-item:not(.nav-link) > .nav-link {
 .image-tabs .mr-auto.nav.nav-tabs > .nav-item:has(>:not(.nav-link)),
 .gallery-tabs > div > .mr-auto.nav.nav-tabs>.nav-item:has(>:not(.nav-link)) {
     display: flex;
-    flex: 1 1 10%;
-    max-width: 10%;
+    flex: 1 0 20%;
+    max-width: 20%;
     justify-content: flex-end;
     align-items: center;
     padding-top: 0.75rem;
     border: 0 !important;
     background-color: transparent !important;
 }
-@media (min-width: 1200px) {
+@media (min-width: 576px) {
     .gallery-tabs > div > .mr-auto.nav.nav-tabs>.nav-item:has(>:not(.nav-link)) {
-        flex: 1 1 15%;
+        flex: 1 0 10%;
+        max-width: 10%;
+    }
+    .image-tabs .mr-auto.nav.nav-tabs > .nav-item:has(>:not(.nav-link)) {
+        flex: 1 0 12%;
+    }
+}
+@media (min-width: 768px) {
+    .gallery-tabs > div > .mr-auto.nav.nav-tabs>.nav-item:has(>:not(.nav-link)) {
+        flex: 1 0 8%;
+        max-width: 8%;
+    }
+    .image-tabs .mr-auto.nav.nav-tabs > .nav-item:has(>:not(.nav-link)) {
+        flex: 1 0 10%;
+        max-width: 10%;
+    }
+}
+@media (min-width: 1200px) {
+    .gallery-tabs > div > .mr-auto.nav.nav-tabs>.nav-item:has(>:not(.nav-link)),
+    .image-tabs .mr-auto.nav.nav-tabs > .nav-item:has(>:not(.nav-link)) {
+        flex: 1 0 15%;
         max-width: 15%;
     }
 }
