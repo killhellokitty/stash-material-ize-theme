@@ -5501,7 +5501,7 @@ div.mb-2 select.btn-secondary.form-control.focus option {
 }
 .gallery-tabs {
     max-height: none;
-    margin-top: 1.5rem;
+    /*margin-top: 1.5rem;*/
 }
 .gallery-tabs,
 .gallery-container {
@@ -6195,7 +6195,11 @@ div.mr-auto.nav.nav-tabs > .nav-item:not(.nav-link) { /* Nav-Item Tabs dimension
     flex: 1 1 calc((1/5)*100%);
     max-width: calc((1/5)*100%);
 }
-:is(.studio-tabs, .performer-tabs) > nav.nav-tabs > .nav-item.nav-link {
+.performer-tabs > nav.nav-tabs > .nav-item.nav-link {
+    flex: 1 1 calc((1/5)*100%);
+    max-width: calc((1/5)*100%);
+}
+.studio-tabs > nav.nav-tabs > .nav-item.nav-link {
     flex: 1 1 calc((1/6)*100%);
     max-width: calc((1/6)*100%);
 }
