@@ -5710,7 +5710,7 @@ button:not([title=Statistics], [title=Settings]).minimal:not(.nav-utility, .bran
     margin: 0;
     font-size: 22px;
     z-index: 5;
-    transition: font-size 0.25 ease-in-out;
+    transition: font-size 0.25s ease-in-out;
 }
 .performer-card button.minimal.favorite.btn.btn-primary > svg.svg-inline--fa.fa-heart.fa-icon {
     color: unset;
@@ -5718,7 +5718,7 @@ button:not([title=Statistics], [title=Settings]).minimal:not(.nav-utility, .bran
     margin: 0;
     font-size: 28px;
     z-index: 5;
-    transition: font-size 0.2 ease-in-out;
+    transition: font-size 0.2s ease-in-out;
 }
 #performer-page .performer-head .name-icons button.favorite > svg.svg-inline--fa.fa-heart.fa-icon {
     color: unset;
