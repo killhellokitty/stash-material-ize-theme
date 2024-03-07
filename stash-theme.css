@@ -10481,9 +10481,7 @@ form#studio-edit {
 }
 
 /* Galleries Editor */
-.gallery-tabs {
-    max-height: none;
-}
+
 .tab-content>.tab-pane.active.show>#gallery-edit-details>form>.form-container:first-of-type>.col:has(>*.edit-button) {
     max-width: 50%;
 }
