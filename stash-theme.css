@@ -6327,6 +6327,7 @@ div.mr-auto.nav.nav-tabs > .nav-item:not(.nav-link) > .nav-link {
     }
     .image-tabs .mr-auto.nav.nav-tabs > .nav-item:has(>:not(.nav-link)) {
         flex: 1 0 12%;
+        max-width: 12%;
     }
 }
 @media (min-width: 768px) {
@@ -10038,12 +10039,12 @@ input#update-stashids::placeholder {
     padding: 0.5714285714285714rem 1.0714285714285714rem;
 }
 /* Performer Labels */
-@media (max-width: 720px) {
+/*@media (max-width: 720px) {
     .detail-header-image {
         float: unset;
         padding: 0;
     }
-}
+}*/
 @media (min-width: 576px) {
     .col-sm-9 {
         flex: 0 0 100%;
