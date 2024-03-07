@@ -5724,11 +5724,11 @@ button.minimal.btn.favorite.btn.btn-primary > svg.svg-inline--fa.fa-heart.fa-ico
     color: unset;
     z-index: 5;
 }
-button.btn.not-favorite.btn.btn-primary {
+button.minimal.btn.not-favorite.btn.btn-primary {
     color: rgb(var(--on-split-comp-container),0.7) !important;
     filter: drop-shadow(0 0 0.2rem rgba(0,0,0,.65));
 }
-button.btn.favorite.btn.btn-primary {
+button.minimal.btn.favorite.btn.btn-primary {
     color: rgb(var(--on-split-comp-container)) !important;
     filter: drop-shadow(0 0 0.22rem rgba(0,0,0,.82));
 }
@@ -5744,7 +5744,7 @@ button.btn.favorite.btn.btn-primary {
     color: rgb(var(--on-split-comp-container),var(--btn-hover-rev));
     z-index: 10;
 }
-button:is(.favorite, .not-favorite).btn.btn-primary {
+button:is(.favorite, .not-favorite).minimal.btn.btn-primary {
     padding: 0;
     width: 40px;
     min-width: 40px;
@@ -5775,12 +5775,12 @@ button:is(.favorite, .not-favorite).btn.btn-primary {
     transition: box-shadow 0.35s ease-in, filter 0.25s, var(--trans-0);
 }
 #performer-page .performer-head .name-icons button:is(.favorite, .not-favorite).btn-primary:hover,
-button:is(.favorite, .not-favorite).btn.btn-primary:hover {
+button:is(.favorite, .not-favorite).minimal.btn.btn-primary:hover {
     filter: none;
     opacity: 1;
 }
 #performer-page .performer-head .name-icons button:is(.favorite, .not-favorite).btn-primary:is(:focus, :active, :active:focus),
-button:is(.favorite, .not-favorite).btn.btn-primary:is(:focus, :active, :focus:active) {
+button:is(.favorite, .not-favorite).minimal.btn.btn-primary:is(:focus, :active, :focus:active) {
     background-image: var(--btn-active-highlight);
     background-color: rgb(var(--split-comp-container));
     background-blend-mode: screen;
@@ -13100,7 +13100,7 @@ button[title=Help].nav-utility.minimal.btn.btn-primary:has(>svg.svg-inline--fa.f
     transform: scale(0);
 }
 #performer-page .performer-head .name-icons button:is(.favorite, .not-favorite).btn-primary::before,
-button:is(.favorite, .not-favorite).btn.btn-primary::before {
+button:is(.favorite, .not-favorite).minimal.btn.btn-primary::before {
     content: "";
     display: block;
     position: absolute;
@@ -13214,7 +13214,7 @@ button[title=Help].nav-utility.minimal.btn.btn-primary:has(>svg.svg-inline--fa.f
     max-width: 40px;
     min-width: 2px;
 }
-button:is(.favorite, .not-favorite).btn.btn-primary:hover::before {
+button:is(.favorite, .not-favorite).minimal.btn.btn-primary:hover::before {
     animation: bubble 0.45s ease-in forwards;
     will-change: animation;
     max-height: 40px;
@@ -13258,7 +13258,7 @@ button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-
 #performer-page .performer-head .name-icons a.minimal.link.twitter.btn.btn-primary::before,
 #performer-page .performer-head .name-icons button.not-favorite.btn-primary::before,
 #performer-page .performer-head .name-icons button.favorite.btn-primary::before,
-button:is(.favorite, .not-favorite).btn.btn-primary::before {
+button:is(.favorite, .not-favorite).minimal.btn.btn-primary::before {
     visibility: hidden;
 }
 .navbar-dark .navbar-toggler.collapsed:hover::before, 
@@ -13274,7 +13274,7 @@ button:is(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-fil
 #performer-page .performer-head .name-icons a.minimal.link.twitter.btn.btn-primary:hover::before,
 #performer-page .performer-head .name-icons button.not-favorite.btn-primary:hover::before,
 #performer-page .performer-head .name-icons button.favorite.btn-primary:hover::before,
-button:is(.favorite, .not-favorite).btn.btn-primary:hover::before {
+button:is(.favorite, .not-favorite).minimal.btn.btn-primary:hover::before {
     visibility: visible;
 }
 /* *** *** */
