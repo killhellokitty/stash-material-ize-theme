@@ -2326,6 +2326,10 @@ button.tag-list-button.btn.btn-secondary:not(:has(>.tag-list-anchor)):disabled {
     padding-right: 5%;
     padding-left: 5%;
 }
+#settings-container > .tab-content {
+    padding-right: unset;
+    padding-left: unset;
+}
 
 /* ||Primary Button */
 button:not([title=Help]).btn-primary,
