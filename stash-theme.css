@@ -12227,13 +12227,20 @@ label[for="cover_image"].form-label {
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0.25px;
-    color: rgb(var(--on-surface-variant));
+    color: rgb(var(--green)) !important;
 }
+.optional-field-content:not(:has(>.scene-link)) a[style="color: rgb(217, 130, 43);"] {
+    color: rgb(var(--green)) !important;
+}
+
 /* Name of Scene, Movie, etc. */
 .optional-field-content > .scene-link {
     font-size: 18px;
     line-height: 26px;
     letter-spacing: 0.11px;
+}
+.search-result.selected-result.active a.scene-link {
+    color: rgb(var(--green)) !important;
 }
 /* */
 .search-result svg.svg-inline--fa.fa-circle-check.fa-icon {
