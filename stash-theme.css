@@ -304,6 +304,8 @@ h6,
     --switch-button-on-hover: 4, 92, 85; /* #045c55 */
     --switch-button-on-pressed: 4, 102, 95; /* #04665f */
     --switch-button-on-disabled: 61, 83, 82; /* #3d5352 */
+    --tagger-check-success: 66, 84, 99; /* #425463 lch(34.957 11.361 255.193)*/
+    --tagger-check-danger: 46, 64, 78; /* #2e404e lch(25.957 11.361 255.193)*/
     --setting-modal: 80, 164, 212; /*#50a4d4  lch(84.238 25.618 250.5) */ 
     --setting-header: 139, 219, 213; /* #8bdbd5 lch(82.249 26.056 190.663) */
     --setting-sub-header: 94, 207, 255; /* #5ecfff lch(79.269 42.239 251.169) */
@@ -8021,7 +8023,7 @@ button.clearable-text-field-clear.btn.btn-secondary:focus-visible {
 
 /* Tagger-Container Text-Danger-Button */
 .text-danger svg.svg-inline--fa.fa-xmark.fa-icon {
-    min-height: 14px;
+    min-height: 1px;
     width: 1em;
 }
 button.text-danger.include-exclude-button {
@@ -8030,14 +8032,34 @@ button.text-danger.include-exclude-button {
     margin: 0 8px 0 0;
     outline: 0;
     box-shadow: var(--elevation-0);
-    background: none;
-    background-color: rgb(var(--on-error-container));
-    color: rgb(var(--error-container)) !important;
-    font-size: 18px;
-    line-height: 0;
-    letter-spacing: 0;
-    border-radius: 2px;
-    font-weight: 900;
+    background-color: #32726a;
+    background-image: url("data:image/svg+xml;utf8,<svg height='64px' width='64px' version='1.1' id='_x32_' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 512 512' xml:space='preserve' fill='%231e2423'><g id='SVGRepo_bgCarrier' stroke-width='0'></g><g id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'></g><g id='SVGRepo_iconCarrier'> <style type='text/css'> .st0{fill:%231e2423;} </style> <g> <path class='st0' d='M469.402,35.492C334.09,110.664,197.114,324.5,197.114,324.5L73.509,184.176L0,254.336l178.732,222.172 l65.15-2.504C327.414,223.414,512,55.539,512,55.539L469.402,35.492z'></path> </g> </g></svg>");
+    background-repeat: no-repeat;
+    background-position: center calc(50% + 0.065em);
+    background-size: 18px;
+    color: transparent !important;
+    border-radius: 3px;
+    width: 24px;
+    min-width: 24px;
+    height: 24px;
+}
+button.text-danger.include-exclude-button:is(:hover, :focus) {
+    box-shadow: var(--elevation-1);
+    background-image: url("data:image/svg+xml;utf8,<svg height='64px' width='64px' version='1.1' id='_x32_' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 512 512' xml:space='preserve' fill='%231e2423'><g id='SVGRepo_bgCarrier' stroke-width='0'></g><g id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'></g><g id='SVGRepo_iconCarrier'> <style type='text/css'> .st0{fill:%231e2423;} </style> <g> <path class='st0' d='M469.402,35.492C334.09,110.664,197.114,324.5,197.114,324.5L73.509,184.176L0,254.336l178.732,222.172 l65.15-2.504C327.414,223.414,512,55.539,512,55.539L469.402,35.492z'></path> </g> </g></svg>"), var(--btn-hover-highlight);
+    background-color: #32726a;
+    background-repeat: no-repeat, repeat;
+    background-position: center calc(50% + 0.065em), left top;
+    background-size: 18px, 100%;
+    background-blend-mode: normal, screen;
+}
+button.text-danger.include-exclude-button:active {
+    box-shadow: var(--elevation-0);
+    background-image: url("data:image/svg+xml;utf8,<svg height='64px' width='64px' version='1.1' id='_x32_' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 512 512' xml:space='preserve' fill='%231e2423'><g id='SVGRepo_bgCarrier' stroke-width='0'></g><g id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'></g><g id='SVGRepo_iconCarrier'> <style type='text/css'> .st0{fill:%231e2423;} </style> <g> <path class='st0' d='M469.402,35.492C334.09,110.664,197.114,324.5,197.114,324.5L73.509,184.176L0,254.336l178.732,222.172 l65.15-2.504C327.414,223.414,512,55.539,512,55.539L469.402,35.492z'></path> </g> </g></svg>"), var(--btn-active-highlight);
+    background-color: rgb(var(--green));
+    background-repeat: no-repeat, repeat;
+    background-position: center calc(50% + 0.065em), left top;
+    background-size: 18px, 100%;
+    background-blend-mode: normal, screen;
 }
 .text-success svg.svg-inline--fa.fa-check.fa-icon {
     width: 1em;
@@ -8048,14 +8070,34 @@ button.text-success.include-exclude-button {
     margin: 0 8px 0 0;
     outline: 0;
     box-shadow: var(--elevation-0);
-    background: none;
-    background-color: rgb(var(--tertiary));
-    color: rgb(var(--on-tertiary)) !important;
-    line-height: 0;
-    letter-spacing: 0;
-    font-size: 18px;
-    border-radius: 2px;
-    font-weight: 900;
+    background-color: rgb(var(--green));
+    background-image: url("data:image/svg+xml;utf8,<svg height='64px' width='64px' version='1.1' id='_x32_' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 512 512' xml:space='preserve' fill='%231e2423'><g id='SVGRepo_bgCarrier' stroke-width='0'></g><g id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'></g><g id='SVGRepo_iconCarrier'> <style type='text/css'> .st0{fill:%231e2423;} </style> <g> <path class='st0' d='M469.402,35.492C334.09,110.664,197.114,324.5,197.114,324.5L73.509,184.176L0,254.336l178.732,222.172 l65.15-2.504C327.414,223.414,512,55.539,512,55.539L469.402,35.492z'></path> </g> </g></svg>");
+    background-repeat: no-repeat;
+    background-position: center calc(50% + 0.065em);
+    background-size: 18px;
+    color: transparent !important;
+    border-radius: 3px;
+    width: 24px;
+    min-width: 24px;
+    height: 24px;
+}
+button.text-success.include-exclude-button:is(:hover, :focus) {
+    box-shadow: var(--elevation-1);
+    background-image: url("data:image/svg+xml;utf8,<svg height='64px' width='64px' version='1.1' id='_x32_' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 512 512' xml:space='preserve' fill='%231e2423'><g id='SVGRepo_bgCarrier' stroke-width='0'></g><g id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'></g><g id='SVGRepo_iconCarrier'> <style type='text/css'> .st0{fill:%231e2423;} </style> <g> <path class='st0' d='M469.402,35.492C334.09,110.664,197.114,324.5,197.114,324.5L73.509,184.176L0,254.336l178.732,222.172 l65.15-2.504C327.414,223.414,512,55.539,512,55.539L469.402,35.492z'></path> </g> </g></svg>"), var(--btn-hover-highlight);
+    background-color: rgb(var(--green));
+    background-repeat: no-repeat, repeat;
+    background-position: center calc(50% + 0.065em), left top;
+    background-size: 18px, 100%;
+    background-blend-mode: normal, screen;
+}
+button.text-success.include-exclude-button:active {
+    box-shadow: var(--elevation-0);
+    background-image: url("data:image/svg+xml;utf8,<svg height='64px' width='64px' version='1.1' id='_x32_' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 512 512' xml:space='preserve' fill='%231e2423'><g id='SVGRepo_bgCarrier' stroke-width='0'></g><g id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'></g><g id='SVGRepo_iconCarrier'> <style type='text/css'> .st0{fill:%231e2423;} </style> <g> <path class='st0' d='M469.402,35.492C334.09,110.664,197.114,324.5,197.114,324.5L73.509,184.176L0,254.336l178.732,222.172 l65.15-2.504C327.414,223.414,512,55.539,512,55.539L469.402,35.492z'></path> </g> </g></svg>"), var(--btn-active-highlight);
+    background-color: #32726a;
+    background-repeat: no-repeat, repeat;
+    background-position: center calc(50% + 0.065em), left top;
+    background-size: 18px, 100%;
+    background-blend-mode: normal, screen;
 }
 button:is(.text-success, .text-danger).include-exclude-button:focus-visible {
     outline-color: rgb(var(--focus-ring));
@@ -8063,13 +8105,6 @@ button:is(.text-success, .text-danger).include-exclude-button:focus-visible {
     outline-style: solid;
     outline-width: 0.19rem;
     box-shadow: none;
-}
-
-li.active .optional-field.excluded .optional-field-content, 
-li.active .optional-field.excluded .scene-link {
-    text-decoration: line-through;
-    text-decoration-color: rgb(var(--on-error-container));
-    filter: saturate(0.6);
 }
 
 /* */
@@ -12230,12 +12265,41 @@ label[for="cover_image"].form-label {
 /* Text fields on Tagger-Container Search-Results */
 .optional-field-content:not(:has(>.scene-link)) {
     font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 0.25px;
+    line-height: 24px;
+    letter-spacing: 0.018em;
     color: rgb(var(--green)) !important;
 }
+.optional-field.excluded .optional-field-content:not(:has(>.scene-link)) {
+    color: currentColor !important;
+    filter: brightness(0.5) contrast(0.5) saturate(3.2);
+}
+.optional-field.excluded .optional-field-content:not(:has(>.scene-link)) {
+    text-decoration: line-through;
+    text-decoration-color: currentColor !important;
+}
+
 .optional-field-content:not(:has(>.scene-link)) a[style="color: rgb(217, 130, 43);"] {
     color: rgb(var(--green)) !important;
+}
+.optional-field.excluded .optional-field-content:not(:has(>.scene-link)) a[style="color: rgb(217, 130, 43);"] {
+    color: currentColor !important;
+    filter: brightness(0.5) contrast(0.5) saturate(3.2);
+}
+.optional-field.excluded .optional-field-content:not(:has(>.scene-link)) a[style="color: rgb(217, 130, 43);"] {
+    text-decoration: line-through;
+    text-decoration-color: currentColor !important;
+}
+
+.optional-field-content:not(:has(>.scene-link)) > .TruncatedText {
+    color: rgb(var(--green)) !important;
+}
+.optional-field.excluded .optional-field-content:not(:has(>.scene-link)) > .TruncatedText {
+    color: currentColor !important;
+    filter: brightness(0.5) contrast(0.5) saturate(3.2);
+}
+.optional-field.excluded .optional-field-content:not(:has(>.scene-link)) > .TruncatedText {
+    text-decoration: line-through;
+    text-decoration-color: currentColor !important;
 }
 
 /* Name of Scene, Movie, etc. */
@@ -12247,6 +12311,16 @@ label[for="cover_image"].form-label {
 .search-result.selected-result.active a.scene-link {
     color: rgb(var(--green)) !important;
 }
+.search-result.selected-result.active .optional-field.excluded a.scene-link {
+    color: currentColor !important;
+    filter: brightness(0.5) contrast(0.5) saturate(3.2);
+}
+.search-result.selected-result.active .optional-field.excluded .optional-field-content, 
+.search-result.selected-result.active .optional-field.excluded .scene-link {
+    text-decoration: line-through;
+    text-decoration-color: currentColor !important;
+}
+
 /* */
 .search-result svg.svg-inline--fa.fa-circle-check.fa-icon {
     color: rgb(var(--green)) !important;
