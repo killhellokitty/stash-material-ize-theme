@@ -8038,7 +8038,7 @@ button.text-danger.include-exclude-button {
     background-position: center calc(50% + 0.065em);
     background-size: 18px;
     color: transparent !important;
-    border-radius: 3px;
+    border-radius: 2px;
     width: 24px;
     min-width: 24px;
     height: 24px;
@@ -8076,7 +8076,7 @@ button.text-success.include-exclude-button {
     background-position: center calc(50% + 0.065em);
     background-size: 18px;
     color: transparent !important;
-    border-radius: 3px;
+    border-radius: 2px;
     width: 24px;
     min-width: 24px;
     height: 24px;
@@ -12269,13 +12269,17 @@ label[for="cover_image"].form-label {
     letter-spacing: 0.018em;
     color: rgb(var(--green)) !important;
 }
-.optional-field.excluded .optional-field-content:not(:has(>.scene-link)) {
+.optional-field.excluded .optional-field-content:not(:has(>.scene-link)):not(:has(>img.scene-image)) {
     color: currentColor !important;
     filter: brightness(0.5) contrast(0.5) saturate(3.2);
 }
 .optional-field.excluded .optional-field-content:not(:has(>.scene-link)) {
     text-decoration: line-through;
     text-decoration-color: currentColor !important;
+}
+
+.optional-field.excluded .optional-field-content:has(>img.scene-image) {
+    filter: blur(1.08px) brightness(0.65);
 }
 
 .optional-field-content:not(:has(>.scene-link)) a[style="color: rgb(217, 130, 43);"] {
@@ -12321,6 +12325,9 @@ label[for="cover_image"].form-label {
     text-decoration-color: currentColor !important;
 }
 
+.search-result.selected-result.active .optional-field.excluded .optional-field-content img {
+    opacity: 1;
+}
 /* */
 .search-result svg.svg-inline--fa.fa-circle-check.fa-icon {
     color: rgb(var(--green)) !important;
