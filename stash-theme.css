@@ -2505,8 +2505,13 @@ div#crop-btn-container {
     padding: 0 0 0 0.12rem;
     opacity: 1;
 }
+.tag-item a {
+    text-decoration: none !important;
+    color: rgb(var(--on-pry-container));
+}
 .tag-item a:hover {
     text-decoration: none !important;
+    color: rgb(var(--on-pry-container));
 }
 
 /* Search-Result Tagger-Container Tag-items with Icons */
