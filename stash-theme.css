@@ -13193,7 +13193,9 @@ button.btn.btn-primary.btn-sm:last-child {
 #query-edit-config .form-check:has(>input[type="radio"]) > input[type="radio"] ~ input[type="radio"] {
     margin-left: 16px;
 }
-
+select#stash-box-endpoint {
+    min-width: 270px;
+}
 /* Checkbox Button Replacements */
 /*.form-check:has(>input[type="checkbox"]) {
     display: inline-block;
