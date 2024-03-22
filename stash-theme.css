@@ -12279,7 +12279,7 @@ label[for="cover_image"].form-label {
 }
 
 .optional-field.excluded .optional-field-content:has(>img.scene-image) {
-    filter: blur(1.08px) brightness(0.65);
+    filter: blur(0.8px) brightness(0.65);
 }
 
 .optional-field-content:not(:has(>.scene-link)) a[style="color: rgb(217, 130, 43);"] {
@@ -12712,7 +12712,7 @@ small.form-text {
     word-break: keep-all;
     word-wrap: normal;
     word-spacing: normal;
-    margin-top: -8.5%;
+    margin-top: -6.5%;
     margin-left: 3%;
     margin-right: 80%;
 }
