@@ -2509,7 +2509,7 @@ div#crop-btn-container {
     text-decoration: none !important;
     color: rgb(var(--on-pry-container));
 }
-.tag-item a:hover {
+.tag-item a:is(:hover, :focus, :active, :focus-visible) {
     text-decoration: none !important;
     color: rgb(var(--on-pry-container));
 }
