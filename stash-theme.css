@@ -3380,9 +3380,6 @@ button.minimal.brand-link.d-none.d-md-inline-block.btn.btn-primary {
     text-shadow: none;
 }
 
-.search-item {
-     background-color: rgb(var(--card-color2));
-}
 .selected-result {
      background-color: rgb(var(--card-color2));
      transition: background-color 0.55s ease;
@@ -3415,10 +3412,12 @@ li.search-result.selected-result.active {
 }
 .popover:not(.popover ~ .popover):not(.popover + .popover) {
     background-color: rgb(var(--popover-color)) !important;
+    opacity: 1;
 }
 .popover ~ .popover,
 .popover + .popover {
     background-color: rgb(var(--popover-color2)) !important;
+    opacity: 1;
 }
 .popover-header {
     background-color: rgb(var(--popover-color));
@@ -5848,6 +5847,11 @@ button:not([title=Statistics], [title=Settings]).minimal:not(.nav-utility, .bran
      outline: 0;
      transition: var(--trans-0);
      -webkit-transition: var(--trans-0);
+}
+
+.card-popovers.btn-group > a.scene-count {
+    text-decoration: none !important;
+    text-decoration-color: transparent !important;
 }
 
 .card-popovers button.minimal.btn.btn-primary {
