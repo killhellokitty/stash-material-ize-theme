@@ -203,6 +203,7 @@ h6,
     --tooltip-color: 46, 47, 51; /*#2e3133*/
     --menu-color: 50, 62, 72; /*#323e48 should this be named --surface-container? */
     --modal-color: 25, 30, 38; /*#192026*/
+    --modal-color2: 32, 40, 48; /* #202830 lch(15.821 6.27 255.056) */
     --modal-code: 26, 48, 52; /* #1a3034 lch(18.321 9.27 215.056) */
     --accordion-color: 64, 80, 97; /*#405261*/
     --accordion-color-hover: 72, 90, 109; /*#485c6d*/ 
@@ -4433,7 +4434,7 @@ div.tagger-container button.btn-link + button[title="Help"].btn.btn-link {
     padding: 16px 24px 24px;
 }
 .modal-body input.text-input.form-control {
-    background-color: rgba(var(--modal-color)) !important;
+    background-color: rgba(var(--modal-color2)) !important;
 }
 .modal-header {
     border: 0;
@@ -11411,6 +11412,10 @@ form#studio-edit {
     border-bottom-right-radius: 0.25rem;
     background-color: transparent !important;
     display: flex;
+}
+.modal-body input.text-input.form-control,
+.modal-body > div > div > .input-group.has-validation > input.date-input.text-input.form-control:has(+.input-group-append>.react-datepicker-wrapper) {
+    background-color: rgb(var(--modal-color2)) !important;
 }
 .react-datepicker-wrapper {
     display: flex;
