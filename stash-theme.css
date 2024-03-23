@@ -1442,6 +1442,7 @@ li#vjs-menu-text:first-of-type {
     min-height: 2rem;
     min-height: 2rem;
     display: flex;
+    margin-top: 0;
     flex-direction: column;
     align-items: flex-start;
     text-decoration-color: rgb(var(--white-color));
@@ -14081,6 +14082,9 @@ button:is(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-fil
     margin-top: 150%;
     right: 5%;
 }
+.scene-performers .performer-card .peformer-stashid-icon {
+    margin-top: 158.5%;
+}
 .studio-stashid-icon {
     top: 2.5%;
     right: 5%;
@@ -14418,7 +14422,7 @@ input[type=range].filter-slider::-webkit-slider-runnable-track  {
 input[type=range].filter-slider.brightness-slider::-webkit-slider-runnable-track {
     background-image: linear-gradient(90deg,rgb(0,0,0,0.7) 0%,rgb(255,255,255,0.6) 100%);
     background-color: rgb(var(--outline));
-    background-blend-mode: screen;
+    background-blend-mode: overlay;
 }
 input[type=range].filter-slider.contrast-slider::-webkit-slider-runnable-track  {
     background-image: linear-gradient(-1deg,white 0%,white 40%,black 60%,black 100%),linear-gradient(90deg,#3d3d3d 0%,rgba(255,255,255,0) 100%);
