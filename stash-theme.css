@@ -2439,6 +2439,12 @@ div#crop-btn-container {
     margin-top: 0.75rem;
     margin-left: 0.75rem;
 }
+button#crop-accept.btn-success {
+    margin-right: 0 !important;
+}
+div#crop-btn-container p.text-white {
+    color: rgb(var(--white-color));
+}
 
 .col.m-auto:has(>.tag-list-row.row>a[href*="/tags"]) {
     border: 4px solid rgb(var(--tables-borders));
