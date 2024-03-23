@@ -2434,11 +2434,10 @@ button#batch-result-toggle-on.btn {
 }
 
 div#crop-btn-container {
-    justify-content: flex-start;
+    justify-content: flex-start !important;
     display: flex;
-    margin-top: 0.4286rem;
+    margin-top: 0.75rem;
     margin-left: 0.75rem;
-    padding-bottom: 0.8571428571428571rem;
 }
 
 .col.m-auto:has(>.tag-list-row.row>a[href*="/tags"]) {
@@ -3393,6 +3392,10 @@ li.search-result.selected-result.active {
     background-color: transparent;
 }
 
+dialog.bg-dark {
+    background-color: rgb(var(--modal-color)) !important;
+}
+
 /* Popovers */
 .popover {
     font-family: var(--HeaderFont);
@@ -3458,10 +3461,11 @@ li.search-result.selected-result.active {
     box-shadow: var(--elevation-0), 0 0 0 1px rgb(var(--complement));
 }
 .popover-body .image-input.form-label>button.btn.btn-secondary {
-    color: rgb(var(--on-pry-container));
+    color: rgb(var(--on-pry));
 }
 .popover-body button.minimal.btn.btn-primary {
-    color: rgb(var(--on-pry-container));
+    color: rgb(var(--on-tertiary));
+    background-color: rgb(var(--tertiary));
     padding: 0 24px;
 }
 .popover-body select.btn-secondary.mx-1.mb-1.form-control {
@@ -3511,10 +3515,9 @@ li.search-result.selected-result.active {
 }
 .image-input {
     margin-bottom: 8px;
-    color: inherit;
 }
 .popover.show .popover-body *:focus-visible {
-    outline-color: rgb(var(--complement));
+    outline-color: rgb(var(--focus-ring));
 }
 .bs-popover-top:not(.bs-popover-top ~ .bs-popover-top):not(.bs-popover-top + .bs-popover-top):not(.bs-popover-bottom ~ .bs-popover-top):not(.bs-popover-bottom + .bs-popover-top):not(.bs-popover-right ~ .bs-popover-top):not(.bs-popover-right + .bs-popover-top):not(.bs-popover-left ~ .bs-popover-top):not(.bs-popover-left + .bs-popover-top) > .arrow:after, 
 .bs-popover-auto[x-placement^=top]:not(.bs-popover-auto[x-placement^=top] ~ .bs-popover-auto[x-placement^=top]):not(.bs-popover-auto[x-placement^=top] + .bs-popover-auto[x-placement^=top]):not(.bs-popover-auto[x-placement^=bottom] ~ .bs-popover-auto[x-placement^=top]):not(.bs-popover-auto[x-placement^=bottom] + .bs-popover-auto[x-placement^=top]):not(.bs-popover-auto[x-placement^=right] ~ .bs-popover-auto[x-placement^=top]):not(.bs-popover-auto[x-placement^=right] + .bs-popover-auto[x-placement^=top]):not(.bs-popover-auto[x-placement^=left] ~ .bs-popover-auto[x-placement^=top]):not(.bs-popover-auto[x-placement^=left] + .bs-popover-auto[x-placement^=top]) > .arrow:after {
@@ -4640,7 +4643,6 @@ textarea.text-input.code.form-control {
         max-width: 18%;
         text-shadow: none;
     }
-    /* FIXME - use this skeleton for all form labels in modal */
     .modal-dialog .modal-content .form-group > .form-label[for~="url"] {
         transition: all 0.2s ease-in-out;
         left: 58px;
@@ -4649,7 +4651,7 @@ textarea.text-input.code.form-control {
         line-height: 16px;
         letter-spacing: 0.5px;
         top: -10px;
-        background-color: #254e46;
+        background-color: rgb(var(--modal-color));
         padding-left: 4px;
         padding-right: 4px;
         padding-top: 2px;
@@ -4660,7 +4662,7 @@ textarea.text-input.code.form-control {
         visibility: hidden;
     }
     .modal-dialog .modal-content .form-group:focus-within > .form-label[for~="url"] {
-        color: #00dfc6;
+        color: rgb(var(--pry-color));
         visibility: visible;
     }
     .modal-dialog .modal-content .form-group {
