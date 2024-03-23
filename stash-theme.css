@@ -10052,7 +10052,8 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
     flex: 1 0 100%;
     max-width: 100%;
 }
-.form-group .input-group>.input-group-append .react-datepicker__input-container > button.btn.btn-secondary {
+.form-group .input-group>.input-group-append .react-datepicker__input-container > button.btn.btn-secondary,
+.modal-body > div > div > .input-group.has-validation > .input-group-append .react-datepicker__input-container > button.btn.btn-secondary {
     background: transparent;
     outline: none;
     box-shadow: none;
@@ -10084,12 +10085,14 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
     width: 40px;
     height: 40px;
 }
+.modal-body > div > div > .input-group.has-validation > .input-group-append .react-datepicker__input-container > button.btn.btn-secondary:is(:hover, :focus-visible),
 .form-group .input-group>.input-group-append .react-datepicker__input-container > button.btn.btn-secondary:is(:hover, :focus-visible),
 .form-group .input-group>.input-group-append:last-child > button.scrape-url-button.btn:not(:last-child):not(.dropdown-toggle):not(:disabled):not(.disabled):is(:hover, :focus-visible),
 .form-group button.scrape-url-button.text-input.btn.btn-secondary:not(:disabled):not(.disabled):is(:hover, :focus-visible) {
     background-color: rgb(var(--on-surface),var(--btn-hover));
     box-shadow: var(--elevation-0);
 }
+.modal-body > div > div > .input-group.has-validation > .input-group-append .react-datepicker__input-container > button.btn.btn-secondary:is(:active, :focus, :active:focus),
 .form-group .input-group>.input-group-append .react-datepicker__input-container > button.btn.btn-secondary:is(:active, :focus, :active:focus),
 .form-group .input-group>.input-group-append:last-child > button.scrape-url-button.btn:not(:last-child):not(.dropdown-toggle):not(:disabled):not(.disabled):is(:active, :focus, :active:focus),
 .form-group button.scrape-url-button.text-input.btn.btn-secondary:not(:disabled):not(.disabled):is(:active, :focus, :active:focus) {
@@ -10097,6 +10100,7 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
     box-shadow: none;
     outline: none;
 }
+.modal-body > div > div > .input-group.has-validation > .input-group-append .react-datepicker__input-container > button.btn.btn-secondary:focus-visible,
 .form-group button.scrape-url-button.text-input.btn.btn-secondary:not(:disabled):not(.disabled):focus-visible,
 .form-group .input-group>.input-group-append .react-datepicker__input-container > button.btn.btn-secondary:focus-visible {
     box-shadow: none;
@@ -10119,23 +10123,24 @@ nav.top-nav.navbar .navbar-buttons a:is([href="/scenes/new"],[href="/galleries/n
 }
 
 :is(#scene-edit-details, #image-edit-details, #gallery-edit-details) .form-container .form-group input[placeholder="URL"].form-control {
-    border-radius: 4px;
-    padding-right: 120px;
+    border-radius: 0.25rem;
+    padding-right: 7.5rem;
     transition: padding-right 0.25s ease-in-out, var(--trans-0);
 } 
 #performer-edit .form-group.row input:is(#birthdate, #death_date).date-input.text-input.form-control,
+.modal-body > div > div > .input-group.has-validation input.date-input.text-input.form-control,
 :is(#scene-edit-details, #image-edit-details, #gallery-edit-details) .form-container .form-group:nth-of-type(4) input.form-control {
-    border-radius: 4px;
+    border-radius: 0.25rem;
     margin-right: -11%;
-    padding-right: 64px;
+    padding-right: 4rem;
 }
 
 :is(#scene-edit-details, #image-edit-details, #gallery-edit-details) .form-container .form-group input[placeholder="URL"].form-control:focus { /* Reduce padding when focused */
-    padding-right: 16px; 
+    padding-right: 1rem; 
 }
 
 #scene-edit-details .form-container .form-group:nth-of-type(-n+5) input.form-control::placeholder {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.5px;
@@ -11400,7 +11405,8 @@ form#studio-edit {
     margin-left: 90%;
     height: 100%;
 }
-.criterion-editor .form-group .input-group.has-validation>input.date-input.text-input.form-control {
+.criterion-editor .form-group .input-group.has-validation>input.date-input.text-input.form-control,
+.modal-body > div > div > .input-group.has-validation > input.date-input.text-input.form-control {
     border-top-right-radius: 0.25rem;
     border-bottom-right-radius: 0.25rem;
     background-color: transparent !important;
@@ -11415,6 +11421,7 @@ form#studio-edit {
     align-items: center;
     justify-content: flex-end;
 }
+.modal-body > div > div > .input-group.has-validation > .input-group-append > .react-datepicker-wrapper button.btn.btn-secondary:has(>.fa-calendar),
 .criterion-editor .form-group .input-group.has-validation>.input-group-append>.react-datepicker-wrapper button.btn.btn-secondary:has(>.fa-calendar):not(:first-child):last-child,
 .criterion-editor .form-group .input-group.has-validation>.input-group-append>.react-datepicker-wrapper button.btn.btn-secondary:has(>.fa-calendar):not(:first-child):last-child:not(:disabled):not(.disabled):is(:hover, :focus, :active, :active:focus, :focus-visible) {
     padding: 0;
@@ -11429,6 +11436,7 @@ form#studio-edit {
     padding-left: 0.75rem;
     top: -50%;
 }
+.modal-body > div > div > .input-group.has-validation > .input-group-append button.btn.btn-secondary:has(>.fa-calendar),
 .criterion-editor .form-group .input-group:not(.has-validation)>.input-group-append>button.btn.btn-secondary {
     padding: 0;
     border-radius: 5rem;
