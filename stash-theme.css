@@ -203,7 +203,7 @@ h6,
     --popover-color3: 60, 82, 98; /*#3c5462*/
     --tooltip-color: 46, 47, 51; /*#2e3133*/
     --menu-color: 50, 62, 72; /*#323e48 should this be named --surface-container? */
-    --modal-color: 25, 30, 38; /*#192026*/
+    --modal-color: 14, 23, 30; /*#0e171e lch(7.225 6.382 255.71) Derived from .modal-content */
     --modal-color2: 32, 40, 48; /* #202830 lch(15.821 6.27 255.056) */
     --modal-code: 26, 48, 52; /* #1a3034 lch(18.321 9.27 215.056) */
     --accordion-color: 64, 80, 97; /*#405261*/
@@ -11394,7 +11394,7 @@ form#studio-edit {
 .modal-content, 
 .modal-lg, 
 .modal-xl {
-    background-image: linear-gradient(to right, #2e3133, #2e3133);
+    background-image: linear-gradient(to right, rgb(255,255,255,0.1), rgb(255,255,255,0.1)), linear-gradient(to right, rgb(var(--body-color)), rgb(var(--body-color)));
     background-color: rgba(var(--pry-color),0.5);
     background-blend-mode: multiply;
     box-shadow: var(--elevation-3);
