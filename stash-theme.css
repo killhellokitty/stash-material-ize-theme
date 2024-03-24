@@ -12957,14 +12957,84 @@ small.form-text {
     margin-right: calc(100vw - 85%);
 }
 
-input#filename-pattern.text-input.form-control {
-    border-radius: 0.5rem;
-    margin-right: 12px;
+div#parser-container label[for="filename-pattern"].col-2.form-label::before {
+    content: "";
+    background-color: rgb(var(--body-color2));
+    width: 41%;
+    height: 12px;
+    z-index: -1;
+    display: flex;
+    position: absolute;
+    top: 4px;
+    left: 8px;
 }
+div#parser-container label[for="filename-pattern"].col-2.form-label {
+    flex: 0 0 32%;
+    max-width: 32%;
+    margin-left: 0.75rem;
+    margin-bottom: -1.45%;
+    font-size: 11px;
+    text-shadow: var(--light-txt-shadow);
+    z-index: 10;
+    letter-spacing: 0.049em;
+}
+div#parser-container label[for="ignored-words"].col-2.form-label::before {
+    content: "";
+    background-color: rgb(var(--body-color2));
+    width: 33%;
+    height: 14px;
+    z-index: -1;
+    display: flex;
+    position: absolute;
+    top: 4px;
+    left: 8px;
+}
+div#parser-container label[for="ignored-words"].col-2.form-label {
+    flex: 0 0 35%;
+    max-width: 35%;
+    margin-bottom: -1.45%;
+    margin-top: 0.5rem;
+    margin-left: 0.75rem;
+    font-size: 11px;
+    text-shadow: var(--light-txt-shadow);
+    z-index: 10;
+    letter-spacing: 0.049em;
+}
+
+
+div#parser-container input#filename-pattern.text-input.form-control {
+    border-radius: 0.25rem;
+    background-color: rgb(var(--body-color2));
+    margin-right: -38px;
+}
+div#parser-container input#ignored-words.text-input.form-control {
+    border-radius: 0.25rem;
+    background-color: rgb(var(--body-color2));
+}
+
+
 button#parser-field-select.dropdown-toggle.btn.btn-primary {
     position: relative;
-    top: 8px;
+    top: 0.5rem;
+    left: -0.75rem;
+    font-size: 0px;
+    color: transparent;
+    width: 40px;
+    padding-left: 0;
+    padding-right: 0;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='%23c1c7ce' width='64px' height='64px' viewBox='0 0 32 32' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;' version='1.1' xml:space='preserve' xmlns='http://www.w3.org/2000/svg' xmlns:serif='http://www.serif.com/' xmlns:xlink='http://www.w3.org/1999/xlink' stroke='%23c1c7ce' stroke-width='2.88'><g id='SVGRepo_bgCarrier' stroke-width='0'></g><g id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'></g><g id='SVGRepo_iconCarrier'><path d='M14.5,14.501l-10.502,0c-0.828,0 -1.5,0.673 -1.5,1.5c0,0.828 0.672,1.5 1.5,1.5l10.502,0l-0.001,10.502c0,0.828 0.672,1.5 1.5,1.501c0.828,-0 1.5,-0.673 1.5,-1.5l0.001,-10.503l10.502,0c0.828,0 1.5,-0.672 1.5,-1.5c0,-0.827 -0.672,-1.5 -1.5,-1.5l-10.502,0l0.001,-10.501c-0,-0.828 -0.672,-1.501 -1.5,-1.501c-0.828,0 -1.5,0.672 -1.5,1.5l-0.001,10.502Z'></path><g id='Icon'></g></g></svg>");
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 24px;
 }
+
+
+div#parser-container .form-group > .form-group > small.text-muted.form-text {
+    margin-left: 10px;
+    letter-spacing: 0.049em;
+}
+
 .duplicate-checker .d-flex.mt-2.mb-2 select.w-auto.ml-2.btn-secondary.form-control {
     width: 100% !important;
 }
