@@ -9808,8 +9808,9 @@ div#configuration-tabs-tabpane-logs > h2 {
     justify-content: flex-end;
 }
 
-.marker-count {
+.card-popovers a.marker-count {
     text-decoration: none !important;
+    text-decoration-color: transparent !important;
 }
 
 /* Buttons and Icons within Metadata Page */
