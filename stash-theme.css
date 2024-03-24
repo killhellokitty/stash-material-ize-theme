@@ -4466,7 +4466,8 @@ div.tagger-container button.btn-link + button[title="Help"].btn.btn-link {
     text-shadow: var(--light-txt-shadow);
 }
 .dialog-content .criterion-list.accordion {
-    margin-right: -2%;
+    /*margin-right: -2%;*/
+    margin-right: 0;
     margin-left: auto;
 }
 .dialog-content .criterion-list.accordion .card {
