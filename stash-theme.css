@@ -185,6 +185,7 @@ h6,
     --card-color-hover: 44, 63, 76; /*#2c384c*/
     --card-color-collaps-show: 16, 34, 44; /* #10222c lch(12.222 9.588 245.611)*/
     --card-color-collaps-show-hover: 18, 36, 46; /*#12242e lch(13.222 9.588 245.611)*/
+    --card-color-collaps-show-input: 20, 37, 47; /* #14252f lch(13.622 9.588 247.611) */
     --card-color2: 36, 58, 70; /*#243a46 lch(23.008 11.005 244.702) */
     --card-color2-text: 225, 232, 236; /*#e1e8ec*/
     --card-color2-hover: 51, 69, 83; /*#334453*/
