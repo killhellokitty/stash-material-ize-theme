@@ -11436,7 +11436,7 @@ form#studio-edit {
     background-color: transparent !important;
     display: flex;
 }
-.modal-dialog .criterion-list .criterion-editor .form-group .input-group > input.text-input.form-control {
+.modal-dialog .criterion-list .criterion-editor .form-group .input-group > input.text-input.form-control { /* Background for inputs in Critereon Editor. */
     background-color: rgb(var(--card-color-collaps-show-input)) !important;
 }
 
