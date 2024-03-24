@@ -8528,7 +8528,7 @@ div.original-scene-details button.minimal.collapse-button.btn.btn-primary.btn-lg
 }
 .setting-section .setting .value {
     margin: 10px 0%;
-    /*width: 100%;*/
+    width: 100%;
     margin-left: 2.5%;
 }
 
