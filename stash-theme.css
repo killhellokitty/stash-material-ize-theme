@@ -8372,7 +8372,8 @@ div#parser-container.card > h4 {
 div#parser-container.card h5 {
     color: rgb(var(--setting-sub-header));
     letter-spacing: 0.016em;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
+    margin-top: 1.5rem;
 }
 
 /*.scene-parser-row .parser-field-title {
@@ -12960,34 +12961,34 @@ small.form-text {
 div#parser-container label[for="filename-pattern"].col-2.form-label::before {
     content: "";
     background-color: rgb(var(--body-color2));
-    width: 41%;
+    width: 43.5%;
     height: 12px;
     z-index: -1;
     display: flex;
     position: absolute;
-    top: 4px;
-    left: 8px;
+    top: 0.25rem;
+    left: 0.5rem;
 }
 div#parser-container label[for="filename-pattern"].col-2.form-label {
     flex: 0 0 32%;
     max-width: 32%;
     margin-left: 0.75rem;
     margin-bottom: -1.45%;
-    font-size: 11px;
+    font-size: 12px;
     text-shadow: var(--light-txt-shadow);
     z-index: 10;
-    letter-spacing: 0.049em;
+    letter-spacing: 0.036em;
 }
 div#parser-container label[for="ignored-words"].col-2.form-label::before {
     content: "";
     background-color: rgb(var(--body-color2));
-    width: 33%;
+    width: 34.5%;
     height: 14px;
     z-index: -1;
     display: flex;
     position: absolute;
-    top: 4px;
-    left: 8px;
+    top: 0.25rem;
+    left: 0.5rem;
 }
 div#parser-container label[for="ignored-words"].col-2.form-label {
     flex: 0 0 35%;
@@ -12995,12 +12996,32 @@ div#parser-container label[for="ignored-words"].col-2.form-label {
     margin-bottom: -1.45%;
     margin-top: 0.5rem;
     margin-left: 0.75rem;
-    font-size: 11px;
+    font-size: 12px;
     text-shadow: var(--light-txt-shadow);
     z-index: 10;
-    letter-spacing: 0.049em;
+    letter-spacing: 0.036em;
 }
-
+div#parser-container label[for="whitespace-characters"].col-2.form-label::before {
+    content: "";
+    background-color: rgb(var(--body-color2));
+    width: 39%;
+    height: 14px;
+    z-index: -1;
+    display: flex;
+    position: absolute;
+    top: 0.25rem;
+    left: 0.75rem;
+}
+div#parser-container label[for="whitespace-characters"].col-2.form-label {
+    flex: 0 0 45%;
+    max-width: 45%;
+    margin-bottom: -1.45%;
+    margin-left: 0.5rem;
+    font-size: 12px;
+    text-shadow: var(--light-txt-shadow);
+    z-index: 10;
+    letter-spacing: 0.036em;
+}
 
 div#parser-container input#filename-pattern.text-input.form-control {
     border-radius: 0.25rem;
