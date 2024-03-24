@@ -5103,6 +5103,9 @@ a[href*="/tags"]:has(>h5.card-section-title>.TruncatedText):hover {
     text-decoration: none !important;
     text-decoration-color: transparent !important;
 }
+.card-popovers .o-count button.minimal.btn.btn-primary {
+    cursor: default;
+}
 
 .no-gutters .TruncatedText, 
 .tag-card .TruncatedText, 
