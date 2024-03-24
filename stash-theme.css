@@ -9787,6 +9787,18 @@ div#configuration-tabs-tabpane-logs > h2 {
 #configuration-tabs-tabpane-changelog .markdown li {
     color: rgb(var(--on-surface));
 }
+#configuration-tabs-tabpane-changelog .markdown code {
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 500;
+    background-color: rgb(var(--card-color-hover));
+}
+#configuration-tabs-tabpane-changelog .markdown h5 code {
+    font-size: 21px;
+    line-height: 28px;
+    color: rgb(var(--on-split-comp-container));
+    font-weight: 600;
+}
 #configuration-tabs-tabpane-changelog .strong {
     color: #d7e4e4;
 }
