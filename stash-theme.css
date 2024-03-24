@@ -14496,7 +14496,7 @@ input[type=range].filter-slider::-moz-range-progress {
 input[type=range].filter-slider.brightness-slider::-moz-range-track {
     background-image: linear-gradient(90deg,rgb(0,0,0,0.7) 0%,rgb(255,255,255,0.6) 100%);
     background-color: rgb(var(--outline));
-    background-blend-mode: screen;
+    background-blend-mode: overlay;
 }
 input[type=range].filter-slider.contrast-slider::-moz-range-track  {
     background: linear-gradient(-1deg,white 0%,white 40%,black 60%,black 100%),linear-gradient(90deg,#3d3d3d 0%,rgba(255,255,255,0) 100%);
@@ -14584,7 +14584,7 @@ input[type=range].filter-slider::-ms-fill-upper {
 input[type=range].filter-slider.brightness-slider::-ms-fill-lower {
     background-image: linear-gradient(90deg,rgb(0,0,0,0.7) 0%,rgb(255,255,255,0.6) 100%);
     background-color: rgb(var(--outline));
-    background-blend-mode: screen;
+    background-blend-mode: overlay;
 }
 input[type=range].filter-slider.contrast-slider::-ms-fill-lower  {
     background: linear-gradient(-1deg,white 0%,white 40%,black 60%,black 100%),linear-gradient(90deg,#3d3d3d 0%,rgba(255,255,255,0) 100%);
