@@ -409,7 +409,13 @@ h6,
         outline-offset: -0.30rem;
     }
 }
-/* - */
+
+/* All Collumns with 15px padding replaced with 16px */
+.col-xl, .col-xl-auto, .col-xl-12, .col-xl-11, .col-xl-10, .col-xl-9, .col-xl-8, .col-xl-7, .col-xl-6, .col-xl-5, .col-xl-4, .col-xl-3, .col-xl-2, .col-xl-1, .col-lg, .col-lg-auto, .col-lg-12, .col-lg-11, .col-lg-10, .col-lg-9, .col-lg-8, .col-lg-7, .col-lg-6, .col-lg-5, .col-lg-4, .col-lg-3, .col-lg-2, .col-lg-1, .col-md, .col-md-auto, .col-md-12, .col-md-11, .col-md-10, .col-md-9, .col-md-8, .col-md-7, .col-md-6, .col-md-5, .col-md-4, .col-md-3, .col-md-2, .col-md-1, .col-sm, .col-sm-auto, .col-sm-12, .col-sm-11, .col-sm-10, .col-sm-9, .col-sm-8, .col-sm-7, .col-sm-6, .col-sm-5, .col-sm-4, .col-sm-3, .col-sm-2, .col-sm-1, .col, .col-auto, .col-12, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, .col-5, .col-4, .col-3, .col-2, .col-1 {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
 code, 
 .code {
     font-family: var(--MonoFont);
@@ -8350,13 +8356,28 @@ div.modal-body b,
     margin-top:2em;
 }
 
-#parser-container.mx-auto {
-    max-width:1400px;
-    margin-right:auto !important;
+div#parser-container.card {
+    background-color: transparent;
+    box-shadow: none;
+    margin-top: 5.5rem !important;
+    margin-left: 2.5rem !important;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
 }
-.scene-parser-row .parser-field-title {
+div#parser-container.card > h4 {
+    color: rgb(var(--setting-modal));
+    margin-bottom: 1.5rem;
+}
+div#parser-container.card h5 {
+    color: rgb(var(--setting-sub-header));
+    letter-spacing: 0.016em;
+    margin-bottom: 1rem;
+}
+
+/*.scene-parser-row .parser-field-title {
     width: 62ch;
-}
+}*/
 
 .mx-auto.card .row .col-md-2 .flex-column { 
     position:fixed;
