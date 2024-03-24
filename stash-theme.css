@@ -9808,6 +9808,9 @@ div#configuration-tabs-tabpane-logs > h2 {
     justify-content: flex-end;
 }
 
+.marker-count {
+    text-decoration: none !important;
+}
 
 /* Buttons and Icons within Metadata Page */
 .btn-primary > span.fa-icon > svg.fa-rotate {
