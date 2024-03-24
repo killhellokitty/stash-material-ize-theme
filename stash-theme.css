@@ -11429,13 +11429,17 @@ form#studio-edit {
     margin-left: 90%;
     height: 100%;
 }
-.criterion-editor .form-group .input-group.has-validation>input.date-input.text-input.form-control,
+.criterion-editor .form-group .input-group.has-validation > input.date-input.text-input.form-control,
 .modal-body > div > div > .input-group.has-validation > input.date-input.text-input.form-control {
     border-top-right-radius: 0.25rem;
     border-bottom-right-radius: 0.25rem;
     background-color: transparent !important;
     display: flex;
 }
+.modal-dialog .criterion-list .criterion-editor .form-group .input-group > input.text-input.form-control {
+    background-color: rgb(var(--card-color-collaps-show-input)) !important;
+}
+
 .modal-body input.text-input.form-control,
 .modal-body > div > div > .input-group.has-validation > input.date-input.text-input.form-control:has(+.input-group-append>.react-datepicker-wrapper) {
     background-color: rgb(var(--modal-color2)) !important;
