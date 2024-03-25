@@ -13025,12 +13025,13 @@ div#parser-container label[for="whitespace-characters"].col-2.form-label {
 
 div#parser-container input#filename-pattern.text-input.form-control {
     border-radius: 0.25rem;
-    background-color: rgb(var(--body-color2));
+    background-color: rgb(var(--body-color2)) !important;
     margin-right: -38px;
 }
-div#parser-container input#ignored-words.text-input.form-control {
+div#parser-container input#ignored-words.text-input.form-control,
+div#parser-container .form-group > .form-group > label[for="whitespace-characters"].form-label + .input-group > input.text-input.form-control {
     border-radius: 0.25rem;
-    background-color: rgb(var(--body-color2));
+    background-color: rgb(var(--body-color2)) !important;
 }
 
 
@@ -13049,11 +13050,37 @@ button#parser-field-select.dropdown-toggle.btn.btn-primary {
     background-position: center;
     background-size: 24px;
 }
-
+button#parser-field-select.dropdown-toggle.btn.btn-primary:is(:active, :focus, :active:focus) {
+    background-color: rgb(var(--on-surface),var(--btn-active));
+    box-shadow: var(--elevation-0);
+    outline: 0;
+}
 
 div#parser-container .form-group > .form-group > small.text-muted.form-text {
     margin-left: 10px;
     letter-spacing: 0.049em;
+}
+
+div#parser-container .form-group > .form-group:has(>div>input#capitalize-title.form-check-input) {
+    margin-left: 20px;
+    margin-top: 1.25rem;
+}
+div#parser-container .form-group > .form-group:has(>div>input#ignore-organized.form-check-input) {
+    margin-left: 20px;
+    margin-top: 0.5rem;
+}
+div#parser-container .form-group > .form-group > .form-check > input[type="checkbox"]:is(#capitalize-title,#ignore-organized).form-check-input {
+    width: 18px;
+    height: 18px;
+}
+div#parser-container .form-group > .form-group > .form-check + label:is([for="capitalize-title"], [for="ignore-organized"]).form-label {
+    margin-left: 0.5rem;
+    vertical-align: middle;
+}
+
+div#parser-container .form-group > .form-group > .dropup {
+    margin-left: 20px;
+    margin-top: 0.5rem;
 }
 
 .duplicate-checker .d-flex.mt-2.mb-2 select.w-auto.ml-2.btn-secondary.form-control {
