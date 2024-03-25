@@ -13083,6 +13083,56 @@ div#parser-container .form-group > .form-group > .dropup {
     margin-top: 0.5rem;
 }
 
+div#parser-container .form-group > .form-group > div:has(button.minimal.btn.btn-primary) {
+    margin-left: 20px;
+}
+div#parser-container .form-group > .form-group > div > button.minimal.btn.btn-primary:not(.disabled):not(:disabled),
+div#parser-container .form-group > .form-group > div > button.minimal + .collapse.show > button.minimal.btn.btn-primary:not(.disabled):not(:disabled) {
+    background-image: linear-gradient(to right, rgba(var(--pry-color),0.15), rgba(var(--pry-color),0.15));
+    background-color: rgb(var(--inset-body-color));
+    background-blend-mode: screen;
+    color: rgb(var(--pry-color));
+    box-shadow: var(--elevation-0);
+    padding-left: 1rem;
+    padding-right: 1.5rem; /*24px*/
+    display: flex !important;
+    margin-top: 0.75rem;
+}
+div#parser-container .form-group > .form-group > div > button.minimal + .collapse.show > button.minimal.btn.btn-primary:not(.disabled):not(:disabled) {
+    gap: unset;
+}
+div#parser-container .form-group > .form-group > div > button.minimal.btn.btn-primary:not(.disabled):not(:disabled):is(:hover, :focus-visible),
+div#parser-container .form-group > .form-group > div > button.minimal + .collapse.show > button.minimal.btn.btn-primary:not(.disabled):not(:disabled):is(:hover, :focus-visible) {
+    background-image: linear-gradient(to right, rgba(var(--pry-color),0.21), rgba(var(--pry-color),0.21));
+    background-color: rgb(var(--inset-body-color));
+    background-blend-mode: screen;
+    color: rgb(var(--pry-color));
+    box-shadow: var(--elevation-1);
+} 
+div#parser-container .form-group > .form-group > div > button.minimal.btn.btn-primary:not(.disabled):not(:disabled):is(:active, :focus, :active:focus),
+div#parser-container .form-group > .form-group > div > button.minimal + .collapse.show > button.minimal.btn.btn-primary:not(.disabled):not(:disabled):is(:active, :focus, :active:focus) {
+    background-image: linear-gradient(to right, rgba(var(--pry-color),0.26), rgba(var(--pry-color),0.26));
+    background-color: rgb(var(--inset-body-color));
+    background-blend-mode: screen;
+    color: rgb(var(--pry-color));
+    box-shadow: var(--elevation-0);
+    outline: 0;
+}
+div#parser-container .form-group > .form-group > div > button.minimal.btn.btn-primary > svg:is(.fa-chevron-right, .fa-chevron-down).fa-icon {
+    font-size: 20px;
+}
+div#parser-container .form-group > .form-group > div > button.minimal + .collapse.show > button.minimal > svg.fa-check.fa-icon {
+    font-size: 16px;
+    color: rgb(var(--green));
+    padding-right: 0.281rem; /*4.5px*/
+}
+div#parser-container .form-group > .form-group > div > button.minimal + .collapse.show > button.minimal > svg.fa-xmark.fa-icon {
+    font-size: 20px;
+    min-height: unset;
+    margin-left: 8px;
+    color: rgb(var(--on-error-container));
+}
+
 .duplicate-checker .d-flex.mt-2.mb-2 select.w-auto.ml-2.btn-secondary.form-control {
     width: 100% !important;
 }
