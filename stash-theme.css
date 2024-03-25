@@ -2936,8 +2936,8 @@ div.react-select__control .react-select__multi-value {
     border-bottom-right-radius: 0;
     box-shadow: var(--elevation-0), inset 0 -1px 0 0 transparent;
 }
-.input-control.form-control:is(:focus, :focus:hover, :active),
-.tagger-container-header select#scraper:is(:focus, :focus:hover, :active) {
+.input-control.form-control:is(:focus, :focus:hover, :active):not(:focus-visible),
+.tagger-container-header select#scraper:is(:focus, :focus:hover, :active):not(:focus-visible) {
     background-color: rgb(var(--on-pry));
     background-image: url("data:image/svg+xml;utf8,<svg fill='%23c1c7ce' height='20px' width='20px' version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 512 512' xml:space='preserve' stroke='%23c1c7ce' stroke-width='40.96'><g id='SVGRepo_bgCarrier' stroke-width='0'></g><g id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'></g><g id='SVGRepo_iconCarrier'> <g> <g> <path d='M505.752,358.248L271.085,123.582c-8.331-8.331-21.839-8.331-30.17,0L6.248,358.248c-8.331,8.331-8.331,21.839,0,30.17 s21.839,8.331,30.17,0L256,168.837l219.582,219.582c8.331,8.331,21.839,8.331,30.17,0S514.083,366.58,505.752,358.248z'></path> </g> </g> </g></svg>");
     background-size: 20px;
@@ -2948,6 +2948,7 @@ div.react-select__control .react-select__multi-value {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     box-shadow: var(--elevation-0), inset 0 -2px 0 0 rgb(var(--pry-color));
+    outline: 0;
 }
 
 #update-stashids-endpoint.input-control.form-control {
@@ -13033,7 +13034,9 @@ div#parser-container .form-group > .form-group > label[for="whitespace-character
     border-radius: 0.25rem;
     background-color: rgb(var(--body-color2)) !important;
 }
-
+div#parser-container .form-group > .form-group:has(>label.form-label):focus-within {
+    color: rgb(var(--pry-color));
+}
 
 button#parser-field-select.dropdown-toggle.btn.btn-primary {
     position: relative;
@@ -13049,6 +13052,10 @@ button#parser-field-select.dropdown-toggle.btn.btn-primary {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 24px;
+}
+button#parser-field-select.dropdown-toggle.btn.btn-primary:is(:hover, :focus-visible) {
+    background-color: rgb(var(--on-surface),var(--btn-hover));
+    box-shadow: var(--elevation-1);
 }
 button#parser-field-select.dropdown-toggle.btn.btn-primary:is(:active, :focus, :active:focus) {
     background-color: rgb(var(--on-surface),var(--btn-active));
@@ -13168,11 +13175,10 @@ div#parser-container .form-group > .form-group > div > button.minimal + :is(.col
     color: rgb(var(--error));
 }
 div#parser-container .form-group > .form-group > div > button.minimal + .collapse:not(.show) > button.minimal > svg:where(.fa-check, .fa-xmark).fa-icon {
-}
-div#parser-container .form-group > .form-group > div > button.minimal + .collapse.show > button.minimal > svg:where(.fa-check, .fa-xmark) {
+    opacity: 0;
 }
 div#parser-container .form-group > .form-group > div > button.minimal + .collapsing > button.minimal > svg:is(.fa-check, .fa-xmark) {
-    animation: 0.65s in-parser-container-xmark-and-checkmark;
+    animation: 0.75s in-parser-container-xmark-and-checkmark;
     animation-direction: alternate;
 }
 @keyframes in-parser-container-xmark-and-checkmark {
@@ -13183,18 +13189,35 @@ div#parser-container .form-group > .form-group > div > button.minimal + .collaps
         opacity: 1;
     }
 }
-@keyframes out-parser-container-xmark-and-checkmark {
-    0% {
-        opacity: 1;
-    }
-    35% {
-        opacity: 0;
-    }
-    100% {
-        margin-right: 0;
-        right: 0;
-        transform: none;
-    }
+
+div#parser-container .form-group > .form-group > button.btn.btn-secondary:not(.disabled):not(:disabled) {
+    margin-top: 1.25rem;
+    border-radius: 2.5rem 0 0 2.5rem;
+    max-height: 40px;
+    padding-left: 24px;
+    padding-right: 12px;
+    border: 1px solid rgb(var(--outline));
+    border-right-width: 0;
+    background-color: rgb(var(--tertiary));
+    color: rgb(var(--on-tertiary));
+    box-shadow: none !important;
+}
+div#parser-container .form-group > .form-group > select.input-control.filter-item.form-control {
+    margin-left: 0;
+    margin-top: 1.25rem;
+    margin-right: 0;
+    padding-left: 12px;
+    padding-right: 24px;
+    min-width: 72px;
+    height: 40px;
+    border-radius: 0 2.5rem 2.5rem 0;
+    border: 1px solid rgb(var(--outline));
+    color: rgb(var(--on-sec-container));
+    background-color: rgb(var(--sec-container));
+    background-size: 16px;
+    font-weight: 400;
+    font-size: 14px;
+    box-shadow: none !important;
 }
 
 .duplicate-checker .d-flex.mt-2.mb-2 select.w-auto.ml-2.btn-secondary.form-control {
@@ -13204,10 +13227,7 @@ div#parser-container .form-group > .form-group > div > button.minimal + .collaps
     margin-bottom: 4px;
     margin-top: 4px;
 }
-#parser-container .form-group>.row.form-group>button.ml-3.col-1.btn.btn-secondary {
-    position: relative;
-    top: 8px;
-}
+
 .preview-button .fa-icon {
     color: #fff;
     height: 2.75em;
@@ -14079,7 +14099,7 @@ button.tag-list-button.btn.btn-secondary:focus:not(:focus-visible)::after,
 /* *** ||Circle Buttons *** */
 .navbar-dark .navbar-toggler.collapsed::before,
 .navbar-dark .navbar-toggler:not(.collapsed)::before,
-button:not(.btn-toolbar button).dropdown-toggle::before {
+button:not(.btn-toolbar button).dropdown-toggle:not(#parser-field-select)::before {
     content: "";
     display: block;
     position: absolute;
@@ -14226,7 +14246,7 @@ button[title="Open in external player"].minimal.btn-secondary::before,
 }
 .navbar-dark .navbar-toggler.collapsed:hover:not(:active):not(.active)::before, 
 .navbar-dark .navbar-toggler:hover:not(.collapsed):not(:active):not(.active)::before,
-button:not(.btn-toolbar button).dropdown-toggle:hover:not(:active)::before, 
+button:not(.btn-toolbar button).dropdown-toggle:not(#parser-field-select):hover:not(:active)::before, 
 button[title="Open in external player"].minimal.btn-secondary:hover:not(:active)::before,
 .top-nav .navbar-buttons:not(:has(a[href^="/scenes/new"])):not(:has(a[href^="/movies/new"])):not(:has(a[href^="/galleries/new"])):not(:has(a[href^="/performers/new"])):not(:has(a[href^="/studios/new"])):not(:has(a[href^="/tags/new"])) .btn:not(.donate):hover:not(:active):not(.active)::before, 
 .top-nav .navbar-buttons a.nav-utility button.minimal.btn.btn-primary:not(.donate):hover:not(:active):not(.active)::before,
@@ -14273,7 +14293,7 @@ button.minimal.btn.btn-primary:has(>a.link>svg.fa-link):hover::before,
 td.favourite-data button:is(.favorite, .not-favorite).btn-primary::before,
 .navbar-dark .navbar-toggler.collapsed::before, 
 .navbar-dark .navbar-toggler:not(.collapsed)::before,
-button:not(.btn-toolbar button).dropdown-toggle::before,
+button:not(.btn-toolbar button).dropdown-toggle:not(#parser-field-select)::before,
 button[title="Open in external player"].minimal.btn-secondary::before,
 .top-nav .navbar-buttons a:not([href="/scenes/new"]):not([href="/movies/new"]):not([href="/galleries/new"]):not([href="/performers/new"]):not([href="/studios/new"]):not([href="/tags/new"]) .btn:not(.donate).nav-utility button.minimal.btn.btn-primary:not(.donate)::before,
 button[title=Help].nav-utility.minimal.btn.btn-primary:has(>svg.svg-inline--fa.fa-circle-question.fa-icon)::before,
@@ -14290,7 +14310,7 @@ button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-
 td.favourite-data button:is(.favorite, .not-favorite).btn-primary:hover::before,
 .navbar-dark .navbar-toggler.collapsed:hover::before, 
 .navbar-dark .navbar-toggler:not(.collapsed):hover::before,
-button:not(.btn-toolbar button).dropdown-toggle:hover::before, 
+button:not(.btn-toolbar button).dropdown-toggle:not(#parser-field-select):hover::before, 
 button[title="Open in external player"].minimal.btn-secondary:hover::before,
 .top-nav .navbar-buttons a:not([href="/scenes/new"]):not([href="/movies/new"]):not([href="/galleries/new"]):not([href="/performers/new"]):not([href="/studios/new"]):not([href="/tags/new"]).nav-utility button.minimal.btn.btn-primary:not(.donate):hover::before, 
 button[title=Help].nav-utility.minimal.btn.btn-primary:has(>svg.svg-inline--fa.fa-circle-question.fa-icon):hover::before,
