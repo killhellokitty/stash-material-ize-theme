@@ -13087,10 +13087,6 @@ div#parser-container .form-group > .form-group > div:has(>button.minimal.btn.btn
     margin-left: 20px;
     margin-top: 0.75rem;
 }
-div#parser-container .form-group > .form-group>div>button.minimal+.collapse.show>.btn-primary {
-    margin-left: 0.75rem;
-    margin-top: 0.5rem;
-}
 div#parser-container .form-group > .form-group > div > button.minimal.btn.btn-primary:not(.disabled):not(:disabled) {
     background-image: linear-gradient(to right, rgba(var(--pry-color),0.15), rgba(var(--pry-color),0.15));
     background-color: rgb(var(--inset-body-color));
@@ -13120,7 +13116,7 @@ div#parser-container .form-group > .form-group > div > button.minimal.btn.btn-pr
     font-size: 20px;
 }
 
-div#parser-container .form-group > .form-group > div > button.minimal + .collapse.show > button.minimal.btn.btn-primary:not(.disabled):not(:disabled) {
+div#parser-container .form-group > .form-group > div > button.minimal + :is(.collapse, .collapsing) > button.minimal.btn.btn-primary:not(.disabled):not(:disabled) {
     gap: unset;
     border-radius: 8px;
     max-height: 32px;
@@ -13134,6 +13130,13 @@ div#parser-container .form-group > .form-group > div > button.minimal + .collaps
     color: rgb(var(--on-tertiary-container));
     display: flex !important;
     padding-right: 2.25rem; /*36px*/
+    margin-left: 0;
+    margin-top: 0.5rem;
+    transform: translate(calc(0.1% + 0.75rem), calc(0.1% + 0.5rem));
+    transition: background-image 0.85s ease, background-color 0.85s ease, box-shadow 0.8s ease-in-out, border 0.75s ease-in-out, color 0.7s ease-in-out, transform 0s ease 0.3s, padding-right 0s ease, height 0s ease-in, margin-top 0s;
+}
+div#parser-container .form-group > .form-group > div > button.minimal + .collapsing > button.minimal.btn.btn-primary:not(.disabled):not(:disabled) {
+    transition: margin-top 0.8s, padding-right 0.75s ease-in, height 0.75s, background-image 0.65s ease, background-color 0.65s ease, box-shadow 0.6s ease-in-out, border 0.55s ease-in-out, color 0.55s ease-in-out, transform 0.3s ease-in 0s;
 }
 div#parser-container .form-group > .form-group > div > button.minimal + .collapse.show > button.minimal.btn.btn-primary:not(.disabled):not(:disabled):is(:hover, :focus-visible) {
     background-image: var(--btn-hover-highlight);
@@ -13148,20 +13151,50 @@ div#parser-container .form-group > .form-group > div > button.minimal + .collaps
     box-shadow: var(--elevation-0);
     outline: 0;
 }
-div#parser-container .form-group > .form-group > div > button.minimal + .collapse.show > button.minimal > svg.fa-check.fa-icon {
+
+div#parser-container .form-group > .form-group > div > button.minimal + :is(.collapse.show, .collapsing) > button.minimal > svg.fa-check.fa-icon {
     font-size: 16px;
     margin-right: 20px;
     right: -8px;
     position: absolute;
     color: rgb(var(--green));
 }
-div#parser-container .form-group > .form-group > div > button.minimal + .collapse.show > button.minimal > svg.fa-xmark.fa-icon {
+div#parser-container .form-group > .form-group > div > button.minimal + :is(.collapse.show, .collapsing) > button.minimal > svg.fa-xmark.fa-icon {
     font-size: 20px;
     min-height: unset;
     margin-right: 20px;
     right: -8px;
     position: absolute;
     color: rgb(var(--error));
+}
+div#parser-container .form-group > .form-group > div > button.minimal + .collapse:not(.show) > button.minimal > svg:where(.fa-check, .fa-xmark).fa-icon {
+}
+div#parser-container .form-group > .form-group > div > button.minimal + .collapse.show > button.minimal > svg:where(.fa-check, .fa-xmark) {
+}
+div#parser-container .form-group > .form-group > div > button.minimal + .collapsing > button.minimal > svg:is(.fa-check, .fa-xmark) {
+    animation: 0.65s in-parser-container-xmark-and-checkmark;
+    animation-direction: alternate;
+}
+@keyframes in-parser-container-xmark-and-checkmark {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes out-parser-container-xmark-and-checkmark {
+    0% {
+        opacity: 1;
+    }
+    35% {
+        opacity: 0;
+    }
+    100% {
+        margin-right: 0;
+        right: 0;
+        transform: none;
+    }
 }
 
 .duplicate-checker .d-flex.mt-2.mb-2 select.w-auto.ml-2.btn-secondary.form-control {
