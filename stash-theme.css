@@ -2407,7 +2407,7 @@ button.btn.btn-primary.mx-2.p-5 { /* Migration Required Dialog Default-Button */
 /* * */
 
 .content.form-group button.mr-1.btn.btn-primary { /* DLNA enable temp button right side spacer. */
-    margin-right: 0.5rem;
+    margin-right: 0.5rem !important;
 }
 
 /* Shrink Margin between Unmatched and Batch-buttons */
