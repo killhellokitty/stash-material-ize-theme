@@ -689,7 +689,7 @@ input[type=checkbox].form-check-input.position-static {
     outline-width: 0.11rem;
 }
 input[type=checkbox].form-check-input.position-static {
-    box-shadow: 0 0 0 0.11rem rgb(var(--on-surface-variant)), inset 0 0 0 5rem rgb(var(--card-color-sel));
+    box-shadow: 0 0 0 0.11rem rgb(var(--on-surface-variant)), inset 0 0 0 5rem rgb(var(--card-color2-input));
 }
 
 #queue-viewer > .queue-controls input[type="checkbox"]#continue-checkbox.form-check-input {
@@ -8749,7 +8749,7 @@ div.original-scene-details button.minimal.collapse-button.btn.btn-primary.btn-lg
 #settings-container .col-form-label:first-of-type {
     font-family: var(--MonoFont);
     font-size: 12px;
-    font-weight: 200;
+    font-weight: 500;
     line-height: 16px;
     letter-spacing: 0.078em;
     /*font-variant-caps: all-small-caps;*/
