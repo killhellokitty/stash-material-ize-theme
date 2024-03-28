@@ -188,6 +188,7 @@ h6,
     --card-color-collaps-show-hover: 18, 36, 46; /*#12242e lch(13.222 9.588 245.611)*/
     --card-color-collaps-show-input: 26, 43, 54; /* #1a2b36 lch(16.622 9.588 247.611) */
     --card-color2: 36, 58, 70; /*#243a46 lch(23.008 11.005 244.702) */
+    --card-color2-input: 36, 67, 80; /* #244350 lch(26.508 13.505 239.702) */
     --card-color2-text: 225, 232, 236; /*#e1e8ec*/
     --card-color2-hover: 51, 69, 83; /*#334453*/
     --card-color-sel: 36, 61, 75; /*#243d4b lch(24.508 12.505 244.702)*/
@@ -2957,7 +2958,7 @@ div#scene-duplicate-checker.card select.btn-secondary.form-control:disabled:hove
 }
 .card:not(div#scene-duplicate-checker) .input-control.form-control,
 .card:not(div#scene-duplicate-checker) .input-control.form-control:disabled:hover {
-    background-color: transparent;
+    background-color: rgb(var(--card-color2-input));
 }
 .input-control:disabled,
 .input-control.form-control:disabled,
@@ -2968,10 +2969,11 @@ div#scene-duplicate-checker.card select.btn-secondary.form-control:disabled {
     border: 1px solid rgb(var(--outline),var(--disabled));
     box-shadow: var(--elevation-0), inset 0 0 0 1px transparent;
 }
-.input-control.form-control:hover,
-.tagger-container-header select#scraper:hover,
-div#scene-duplicate-checker.card select.input-control.form-control:hover,
-div#scene-duplicate-checker.card select.btn-secondary.form-control:hover {
+.input-control.form-control:where(:hover, :focus-visible:not(:focus)),
+.tagger-container-header select#scraper:where(:hover, :focus-visible:not(:focus)),
+div#scene-duplicate-checker.card select.input-control.form-control:where(:hover, :focus-visible:not(:focus)),
+div#scene-duplicate-checker.card select.btn-secondary.form-control:where(:hover, :focus-visible:not(:focus)),
+.card:not(div#scene-duplicate-checker) .input-control.form-control:where(:hover, :focus-visible:not(:focus)) {
     background-color: rgb(var(--pry-container));
     border: 1px solid transparent;
     border-bottom-color: rgb(var(--on-surface));
@@ -2979,10 +2981,11 @@ div#scene-duplicate-checker.card select.btn-secondary.form-control:hover {
     border-bottom-right-radius: 0;
     box-shadow: var(--elevation-0), inset 0 -1px 0 0 transparent;
 }
-.input-control.form-control:is(:focus:not(:focus-visible), :focus:not(:focus-visible):hover, :active, :active:focus:not(:focus-visible)),
-.tagger-container-header select#scraper:is(:focus:not(:focus-visible), :focus:not(:focus-visible):hover, :active, :active:focus:not(:focus-visible)),
-div#scene-duplicate-checker.card select.input-control.form-control:is(:focus:not(:focus-visible), :focus:not(:focus-visible):hover, :active, :active:focus:not(:focus-visible)),
-div#scene-duplicate-checker.card select.btn-secondary.form-control:is(:focus:not(:focus-visible), :focus:not(:focus-visible):hover, :active, :active:focus:not(:focus-visible)) {
+.input-control.form-control:where(:focus:not(:focus-visible), :focus:not(:focus-visible):hover, :active, :active:focus:not(:focus-visible)),
+.tagger-container-header select#scraper:where(:focus:not(:focus-visible), :focus:not(:focus-visible):hover, :active, :active:focus:not(:focus-visible)),
+div#scene-duplicate-checker.card select.input-control.form-control:where(:focus:not(:focus-visible), :focus:not(:focus-visible):hover, :active, :active:focus:not(:focus-visible)),
+div#scene-duplicate-checker.card select.btn-secondary.form-control:where(:focus:not(:focus-visible), :focus:not(:focus-visible):hover, :active, :active:focus:not(:focus-visible)),
+.card:not(div#scene-duplicate-checker) .input-control.form-control:where(:focus:not(:focus-visible), :focus:not(:focus-visible):hover, :active, :active:focus:not(:focus-visible)) {
     background-color: rgb(var(--on-pry));
     background-image: url("data:image/svg+xml;utf8,<svg fill='%23c1c7ce' height='20px' width='20px' version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 512 512' xml:space='preserve' stroke='%23c1c7ce' stroke-width='40.96'><g id='SVGRepo_bgCarrier' stroke-width='0'></g><g id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'></g><g id='SVGRepo_iconCarrier'> <g> <g> <path d='M505.752,358.248L271.085,123.582c-8.331-8.331-21.839-8.331-30.17,0L6.248,358.248c-8.331,8.331-8.331,21.839,0,30.17 s21.839,8.331,30.17,0L256,168.837l219.582,219.582c8.331,8.331,21.839,8.331,30.17,0S514.083,366.58,505.752,358.248z'></path> </g> </g> </g></svg>");
     background-size: 20px;
