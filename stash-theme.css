@@ -10117,7 +10117,7 @@ button.collapse-button > svg:is(.fa-chevron-right, .fa-chevron-down).fa-icon {
 
 #configuration-tabs-tabpane-services #settings-dlna ul.addresses li div.address > input.text-input.form-control, 
 #configuration-tabs-tabpane-services #settings-dlna ul.addresses li div.address > input.text-input.form-control:focus {
-    background-color: transparent !important;
+    background-color: rgb(var(--card-color2-input)) !important;
 }
 
 
