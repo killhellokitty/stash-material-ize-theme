@@ -5036,7 +5036,7 @@ textarea.text-input.code.form-control {
 }*/
 
 .markdown h1 {
-    color: rgb(var(--on-surface-variant));
+    color: rgb(var(--pry-color));
 }
 .markdown h2 {
     color: rgb(var(--switch-input-on));
@@ -5127,7 +5127,6 @@ div.markdown code {
     font-weight: 600;
 }
 .markdown table code {
-    background-color: rgba(255,255,255,0.12);
     font-size: 15px;
     font-weight: 500;
     letter-spacing: 0.014em;
@@ -5173,9 +5172,9 @@ div.markdown code {
 .markdown table tbody tr>td:first-child {
     border-color: transparent;
 }
-.markdown table tbody tr>td:first-child>code {
+/*.markdown table tbody tr>td:first-child>code {
     background-color: transparent;
-}
+}*/
 
 
 /* Studios */
