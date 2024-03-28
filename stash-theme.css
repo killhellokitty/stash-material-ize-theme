@@ -214,7 +214,7 @@ h6,
     --tables-odd: 66, 83, 93;/* #3f5767 */
     --tables-hover: 84, 108, 128;/*#546c80 */
     --tables-borders: 46, 64, 75; /* #2e404b */
-    --code-color: 255, 144, 244; /* #ff90f4 lch(82.855 76.077 345.329) */
+    --code-color: 240, 96, 181; /* #f060b5 lch(61.853 66.066 345.163) */
     /* Primary Colors */
     --pry-color: 136, 206, 255; /*#88ceff lch(79.951 32.172 253.332) */
     --on-pry: 0, 52, 77; /*#00344d*/
@@ -234,7 +234,7 @@ h6,
     /*--split-comp: ;*/ /* */
     /*--on-split-comp: ;*/ /* */
     --split-comp-container: 68, 3, 40;/*#440328 */
-    --on-split-comp-container: 249, 116, 192; /*#f974c0*/
+    --on-split-comp-container: 249, 116, 192; /*#f974c0 lch(66.855 61.077 345.329)*/
     /* Compliementary Colors */
     --complement: 174, 121, 250; /*#ae79fa*/
     --on-complement: 75, 19, 156; /*#4b139c -- 24.833, 81.813, 310.395*/
