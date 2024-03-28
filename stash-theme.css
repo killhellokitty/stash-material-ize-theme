@@ -424,8 +424,8 @@ code,
     line-height: 16px;
     letter-spacing: 0.028em;
     font-variant: tabular-nums slashed-zero;
-    color: rgb(var(--on-background));
-    background-color: rgb(var(--body-color2),0.35);
+    color: rgb(var(--on-split-comp-container));
+    background-color: rgb(var(--on-split-comp-container),0.1);
     border-radius: 3px;
     padding: 0.2em 0.4em;
     text-rendering: optimizeLegibility;
@@ -643,7 +643,7 @@ input:not(.login input)::-webkit-autofill:focus {
     top: 1.3rem;
 }
 label.form-check-label {
-    margin-left: 12px;
+    margin-left: 0.75rem;
 }
 input[type=radio] {
     appearance: none;
@@ -655,9 +655,11 @@ input[type=radio] {
     position: relative;
 }
 input[type=checkbox] {
-    width: 18px;
-    height: 18px;
+    width: 20px;
+    height: 20px;
     border: 0;
+    border-style: none;
+    border-color: transparent;
     transition: box-shadow 0.35s ease-in-out, accent-color 0.45s ease, outline 0.35s ease-in-out;
     -webkit-transition: box-shadow 0.35s ease-in-out, accent-color 0.45s ease, outline 0.35s ease-in-out;
     /*box-shadow: inset 0 0 0 5rem rgba(var(--white-color),var(--btn-hover));*/
@@ -673,8 +675,8 @@ input[type=checkbox] {
 .scene-table label input[type=checkbox].form-control,
 input[type=checkbox].form-check-input.position-static {
     margin: 0 auto;
-    width: auto;
-    height: auto;
+    /*width: auto;
+    height: auto;*/
     vertical-align: middle;
     text-align: center;
     box-shadow: 0 0 0 0.11rem rgb(var(--on-background)), inset 0 0 0 5rem rgb(var(--tables-even));
@@ -682,7 +684,7 @@ input[type=checkbox].form-check-input.position-static {
     outline-width: 0.11rem;
 }
 input[type=checkbox].form-check-input.position-static {
-    box-shadow: 0 0 0 0.11rem rgb(var(--on-surface)), inset 0 0 0 5rem rgb(var(--card-color));
+    box-shadow: 0 0 0 0.11rem rgb(var(--on-surface-variant)), inset 0 0 0 5rem rgb(var(--card-color-sel));
 }
 
 #queue-viewer > .queue-controls input[type="checkbox"]#continue-checkbox.form-check-input {
@@ -704,7 +706,7 @@ input[type=checkbox].form-check-input.position-static {
     box-shadow: 0 0 0 0.11rem rgb(var(--on-surface)), inset 0 0 0 5rem rgb(var(--tables-hover));
 }
 input[type=checkbox].form-check-input.position-static:hover {
-    box-shadow: 0 0 0 0.11rem rgb(var(--on-surface)), inset 0 0 0 5rem rgb(var(--card-color));
+    box-shadow: 0 0 0 0.11rem rgb(var(--on-surface)), inset 0 0 0 5rem rgb(var(--card-color2));
 }
 .scene-table label input[type="checkbox"].form-control:checked,
 .scene-table label input[type="checkbox"].form-control:checked:hover,
@@ -968,23 +970,34 @@ input:is(#batch-search-delay, #colorize-color-green, #colorize-color-yellow, #co
 
 .form-control {
     height: 56px;
-    padding-left: 16px;
-    padding-right: 16px;
-    border-radius: 4px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 0.25rem;
 }
 .form-control::placeholder {
     color: rgb(var(--on-surface-variant));
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 24px !important;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.031em;
 }
 .form-control:hover::placeholder {
     color: rgb(var(--on-surface-variant));
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px !important;
+    letter-spacing: 0.031em;
 }
 .form-control:focus::placeholder,
 .form-control:active::placeholder {
     visibility: hidden;
+}
+.form-control:is(:disabled, .disabled)::placeholder {
+    color: rgb(var(--on-surface-variant),var(--disabled));
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px !important;
+    letter-spacing: 0.031em;
 }
 
 .was-validated .form-control:invalid,
@@ -1110,7 +1123,7 @@ input.btn-secondary.search-input.form-control {
     font-weight: 400;
     letter-spacing: 0.036em;
     line-height: 24px;
-    box-shadow: var(--elevation-0);
+    box-shadow: var(--elevation-0-inverse);
     caret-color: rgb(var(--interactive-input)); 
     transition: caret-color 0.25s ease-in, background-color 0.55s cubic-bezier(0.4, 0, 0.2, 1), background-image 0.55s ease, opacity 0.55s ease, outline 0.4s ease-in-out, box-shadow 0.45s ease-in-out;
 }
@@ -1812,7 +1825,8 @@ div.react-datepicker div.react-datepicker__time-container div.react-datepicker__
     padding: 8px 0;
     border: 0;
     border-radius: 4px;
-    max-width: 280px;
+    /*max-width: 280px;*/
+    max-width: max-content;
     min-width: 112px;
     box-shadow: var(--elevation-2);
     will-change: transform, transition;
@@ -1820,8 +1834,17 @@ div.react-datepicker div.react-datepicker__time-container div.react-datepicker__
     transition: background-color 0.55s ease, outline 0.4s ease-in, box-shadow 0.4s ease-in, transform 0.8s ease;
     z-index: 120001;
 }
-.btn-toolbar > .show.dropdown.btn-group > .dropdown-menu.show {
+.btn-toolbar > .show.dropdown.btn-group > .dropdown-menu.show,
+div#parser-container .dropdown.show > .dropdown-menu.show {
     overflow: auto;
+}
+div#parser-container .dropup.show > .dropdown-menu.show {
+    max-width: 354px;
+    max-width: max-content;
+}
+.duplicate-checker .dropdown.show > .dropdown-toggle + .dropdown-menu.show {
+    max-width: fit-content;
+    max-width: max-content;
 }
 
 /* DropDown Menus */
@@ -1863,6 +1886,11 @@ div.react-datepicker div.react-datepicker__time-container div.react-datepicker__
     text-decoration: none;
     text-decoration-color: transparent;
 }
+
+.show > .dropdown-menu.show a.dropdown-item > span.text-muted {
+    color: rgb(var(--muted-text),0.73) !important;
+}
+
 .dropdown.show > .dropdown-menu.show > .dropdown-item > svg {
     font-size: 24px;
     margin: 0 12px 0 0;
@@ -1872,10 +1900,11 @@ div.react-datepicker div.react-datepicker__time-container div.react-datepicker__
     padding-right: 1.5px;
     padding-left: 1.5px;
 }
-:is(.scene-tabs, .btn-toolbar) .dropdown.show .dropdown-menu.show > a.dropdown-item,
+:is(.scene-tabs, .btn-toolbar, .duplicate-checker, #parser-container) .dropdown.show .dropdown-menu.show > a.dropdown-item,
+div#parser-container .dropup.show .dropdown-menu.show > a.dropdown-item,
 .dropdown-menu.show .saved-filter-list > .dropdown-item-container > a.dropdown-item {
     display: flex;
-    justify-content: flex-start;
+    justify-content: start;
     align-items: center;
 }
 
@@ -2083,7 +2112,8 @@ button.tag-list-button.btn.btn-secondary:not(:has(>.tag-list-anchor)):disabled {
     padding-left: 16px;
     font-weight: 500;
     line-height: 16px;
-    letter-spacing: 0.065em;
+    letter-spacing: 0.06em;
+    text-shadow: var(--really-light-txt-shadow);
 }
 
 /* Button-Small */
@@ -2375,6 +2405,10 @@ button.btn.btn-primary.mx-2.p-5 { /* Migration Required Dialog Default-Button */
     letter-spacing: 0.026em;
 }
 /* * */
+
+.content.form-group button.mr-1.btn.btn-primary { /* DLNA enable temp button right side spacer. */
+    margin-right: 0.5rem;
+}
 
 /* Shrink Margin between Unmatched and Batch-buttons */
 .tagger-container-header > .d-flex > .w-auto + .d-flex .ml-1 {
@@ -2894,7 +2928,11 @@ div.react-select__control .react-select__multi-value {
 }
 
 .input-control.form-control,
-.input-control.form-control:disabled:hover {
+.input-control.form-control:disabled:hover,
+div#scene-duplicate-checker.card select.input-control.form-control,
+div#scene-duplicate-checker.card select.input-control.form-control:disabled:hover,
+div#scene-duplicate-checker.card select.btn-secondary.form-control,
+div#scene-duplicate-checker.card select.btn-secondary.form-control:disabled:hover {
     background-color: rgb(var(--body-color2));
     border: 1px solid rgb(var(--outline));
     border-radius: 4px;
@@ -2916,19 +2954,23 @@ div.react-select__control .react-select__multi-value {
     transition: var(--trans-0);
     min-width: 160px;
 }
-.card .input-control.form-control,
-.card .input-control.form-control:disabled:hover {
+.card:not(div#scene-duplicate-checker) .input-control.form-control,
+.card:not(div#scene-duplicate-checker) .input-control.form-control:disabled:hover {
     background-color: transparent;
 }
 .input-control:disabled,
 .input-control.form-control:disabled,
-.tagger-container-header select#scraper:disabled {
+.tagger-container-header select#scraper:disabled,
+div#scene-duplicate-checker.card select.input-control.form-control:disabled,
+div#scene-duplicate-checker.card select.btn-secondary.form-control:disabled {
     color: rgb(var(--on-pry-container),var(--disabled));
     border: 1px solid rgb(var(--outline),var(--disabled));
     box-shadow: var(--elevation-0), inset 0 0 0 1px transparent;
 }
 .input-control.form-control:hover,
-.tagger-container-header select#scraper:hover {
+.tagger-container-header select#scraper:hover,
+div#scene-duplicate-checker.card select.input-control.form-control:hover,
+div#scene-duplicate-checker.card select.btn-secondary.form-control:hover {
     background-color: rgb(var(--pry-container));
     border: 1px solid transparent;
     border-bottom-color: rgb(var(--on-surface));
@@ -2937,7 +2979,9 @@ div.react-select__control .react-select__multi-value {
     box-shadow: var(--elevation-0), inset 0 -1px 0 0 transparent;
 }
 .input-control.form-control:is(:focus:not(:focus-visible), :focus:not(:focus-visible):hover, :active, :active:focus:not(:focus-visible)),
-.tagger-container-header select#scraper:is(:focus:not(:focus-visible), :focus:not(:focus-visible):hover, :active, :active:focus:not(:focus-visible)) {
+.tagger-container-header select#scraper:is(:focus:not(:focus-visible), :focus:not(:focus-visible):hover, :active, :active:focus:not(:focus-visible)),
+div#scene-duplicate-checker.card select.input-control.form-control:is(:focus:not(:focus-visible), :focus:not(:focus-visible):hover, :active, :active:focus:not(:focus-visible)),
+div#scene-duplicate-checker.card select.btn-secondary.form-control:is(:focus:not(:focus-visible), :focus:not(:focus-visible):hover, :active, :active:focus:not(:focus-visible)) {
     background-color: rgb(var(--on-pry));
     background-image: url("data:image/svg+xml;utf8,<svg fill='%23c1c7ce' height='20px' width='20px' version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 512 512' xml:space='preserve' stroke='%23c1c7ce' stroke-width='40.96'><g id='SVGRepo_bgCarrier' stroke-width='0'></g><g id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'></g><g id='SVGRepo_iconCarrier'> <g> <g> <path d='M505.752,358.248L271.085,123.582c-8.331-8.331-21.839-8.331-30.17,0L6.248,358.248c-8.331,8.331-8.331,21.839,0,30.17 s21.839,8.331,30.17,0L256,168.837l219.582,219.582c8.331,8.331,21.839,8.331,30.17,0S514.083,366.58,505.752,358.248z'></path> </g> </g> </g></svg>");
     background-size: 20px;
@@ -2948,7 +2992,7 @@ div.react-select__control .react-select__multi-value {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     box-shadow: var(--elevation-0), inset 0 -2px 0 0 rgb(var(--pry-color));
-    outline: 0;
+    outline: none !important;
 }
 
 #update-stashids-endpoint.input-control.form-control {
@@ -2986,6 +3030,11 @@ div.react-select__control {
 .modal-body div.react-select__control {
     background-image: var(--btn-dummy-highlight);
     background-color: transparent;
+}
+.modal-dialog :is(.studio-select, .performer-select, .tag-select, .movie-select) > .react-select__control {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+    background-color: rgb(var(--modal-color2),0.45);
 }
 div.react-select__control:not(:focus):focus-visible {
     background-image: var(--btn-hover-highlight);
@@ -3848,6 +3897,8 @@ dialog.bg-dark {
     color: rgb(var(--on-error-container));
     background-color: rgb(var(--error-container));
     border-color: transparent;
+    text-shadow: var(--really-light-txt-shadow);
+    box-shadow: var(--elevation-0);
 }
 .delete-dialog .form-check {
     padding-top: 0.75rem;
@@ -4085,16 +4136,15 @@ h5.card-section-title, .scene-tabs .scene-header {
 /* Tables */
 .table {
     color: rgb(var(--description-color));;
-    border-style: solid;
-    border: 2px solid #899390;
-    margin-bottom: 16px;
-    margin-top: 16px;
+    border: 2px solid rgb(var(--tables-borders));
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 td:first-child {
     display: inline;
 }
 .table td {
-    border: 1px solid #373d3b;
+    border: 1px solid rgb(var(--tables-borders));
 }
 .table th,
 .table td {
@@ -4247,20 +4297,20 @@ table.table.table-striped.table-bordered>tbody>tr>td:has(>a>.image-thumbnail) {
 #scene-duplicate-checker.card>.duplicate-checker>.table-responsive>table.duplicate-checker-table.table.table-striped {
     background-color: #26323a;
 }
-#scene-duplicate-checker.card>.duplicate-checker>.table-responsive>table.duplicate-checker-table.table.table-striped>tbody>tr:nth-child(odd),
+/*#scene-duplicate-checker.card>.duplicate-checker>.table-responsive>table.duplicate-checker-table.table.table-striped>tbody>tr:nth-child(odd),
 #scene-duplicate-checker.card>.duplicate-checker>.table-responsive>table.duplicate-checker-table.table.table-striped>tbody>tr:nth-child(odd) td,
 #scene-duplicate-checker.card>.duplicate-checker>.table-responsive>table.duplicate-checker-table.table.table-striped>tbody>tr:nth-child(even),
 #scene-duplicate-checker.card>.duplicate-checker>.table-responsive>table.duplicate-checker-table.table.table-striped>tbody>tr:nth-child(even) td {
     background: #26323a;
     background-color: #26323a;
-}
+}*/
 #scene-duplicate-checker.card>.duplicate-checker>.table-responsive>table.duplicate-checker-table.table.table-striped>tbody>tr.separator:nth-child(odd):not(.duplicate-group),
 #scene-duplicate-checker.card>.duplicate-checker>.table-responsive>table.duplicate-checker-table.table.table-striped>tbody>tr.separator:nth-child(even):not(.duplicate-group) {
     background: #414846;
     background-color: #414846;
 }
 #scene-duplicate-checker.card>.duplicate-checker>.table-responsive>table.duplicate-checker-table.table.table-striped>thead th {
-    background-color: #1e282e;
+    background-color: rgb(var(--tables-borders));
 }
 #scene-duplicate-checker.card>.duplicate-checker>.table-responsive>table.duplicate-checker-table.table.table-striped tbody tr td:first-child {
     display: revert;
@@ -4383,7 +4433,7 @@ div.tagger-container button.btn-link + button[title="Help"].btn.btn-link {
     background-color: black;
 }
 .modal-backdrop.show { 
-    opacity: 0.6;
+    opacity: 0.35;
 }
 
 .show {
@@ -4419,8 +4469,9 @@ div.tagger-container button.btn-link + button[title="Help"].btn.btn-link {
     border-bottom: 3px solid rgb(var(--setting-modal),0.85);
     background-image: url("data:image/svg+xml;utf8,<svg width='64px' height='64px' viewBox='-2.4 -2.4 28.80 28.80' fill='none' xmlns='http://www.w3.org/2000/svg' transform='rotate(0)'><g id='SVGRepo_bgCarrier' stroke-width='0'></g><g id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round' stroke='%2350a4d4' stroke-width='0.048'></g><g id='SVGRepo_iconCarrier'> <path d='M12 10.4V20M12 10.4C12 8.15979 12 7.03969 11.564 6.18404C11.1805 5.43139 10.5686 4.81947 9.81596 4.43597C8.96031 4 7.84021 4 5.6 4H4.6C4.03995 4 3.75992 4 3.54601 4.10899C3.35785 4.20487 3.20487 4.35785 3.10899 4.54601C3 4.75992 3 5.03995 3 5.6V16.4C3 16.9601 3 17.2401 3.10899 17.454C3.20487 17.6422 3.35785 17.7951 3.54601 17.891C3.75992 18 4.03995 18 4.6 18H7.54668C8.08687 18 8.35696 18 8.61814 18.0466C8.84995 18.0879 9.0761 18.1563 9.29191 18.2506C9.53504 18.3567 9.75977 18.5065 10.2092 18.8062L12 20M12 10.4C12 8.15979 12 7.03969 12.436 6.18404C12.8195 5.43139 13.4314 4.81947 14.184 4.43597C15.0397 4 16.1598 4 18.4 4H19.4C19.9601 4 20.2401 4 20.454 4.10899C20.6422 4.20487 20.7951 4.35785 20.891 4.54601C21 4.75992 21 5.03995 21 5.6V16.4C21 16.9601 21 17.2401 20.891 17.454C20.7951 17.6422 20.6422 17.7951 20.454 17.891C20.2401 18 19.9601 18 19.4 18H16.4533C15.9131 18 15.643 18 15.3819 18.0466C15.15 18.0879 14.9239 18.1563 14.7081 18.2506C14.465 18.3567 14.2402 18.5065 13.7908 18.8062L12 20' stroke='%2350a4d4' stroke-width='1.9200000000000004' stroke-linecap='round' stroke-linejoin='round'></path> </g></svg>");
     background-repeat: no-repeat;
-    background-position: 148px calc(50% + 0.035em);
+    background-position: 16px calc(50% + 0.035em);
     background-size: 80px;
+    flex-direction: row;
 }
 .modal > .manual .modal-body {
     padding-left: 0;
@@ -4452,6 +4503,7 @@ div.tagger-container button.btn-link + button[title="Help"].btn.btn-link {
 }
 .modal-header {
     border: 0;
+    /*border-bottom: 3px solid rgb(var(--setting-modal),0.85);*/
     border-radius: 28px 28px 0 0;
     color: rgb(var(--setting-modal));
     font-weight: 400;
@@ -4460,9 +4512,17 @@ div.tagger-container button.btn-link + button[title="Help"].btn.btn-link {
     letter-spacing: -0.016em;
     font-family: var(--HeaderFont);
     display: flex;
+    flex-direction: column-reverse;
     justify-content: center;
     flex-wrap: wrap;
     padding: 16px 24px;
+}
+.modal-header:has(>svg.fa-icon) {
+    flex-direction: row;
+}
+.modal-header > svg.fa-icon {
+    margin: 0;
+    padding-right: 0.75rem;
 }
 .modal-header > .modal-title.h4 {
     color: rgb(var(--setting-modal));
@@ -4472,6 +4532,26 @@ div.tagger-container button.btn-link + button[title="Help"].btn.btn-link {
     letter-spacing: -0.016em;
     font-family: var(--HeaderFont);
     text-shadow: var(--light-txt-shadow);
+}
+.modal-content:has(>.modal-body>.manual-container) .modal-header > .modal-title.h4 {
+    position: relative;
+    left: 71px;
+}
+
+.modal-dialog input[type="checkbox"]:is(#delete-file, #delete-generated).form-check-input {
+    height: 22px;
+    width: 22px;
+}
+.modal-dialog .form-check:has(>input#delete-generated) {
+    margin-top: 0.5rem;
+}
+.modal-dialog .delete-dialog > p.font-weight-bold {
+    font-weight: 700 !important;
+    color: rgb(var(--error));
+    text-shadow: var(--really-light-txt-shadow);
+    font-size: 17.5px;
+    letter-spacing: 0.013em;
+    line-height: 26px;
 }
 .dialog-content .criterion-list.accordion {
     /*margin-right: -2%;*/
@@ -4589,13 +4669,6 @@ button.remove-criterion-button.btn.btn-minimal > svg.svg-inline--fa.fa-xmark.fa-
     max-width:1300px;
 }
 
-.modal-body .col-form-label, 
-.modal-body .col-6, 
-.modal-footer, 
-.modal-header .col-form-label {
-    text-shadow: none;
-}
-
 .modal-body .col-6 strong {
     font-weight: 500;
     font-size: 14px;
@@ -4641,7 +4714,7 @@ textarea.text-input.code.form-control {
 }
 
 @media (min-width: 576px) {
-    #setting-dialog .modal-content .modal-body textarea {
+    /*#setting-dialog .modal-content .modal-body textarea {
         min-height:350px; 
         height:65vh !important
     }
@@ -4664,7 +4737,7 @@ textarea.text-input.code.form-control {
         flex: 0 0 18%;    
         max-width: 18%;
         text-shadow: none;
-    }
+    }*/
     .modal-dialog .modal-content .form-group > .form-label[for~="url"] {
         transition: all 0.2s ease-in-out;
         left: 58px;
@@ -4688,22 +4761,16 @@ textarea.text-input.code.form-control {
         visibility: visible;
     }
     .modal-dialog .modal-content .form-group {
-        display: flex; 
-        flex-wrap: wrap;
+        margin-top: 0.5rem;
     }
-    .modal-dialog .modal-content .btn-group>.btn:not(:first-child), .btn-group>.btn-group:not(:first-child) {
+    /*.modal-dialog .modal-content .btn-group>.btn:not(:first-child), .btn-group>.btn-group:not(:first-child) {
         margin-left: 1px;
-    }
-    .modal-dialog .modal-content .form-label[for~="movies"],
-    .modal-dialog .modal-content .form-label[for~="tags"],
-    .modal-dialog .modal-content .form-label[for~="performers"] {
-        margin-top:48px;
-    }
-    .modal-dialog .modal-content .button-group-above {
+    }*/
+    /*.modal-dialog .modal-content .button-group-above {
         margin-left:9px;
         margin-bottom: 6px;
-    }
-    .modal-dialog .scraper-sources.form-group h5 {
+    }*/
+    /*.modal-dialog .scraper-sources.form-group h5 {
         margin-top:20px;
     }
     .modal-dialog .modal-content .field-options-table {
@@ -4712,7 +4779,127 @@ textarea.text-input.code.form-control {
 
     .modal-dialog.modal-lg .modal-content .form-group {
         display: inline;
-    }
+    }*/
+}
+
+.modal-dialog .form-group > label:is([for="studio"], [for="rating"]) + .col-9 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.modal-dialog .form-group > .multi-set > .button-group-above.btn-group {
+    margin-left: 36%;
+    margin-bottom: 0.5rem;
+}
+.modal-dialog .form-group > .multi-set > .button-group-above.btn-group > button.btn-sm {
+    border: 1px solid rgb(var(--outline));
+    border-right: 0;
+}
+.modal-dialog .form-group > .multi-set > .button-group-above.btn-group > button.btn.btn-primary.btn-sm {
+    max-height: 32px;
+    min-height: 32px;
+    height: 32px;
+    padding-block: 0 0;
+}
+.modal-dialog .form-group > .multi-set > .button-group-above.btn-group > button.btn-sm:last-of-type {
+    border-right: 1px solid rgb(var(--outline));
+}
+
+.modal-dialog label:is([for="rating"], [for="studio"], [for="performers"], [for="tags"], [for="movies"]).form-label {
+    font-size: 14px;
+    line-height: 20px;
+    text-shadow: var(--really-light-txt-shadow);
+    padding: 0 0 0 1rem;
+    margin: 0;
+}
+.modal-dialog label:is([for="performers"], [for="tags"], [for="movies"]).form-label {
+    position: relative;
+    top: 41px;
+}
+.modal-dialog .form-check > input[type="checkbox"]#organized.form-check-input {
+    height: 22px;
+    width: 22px;
+    left: 24px;
+    margin-right: 8px;
+}
+.modal-dialog .form-check:has(>input#organized.form-check-input) {
+    margin-top: 2.25rem;
+}
+
+/* Package Add Source Dialog */
+.modal-dialog div:where(#preview-segments, #preview-segment-duration, #preview-exclude-start).form-group > h6,
+.modal-dialog div:is(#package-source-name, #package-source-url).form-group > h6 {
+    margin-bottom: -0.60rem;
+    margin-left: 0.75rem;
+    margin-top: 2.5rem;
+    line-height: 15px;
+    letter-spacing: 0.026em;
+    text-shadow: var(--really-light-txt-shadow);
+    position: relative;
+    z-index: 10;
+    visibility: hidden;
+    transition: font-size 0.2s linear(0 0%, 0 1.8%, 0.01 3.6%, 0.03 6.35%, 0.07 9.1%, 0.13 11.4%, 0.19 13.4%, 0.27 15%, 0.34 16.1%, 0.54 18.35%, 0.66 20.6%, 0.72 22.4%, 0.77 24.6%, 0.81 27.3%, 0.85 30.4%, 0.88 35.1%, 0.92 40.6%, 0.94 47.2%, 0.96 55%, 0.98 64%, 0.99 74.4%, 1 86.4%, 1 100%);
+}
+.modal-dialog div:where(#preview-segments, #preview-segment-duration, #preview-exclude-start).form-group > h6 {
+    font-size: 14px;
+    color: rgb(var(--on-surface));
+    visibility: visible;
+    transition: color 0.25s ease-in-out;
+}
+.modal-dialog div#preview-segment-duration.form-group > h6 {
+    margin-bottom: -0.67rem;
+}
+.modal-dialog div:is(#package-source-name, #package-source-url).form-group > h6:has(+input.is-invalid) {
+    color: rgb(var(--on-error-container));
+}
+.modal-dialog div:is(#package-source-name, #package-source-url).form-group > h6:not(:has(+input.is-invalid)) {
+    color: rgb(var(--pry-color));
+}
+.modal-dialog div:where(#preview-segments, #preview-segment-duration, #preview-exclude-start).form-group > h6::before,
+.modal-dialog div:where(#package-source-name, #package-source-url).form-group > h6::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(var(--modal-color2));
+    z-index: -1;
+    height: 3px;
+    width: 47px;
+    margin-left: -4px;
+    top: 5px;
+}
+.modal-dialog div#preview-segments.form-group > h6::before {
+    width: 218px;
+}
+.modal-dialog div#preview-segment-duration.form-group > h6::before {
+    width: 181px;
+}
+.modal-dialog div#preview-exclude-start.form-group > h6::before {
+    width: 127px;
+}
+.modal-dialog div#preview-exclude-start.form-group:last-of-type > h6::before {
+    width: 121px;
+}
+.modal-dialog div#package-source-url.form-group > h6::before {
+    width: 84px;
+}
+.modal-dialog div#package-source-name.form-group:nth-of-type(3) > h6::before {
+    width: 77px;
+}
+.modal-dialog div:where(#preview-segments, #preview-segment-duration, #preview-exclude-start).form-group:focus-within > h6 {
+    color: rgb(var(--pry-color));
+}
+.modal-dialog div:is(#package-source-name, #package-source-url).form-group:focus-within > h6 {
+    font-size: 14px;
+    visibility: visible;
+}
+.modal-dialog div:where(#preview-segments, #preview-segment-duration, #preview-exclude-start).form-group > small.text-muted.form-text {
+    margin-left: 1rem;
+}
+.modal-dialog div#package-source-name.form-group:nth-of-type(3) > .sub-heading {
+    margin-left: 1rem;
+}
+.modal-dialog div:where(#preview-segments, #preview-segment-duration, #preview-exclude-start).form-group > input.text-input.form-control,
+.modal-dialog div:is(#package-source-name, #package-source-url).form-group > input.text-input.form-control {
+    background-color: rgb(var(--modal-color2), 0.45) !important;
 }
 /*@media (max-width: 575.98px) {
     .performer-card {
@@ -5212,6 +5399,11 @@ input.form-control-plaintext {
     line-height: 20px;
     letter-spacing: 0.15px;
     caret-color: rgb(var(--interactive-input));
+}
+.text-input:disabled,
+.text-input:disabled:is(:hover, :focus) {
+    color: rgb(var(--interactive-input),var(--disabled));
+    border: 1px solid rgb(var(--outline),var(--disabled-rev));
 }
 .studio-details table div.react-select__control {
     background: none; 
@@ -7772,18 +7964,21 @@ button.clearable-text-field-clear.btn.btn-secondary {
 }
 button.clearable-text-field-clear.btn.btn-secondary {
     height: 40px;
-    top: 11px;
+    top: 8px;
+    right: -2px;
 }
 .btn-toolbar input.query-text-field.bg-secondary.text-white.border-secondary.form-control + button.query-text-field-clear.btn.btn-secondary:hover, 
 button.clearable-text-field-clear.btn.btn-secondary:hover {
-    background-color: rgb(var(--on-surface-variant),var(--btn-hover));
-    box-shadow: var(--elevation-0);
+    color: rgb(var(--on-surface-variant));
+    background-color: rgb(var(--on-surface),var(--btn-hover));
+    box-shadow: var(--elevation-1);
 }
 /* Text-Input Clear button ACTIVE */
 .btn-toolbar input.query-text-field.bg-secondary.text-white.border-secondary.form-control + button.query-text-field-clear.btn.btn-secondary:not(:disabled):not(.disabled):is(:active, :focus, :focus:active),
 button.clearable-text-field-clear.btn.btn-secondary:not(:disabled):not(.disabled):is(:active, :focus, :focus:active) {
-    background-color: rgb(var(--on-surface-variant),var(--btn-active));
-    box-shadow: none;
+    color: rgb(var(--on-surface-variant));
+    background-color: rgb(var(--on-surface),var(--btn-active));
+    box-shadow: var(--elevation-0);
     outline: none;
 }
 .btn-toolbar input.query-text-field.bg-secondary.text-white.border-secondary.form-control + button.query-text-field-clear.btn.btn-secondary:focus-visible,
@@ -7964,9 +8159,6 @@ button.clearable-text-field-clear.btn.btn-secondary:focus-visible {
      box-shadow: var(--elevation-0);
      transition: var(--trans-0);
      -webkit-transition: var(--trans-0);
-}
-.addresses button.btn.btn-danger.btn-sm {
-    padding: 0 16px 0 16px;
 }
 .btn-danger:not(.disabled):not(:disabled):is(:hover, :focus-visible),
 .addresses .btn-danger.btn-sm:not(.disabled):not(:disabled):is(:hover, :focus-visible) {
@@ -8424,9 +8616,10 @@ div#parser-container.card h5 {
     padding-block: 0 0;
     padding-left: 12px;
     padding-right: 12px;
-    margin-left: 12px;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
 }
-.package-manager-table-container >table.table tbody tr:not(.package-source):nth-of-type(n+1):hover {
+.package-manager-table-container >table.table tbody tr:not(.package-source):not(.add-package-source):nth-of-type(n+1):hover {
     background-color: rgb(var(--tables-even));
 }
 
@@ -9556,14 +9749,50 @@ button:where(.star-fill-100, .star-fill-90, .star-fill-80, .star-fill-75, .star-
     outline: 0;
 }
 
-#configuration-tabs-tabpane-services #settings-dlna .setting-section .form-group .addresses .buttons button.btn.btn-primary {
+#settings-dlna .addresses li .address {
+    width: 100%;
+    margin-left: auto;
+    margin-right: -4.25rem; /*68px*/
+}
+#settings-dlna .addresses li .buttons {
+    padding-left: 1rem;
+    padding-right: 0.75rem;
+}
+#settings-dlna .addresses li .buttons > button.btn.btn-primary.btn-sm {
     padding: 0;
-    max-height: 48px;
-    height: 48px;
-    width: 48px;
-    margin-left: 16px;
+    max-height: 40px;
+    height: 40px;
+    width: 40px;
     border-radius: 5rem;
     font-size: 20px;
+    background-color: transparent;
+    color: rgb(var(--on-surface-variant));
+}
+#settings-dlna .addresses li .buttons > button.btn.btn-primary.btn-sm:where(.disabled, :disabled) {
+    background-color: transparent;
+    color: rgb(var(--on-surface-variant),var(--disabled));
+}
+
+div#settings-dlna h6 {
+    color: rgb(var(--setting-sub-header));
+}
+
+#settings-dlna .addresses {
+    padding-inline-start: 0.75rem;
+}
+
+#settings-dlna .addresses li .deadline {
+    font-size: 11px;
+    color: rgb(var(--date-color));
+    text-shadow: var(--really-light-txt-shadow);
+    letter-spacing: 0.034em;
+}
+
+#settings-dlna .addresses button.btn.btn-danger.btn-sm {
+    max-width: 40px;
+    width: 40px;
+    padding: 0;
+    margin-right: 0.125rem; /*2px*/
 }
 
 #configuration-tabs-tabpane-system .setting-section > .card > .setting:first-child {
@@ -9859,7 +10088,7 @@ button.collapse-button > svg:is(.fa-chevron-right, .fa-chevron-down).fa-icon {
     margin-bottom: 0.25rem;
 }
 .package-manager .package-source .source-collapse .btn {
-    color: rgb(var(--description-color));
+    color: rgb(var(--on-surface-variant));
     background-color: transparent;
     font-size: 20px;
     border-radius: 5rem;
@@ -9873,11 +10102,11 @@ button.collapse-button > svg:is(.fa-chevron-right, .fa-chevron-down).fa-icon {
     -webkit-transition: var(--trans-0);
 }
 .package-manager .package-source .source-collapse .btn:hover {
-    background-color: rgb(var(--description-color),var(--btn-hover));
+    background-color: rgb(var(--on-surface),var(--btn-hover));
     box-shadow: var(--elevation-0);
 }
 .package-manager .package-source .source-collapse .btn:where(:active, :focus, :active:focus) {
-    background-color: rgb(var(--description-color),var(--btn-active));
+    background-color: rgb(var(--on-surface),var(--btn-active));
     box-shadow: none;
     outline: 0;
 }
@@ -9922,8 +10151,7 @@ div#settings-container div#configuration-tabs-tabpane-about .card .setting div b
     background-color: #3f8176;
 }
 #configuration-tabs-tabpane-about .setting-section .setting .value,
-#configuration-tabs-tabpane-services .setting-section .setting .value,
-#configuration-tabs-tabpane-services #settings-dlna ul.addresses {
+#configuration-tabs-tabpane-services .setting-section .setting .value {
     color: rgb(var(--white-color));
     font-size: 14px;
     font-weight: 400;
@@ -11576,6 +11804,9 @@ form#studio-edit {
     width: 100%;
     padding-right: 4.5rem;
 }
+.modal-dialog div#temp-enable-duration.form-group > .duration-input > .input-group {
+    flex-wrap: nowrap;
+}
 .criterion-editor .form-group>.duration-input>.input-group:not(.has-validation)>input.duration-control.form-control:not(:last-child),
 .modal-body>.percent-input>.input-group:not(.has-validation)>input.percent-control.form-control:not(:last-child),
 .modal-body .duration-input>.input-group:not(.has-validation)>input.duration-control.form-control:not(:last-child) {
@@ -11584,7 +11815,13 @@ form#studio-edit {
     margin-right: unset;
     background-color: transparent !important;
 }
-
+.modal-dialog div#temp-enable-duration.form-group > .duration-input > .input-group > input.duration-control.text-input.form-control {
+    min-width: 100%;
+    background-color: rgb(var(--modal-color2),0.45) !important;
+}
+.modal-dialog div#temp-enable-duration.form-group > .duration-input > .input-group > .input-group-append {
+    right: 26%;
+}
 .modal-body .criterion-editor .form-group input.btn-secondary.form-control {
     min-height: 56px;
     padding: 0 1rem 0 1rem;
@@ -11613,10 +11850,25 @@ form#studio-edit {
     outline: 0;
 }
 
+.modal-body h4:has(~div#temp-enable-duration.form-group) {
+    color: rgb(var(--setting-header));
+    text-shadow: var(--really-light-txt-shadow);
+    margin-bottom: 1rem;
+}
+.modal-body .form-group:has(~div#temp-enable-duration.form-group) > .form-check {
+    left: 18px;
+    margin-bottom: 2rem;
+}
+.modal-body .form-group:has(~div#temp-enable-duration.form-group) > .form-check >input[type="checkbox"].form-check-input {
+    box-shadow: 0 0 0 0.11rem rgb(var(--on-surface-variant)), inset 0 0 0 5rem rgb(var(--modal-color2));
+    margin-right: 8px;
+}
+.modal-body .form-group:has(~div#temp-enable-duration.form-group) > .form-check >input[type="checkbox"].form-check-input:checked {
+    box-shadow: 0 0 0 0.11rem rgb(var(--pry-color));
+    accent-color: rgb(var(--pry-color));
+}
 #temp-enable-duration>small.text-muted.form-text {
-    left: -312px;
-    position: relative;
-    top: 58px;
+    margin-left: 1rem;
 }
 /* ***Create*** */
 
@@ -12882,10 +13134,10 @@ small.form-text {
     background-color: transparent;
     border: 0;
     border-radius: 5rem;
-    padding: 0 14px 0 14px;
     position: relative;
     top: 8px;
     left: -12px;
+    max-height: 40px;
 }
 .modal-body .dialog-container:has(>*.folder-list)>.input-group>.input-group-append>button.btn.btn-secondary:has(>.fa-plus):hover:not(:disabled):not(.disabled),
 .modal-body .dialog-container:has(>*.folder-list)>.input-group>.input-group-append>button.btn.btn-secondary:has(>.fa-plus):focus:not(:disabled):not(.disabled),
@@ -12900,10 +13152,8 @@ small.form-text {
     box-shadow: none;
 }
 .modal-body .dialog-container:has(>*.folder-list)>.input-group>.input-group-append>button.btn.btn-secondary:has(>.fa-plus):focus-visible:not(:focus):not(:disabled):not(.disabled) {
-    outline-color: #dffffb;
-    outline-width: 3px;
+    outline-color: rgb(var(--focus-ring));
     outline-style: solid;
-    outline-offset: 0;
 }
 .modal-body .dialog-content:has(>*.folder-list)>.input-group:not(.has-validation)>input.btn-secondary.form-control {
     min-height: 56px;
@@ -12914,36 +13164,26 @@ small.form-text {
     padding-right: 64px;
 }
 .modal-body .string-list-input .input-group>.input-group-append>button.btn.btn-danger:has(>.fa-minus) {
-    border: 1px solid #dcf6f0;
-    color: #dcf6f0;
     background-color: transparent;
     border-radius: 5rem;
-    padding: 0 14px 0 14px;
     position: relative;
     top: 8px;
     left: -12px;
+    max-height: 40px;
 }
 .modal-body .string-list-input .input-group>.input-group-append>button.btn.btn-danger:has(>.fa-minus):hover:not(:disabled):not(.disabled),
 .modal-body .string-list-input .input-group>.input-group-append>button.btn.btn-danger:has(>.fa-minus):focus:not(:disabled):not(.disabled),
 .modal-body .string-list-input .input-group>.input-group-append>button.btn.btn-danger:has(>.fa-minus):focus-visible:not(:disabled):not(.disabled):not(:focus) {
-    background-color: rgba(255,255,255,0.08);
-    border-color: #ffb4ab;
-    color: #ffb4ab;
-    box-shadow: none;
+    background-color: rgb(var(--error-container));
 }
 .modal-body .string-list-input .input-group>.input-group-append>button.btn.btn-danger:has(>.fa-minus):active:not(:disabled):not(.disabled),
 .modal-body .string-list-input .input-group>.input-group-append>button.btn.btn-danger:has(>.fa-minus):active:hover:not(:disabled):not(.disabled),
 .modal-body .string-list-input .input-group>.input-group-append>button.btn.btn-danger:has(>.fa-minus):active:focus:not(:disabled):not(.disabled) {
-    background-color: rgba(255,255,255,0.16);
-    border-color: #ffb4ab;
-    color: #ffb4ab;
-    box-shadow: none;
+    background-color: rgb(var(--error-container));
 }
 .modal-body .string-list-input .input-group>.input-group-append>button.btn.btn-danger:has(>.fa-minus):focus-visible:not(:focus):not(:disabled):not(.disabled) {
-    outline-color: #dffffb;
-    outline-width: 3px;
+    outline-color: rgb(var(--focus-ring));
     outline-style: solid;
-    outline-offset: 0;
 }
 
 .container-fluid > div:has(>*.error-message) > h2 {
@@ -13034,7 +13274,7 @@ div#parser-container .form-group > .form-group > label[for="whitespace-character
     border-radius: 0.25rem;
     background-color: rgb(var(--body-color2)) !important;
 }
-div#parser-container .form-group > .form-group:has(>label.form-label):focus-within {
+div#parser-container .form-group > .row.form-group:has(>label.form-label):focus-within {
     color: rgb(var(--pry-color));
 }
 
@@ -13125,6 +13365,15 @@ div#parser-container .form-group > .form-group > div > button.minimal.btn.btn-pr
 
 div#parser-container .form-group > .form-group > div > button.minimal + :is(.collapse, .collapsing) > button.minimal.btn.btn-primary:not(.disabled):not(:disabled) {
     gap: unset;
+    display: flex !important;
+    padding-right: 2.25rem; /*36px*/
+    margin-left: 0;
+    margin-top: 0.5rem;
+    transform: translate(calc(0.1% + 0.75rem), calc(0.1% + 0.5rem));
+}
+
+div#parser-container .form-group > .form-group > div > button.minimal + :is(.collapse, .collapsing) > button.minimal.btn.btn-primary:not(.disabled):not(:disabled),
+#configuration-tabs-tabpane-plugins .setting-section .setting-group .setting>div:last-child button.btn-primary.btn-sm {
     border-radius: 8px;
     max-height: 32px;
     padding-block: 0 0;
@@ -13135,23 +13384,23 @@ div#parser-container .form-group > .form-group > div > button.minimal + :is(.col
     background-color: rgb(var(--tertiary-container));
     background-blend-mode: screen;
     color: rgb(var(--on-tertiary-container));
-    display: flex !important;
-    padding-right: 2.25rem; /*36px*/
-    margin-left: 0;
-    margin-top: 0.5rem;
-    transform: translate(calc(0.1% + 0.75rem), calc(0.1% + 0.5rem));
     transition: background-image 0.85s ease, background-color 0.85s ease, box-shadow 0.8s ease-in-out, border 0.75s ease-in-out, color 0.7s ease-in-out, transform 0s ease 0.3s, padding-right 0s ease, height 0s ease-in, margin-top 0s;
+}
+#configuration-tabs-tabpane-plugins .setting-section .setting-group .setting>div:last-child button.btn-primary.btn-sm {
+    transition: var(--trans-0);
 }
 div#parser-container .form-group > .form-group > div > button.minimal + .collapsing > button.minimal.btn.btn-primary:not(.disabled):not(:disabled) {
     transition: margin-top 0.8s, padding-right 0.75s ease-in, height 0.75s, background-image 0.65s ease, background-color 0.65s ease, box-shadow 0.6s ease-in-out, border 0.55s ease-in-out, color 0.55s ease-in-out, transform 0.3s ease-in 0s;
 }
-div#parser-container .form-group > .form-group > div > button.minimal + .collapse.show > button.minimal.btn.btn-primary:not(.disabled):not(:disabled):is(:hover, :focus-visible) {
+div#parser-container .form-group > .form-group > div > button.minimal + .collapse.show > button.minimal.btn.btn-primary:not(.disabled):not(:disabled):is(:hover, :focus-visible),
+#configuration-tabs-tabpane-plugins .setting-section .setting-group .setting>div:last-child button.btn-primary.btn-sm:not(.disabled):not(:disabled):is(:hover, :focus-visible) {
     background-image: var(--btn-hover-highlight);
     background-color: rgb(var(--tertiary-container));
     background-blend-mode: screen;
     box-shadow: var(--elevation-1);
 }
-div#parser-container .form-group > .form-group > div > button.minimal + .collapse.show > button.minimal.btn.btn-primary:not(.disabled):not(:disabled):is(:active, :focus, :active:focus) {
+div#parser-container .form-group > .form-group > div > button.minimal + .collapse.show > button.minimal.btn.btn-primary:not(.disabled):not(:disabled):is(:active, :focus, :active:focus),
+#configuration-tabs-tabpane-plugins .setting-section .setting-group .setting>div:last-child button.btn-primary.btn-sm:not(.disabled):not(:disabled):is(:active, :focus, :active:focus) {
     background-image: var(--btn-active-highlight);
     background-color: rgb(var(--tertiary-container));
     background-blend-mode: screen;
@@ -13220,9 +13469,119 @@ div#parser-container .form-group > .form-group > select.input-control.filter-ite
     box-shadow: none !important;
 }
 
-.duplicate-checker .d-flex.mt-2.mb-2 select.w-auto.ml-2.btn-secondary.form-control {
-    width: 100% !important;
+div#scene-duplicate-checker.card {
+    background-color: transparent;
 }
+div#scene-duplicate-checker.card h4 {
+    color: rgb(var(--setting-sub-header));
+    margin-top: 0.5rem;
+    margin-left: 0.75rem;
+    margin-bottom: 1.25rem;
+}
+div#scene-duplicate-checker.card .form-group {
+    margin-left: 2.75rem;
+}
+div#scene-duplicate-checker.card .form-group label.form-label {
+    font-size: 12px;
+    text-shadow: var(--light-txt-shadow);
+    padding-bottom: 4px;
+    position: relative;
+    top: -70px;
+    margin-top: 4.75rem;
+}
+div#scene-duplicate-checker.card .form-group select.input-control.form-control {
+    position: absolute;
+    left: -132px;
+    margin-top: -27px;
+    width: 260px;
+}
+.duplicate-checker .form-group:nth-of-type(2) label.form-label {
+    margin-top: 4.25rem;
+}
+div#scene-duplicate-checker.card .form-group:nth-of-type(2) select.input-control.form-control {
+    left: -206px;
+    margin-top: -30px;
+}
+div#scene-duplicate-checker.card small.form-text {
+    color: rgb(var(--muted-text));
+    text-shadow: var(--light-txt-shadow);
+    margin-top: -1.35rem;
+    margin-left: 0.5rem;
+    overflow-wrap: break-word;
+    text-wrap: wrap;
+    word-break: break-word;
+    max-width: 220px;
+}
+div#scene-duplicate-checker.card .dropdown-toggle {
+    margin-left: -12px;
+    margin-top: -1rem;
+}
+div#scene-duplicate-checker.card .form-check {
+    margin-left: -12px;
+    margin-top: 1.35rem;
+}
+div#scene-duplicate-checker.card table.duplicate-checker-table .form-check {
+    margin-top: unset;
+}
+div#scene-duplicate-checker.card input[type="checkbox"]#chkSafeSelect.form-check-input {
+    height: 22px;
+    width: 22px;
+    margin-right: 8px;
+    box-shadow: 0 0 0 0.11rem rgb(var(--on-surface-variant)), inset 0 0 0 5rem rgb(var(--body-color2));
+}
+div#scene-duplicate-checker.card table.duplicate-checker-table input[type="checkbox"].form-check-input.position-static {
+    box-shadow: 0 0 0 0.11rem rgb(var(--on-surface-variant)), inset 0 0 0 5rem rgb(var(--popover-color2));
+    height: 18px;
+    width: 18px;
+}
+div#scene-duplicate-checker.card input[type="checkbox"]#chkSafeSelect.form-check-input:checked,
+div#scene-duplicate-checker.card table.duplicate-checker-table input[type="checkbox"].form-check-input.position-static:checked {
+    accent-color: rgb(var(--pry-color));
+    box-shadow: 0 0 0 0.11rem rgb(var(--pry-color));
+}
+div#scene-duplicate-checker.card p.lead {
+    margin-left: 2.05rem;
+    color: rgb(var(--warning));
+    margin-top: 1.75rem;
+    margin-bottom: 1.15rem;
+    font-size: 18px;
+    overflow-wrap: break-word;
+    text-wrap: pretty;
+    word-break: break-word;
+    line-height: 26px;
+    letter-spacing: 0.029em;
+    text-shadow: var(--really-light-txt-shadow);
+}
+div#scene-duplicate-checker.card p.lead > svg.fa-triangle-exclamation.fa-icon {
+    font-size: 24px;
+    margin-right: 0.5rem;
+}
+div#scene-duplicate-checker p.lead + .d-flex.mt-2.mb-2 {
+    align-items: center;
+}
+div#scene-duplicate-checker.card h6 {
+    margin-left: 2.05rem;
+    text-decoration: solid underline !important;
+    text-decoration-color: currentColor !important;
+    text-underline-offset: 0.2em;
+    letter-spacing: 0.024em;
+    text-decoration: var(--light-txt-shadow);
+}
+
+div#scene-duplicate-checker.card select.btn-secondary.form-control {
+    width: 120px !important;
+    min-width: 120px;
+    margin-right: 0;
+}
+
+#scene-duplicate-checker .btn-group {
+    max-height: 40px;
+    margin-right: 0.5rem;
+}
+#scene-duplicate-checker .btn-group > button.btn {
+    border: 1px solid rgb(var(--outline));
+}
+
 .duplicate-checker-table tbody>tr td>button.edit-button.btn {
     margin-bottom: 4px;
     margin-top: 4px;
@@ -13352,6 +13711,18 @@ div#parser-container .form-group > .form-group > select.input-control.filter-ite
     box-shadow: none;
 }
 /* * */
+
+div#settings-dlna > h4 {
+    color: rgb(var(--setting-sub-header));
+    margin-top: 1.5rem;
+    text-shadow: var(--light-txt-shadow);
+}
+div#settings-dlna > .form-group > h5 {
+    color: rgb(var(--green));
+    text-decoration: solid underline !important;
+    text-decoration-thickness: 0.01em !important;
+    text-underline-offset: 0.14em;
+}
 
 /* Critereion Filter Editor */
 .criterion-editor .form-group:has(>.input-group > input[placeholder="File path"].btn-secondary.form-control) {
@@ -14621,7 +14992,7 @@ span.stash-id-pill {
     align-items: center;
 }
 .package-manager .package-manager-table-container > table {
-    color: rgb(var(--description-color));
+    color: rgb(var(--white-color));
     border-style: solid;
     border: 2px solid rgb(var(--card-color2));
     margin-bottom: 16px;
@@ -14633,6 +15004,29 @@ span.stash-id-pill {
 .package-manager .package-manager-table-container td:first-child {
     display: revert;
     text-align: center;
+}
+.package-manager .package-manager-table-container th {
+    color: rgb(var(--setting-sub-text));
+    font-weight: 700;
+    letter-spacing: 0.021em;
+    font-size: 16px;
+}
+.package-manager .package-id, 
+.package-manager .package-date, 
+.package-manager .package-latest-date {
+    font-size: 12px;
+    letter-spacing: 0.026em;
+    line-height: 16px;
+    color: rgb(var(--setting-sub-text));
+    text-shadow: var(--really-light-txt-shadow);
+}
+.package-manager .package-version {
+    color: rgb(var(--white-color),0.85);
+    text-shadow: var(--really-light-txt-shadow);
+}
+.package-manager td.source-name {
+    color:rgb(var(--on-surface));
+    font-weight: 600;
 }
 
 /* Logs */
